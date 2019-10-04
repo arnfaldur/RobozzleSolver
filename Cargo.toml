@@ -1,0 +1,8 @@
+[package]
+name = "solver"
+version = "0.1.0"
+authors = ["arnfaldur <aarnaldur@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+colored = "1.8.0"
