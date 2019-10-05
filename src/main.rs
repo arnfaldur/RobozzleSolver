@@ -1,6 +1,7 @@
 use colored::*;
 use std::fmt::{Display, Error, Formatter};
 use rand::prelude::*;
+use std::f32::MIN;
 
 #[allow(dead_code)]
 type Tile = u8;
@@ -195,7 +196,7 @@ fn step(state: &mut State, source: &Source) -> bool {
     return state.stack.pointer > 0;
 }
 
-fn execute(puzzle: &Puzzle, source: &Source) {
+fn execute(puzzle: &Puzzle, source: &Source) -> f32 {
     let mut state: State = State {
         running: true,
         steps: 0,
@@ -213,7 +214,9 @@ fn execute(puzzle: &Puzzle, source: &Source) {
 //        print!("{}\n------------------------------------------\n", state);
         state.running = step(&mut state, &source);
     }
-    print!("{}", state);
+//    print!("{}", state);
+//    println!("score: {}", score(&state));
+    return score(&state);
 }
 
 fn make_puzzle(
@@ -254,21 +257,29 @@ fn make_puzzle(
 fn main() {
     let instruction_set = get_instruction_set(&PUZZLE_656);
     let mut rng = rand::thread_rng();
-    for iteration in 0..1024 {
+    let mut best_source = [[INS_NOOP; 10]; 5];
+    let mut best_score = MIN;
+    for iteration in 0..(1 << 20) {
         let mut source: Source = [[INS_NOOP; 10]; 5];
         for i in 0..5 {
             for ins in 0..PUZZLE_656.functions[i] {
-                source[i][ins] = instruction_set[rng.gen_range(0,instruction_set.len())];
+                source[i][ins] = instruction_set[rng.gen_range(0, instruction_set.len())];
             }
         }
-        show_source(&source);
-        execute(&PUZZLE_656, &source);
+//        show_source(&source);
+        let new_score = execute(&PUZZLE_656, &source);
 //        println!("Instruction set:");
 //        for instruction in get_instruction_set(&PUZZLE_656) {
 //            print!("{}", show_instruction(instruction));
 //        }
-        println!("");
+//        println!("");
+        if new_score > best_score {
+            best_score = new_score;
+            best_source = source;
+        }
     }
+    show_source(&best_source);
+    println!("score: {}", best_score);
 }
 
 fn score(state: &State) -> f32 {
