@@ -4,6 +4,11 @@ version = "0.1.0"
 authors = ["arnfaldur <aarnaldur@gmail.com>"]
 edition = "2018"
 
+[profile.release]
+debug = true
+
 [dependencies]
 colored = "1.8.0"
 rand = "0.7.2"
+rand_pcg = "0.2.0"
+statrs = "0.12.0"
