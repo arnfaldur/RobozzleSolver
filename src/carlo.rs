@@ -8,7 +8,7 @@ use rand::{SeedableRng, Rng};
 use statrs::prec::F64_PREC;
 use std::cmp::Ordering::Equal;
 use rand::seq::SliceRandom;
-use crate::constants::NOP;
+use crate::constants::{NOP, INS_COLOR_MASK};
 
 #[derive(Clone, PartialEq, PartialOrd, Debug)]
 pub struct Leaf {
@@ -85,7 +85,7 @@ impl Leaf {
 
 pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source> {
     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(1337);
-    let instruction_set = puzzle.get_instruction_set();
+    let instruction_set = puzzle.get_instruction_set(INS_COLOR_MASK, true);
     let mut stems: Vec<Leaf> = vec![Leaf { accumulator: 1.0, ..Leaf::default() }];
     let mut bestboi = Leaf { accumulator: MIN, ..Leaf::default() };
     let mut bestsource = Leaf::default();

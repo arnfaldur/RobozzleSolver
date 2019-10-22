@@ -3,9 +3,9 @@ use super::game::*;
 pub(crate) const RE: Tile = Tile(0b00001);
 pub(crate) const GE: Tile = Tile(0b00010);
 pub(crate) const BE: Tile = Tile(0b00100);
-const RS: Tile = Tile(0b01001);
-const GS: Tile = Tile(0b01010);
-const BS: Tile = Tile(0b01100);
+pub(crate) const RS: Tile = Tile(0b01001);
+pub(crate) const GS: Tile = Tile(0b01010);
+pub(crate) const BS: Tile = Tile(0b01100);
 pub(crate) const _N: Tile = Tile(0b10000);
 
 pub(crate) const TILE_STAR_MASK: Tile = Tile(0b00001000);
@@ -25,17 +25,20 @@ pub(crate) const MARK_RED: Instruction = Instruction(0b00001001);
 pub(crate) const MARK_GREEN: Instruction = Instruction(0b00001010);
 pub(crate) const MARK_BLUE: Instruction = Instruction(0b00001100);
 
-pub(crate) const MARK_MASK: Instruction = Instruction(0b00000111);
 pub(crate) const NOP: Instruction = Instruction(0b00010000);
 pub(crate) const HALT: Instruction = Instruction(0b11111111);
-pub(crate) const INS_MASK: Instruction = Instruction(0b00011111);
 
 pub(crate) const GRAY_COND: Instruction = Instruction(0b00000000);
 pub(crate) const RED_COND: Instruction = Instruction(0b00100000);
 pub(crate) const GREEN_COND: Instruction = Instruction(0b01000000);
 pub(crate) const BLUE_COND: Instruction = Instruction(0b10000000);
+
+// masks for isolating instruction parts
+pub(crate) const MARK_MASK: Instruction = Instruction(0b00000111);
+pub(crate) const INS_MASK: Instruction = Instruction(0b00011111);
 pub(crate) const INS_COLOR_MASK: Instruction = Instruction(0b11100000);
 
+// iterable lists of constants
 const INSTRUCTIONS: [Instruction; 11] = [
     FORWARD,
     LEFT,
@@ -67,12 +70,23 @@ pub(crate) const MARKS: [Instruction; 3] = [
     MARK_BLUE,
 ];
 
+// constants for backtracking
 pub(crate) const F1_MARKER: Instruction = Instruction(3 | NOP.0);
 pub(crate) const F2_MARKER: Instruction = Instruction(4 | NOP.0);
 pub(crate) const F3_MARKER: Instruction = Instruction(5 | NOP.0);
 pub(crate) const F4_MARKER: Instruction = Instruction(6 | NOP.0);
 pub(crate) const F5_MARKER: Instruction = Instruction(7 | NOP.0);
 
+pub(crate) const RED_PROBE: Instruction = Instruction(NOP.0 | RED_COND.0);
+pub(crate) const GREEN_PROBE: Instruction = Instruction(NOP.0 | GREEN_COND.0);
+pub(crate) const BLUE_PROBE: Instruction = Instruction(NOP.0 | BLUE_COND.0);
+pub(crate) const PROBES: [Instruction; 3] = [
+    RED_PROBE,
+    GREEN_PROBE,
+    BLUE_PROBE,
+];
+
+// constant combinations for brevity
 pub(crate) const RED_FORWARD: Instruction = Instruction(FORWARD.0 | RED_COND.0);
 pub(crate) const RED_LEFT: Instruction = Instruction(LEFT.0 | RED_COND.0);
 pub(crate) const RED_RIGHT: Instruction = Instruction(RIGHT.0 | RED_COND.0);
@@ -222,7 +236,7 @@ pub(crate) const PUZZLE_42: Puzzle = Puzzle {
     marks: [false; 3],
     red: false,
     green: false,
-    blue: false,
+    blue: true,
 };
 pub(crate) const PUZZLE_42_SOLUTION: Source = Source([
     [

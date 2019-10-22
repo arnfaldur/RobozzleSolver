@@ -1,8 +1,7 @@
 use crate::game::{Source, Puzzle};
 use crate::constants::*;
 use std::fmt::{Display, Formatter, Error};
-use std::hash::Hash;
-use crate::game::Direction::Right;
+use std::collections::HashSet;
 
 const BACKTRACK_STACK_SIZE: usize = 2200; // 44 *
 
@@ -27,71 +26,136 @@ impl Stack {
 }
 
 pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
+
+    let mut tested = HashSet::new();
+
     let mut stack: Stack = Stack { pointer: 0, data: [NOGRAM; BACKTRACK_STACK_SIZE] };
     stack.push(puzzle.empty_source());
-    let mut boi: u64 = 0;
+    let mut considered: u64 = 0;
+    let mut analyzed: u64 = 0;
     let mut rejects: u64 = 0;
+
+    let mut duplicates: u64 = 0;
+
     while !stack.empty() {
-        boi += 1;
+        considered += 1;
+        analyzed += 1;
+
         let top = stack.pop();
-//        if reject(puzzle, &top) {
-//            rejects += 1;
-//            continue;
-//        }
+        if tested.contains(&top) {
+            duplicates += 1;
+            continue;
+        }
+        tested.insert(top);
 
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
         let mut branched = false;
+        let mut probed = false;
+        let mut loosened = [[false; 10]; 5];
+//        let mut loosened = false;
         while state.running() {
+            // test if program takes pointless turns
             if state.stack.len() > 1
                 && state.stack[0].get_condition() == state.stack[1].get_condition()
                 && ((state.stack[0].get_instruction() == LEFT && state.stack[1].get_instruction() == RIGHT)
                 || (state.stack[0].get_instruction() == RIGHT && state.stack[1].get_instruction() == LEFT)) {
-                let mut new_rejects = puzzle.get_instruction_set().len();
-                rejects += 1;
-                break;
-            }
-            if state.stack.top() == NOP && !branched {
-                let i = state.stack_frame().source_index();
-                for j in 0..puzzle.functions[i] {
-                    if top[i][j] == HALT { break; }
-                    if top[i][j] == NOP {
-                        branched = true;
-                        for instruction in puzzle.get_instruction_set().iter().rev() {
-                            let mut temp = top.clone();
-                            temp[i][j] = *instruction;
-                            stack.push(temp.to_owned());
-                        }
-                        break;
+                let mut new_rejects: u64 = 1;
+                for method in top.0.iter() {
+                    for instruction in method {
+                        if *instruction == HALT { break; }
+                        if *instruction == NOP { new_rejects *= (puzzle.get_instruction_set(INS_COLOR_MASK, true).len() - 1) as u64; }
                     }
                 }
+                rejects += new_rejects;
+                analyzed -= 1;
+                break;
+            }
+            let stack_top = state.stack.top().clone();
+
+            if stack_top == NOP {
+                if !branched {
+                    let i = state.stack_frame().source_index();
+                    for j in 0..puzzle.functions[i] {
+                        if top[i][j] == HALT { break; }
+                        if top[i][j] == NOP {
+                            branched = true;
+                            for instruction in
+                                [HALT].iter().chain(
+                                    puzzle.get_instruction_set(
+                                        state.current_tile().to_condition(),
+                                        false).iter()
+                                ).chain(
+                                    state.current_tile().get_probes(
+                                        puzzle.get_color_mask()).iter()
+                                ).rev() {
+                                let mut temp = top.clone();
+                                temp[i][j] = *instruction;
+                                stack.push(temp.to_owned());
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                }
+            } else if stack_top.is_probe() {
+                if !probed && state.current_tile().executes(stack_top) {
+                    let i = state.stack_frame().source_index();
+                    for j in 0..puzzle.functions[i] {
+                        if top[i][j].is_probe() {
+                            probed = true;
+                            for instruction in puzzle.get_instruction_set(
+                                state.current_tile().to_condition(),
+                                false).iter().rev() {
+                                let mut temp = top.clone();
+                                temp[i][j] = *instruction;
+                                stack.push(temp.to_owned());
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                }
+            } else if stack_top != HALT && !state.current_tile().executes(stack_top) {
+//                if !loosened {
+                    let i = state.stack_frame().source_index();
+                    for j in 0..puzzle.functions[i] {
+                        if top[i][j] == stack_top {
+                            if loosened[i][j] { break; }
+                            loosened[i][j] = true;
+//                            loosened = true;
+                            let mut temp = top.clone();
+                            temp[i][j] = stack_top.get_instruction();
+                            stack.push(temp.to_owned());
+                            break;
+                        }
+                    }
+//                }
             }
             state.step(&top, &puzzle);
         }
         if state.stars == 0 {
-            println!("n! boi: {}, rej: {} and {}", boi, rejects, stack);
+            println!("done! considered: {}, analyzed: {}, rejected: {}, duplicates: {} and {}", considered, analyzed, rejects, duplicates, stack);
             return Some(top);
         }
-//        println!("len: {}, ", stack.len());
-        if boi % 100000 == 0 {
-            println!("hey man! boi: {}, rej: {} and {}", boi, rejects, stack);
+        if considered % 1000000 == 0 {
+            println!("considered: {}, analyzed: {}, rejected: {}, duplicates: {} and {}", considered, analyzed, rejects, duplicates, stack);
         }
-//        if boi > 100 { break; }
     }
     return None;
 }
 
-fn reject(puzzle: &Puzzle, program: &Source) -> bool {
-//    let mut used = [true, false, false, false, false, ];
-//    print!("{}\nscore: {}", state, score(&state));
-    let mut moves = false;
-    for met in 0..5 {
-        for ins in program[met].iter() {
-            moves |= ins.get_instruction() == FORWARD;
-        }
-    }
-    return false;
-}
+//fn reject(puzzle: &Puzzle, program: &Source) -> bool {
+////    let mut used = [true, false, false, false, false, ];
+////    print!("{}\nscore: {}", state, score(&state));
+//    let mut moves = false;
+//    for met in 0..5 {
+//        for ins in program[met].iter() {
+//            moves |= ins.get_instruction() == FORWARD;
+//        }
+//    }
+//    return false;
+//}
 
 pub(crate) fn accept(puzzle: &Puzzle, source: &Source) -> bool {
     return puzzle.execute(&source, |state, _| state.stars == 0);
@@ -100,16 +164,16 @@ pub(crate) fn accept(puzzle: &Puzzle, source: &Source) -> bool {
 impl Display for Stack {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
         write!(f, "Stack: ({},\n", self.pointer)?;
-        let mut count = 0;
+//        let mut count = 0;
         for i in (0..self.pointer).rev() {
             write!(f, "{},\n", self.data[i])?;
-            count += 1;
-            if count == 20 {
-                write!(f, "...")?;
-                break;
-            }
+//            count += 1;
+//            if count == 20 {
+//                write!(f, "...")?;
+//                break;
+//            }
         }
         write!(f, ")")
-        //        write!(f, "{}]", self.data[self.data.len() - 1])
+//        write!(f, "{}]", self.data[self.data.len() - 1])
     }
 }
