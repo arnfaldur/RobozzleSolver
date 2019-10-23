@@ -349,6 +349,53 @@ pub(crate) const PUZZLE_656_SOLUTION: Source = Source([
     [HALT; 10],
 ]);
 
+pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
+    map: [
+        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+        [_N, RS, _N, _N, _N, RS, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+        [_N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, RS, _N, _N, _N, _N, ],
+        [_N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, ],
+        [_N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, RS, _N, _N, ],
+        [_N, BS, _N, RS, _N, BS, _N, _N, _N, RS, _N, _N, _N, BS, _N, BS, _N, _N, ],
+        [_N, BS, _N, BS, _N, BS, _N, _N, _N, BS, _N, RS, _N, BS, _N, BS, _N, _N, ],
+        [_N, BS, RS, BS, _N, BS, _N, _N, _N, BS, _N, BS, _N, BS, _N, BS, _N, _N, ],
+        [_N, BS, BS, BS, _N, BS, RS, _N, _N, BS, _N, BS, _N, BS, RS, BS, _N, _N, ],
+        [_N, BS, BS, BS, _N, BS, BS, _N, _N, BS, RS, BS, _N, BS, BS, BS, _N, _N, ],
+        [_N, BS, BS, BS, _N, BS, BS, _N, _N, BS, BS, BS, RS, BS, BS, BS, RS, _N, ],
+        [_N, BS, BS, BS, RS, BS, BS, RS, RS, BS, BS, BS, BS, BS, BS, BS, BS, _N, ],
+        [_N, BE, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, _N, ],
+        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+    ],
+    direction: Direction::Right,
+    x: 1,
+    y: 12,
+    stars: 13,
+    functions: [6, 2, 0, 0, 0],
+    marks: [true; 3],
+    red: true,
+    green: true,
+    blue: true,
+};
+pub(crate) const PUZZLE_1337_SOLUTION: Source = Source([
+    [
+        LEFT,
+        F2,
+        LEFT,
+        FORWARD,
+        F1,
+        HALT, HALT, HALT, HALT, HALT, ],
+    [
+        FORWARD,
+        RED_RIGHT,
+        RED_RIGHT,
+        BLUE_F2,
+        FORWARD,
+        HALT, HALT, HALT, HALT, HALT, ],
+    [HALT; 10],
+    [HALT; 10],
+    [HALT; 10],
+]);
+
 pub(crate) const PUZZLE_TEST_1: Puzzle = Puzzle {
     map: [
         [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],

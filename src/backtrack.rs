@@ -51,8 +51,6 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
 
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
-//        let mut loosened = [[false; 10]; 5];
-//        let mut loosened = false;
         let mut activated = [[false; 10]; 5];
         while state.running() {
             // test if program takes pointless turns

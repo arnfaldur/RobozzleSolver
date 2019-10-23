@@ -428,8 +428,8 @@ impl Display for Source {
             let mut separate = false;
             for instruction in self[i].iter() {
                 if *instruction == HALT {
+                    break;
                     write!(f, "|")?;
-//                    break;
                 } else if *instruction == NOP {
                     write!(f, "_")?;
                 } else if *instruction != NOP {
