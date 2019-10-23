@@ -2,6 +2,7 @@ use crate::game::{Source, Puzzle};
 use crate::constants::*;
 use std::fmt::{Display, Formatter, Error};
 use std::collections::HashSet;
+use crate::carlo::score;
 
 const BACKTRACK_STACK_SIZE: usize = 2200; // 44 *
 
@@ -26,8 +27,7 @@ impl Stack {
 }
 
 pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
-
-    let mut tested = HashSet::new();
+//    let mut tested = HashSet::new();
 
     let mut stack: Stack = Stack { pointer: 0, data: [NOGRAM; BACKTRACK_STACK_SIZE] };
     stack.push(puzzle.empty_source());
@@ -42,18 +42,18 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
         analyzed += 1;
 
         let top = stack.pop();
-        if tested.contains(&top) {
-            duplicates += 1;
-            continue;
-        }
-        tested.insert(top);
+//        if tested.contains(&top) {
+////            println!("guilty: {}", top);
+//            duplicates += 1;
+//            continue;
+//        }
+//        tested.insert(top);
 
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
-        let mut branched = false;
-        let mut probed = false;
-        let mut loosened = [[false; 10]; 5];
+//        let mut loosened = [[false; 10]; 5];
 //        let mut loosened = false;
+        let mut activated = [[false; 10]; 5];
         while state.running() {
             // test if program takes pointless turns
             if state.stack.len() > 1
@@ -72,65 +72,43 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                 break;
             }
             let stack_top = state.stack.top().clone();
-
             if stack_top == NOP {
-                if !branched {
-                    let i = state.stack_frame().source_index();
-                    for j in 0..puzzle.functions[i] {
-                        if top[i][j] == HALT { break; }
-                        if top[i][j] == NOP {
-                            branched = true;
-                            for instruction in
-                                [HALT].iter().chain(
-                                    puzzle.get_instruction_set(
-                                        state.current_tile().to_condition(),
-                                        false).iter()
-                                ).chain(
-                                    state.current_tile().get_probes(
-                                        puzzle.get_color_mask()).iter()
-                                ).rev() {
-                                let mut temp = top.clone();
-                                temp[i][j] = *instruction;
-                                stack.push(temp.to_owned());
-                            }
-                            break;
-                        }
-                    }
-                    break;
-                }
-            } else if stack_top.is_probe() {
-                if !probed && state.current_tile().executes(stack_top) {
-                    let i = state.stack_frame().source_index();
-                    for j in 0..puzzle.functions[i] {
-                        if top[i][j].is_probe() {
-                            probed = true;
-                            for instruction in puzzle.get_instruction_set(
-                                state.current_tile().to_condition(),
-                                false).iter().rev() {
-                                let mut temp = top.clone();
-                                temp[i][j] = *instruction;
-                                stack.push(temp.to_owned());
-                            }
-                            break;
-                        }
-                    }
-                    break;
-                }
-            } else if stack_top != HALT && !state.current_tile().executes(stack_top) {
-//                if !loosened {
-                    let i = state.stack_frame().source_index();
-                    for j in 0..puzzle.functions[i] {
-                        if top[i][j] == stack_top {
-                            if loosened[i][j] { break; }
-                            loosened[i][j] = true;
-//                            loosened = true;
+                let i = state.stack_frame().source_index();
+                for j in 0..puzzle.functions[i] {
+                    if top[i][j] == HALT { break; }
+                    if top[i][j] == NOP {
+                        for instruction in
+                            [HALT].iter().chain(
+                                puzzle.get_instruction_set(
+                                    GRAY_COND,
+                                    true).iter()
+                            ).chain(
+                                state.current_tile().get_probes(
+                                    puzzle.get_color_mask()).iter()
+                            ).rev() {
                             let mut temp = top.clone();
-                            temp[i][j] = stack_top.get_instruction();
+                            temp[i][j] = *instruction;
                             stack.push(temp.to_owned());
-                            break;
                         }
+                        break;
                     }
-//                }
+                }
+                break;
+            } else if stack_top.is_probe() {
+                let i = state.stack_frame().source_index();
+                let j = state.instruction_number(puzzle);
+                if state.current_tile().executes(stack_top) {
+                    for instruction in puzzle.get_instruction_set(
+                        state.current_tile().to_condition(),
+                        false).iter().rev() {
+                        let mut temp = top.clone();
+                        temp[i][j] = *instruction;
+                        stack.push(temp.to_owned());
+                    }
+                    break;
+                } else {
+                    activated[i][j] = true;
+                }
             }
             state.step(&top, &puzzle);
         }
@@ -138,7 +116,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
             println!("done! considered: {}, analyzed: {}, rejected: {}, duplicates: {} and {}", considered, analyzed, rejects, duplicates, stack);
             return Some(top);
         }
-        if considered % 1000000 == 0 {
+        if considered % 100000 == 0 {
             println!("considered: {}, analyzed: {}, rejected: {}, duplicates: {} and {}", considered, analyzed, rejects, duplicates, stack);
         }
     }

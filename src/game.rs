@@ -26,7 +26,7 @@ impl Tile {
     }
     pub(crate) fn to_condition(&self) -> Instruction { Instruction(self.0 << 5) }
     pub(crate) fn get_probes(&self, colors: Instruction) -> Vec<Instruction> {
-        let mask = (colors & Instruction(!self.to_condition().0)).to_probe();
+        let mask = colors.to_probe();
 //        let mut result = PROBES.into_vec();
 //        result.remove_item(*self.to_condition().to_probe());
         return PROBES.iter().filter(|&ins| (*ins & mask) == *ins).cloned().collect();
@@ -238,10 +238,14 @@ impl Puzzle {
         return scoring(&state, self);
     }
     pub(crate) fn get_color_mask(&self) -> Instruction {
-        Instruction(
-            (self.red as u8) * RED_COND.0
-                | (self.green as u8) * GREEN_COND.0
-                | (self.blue as u8) * BLUE_COND.0)
+        if (self.red as u8) + (self.green as u8) + (self.blue as u8) > 1 {
+            Instruction(
+                (self.red as u8) * RED_COND.0
+                    | (self.green as u8) * GREEN_COND.0
+                    | (self.blue as u8) * BLUE_COND.0)
+        } else {
+            GRAY_COND
+        }
     }
 }
 
@@ -303,12 +307,15 @@ impl State {
                     self.stack.push(ins.get_marker());
                     for i in (0..puzzle.functions[ins.source_index()]).rev() {
                         let ins = source.0[ins.source_index()][i];
-                        if ins != HALT {
-                            self.stack.push(ins);
-                        }
+                        // TODO: consider preventing no ops from going on the stack
+                        // currently neccesary to be able to count what instruction is executing
+//                        if ins != HALT {
+                        self.stack.push(ins);
+//                        }
                     }
                 }
                 MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
+//                F1_MARKER | F2_MARKER | F3_MARKER | F4_MARKER | F5_MARKER => self.instruction_pointer = 100,
                 _ => (),
             }
         }
@@ -323,11 +330,13 @@ impl State {
         println!("couldn't find a stack frame");
         return F1;
     }
-    pub(crate) fn instruction_number(&self) -> usize {
+    pub(crate) fn instruction_number(&self, puzzle: &Puzzle) -> usize {
         let mut result = 0;
         for i in (0..self.stack.pointer).rev() {
             match self.stack.data[i] {
-                F1_MARKER | F2_MARKER | F3_MARKER | F4_MARKER | F5_MARKER => { return result; }
+                F1_MARKER | F2_MARKER | F3_MARKER | F4_MARKER | F5_MARKER => {
+                    return puzzle.functions[self.stack_frame().source_index()] - result;
+                }
                 _ => result += 1,
             }
         }
