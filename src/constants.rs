@@ -21,12 +21,13 @@ pub(crate) const F2: Instruction = Instruction(4);
 pub(crate) const F3: Instruction = Instruction(5);
 pub(crate) const F4: Instruction = Instruction(6);
 pub(crate) const F5: Instruction = Instruction(7);
+pub(crate) const MARK_GRAY: Instruction = Instruction(0b00001000); // Isn't actually in the game
 pub(crate) const MARK_RED: Instruction = Instruction(0b00001001);
 pub(crate) const MARK_GREEN: Instruction = Instruction(0b00001010);
 pub(crate) const MARK_BLUE: Instruction = Instruction(0b00001100);
 
 pub(crate) const NOP: Instruction = Instruction(0b00010000);
-pub(crate) const HALT: Instruction = Instruction(0b11111111);
+pub(crate) const HALT: Instruction = Instruction(0b11110111);
 
 pub(crate) const GRAY_COND: Instruction = Instruction(0b00000000);
 pub(crate) const RED_COND: Instruction = Instruction(0b00100000);
@@ -39,7 +40,7 @@ pub(crate) const INS_MASK: Instruction = Instruction(0b00011111);
 pub(crate) const INS_COLOR_MASK: Instruction = Instruction(0b11100000);
 
 // iterable lists of constants
-const INSTRUCTIONS: [Instruction; 11] = [
+pub(crate) const INSTRUCTIONS: [Instruction; 11] = [
     FORWARD,
     LEFT,
     RIGHT,
@@ -352,23 +353,23 @@ pub(crate) const PUZZLE_656_SOLUTION: Source = Source([
 pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
     map: [
         [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-        [_N, RS, _N, _N, _N, RS, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-        [_N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, RS, _N, _N, _N, _N, ],
-        [_N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, ],
-        [_N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, RS, _N, _N, ],
-        [_N, BS, _N, RS, _N, BS, _N, _N, _N, RS, _N, _N, _N, BS, _N, BS, _N, _N, ],
-        [_N, BS, _N, BS, _N, BS, _N, _N, _N, BS, _N, RS, _N, BS, _N, BS, _N, _N, ],
-        [_N, BS, RS, BS, _N, BS, _N, _N, _N, BS, _N, BS, _N, BS, _N, BS, _N, _N, ],
-        [_N, BS, BS, BS, _N, BS, RS, _N, _N, BS, _N, BS, _N, BS, RS, BS, _N, _N, ],
-        [_N, BS, BS, BS, _N, BS, BS, _N, _N, BS, RS, BS, _N, BS, BS, BS, _N, _N, ],
-        [_N, BS, BS, BS, _N, BS, BS, _N, _N, BS, BS, BS, RS, BS, BS, BS, RS, _N, ],
-        [_N, BS, BS, BS, RS, BS, BS, RS, RS, BS, BS, BS, BS, BS, BS, BS, BS, _N, ],
-        [_N, BE, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, _N, ],
+        [_N, _N, _N, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, _N, _N, _N, ],
+        [_N, _N, _N, BE, RE, RE, RE, RE, RE, RE, RE, RE, RE, RE, BS, _N, _N, _N, ],
+        [_N, _N, _N, BE, RE, GE, GE, GE, GE, GE, GE, GE, GE, RE, BE, _N, _N, _N, ],
+        [_N, _N, _N, _N, RE, GE, BE, BS, BE, RE, BS, BE, GE, RE, _N, _N, _N, _N, ],
+        [_N, _N, _N, GE, RE, GE, BE, BE, GE, RE, BE, BE, GE, RE, GE, _N, _N, _N, ],
+        [_N, _N, _N, GE, RE, GE, _N, BE, RS, GS, BE, _N, GE, RE, GE, _N, _N, _N, ],
+        [_N, _N, _N, _N, RE, GE, _N, GE, BE, GE, GE, _N, GE, RE, _N, _N, _N, _N, ],
+        [_N, _N, _N, _N, RE, GE, _N, _N, _N, _N, _N, _N, GE, RE, _N, _N, _N, _N, ],
+        [_N, _N, _N, _N, RE, GE, _N, _N, _N, _N, _N, _N, GE, RE, _N, _N, _N, _N, ],
+        [_N, _N, _N, _N, RE, GE, GE, GE, GE, GE, GE, GE, GE, RE, _N, _N, _N, _N, ],
+        [_N, _N, _N, _N, RE, RE, RE, RE, RE, RE, RE, RE, RE, RE, _N, _N, _N, _N, ],
+        [_N, _N, _N, _N, BS, BS, BS, BS, BE, BE, BS, BS, BS, BS, _N, _N, _N, _N, ],
         [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
     ],
     direction: Direction::Right,
-    x: 1,
-    y: 12,
+    x: 7,
+    y: 6,
     stars: 13,
     functions: [6, 2, 0, 0, 0],
     marks: [true; 3],

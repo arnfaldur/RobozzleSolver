@@ -16,7 +16,7 @@ mod backtrack;
 
 fn main() {
     let now = Instant::now();
-    let maybe = backtrack(&PUZZLE_656);
+    let maybe = backtrack(&PUZZLE_42);
     if let Some(solution) = maybe {
         println!("solved! {}", solution);
     }

@@ -11,6 +11,25 @@ mod tests {
     extern crate test;
 
     #[test]
+    fn test_order_invariance() {
+        for cond in [GRAY_COND, RED_COND, GREEN_COND, BLUE_COND].iter() {
+            assert_eq!((FORWARD | *cond).is_order_invariant(), false);
+            assert_eq!((LEFT | *cond).is_order_invariant(),  true);
+            assert_eq!((RIGHT | *cond).is_order_invariant(), true);
+            assert_eq!((F1 | *cond).is_order_invariant(), false);
+            assert_eq!((F2 | *cond).is_order_invariant(), false);
+            assert_eq!((F3 | *cond).is_order_invariant(), false);
+            assert_eq!((F4 | *cond).is_order_invariant(), false);
+            assert_eq!((F5 | *cond).is_order_invariant(), false);
+            assert_eq!((MARK_RED | *cond).is_order_invariant(),   true);
+            assert_eq!((MARK_GREEN | *cond).is_order_invariant(), true);
+            assert_eq!((MARK_BLUE | *cond).is_order_invariant(),  true);
+            assert_eq!((HALT | *cond).is_order_invariant(), false);
+            assert_eq!((NOP | *cond).is_order_invariant(), false);
+        }
+    }
+
+    #[test]
     fn test_puzzle_42() {
         assert_eq!(true, backtrack::accept(&PUZZLE_42, &PUZZLE_42_SOLUTION));
     }
@@ -25,7 +44,7 @@ mod tests {
             F2,
             F3,
             F4,
-        ], PUZZLE_42.get_instruction_set(INS_COLOR_MASK, true));
+        ], PUZZLE_42.get_instruction_set(GRAY_COND, true));
     }
 
     #[test]
