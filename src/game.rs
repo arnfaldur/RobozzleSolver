@@ -41,7 +41,7 @@ type Map = [[Tile; 18]; 14];
 pub struct Instruction(pub u8);
 
 impl Instruction {
-    fn color_condition(self) -> Instruction { Instruction(self.0 >> 5) }
+    pub(crate) fn color_condition(self) -> Instruction { Instruction(self.0 >> 5) }
     pub(crate) fn source_index(self) -> usize { (self.get_instruction().0 - F1.0) as usize }
     pub(crate) fn get_condition(self) -> Instruction { self & INS_COLOR_MASK }
     pub(crate) fn get_instruction(self) -> Instruction { self & INS_MASK }
@@ -49,7 +49,7 @@ impl Instruction {
     pub(crate) fn get_mark_color(self) -> Instruction { self & MARK_MASK }
     fn get_marker(self) -> Instruction { self.get_instruction() | NOP }
     fn from_marker(self) -> Instruction { Instruction(self.0 & !NOP.0) }
-    fn is_color(self, condition: Instruction) -> bool { self.get_condition() == condition }
+    pub(crate) fn is_color(self, condition: Instruction) -> bool { self.get_condition() == condition }
     fn has_color(self, condition: Instruction) -> bool { self & condition == condition }
     //    fn is_gray(self) -> bool { self & INS_COLOR_MASK == GRAY_COND }
 //    fn is_red(self) -> bool { self & INS_COLOR_MASK == RED_COND }
@@ -59,6 +59,7 @@ impl Instruction {
     pub(crate) fn is_function(self) -> bool { self.source_index() < 6 }
     pub(crate) fn is_instruction(self, instruction: Instruction) -> bool { self.get_instruction() == instruction }
     pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.get_instruction() == LEFT || self.get_instruction() == RIGHT }
+    pub(crate) fn is_turn(self) -> bool { self.is_instruction(LEFT) || self.is_instruction(RIGHT) }
     fn to_probe(self) -> Instruction { self.get_condition() | NOP }
     pub(crate) fn is_probe(self) -> bool { self.get_condition().0 > 0 && self.get_instruction() == NOP }
 }
@@ -118,6 +119,7 @@ const STACK_SIZE: usize = 1 << 10;
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 4;
 
+#[derive(Copy, Clone)]
 pub struct Stack {
     pointer: usize,
     pub data: [Instruction; STACK_SIZE],
@@ -142,7 +144,6 @@ impl Eq for Stack {}
 
 impl Hash for Stack {
     fn hash<H: Hasher>(&self, state: &mut H) {
-//        println!("ha:{}", self);
         let mut remaining = STACK_MATCH;
         let mut i = self.pointer;
         while remaining > 0 && i > 0 {
@@ -152,12 +153,6 @@ impl Hash for Stack {
                 remaining -= 1;
             }
         }
-//        let start = max(0, self.pointer as isize - STACK_MATCH as isize) as usize;
-//        for i in start..self.pointer {
-//            if self.data[i] != NOP && self.data[i] != HALT {
-//                self.data[i].hash(state);
-//            }
-//        }
     }
 }
 
@@ -249,7 +244,7 @@ impl Puzzle {
                 }
             }
             for i in 0..MARKS.len() {
-                if self.marks[i] {
+                if self.marks[i] && MARKS[i].get_mark_color() != condition.color_condition() {
                     result.push(MARKS[i] | condition);
                 }
             }
@@ -275,12 +270,12 @@ impl Puzzle {
             ..State::default()
         }
     }
-    pub(crate) fn execute<F, R>(&self, source: &Source, scoring: F) -> R where F: Fn(&State, &Puzzle) -> R {
+    pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, scoring: F) -> R where F: Fn(&State, &Puzzle) -> R {
         let mut state = self.initial_state();
         state.stack.push(F1);
         while state.running() {
             state.step(&source, self);
-//            println!("{}", state);
+            if show { println!("{}", state); }
         }
         return scoring(&state, self);
     }
@@ -296,7 +291,7 @@ impl Puzzle {
     }
 }
 
-#[derive(Eq, PartialEq)]
+#[derive(Eq, PartialEq, Copy, Clone)]
 pub struct State {
     pub(crate) steps: usize,
     pub(crate) stars: usize,
@@ -346,22 +341,6 @@ impl State {
         if self.current_tile().executes(ins) {
             match ins.get_instruction() {
                 FORWARD => {
-//                    let up = (-1 as isize) as usize * ((((self.direction as usize) & (Direction::Up as usize)) != 0) as usize);
-//                    let down = 1 * ((((self.direction as usize) & (Direction::Down as usize)) != 0) as usize);
-//                    self.y += up + down;
-//                    let left = (-1 as isize) as usize * ((((self.direction as usize) & (Direction::Left as usize)) != 0) as usize);
-//                    let right = 1 * ((((self.direction as usize) & (Direction::Right as usize)) != 0) as usize);
-//                    self.x += left + right;
-//                    self.y += match &self.direction {
-//                        Direction::Up => !1,
-//                        Direction::Down => 1,
-//                        _ => 0,
-//                    };
-//                    self.x += match &self.direction {
-//                        Direction::Left => (-1 as isize) as usize,
-//                        Direction::Right => 1,
-//                        _ => 0,
-//                    };
                     match &self.direction {
                         Direction::Up => self.y -= 1,
                         Direction::Left => self.x -= 1,
@@ -425,6 +404,10 @@ impl State {
         self.hash(&mut state);
         return state.finish();
     }
+}
+
+pub fn won(state: &State, _: &Puzzle) -> bool {
+    return state.stars == 0;
 }
 
 fn make_puzzle(

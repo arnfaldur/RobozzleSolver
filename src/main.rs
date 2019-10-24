@@ -6,6 +6,7 @@ use constants::*;
 use carlo::carlo;
 use backtrack::backtrack;
 use crate::constants::*;
+use crate::game::{State, Puzzle};
 
 mod constants;
 mod game;
@@ -16,14 +17,17 @@ mod backtrack;
 
 fn main() {
     let now = Instant::now();
-    let maybe = backtrack(&PUZZLE_42);
-    if let Some(solution) = maybe {
+    if let Some(solution) = backtrack(&PUZZLE_536) {
         println!("solved! {}", solution);
+    } else {
+        println!("I couldn't find a solution :(");
     }
+//    PUZZLE_1337.execute(&PUZZLE_1337_SOLUTION, won);
 //    carlo(&PUZZLE_42, 1 << 14, 1 << 11);
 //    PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, |state, _| state.stars == 0);
     println!("The solver took {} seconds.", now.elapsed().as_secs_f64());
 }
+
 
 // Instructions
 // 0b 00 00 00 00

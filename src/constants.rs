@@ -21,7 +21,8 @@ pub(crate) const F2: Instruction = Instruction(4);
 pub(crate) const F3: Instruction = Instruction(5);
 pub(crate) const F4: Instruction = Instruction(6);
 pub(crate) const F5: Instruction = Instruction(7);
-pub(crate) const MARK_GRAY: Instruction = Instruction(0b00001000); // Isn't actually in the game
+pub(crate) const MARK_GRAY: Instruction = Instruction(0b00001000);
+// Isn't actually in the game
 pub(crate) const MARK_RED: Instruction = Instruction(0b00001001);
 pub(crate) const MARK_GREEN: Instruction = Instruction(0b00001010);
 pub(crate) const MARK_BLUE: Instruction = Instruction(0b00001100);
@@ -69,6 +70,12 @@ pub(crate) const MARKS: [Instruction; 3] = [
     MARK_RED,
     MARK_GREEN,
     MARK_BLUE,
+];
+pub(crate) const CONDITIONS: [Instruction; 4] = [
+    GRAY_COND,
+    RED_COND,
+    GREEN_COND,
+    BLUE_COND
 ];
 
 // constants for backtracking
@@ -368,8 +375,8 @@ pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
         [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
     ],
     direction: Direction::Right,
-    x: 7,
-    y: 6,
+    x: 8,
+    y: 7,
     stars: 13,
     functions: [6, 2, 0, 0, 0],
     marks: [true; 3],
@@ -379,19 +386,17 @@ pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
 };
 pub(crate) const PUZZLE_1337_SOLUTION: Source = Source([
     [
-        LEFT,
         F2,
-        LEFT,
+        BLUE_MARK_RED,
+        GREEN_MARK_BLUE,
+        RED_MARK_GREEN,
         FORWARD,
         F1,
-        HALT, HALT, HALT, HALT, HALT, ],
+        HALT, HALT, HALT, HALT, ],
     [
-        FORWARD,
-        RED_RIGHT,
-        RED_RIGHT,
-        BLUE_F2,
-        FORWARD,
-        HALT, HALT, HALT, HALT, HALT, ],
+        GREEN_RIGHT,
+        BLUE_LEFT,
+        HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT, ],
     [HALT; 10],
     [HALT; 10],
     [HALT; 10],

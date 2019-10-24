@@ -1,4 +1,3 @@
-
 use std::fmt::{Display, Error, Formatter};
 use std::f64::{MIN, MIN_POSITIVE};
 
@@ -8,7 +7,7 @@ use rand::{SeedableRng, Rng};
 use statrs::prec::F64_PREC;
 use std::cmp::Ordering::Equal;
 use rand::seq::SliceRandom;
-use crate::constants::{NOP, INS_COLOR_MASK};
+use crate::constants::{NOP, INS_COLOR_MASK, _N};
 
 #[derive(Clone, PartialEq, PartialOrd, Debug)]
 pub struct Leaf {
@@ -106,7 +105,7 @@ pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source>
             for _iteration in 0..(bonus + rng.gen_range(-0.5, 0.5) + max_iters as f64 * stem.chance()).round() as usize {
                 _counter += 1;
                 let fullgram = random_program(puzzle, &stem.source, &instruction_set, &mut rng);
-                let newscore = puzzle.execute(&fullgram, score);
+                let newscore = puzzle.execute(&fullgram, false, score);
                 if newscore > bestboi.accumulator {
                     bestsource = stem.clone();
                     bestboi = Leaf { source: fullgram, samples: 1.0, accumulator: newscore, ..Leaf::default() };
@@ -180,15 +179,35 @@ pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Inst
     return fullgram;
 }
 
-pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
-    let mut touched = 0.0;
-    let mut stars = 0.0;
+//pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
+//    let mut touched = 0.0;
+//    let mut stars = 0.0;
+//    for y in 1..13 {
+//        for x in 1..17 {
+//            touched += state.map[y][x].is_touched() as i32 as f64;
+//            stars += state.map[y][x].has_star() as i32 as f64;
+//        }
+//    }
+//    let tiles = 12.0 * 16.0 + 1.0;
+//    return ((puzzle.stars as f64 - stars) + (touched / tiles) + ((MAX_STEPS - state.steps) as f64) / MAX_STEPS as f64) / puzzle.stars as f64;
+//}
+
+pub fn score_cmp(state: &State, puzzle: &Puzzle) -> usize {
+    let mut touched = 0;
+    let mut stars = 0;
+    let mut tiles = 1;
     for y in 1..13 {
         for x in 1..17 {
-            touched += state.map[y][x].is_touched() as i32 as f64;
-            stars += state.map[y][x].has_star() as i32 as f64;
+            tiles += (state.map[y][x] != _N) as usize;
+            touched += state.map[y][x].is_touched() as usize;
+            stars += state.map[y][x].has_star() as usize;
         }
     }
-    let tiles = 12.0 * 16.0 + 1.0;
-    return ((puzzle.stars as f64 - stars) + (touched / tiles) + ((MAX_STEPS - state.steps) as f64) / MAX_STEPS as f64) / puzzle.stars as f64;
+    return (puzzle.stars - stars) * tiles * (MAX_STEPS + 1)
+        + touched * (MAX_STEPS + 1)
+        + MAX_STEPS - state.steps;
+}
+
+pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
+    return score_cmp(state, puzzle) as f64;
 }
