@@ -128,11 +128,9 @@ pub struct Stack {
 impl PartialEq for Stack {
     fn eq(&self, other: &Self) -> bool {
         if self.pointer <= STACK_MATCH && self.pointer == other.pointer {
-            println!("a:{}\na:{}", self, other);
             return self.data.get(0..self.pointer) == other.data.get(0..other.pointer);
         } else if self.pointer > STACK_MATCH && other.pointer > STACK_MATCH {
             let start = self.pointer - STACK_MATCH;
-            println!("A:{}\nB:{}", self, other);
             return self.data.get(start..self.pointer) == other.data.get(start..other.pointer);
         } else {
             return false;
@@ -270,7 +268,7 @@ impl Puzzle {
             ..State::default()
         }
     }
-    pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, scoring: F) -> R where F: Fn(&State, &Puzzle) -> R {
+    pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R where F: FnMut(&State, &Puzzle) -> R {
         let mut state = self.initial_state();
         state.stack.push(F1);
         while state.running() {
@@ -410,6 +408,30 @@ pub fn won(state: &State, _: &Puzzle) -> bool {
     return state.stars == 0;
 }
 
+pub fn genboi(ta: Tile, tb: Tile, tc: Tile) -> Puzzle {
+    return make_puzzle(
+        [
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, tc, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, tc, tb, tc, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, tc, tb, ta, tb, tc, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, tc, tb, tc, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, tc, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+        ],
+        Direction::Right,
+        3, 3, [3, 0, 0, 0, 0, ], [true, true, true, ],
+    );
+}
+
+
 fn make_puzzle(
     map: Map,
     direction: Direction,
@@ -426,8 +448,11 @@ fn make_puzzle(
             blue |= map[y][x].is_blue();
         }
     }
-    let stars: usize = map.iter().map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>()).sum();
-    return Puzzle { map, direction, x, y, stars, functions, marks, red, green, blue };
+    let mut map_out = map.clone();
+    map_out[y][x].clear_star();
+    map_out[y][x].touch();
+    let stars: usize = map_out.iter().map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>()).sum();
+    return Puzzle { map: map_out, direction, x, y, stars, functions, marks, red, green, blue };
 }
 
 fn verify_puzzle(puzzle: &Puzzle) -> bool {

@@ -6,7 +6,11 @@ use constants::*;
 use carlo::carlo;
 use backtrack::backtrack;
 use crate::constants::*;
-use crate::game::{State, Puzzle};
+use crate::game::{State, Puzzle, genboi, Instruction, Tile, won, Source};
+use std::collections::hash_map::DefaultHasher;
+use std::hash::Hash;
+use std::collections::HashMap;
+use crate::backtrack::deny;
 
 mod constants;
 mod game;
@@ -17,17 +21,58 @@ mod backtrack;
 
 fn main() {
     let now = Instant::now();
-    if let Some(solution) = backtrack(&PUZZLE_536) {
-        println!("solved! {}", solution);
-    } else {
-        println!("I couldn't find a solution :(");
+    let template_puzzle = genboi(_N, _N, _N);
+    let tmp = genboi(RE, GS, BS)
+        .get_instruction_set(INS_COLOR_MASK, true);
+    let instructions = [HALT].iter().chain(tmp.iter()
+        .filter(|&ins| !ins.is_function()));
+    let tiles = [RS, GS, BS];
+
+    let mut mipmap = HashMap::new();
+    let mut counter = 0;
+    for &a in instructions.clone() {
+        for &b in instructions.clone() {
+            if a == HALT && b != HALT {
+                break;
+            }
+            for &c in instructions.clone() {
+                if b == HALT && c != HALT {
+                    break;
+                }
+                let prog = Source([[a, b, c, HALT, HALT, HALT, HALT, HALT, HALT, HALT], [HALT; 10], [HALT; 10], [HALT; 10], [HALT; 10]]);
+                if deny(&template_puzzle, &prog) { break; }
+                let mut reslist = vec![];
+                for &ta in tiles.iter() {
+                    for &tb in tiles.iter() {
+                        for &tc in tiles.iter() {
+                            let puz = genboi(ta, tb, tc);
+                            let mut state = puz.initial_state();
+                            counter += 1;
+                            puz.execute(&prog, false, |state, puzzle| reslist.push(state.to_owned()));
+                        }
+                    }
+                }
+                if mipmap.contains_key(&reslist) {
+                    println!("the program {} is already represented by {}", prog, mipmap[&reslist]);
+                } else {
+                    mipmap.insert(reslist, prog);
+                    println!("the program {} is the first of its kind", prog);
+                }
+//                println!("{},", reslist);
+            }
+        }
     }
+    println!("counter: {}", counter);
+//    if let Some(solution) = backtrack(&PUZZLE_42) {
+//        println!("solved! {}", solution);
+//    } else {
+//        println!("I couldn't find a solution :(");
+//    }
 //    PUZZLE_1337.execute(&PUZZLE_1337_SOLUTION, won);
 //    carlo(&PUZZLE_42, 1 << 14, 1 << 11);
 //    PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, |state, _| state.stars == 0);
     println!("The solver took {} seconds.", now.elapsed().as_secs_f64());
 }
-
 
 // Instructions
 // 0b 00 00 00 00

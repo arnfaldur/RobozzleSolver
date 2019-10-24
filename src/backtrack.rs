@@ -66,7 +66,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
     while !stack.empty() {
         considered += 1;
 
-        let top = stack.pop();
+        let mut top = stack.pop();
         if deny(puzzle, &top) {
             denies += 1;
             continue;
@@ -89,11 +89,16 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                 break;
             }
             let stack_top = state.stack.top().clone();
-            if stack_top == NOP && !branched {
+            if stack_top == NOP {
                 let i = state.stack_frame().source_index();
                 let j = state.instruction_number(puzzle);
                 if top[i][j] == NOP {
-                    branched = true;
+//                    branched = true;
+                    let mut temp = top.clone();
+                    for k in j..puzzle.functions[i] {
+                        temp[i][k] = HALT;
+                    }
+                    stack.push(temp);
                     stack.add_ordeal(puzzle, &top, i, j,
                                      puzzle.get_instruction_set(GRAY_COND, true).iter()
                                          .filter(|&ins| {
@@ -101,8 +106,8 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                                          }).chain(
                                          state.current_tile().get_probes(puzzle.get_color_mask()).iter()
                                      ), &state);
+                    executed -= 1;
                 }
-                executed -= 1;
                 break;
             } else if stack_top.is_probe() {
                 let i = state.stack_frame().source_index();
@@ -120,7 +125,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
             println!("done! considered: {}, executed: {}, denies: {}, duplicates: {} and {}", considered, executed, denies, duplicates, stack);
             return Some(top);
         }
-        if considered % 10000000 == 0 {
+        if considered % 1000000 == 0 {
             println!("considered: {}, executed: {}, denies: {}, duplicates: {} and {}\n then {}", considered, executed, denies, duplicates, stack, state);
         }
     }
@@ -131,7 +136,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
 //    return None;
 }
 
-fn deny(puzzle: &Puzzle, program: &Source) -> bool {
+pub(crate) fn deny(puzzle: &Puzzle, program: &Source) -> bool {
     let mut denied = false;
     let mut conditioned = [HALT, NOP, NOP, NOP, NOP, ];
     let mut invoked = [1, 0, 0, 0, 0];
@@ -153,10 +158,8 @@ fn deny(puzzle: &Puzzle, program: &Source) -> bool {
             let a = program.0[method][i - 1];
             let b = program.0[method][i];
             denied |= banned_pair(a, b);
-            if a.is_color(GRAY_COND) && a.is_mark() {
-                if !b.is_color(GRAY_COND) {
-                    return true;
-                }
+            if a.is_color(GRAY_COND) && a.is_mark() && !b.is_color(GRAY_COND) {
+                return true;
             }
             if a.is_function() && invoked[a.source_index()] == 1 && conditioned[a.source_index()] == GRAY_COND {
                 denied |= banned_pair(program.0[a.source_index()][puzzle.functions[a.source_index()] - 1], b);
@@ -166,7 +169,6 @@ fn deny(puzzle: &Puzzle, program: &Source) -> bool {
             }
         }
         if conditioned[method] != NOP && conditioned[method] != HALT {
-//            denied |= !program.0[method][0].is_color(GRAY_COND);
             for i in 0..puzzle.functions[method] {
                 denied |= !program.0[method][i].is_color(GRAY_COND);
                 if !program.0[method][i].is_turn() {
@@ -181,6 +183,9 @@ fn deny(puzzle: &Puzzle, program: &Source) -> bool {
             if a.get_condition() == b.get_condition() && a.get_condition() == c.get_condition() {
                 denied |= a.is_turn() && a == b && a == c;
             }
+            if a.is_color(GRAY_COND) as usize + b.is_color(GRAY_COND) as usize + b.is_color(GRAY_COND) as usize == 2 {
+
+            }
         }
     }
     return denied;
@@ -190,11 +195,15 @@ fn banned_pair(a: Instruction, b: Instruction) -> bool {
     let mut banned = false;
     if a.get_condition() == b.get_condition() {
         banned |= a.is_order_invariant() && b.is_order_invariant() && a > b;
-        banned |= a.is_instruction(LEFT) && b.is_instruction(RIGHT);
-        banned |= a.is_mark() && b.is_mark();
+        banned |= a.is_turn() && b.is_instruction(RIGHT);
+        banned |= a.is_mark();
     }
     if a.is_turn() && b.is_turn() {
         banned |= a > b; // only let a series of turns have one color order
+    }
+    if a.is_mark() && b.is_mark() {
+        banned |= b.is_color(GRAY_COND);
+        banned |= a.get_instruction() == b.get_instruction() && a > b;
     }
     return banned;
 }
