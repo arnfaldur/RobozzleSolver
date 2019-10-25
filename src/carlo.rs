@@ -143,7 +143,7 @@ pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source>
     return None;
 }
 
-pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Instruction>, leaf: &Leaf) {
+pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins>, leaf: &Leaf) {
     tree.remove_item(leaf);
     let mut branch_factor = 0.0;
     for i in 0..puzzle.functions.len() {
@@ -168,7 +168,7 @@ pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins
     }
 }
 
-pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Instruction>, mut rng: impl Rng) -> Source {
+pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>, mut rng: impl Rng) -> Source {
     let mut fullgram = *base;
     for i in 0..puzzle.functions.len() {
         for j in 0..puzzle.functions[i] {

@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
     use test::Bencher;
-    use crate::game::{Instruction, Source};
+    use crate::game::{Ins, Source};
     use crate::constants::*;
     use crate::carlo;
     use crate::backtrack;

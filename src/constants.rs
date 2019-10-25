@@ -1,4 +1,5 @@
 use super::game::*;
+use std::collections::HashSet;
 
 pub(crate) const RE: Tile = Tile(0b00001);
 pub(crate) const GE: Tile = Tile(0b00010);
@@ -13,35 +14,35 @@ pub(crate) const TILE_COLOR_MASK: Tile = Tile(0b00010111);
 
 pub(crate) const TILE_TOUCHED: Tile = Tile(0b00100000);
 
-pub(crate) const FORWARD: Instruction = Instruction(0);
-pub(crate) const LEFT: Instruction = Instruction(1);
-pub(crate) const RIGHT: Instruction = Instruction(2);
-pub(crate) const F1: Instruction = Instruction(3);
-pub(crate) const F2: Instruction = Instruction(4);
-pub(crate) const F3: Instruction = Instruction(5);
-pub(crate) const F4: Instruction = Instruction(6);
-pub(crate) const F5: Instruction = Instruction(7);
-pub(crate) const MARK_GRAY: Instruction = Instruction(0b00001000);
-// Isn't actually in the game
-pub(crate) const MARK_RED: Instruction = Instruction(0b00001001);
-pub(crate) const MARK_GREEN: Instruction = Instruction(0b00001010);
-pub(crate) const MARK_BLUE: Instruction = Instruction(0b00001100);
+pub(crate) const FORWARD: Ins = Ins(0);
+pub(crate) const LEFT: Ins = Ins(1);
+pub(crate) const RIGHT: Ins = Ins(2);
+pub(crate) const F1: Ins = Ins(3);
+pub(crate) const F2: Ins = Ins(4);
+pub(crate) const F3: Ins = Ins(5);
+pub(crate) const F4: Ins = Ins(6);
+pub(crate) const F5: Ins = Ins(7);
+// This isn't actually in the game
+pub(crate) const MARK_GRAY: Ins = Ins(0b00001000);
+pub(crate) const MARK_RED: Ins = Ins(0b00001001);
+pub(crate) const MARK_GREEN: Ins = Ins(0b00001010);
+pub(crate) const MARK_BLUE: Ins = Ins(0b00001100);
 
-pub(crate) const NOP: Instruction = Instruction(0b00010000);
-pub(crate) const HALT: Instruction = Instruction(0b11110111);
+pub(crate) const NOP: Ins = Ins(0b00010000);
+pub(crate) const HALT: Ins = Ins(0b11110111);
 
-pub(crate) const GRAY_COND: Instruction = Instruction(0b00000000);
-pub(crate) const RED_COND: Instruction = Instruction(0b00100000);
-pub(crate) const GREEN_COND: Instruction = Instruction(0b01000000);
-pub(crate) const BLUE_COND: Instruction = Instruction(0b10000000);
+pub(crate) const GRAY_COND: Ins = Ins(0b00000000);
+pub(crate) const RED_COND: Ins = Ins(0b00100000);
+pub(crate) const GREEN_COND: Ins = Ins(0b01000000);
+pub(crate) const BLUE_COND: Ins = Ins(0b10000000);
 
 // masks for isolating instruction parts
-pub(crate) const MARK_MASK: Instruction = Instruction(0b00000111);
-pub(crate) const INS_MASK: Instruction = Instruction(0b00011111);
-pub(crate) const INS_COLOR_MASK: Instruction = Instruction(0b11100000);
+pub(crate) const MARK_MASK: Ins = Ins(0b00000111);
+pub(crate) const INS_MASK: Ins = Ins(0b00011111);
+pub(crate) const INS_COLOR_MASK: Ins = Ins(0b11100000);
 
 // iterable lists of constants
-pub(crate) const INSTRUCTIONS: [Instruction; 11] = [
+pub(crate) const INSTRUCTIONS: [Ins; 11] = [
     FORWARD,
     LEFT,
     RIGHT,
@@ -54,24 +55,24 @@ pub(crate) const INSTRUCTIONS: [Instruction; 11] = [
     MARK_GREEN,
     MARK_BLUE,
 ];
-pub(crate) const MOVES: [Instruction; 3] = [
+pub(crate) const MOVES: [Ins; 3] = [
     FORWARD,
     LEFT,
     RIGHT,
 ];
-pub(crate) const FUNCTIONS: [Instruction; 5] = [
+pub(crate) const FUNCTIONS: [Ins; 5] = [
     F1,
     F2,
     F3,
     F4,
     F5,
 ];
-pub(crate) const MARKS: [Instruction; 3] = [
+pub(crate) const MARKS: [Ins; 3] = [
     MARK_RED,
     MARK_GREEN,
     MARK_BLUE,
 ];
-pub(crate) const CONDITIONS: [Instruction; 4] = [
+pub(crate) const CONDITIONS: [Ins; 4] = [
     GRAY_COND,
     RED_COND,
     GREEN_COND,
@@ -79,57 +80,57 @@ pub(crate) const CONDITIONS: [Instruction; 4] = [
 ];
 
 // constants for backtracking
-pub(crate) const F1_MARKER: Instruction = Instruction(3 | NOP.0);
-pub(crate) const F2_MARKER: Instruction = Instruction(4 | NOP.0);
-pub(crate) const F3_MARKER: Instruction = Instruction(5 | NOP.0);
-pub(crate) const F4_MARKER: Instruction = Instruction(6 | NOP.0);
-pub(crate) const F5_MARKER: Instruction = Instruction(7 | NOP.0);
+pub(crate) const F1_MARKER: Ins = Ins(3 | NOP.0);
+pub(crate) const F2_MARKER: Ins = Ins(4 | NOP.0);
+pub(crate) const F3_MARKER: Ins = Ins(5 | NOP.0);
+pub(crate) const F4_MARKER: Ins = Ins(6 | NOP.0);
+pub(crate) const F5_MARKER: Ins = Ins(7 | NOP.0);
 
-pub(crate) const RED_PROBE: Instruction = Instruction(NOP.0 | RED_COND.0);
-pub(crate) const GREEN_PROBE: Instruction = Instruction(NOP.0 | GREEN_COND.0);
-pub(crate) const BLUE_PROBE: Instruction = Instruction(NOP.0 | BLUE_COND.0);
-pub(crate) const PROBES: [Instruction; 3] = [
+pub(crate) const RED_PROBE: Ins = Ins(NOP.0 | RED_COND.0);
+pub(crate) const GREEN_PROBE: Ins = Ins(NOP.0 | GREEN_COND.0);
+pub(crate) const BLUE_PROBE: Ins = Ins(NOP.0 | BLUE_COND.0);
+pub(crate) const PROBES: [Ins; 3] = [
     RED_PROBE,
     GREEN_PROBE,
     BLUE_PROBE,
 ];
 
 // constant combinations for brevity
-pub(crate) const RED_FORWARD: Instruction = Instruction(FORWARD.0 | RED_COND.0);
-pub(crate) const RED_LEFT: Instruction = Instruction(LEFT.0 | RED_COND.0);
-pub(crate) const RED_RIGHT: Instruction = Instruction(RIGHT.0 | RED_COND.0);
-pub(crate) const RED_F1: Instruction = Instruction(F1.0 | RED_COND.0);
-pub(crate) const RED_F2: Instruction = Instruction(F2.0 | RED_COND.0);
-pub(crate) const RED_F3: Instruction = Instruction(F3.0 | RED_COND.0);
-pub(crate) const RED_F4: Instruction = Instruction(F4.0 | RED_COND.0);
-pub(crate) const RED_F5: Instruction = Instruction(F5.0 | RED_COND.0);
-pub(crate) const RED_MARK_RED: Instruction = Instruction(MARK_RED.0 | RED_COND.0);
-pub(crate) const RED_MARK_GREEN: Instruction = Instruction(MARK_GREEN.0 | RED_COND.0);
-pub(crate) const RED_MARK_BLUE: Instruction = Instruction(MARK_BLUE.0 | RED_COND.0);
+pub(crate) const RED_FORWARD: Ins = Ins(FORWARD.0 | RED_COND.0);
+pub(crate) const RED_LEFT: Ins = Ins(LEFT.0 | RED_COND.0);
+pub(crate) const RED_RIGHT: Ins = Ins(RIGHT.0 | RED_COND.0);
+pub(crate) const RED_F1: Ins = Ins(F1.0 | RED_COND.0);
+pub(crate) const RED_F2: Ins = Ins(F2.0 | RED_COND.0);
+pub(crate) const RED_F3: Ins = Ins(F3.0 | RED_COND.0);
+pub(crate) const RED_F4: Ins = Ins(F4.0 | RED_COND.0);
+pub(crate) const RED_F5: Ins = Ins(F5.0 | RED_COND.0);
+pub(crate) const RED_MARK_RED: Ins = Ins(MARK_RED.0 | RED_COND.0);
+pub(crate) const RED_MARK_GREEN: Ins = Ins(MARK_GREEN.0 | RED_COND.0);
+pub(crate) const RED_MARK_BLUE: Ins = Ins(MARK_BLUE.0 | RED_COND.0);
 
-pub(crate) const GREEN_FORWARD: Instruction = Instruction(FORWARD.0 | GREEN_COND.0);
-pub(crate) const GREEN_LEFT: Instruction = Instruction(LEFT.0 | GREEN_COND.0);
-pub(crate) const GREEN_RIGHT: Instruction = Instruction(RIGHT.0 | GREEN_COND.0);
-pub(crate) const GREEN_F1: Instruction = Instruction(F1.0 | GREEN_COND.0);
-pub(crate) const GREEN_F2: Instruction = Instruction(F2.0 | GREEN_COND.0);
-pub(crate) const GREEN_F3: Instruction = Instruction(F3.0 | GREEN_COND.0);
-pub(crate) const GREEN_F4: Instruction = Instruction(F4.0 | GREEN_COND.0);
-pub(crate) const GREEN_F5: Instruction = Instruction(F5.0 | GREEN_COND.0);
-pub(crate) const GREEN_MARK_RED: Instruction = Instruction(MARK_RED.0 | GREEN_COND.0);
-pub(crate) const GREEN_MARK_GREEN: Instruction = Instruction(MARK_GREEN.0 | GREEN_COND.0);
-pub(crate) const GREEN_MARK_BLUE: Instruction = Instruction(MARK_BLUE.0 | GREEN_COND.0);
+pub(crate) const GREEN_FORWARD: Ins = Ins(FORWARD.0 | GREEN_COND.0);
+pub(crate) const GREEN_LEFT: Ins = Ins(LEFT.0 | GREEN_COND.0);
+pub(crate) const GREEN_RIGHT: Ins = Ins(RIGHT.0 | GREEN_COND.0);
+pub(crate) const GREEN_F1: Ins = Ins(F1.0 | GREEN_COND.0);
+pub(crate) const GREEN_F2: Ins = Ins(F2.0 | GREEN_COND.0);
+pub(crate) const GREEN_F3: Ins = Ins(F3.0 | GREEN_COND.0);
+pub(crate) const GREEN_F4: Ins = Ins(F4.0 | GREEN_COND.0);
+pub(crate) const GREEN_F5: Ins = Ins(F5.0 | GREEN_COND.0);
+pub(crate) const GREEN_MARK_RED: Ins = Ins(MARK_RED.0 | GREEN_COND.0);
+pub(crate) const GREEN_MARK_GREEN: Ins = Ins(MARK_GREEN.0 | GREEN_COND.0);
+pub(crate) const GREEN_MARK_BLUE: Ins = Ins(MARK_BLUE.0 | GREEN_COND.0);
 
-pub(crate) const BLUE_FORWARD: Instruction = Instruction(FORWARD.0 | BLUE_COND.0);
-pub(crate) const BLUE_LEFT: Instruction = Instruction(LEFT.0 | BLUE_COND.0);
-pub(crate) const BLUE_RIGHT: Instruction = Instruction(RIGHT.0 | BLUE_COND.0);
-pub(crate) const BLUE_F1: Instruction = Instruction(F1.0 | BLUE_COND.0);
-pub(crate) const BLUE_F2: Instruction = Instruction(F2.0 | BLUE_COND.0);
-pub(crate) const BLUE_F3: Instruction = Instruction(F3.0 | BLUE_COND.0);
-pub(crate) const BLUE_F4: Instruction = Instruction(F4.0 | BLUE_COND.0);
-pub(crate) const BLUE_F5: Instruction = Instruction(F5.0 | BLUE_COND.0);
-pub(crate) const BLUE_MARK_RED: Instruction = Instruction(MARK_RED.0 | BLUE_COND.0);
-pub(crate) const BLUE_MARK_GREEN: Instruction = Instruction(MARK_GREEN.0 | BLUE_COND.0);
-pub(crate) const BLUE_MARK_BLUE: Instruction = Instruction(MARK_BLUE.0 | BLUE_COND.0);
+pub(crate) const BLUE_FORWARD: Ins = Ins(FORWARD.0 | BLUE_COND.0);
+pub(crate) const BLUE_LEFT: Ins = Ins(LEFT.0 | BLUE_COND.0);
+pub(crate) const BLUE_RIGHT: Ins = Ins(RIGHT.0 | BLUE_COND.0);
+pub(crate) const BLUE_F1: Ins = Ins(F1.0 | BLUE_COND.0);
+pub(crate) const BLUE_F2: Ins = Ins(F2.0 | BLUE_COND.0);
+pub(crate) const BLUE_F3: Ins = Ins(F3.0 | BLUE_COND.0);
+pub(crate) const BLUE_F4: Ins = Ins(F4.0 | BLUE_COND.0);
+pub(crate) const BLUE_F5: Ins = Ins(F5.0 | BLUE_COND.0);
+pub(crate) const BLUE_MARK_RED: Ins = Ins(MARK_RED.0 | BLUE_COND.0);
+pub(crate) const BLUE_MARK_GREEN: Ins = Ins(MARK_GREEN.0 | BLUE_COND.0);
+pub(crate) const BLUE_MARK_BLUE: Ins = Ins(MARK_BLUE.0 | BLUE_COND.0);
 
 pub(crate) const NOGRAM: Source = Source([[HALT; 10]; 5]);
 
