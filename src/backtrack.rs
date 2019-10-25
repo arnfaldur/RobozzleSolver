@@ -1,4 +1,4 @@
-use crate::game::{Ins, Source, Puzzle, State};
+use crate::game::*;
 use crate::constants::*;
 use crate::carlo::{score_cmp, carlo};
 use crate::game::won;
