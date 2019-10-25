@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
     use test::Bencher;
-    use crate::game::{Ins, Source};
+    use crate::game::{Ins, Source, won};
     use crate::constants::*;
     use crate::carlo;
     use crate::backtrack;
@@ -31,7 +31,7 @@ mod tests {
 
     #[test]
     fn test_puzzle_42() {
-        assert_eq!(true, backtrack::accept(&PUZZLE_42, &PUZZLE_42_SOLUTION));
+        assert_eq!(true, PUZZLE_42.execute(&PUZZLE_42_SOLUTION, false, won));
     }
 
     #[test]
@@ -49,7 +49,7 @@ mod tests {
 
     #[test]
     fn test_puzzle_536() {
-        assert_eq!(true, backtrack::accept(&PUZZLE_536, &PUZZLE_536_SOLUTION));
+        assert_eq!(true, PUZZLE_536.execute(&PUZZLE_536_SOLUTION, false, won));
     }
 
     #[test]
@@ -80,7 +80,7 @@ mod tests {
 
     #[test]
     fn test_puzzle_656() {
-        assert_eq!(true, backtrack::accept(&PUZZLE_656, &PUZZLE_656_SOLUTION));
+        assert_eq!(true, PUZZLE_656.execute(&PUZZLE_656_SOLUTION, false, won));
     }
 
     #[test]
@@ -106,7 +106,7 @@ mod tests {
 
     #[test]
     fn test_puzzle_1337() {
-        assert_eq!(true, backtrack::accept(&PUZZLE_1337, &PUZZLE_1337_SOLUTION));
+        assert_eq!(true, PUZZLE_1337.execute(&PUZZLE_1337_SOLUTION, false, won));
     }
 
     #[test]
@@ -146,7 +146,7 @@ mod tests {
 
     #[test]
     fn test_puzzle_test_1() {
-        assert_eq!(true, backtrack::accept(&PUZZLE_TEST_1, &PUZZLE_TEST_1_SOLUTION));
+        assert_eq!(true, PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, false, won));
     }
 
     #[test]
