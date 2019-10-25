@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
     use test::Bencher;
-    use crate::game::{Ins, Source, won};
+    use crate::game::{Source, won, instructions::*};
     use crate::constants::*;
     use crate::carlo;
     use crate::backtrack;
@@ -194,6 +194,107 @@ mod tests {
             BLUE_MARK_RED,
             BLUE_MARK_GREEN,
         ], PUZZLE_TEST_1.get_instruction_set(INS_COLOR_MASK, true));
+    }
+
+    #[test]
+    fn test_debug_printing() {
+        let instructions = [NOP, HALT, FORWARD, LEFT, RIGHT,
+            F1, F2, F3, F4, F5, MARK_RED, MARK_GREEN, MARK_BLUE,
+            RED_FORWARD,
+            RED_LEFT,
+            RED_RIGHT,
+            RED_F1,
+            RED_F2,
+            RED_F3,
+            RED_F4,
+            RED_F5,
+            RED_MARK_GREEN,
+            RED_MARK_BLUE,
+            GREEN_FORWARD,
+            GREEN_LEFT,
+            GREEN_RIGHT,
+            GREEN_F1,
+            GREEN_F2,
+            GREEN_F3,
+            GREEN_F4,
+            GREEN_F5,
+            GREEN_MARK_RED,
+            GREEN_MARK_BLUE,
+            BLUE_FORWARD,
+            BLUE_LEFT,
+            BLUE_RIGHT,
+            BLUE_F1,
+            BLUE_F2,
+            BLUE_F3,
+            BLUE_F4,
+            BLUE_F5,
+            BLUE_MARK_RED,
+            BLUE_MARK_GREEN,
+            F1_MARKER,
+            F2_MARKER,
+            F3_MARKER,
+            F4_MARKER,
+            F5_MARKER,
+            RED_PROBE,
+            GREEN_PROBE,
+            BLUE_PROBE,
+        ];
+        let instruction_strings = [
+            "NOP",
+            "HALT",
+            "FORWARD",
+            "LEFT",
+            "RIGHT",
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "MARK_RED",
+            "MARK_GREEN",
+            "MARK_BLUE",
+            "RED_FORWARD",
+            "RED_LEFT",
+            "RED_RIGHT",
+            "RED_F1",
+            "RED_F2",
+            "RED_F3",
+            "RED_F4",
+            "RED_F5",
+            "RED_MARK_GREEN",
+            "RED_MARK_BLUE",
+            "GREEN_FORWARD",
+            "GREEN_LEFT",
+            "GREEN_RIGHT",
+            "GREEN_F1",
+            "GREEN_F2",
+            "GREEN_F3",
+            "GREEN_F4",
+            "GREEN_F5",
+            "GREEN_MARK_RED",
+            "GREEN_MARK_BLUE",
+            "BLUE_FORWARD",
+            "BLUE_LEFT",
+            "BLUE_RIGHT",
+            "BLUE_F1",
+            "BLUE_F2",
+            "BLUE_F3",
+            "BLUE_F4",
+            "BLUE_F5",
+            "BLUE_MARK_RED",
+            "BLUE_MARK_GREEN",
+            "F1_MARKER",
+            "F2_MARKER",
+            "F3_MARKER",
+            "F4_MARKER",
+            "F5_MARKER",
+            "RED_PROBE",
+            "GREEN_PROBE",
+            "BLUE_PROBE",
+        ];
+        for i in 0..instructions.len() {
+            assert_eq!(format!("{:?}", instructions[i]), instruction_strings[i]);
+        }
     }
 
     #[bench]

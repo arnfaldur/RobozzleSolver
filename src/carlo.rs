@@ -1,13 +1,13 @@
 use std::fmt::{Display, Error, Formatter};
 use std::f64::{MIN, MIN_POSITIVE};
-
-use super::constants::NOGRAM;
-use super::game::*;
 use rand::{SeedableRng, Rng};
 use statrs::prec::F64_PREC;
 use std::cmp::Ordering::Equal;
 use rand::seq::SliceRandom;
-use crate::constants::{NOP, INS_COLOR_MASK, _N};
+
+use super::game::*;
+use crate::game::instructions::*;
+use crate::constants::{NOGRAM, _N};
 
 #[derive(Clone, PartialEq, PartialOrd, Debug)]
 pub struct Leaf {
@@ -173,7 +173,7 @@ pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>
     for i in 0..puzzle.functions.len() {
         for j in 0..puzzle.functions[i] {
             let mask = (fullgram[i][j] != NOP) as u8;
-            fullgram[i][j].0 = fullgram[i][j].0 * mask + (1 - mask) * u8::from(*instruction_set.choose(&mut rng).unwrap_or(&NOP));
+//            fullgram[i][j].0 = fullgram[i][j].0 * mask + (1 - mask) * u8::from(*instruction_set.choose(&mut rng).unwrap_or(&NOP));
         }
     }
     return fullgram;

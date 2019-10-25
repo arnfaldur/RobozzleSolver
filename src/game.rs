@@ -3,10 +3,13 @@ use std::fmt::{Display, Error, Formatter};
 use std::ops::{IndexMut, Index, Range, Deref};
 use std::cmp::{max, min};
 
-use super::constants::*;
+use crate::constants::*;
+use instructions::*;
 use std::hash::{Hasher, Hash};
 use std::collections::hash_map::DefaultHasher;
 use std::fmt;
+
+pub(crate) mod instructions;
 
 #[derive(PartialEq, Eq, Copy, Clone, Hash)]
 pub struct Tile(pub u8);
@@ -21,13 +24,14 @@ impl Tile {
     fn is_green(&self) -> bool { self.0 & GE.0 > 0 }
     fn is_blue(&self) -> bool { self.0 & BE.0 > 0 }
     pub(crate) fn executes(&self, instruction: Ins) -> bool {
-        let color = instruction.color_condition();
-        return color == GRAY_COND || color.0 == self.color().0;
+        let color = instruction.get_condition();
+        return color == GRAY_COND || color == self.to_condition();
     }
     fn mark(&mut self, instruction: Ins) {
-        self.0 = instruction.get_mark_color().0 | TILE_TOUCHED.0
+        let color: u8 = instruction.get_mark_color().into();
+        self.0 = color | TILE_TOUCHED.0
     }
-    pub(crate) fn to_condition(&self) -> Ins { Ins(self.0 << 5) }
+    pub(crate) fn to_condition(&self) -> Ins { (self.0 << 5).into() }
     pub(crate) fn get_probes(&self, colors: Ins) -> Vec<Ins> {
         let mask = colors.to_probe();
 //        let mut result = PROBES.into_vec();
@@ -38,63 +42,7 @@ impl Tile {
 
 type Map = [[Tile; 18]; 14];
 
-#[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash)]
-pub struct Ins(pub u8);
-
-impl Ins {
-    pub(crate) fn color_condition(self) -> Ins { Ins(self.0 >> 5) }
-    pub(crate) fn source_index(self) -> usize { (self.get_instruction().0 - F1.0) as usize }
-    pub(crate) fn get_condition(self) -> Ins { self & INS_COLOR_MASK }
-    pub(crate) fn get_instruction(self) -> Ins { self & INS_MASK }
-    fn get_fun_number(self) -> u8 { self.get_instruction().0 - F1.0 + 1 }
-    pub(crate) fn get_mark_color(self) -> Ins { self & MARK_MASK }
-    fn get_marker(self) -> Ins { self.get_instruction() | NOP }
-    fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0) }
-    pub(crate) fn is_color(self, condition: Ins) -> bool { self.get_condition() == condition }
-    fn has_color(self, condition: Ins) -> bool { self & condition == condition }
-    //    fn is_gray(self) -> bool { self & INS_COLOR_MASK == GRAY_COND }
-//    fn is_red(self) -> bool { self & INS_COLOR_MASK == RED_COND }
-//    fn is_green(self) -> bool { (self & GREEN_COND).0 > 0 }
-//    fn is_blue(self) -> bool { (self & BLUE_COND).0 > 0 }
-    pub(crate) fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
-    pub(crate) fn is_function(self) -> bool { self.source_index() < 6 }
-    pub(crate) fn is_instruction(self, instruction: Ins) -> bool { self.get_instruction() == instruction }
-    pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.get_instruction() == LEFT || self.get_instruction() == RIGHT }
-    pub(crate) fn is_turn(self) -> bool { self.is_instruction(LEFT) || self.is_instruction(RIGHT) }
-    fn to_probe(self) -> Ins { self.get_condition() | NOP }
-    pub(crate) fn is_probe(self) -> bool { self.get_condition().0 > 0 && self.get_instruction() == NOP }
-    pub(crate) fn other_turn(self) -> Ins {
-        if self.is_instruction(LEFT) { RIGHT } else if self.is_instruction(RIGHT) { LEFT } else { HALT }
-    }
-}
-
-impl From<Ins> for u8 {
-    fn from(ins: Ins) -> Self {
-        ins.0
-    }
-}
-
-impl From<u8> for Ins {
-    fn from(val: u8) -> Self {
-        Ins(val)
-    }
-}
-
-impl std::ops::BitOr for Ins {
-    type Output = Ins;
-    fn bitor(self, rhs: Self) -> Self::Output {
-        Ins(self.0.bitor(rhs.0))
-    }
-}
-
-impl std::ops::BitAnd for Ins {
-    type Output = Ins;
-    fn bitand(self, rhs: Self) -> Self::Output {
-        Ins(self.0.bitand(rhs.0))
-    }
-}
-
-type Method = [Ins; 10];
+pub type Method = [Ins; 10];
 
 #[derive(Eq, PartialEq, PartialOrd, Copy, Clone, Debug, Hash)]
 pub struct Source(pub [Method; 5]);
@@ -170,7 +118,7 @@ impl Stack {
         self.data[self.pointer] = element;
         self.pointer += 1;
     }
-    fn pop(&mut self) -> Ins {
+    pub(crate) fn pop(&mut self) -> Ins {
         let result = self.top();
         self.pointer -= 1;
         return result;
@@ -225,9 +173,9 @@ impl Puzzle {
     pub(crate) fn get_instruction_set(&self, colors: Ins, gray: bool) -> Vec<Ins> {
         let functions = self.functions.iter().fold(0, |count, &val| count + (val > 0) as usize);
         let marks: usize = self.marks.iter().map(|b| *b as usize).sum();
-        let (red, green, blue) = (self.red && colors.has_color(RED_COND),
-                                  self.green && colors.has_color(GREEN_COND),
-                                  self.blue && colors.has_color(BLUE_COND));
+        let (red, green, blue) = (self.red && colors.has_condition(RED_COND),
+                                  self.green && colors.has_condition(GREEN_COND),
+                                  self.blue && colors.has_condition(BLUE_COND));
         let colors = gray as usize + red as usize + green as usize + blue as usize;
         let mut result: Vec<Ins> = Vec::with_capacity((3 + functions + marks) * colors);
         let mut conditionals = if gray { vec![GRAY_COND] } else { vec![] };
@@ -246,7 +194,7 @@ impl Puzzle {
                 }
             }
             for i in 0..MARKS.len() {
-                if self.marks[i] && MARKS[i].get_mark_color() != condition.color_condition() {
+                if self.marks[i] && MARKS[i].get_mark_color() != condition.condition_to_color() {
                     result.push(MARKS[i] | condition);
                 }
             }
@@ -283,10 +231,7 @@ impl Puzzle {
     }
     pub(crate) fn get_color_mask(&self) -> Ins {
         if (self.red as u8) + (self.green as u8) + (self.blue as u8) > 1 {
-            Ins(
-                (self.red as u8) * RED_COND.0
-                    | (self.green as u8) * GREEN_COND.0
-                    | (self.blue as u8) * BLUE_COND.0)
+            with_colors(self.red, self.green, self.blue)
         } else {
             GRAY_COND
         }
@@ -370,7 +315,7 @@ impl State {
 //                        }
                     }
                 }
-                MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
+                MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
 //                F1_MARKER | F2_MARKER | F3_MARKER | F4_MARKER | F5_MARKER => self.instruction_pointer = 100,
                 _ => (),
             }
@@ -416,22 +361,22 @@ pub fn genboi(ta: Tile, tb: Tile, tc: Tile) -> Puzzle {
     return make_puzzle(
         [
             [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, tb, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, ta, tb, tc, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, tb, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-            [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, ta, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
+            [_N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N, ],
             [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
         ],
         Direction::Right,
-        3, 3, [3, 0, 0, 0, 0, ], [true, true, true, ],
+        5, 6, [3, 10, 0, 0, 0, ], [true, true, true, ],
     );
 }
 
@@ -482,38 +427,6 @@ fn verify_puzzle(puzzle: &Puzzle) -> bool {
         panic!("stars bad! {} {}", stars, puzzle.stars);
     }
     return true;
-}
-
-impl Display for Ins {
-    fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
-        let background = match self.get_condition() {
-            GRAY_COND => Color::BrightBlack,
-            RED_COND => Color::Red,
-            GREEN_COND => Color::Green,
-            BLUE_COND => Color::Blue,
-            _ => Color::Black,
-        };
-        let ins = self.get_instruction();
-        let foreground = match ins {
-            MARK_RED => Color::Red,
-            MARK_GREEN => Color::Green,
-            MARK_BLUE => Color::Blue,
-            _ => Color::BrightWhite,
-        };
-        let string = match ins {
-            FORWARD => "↑".to_string(),
-            LEFT => "←".to_string(),
-            RIGHT => "→".to_string(),
-            F1 | F2 | F3 | F4 | F5 => ins.get_fun_number().to_string(),
-            MARK_RED | MARK_GREEN | MARK_BLUE => "●".to_string(),
-            NOP => match *self {
-                RED_PROBE | GREEN_PROBE | BLUE_PROBE => "_".to_string(),
-                _ => " ".to_string(),
-            }
-            _ => " ".to_string(),
-        };
-        write!(f, "{}", string.color(foreground).on_color(background))
-    }
 }
 
 impl Display for Source {
@@ -670,11 +583,5 @@ impl Display for State {
             write!(f, "\n")?;
         }
         write!(f, "")
-    }
-}
-
-impl fmt::Debug for Ins {
-    fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
-        write!(f, "HELLO")
     }
 }
