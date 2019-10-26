@@ -23,14 +23,17 @@ mod backtrack;
 mod web;
 
 fn main() {
-    let now = Instant::now();
-    start_web_client();
+    for puzzle in [PUZZLE_42, PUZZLE_536, PUZZLE_656].iter() {
+        let now = Instant::now();
+//    start_web_client();
 //    denial_test();
-//    if let Some(solution) = backtrack(&PUZZLE_1337) {
-//        println!("solved! {}", solution);
-//    } else {
-//        println!("I couldn't find a solution :(");
-//    }
+        if let Some(solution) = backtrack(&puzzle) {
+            println!("solved! {}", solution);
+        } else {
+            println!("I couldn't find a solution :(");
+        }
+        println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
+    }
 //    let mut boiii : Vec<[Ins;2]> = get_rejects_2().iter().cloned().collect();
 //    boiii.sort();
 //    for e in boiii {
@@ -42,7 +45,6 @@ fn main() {
 //    PUZZLE_1337.execute(&PUZZLE_1337_SOLUTION, won);
 //    carlo(&PUZZLE_42, 1 << 14, 1 << 11);
 //    PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, |state, _| state.stars == 0);
-    println!("The solver took {} seconds.", now.elapsed().as_secs_f64());
 }
 
 // Instructions

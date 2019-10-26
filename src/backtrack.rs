@@ -132,12 +132,11 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
             }
             state.step(&top, &puzzle);
         }
-        if state.stars == 0 {
-            println!("done! considered: {}, executed: {}, rejects: {}, denies: {}, snips: {}, duplicates: {} and {}", considered, executed, rejects, denies, snips, duplicates, stack);
-            return Some(top);
-        }
-        if considered % 10000000 == 0 {
-            println!("considered: {}, executed: {}, rejects: {}, denies: {}, snips: {}, duplicates: {} and {}\n then {}", considered, executed, rejects, denies, snips, duplicates, stack, state);
+        if considered % 10000000 == 0 || state.stars == 0 {
+            print!("done! considered: {}, executed: {}, rejects: {}, denies: {}, snips: {}, duplicates: {}", considered, executed, rejects, denies, snips, duplicates);
+//            print!(" and {}", stack);
+            println!();
+            if state.stars == 0 { return Some(top); }
         }
     }
     return None;
