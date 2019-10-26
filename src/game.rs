@@ -24,7 +24,7 @@ impl Tile {
     fn is_green(&self) -> bool { self.0 & GE.0 > 0 }
     fn is_blue(&self) -> bool { self.0 & BE.0 > 0 }
     pub(crate) fn executes(&self, instruction: Ins) -> bool {
-        let color = instruction.get_condition();
+        let color = instruction.get_cond();
         return color == GRAY_COND || color == self.to_condition();
     }
     fn mark(&mut self, instruction: Ins) {
@@ -180,12 +180,12 @@ pub struct Puzzle {
 }
 
 impl Puzzle {
-    pub(crate) fn get_instruction_set(&self, colors: Ins, gray: bool) -> Vec<Ins> {
+    pub(crate) fn get_ins_set(&self, colors: Ins, gray: bool) -> Vec<Ins> {
         let functions = self.functions.iter().fold(0, |count, &val| count + (val > 0) as usize);
         let marks: usize = self.marks.iter().map(|b| *b as usize).sum();
-        let (red, green, blue) = (self.red && colors.has_condition(RED_COND),
-                                  self.green && colors.has_condition(GREEN_COND),
-                                  self.blue && colors.has_condition(BLUE_COND));
+        let (red, green, blue) = (self.red && colors.has_cond(RED_COND),
+                                  self.green && colors.has_cond(GREEN_COND),
+                                  self.blue && colors.has_cond(BLUE_COND));
         let colors = gray as usize + red as usize + green as usize + blue as usize;
         let mut result: Vec<Ins> = Vec::with_capacity((3 + functions + marks) * colors);
         let mut conditionals = if gray { vec![GRAY_COND] } else { vec![] };
@@ -239,9 +239,9 @@ impl Puzzle {
         }
         return scoring(&state, self);
     }
-    pub(crate) fn get_condition_mask(&self) -> Ins {
+    pub(crate) fn get_cond_mask(&self) -> Ins {
         if (self.red as u8) + (self.green as u8) + (self.blue as u8) > 1 {
-            with_conditions(self.red, self.green, self.blue)
+            with_conds(self.red, self.green, self.blue)
         } else {
             GRAY_COND
         }
@@ -296,7 +296,7 @@ impl State {
         let ins = self.stack.pop().as_vanilla();
         self.steps += 1;
         if self.current_tile().executes(ins) {
-            match ins.get_instruction() {
+            match ins.get_ins() {
                 FORWARD => {
                     match &self.direction {
                         Direction::Up => self.y -= 1,
@@ -320,11 +320,9 @@ impl State {
                         let new_ins = source.0[method][i];
                         // TODO: consider preventing no ops from going on the stack
                         // currently neccesary to be able to count what instruction is executing
-                        if new_ins != HALT {
-                        let bib = new_ins.with_instruction_number(i);
-                        let bub = bib.with_method_number(method);
-                        self.stack.push(bub);
-                        }
+//                        if new_ins != HALT {
+                        self.stack.push(new_ins.with_ins_index(i).with_method_number(method));
+//                        }
                     }
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),

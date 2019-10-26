@@ -84,7 +84,7 @@ impl Leaf {
 
 pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source> {
     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(1337);
-    let instruction_set = puzzle.get_instruction_set(INS_COLOR_MASK, true);
+    let instruction_set = puzzle.get_ins_set(INS_COLOR_MASK, true);
     let mut stems: Vec<Leaf> = vec![Leaf { accumulator: 1.0, ..Leaf::default() }];
     let mut bestboi = Leaf { accumulator: MIN, ..Leaf::default() };
     let mut bestsource = Leaf::default();
@@ -169,7 +169,7 @@ pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins
 }
 
 pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>, mut rng: impl Rng) -> Source {
-    let mut fullgram = *base;
+    let  fullgram = *base;
     for i in 0..puzzle.functions.len() {
         for j in 0..puzzle.functions[i] {
             let mask = (fullgram[i][j] != NOP) as u8;

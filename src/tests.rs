@@ -44,7 +44,7 @@ mod tests {
             F2,
             F3,
             F4,
-        ], PUZZLE_42.get_instruction_set(GRAY_COND, true));
+        ], PUZZLE_42.get_ins_set(GRAY_COND, true));
     }
 
     #[test]
@@ -75,7 +75,7 @@ mod tests {
             BLUE_RIGHT,
             BLUE_F1,
             BLUE_F2,
-        ], PUZZLE_536.get_instruction_set(INS_COLOR_MASK, true));
+        ], PUZZLE_536.get_ins_set(INS_COLOR_MASK, true));
     }
 
     #[test]
@@ -101,7 +101,7 @@ mod tests {
             BLUE_RIGHT,
             BLUE_F1,
             BLUE_F2,
-        ], PUZZLE_656.get_instruction_set(INS_COLOR_MASK, true));
+        ], PUZZLE_656.get_ins_set(INS_COLOR_MASK, true));
     }
 
     #[test]
@@ -141,7 +141,7 @@ mod tests {
             BLUE_F2,
             BLUE_MARK_RED,
             BLUE_MARK_GREEN,
-        ], PUZZLE_1337.get_instruction_set(INS_COLOR_MASK, true));
+        ], PUZZLE_1337.get_ins_set(INS_COLOR_MASK, true));
     }
 
     #[test]
@@ -193,7 +193,7 @@ mod tests {
             BLUE_F5,
             BLUE_MARK_RED,
             BLUE_MARK_GREEN,
-        ], PUZZLE_TEST_1.get_instruction_set(INS_COLOR_MASK, true));
+        ], PUZZLE_TEST_1.get_ins_set(INS_COLOR_MASK, true));
     }
 
     #[test]
@@ -306,7 +306,7 @@ mod tests {
 //        for instruction in PUZZLE_536.get_instruction_set() {
 //            print!("{}", show_instruction(instruction));
 //        }
-        let instruction_set = PUZZLE_42.get_instruction_set(INS_COLOR_MASK, true);
+        let instruction_set = PUZZLE_42.get_ins_set(INS_COLOR_MASK, true);
         let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(42);
         let mut source: Source = Source([[NOP; 10]; 5]);
         for iteration in 0..10 {
@@ -331,7 +331,7 @@ mod tests {
 
     #[bench]
     fn bench_execute_536_times_10(b: &mut Bencher) {
-        let instruction_set = PUZZLE_536.get_instruction_set(INS_COLOR_MASK, true);
+        let instruction_set = PUZZLE_536.get_ins_set(INS_COLOR_MASK, true);
         let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(536);
         let mut source: Source = Source([[NOP; 10]; 5]);
         for _iteration in 0..10 {
@@ -356,7 +356,7 @@ mod tests {
 
     #[bench]
     fn bench_execute_656_times_10(b: &mut Bencher) {
-        let instruction_set = PUZZLE_656.get_instruction_set(INS_COLOR_MASK, true);
+        let instruction_set = PUZZLE_656.get_ins_set(INS_COLOR_MASK, true);
         let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(656);
         let mut source: Source = Source([[NOP; 10]; 5]);
         for _iteration in 0..10 {

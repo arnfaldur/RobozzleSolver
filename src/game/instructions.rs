@@ -9,30 +9,30 @@ pub struct Ins(InsType);
 
 impl Ins {
     pub(crate) fn condition_to_color(self) -> Ins { Ins(self.as_vanilla().0 >> 5) }
-    pub(crate) fn source_index(self) -> usize { (self.from_marker().get_instruction().0 - F1.0) as usize }
-    pub(crate) fn get_condition(self) -> Ins { self & INS_COLOR_MASK }
-    pub(crate) fn get_instruction(self) -> Ins { self & INS_MASK }
-    fn get_fun_number(self) -> u8 { (self.get_instruction().0 - F1.0 + 1) as u8 }
+    pub(crate) fn source_index(self) -> usize { (self.from_marker().get_ins().0 - F1.0) as usize }
+    pub(crate) fn get_cond(self) -> Ins { self & INS_COLOR_MASK }
+    pub(crate) fn get_ins(self) -> Ins { self & INS_MASK }
+    fn get_fun_number(self) -> u8 { (self.get_ins().0 - F1.0 + 1) as u8 }
     pub(crate) fn get_mark_color(self) -> Ins { self & MARK_MASK }
-    pub(crate) fn get_mark_as_condition(self) -> Ins { self.get_mark_color().color_to_condition() }
-    pub(crate) fn color_to_condition(self) -> Ins { Ins(self.0 << 5).as_vanilla() }
-    pub(crate) fn get_marker(self) -> Ins { (self.get_instruction() | NOP).as_vanilla() }
+    pub(crate) fn get_mark_as_cond(self) -> Ins { self.get_mark_color().color_to_cond() }
+    pub(crate) fn color_to_cond(self) -> Ins { Ins(self.0 << 5).as_vanilla() }
+    pub(crate) fn get_marker(self) -> Ins { (self.get_ins() | NOP).as_vanilla() }
     pub(crate) fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0).as_vanilla() }
-    pub(crate) fn is_condition(self, condition: Ins) -> bool { self.get_condition() == condition }
-    pub(crate) fn has_condition(self, condition: Ins) -> bool { self & condition == condition }
-    pub(crate) fn is_gray(self) -> bool { self.is_condition(GRAY_COND) }
+    pub(crate) fn is_cond(self, condition: Ins) -> bool { self.get_cond() == condition }
+    pub(crate) fn has_cond(self, condition: Ins) -> bool { self & condition == condition }
+    pub(crate) fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
     pub(crate) fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
-    pub(crate) fn is_function(self) -> bool { self.get_instruction() >= F1 && self.get_instruction() <= F5 }
-    pub(crate) fn is_instruction(self, instruction: Ins) -> bool { self.get_instruction() == instruction }
+    pub(crate) fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
+    pub(crate) fn is_ins(self, instruction: Ins) -> bool { self.get_ins() == instruction }
     pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.is_turn() }
-    pub(crate) fn is_turn(self) -> bool { self.is_instruction(LEFT) || self.is_instruction(RIGHT) }
-    pub(crate) fn to_probe(self) -> Ins { self.get_condition() | NOP }
-    pub(crate) fn is_probe(self) -> bool { !self.is_gray() && self.get_instruction() == NOP }
+    pub(crate) fn is_turn(self) -> bool { self.is_ins(LEFT) || self.is_ins(RIGHT) }
+    pub(crate) fn to_probe(self) -> Ins { self.get_cond() | NOP }
+    pub(crate) fn is_probe(self) -> bool { !self.is_gray() && self.get_ins() == NOP }
     pub(crate) fn is_nop(self) -> bool { self.as_vanilla() == NOP }
     pub(crate) fn is_halt(self) -> bool { self.as_vanilla() == HALT }
     pub fn is_function_marker(self) -> bool { (self & NOP).is_nop() && self.from_marker().is_function() }
     pub(crate) fn other_turn(self) -> Ins {
-        if self.is_instruction(LEFT) { RIGHT } else if self.is_instruction(RIGHT) { LEFT } else { HALT }
+        if self.is_ins(LEFT) { RIGHT } else if self.is_ins(RIGHT) { LEFT } else { HALT }
     }
     pub(crate) fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
     pub(crate) fn get_probes(self, excluded: Ins) -> Vec<Ins> {
@@ -43,13 +43,13 @@ impl Ins {
     pub(crate) fn is_branched(self) -> bool { self & BRANCH_MASK == BRANCH_MASK }
     pub(crate) fn as_branched(self) -> Ins { self | BRANCH_MASK }
     pub(crate) fn with_branched(self, branched: bool) -> Ins { if branched { self.as_branched() } else { self } }
-    pub fn with_instruction_number(self, number: usize) -> Ins { self | Ins((number << 9) as InsType) }
-    pub fn get_instruction_number(self) -> usize { ((self & INS_NUMBER_MASK).0 >> 9) as usize }
+    pub fn with_ins_index(self, number: usize) -> Ins { self | Ins((number << 9) as InsType) }
+    pub fn get_ins_index(self) -> usize { ((self & INS_NUMBER_MASK).0 >> 9) as usize }
     pub fn with_method_number(self, number: usize) -> Ins { self | Ins((number << 13) as InsType) }
     pub fn get_method_number(self) -> usize { ((self & INS_METHOD_MASK).0 >> 13) as usize }
 }
 
-pub(crate) fn with_conditions(red: bool, green: bool, blue: bool) -> Ins {
+pub(crate) fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
     Ins(((red as u8) << 5 | (green as u8) << 6 | (blue as u8) << 7) as InsType)
 }
 
@@ -86,14 +86,14 @@ impl std::ops::BitAnd for Ins {
 
 impl Display for Ins {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
-        let background = match self.get_condition() {
+        let background = match self.get_cond() {
             GRAY_COND => Color::BrightBlack,
             RED_COND => Color::Red,
             GREEN_COND => Color::Green,
             BLUE_COND => Color::Blue,
             _ => Color::Black,
         };
-        let ins = self.get_instruction();
+        let ins = self.get_ins();
         let foreground = match ins {
             MARK_RED => Color::Red,
             MARK_GREEN => Color::Green,
@@ -119,7 +119,7 @@ impl Display for Ins {
 impl fmt::Debug for Ins {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
         write!(f, "{:016b} ", self.0)?;
-        write!(f, "{}{}", self.get_method_number(), self.get_instruction_number())?;
+        write!(f, "{}{}", self.get_method_number(), self.get_ins_index())?;
         if self.is_branched() { write!(f, "V")?; }
         write!(f, "_")?;
         let ins = self.as_vanilla();
@@ -128,13 +128,13 @@ impl fmt::Debug for Ins {
         } else if ins == HALT {
             write!(f, "HALT")
         } else {
-            write!(f, "{}", match ins.get_condition() {
+            write!(f, "{}", match ins.get_cond() {
                 RED_COND => "RED_",
                 GREEN_COND => "GREEN_",
                 BLUE_COND => "BLUE_",
                 _ => "",
             })?;
-            write!(f, "{}", match ins.get_instruction() {
+            write!(f, "{}", match ins.get_ins() {
                 FORWARD => "FORWARD",
                 LEFT => "LEFT",
                 RIGHT => "RIGHT",

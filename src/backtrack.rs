@@ -80,68 +80,67 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
     while !stack.empty() {
         considered += 1;
 
-        let mut top = stack.pop();
-        if deny(puzzle, &top, false) {
+        let candidate = stack.pop();
+        if deny(puzzle, &candidate, false) {
             denies += 1;
             continue;
         }
-//        if !tested.insert(top.get_hash()) {
+//        if !tested.insert(candidate.get_hash()) {
 //            rejects += 1;
 //            continue;
 //        }
         executed += 1;
         let mut preferred = [true; 5];
-        for i in 1..top.0.len() {
-            for j in (i + 1)..top.0.len() {
-                if top.0[i] == top.0[j] {
+        for i in 1..candidate.0.len() {
+            for j in (i + 1)..candidate.0.len() {
+                if candidate.0[i] == candidate.0[j] {
                     preferred[j] = false;
                 }
             }
         }
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
-        state.step(&top, &puzzle);
-        let mut branched = false;
+        state.step(&candidate, &puzzle);
         while state.running() {
             if state.steps > 256 && !visited.insert(state.get_hash()) {
                 duplicates += 1;
                 break;
             }
-            let stack_top = state.stack.top().clone();
-            let i = stack_top.get_method_number();
-            let j = stack_top.get_instruction_number();
-            let current_instruction = stack_top.as_vanilla();
-            if stack_top.is_nop() {
-                let mut temp = top.clone();
-                for k in j..puzzle.functions[i] {
-                    temp[i][k] = HALT;
+            let ins = state.stack.top().clone();
+            let method_index = ins.get_method_number();
+            let ins_index = ins.get_ins_index();
+            let current_instruction = ins.as_vanilla();
+            if ins.is_nop() {
+                let mut temp = candidate.clone();
+                for k in ins_index..puzzle.functions[method_index] {
+                    temp[method_index][k] = HALT;
                 }
                 stack.push(temp);
-                snips += stack.push_iterator(puzzle, &top, i, j,
-                                             puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter()
+                snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
+                                             puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
                                                  .filter(|&ins| {
                                                      !ins.is_function() || preferred[ins.source_index()]
                                                  }).chain(
-                                                 puzzle.get_condition_mask().get_probes(state.current_tile().to_condition()).iter()
+                                                 puzzle.get_cond_mask().get_probes(state.current_tile().to_condition()).iter()
                                              ), &state, false);
                 executed -= 1;
                 break;
-            } else if stack_top.is_probe() && state.current_tile().clone().executes(stack_top) {
-                snips += stack.push_iterator(puzzle, &top, i, j,
-                                             puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter()
+            } else if ins.is_probe() && state.current_tile().clone().executes(ins) {
+                snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
+                                             puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
                                              , &state, true);
                 executed -= 1;
                 break;
-            } else if !stack_top.is_debug() && !stack_top.is_branched()
-                && state.current_tile().to_condition() != stack_top.get_condition() {
-//                top[i][j] = top[i][j].as_branched();
-                snips += stack.push_iterator(puzzle, &top, i, j,
-                                             [stack_top.as_vanilla(), stack_top.as_vanilla().get_instruction()].iter()
+            } else if !ins.is_debug() && !ins.is_branched()
+                && state.current_tile().to_condition() != ins.get_cond() {
+//                candidate[method_index][ins_index] = candidate[method_index][ins_index].as_branched();
+                snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
+                                             [ins.as_vanilla(), ins.get_ins()].iter()
                                              , &state, true);
                 executed -= 1;
                 break;
             }
-            state.step(&top, &puzzle);
+            state.step(&candidate, &puzzle);
         }
         if considered % 100000000 == 0 || state.stars == 0 {
             if state.stars == 0 { print!("done! "); }
@@ -150,7 +149,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
             print!(" and {}", stack);
             println!();
 //            if considered > 10000 { return None; }
-            if state.stars == 0 { return Some(top); }
+            if state.stars == 0 { return Some(candidate); }
         }
     }
     return None;
@@ -170,8 +169,8 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
             if ins.is_function() {
                 invoked[ins.source_index()] += 1;
                 if conditioned[ins.source_index()] == NOP {
-                    conditioned[ins.source_index()] = ins.get_condition();
-                } else if conditioned[ins.source_index()] != ins.get_condition() {
+                    conditioned[ins.source_index()] = (ins.get_cond() | ins.with_branched(true));
+                } else if conditioned[ins.source_index()] != (ins.get_cond() | ins.with_branched(true)) {
                     conditioned[ins.source_index()] = HALT;
                 }
             }
@@ -193,15 +192,16 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
                 if show && denied { println!("de5"); }
             }
         }
-//        if conditioned[method] != NOP && conditioned[method] != HALT {
-//            for i in 0..puzzle.functions[method] {
-//                denied |= !program.0[method][i].is_condition(conditioned[method].get_condition());
-//                if !program.0[method][i].is_turn() {
-//                    break;
-//                }
-//            }
-//            if show && denied { println!("de6"); }
-//        }
+        if !conditioned[method].is_nop() && !conditioned[method].is_halt() {
+            for i in 0..puzzle.functions[method] {
+                denied |= !program.0[method][i].is_cond(conditioned[method].get_cond())
+                && (program.0[method][i].is_branched() == conditioned[method].is_branched());
+                if !program.0[method][i].is_turn() {
+                    break;
+                }
+            }
+            if show && denied { println!("de6"); }
+        }
 //        for i in 2..puzzle.functions[method] {
 //            let a = program.0[method][i - 2];
 //            let b = program.0[method][i - 1];
@@ -217,13 +217,13 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
 pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
     if (a.is_debug()) || b.is_debug() { return false; }
     let mut banned = false;
-    if a.get_condition() == b.get_condition() {
+    if a.get_cond() == b.get_cond() {
         banned |= a.is_order_invariant() && b.is_order_invariant() && a > b;
         if show && banned {
             println!("conds1 a: {:?} b: {:?}", a, b);
             return true;
         }
-        banned |= a.is_turn() && b.is_instruction(RIGHT);
+        banned |= a.is_turn() && b.is_ins(RIGHT);
         if show && banned {
             println!("conds2 a: {:?} b: {:?}", a, b);
             return true;
@@ -247,13 +247,13 @@ pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
             println!("marks1 a: {:?} b: {:?}", a, b);
             return true;
         }
-        banned |= a.get_instruction() == b.get_instruction() && (a > b || !a.is_gray() && !b.is_gray());
+        banned |= a.get_ins() == b.get_ins() && (a > b || !a.is_gray() && !b.is_gray());
         if show && banned {
             println!("marks2 a: {:?} b: {:?}", a, b);
             return true;
         }
         if puzzle.marks == [true, true, true] {
-            banned |= a.get_mark_as_condition() == b.get_condition();
+            banned |= a.get_mark_as_cond() == b.get_cond();
         }
         if show && banned {
             println!("marks5 a: {:?} b: {:?}", a, b);
@@ -272,21 +272,21 @@ pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
             return true;
         }
     }
-    if !a.is_gray() && !b.is_gray() && a.get_condition() != b.get_condition() {
-        banned |= (a.is_turn() && b.is_mark() && b.get_mark_as_condition() != a.get_condition()) || (b.is_turn() && a.is_mark() && a.get_mark_as_condition() != b.get_condition());
+    if !a.is_gray() && !b.is_gray() && a.get_cond() != b.get_cond() {
+        banned |= (a.is_turn() && b.is_mark() && b.get_mark_as_cond() != a.get_cond()) || (b.is_turn() && a.is_mark() && a.get_mark_as_cond() != b.get_cond());
         if show && banned {
             println!("triple color mark off a: {:?} b: {:?}", a, b);
             return true;
         }
     }
     if (puzzle.red as i32 + puzzle.green as i32 + puzzle.blue as i32) == 3 {
-        banned |= a.is_gray() && !b.is_gray() && a.is_turn() && b.is_instruction(a.get_instruction().other_turn());
+        banned |= a.is_gray() && !b.is_gray() && a.is_turn() && b.is_ins(a.get_ins().other_turn());
         if show && banned {
             println!("negation with all colors a: {:?} b: {:?}", a, b);
             return true;
         }
     } else if puzzle.red as i32 + puzzle.green as i32 + puzzle.blue as i32 == 2 {
-        banned |= a.is_gray() && !b.is_gray() && a.is_turn() && b.is_instruction(a.get_instruction().other_turn());
+        banned |= a.is_gray() && !b.is_gray() && a.is_turn() && b.is_ins(a.get_ins().other_turn());
         if show && banned {
             println!("seven a: {:?} b: {:?}", a, b);
             return true;
@@ -302,14 +302,14 @@ pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
 pub fn banned_trio(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, show: bool) -> bool {
     if c.is_debug() { return banned_pair(puzzle, a, b, show); }
     let mut banned = false;
-    if a.get_condition() == b.get_condition() && a.get_condition() == c.get_condition() {
+    if a.get_cond() == b.get_cond() && a.get_cond() == c.get_cond() {
         banned |= a.is_turn() && a == b && a == c;
     }
-    if a.get_condition() == c.get_condition() {
+    if a.get_cond() == c.get_cond() {
         banned |= a.is_mark() && b.is_turn();
     }
     if a.is_turn() && a.is_gray() && b.is_mark() && c.is_turn() && c.is_gray() {
-        banned |= !a.is_instruction(LEFT) || !c.is_instruction(LEFT);
+        banned |= !a.is_ins(LEFT) || !c.is_ins(LEFT);
     }
     banned || query_rejects_3(&[a, b, c])
 }
@@ -321,8 +321,8 @@ fn banned_quartet(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, d: Ins, show: bool) -
 
 pub fn reject(state: &State, puzzle: &Puzzle, program: &Source) -> bool {
     if state.stack.len() > 1 {
-        let conditions = state.stack[0].get_condition() == state.stack[1].get_condition();
-        let wiggles = (state.stack[0].get_instruction() == LEFT && state.stack[1].get_instruction() == RIGHT) || (state.stack[0].get_instruction() == RIGHT && state.stack[1].get_instruction() == LEFT);
+        let conditions = state.stack[0].get_cond() == state.stack[1].get_cond();
+        let wiggles = (state.stack[0].get_ins() == LEFT && state.stack[1].get_ins() == RIGHT) || (state.stack[0].get_ins() == RIGHT && state.stack[1].get_ins() == LEFT);
         let marks = state.stack[0].is_mark() && state.stack[1].is_mark();
         return conditions && (wiggles || marks);
     } else {
