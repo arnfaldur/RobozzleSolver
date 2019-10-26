@@ -22,14 +22,14 @@ impl Ins {
     pub(crate) fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
     pub(crate) fn is_function(self) -> bool { self.get_instruction() >= F1 && self.get_instruction() <= F5 }
     pub(crate) fn is_instruction(self, instruction: Ins) -> bool { self.get_instruction() == instruction }
-    pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.get_instruction() == LEFT || self.get_instruction() == RIGHT }
+    pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.is_turn() }
     pub(crate) fn is_turn(self) -> bool { self.is_instruction(LEFT) || self.is_instruction(RIGHT) }
     pub(crate) fn to_probe(self) -> Ins { self.get_condition() | NOP }
-    pub(crate) fn is_probe(self) -> bool { self.get_condition().0 > 0 && self.get_instruction() == NOP }
+    pub(crate) fn is_probe(self) -> bool { !self.is_gray() && self.get_instruction() == NOP }
     pub(crate) fn other_turn(self) -> Ins {
         if self.is_instruction(LEFT) { RIGHT } else if self.is_instruction(RIGHT) { LEFT } else { HALT }
     }
-    pub(crate) fn is_debug(self) -> bool { (self & NOP) == NOP }
+    pub(crate) fn is_debug(self) -> bool {  (self & NOP) == NOP }
     pub(crate) fn get_probes(self, excluded: Ins) -> Vec<Ins> {
         let mask = self.to_probe();
         return PROBES.iter().filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe()).cloned().collect();

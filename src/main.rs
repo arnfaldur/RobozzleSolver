@@ -27,6 +27,7 @@ fn main() {
         PUZZLE_42,
         PUZZLE_536,
         PUZZLE_656,
+        PUZZLE_1337,
     ].iter() {
         let now = Instant::now();
 //    start_web_client();

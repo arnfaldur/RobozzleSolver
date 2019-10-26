@@ -39,6 +39,7 @@ impl Stack {
             let mut temp = source.clone();
             temp[i][j] = instruction;
             if (j > 0 && banned_pair(puzzle, temp[i][j - 1], temp[i][j], false))
+                || (j < puzzle.functions[i] - 1 && banned_pair(puzzle, temp[i][j], temp[i][j + 1], false))
                 || (j > 1 && banned_trio(puzzle, temp[i][j - 2], temp[i][j - 1], temp[i][j], false)) {
                 denies += 1;
             } else {
@@ -88,9 +89,9 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
         }
         executed += 1;
         let mut preferred = [true; 5];
-        for i in 0..top.0.len() {
-            for j in i + 1..top.0.len() {
-                if i != j && top.0[i] == top.0[j] {
+        for i in 1..top.0.len() {
+            for j in (i + 1)..top.0.len() {
+                if top.0[i] == top.0[j] {
                     preferred[j] = false;
                 }
             }
@@ -152,7 +153,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
         }
         if considered % 10000000 == 0 || state.stars == 0 {
             if state.stars == 0 { print!("done! "); }
-            print!("considered: {}, executed: {}, rejects: {}, denies: {}, snips: {}, duplicates: {}", considered, executed, rejects, denies, snips, duplicates);
+            print!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}", considered, executed, rejects, denies, snips, duplicates);
             print!(" and {}", stack);
             println!();
 //            if considered > 10000 { return None; }
