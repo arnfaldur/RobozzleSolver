@@ -2,20 +2,22 @@ use std::fmt;
 use std::fmt::{Formatter, Error, Display};
 use colored::*;
 
+type instype = u32;
+
 #[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash)]
-pub struct Ins(u8);
+pub struct Ins(instype);
 
 impl Ins {
-    pub(crate) fn condition_to_color(self) -> Ins { Ins(self.0 >> 5) }
+    pub(crate) fn condition_to_color(self) -> Ins { Ins(self.un_branched().0 >> 5) }
     pub(crate) fn source_index(self) -> usize { (self.get_instruction().0 - F1.0) as usize }
     pub(crate) fn get_condition(self) -> Ins { self & INS_COLOR_MASK }
     pub(crate) fn get_instruction(self) -> Ins { self & INS_MASK }
-    fn get_fun_number(self) -> u8 { self.get_instruction().0 - F1.0 + 1 }
+    fn get_fun_number(self) -> u8 { (self.get_instruction().0 - F1.0 + 1) as u8 }
     pub(crate) fn get_mark_color(self) -> Ins { self & MARK_MASK }
     pub(crate) fn get_mark_as_condition(self) -> Ins { self.get_mark_color().color_to_condition() }
-    pub(crate) fn color_to_condition(self) -> Ins { Ins(self.0 << 5) }
-    pub(crate) fn get_marker(self) -> Ins { self.get_instruction() | NOP }
-    pub(crate) fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0) }
+    pub(crate) fn color_to_condition(self) -> Ins { Ins(self.0 << 5).un_branched() }
+    pub(crate) fn get_marker(self) -> Ins { (self.get_instruction() | NOP).un_branched() }
+    pub(crate) fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0).un_branched() }
     pub(crate) fn is_condition(self, condition: Ins) -> bool { self.get_condition() == condition }
     pub(crate) fn has_condition(self, condition: Ins) -> bool { self & condition == condition }
     pub(crate) fn is_gray(self) -> bool { self.is_condition(GRAY_COND) }
@@ -29,26 +31,32 @@ impl Ins {
     pub(crate) fn other_turn(self) -> Ins {
         if self.is_instruction(LEFT) { RIGHT } else if self.is_instruction(RIGHT) { LEFT } else { HALT }
     }
-    pub(crate) fn is_debug(self) -> bool {  (self & NOP) == NOP }
+    pub(crate) fn is_debug(self) -> bool { (self & NOP) == NOP }
     pub(crate) fn get_probes(self, excluded: Ins) -> Vec<Ins> {
         let mask = self.to_probe();
         return PROBES.iter().filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe()).cloned().collect();
     }
+    pub(crate) fn un_branched(self) -> Ins { self & VANILLA_MASK }
+    pub(crate) fn is_branched(self) -> bool { self & BRANCH_MASK == self }
+    pub(crate) fn as_branched(self) -> Ins { self | BRANCH_MASK }
 }
 
 pub(crate) fn with_conditions(red: bool, green: bool, blue: bool) -> Ins {
-    Ins((red as u8) << 5 | (green as u8) << 6 | (blue as u8) << 7)
+    Ins(((red as u8) << 5 | (green as u8) << 6 | (blue as u8) << 7) as instype)
 }
+
+const BRANCH_MASK: Ins = Ins(0b100000000);
+const VANILLA_MASK: Ins = Ins(0b11111111);
 
 impl From<Ins> for u8 {
     fn from(ins: Ins) -> Self {
-        ins.0
+        ins.0 as u8
     }
 }
 
 impl From<u8> for Ins {
     fn from(val: u8) -> Self {
-        Ins(val)
+        Ins(val as instype)
     }
 }
 

@@ -12,8 +12,6 @@ static REJECTS_2: OnceCell<HashSet<[Ins; 2]>> = OnceCell::new();
 static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
-static DUPLICATES: OnceCell<HashSet<Source>> = OnceCell::new();
-
 struct Stack {
     pointer: usize,
     data: [Source; BACKTRACK_STACK_SIZE],
@@ -222,78 +220,86 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
 }
 
 pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
-    if a.is_debug() || b.is_debug() { return false; }
+    if (a.is_debug()) || b.is_debug() { return false; }
     let mut banned = false;
     if a.get_condition() == b.get_condition() {
         banned |= a.is_order_invariant() && b.is_order_invariant() && a > b;
         if show && banned {
-            println!("conds1");
+            println!("conds1 a: {:?} b: {:?}", a, b);
             return true;
         }
         banned |= a.is_turn() && b.is_instruction(RIGHT);
         if show && banned {
-            println!("conds2");
+            println!("conds2 a: {:?} b: {:?}", a, b);
             return true;
         }
-        banned |= a.is_mark() && !a.is_condition(GRAY_COND);
+        banned |= a.is_mark() && !a.is_gray();
         if show && banned {
-            println!("conds3");
+            println!("conds3 a: {:?} b: {:?}", a, b);
             return true;
         }
     }
     if a.is_turn() && b.is_turn() {
         banned |= a > b; // only let a series of turns have one color order
         if show && banned {
-            println!("turns");
+            println!("turns a: {:?} b: {:?}", a, b);
             return true;
         }
     }
     if a.is_mark() && b.is_mark() {
-        banned |= b.is_condition(GRAY_COND);
+        banned |= b.is_gray();
         if show && banned {
-            println!("marks1");
+            println!("marks1 a: {:?} b: {:?}", a, b);
             return true;
         }
         banned |= a.get_instruction() == b.get_instruction() && (a > b || !a.is_gray() && !b.is_gray());
         if show && banned {
-            println!("marks2");
+            println!("marks2 a: {:?} b: {:?}", a, b);
             return true;
         }
         if puzzle.marks == [true, true, true] {
             banned |= a.get_mark_as_condition() == b.get_condition();
         }
         if show && banned {
-            println!("marks5");
+            println!("marks5 a: {:?} b: {:?}", a, b);
             return true;
         }
     }
-    banned |= a.is_condition(GRAY_COND) && a.is_mark() && !b.is_condition(GRAY_COND);
-    if (a.is_turn() && a.is_condition(GRAY_COND) && b.is_mark()) || (a.is_mark() && b.is_turn() && b.is_condition(GRAY_COND)) {
+    banned |= a.is_gray() && a.is_mark() && !b.is_gray();
+    if show && banned {
+        println!("mark then cond a: {:?} b: {:?}", a, b);
+        return true;
+    }
+    if (a.is_turn() && a.is_gray() && b.is_mark()) || (a.is_mark() && b.is_turn() && b.is_gray()) {
         banned |= a > b;
         if show && banned {
-            println!("five");
+            println!("five a: {:?} b: {:?}", a, b);
             return true;
         }
     }
     if !a.is_gray() && !b.is_gray() && a.get_condition() != b.get_condition() {
         banned |= (a.is_turn() && b.is_mark() && b.get_mark_as_condition() != a.get_condition()) || (b.is_turn() && a.is_mark() && a.get_mark_as_condition() != b.get_condition());
         if show && banned {
-            println!("triple color mark off");
+            println!("triple color mark off a: {:?} b: {:?}", a, b);
             return true;
         }
     }
     if (puzzle.red as i32 + puzzle.green as i32 + puzzle.blue as i32) == 3 {
-        banned |= a.is_condition(GRAY_COND) && !b.is_condition(GRAY_COND) && a.is_turn() && b.is_instruction(a.get_instruction().other_turn());
+        banned |= a.is_gray() && !b.is_gray() && a.is_turn() && b.is_instruction(a.get_instruction().other_turn());
         if show && banned {
-            println!("negation with all colors");
+            println!("negation with all colors a: {:?} b: {:?}", a, b);
             return true;
         }
     } else if puzzle.red as i32 + puzzle.green as i32 + puzzle.blue as i32 == 2 {
-        banned |= a.is_condition(GRAY_COND) && !b.is_condition(GRAY_COND) && a.is_turn() && b.is_instruction(a.get_instruction().other_turn());
+        banned |= a.is_gray() && !b.is_gray() && a.is_turn() && b.is_instruction(a.get_instruction().other_turn());
         if show && banned {
-            println!("seven");
+            println!("seven a: {:?} b: {:?}", a, b);
             return true;
         }
+    }
+    if show && banned {
+        println!("Some other pair issue a: {:?} b: {:?}", a, b);
+        return true;
     }
     banned //|| query_rejects_2(&[a, b])
 }
@@ -307,10 +313,10 @@ pub fn banned_trio(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, show: bool) -> bool 
     if a.get_condition() == c.get_condition() {
         banned |= a.is_mark() && b.is_turn();
     }
-    if a.is_turn() && a.is_condition(GRAY_COND) && b.is_mark() && c.is_turn() && c.is_condition(GRAY_COND) {
+    if a.is_turn() && a.is_gray() && b.is_mark() && c.is_turn() && c.is_gray() {
         banned |= !a.is_instruction(LEFT) || !c.is_instruction(LEFT);
     }
-    banned //|| query_rejects_3(&[a, b, c])
+    banned || query_rejects_3(&[a, b, c])
 }
 
 fn banned_quartet(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, d: Ins, show: bool) -> bool {
