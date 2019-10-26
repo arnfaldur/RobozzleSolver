@@ -1,5 +1,5 @@
 use colored::*;
-use std::fmt::{Display, Error, Formatter};
+use std::fmt::{Display, Error, Formatter, Debug};
 use std::ops::{IndexMut, Index, Range, Deref};
 use std::cmp::{max, min};
 
@@ -38,7 +38,7 @@ type Map = [[Tile; 18]; 14];
 
 pub type Method = [Ins; 10];
 
-#[derive(Eq, PartialEq, PartialOrd, Copy, Clone, Debug, Hash)]
+#[derive(Eq, PartialEq, PartialOrd, Copy, Clone, Debug)]
 pub struct Source(pub [Method; 5]);
 
 impl Source {
@@ -49,6 +49,17 @@ impl Source {
         let mut hasher = DefaultHasher::new();
         self.hash(&mut hasher);
         return hasher.finish();
+    }
+}
+
+
+impl Hash for Source {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        for method in self.0.iter() {
+            for ins in method {
+                ins.hash(state);
+            }
+        }
     }
 }
 
@@ -282,7 +293,7 @@ impl State {
         !self.stack.empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) {
-        let ins = self.stack.pop();
+        let ins = self.stack.pop().as_vanilla();
         self.steps += 1;
         if self.current_tile().executes(ins) {
             match ins.get_instruction() {
@@ -304,14 +315,16 @@ impl State {
                 LEFT => self.direction = self.direction.left(),
                 RIGHT => self.direction = self.direction.right(),
                 F1 | F2 | F3 | F4 | F5 => {
-                    self.stack.push(ins.get_marker());
-                    for i in (0..puzzle.functions[ins.source_index()]).rev() {
-                        let ins = source.0[ins.source_index()][i];
+                    let method = ins.source_index();
+                    for i in (0..puzzle.functions[method]).rev() {
+                        let new_ins = source.0[method][i];
                         // TODO: consider preventing no ops from going on the stack
                         // currently neccesary to be able to count what instruction is executing
-//                        if ins != HALT {
-                        self.stack.push(ins);
-//                        }
+                        if new_ins != HALT {
+                        let bib = new_ins.with_instruction_number(i);
+                        let bub = bib.with_method_number(method);
+                        self.stack.push(bub);
+                        }
                     }
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
@@ -319,31 +332,6 @@ impl State {
                 _ => (),
             }
         }
-    }
-    pub(crate) fn stack_frame(&self) -> Ins {
-        for i in (0..self.stack.pointer).rev() {
-            match self.stack.data[i] {
-                F1_MARKER | F2_MARKER | F3_MARKER | F4_MARKER | F5_MARKER => return self.stack.data[i].from_marker(),
-                _ => (),
-            }
-        }
-        println!("couldn't find a stack frame {}", self);
-        return F1;
-    }
-    pub(crate) fn instruction_number(&self, puzzle: &Puzzle) -> usize {
-        let mut result = 0;
-        for i in (0..self.stack.pointer).rev() {
-            if self.stack.data[i] == F1_MARKER ||
-                self.stack.data[i] == F2_MARKER ||
-                self.stack.data[i] == F3_MARKER ||
-                self.stack.data[i] == F4_MARKER ||
-                self.stack.data[i] == F5_MARKER {
-                return puzzle.functions[self.stack_frame().source_index()] - result;
-            } else {
-                result += 1;
-            }
-        }
-        return result;
     }
     pub(crate) fn get_hash(&self) -> u64 {
         let mut state = DefaultHasher::new();
@@ -456,6 +444,23 @@ impl Display for Stack {
         let mut count = 0;
         for i in (0..self.pointer).rev() {
             write!(f, "{}", self.data[i])?;
+            count += 1;
+            if count == 100 {
+                write!(f, "...")?;
+                break;
+            }
+        }
+        write!(f, ")")
+        //        write!(f, "{}]", self.data[self.data.len() - 1])
+    }
+}
+
+impl Debug for Stack {
+    fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
+        write!(f, "Stack: (P:{}, ", self.pointer)?;
+        let mut count = 0;
+        for i in (0..self.pointer).rev() {
+            write!(f, "{:?}, ", self.data[i])?;
             count += 1;
             if count == 100 {
                 write!(f, "...")?;
