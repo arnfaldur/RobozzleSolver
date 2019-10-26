@@ -2,15 +2,16 @@
 #![allow(dead_code, ellipsis_inclusive_range_patterns)]
 
 use std::time::Instant;
-use constants::*;
-use carlo::carlo;
-use backtrack::backtrack;
-use crate::constants::*;
-use crate::game::{State, Puzzle, genboi, Tile, won, Source, instructions::*, Method};
 use std::collections::hash_map::DefaultHasher;
 use std::hash::Hash;
 use std::collections::{HashMap, HashSet};
-use crate::backtrack::*;
+
+use constants::*;
+use game::{*, instructions::*};
+use web::start_web_client;
+
+use backtrack::*;
+use carlo::carlo;
 
 mod constants;
 mod game;
@@ -19,14 +20,17 @@ mod tests;
 mod carlo;
 mod backtrack;
 
+mod web;
+
 fn main() {
     let now = Instant::now();
+    start_web_client();
 //    denial_test();
-    if let Some(solution) = backtrack(&PUZZLE_1337) {
-        println!("solved! {}", solution);
-    } else {
-        println!("I couldn't find a solution :(");
-    }
+//    if let Some(solution) = backtrack(&PUZZLE_1337) {
+//        println!("solved! {}", solution);
+//    } else {
+//        println!("I couldn't find a solution :(");
+//    }
 //    let mut boiii : Vec<[Ins;2]> = get_rejects_2().iter().cloned().collect();
 //    boiii.sort();
 //    for e in boiii {
