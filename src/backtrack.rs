@@ -76,7 +76,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
 
     let mut duplicates: u64 = 0;
 
-    let mut visited: HashSet<u64> = HashSet::new();
+    let mut visited: HashSet<_> = HashSet::new();
     while !stack.empty() {
         considered += 1;
 
@@ -98,7 +98,6 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                 }
             }
         }
-//        let mut activations = [[GRAY_COND; 10]; 5];
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
         state.step(&top, &puzzle);
@@ -113,31 +112,26 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
             let j = stack_top.get_instruction_number();
             let current_instruction = stack_top.as_vanilla();
             if stack_top.is_nop() {
-                if top[i][j].is_nop() {
-//                    branched = true;
-                    let mut temp = top.clone();
-                    for k in j..puzzle.functions[i] {
-                        temp[i][k] = HALT;
-                    }
-                    stack.push(temp);
-                    snips += stack.push_iterator(puzzle, &top, i, j,
-                                                 puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter()
-                                                     .filter(|&ins| {
-                                                         true || !ins.is_function() || preferred[ins.source_index()]
-                                                     }).chain(
-                                                     puzzle.get_condition_mask().get_probes(state.current_tile().to_condition()).iter()
-                                                 ), &state, false);
-                    executed -= 1;
+                let mut temp = top.clone();
+                for k in j..puzzle.functions[i] {
+                    temp[i][k] = HALT;
                 }
+                stack.push(temp);
+                snips += stack.push_iterator(puzzle, &top, i, j,
+                                             puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter()
+                                                 .filter(|&ins| {
+                                                     !ins.is_function() || preferred[ins.source_index()]
+                                                 }).chain(
+                                                 puzzle.get_condition_mask().get_probes(state.current_tile().to_condition()).iter()
+                                             ), &state, false);
+                executed -= 1;
                 break;
-            } else if stack_top.is_probe() {
-                if state.current_tile().clone().executes(stack_top) {
-                    snips += stack.push_iterator(puzzle, &top, i, j,
-                                                 puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter()
-                                                 , &state, true);
-                    executed -= 1;
-                    break;
-                }
+            } else if stack_top.is_probe() && state.current_tile().clone().executes(stack_top) {
+                snips += stack.push_iterator(puzzle, &top, i, j,
+                                             puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter()
+                                             , &state, true);
+                executed -= 1;
+                break;
             } else if !stack_top.is_debug() && !stack_top.is_branched()
                 && state.current_tile().to_condition() != stack_top.get_condition() {
 //                top[i][j] = top[i][j].as_branched();
@@ -147,22 +141,9 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                 executed -= 1;
                 break;
             }
-//            else if !stack_top.is_debug() && stack_top.is_gray() && !branched {
-////                branched = true;
-//                let i = state.stack_frame().source_index();
-//                let j = state.instruction_number(puzzle);
-//                if activations[i][j].is_gray() {
-//                    activations[i][j] = state.current_tile().to_condition();
-//                } else if activations[i][j] != state.current_tile().to_condition() && activations[i][j] != HALT {
-//                    snips += stack.push_iterator(puzzle, &top, i, j,
-//                                                 [stack_top | activations[i][j]].iter()
-//                                                 , &state);
-//                    activations[i][j] = HALT;
-//                }
-//            }
             state.step(&top, &puzzle);
         }
-        if considered % 10000000 == 0 || state.stars == 0 {
+        if considered % 100000000 == 0 || state.stars == 0 {
             if state.stars == 0 { print!("done! "); }
             print!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
                    considered, executed, rejects, denies, snips, duplicates);
