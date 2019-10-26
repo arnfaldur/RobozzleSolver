@@ -30,9 +30,13 @@ impl Ins {
         if self.is_instruction(LEFT) { RIGHT } else if self.is_instruction(RIGHT) { LEFT } else { HALT }
     }
     pub(crate) fn is_debug(self) -> bool { (self & NOP) == NOP }
+    pub(crate) fn get_probes(self, excluded: Ins) -> Vec<Ins> {
+        let mask = self.to_probe();
+        return PROBES.iter().filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe()).cloned().collect();
+    }
 }
 
-pub(crate) fn with_colors(red: bool, green: bool, blue: bool) -> Ins {
+pub(crate) fn with_conditions(red: bool, green: bool, blue: bool) -> Ins {
     Ins((red as u8) << 5 | (green as u8) << 6 | (blue as u8) << 7)
 }
 

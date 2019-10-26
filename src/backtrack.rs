@@ -12,6 +12,8 @@ static REJECTS_2: OnceCell<HashSet<[Ins; 2]>> = OnceCell::new();
 static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
+static DUPLICATES: OnceCell<HashSet<Source>> = OnceCell::new();
+
 struct Stack {
     pointer: usize,
     data: [Source; BACKTRACK_STACK_SIZE],
@@ -30,7 +32,7 @@ impl Stack {
     fn top(&self) -> Source { self.data[self.pointer - 1] }
     fn len(&self) -> usize { self.pointer }
     fn empty(&self) -> bool { self.pointer == 0 }
-    fn add_ordeal<'a>(&mut self, puzzle: &Puzzle, source: &Source, i: usize, j: usize, new_instructions: impl DoubleEndedIterator<Item=&'a Ins>, state: &State) -> u64 {
+    fn push_iterator<'a>(&mut self, puzzle: &Puzzle, source: &Source, i: usize, j: usize, new_instructions: impl DoubleEndedIterator<Item=&'a Ins>, state: &State) -> u64 {
 //        let last_pointer = self.pointer;
         let mut denies = 0;
         for &instruction in new_instructions.rev() {
@@ -57,9 +59,7 @@ impl Stack {
 const THREADS: usize = 16;
 
 pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
-//    let rejects_2 = get_rejects_2();
-
-//    let mut tested = HashSet::new();
+    let mut tested = HashSet::new();
 //    for thread in 0..THREADS {
 //        thread::spawn(move || {
     let mut stack: Stack = Stack { pointer: 0, data: [NOGRAM; BACKTRACK_STACK_SIZE] };
@@ -77,9 +77,13 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
     while !stack.empty() {
         considered += 1;
 
-        let mut top = stack.pop();
+        let top = stack.pop();
         if deny(puzzle, &top, false) {
             denies += 1;
+            continue;
+        }
+        if !tested.insert(top.get_hash()) {
+            rejects += 1;
             continue;
         }
         executed += 1;
@@ -91,8 +95,10 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                 }
             }
         }
+        let mut activations = [[GRAY_COND; 10]; 5];
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
+        state.step(&top, &puzzle);
         let mut branched = false;
         while state.running() {
             if state.steps > 256 && !visited.insert(state.get_hash()) {
@@ -110,13 +116,13 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                         temp[i][k] = HALT;
                     }
                     stack.push(temp);
-                    snips += stack.add_ordeal(puzzle, &top, i, j,
-                                              puzzle.get_instruction_set(GRAY_COND, true).iter()
-                                                  .filter(|&ins| {
-                                                      !ins.is_function() || preferred[ins.source_index()]
-                                                  }).chain(
-                                                  state.current_tile().get_probes(puzzle.get_color_mask()).iter()
-                                              ), &state);
+                    snips += stack.push_iterator(puzzle, &top, i, j,
+                                                 puzzle.get_instruction_set(GRAY_COND, true).iter()
+                                                     .filter(|&ins| {
+                                                         !ins.is_function() || preferred[ins.source_index()]
+                                                     }).chain(
+                                                     puzzle.get_condition_mask().get_probes(state.current_tile().to_condition()).iter()
+                                                 ), &state);
                     executed -= 1;
                 }
                 break;
@@ -124,18 +130,32 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                 let i = state.stack_frame().source_index();
                 let j = state.instruction_number(puzzle);
                 if state.current_tile().clone().executes(stack_top) {
-                    snips += stack.add_ordeal(puzzle, &top, i, j,
-                                              puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter(), &state);
+                    snips += stack.push_iterator(puzzle, &top, i, j,
+                                                 puzzle.get_instruction_set(state.current_tile().to_condition(), false).iter(), &state);
                     executed -= 1;
                     break;
+                }
+            } else if !stack_top.is_debug() && stack_top.is_gray() && !branched {
+//                branched = true;
+                let i = state.stack_frame().source_index();
+                let j = state.instruction_number(puzzle);
+                if activations[i][j].is_gray() {
+                    activations[i][j] = state.current_tile().to_condition();
+                } else if activations[i][j] != state.current_tile().to_condition() && activations[i][j] != HALT {
+                    snips += stack.push_iterator(puzzle, &top, i, j,
+                                                 [stack_top | activations[i][j]].iter()
+                                                 , &state);
+                    activations[i][j] = HALT;
                 }
             }
             state.step(&top, &puzzle);
         }
         if considered % 10000000 == 0 || state.stars == 0 {
-            print!("done! considered: {}, executed: {}, rejects: {}, denies: {}, snips: {}, duplicates: {}", considered, executed, rejects, denies, snips, duplicates);
-//            print!(" and {}", stack);
+            if state.stars == 0 { print!("done! "); }
+            print!("considered: {}, executed: {}, rejects: {}, denies: {}, snips: {}, duplicates: {}", considered, executed, rejects, denies, snips, duplicates);
+            print!(" and {}", stack);
             println!();
+//            if considered > 10000 { return None; }
             if state.stars == 0 { return Some(top); }
         }
     }

@@ -23,7 +23,11 @@ mod backtrack;
 mod web;
 
 fn main() {
-    for puzzle in [PUZZLE_42, PUZZLE_536, PUZZLE_656].iter() {
+    for puzzle in [
+        PUZZLE_42,
+        PUZZLE_536,
+        PUZZLE_656,
+    ].iter() {
         let now = Instant::now();
 //    start_web_client();
 //    denial_test();

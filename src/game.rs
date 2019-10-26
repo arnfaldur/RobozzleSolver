@@ -32,12 +32,6 @@ impl Tile {
         self.0 = color | TILE_TOUCHED.0
     }
     pub(crate) fn to_condition(&self) -> Ins { (self.0 << 5).into() }
-    pub(crate) fn get_probes(&self, colors: Ins) -> Vec<Ins> {
-        let mask = colors.to_probe();
-//        let mut result = PROBES.into_vec();
-//        result.remove_item(*self.to_condition().to_probe());
-        return PROBES.iter().filter(|&ins| (*ins & mask) == *ins).cloned().collect();
-    }
 }
 
 type Map = [[Tile; 18]; 14];
@@ -50,6 +44,11 @@ pub struct Source(pub [Method; 5]);
 impl Source {
     fn len(&self) -> usize {
         self.0.len()
+    }
+    pub fn get_hash(&self) -> u64 {
+        let mut hasher = DefaultHasher::new();
+        self.hash(&mut hasher);
+        return hasher.finish();
     }
 }
 
@@ -229,9 +228,9 @@ impl Puzzle {
         }
         return scoring(&state, self);
     }
-    pub(crate) fn get_color_mask(&self) -> Ins {
+    pub(crate) fn get_condition_mask(&self) -> Ins {
         if (self.red as u8) + (self.green as u8) + (self.blue as u8) > 1 {
-            with_colors(self.red, self.green, self.blue)
+            with_conditions(self.red, self.green, self.blue)
         } else {
             GRAY_COND
         }
@@ -328,7 +327,7 @@ impl State {
                 _ => (),
             }
         }
-        println!("couldn't find a stack frame");
+        println!("couldn't find a stack frame {}", self);
         return F1;
     }
     pub(crate) fn instruction_number(&self, puzzle: &Puzzle) -> usize {
