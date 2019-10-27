@@ -18,12 +18,12 @@ impl Ins {
     pub(crate) fn color_to_cond(self) -> Ins { Ins(self.0 << 5).as_vanilla() }
     pub(crate) fn get_marker(self) -> Ins { (self.get_ins() | NOP).as_vanilla() }
     pub(crate) fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0).as_vanilla() }
-    pub(crate) fn is_cond(self, condition: Ins) -> bool { self.get_cond() == condition }
-    pub(crate) fn has_cond(self, condition: Ins) -> bool { self & condition == condition }
+    pub(crate) fn is_cond(self, cond: Ins) -> bool { self.get_cond() == cond }
+    pub(crate) fn has_cond(self, cond: Ins) -> bool { self & cond == cond }
     pub(crate) fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
     pub(crate) fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
     pub(crate) fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
-    pub(crate) fn is_ins(self, instruction: Ins) -> bool { self.get_ins() == instruction }
+    pub(crate) fn is_ins(self, ins: Ins) -> bool { self.get_ins() == ins }
     pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.is_turn() }
     pub(crate) fn is_turn(self) -> bool { self.is_ins(LEFT) || self.is_ins(RIGHT) }
     pub(crate) fn to_probe(self) -> Ins { self.get_cond() | NOP }
@@ -118,10 +118,10 @@ impl Display for Ins {
 
 impl fmt::Debug for Ins {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
-        write!(f, "{:016b} ", self.0)?;
-        write!(f, "{}{}", self.get_method_number(), self.get_ins_index())?;
-        if self.is_branched() { write!(f, "V")?; }
-        write!(f, "_")?;
+//        write!(f, "{:016b} ", self.0)?;
+//        write!(f, "{}{}", self.get_method_number(), self.get_ins_index())?;
+//        if self.is_branched() { write!(f, "V")?; }
+//        write!(f, "_")?;
         let ins = self.as_vanilla();
         if ins == NOP {
             write!(f, "NOP")

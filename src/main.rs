@@ -32,8 +32,12 @@ fn main() {
         let now = Instant::now();
 //    start_web_client();
 //    denial_test();
-        if let Some(solution) = backtrack(&puzzle) {
-            println!("solved! {}", solution);
+        let solutions = backtrack(&puzzle);
+        if !solutions.is_empty() {
+            println!("Solved! The solutions are:");
+            for solution in solutions {
+                println!(" {}", solution);
+            }
         } else {
             println!("I couldn't find a solution :(");
         }

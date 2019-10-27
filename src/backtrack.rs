@@ -61,7 +61,8 @@ impl Stack {
 
 const THREADS: usize = 16;
 
-pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
+pub fn backtrack(puzzle: &Puzzle) -> Vec<Source> {
+    let mut result: Vec<Source> = vec![];
     let mut tested: HashSet<u64, _> = HashSet::new();
 //    for thread in 0..THREADS {
 //        thread::spawn(move || {
@@ -76,7 +77,7 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
 
     let mut duplicates: u64 = 0;
 
-    let mut visited: HashSet<_> = HashSet::new();
+//    let mut visited: HashSet<_> = HashSet::new();
     while !stack.empty() {
         considered += 1;
 
@@ -90,6 +91,12 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
 //            continue;
 //        }
         executed += 1;
+        let mut reachable = [[true; 10]; 5];
+        for i in 0..5 {
+            for j in 0..10 {
+                reachable[i][j] = candidate[i][j].is_debug();
+            }
+        }
         let mut preferred = [true; 5];
         for i in 1..candidate.0.len() {
             for j in (i + 1)..candidate.0.len() {
@@ -102,14 +109,18 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
         state.stack.push(F1);
         state.step(&candidate, &puzzle);
         while state.running() {
-            if state.steps > 256 && !visited.insert(state.get_hash()) {
-                duplicates += 1;
-                break;
-            }
+//            if state.steps > 256 && !visited.insert((state.get_hash(), candidate.get_hash())) {
+//                duplicates += 1;
+//                break;
+//            }
             let ins = state.stack.top().clone();
             let method_index = ins.get_method_number();
             let ins_index = ins.get_ins_index();
+            reachable[method_index][ins_index] = true;
             let current_instruction = ins.as_vanilla();
+            let nop_branch = ins.is_nop();
+            let probe_branch = ins.is_probe() && state.current_tile().clone().executes(ins);
+
             if ins.is_nop() {
                 let mut temp = candidate.clone();
                 for k in ins_index..puzzle.functions[method_index] {
@@ -123,36 +134,34 @@ pub fn backtrack(puzzle: &Puzzle) -> Option<Source> {
                                                  }).chain(
                                                  puzzle.get_cond_mask().get_probes(state.current_tile().to_condition()).iter()
                                              ), &state, false);
-                executed -= 1;
-                break;
             } else if ins.is_probe() && state.current_tile().clone().executes(ins) {
                 snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
                                              puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
                                              , &state, true);
-                executed -= 1;
-                break;
             } else if !ins.is_debug() && !ins.is_branched()
                 && state.current_tile().to_condition() != ins.get_cond() {
 //                candidate[method_index][ins_index] = candidate[method_index][ins_index].as_branched();
                 snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
                                              [ins.as_vanilla(), ins.get_ins()].iter()
                                              , &state, true);
-                executed -= 1;
-                break;
+            } else {
+                state.step(&candidate, &puzzle);
+                continue;
             }
-            state.step(&candidate, &puzzle);
+            executed -= 1;
+            break;
         }
         if considered % 100000000 == 0 || state.stars == 0 {
-            if state.stars == 0 { print!("done! "); }
+            if state.stars == 0 { print!("solution: "); }
             print!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
                    considered, executed, rejects, denies, snips, duplicates);
             print!(" and {}", stack);
             println!();
 //            if considered > 10000 { return None; }
-            if state.stars == 0 { return Some(candidate); }
+            if state.stars == 0 { result.push(candidate); }
         }
     }
-    return None;
+    return result;
 //        });
 //    }
 
@@ -195,7 +204,7 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
         if !conditioned[method].is_nop() && !conditioned[method].is_halt() {
             for i in 0..puzzle.functions[method] {
                 denied |= !program.0[method][i].is_cond(conditioned[method].get_cond())
-                && (program.0[method][i].is_branched() == conditioned[method].is_branched());
+                    && (program.0[method][i].is_branched() == conditioned[method].is_branched());
                 if !program.0[method][i].is_turn() {
                     break;
                 }
