@@ -1,5 +1,9 @@
 #![feature(test, vec_remove_item, core_intrinsics)]
 #![allow(dead_code, ellipsis_inclusive_range_patterns)]
+#![allow(unused_imports)]
+#![allow(unused_mut)]
+#![allow(unused_must_use)]
+#![allow(unreachable_code)]
 
 use std::time::Instant;
 use std::collections::hash_map::DefaultHasher;
@@ -12,6 +16,7 @@ use web::start_web_client;
 
 use backtrack::*;
 use carlo::carlo;
+use crate::web::encode_program;
 
 mod constants;
 mod game;
@@ -23,6 +28,8 @@ mod backtrack;
 mod web;
 
 fn main() {
+//    start_web_client();
+//    denial_test();
     for puzzle in [
         PUZZLE_42,
         PUZZLE_536,
@@ -30,30 +37,19 @@ fn main() {
         PUZZLE_1337,
     ].iter() {
         let now = Instant::now();
-//    start_web_client();
-//    denial_test();
         let solutions = backtrack(&puzzle);
         if !solutions.is_empty() {
             println!("Solved! The solutions are:");
             for solution in solutions {
-                println!(" {}", solution);
+                println!("{} code: {}", solution, encode_program(&solution, puzzle));
             }
         } else {
             println!("I couldn't find a solution :(");
         }
         println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
     }
-//    let mut boiii : Vec<[Ins;2]> = get_rejects_2().iter().cloned().collect();
-//    boiii.sort();
-//    for e in boiii {
-//        for i in e.iter() {
-//            print!("{}",i);
-//        }
-//        println!();
-//    }
-//    PUZZLE_1337.execute(&PUZZLE_1337_SOLUTION, won);
-//    carlo(&PUZZLE_42, 1 << 14, 1 << 11);
-//    PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, |state, _| state.stars == 0);
+
+//    println!("prog: {}", encode_program(&PUZZLE_656_SOLUTION, &PUZZLE_656));
 }
 
 // Instructions

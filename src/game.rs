@@ -1,13 +1,12 @@
 use colored::*;
 use std::fmt::{Display, Error, Formatter, Debug};
-use std::ops::{IndexMut, Index, Range, Deref};
+use std::ops::{IndexMut, Index};
 use std::cmp::{max, min};
 
 use crate::constants::*;
 use instructions::*;
 use std::hash::{Hasher, Hash};
 use std::collections::hash_map::DefaultHasher;
-use std::fmt;
 
 pub(crate) mod instructions;
 
@@ -45,6 +44,24 @@ impl Source {
     fn len(&self) -> usize {
         self.0.len()
     }
+    pub fn has_nop(&self) -> bool {
+        let mut result = false;
+        for m in self.0.iter() {
+            for i in m.iter() {
+                result |= i.is_nop();
+            }
+        }
+        return result;
+    }
+    pub fn count_ins(&self) -> usize {
+        let mut result = 0;
+        for m in self.0.iter() {
+            for i in m.iter() {
+                result += !i.is_debug() as usize;
+            }
+        }
+        return result;
+    }
     pub fn get_hash(&self) -> u64 {
         let mut hasher = DefaultHasher::new();
         self.hash(&mut hasher);
@@ -79,7 +96,7 @@ impl IndexMut<usize> for Source {
 
 const STACK_SIZE: usize = 1 << 10;
 pub(crate) const MAX_STEPS: usize = 1 << 12;
-const STACK_MATCH: usize = 1 << 4;
+const STACK_MATCH: usize = 1 << 6;
 
 #[derive(Copy, Clone)]
 pub struct Stack {
@@ -292,7 +309,7 @@ impl State {
     pub(crate) fn running(&self) -> bool {
         !self.stack.empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
     }
-    pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) {
+    pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
         let ins = self.stack.pop().as_vanilla();
         self.steps += 1;
         if self.current_tile().executes(ins) {
@@ -305,7 +322,7 @@ impl State {
                         Direction::Right => self.x += 1,
                     };
                     if *self.current_tile() == _N {
-                        self.stack.clear();
+                        return false;
                     } else {
                         self.stars -= self.current_tile().has_star() as usize;
                         self.current_tile().clear_star();
@@ -318,11 +335,7 @@ impl State {
                     let method = ins.source_index();
                     for i in (0..puzzle.functions[method]).rev() {
                         let new_ins = source.0[method][i];
-                        // TODO: consider preventing no ops from going on the stack
-                        // currently neccesary to be able to count what instruction is executing
-//                        if new_ins != HALT {
                         self.stack.push(new_ins.with_ins_index(i).with_method_number(method));
-//                        }
                     }
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
@@ -330,6 +343,7 @@ impl State {
                 _ => (),
             }
         }
+        return self.running();
     }
     pub(crate) fn get_hash(&self) -> u64 {
         let mut state = DefaultHasher::new();

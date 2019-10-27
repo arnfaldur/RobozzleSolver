@@ -1,9 +1,9 @@
-use crate::game::{Source, Puzzle, State, won};
+use crate::game::{Source, Puzzle, State};
 use crate::game::instructions::*;
 use crate::constants::*;
 use crate::carlo::{score_cmp, carlo};
 use std::fmt::{Display, Formatter, Error};
-use std::collections::HashSet;
+use std::collections::{HashSet, HashMap};
 use once_cell::sync::OnceCell;
 use std::borrow::{Borrow, BorrowMut};
 
@@ -13,39 +13,43 @@ pub(crate) static REJECTS_2: OnceCell<HashSet<[Ins; 2]>> = OnceCell::new();
 pub(crate) static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 pub(crate) static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
+#[derive(Copy, Clone)]
+struct Frame(Source, usize);
+
 struct Stack {
     pointer: usize,
-    data: [Source; BACKTRACK_STACK_SIZE],
+    data: [Frame; BACKTRACK_STACK_SIZE],
 }
 
 impl Stack {
     fn new() -> Stack {
-        Stack { pointer: 0, data: [NOGRAM; BACKTRACK_STACK_SIZE] }
+        Stack { pointer: 0, data: [Frame(NOGRAM, 0); BACKTRACK_STACK_SIZE] }
     }
-    fn push(&mut self, element: Source) {
+    fn push(&mut self, element: Frame) {
         self.data[self.pointer] = element;
         self.pointer += 1;
     }
-    fn pop(&mut self) -> Source {
+    fn pop(&mut self) -> Frame {
         let result = self.top();
         self.pointer -= 1;
         return result;
     }
-    fn top(&self) -> Source { self.data[self.pointer - 1] }
+    fn top(&self) -> Frame { self.data[self.pointer - 1] }
     fn len(&self) -> usize { self.pointer }
     fn empty(&self) -> bool { self.pointer == 0 }
-    fn push_iterator<'a>(&mut self, puzzle: &Puzzle, source: &Source, i: usize, j: usize, new_instructions: impl DoubleEndedIterator<Item=&'a Ins>, state: &State, branched: bool) -> u64 {
+    fn push_iterator(&mut self, puzzle: &Puzzle, candidate: &Source, method_index: usize, ins_index: usize,
+                     new_instructions: impl DoubleEndedIterator<Item=Ins>, state: &State) -> u64 {
 //        let last_pointer = self.pointer;
-        let mut denies = 0;
-        for &instruction in new_instructions.rev() {
-            let mut temp = source.clone();
-            temp[i][j] = instruction.with_branched(branched);
-            if (j > 0 && banned_pair(puzzle, temp[i][j - 1], temp[i][j], false))
-                || (j < puzzle.functions[i] - 1 && banned_pair(puzzle, temp[i][j], temp[i][j + 1], false))
-                || (j > 1 && banned_trio(puzzle, temp[i][j - 2], temp[i][j - 1], temp[i][j], false)) {
-                denies += 1;
+        let mut snips = 0;
+        for instruction in new_instructions.rev() {
+            let mut temp = candidate.clone();
+            temp[method_index][ins_index] = instruction;
+            if (ins_index > 0 && banned_pair(puzzle, temp[method_index][ins_index - 1], temp[method_index][ins_index], false))
+                || (ins_index < puzzle.functions[method_index] - 1 && banned_pair(puzzle, temp[method_index][ins_index], temp[method_index][ins_index + 1], false))
+                || (ins_index > 1 && banned_trio(puzzle, temp[method_index][ins_index - 2], temp[method_index][ins_index - 1], temp[method_index][ins_index], false)) {
+                snips += 1;
             } else {
-                self.push(temp.to_owned());
+                self.push(Frame(temp.to_owned(), state.steps));
             }
         }
 //        self.data.get_mut(last_pointer..self.pointer).unwrap().sort_by_cached_key(|prog| {
@@ -55,7 +59,7 @@ impl Stack {
 //            }
 //            return score_cmp(&temp, puzzle);
 //        });
-        return denies;
+        return snips;
     }
 }
 
@@ -66,8 +70,8 @@ pub fn backtrack(puzzle: &Puzzle) -> Vec<Source> {
     let mut tested: HashSet<u64, _> = HashSet::new();
 //    for thread in 0..THREADS {
 //        thread::spawn(move || {
-    let mut stack: Stack = Stack::new();
-    stack.push(puzzle.empty_source());
+    let mut stack = Stack::new();
+    stack.push(Frame(puzzle.empty_source(), 0));
 //    stack.push(PUZZLE_1337_SOLUTION);
     let mut considered: u64 = 0;
     let mut executed: u64 = 0;
@@ -77,11 +81,11 @@ pub fn backtrack(puzzle: &Puzzle) -> Vec<Source> {
 
     let mut duplicates: u64 = 0;
 
-//    let mut visited: HashSet<_> = HashSet::new();
+//    let mut visited: HashMap<_, Source> = HashMap::new();
     while !stack.empty() {
         considered += 1;
 
-        let candidate = stack.pop();
+        let Frame(candidate, branch_step) = stack.pop();
         if deny(puzzle, &candidate, false) {
             denies += 1;
             continue;
@@ -91,10 +95,10 @@ pub fn backtrack(puzzle: &Puzzle) -> Vec<Source> {
 //            continue;
 //        }
         executed += 1;
-        let mut reachable = [[true; 10]; 5];
+        let mut reached = [[false; 10]; 5];
         for i in 0..5 {
             for j in 0..10 {
-                reachable[i][j] = candidate[i][j].is_debug();
+                reached[i][j] = candidate[i][j].is_nop() || candidate[i][j].is_halt();
             }
         }
         let mut preferred = [true; 5];
@@ -107,55 +111,77 @@ pub fn backtrack(puzzle: &Puzzle) -> Vec<Source> {
         }
         let mut state = puzzle.initial_state();
         state.stack.push(F1);
-        state.step(&candidate, &puzzle);
-        while state.running() {
-//            if state.steps > 256 && !visited.insert((state.get_hash(), candidate.get_hash())) {
-//                duplicates += 1;
-//                break;
+        while state.step(&candidate, &puzzle) {
+//            if state.steps > branch_step + 10 && !candidate.has_nop() {
+//                if visited.contains_key(&(state.get_hash())) {
+//                    let champ = visited.get(&state.get_hash()).unwrap();
+//                    if champ.count_ins() > candidate.count_ins() {
+//                        println!("replacing {} with {}", champ, candidate);
+//                        visited.insert(state.get_hash(), candidate);
+//                    } else {
+//                        println!("{} was superseeded by {}", candidate, champ);
+//                    }
+//                    duplicates += 1;
+//                    break;
+//                } else {
+//                    visited.insert(state.get_hash(), candidate);
+//                }
 //            }
             let ins = state.stack.top().clone();
             let method_index = ins.get_method_number();
             let ins_index = ins.get_ins_index();
-            reachable[method_index][ins_index] = true;
-            let current_instruction = ins.as_vanilla();
             let nop_branch = ins.is_nop();
             let probe_branch = ins.is_probe() && state.current_tile().clone().executes(ins);
-
-            if ins.is_nop() {
-                let mut temp = candidate.clone();
-                for k in ins_index..puzzle.functions[method_index] {
-                    temp[method_index][k] = HALT;
-                }
-                stack.push(temp);
-                snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
-                                             puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
-                                                 .filter(|&ins| {
-                                                     !ins.is_function() || preferred[ins.source_index()]
-                                                 }).chain(
-                                                 puzzle.get_cond_mask().get_probes(state.current_tile().to_condition()).iter()
-                                             ), &state, false);
-            } else if ins.is_probe() && state.current_tile().clone().executes(ins) {
-                snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
-                                             puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
-                                             , &state, true);
-            } else if !ins.is_debug() && !ins.is_branched()
-                && state.current_tile().to_condition() != ins.get_cond() {
-//                candidate[method_index][ins_index] = candidate[method_index][ins_index].as_branched();
-                snips += stack.push_iterator(puzzle, &candidate, method_index, ins_index,
-                                             [ins.as_vanilla(), ins.get_ins()].iter()
-                                             , &state, true);
-            } else {
-                state.step(&candidate, &puzzle);
-                continue;
+            let loosening_branch = !ins.is_debug() && !ins.is_branched()
+                && !state.current_tile().to_condition().is_cond(ins.get_cond());
+            if nop_branch || probe_branch || loosening_branch {
+                if nop_branch {
+                    let mut temp = candidate.clone();
+                    for i in ins_index..puzzle.functions[method_index] {
+                        temp[method_index][i] = HALT;
+                    }
+                    stack.push(Frame(temp, state.steps));
+                    snips += stack.push_iterator(
+                        puzzle, &candidate, method_index, ins_index,
+                        puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
+                            .filter(|&ins| {
+                                !ins.is_function() || preferred[ins.source_index()]
+                            }).cloned().chain(
+                            puzzle.get_cond_mask().get_probes(state.current_tile().to_condition()).iter().map(|ins| ins.as_branched())
+                        )
+                        , &state);
+                } else if probe_branch {
+                    snips += stack.push_iterator(
+                        puzzle, &candidate, method_index, ins_index,
+                        puzzle.get_ins_set(state.current_tile().to_condition(), false)
+                            .iter().map(|ins| ins.as_branched())
+                        , &state);
+                } else if loosening_branch {
+                    snips += stack.push_iterator(
+                        puzzle, &candidate, method_index, ins_index,
+                        [ins.as_vanilla(), ins.get_ins()].iter().map(|ins| ins.as_branched())
+                        , &state);
+                };
+                executed -= 1;
+                break;
             }
-            executed -= 1;
-            break;
+            reached[method_index][ins_index] |= state.current_tile().clone().executes(ins);
         }
-        if considered % 100000000 == 0 || state.stars == 0 {
+//        if reached != [[true; 10]; 5] {
+//            print!("Unreachable code found {}", candidate);
+//            for i in 0..5 {
+//                for j in 0..puzzle.functions[i] {
+//                    print!("{}", if reached[i][j] { "e" } else { "_" });
+//                }
+//                if puzzle.functions[i] > 0 { print!(", "); }
+//            }
+//            println!();
+//        }
+        if considered % 1000000000 == 0 || state.stars == 0 {
             if state.stars == 0 { print!("solution: "); }
             print!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
                    considered, executed, rejects, denies, snips, duplicates);
-            print!(" and {}", stack);
+//            print!(" and {}", stack);
             println!();
 //            if considered > 10000 { return None; }
             if state.stars == 0 { result.push(candidate); }
@@ -224,7 +250,6 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
 }
 
 pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
-    if (a.is_debug()) || b.is_debug() { return false; }
     let mut banned = false;
     if a.get_cond() == b.get_cond() {
         banned |= a.is_order_invariant() && b.is_order_invariant() && a > b;
@@ -242,6 +267,11 @@ pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
             println!("conds3 a: {:?} b: {:?}", a, b);
             return true;
         }
+//        banned |= a.is_probe() && b.is_probe();
+//        if show && banned {
+//            println!("two colored probes a: {:?} b: {:?}", a, b);
+//            return true;
+//        }
     }
     if a.is_turn() && b.is_turn() {
         banned |= a > b; // only let a series of turns have one color order
@@ -343,7 +373,7 @@ impl Display for Stack {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
         write!(f, "Stack: ({},\n", self.pointer)?;
         for i in (0..self.pointer).rev() {
-            write!(f, "{},\n", self.data[i])?;
+            write!(f, "{} {},\n", self.data[i].0, self.data[i].1)?;
         }
         write!(f, ")")
     }

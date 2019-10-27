@@ -3,7 +3,6 @@ use std::f64::{MIN, MIN_POSITIVE};
 use rand::{SeedableRng, Rng};
 use statrs::prec::F64_PREC;
 use std::cmp::Ordering::Equal;
-use rand::seq::SliceRandom;
 
 use super::game::*;
 use crate::game::instructions::*;
