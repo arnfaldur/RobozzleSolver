@@ -38,10 +38,10 @@ impl Stack {
     fn len(&self) -> usize { self.pointer }
     fn empty(&self) -> bool { self.pointer == 0 }
     fn push_iterator(&mut self, puzzle: &Puzzle, candidate: &Source, method_index: usize, ins_index: usize,
-                     new_instructions: impl DoubleEndedIterator<Item=Ins>, state: &State) -> u64 {
+                     new_instructions: impl Iterator<Item=Ins>, state: &State) -> u64 {
 //        let last_pointer = self.pointer;
         let mut snips = 0;
-        for instruction in new_instructions.rev() {
+        for instruction in new_instructions {
             let mut temp = candidate.clone();
             temp[method_index][ins_index] = instruction;
             if (ins_index > 0 && banned_pair(puzzle, temp[method_index][ins_index - 1], temp[method_index][ins_index], false))
@@ -141,27 +141,35 @@ pub fn backtrack(puzzle: &Puzzle) -> Vec<Source> {
                         temp[method_index][i] = HALT;
                     }
                     stack.push(Frame(temp, state.steps));
-                    snips += stack.push_iterator(
-                        puzzle, &candidate, method_index, ins_index,
+                }
+
+                let instructions: Vec<Ins> =
+                    if nop_branch {
                         puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
                             .filter(|&ins| {
                                 !ins.is_function() || preferred[ins.source_index()]
-                            }).cloned().chain(
-                            puzzle.get_cond_mask().get_probes(state.current_tile().to_condition()).iter().map(|ins| ins.as_branched())
-                        )
-                        , &state);
-                } else if probe_branch {
-                    snips += stack.push_iterator(
-                        puzzle, &candidate, method_index, ins_index,
+                            }).chain(
+                            puzzle.get_cond_mask().get_probes(state.current_tile().to_condition())
+                                .iter()
+                        ).cloned().collect()
+                    } else if probe_branch {
                         puzzle.get_ins_set(state.current_tile().to_condition(), false)
-                            .iter().map(|ins| ins.as_branched())
-                        , &state);
-                } else if loosening_branch {
-                    snips += stack.push_iterator(
-                        puzzle, &candidate, method_index, ins_index,
-                        [ins.as_vanilla(), ins.get_ins()].iter().map(|ins| ins.as_branched())
-                        , &state);
-                };
+                    } else if loosening_branch {
+                        vec![ins.as_vanilla().as_branched(), ins.get_ins().as_branched()]
+                    } else { vec![] };
+
+                for instruction in instructions {
+                    let mut temp = candidate.clone();
+                    temp[method_index][ins_index] = instruction;
+                    if (ins_index > 0 && banned_pair(puzzle, temp[method_index][ins_index - 1], temp[method_index][ins_index], false))
+                        || (ins_index < puzzle.functions[method_index] - 1 && banned_pair(puzzle, temp[method_index][ins_index], temp[method_index][ins_index + 1], false))
+                        || (ins_index > 1 && banned_trio(puzzle, temp[method_index][ins_index - 2], temp[method_index][ins_index - 1], temp[method_index][ins_index], false)) {
+                        snips += 1;
+                    } else {
+                        stack.push(Frame(temp.to_owned(), state.steps));
+                    }
+                }
+
                 executed -= 1;
                 break;
             }

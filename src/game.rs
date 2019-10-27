@@ -339,7 +339,6 @@ impl State {
                     }
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
-//                F1_MARKER | F2_MARKER | F3_MARKER | F4_MARKER | F5_MARKER => self.instruction_pointer = 100,
                 _ => (),
             }
         }

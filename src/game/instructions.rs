@@ -37,7 +37,9 @@ impl Ins {
     pub(crate) fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
     pub(crate) fn get_probes(self, excluded: Ins) -> Vec<Ins> {
         let mask = self.to_probe();
-        return PROBES.iter().filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe()).cloned().collect();
+        return PROBES.iter()
+            .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
+            .map(|ins| ins.as_branched()).collect();
     }
     pub(crate) fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
     pub(crate) fn is_branched(self) -> bool { self & BRANCH_MASK == BRANCH_MASK }
