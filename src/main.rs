@@ -29,7 +29,8 @@ mod web;
 
 fn main() {
 //    start_web_client();
-//    denial_test();
+//    denial_test();return;
+//    PUZZLE_656.execute(&PUZZLE_656_SOLUTION, true, won);
     for puzzle in [
         PUZZLE_42,
         PUZZLE_536,
@@ -48,7 +49,6 @@ fn main() {
         }
         println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
     }
-
 //    println!("prog: {}", encode_program(&PUZZLE_656_SOLUTION, &PUZZLE_656));
 }
 
@@ -82,22 +82,26 @@ fn main() {
 // S = star
 // S = 0 -> No Star
 // S = 1 -> Star
-const RAND_FUNCS: [Method; 5] = [
+const RAND_FUNCS: [Method; 9] = [
+    [F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
+    [FORWARD, GREEN_F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
+    [LEFT, RED_F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
+    [RIGHT, F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
     [FORWARD, FORWARD, FORWARD, RIGHT, FORWARD, MARK_GRAY, FORWARD, MARK_RED, FORWARD, FORWARD],
-    [MARK_BLUE, FORWARD, FORWARD, RIGHT, FORWARD, MARK_GRAY, FORWARD, MARK_RED, FORWARD, FORWARD],
-    [RED_RIGHT, BLUE_LEFT, FORWARD, GREEN_RIGHT, BLUE_LEFT, FORWARD, RED_RIGHT, GREEN_LEFT, FORWARD, HALT],
-    [RED_RIGHT, BLUE_LEFT, FORWARD, GREEN_RIGHT, BLUE_LEFT, FORWARD, RED_RIGHT, GREEN_LEFT, FORWARD, MARK_GREEN],
+    [MARK_GREEN, FORWARD, FORWARD, RIGHT, FORWARD, MARK_GRAY, FORWARD, MARK_RED, FORWARD, FORWARD],
+    [RED_RIGHT, GREEN_LEFT, FORWARD, GREEN_RIGHT, GREEN_LEFT, FORWARD, RED_RIGHT, GREEN_LEFT, FORWARD, HALT],
+    [RED_RIGHT, GREEN_LEFT, FORWARD, GREEN_RIGHT, GREEN_LEFT, FORWARD, RED_RIGHT, GREEN_LEFT, FORWARD, MARK_GREEN],
     [HALT; 10],
 ];
 
 fn denial_test() {
     let template_puzzle = genboi(RE, GE, BS);
-    let tmp = genboi(RE, GS, BS)
+    let tmp = template_puzzle
         .get_ins_set(INS_COLOR_MASK, true);
     let instructions = [HALT].iter().chain(tmp.iter()
 //        .filter(|&ins| !ins.is_function() || ins.get_instruction() == F2));
         .filter(|&ins| !ins.is_function()));
-    let tiles = [RS, GS, BS];
+    let tiles = [RS, GS,BS];
     println!("jsdfk: {}", template_puzzle);
     let mut mipmap = HashMap::new();
     let mut rejects2 = HashSet::new();
@@ -108,7 +112,6 @@ fn denial_test() {
     for &a in instructions.clone() {
         for &b in instructions.clone() {
             if a == HALT && b != HALT { break; }
-            let c = HALT;
             for &c in instructions.clone() {
                 if b == HALT && c != HALT { break; }
 //                if a.is_mark() || b.is_mark() || c.is_mark() { continue; }
@@ -164,9 +167,16 @@ fn denial_test() {
                             let rej = [prog.0[0][0], prog.0[0][1], prog.0[0][2]];
                             rejects3.insert(rej);
                         } else {
-                            panic!("program with {}! instructions!", progins);
+//                            panic!("program with {}! instructions!", progins);
                         }
                         println!("the program {} \tis already represented by \t{}", prog, champ);
+                        let mut thing = State::default();
+                        let mut bing = State::default();
+//                        template_puzzle.execute(&prog, true, |state, _| thing = state.to_owned());
+//                        println!("finally: {}", thing);
+//                        template_puzzle.execute(&champ, true, |state, _| bing = state.to_owned());
+//                        println!("binally: {}", bing);
+//                        println!("ARE THEY THE SAME? {}", thing == bing);
                     }
                 } else {
                     mipmap.insert(states, prog);
@@ -177,24 +187,24 @@ fn denial_test() {
         }
     }
     println!("counter: {}, denies: {}, nonies: {}", counter, denies, nonies);
-    let mut rejtmp: Vec<[Ins; 2]> = rejects2.iter().cloned().collect();
-    rejtmp.sort();
-    for e in rejtmp {
-        print!("[");
-        for i in e.iter() {
-            print!("{:?}, ", i);
-        }
-        println!("],");
-    }
-    let mut rejtmp: Vec<[Ins; 3]> = rejects3.iter().cloned().collect();
-    rejtmp.sort();
-    for e in rejtmp {
-        print!("[");
-        for i in e.iter() {
-            print!("{:?}, ", i);
-        }
-        println!("],");
-    }
+//    let mut rejtmp: Vec<[Ins; 2]> = rejects2.iter().cloned().collect();
+//    rejtmp.sort();
+//    for e in rejtmp {
+//        print!("[");
+//        for i in e.iter() {
+//            print!("{:?}, ", i);
+//        }
+//        println!("],");
+//    }
+//    let mut rejtmp: Vec<[Ins; 3]> = rejects3.iter().cloned().collect();
+//    rejtmp.sort();
+//    for e in rejtmp {
+//        print!("[");
+//        for i in e.iter() {
+//            print!("{:?}, ", i);
+//        }
+//        println!("],");
+//    }
 //    println!("rej 2: {:?}", rejects2);
 //    println!("rej 3: {:?}", rejects3);
     denies = 0;
@@ -218,12 +228,12 @@ fn denial_test() {
                         }
                     }
                 }
-                if banned_pair(&template_puzzle, a, b, true)
-                    || banned_pair(&template_puzzle, b, c, true)
-                    || banned_trio(&template_puzzle, a, b, c, false) {
-                    denies += 1;
-                    continue;
-                }
+//                if banned_pair(&template_puzzle, a, b, false)
+//                    || banned_pair(&template_puzzle, b, c, false)
+//                    || banned_trio(&template_puzzle, a, b, c, false) {
+//                    denies += 1;
+//                    continue;
+//                }
                 let prog = Source([function, [HALT; 10], [HALT; 10], [HALT; 10], [HALT; 10]]);
                 if mipmap.contains_key(&states) {
 //                    println!("the program {} \tis already represented by \t{}", prog, mipmap[&states]);

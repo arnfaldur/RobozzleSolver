@@ -141,16 +141,16 @@ impl Index<usize> for Stack {
 }
 
 impl Stack {
-    pub(crate) fn push(&mut self, element: Ins) {
+    fn push(&mut self, element: Ins) {
         self.data[self.pointer] = element;
         self.pointer += 1;
     }
-    pub(crate) fn pop(&mut self) -> Ins {
+    fn pop(&mut self) -> Ins {
         let result = self.top();
         self.pointer -= 1;
         return result;
     }
-    pub(crate) fn top(&self) -> Ins { self.data[self.pointer - 1] }
+    pub fn top(&self) -> Ins { self.data[self.pointer - 1] }
     pub(crate) fn len(&self) -> usize { self.pointer }
     fn empty(&self) -> bool { self.pointer == 0 }
     pub(crate) fn clear(&mut self) { self.pointer = 0; }
@@ -237,21 +237,22 @@ impl Puzzle {
         }
         return result;
     }
-    pub(crate) fn initial_state(&self) -> State {
-        State {
+    pub(crate) fn initial_state(&self, source: &Source) -> State {
+        let mut result = State {
             stars: self.stars,
             map: self.map,
             direction: self.direction,
             x: self.x,
             y: self.y,
             ..State::default()
-        }
+        };
+        result.initialize(source, self);
+        return result;
     }
     pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R where F: FnMut(&State, &Puzzle) -> R {
-        let mut state = self.initial_state();
-        state.stack.push(F1);
-        while state.running() {
-            state.step(&source, self);
+        let mut state = self.initial_state(source);
+        if show { println!("{}", state); }
+        while state.step(&source, self) {
             if show { println!("{}", state); }
         }
         return scoring(&state, self);
@@ -305,12 +306,26 @@ impl Hash for State {
 }
 
 impl State {
+    pub fn initialize(&mut self, source: &Source, puzzle: &Puzzle) {
+        self.invoke(source, puzzle, F1.source_index());
+    }
+    pub fn ins_pointer(&self) -> Ins {
+        let ins = self.stack.top();
+//        let ins = source[ins.get_method_index()][ins.get_ins_index()];
+        return ins;
+    }
+    pub fn current_ins(&self, source: &Source) -> Ins {
+        let ins = self.ins_pointer();
+        let ins = source[ins.get_method_index()][ins.get_ins_index()];
+        return ins;
+    }
     pub(crate) fn current_tile(&mut self) -> &mut Tile { &mut self.map[self.y][self.x] }
-    pub(crate) fn running(&self) -> bool {
+    fn running(&self) -> bool {
         !self.stack.empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
-        let ins = self.stack.pop().as_vanilla();
+        let ins = self.current_ins(source).as_vanilla();
+        self.stack.pop();
         self.steps += 1;
         if self.current_tile().executes(ins) {
             match ins.get_ins() {
@@ -332,17 +347,19 @@ impl State {
                 LEFT => self.direction = self.direction.left(),
                 RIGHT => self.direction = self.direction.right(),
                 F1 | F2 | F3 | F4 | F5 => {
-                    let method = ins.source_index();
-                    for i in (0..puzzle.functions[method]).rev() {
-                        let new_ins = source.0[method][i];
-                        self.stack.push(new_ins.with_ins_index(i).with_method_number(method));
-                    }
+                    self.invoke(source, puzzle, ins.source_index());
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
                 _ => (),
             }
         }
         return self.running();
+    }
+    fn invoke(&mut self, source: &Source, puzzle: &Puzzle, method: usize) {
+        for i in (0..puzzle.functions[method]).rev() {
+            let ins = source.0[method][i];
+            self.stack.push(ins.with_ins_index(i).with_method_index(method));
+        }
     }
     pub(crate) fn get_hash(&self) -> u64 {
         let mut state = DefaultHasher::new();
@@ -387,7 +404,7 @@ fn make_puzzle(
     functions: [usize; 5],
     marks: [bool; 3],
 ) -> Puzzle {
-    let (mut red, mut green, mut blue) = (false, false, false);
+    let [mut red, mut green, mut blue] = marks;
     for y in 1..13 {
         for x in 1..17 {
             red |= map[y][x].is_red();

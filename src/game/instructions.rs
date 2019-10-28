@@ -20,6 +20,7 @@ impl Ins {
     pub(crate) fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0).as_vanilla() }
     pub(crate) fn is_cond(self, cond: Ins) -> bool { self.get_cond() == cond }
     pub(crate) fn has_cond(self, cond: Ins) -> bool { self & cond == cond }
+    pub(crate) fn with_cond(self, cond: Ins) -> Ins { self.get_ins() | cond }
     pub(crate) fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
     pub(crate) fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
     pub(crate) fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
@@ -39,16 +40,16 @@ impl Ins {
         let mask = self.to_probe();
         return PROBES.iter()
             .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
-            .map(|ins| ins.as_branched()).collect();
+            .map(|ins| ins.as_loosened()).collect();
     }
     pub(crate) fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
-    pub(crate) fn is_branched(self) -> bool { self & BRANCH_MASK == BRANCH_MASK }
-    pub(crate) fn as_branched(self) -> Ins { self | BRANCH_MASK }
-    pub(crate) fn with_branched(self, branched: bool) -> Ins { if branched { self.as_branched() } else { self } }
+    pub(crate) fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
+    pub(crate) fn as_loosened(self) -> Ins { self | LOOSE_MASK }
+    pub(crate) fn with_loosened(self, loosened: bool) -> Ins { if loosened { self.as_loosened() } else { self } }
     pub fn with_ins_index(self, number: usize) -> Ins { self | Ins((number << 9) as InsType) }
     pub fn get_ins_index(self) -> usize { ((self & INS_NUMBER_MASK).0 >> 9) as usize }
-    pub fn with_method_number(self, number: usize) -> Ins { self | Ins((number << 13) as InsType) }
-    pub fn get_method_number(self) -> usize { ((self & INS_METHOD_MASK).0 >> 13) as usize }
+    pub fn with_method_index(self, number: usize) -> Ins { self | Ins((number << 13) as InsType) }
+    pub fn get_method_index(self) -> usize { ((self & INS_METHOD_MASK).0 >> 13) as usize }
 }
 
 pub(crate) fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
@@ -57,7 +58,7 @@ pub(crate) fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
 
 const INS_METHOD_MASK: Ins = Ins(0b1110000000000000);
 const INS_NUMBER_MASK: Ins = Ins(0b0001111000000000);
-const BRANCH_MASK: Ins = Ins(0b0000000100000000);
+const LOOSE_MASK: Ins = Ins(0b0000000100000000);
 const VANILLA_MASK: Ins = Ins(0b0000000011111111);
 
 impl From<Ins> for u8 {
@@ -148,11 +149,6 @@ impl fmt::Debug for Ins {
                 MARK_RED => "MARK_RED",
                 MARK_GREEN => "MARK_GREEN",
                 MARK_BLUE => "MARK_BLUE",
-                F1_MARKER => "F1_MARKER",
-                F2_MARKER => "F2_MARKER",
-                F3_MARKER => "F3_MARKER",
-                F4_MARKER => "F4_MARKER",
-                F5_MARKER => "F5_MARKER",
                 NOP => "PROBE",
                 _ => "",
             })
@@ -223,20 +219,6 @@ pub(crate) const CONDITIONS: [Ins; 4] = [
     RED_COND,
     GREEN_COND,
     BLUE_COND
-];
-
-// constants for backtracking
-pub(crate) const F1_MARKER: Ins = Ins(3 | NOP.0);
-pub(crate) const F2_MARKER: Ins = Ins(4 | NOP.0);
-pub(crate) const F3_MARKER: Ins = Ins(5 | NOP.0);
-pub(crate) const F4_MARKER: Ins = Ins(6 | NOP.0);
-pub(crate) const F5_MARKER: Ins = Ins(7 | NOP.0);
-pub(crate) const FUNCTION_MARKERS: [Ins; 5] = [
-    F1_MARKER,
-    F2_MARKER,
-    F3_MARKER,
-    F4_MARKER,
-    F5_MARKER,
 ];
 
 pub(crate) const RED_PROBE: Ins = Ins(NOP.0 | RED_COND.0);

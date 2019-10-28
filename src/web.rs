@@ -1,25 +1,9 @@
 use std::io::{stdout, Write};
 
-use curl::easy::{Easy, Form};
-use curl::*;
 use crate::game::{Puzzle, Source, instructions::*};
 
 pub fn start_web_client() {
-    let mut handle = Easy::new();
     let url = "http://www.robozzle.com/beta/index.html?puzzle=1874";
-    handle.url(url).unwrap();
-    handle.write_function(|data| {
-        println!("Writing a thing: ");
-        stdout().write_all(data).unwrap();
-        println!("Done writing a thing.");
-        Ok(data.len())
-    }).unwrap();
-    handle.perform().unwrap();
-    let mut form = Form::new();
-    form.part("asdf").add();
-    handle.httppost(form);
-
-
 //    let mut data = Vec::new();
 //    let mut handle = Easy::new();
 //    handle.url("https://www.rust-lang.org/").unwrap();
@@ -41,7 +25,7 @@ struct EncodingState {
 impl EncodingState {
     fn encode_bits(&mut self, val: usize, bits: usize) {
         for i in 0..bits {
-            self.val |= ((if val & (1 << i) > 0 { 1 } else { 0 }) << self.bits);
+            self.val |= (if val & (1 << i) > 0 { 1 } else { 0 }) << self.bits;
             self.bits += 1;
             if self.bits == 6 {
                 let mut c;
