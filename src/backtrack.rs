@@ -42,14 +42,15 @@ impl PartialEq for Frame {
 
 impl Eq for Frame {}
 
-const THREADS: usize = 16;
+const THREADS: usize = 24;
+const CHANNEL_SIZE: usize = 1 << 12;
 
 pub fn backtrack(puzzle: &'static Puzzle) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
 //    for thread in 0..THREADS {
 //        thread::spawn(move || {
 
-    let (sender, receiver) = bounded(1 << 12);
+    let (sender, receiver) = bounded(CHANNEL_SIZE);
     sender.send(Frame(puzzle.empty_source(), puzzle.initial_state(&NOGRAM)));
 
     let barrier = Arc::new(Barrier::new(THREADS + 1));
@@ -58,9 +59,8 @@ pub fn backtrack(puzzle: &'static Puzzle) -> Vec<Source> {
     for thread in 0..THREADS {
         let (sclone, rclone, bclone) = (sender.clone(), receiver.clone(), barrier.clone());
         threads.push(spawn(move || {
-            return trackback(puzzle, thread == 0, sclone, rclone, &bclone);
+            return trackback(puzzle, thread, sclone, rclone, &bclone);
         }));
-        sleep(Duration::from_millis(10));
     }
     let mut result = vec![];
     for handle in threads {
@@ -72,9 +72,9 @@ pub fn backtrack(puzzle: &'static Puzzle) -> Vec<Source> {
     return result;
 }
 
-fn trackback(puzzle: &Puzzle, initializer: bool, sender: Sender<Frame>, receiver: Receiver<Frame>, barrier: &Barrier) -> Vec<Source> {
+fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver: Receiver<Frame>, barrier: &Barrier) -> Vec<Source> {
     let mut result: Vec<Source> = vec![];
-    let mut candidates = vec![];
+    let mut candidates = VecDeque::new();
     let mut considered: u64 = 0;
     let mut executed: u64 = 0;
     let mut rejects: u64 = 0;
@@ -82,9 +82,9 @@ fn trackback(puzzle: &Puzzle, initializer: bool, sender: Sender<Frame>, receiver
     let mut snips: u64 = 0;
     let mut duplicates: u64 = 0;
 //    let mut visited: HashMap<_, Source> = HashMap::new();
-    while let Ok(outer_frame) = receiver.recv_timeout(Duration::from_millis(10)) {
-        candidates.push(outer_frame);
-        while let Some(Frame(mut candidate, branch_state)) = candidates.pop() {
+    while let Ok(outer_frame) = receiver.recv_timeout(Duration::from_millis(1)) {
+        candidates.push_back(outer_frame);
+        while let Some(Frame(mut candidate, branch_state)) = candidates.pop_back() {
             considered += 1;
 
             if deny(puzzle, &candidate, false) {
@@ -131,7 +131,7 @@ fn trackback(puzzle: &Puzzle, initializer: bool, sender: Sender<Frame>, receiver
                             } else if loosening_branch {
                                 vec![ins.get_ins().as_loosened()]
                             } else { vec![] };
-
+                        let local = candidate.count_ins() >= 3;
                         for instruction in instructions {
                             let mut temp = candidate.clone();
                             temp[method_index][ins_index] = instruction;
@@ -139,15 +139,17 @@ fn trackback(puzzle: &Puzzle, initializer: bool, sender: Sender<Frame>, receiver
                                 snips += 1;
                             } else {
                                 let branch = Frame(temp.to_owned(), state.clone());
-                                if branch_state.steps < 10 {
+                                if local {
+                                    candidates.push_back(branch);
+                                } else {
                                     match sender.try_send(branch) {
-                                        Ok(o) => {}
+                                        Ok(o) => {
+//                                            println!("sent from thread {}", thread_id);
+                                        }
                                         Err(e) => {
-                                            candidates.push(branch);
+                                            candidates.push_front(branch);
                                         }
                                     }
-                                } else {
-                                    candidates.push(branch);
                                 }
                             }
                         }
@@ -166,24 +168,23 @@ fn trackback(puzzle: &Puzzle, initializer: bool, sender: Sender<Frame>, receiver
                         }
                     }
                 }
-//            reached[method_index][ins_index] |= state.current_tile().clone().executes(ins);
                 running = state.step(&candidate, puzzle);
             }
-//        if reached != [[true; 10]; 5] {
-//            print!("Unreachable code found {}", candidate);
-//            for i in 0..5 {
-//                for j in 0..puzzle.functions[i] {
-//                    print!("{}", if reached[i][j] { "e" } else { "_" });
-//                }
-//                if puzzle.functions[i] > 0 { print!(", "); }
-//            }
-//            println!();
-//        }
+            if considered % 10000 == 0 {
+                if receiver.is_empty() {
+                    drop(sender);
+                    return result;
+                } else {
+                    if let Some(branch) = candidates.pop_front() {
+                        sender.send(branch);
+                    }
+                }
+            }
             if considered % 1000000000 == 0 || state.stars == 0 {
-                if state.stars == 0 { print!("solution: "); }
-                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
-                         considered, executed, rejects, denies, snips, duplicates);
-                println!("current: {}", candidate);
+//                if state.stars == 0 { print!("solution: "); }
+//                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
+//                         considered, executed, rejects, denies, snips, duplicates);
+//                println!("current: {}", candidate);
 //            for c in candidates.iter().rev().take(16) {
 //                println!("{}", c.0);
 //            }
@@ -191,6 +192,10 @@ fn trackback(puzzle: &Puzzle, initializer: bool, sender: Sender<Frame>, receiver
 //            if considered > 10000 { return vec![]; }
                 if state.stars == 0 {
                     result.push(candidate);
+                    while let Ok(dumped) = receiver.recv_timeout(Duration::from_millis(1)) { }
+                    drop(sender);
+                    return result;
+
 //                println!("candidates length is {}", candidates.len());
 //                break;
                 }
