@@ -2,57 +2,56 @@ use std::fmt::{Formatter, Error, Display, Debug};
 
 use colored::*;
 use serde::{Serialize, Deserialize};
+
 type InsType = u32;
 
 #[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Ins(InsType);
 
 impl Ins {
-    pub(crate) fn condition_to_color(self) -> Ins { Ins(self.as_vanilla().0 >> 5) }
-    pub(crate) fn source_index(self) -> usize { (self.from_marker().get_ins().0 - F1.0) as usize }
-    pub(crate) fn get_cond(self) -> Ins { self & INS_COLOR_MASK }
-    pub(crate) fn get_ins(self) -> Ins { self & INS_MASK }
+    pub fn condition_to_color(self) -> Ins { Ins(self.as_vanilla().0 >> 5) }
+    pub fn source_index(self) -> usize { (self.get_ins().0 - F1.0) as usize }
+    pub fn fun_from_index(index: usize) -> Ins { Ins(index as InsType + F1.0) }
+    pub fn get_cond(self) -> Ins { self & INS_COLOR_MASK }
+    pub fn get_ins(self) -> Ins { self & INS_MASK }
     fn get_fun_number(self) -> u8 { (self.get_ins().0 - F1.0 + 1) as u8 }
-    pub(crate) fn get_mark_color(self) -> Ins { self & MARK_MASK }
-    pub(crate) fn get_mark_as_cond(self) -> Ins { self.get_mark_color().color_to_cond() }
-    pub(crate) fn color_to_cond(self) -> Ins { Ins(self.0 << 5).as_vanilla() }
-    pub(crate) fn get_marker(self) -> Ins { (self.get_ins() | NOP).as_vanilla() }
-    pub(crate) fn from_marker(self) -> Ins { Ins(self.0 & !NOP.0).as_vanilla() }
-    pub(crate) fn is_cond(self, cond: Ins) -> bool { self.get_cond() == cond }
-    pub(crate) fn has_cond(self, cond: Ins) -> bool { self & cond == cond }
-    pub(crate) fn with_cond(self, cond: Ins) -> Ins { self.get_ins() | cond }
-    pub(crate) fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
-    pub(crate) fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
-    pub(crate) fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
-    pub(crate) fn is_ins(self, ins: Ins) -> bool { self.get_ins() == ins }
-    pub(crate) fn is_order_invariant(self) -> bool { self.is_mark() || self.is_turn() }
-    pub(crate) fn is_turn(self) -> bool { self.is_ins(LEFT) || self.is_ins(RIGHT) }
-    pub(crate) fn to_probe(self) -> Ins { self.get_cond() | NOP }
-    pub(crate) fn is_probe(self) -> bool { !self.is_gray() && self.get_ins() == NOP }
-    pub(crate) fn is_nop(self) -> bool { self.as_vanilla() == NOP }
-    pub(crate) fn is_halt(self) -> bool { self.as_vanilla() == HALT }
-    pub fn is_function_marker(self) -> bool { (self & NOP).is_nop() && self.from_marker().is_function() }
-    pub(crate) fn other_turn(self) -> Ins {
+    pub fn get_mark_color(self) -> Ins { self & MARK_MASK }
+    pub fn get_mark_as_cond(self) -> Ins { self.get_mark_color().color_to_cond() }
+    pub fn color_to_cond(self) -> Ins { Ins(self.0 << 5).as_vanilla() }
+    pub fn is_cond(self, cond: Ins) -> bool { self.get_cond() == cond }
+    pub fn has_cond(self, cond: Ins) -> bool { self & cond == cond }
+    pub fn with_cond(self, cond: Ins) -> Ins { self.get_ins() | cond }
+    pub fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
+    pub fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
+    pub fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
+    pub fn is_ins(self, ins: Ins) -> bool { self.get_ins() == ins }
+    pub fn is_order_invariant(self) -> bool { self.is_mark() || self.is_turn() }
+    pub fn is_turn(self) -> bool { self.is_ins(LEFT) || self.is_ins(RIGHT) }
+    pub fn to_probe(self) -> Ins { self.get_cond() | NOP }
+    pub fn is_probe(self) -> bool { !self.is_gray() && self.get_ins() == NOP }
+    pub fn is_nop(self) -> bool { self.as_vanilla() == NOP }
+    pub fn is_halt(self) -> bool { self.as_vanilla() == HALT }
+    pub fn other_turn(self) -> Ins {
         if self.is_ins(LEFT) { RIGHT } else if self.is_ins(RIGHT) { LEFT } else { HALT }
     }
-    pub(crate) fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
-    pub(crate) fn get_probes(self, excluded: Ins) -> Vec<Ins> {
+    pub fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
+    pub fn get_probes(self, excluded: Ins) -> Vec<Ins> {
         let mask = self.to_probe();
         return PROBES.iter()
             .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
             .map(|ins| ins.as_loosened()).collect();
     }
-    pub(crate) fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
-    pub(crate) fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
-    pub(crate) fn as_loosened(self) -> Ins { self | LOOSE_MASK }
-    pub(crate) fn with_loosened(self, loosened: bool) -> Ins { if loosened { self.as_loosened() } else { self } }
+    pub fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
+    pub fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
+    pub fn as_loosened(self) -> Ins { self | LOOSE_MASK }
+    pub fn with_loosened(self, loosened: bool) -> Ins { if loosened { self.as_loosened() } else { self } }
     pub fn with_ins_index(self, number: usize) -> Ins { self | Ins((number << 9) as InsType) }
     pub fn get_ins_index(self) -> usize { ((self & INS_NUMBER_MASK).0 >> 9) as usize }
     pub fn with_method_index(self, number: usize) -> Ins { self | Ins((number << 13) as InsType) }
     pub fn get_method_index(self) -> usize { ((self & INS_METHOD_MASK).0 >> 13) as usize }
 }
 
-pub(crate) fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
+pub fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
     Ins(((red as u8) << 5 | (green as u8) << 6 | (blue as u8) << 7) as InsType)
 }
 

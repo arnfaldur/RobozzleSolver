@@ -145,16 +145,16 @@ pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source>
 pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins>, leaf: &Leaf) {
     tree.remove_item(leaf);
     let mut branch_factor = 0.0;
-    for i in 0..puzzle.functions.len() {
-        for j in 0..puzzle.functions[i] {
+    for i in 0..puzzle.methods.len() {
+        for j in 0..puzzle.methods[i] {
             if leaf.source[i][j] == NOP {
                 branch_factor += instruction_set.len() as f64;
                 break;
             }
         }
     }
-    for i in 0..puzzle.functions.len() {
-        for j in 0..puzzle.functions[i] {
+    for i in 0..puzzle.methods.len() {
+        for j in 0..puzzle.methods[i] {
             if leaf.source[i][j] == NOP {
                 for instruction in instruction_set {
                     let mut temp = leaf.source;
@@ -169,8 +169,8 @@ pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins
 
 pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>, mut _rng: impl Rng) -> Source {
     let  fullgram = *base;
-    for i in 0..puzzle.functions.len() {
-        for j in 0..puzzle.functions[i] {
+    for i in 0..puzzle.methods.len() {
+        for j in 0..puzzle.methods[i] {
             let mask = (fullgram[i][j] != NOP) as u8;
 //            fullgram[i][j].0 = fullgram[i][j].0 * mask + (1 - mask) * u8::from(*instruction_set.choose(&mut rng).unwrap_or(&NOP));
         }

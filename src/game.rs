@@ -59,7 +59,7 @@ impl Source {
         let mut result = 0;
         for m in self.0.iter() {
             for i in m.iter() {
-                result += !i.is_debug() as usize;
+                result += !(i.is_nop() || i.is_halt()) as usize;
             }
         }
         return result;
@@ -187,21 +187,22 @@ impl Direction {
 
 #[derive(Copy, Clone, Serialize, Deserialize)]
 pub struct Puzzle {
-    pub(crate) map: Map,
-    pub(crate) direction: Direction,
-    pub(crate) x: usize,
-    pub(crate) y: usize,
-    pub(crate) stars: usize,
-    pub(crate) functions: [usize; 5],
-    pub(crate) marks: [bool; 3],
-    pub(crate) red: bool,
-    pub(crate) green: bool,
-    pub(crate) blue: bool,
+    pub map: Map,
+    pub direction: Direction,
+    pub x: usize,
+    pub y: usize,
+    pub stars: usize,
+    pub methods: [usize; 5],
+    pub actual_methods: [usize; 5],
+    pub marks: [bool; 3],
+    pub red: bool,
+    pub green: bool,
+    pub blue: bool,
 }
 
 impl Puzzle {
     pub(crate) fn get_ins_set(&self, colors: Ins, gray: bool) -> Vec<Ins> {
-        let functions = self.functions.iter().fold(0, |count, &val| count + (val > 0) as usize);
+        let functions = self.methods.iter().fold(0, |count, &val| count + (val > 0) as usize);
         let marks: usize = self.marks.iter().map(|b| *b as usize).sum();
         let (red, green, blue) = (self.red && colors.has_cond(RED_COND),
                                   self.green && colors.has_cond(GREEN_COND),
@@ -219,7 +220,7 @@ impl Puzzle {
                 result.push(*ins | condition);
             }
             for i in 0..FUNCTIONS.len() {
-                if self.functions[i] > 0 {
+                if self.methods[i] > 0 {
                     result.push(FUNCTIONS[i] | condition);
                 }
             }
@@ -233,8 +234,8 @@ impl Puzzle {
     }
     pub(crate) fn empty_source(&self) -> Source {
         let mut result = NOGRAM.clone();
-        for instructions in 0..self.functions.len() {
-            for i in 0..self.functions[instructions] {
+        for instructions in 0..self.methods.len() {
+            for i in 0..self.methods[instructions] {
                 result.0[instructions][i] = NOP;
             }
         }
@@ -359,7 +360,7 @@ impl State {
         return self.running();
     }
     fn invoke(&mut self, source: &Source, puzzle: &Puzzle, method: usize) {
-        for i in (0..puzzle.functions[method]).rev() {
+        for i in (0..puzzle.methods[method]).rev() {
             let ins = source.0[method][i];
             self.stack.push(ins.with_ins_index(i).with_method_index(method));
         }
@@ -404,7 +405,7 @@ pub fn make_puzzle(
     direction: Direction,
     x: usize,
     y: usize,
-    functions: [usize; 5],
+    mut methods: [usize; 5],
     marks: [bool; 3],
 ) -> Puzzle {
     let [mut red, mut green, mut blue] = marks;
@@ -415,11 +416,15 @@ pub fn make_puzzle(
             blue |= map[y][x].is_blue();
         }
     }
+    let actual_methods = methods;
+    methods[1..5].sort_unstable_by(|a, b| b.cmp(a));
     let mut map_out = map.clone();
     map_out[y][x].clear_star();
     map_out[y][x].touch();
-    let stars: usize = map_out.iter().map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>()).sum();
-    return Puzzle { map: map_out, direction, x, y, stars, functions, marks, red, green, blue };
+    let stars: usize = map_out.iter().map(|row| row.iter()
+        .map(|el| el.has_star() as usize).sum::<usize>()).sum();
+    return Puzzle { map: map_out, direction, x, y, stars,
+        methods, actual_methods, marks, red, green, blue };
 }
 
 fn verify_puzzle(puzzle: &Puzzle) -> bool {
@@ -507,7 +512,7 @@ impl Display for Puzzle {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
         writeln!(f, "stars: {}", self.stars, )?;
         write!(f, "{{")?;
-        for &me in self.functions.iter() {
+        for &me in self.methods.iter() {
             if me > 0 {
                 for i in 0..me {
                     write!(f, "_")?;

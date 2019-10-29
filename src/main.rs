@@ -15,10 +15,10 @@ use game::{*, instructions::*};
 
 use backtrack::*;
 use carlo::carlo;
-use web::{encode_program};
+use web::encode_program;
 use fantoccini::{Client, Locator};
 use std::thread;
-use crate::web::start_web_solver;
+use crate::web::{start_web_solver, puzzle_from_string};
 
 mod constants;
 mod game;
@@ -31,13 +31,17 @@ mod web;
 
 
 fn main() {
-//    start_web_solver();
+//    start_web_solver(); return;
 //    denial_test();return;
+    let face = "{\"About\":\"face\",\"AllowedCommands\":\"0\",\"Colors\":[\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRBRRRBRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRGGGGGGGGRBR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"10\",\"DifficultyVoteSum\":\"15\",\"Disliked\":\"8\",\"Featured\":\"false\",\"Id\":\"5088\",\"Items\":[\"################\",\"#######....#####\",\"####.....*..*###\",\"####.#*..#*...##\",\"###..########..#\",\"###.####.####..#\",\"##.*##########*#\",\"##.###########.#\",\"##.#.........#.#\",\"#..###########.#\",\"################\",\"################\"],\"Liked\":\"1\",\"RobotCol\":\"1\",\"RobotDir\":\"0\",\"RobotRow\":\"9\",\"Solutions\":\"47\",\"SubLengths\":[\"10\",\"10\",\"10\",\"10\",\"10\"],\"SubmittedBy\":\"oshabott59\",\"SubmittedDate\":\"2014-11-27T11:34:11.98\",\"Title\":\"Ionvoc6\"}";
+
+    let puzzle = puzzle_from_string(face);
     let puzzles = [
         PUZZLE_42,
         PUZZLE_536,
         PUZZLE_656,
         PUZZLE_1337,
+        puzzle,
 //        parse_level(),
     ];
     for puzzle in puzzles.iter() {

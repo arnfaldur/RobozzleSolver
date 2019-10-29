@@ -301,7 +301,7 @@ mod tests {
         let mut source: Source = Source([[NOP; 10]; 5]);
         for iteration in 0..10 {
             for i in 0..5 {
-                for ins in 0..PUZZLE_42.functions[i] {
+                for ins in 0..PUZZLE_42.methods[i] {
                     source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
                 }
             }
@@ -326,7 +326,7 @@ mod tests {
         let mut source: Source = Source([[NOP; 10]; 5]);
         for _iteration in 0..10 {
             for i in 0..5 {
-                for ins in 0..PUZZLE_536.functions[i] {
+                for ins in 0..PUZZLE_536.methods[i] {
                     source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
                 }
             }
@@ -351,7 +351,7 @@ mod tests {
         let mut source: Source = Source([[NOP; 10]; 5]);
         for _iteration in 0..10 {
             for i in 0..5 {
-                for ins in 0..PUZZLE_656.functions[i] {
+                for ins in 0..PUZZLE_656.methods[i] {
                     source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
                 }
             }

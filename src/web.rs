@@ -29,6 +29,7 @@ pub fn start_web_solver() {
 
 // username: Hugsun
 // password: 8r4WvSfxHGirMDxH6FBO
+/////////////8r4WvSfxHGirMDxH6FBO
 
 fn fetch_puzzle(puzzle_id: u64) -> Result<(), CmdError> {
     let rt = Runtime::new()?;
@@ -50,11 +51,11 @@ async fn login(client: &mut Client) -> Result<(), CmdError> {
 
     let mut signin_form = client.form(Locator::Css("#dialog-signin")).await?;
     signin_form.set_by_name("name", "Hugsun").await?;
-    sleep(Duration::from_millis(500));
+    sleep(Duration::from_millis(1500));
     signin_form.set_by_name("password", "8r4WvSfxHGirMDxH6FBO").await?;
-    sleep(Duration::from_millis(500));
+    sleep(Duration::from_millis(1500));
     signin_form.submit().await?;
-    sleep(Duration::from_millis(500));
+    sleep(Duration::from_millis(1500));
     return Ok(());
 }
 
@@ -67,9 +68,10 @@ async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), CmdErro
     if let Value::Null = val {
         return Err(InvalidArgument("Puzzle doesn't exist".to_string(), "Sorry".to_string()));
     }
+    println!("level: {}", val.to_string());
     let level_json: LevelJson = serde_json::from_value(val).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
     let puzzle = level_to_puzzle(&level_json);
-    println!("level: {}", puzzle);
+    println!("puzzle: {}", puzzle);
     let mut solutions = backtrack(puzzle, Duration::from_secs(60));
     if let Some(solution) = solutions.pop() {
         url.push_str("&program=");
@@ -85,6 +87,11 @@ async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), CmdErro
         } { sleep(Duration::from_millis(100)); }
     }
     return Ok(());
+}
+
+pub fn puzzle_from_string(string: &str) -> Puzzle {
+    let level_json: LevelJson = serde_json::from_str(string).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
+    return level_to_puzzle(&level_json);
 }
 
 fn level_to_puzzle(level: &LevelJson) -> Puzzle {
@@ -113,9 +120,9 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
         '3' => Direction::Up,
         _ => Direction::Up
     };
-    let mut functions = [0; 5];
+    let mut methods = [0; 5];
     for m in 0..5 {
-        functions[m] = level.SubLengths[m].parse().unwrap();
+        methods[m] = level.SubLengths[m].parse().unwrap();
     }
     let mflags: u8 = level.AllowedCommands.parse().unwrap();
     return make_puzzle(
@@ -123,7 +130,7 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
         direction,
         level.RobotCol.parse::<usize>().unwrap() + 1,
         level.RobotRow.parse::<usize>().unwrap() + 1,
-        functions,
+        methods,
         [(mflags & 0b1) > 0, (mflags & 0b10) > 0, (mflags & 0b100) > 0],
     );
 }
@@ -270,7 +277,35 @@ impl StateEncoder {
     }
 }
 
+fn actualize_solution(program: &Source, puzzle: &Puzzle) -> Source {
+    let mut result = *program;
+    if puzzle.methods != puzzle.actual_methods {
+        let (mut mapping, mut invmap) = ([5; 5],[5; 5]);
+        let mut marked = [false; 5];
+        for i in 0..5 {
+            for j in 0..5 {
+                if puzzle.actual_methods[i] == puzzle.methods[j] && !marked[j] {
+                    mapping[i] = j;
+                    marked[j] = true;
+                    break;
+                }
+            }
+            invmap[mapping[i]] = i;
+        }
+        for m in 0..5 {
+            result[m] = program[mapping[m]];
+            for i in 0..10 {
+                if result[m][i].is_function() {
+                    result[m][i] = result[m][i].get_cond() | Ins::fun_from_index(invmap[result[m][i].source_index()]);
+                }
+            }
+        }
+    }
+    return result;
+}
+
 pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
+    let solution = actualize_solution(program, puzzle);
     let mut encode_state = StateEncoder {
         output: "".parse().unwrap(),
         val: 0,
@@ -282,9 +317,9 @@ pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
     encode_state.encode_bits(0, 3); // Version number = 0
     encode_state.encode_bits(program_length, 3);
     for i in 0..program_length {
-        encode_state.encode_bits(puzzle.functions[i], 4);
-        for j in 0..puzzle.functions[i] {
-            let ins = program[i][j];
+        encode_state.encode_bits(puzzle.methods[i], 4);
+        for j in 0..puzzle.methods[i] {
+            let ins = solution[i][j];
             encode_state.encode_command(match ins.get_cond() {
                 RED_COND => 'R',
                 GREEN_COND => 'G',
