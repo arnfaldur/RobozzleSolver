@@ -20,7 +20,7 @@ pub(crate) static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 pub(crate) static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
 #[derive(Copy, Clone)]
-struct Frame(Source, State);
+struct Frame(Source, State, usize);
 
 impl Ord for Frame {
     fn cmp(&self, other: &Self) -> Ordering {
@@ -45,13 +45,15 @@ impl Eq for Frame {}
 const THREADS: usize = 16;
 const CHANNEL_SIZE: usize = 1 << 12;
 
-pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
+pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
 //    for thread in 0..THREADS {
 //        thread::spawn(move || {
 
     let (sender, receiver) = unbounded();
-    sender.send(Frame(puzzle.empty_source(), puzzle.initial_state(&NOGRAM)));
+//    for i in 2..puzzle.functions.iter().sum() {
+    sender.send(Frame(puzzle.empty_source(), puzzle.initial_state(&NOGRAM), 10000));
+//    }
 
     let mut threads = vec![];
     for thread in 0..THREADS {
@@ -74,26 +76,13 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
     let mut result: Vec<Source> = vec![];
     let mut candidates = VecDeque::new();
     let mut considered: u64 = 0;
-    let mut executed: u64 = 0;
-    let mut rejects: u64 = 0;
-    let mut denies: u64 = 0;
-    let mut snips: u64 = 0;
-    let mut duplicates: u64 = 0;
 //    let mut visited: HashMap<_, Source> = HashMap::new();
     while let Ok(outer_frame) = receiver.recv_timeout(Duration::from_millis(1)) {
         candidates.push_back(outer_frame);
-        while let Some(Frame(mut candidate, branch_state)) = candidates.pop_back() {
+        while let Some(Frame(mut candidate, branch_state, max_ins)) = candidates.pop_back() {
             considered += 1;
 
-            if deny(puzzle, &candidate, false) {
-                denies += 1;
-                continue;
-            }
-//        if !tested.insert(candidate.get_hash()) {
-//            rejects += 1;
-//            continue;
-//        }
-            executed += 1;
+            if deny(puzzle, &candidate, false) { continue; }
             let mut preferred = [true; 5];
             for i in 1..candidate.0.len() {
                 for j in (i + 1)..candidate.0.len() {
@@ -132,10 +121,8 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
                         for instruction in instructions {
                             let mut temp = candidate.clone();
                             temp[method_index][ins_index] = instruction;
-                            if snip_around(puzzle, &temp, ins_pointer) {
-                                snips += 1;
-                            } else {
-                                let branch = Frame(temp.to_owned(), state.clone());
+                            if snip_around(puzzle, &temp, ins_pointer) {} else if max_ins >= candidate.count_ins() {
+                                let branch = Frame(temp.to_owned(), state.clone(), max_ins);
                                 if candidate.count_ins() >= 3 {
                                     candidates.push_back(branch);
                                 } else {
@@ -153,8 +140,6 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
                         } else if loosening_branch {
                             candidate[method_index][ins_index] = candidate[method_index][ins_index].as_loosened();
                             branched = false;
-                        } else {
-                            executed -= 1;
                         }
                     }
                 }
@@ -165,16 +150,16 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
                     drop(sender);
                     return result;
                 } else if receiver.len() < 1 << 10 {
-                    if let Some(branch) = candidates.pop_front() {
-                        sender.send(branch);
-                    }
+//                    if let Some(branch) = candidates.pop_front() {
+//                        sender.send(branch);
+//                    }
                 }
             }
             if considered % 1000000 == 0 || state.stars == 0 {
 //                if state.stars == 0 { print!("solution: "); }
-                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
-                         considered, executed, rejects, denies, snips, duplicates);
-                println!("work queue: {}", sender.len());
+//                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
+//                         considered, executed, rejects, denies, snips, duplicates);
+                println!("work queue: {}, maxins: {}", sender.len(), max_ins);
                 println!("candidates: {}, current: {}", candidates.len(), candidate);
                 for c in candidates.iter().rev().take(16) {
                     println!("{}", c.0);
@@ -216,62 +201,71 @@ fn snip_around(puzzle: &Puzzle, temp: &Source, ins_pointer: Ins) -> bool {
 
 pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
     let mut denied = false;
-    let mut conditioned = [HALT, NOP, NOP, NOP, NOP, ];
+    let mut only_cond = [HALT, NOP, NOP, NOP, NOP, ];
     let mut invoked = [1, 0, 0, 0, 0];
     for method in 0..5 {
         for i in 0..puzzle.functions[method] {
             let ins = program.0[method][i];
             if ins.is_function() {
                 invoked[ins.source_index()] += 1;
-                if conditioned[ins.source_index()] == NOP {
-                    conditioned[ins.source_index()] = (ins.get_cond() | ins.with_loosened(true));
-                } else if conditioned[ins.source_index()] != (ins.get_cond() | ins.with_loosened(true)) {
-                    conditioned[ins.source_index()] = HALT;
+                if only_cond[ins.source_index()] == NOP {
+                    only_cond[ins.source_index()] = ins.get_cond() | ins.with_loosened(true);
+                } else if only_cond[ins.source_index()] != (ins.get_cond() | ins.with_loosened(true)) {
+                    only_cond[ins.source_index()] = HALT;
                 }
                 let called = program[ins.source_index()];
                 denied |= called == [HALT; 10];
                 let mut trivial = true;
                 for j in 1..puzzle.functions[ins.source_index()] {
-                     trivial &= called[j] == HALT;
+                    trivial &= called[j] == HALT;
                 }
-                if trivial {
-                    denied |= ins.get_cond() == called[0].get_cond() || called[0].is_gray();
-                }
+                denied |= trivial && (ins.get_cond() == called[0].get_cond() || called[0].is_gray());
             }
         }
     }
     for method in 0..5 {
+        let meth = program.0[method];
         for i in 1..puzzle.functions[method] {
-            let a = program.0[method][i - 1];
-            let b = program.0[method][i];
+            let a = meth[i - 1];
+            let b = meth[i];
             if b.is_halt() { break; }
             denied |= a.is_function() && a.is_gray() && a.source_index() == method;
             if b.is_nop() { break; }
 //            denied |= banned_pair(puzzle, a, b, show);
 //            if show && denied { println!("de1"); }
-            if a.is_function() && invoked[a.source_index()] == 1 && conditioned[a.source_index()].is_gray() {
+            if a.is_function() && invoked[a.source_index()] == 1 && only_cond[a.source_index()].is_gray() {
                 denied |= banned_pair(puzzle, program.0[a.source_index()][puzzle.functions[a.source_index()] - 1], b, show);
                 if show && denied { println!("de3"); }
             }
-            if b.is_function() && invoked[b.source_index()] == 1 && conditioned[b.source_index()].is_gray() {
+            if b.is_function() && invoked[b.source_index()] == 1 && only_cond[b.source_index()].is_gray() {
                 denied |= banned_pair(puzzle, a, program.0[b.source_index()][0], show);
                 if show && denied { println!("de5"); }
             }
         }
-        if !conditioned[method].is_nop() && !conditioned[method].is_halt() {
+        if !only_cond[method].is_nop() && !only_cond[method].is_halt() {
             for i in 0..puzzle.functions[method] {
-                denied |= !program.0[method][i].is_cond(conditioned[method].get_cond())
-                    && (program.0[method][i].is_loosened() == conditioned[method].is_loosened());
-                if !program.0[method][i].is_turn() {
+                denied |= !meth[i].is_cond(only_cond[method].get_cond())
+                    && (meth[i].is_loosened() == only_cond[method].is_loosened());
+                if !meth[i].is_turn() {
                     break;
                 }
             }
             if show && denied { println!("de6"); }
         }
+//        for other in (method + 1)..5 {
+//            let mother = program.0[other];
+//            let mut same = true;
+//            for i in 0..10 {
+//                same &= meth[i].is_debug() == mother[i].is_debug();
+//            }
+//            if same {
+//                denied |= meth > mother;
+//            }
+//        }
 //        for i in 2..puzzle.functions[method] {
-//            let a = program.0[method][i - 2];
-//            let b = program.0[method][i - 1];
-//            let c = program.0[method][i];
+//            let a = meth[i - 2];
+//            let b = meth[i - 1];
+//            let c = meth[i];
 //            if c == HALT || c == NOP { break; }
 //            denied |= banned_trio(puzzle, a, b, c, show);
 //        }

@@ -15,7 +15,7 @@ use game::{*, instructions::*};
 
 use backtrack::*;
 use carlo::carlo;
-use web::{encode_program, parse_level};
+use web::{encode_program};
 use fantoccini::{Client, Locator};
 use std::thread;
 use crate::web::start_web_solver;
@@ -31,61 +31,31 @@ mod web;
 
 
 fn main() {
-    start_web_solver();
+//    start_web_solver();
 //    denial_test();return;
-//    let puzzles = [
-//        PUZZLE_42,
-//        PUZZLE_536,
-//        PUZZLE_656,
-//        PUZZLE_1337,
-////        parse_level(),
-//    ];
-//    for puzzle in puzzles.iter() {
-//        let now = Instant::now();
-//        let solutions = backtrack(*puzzle);
-//        if !solutions.is_empty() {
-//            println!("Solved! The solutions are:");
-//            for solution in solutions {
-//                println!("{} code: {}", solution, encode_program(&solution, puzzle));
-//            }
-//        } else {
-//            println!("I couldn't find a solution :(");
-//        }
-//        println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
-//    }
+    let puzzles = [
+        PUZZLE_42,
+        PUZZLE_536,
+        PUZZLE_656,
+        PUZZLE_1337,
+//        parse_level(),
+    ];
+    for puzzle in puzzles.iter() {
+        let now = Instant::now();
+        let solutions = backtrack(*puzzle, Duration::from_secs(10));
+        if !solutions.is_empty() {
+            println!("Solved! The solution(s) are:");
+            for solution in solutions {
+                println!("{} code: {}", solution, encode_program(&solution, puzzle));
+            }
+        } else {
+            println!("I couldn't find a solution :(");
+        }
+        println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
+    }
 //    println!("prog: {}", encode_program(&PUZZLE_656_SOLUTION, &PUZZLE_656));
 }
 
-// Instructions
-// 0b 00 00 00 00
-//    CC C_ II II
-
-// Tiles
-// 0b 00 00 00 00
-//    __ __ SC CC
-
-// C = color
-// C = 0 -> Gray
-// C = 1 -> Red
-// C = 2 -> Green
-// C = 3 -> Blue
-
-// I = instruction
-// I = 0  -> Forward
-// I = 1  -> TurnLeft
-// I = 2  -> TurnRight
-// I = 3  -> F1
-// I = 4  -> F2
-// I = 5  -> F3
-// I = 6  -> F4
-// I = 7  -> F5
-// I = 9  -> MarkRed
-// I = 10 -> MarkGreen
-// I = 11 -> MarkBlue
-
-// S = star
-// S = 0 -> No Star
-// S = 1 -> Star
 const RAND_FUNCS: [Method; 9] = [
     [F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
     [FORWARD, GREEN_F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],

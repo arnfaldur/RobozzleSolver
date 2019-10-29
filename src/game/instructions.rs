@@ -1,10 +1,10 @@
-use std::fmt;
-use std::fmt::{Formatter, Error, Display};
-use colored::*;
+use std::fmt::{Formatter, Error, Display, Debug};
 
+use colored::*;
+use serde::{Serialize, Deserialize};
 type InsType = u32;
 
-#[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash)]
+#[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Ins(InsType);
 
 impl Ins {
@@ -119,7 +119,7 @@ impl Display for Ins {
     }
 }
 
-impl fmt::Debug for Ins {
+impl Debug for Ins {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
 //        write!(f, "{:016b} ", self.0)?;
 //        write!(f, "{}{}", self.get_method_number(), self.get_ins_index())?;

@@ -1,16 +1,18 @@
-use colored::*;
 use std::fmt::{Display, Error, Formatter, Debug};
 use std::ops::{IndexMut, Index};
 use std::cmp::{max, min};
-
-use crate::constants::*;
-use instructions::*;
 use std::hash::{Hasher, Hash};
 use std::collections::hash_map::DefaultHasher;
 
+use colored::*;
+use serde::{Serialize, Deserialize};
+
+use crate::constants::*;
+use instructions::*;
+
 pub(crate) mod instructions;
 
-#[derive(PartialEq, Eq, Copy, Clone, Hash)]
+#[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Tile(pub u8);
 
 impl Tile {
@@ -37,7 +39,7 @@ type Map = [[Tile; 18]; 14];
 
 pub type Method = [Ins; 10];
 
-#[derive(Eq, PartialEq, PartialOrd, Copy, Clone, Debug)]
+#[derive(Eq, PartialEq, PartialOrd, Copy, Clone, Debug, Serialize, Deserialize)]
 pub struct Source(pub [Method; 5]);
 
 impl Source {
@@ -156,7 +158,7 @@ impl Stack {
     pub(crate) fn clear(&mut self) { self.pointer = 0; }
 }
 
-#[derive(Eq, PartialEq, Copy, Clone, Hash)]
+#[derive(Eq, PartialEq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub enum Direction {
     Up = 0b0001,
     Left = 0b0010,
@@ -183,7 +185,7 @@ impl Direction {
     }
 }
 
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, Serialize, Deserialize)]
 pub struct Puzzle {
     pub(crate) map: Map,
     pub(crate) direction: Direction,

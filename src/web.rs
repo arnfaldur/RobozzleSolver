@@ -1,46 +1,90 @@
 use std::io::{stdout, Write};
-
-use crate::game::{Puzzle, Source, instructions::*, Direction, make_puzzle, Tile};
+use std::process::{Command, Stdio};
+use std::thread::sleep;
+use std::time::Duration;
 
 use tokio::{prelude::*, runtime::Runtime};
 use fantoccini::{Client, Locator};
-use std::thread;
-use std::time::Duration;
 use serde::{Serialize, Deserialize};
+use webdriver::common::LocatorStrategy::CSSSelector;
+use serde_json::Value;
+
+use crate::game::{Puzzle, Source, instructions::*, Direction, make_puzzle, Tile};
 use crate::constants::*;
+use crate::backtrack::backtrack;
+use fantoccini::error::{CmdError, CmdError::InvalidArgument};
 
 pub fn start_web_solver() {
-    fetch_puzzle(14);
+    let mut gecko = Command::new("geckodriver.exe")
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::null()) // silence
+        .spawn()
+        .unwrap();
+
+    fetch_puzzle(5088);
+
+    gecko.kill();
 }
 
-fn fetch_puzzle(puzzle_id: u64) -> Result<(), fantoccini::error::CmdError> {
-    let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
-    url.push_str(puzzle_id.to_string().as_str());
+// username: Hugsun
+// password: 8r4WvSfxHGirMDxH6FBO
 
+fn fetch_puzzle(puzzle_id: u64) -> Result<(), CmdError> {
     let rt = Runtime::new()?;
-
     rt.block_on(async {
-        let mut c = Client::new("http://localhost:4444").await.unwrap_or_else(|hello| panic!("HERE {}", hello));
+        let mut client = Client::new("http://localhost:4444").await.unwrap_or_else(|err| panic!("Couldn't connect to webdriver! {}", err));
 
+        login(&mut client).await?;
 
-        c.goto(url.as_ref()).await?;
+        solve_puzzle(&mut client, puzzle_id).await?;
 
-        let val = c.execute("return robozzle.level", vec![]).await?;
-        let level_json: LevelJson = serde_json::from_value(val).unwrap();
-        let puzzle = level_to_puzzle(&level_json);
-        println!("level: {}", puzzle);
-
-        thread::sleep(Duration::from_secs(10));
-        c.close().await
+        client.close().await
     })
 }
 
-pub fn parse_level() -> Puzzle {
-    let deseris: LevelJson = serde_json::from_str(LEVEL_JSON).unwrap();
-    println!("deresir: {:?}", deseris);
-    let puzz = level_to_puzzle(&deseris);
-    println!("puzzle: {}", puzz);
-    return puzz;
+async fn login(client: &mut Client) -> Result<(), CmdError> {
+    client.goto("http://www.robozzle.com/beta/index.html").await?;
+
+    client.find(Locator::Css("#menu-signin")).await?.click().await?;
+
+    let mut signin_form = client.form(Locator::Css("#dialog-signin")).await?;
+    signin_form.set_by_name("name", "Hugsun").await?;
+    sleep(Duration::from_millis(500));
+    signin_form.set_by_name("password", "8r4WvSfxHGirMDxH6FBO").await?;
+    sleep(Duration::from_millis(500));
+    signin_form.submit().await?;
+    sleep(Duration::from_millis(500));
+    return Ok(());
+}
+
+async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), CmdError> {
+    let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
+    url.push_str(puzzle_id.to_string().as_str());
+    client.goto(url.as_str()).await?;
+
+    let val = client.execute("return robozzle.level", vec![]).await?;
+    if let Value::Null = val {
+        return Err(InvalidArgument("Puzzle doesn't exist".to_string(), "Sorry".to_string()));
+    }
+    let level_json: LevelJson = serde_json::from_value(val).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
+    let puzzle = level_to_puzzle(&level_json);
+    println!("level: {}", puzzle);
+    let mut solutions = backtrack(puzzle, Duration::from_secs(60));
+    if let Some(solution) = solutions.pop() {
+        url.push_str("&program=");
+        url.push_str(encode_program(&solution, &puzzle).as_str());
+        client.goto(url.as_ref()).await?;
+//            client.execute("setRobotSpeed(10);",vec![]).await?;
+        client.find(Locator::Css("#program-go")).await?.click().await?;
+        // can't seem to control where to click or drag
+        // client.find(Locator::Css("#program-speed")).await?.click().await?;
+        while match client.find(Locator::Id("dialog-solved")).await?.attr("style").await? {
+            None => true,
+            Some(attribute) => attribute.eq("display: none;"),
+        } { sleep(Duration::from_millis(100)); }
+    }
+    return Ok(());
 }
 
 fn level_to_puzzle(level: &LevelJson) -> Puzzle {
@@ -85,6 +129,7 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
 }
 
 // ---------------------------------------------------------------------------
+#[allow(non_snake_case)]
 #[derive(Serialize, Deserialize, Debug)]
 struct LevelJson {
     About: String,
