@@ -42,24 +42,22 @@ impl PartialEq for Frame {
 
 impl Eq for Frame {}
 
-const THREADS: usize = 24;
+const THREADS: usize = 16;
 const CHANNEL_SIZE: usize = 1 << 12;
 
-pub fn backtrack(puzzle: &'static Puzzle) -> Vec<Source> {
+pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
 //    for thread in 0..THREADS {
 //        thread::spawn(move || {
 
-    let (sender, receiver) = bounded(CHANNEL_SIZE);
+    let (sender, receiver) = unbounded();
     sender.send(Frame(puzzle.empty_source(), puzzle.initial_state(&NOGRAM)));
-
-    let barrier = Arc::new(Barrier::new(THREADS + 1));
 
     let mut threads = vec![];
     for thread in 0..THREADS {
-        let (sclone, rclone, bclone) = (sender.clone(), receiver.clone(), barrier.clone());
+        let (sclone, rclone) = (sender.clone(), receiver.clone());
         threads.push(spawn(move || {
-            return trackback(puzzle, thread, sclone, rclone, &bclone);
+            return trackback(&puzzle, thread, sclone, rclone);
         }));
     }
     let mut result = vec![];
@@ -72,7 +70,7 @@ pub fn backtrack(puzzle: &'static Puzzle) -> Vec<Source> {
     return result;
 }
 
-fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver: Receiver<Frame>, barrier: &Barrier) -> Vec<Source> {
+fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver: Receiver<Frame>) -> Vec<Source> {
     let mut result: Vec<Source> = vec![];
     let mut candidates = VecDeque::new();
     let mut considered: u64 = 0;
@@ -131,7 +129,6 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
                             } else if loosening_branch {
                                 vec![ins.get_ins().as_loosened()]
                             } else { vec![] };
-                        let local = candidate.count_ins() >= 3;
                         for instruction in instructions {
                             let mut temp = candidate.clone();
                             temp[method_index][ins_index] = instruction;
@@ -139,17 +136,10 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
                                 snips += 1;
                             } else {
                                 let branch = Frame(temp.to_owned(), state.clone());
-                                if local {
+                                if candidate.count_ins() >= 3 {
                                     candidates.push_back(branch);
                                 } else {
-                                    match sender.try_send(branch) {
-                                        Ok(o) => {
-//                                            println!("sent from thread {}", thread_id);
-                                        }
-                                        Err(e) => {
-                                            candidates.push_front(branch);
-                                        }
-                                    }
+                                    sender.send(branch);
                                 }
                             }
                         }
@@ -170,29 +160,30 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
                 }
                 running = state.step(&candidate, puzzle);
             }
-            if considered % 10000 == 0 {
+            if considered % (1 << 14) == 0 {
                 if receiver.is_empty() {
                     drop(sender);
                     return result;
-                } else {
+                } else if receiver.len() < 1 << 10 {
                     if let Some(branch) = candidates.pop_front() {
                         sender.send(branch);
                     }
                 }
             }
-            if considered % 1000000000 == 0 || state.stars == 0 {
+            if considered % 1000000 == 0 || state.stars == 0 {
 //                if state.stars == 0 { print!("solution: "); }
-//                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
-//                         considered, executed, rejects, denies, snips, duplicates);
-//                println!("current: {}", candidate);
-//            for c in candidates.iter().rev().take(16) {
-//                println!("{}", c.0);
-//            }
-//            print!(" and {}", candidates);
+                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
+                         considered, executed, rejects, denies, snips, duplicates);
+                println!("work queue: {}", sender.len());
+                println!("candidates: {}, current: {}", candidates.len(), candidate);
+                for c in candidates.iter().rev().take(16) {
+                    println!("{}", c.0);
+                }
+//                print!(" and {}", candidates);
 //            if considered > 10000 { return vec![]; }
                 if state.stars == 0 {
                     result.push(candidate);
-                    while let Ok(dumped) = receiver.recv_timeout(Duration::from_millis(1)) { }
+                    while let Ok(dumped) = receiver.recv_timeout(Duration::from_millis(1)) {}
                     drop(sender);
                     return result;
 
@@ -237,6 +228,15 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
                 } else if conditioned[ins.source_index()] != (ins.get_cond() | ins.with_loosened(true)) {
                     conditioned[ins.source_index()] = HALT;
                 }
+                let called = program[ins.source_index()];
+                denied |= called == [HALT; 10];
+                let mut trivial = true;
+                for j in 1..puzzle.functions[ins.source_index()] {
+                     trivial &= called[j] == HALT;
+                }
+                if trivial {
+                    denied |= ins.get_cond() == called[0].get_cond() || called[0].is_gray();
+                }
             }
         }
     }
@@ -244,7 +244,9 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
         for i in 1..puzzle.functions[method] {
             let a = program.0[method][i - 1];
             let b = program.0[method][i];
-            if b.is_halt() || b.is_nop() { break; }
+            if b.is_halt() { break; }
+            denied |= a.is_function() && a.is_gray() && a.source_index() == method;
+            if b.is_nop() { break; }
 //            denied |= banned_pair(puzzle, a, b, show);
 //            if show && denied { println!("de1"); }
             if a.is_function() && invoked[a.source_index()] == 1 && conditioned[a.source_index()].is_gray() {

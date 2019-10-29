@@ -1,28 +1,176 @@
 use std::io::{stdout, Write};
 
-use crate::game::{Puzzle, Source, instructions::*};
+use crate::game::{Puzzle, Source, instructions::*, Direction, make_puzzle, Tile};
 
-pub fn start_web_client() {
-    let url = "http://www.robozzle.com/beta/index.html?puzzle=1874";
-//    let mut data = Vec::new();
-//    let mut handle = Easy::new();
-//    handle.url("https://www.rust-lang.org/").unwrap();
-//    let mut transfer = handle.transfer();
-//    transfer.write_function(|new_data| {
-//        data.extend_from_slice(new_data);
-//        Ok(new_data.len())
-//    }).unwrap();
-//    transfer.perform().unwrap();
-//    println!("{:?}", data);
+use tokio::{prelude::*, runtime::Runtime};
+use fantoccini::{Client, Locator};
+use std::thread;
+use std::time::Duration;
+use serde::{Serialize, Deserialize};
+use crate::constants::*;
+
+pub fn start_web_solver() {
+    fetch_puzzle(14);
 }
 
-struct EncodingState {
+fn fetch_puzzle(puzzle_id: u64) -> Result<(), fantoccini::error::CmdError> {
+    let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
+    url.push_str(puzzle_id.to_string().as_str());
+
+    let rt = Runtime::new()?;
+
+    rt.block_on(async {
+        let mut c = Client::new("http://localhost:4444").await.unwrap_or_else(|hello| panic!("HERE {}", hello));
+
+
+        c.goto(url.as_ref()).await?;
+
+        let val = c.execute("return robozzle.level", vec![]).await?;
+        let level_json: LevelJson = serde_json::from_value(val).unwrap();
+        let puzzle = level_to_puzzle(&level_json);
+        println!("level: {}", puzzle);
+
+        thread::sleep(Duration::from_secs(10));
+        c.close().await
+    })
+}
+
+pub fn parse_level() -> Puzzle {
+    let deseris: LevelJson = serde_json::from_str(LEVEL_JSON).unwrap();
+    println!("deresir: {:?}", deseris);
+    let puzz = level_to_puzzle(&deseris);
+    println!("puzzle: {}", puzz);
+    return puzz;
+}
+
+fn level_to_puzzle(level: &LevelJson) -> Puzzle {
+    let mut map = PUZZLE_NULL.map.clone();
+    for y in 0..12 {
+        let mut cols = level.Colors[y].chars();
+        let mut tems = level.Items[y].chars();
+        for x in 0..16 {
+            let color = match cols.next().unwrap_or(' ') {
+                'R' => RE,
+                'G' => GE,
+                'B' => BE,
+                _ => _N,
+            };
+            map[y + 1][x + 1] = match tems.next().unwrap_or(' ') {
+                '*' => Tile(color.0 | TILE_STAR_MASK.0),
+                '.' => color,
+                _ => _N,
+            }
+        }
+    }
+    let direction = match level.RobotDir.chars().next().unwrap_or(' ') {
+        '0' => Direction::Right,
+        '1' => Direction::Down,
+        '2' => Direction::Left,
+        '3' => Direction::Up,
+        _ => Direction::Up
+    };
+    let mut functions = [0; 5];
+    for m in 0..5 {
+        functions[m] = level.SubLengths[m].parse().unwrap();
+    }
+    let mflags: u8 = level.AllowedCommands.parse().unwrap();
+    return make_puzzle(
+        map,
+        direction,
+        level.RobotCol.parse::<usize>().unwrap() + 1,
+        level.RobotRow.parse::<usize>().unwrap() + 1,
+        functions,
+        [(mflags & 0b1) > 0, (mflags & 0b10) > 0, (mflags & 0b100) > 0],
+    );
+}
+
+// ---------------------------------------------------------------------------
+#[derive(Serialize, Deserialize, Debug)]
+struct LevelJson {
+    About: String,
+    AllowedCommands: String,
+    Colors: Vec<String>,
+    CommentCount: String,
+    DifficultyVoteCount: String,
+    DifficultyVoteSum: String,
+    Disliked: String,
+    Featured: String,
+    Id: String,
+    Items: Vec<String>,
+    Liked: String,
+    RobotCol: String,
+    RobotDir: String,
+    RobotRow: String,
+    Solutions: String,
+    SubLengths: Vec<String>,
+    SubmittedBy: String,
+    SubmittedDate: String,
+    Title: String,
+}
+
+const LEVEL_JSON: &str = "{
+\"About\": \"Collect starfruit! (See comments for hints - coming soon)\",
+\"AllowedCommands\": \"0\",
+\"Colors\": [
+\"RRRRRRRRRRRRRRRR\",
+\"RRRRRRGGGGRRRRRR\",
+\"RRRRRGGGGGGRRRRR\",
+\"RRRRRGGGGGGRRRRR\",
+\"RRRRRGGRRGGGGGRR\",
+\"RRRRRRGRRGGGGGGR\",
+\"RRGGGRRRRRGRGGGR\",
+\"RGGRRRRRRRRRRGGR\",
+\"RGGGGGGRRRGGGGGR\",
+\"RGGGGGRRRRRGGGRR\",
+\"RRGGGRRRRRRRRRRR\",
+\"BBBBBBBRRBBBBBBB\"
+],
+\"CommentCount\": \"0\",
+\"DifficultyVoteCount\": \"0\",
+\"DifficultyVoteSum\": \"0\",
+\"Disliked\": \"0\",
+\"Featured\": \"false\",
+\"Id\": \"1874\",
+\"Items\": [
+\"################\",
+\"######****######\",
+\"#####*....*#####\",
+\"#####*....*#####\",
+\"#####*....****##\",
+\"######*...*..**#\",
+\"##***##..#..*.*#\",
+\"#*............*#\",
+\"#*....*..#*...*#\",
+\"#*...*#..##***##\",
+\"##***##..#######\",
+\"...****.........\"
+],
+\"Liked\": \"0\",
+\"RobotCol\": \"8\",
+\"RobotDir\": \"0\",
+\"RobotRow\": \"3\",
+\"Solutions\": \"1\",
+\"SubLengths\": [
+\"10\",
+\"6\",
+\"4\",
+\"2\",
+\"0\"
+],
+\"SubmittedBy\": \"masterluk\",
+\"SubmittedDate\": \"2010-04-10T12:56:13.157\",
+\"Title\": \"Tree of Balance\"
+}";
+
+// ---------------------------------------------------------------------------
+
+struct StateEncoder {
     output: String,
     val: usize,
     bits: usize,
 }
 
-impl EncodingState {
+impl StateEncoder {
     fn encode_bits(&mut self, val: usize, bits: usize) {
         for i in 0..bits {
             self.val |= (if val & (1 << i) > 0 { 1 } else { 0 }) << self.bits;
@@ -78,7 +226,7 @@ impl EncodingState {
 }
 
 pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
-    let mut encode_state = EncodingState {
+    let mut encode_state = StateEncoder {
         output: "".parse().unwrap(),
         val: 0,
         bits: 0,

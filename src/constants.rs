@@ -76,33 +76,19 @@ const TEST_SOURCE: Source = Source([
         NOP, NOP, NOP, NOP, NOP, ],
 ]);
 
-//const PUZZLE_NULL: Puzzle = Puzzle {
-//    map: [
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//        [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],
-//    ],
-//    direction: Direction::Down,
-//    x: 1,
-//    y: 1,
-//    stars: 1,
-//    functions: [0, 0, 0, 0, 0],
-//    marks: [false; 3],
-//    red: false,
-//    green: false,
-//    blue: false,
-//};
+pub(crate) const PUZZLE_NULL: Puzzle = Puzzle {
+    map: [[_N; 18]; 14],
+    direction: Direction::Down,
+    x: 1,
+    y: 1,
+    stars: 1,
+    functions: [0, 0, 0, 0, 0],
+    marks: [false; 3],
+    red: false,
+    green: false,
+    blue: false,
+};
+
 pub(crate) const PUZZLE_42: Puzzle = Puzzle {
     map: [
         [_N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, ],

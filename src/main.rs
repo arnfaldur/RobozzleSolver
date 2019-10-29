@@ -5,18 +5,20 @@
 #![allow(unused_must_use)]
 #![allow(unreachable_code)]
 
-use std::time::Instant;
+use std::time::{Instant, Duration};
 use std::collections::hash_map::DefaultHasher;
 use std::hash::Hash;
 use std::collections::{HashMap, HashSet};
 
 use constants::*;
 use game::{*, instructions::*};
-use web::start_web_client;
 
 use backtrack::*;
 use carlo::carlo;
-use crate::web::encode_program;
+use web::{encode_program, parse_level};
+use fantoccini::{Client, Locator};
+use std::thread;
+use crate::web::start_web_solver;
 
 mod constants;
 mod game;
@@ -27,28 +29,30 @@ mod backtrack;
 
 mod web;
 
+
 fn main() {
-//    start_web_client();
+    start_web_solver();
 //    denial_test();return;
-//    PUZZLE_656.execute(&PUZZLE_656_SOLUTION, true, won);
-    for puzzle in [
-        PUZZLE_42,
-        PUZZLE_536,
-        PUZZLE_656,
-        PUZZLE_1337,
-    ].iter() {
-        let now = Instant::now();
-        let solutions = backtrack(&puzzle);
-        if !solutions.is_empty() {
-            println!("Solved! The solutions are:");
-            for solution in solutions {
-                println!("{} code: {}", solution, encode_program(&solution, puzzle));
-            }
-        } else {
-            println!("I couldn't find a solution :(");
-        }
-        println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
-    }
+//    let puzzles = [
+//        PUZZLE_42,
+//        PUZZLE_536,
+//        PUZZLE_656,
+//        PUZZLE_1337,
+////        parse_level(),
+//    ];
+//    for puzzle in puzzles.iter() {
+//        let now = Instant::now();
+//        let solutions = backtrack(*puzzle);
+//        if !solutions.is_empty() {
+//            println!("Solved! The solutions are:");
+//            for solution in solutions {
+//                println!("{} code: {}", solution, encode_program(&solution, puzzle));
+//            }
+//        } else {
+//            println!("I couldn't find a solution :(");
+//        }
+//        println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
+//    }
 //    println!("prog: {}", encode_program(&PUZZLE_656_SOLUTION, &PUZZLE_656));
 }
 
@@ -101,7 +105,7 @@ fn denial_test() {
     let instructions = [HALT].iter().chain(tmp.iter()
 //        .filter(|&ins| !ins.is_function() || ins.get_instruction() == F2));
         .filter(|&ins| !ins.is_function()));
-    let tiles = [RS, GS,BS];
+    let tiles = [RS, GS, BS];
     println!("jsdfk: {}", template_puzzle);
     let mut mipmap = HashMap::new();
     let mut rejects2 = HashSet::new();

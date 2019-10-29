@@ -183,6 +183,7 @@ impl Direction {
     }
 }
 
+#[derive(Copy, Clone)]
 pub struct Puzzle {
     pub(crate) map: Map,
     pub(crate) direction: Direction,
@@ -396,7 +397,7 @@ pub fn genboi(ta: Tile, tb: Tile, tc: Tile) -> Puzzle {
 }
 
 
-fn make_puzzle(
+pub fn make_puzzle(
     map: Map,
     direction: Direction,
     x: usize,

@@ -167,7 +167,7 @@ pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins
     }
 }
 
-pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>, mut rng: impl Rng) -> Source {
+pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>, mut _rng: impl Rng) -> Source {
     let  fullgram = *base;
     for i in 0..puzzle.functions.len() {
         for j in 0..puzzle.functions[i] {
