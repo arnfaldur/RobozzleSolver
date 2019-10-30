@@ -21,6 +21,7 @@ impl Ins {
     pub fn is_cond(self, cond: Ins) -> bool { self.get_cond() == cond }
     pub fn has_cond(self, cond: Ins) -> bool { self & cond == cond }
     pub fn with_cond(self, cond: Ins) -> Ins { self.get_ins() | cond }
+    pub fn remove_cond(self, cond: Ins) -> Ins { self & !cond }
     pub fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
     pub fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
     pub fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
@@ -35,11 +36,12 @@ impl Ins {
         if self.is_ins(LEFT) { RIGHT } else if self.is_ins(RIGHT) { LEFT } else { HALT }
     }
     pub fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
-    pub fn get_probes(self, excluded: Ins) -> Vec<Ins> {
-        let mask = self.to_probe();
-        return PROBES.iter()
-            .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
-            .map(|ins| ins.as_loosened()).collect();
+    pub fn get_probes(self, excluded: Ins) -> Ins {
+        (INS_COLOR_MASK & !excluded).to_probe()
+//        let mask = self.to_probe();
+//        return PROBES.iter()
+//            .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
+//            .map(|ins| ins.as_loosened()).collect();
     }
     pub fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
     pub fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
@@ -74,16 +76,18 @@ impl From<u8> for Ins {
 
 impl std::ops::BitOr for Ins {
     type Output = Ins;
-    fn bitor(self, rhs: Self) -> Self::Output {
-        Ins(self.0.bitor(rhs.0))
-    }
+    fn bitor(self, rhs: Self) -> Self::Output { Ins(self.0.bitor(rhs.0)) }
 }
 
 impl std::ops::BitAnd for Ins {
     type Output = Ins;
-    fn bitand(self, rhs: Self) -> Self::Output {
-        Ins(self.0.bitand(rhs.0))
-    }
+    fn bitand(self, rhs: Self) -> Self::Output { Ins(self.0.bitand(rhs.0)) }
+}
+
+impl std::ops::Not for Ins {
+    type Output = Ins;
+
+    fn not(self) -> Self::Output { Ins(!self.0) }
 }
 
 impl Display for Ins {

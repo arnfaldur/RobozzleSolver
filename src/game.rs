@@ -26,7 +26,7 @@ impl Tile {
     fn is_blue(&self) -> bool { self.0 & BE.0 > 0 }
     pub(crate) fn executes(&self, instruction: Ins) -> bool {
         let color = instruction.get_cond();
-        return color == GRAY_COND || color == self.to_condition();
+        return color == GRAY_COND || color.has_cond(self.to_condition());
     }
     fn mark(&mut self, instruction: Ins) {
         let color: u8 = instruction.get_mark_color().into();
@@ -85,15 +85,11 @@ impl Hash for Source {
 impl Index<usize> for Source {
     type Output = Method;
 
-    fn index(&self, index: usize) -> &Self::Output {
-        &self.0[index]
-    }
+    fn index(&self, index: usize) -> &Self::Output { &self.0[index] }
 }
 
 impl IndexMut<usize> for Source {
-    fn index_mut(&mut self, index: usize) -> &mut Self::Output {
-        &mut self.0[index]
-    }
+    fn index_mut(&mut self, index: usize) -> &mut Self::Output { &mut self.0[index] }
 }
 
 const STACK_SIZE: usize = 1 << 10;
@@ -423,8 +419,19 @@ pub fn make_puzzle(
     map_out[y][x].touch();
     let stars: usize = map_out.iter().map(|row| row.iter()
         .map(|el| el.has_star() as usize).sum::<usize>()).sum();
-    return Puzzle { map: map_out, direction, x, y, stars,
-        methods, actual_methods, marks, red, green, blue };
+    return Puzzle {
+        map: map_out,
+        direction,
+        x,
+        y,
+        stars,
+        methods,
+        actual_methods,
+        marks,
+        red,
+        green,
+        blue,
+    };
 }
 
 fn verify_puzzle(puzzle: &Puzzle) -> bool {
@@ -457,13 +464,13 @@ impl Display for Source {
         write!(f, "{{")?;
         for i in 0..self.len() {
             let mut separate = false;
-            for instruction in self[i].iter() {
-                if *instruction == HALT {
-                    break;
+            for &instruction in self[i].iter() {
+                if instruction == HALT {
                     write!(f, "|")?;
-                } else if *instruction == NOP {
+//                    break;
+                } else if instruction == NOP {
                     write!(f, "_")?;
-                } else if *instruction != NOP {
+                } else if instruction != NOP {
                     write!(f, "{}", instruction)?;
                 }
                 separate = true;
