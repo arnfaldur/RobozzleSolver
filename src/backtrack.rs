@@ -42,7 +42,7 @@ impl PartialEq for Frame {
 
 impl Eq for Frame {}
 
-const THREADS: usize = 1;
+const THREADS: usize = 16;
 
 pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
@@ -170,8 +170,8 @@ fn search<F>(puzzle: &Puzzle, frame: Frame, mut brancher: F) -> bool where F: Fn
                             .filter(|&ins| {
                                 !ins.is_function() || preferred[ins.source_index()]
                             }).chain(
-                            [puzzle.get_cond_mask().get_probes(state.current_tile()
-                                .to_condition())].iter()
+                            puzzle.get_cond_mask().get_probes(state.current_tile()
+                                .to_condition()).iter()
                         ).cloned().collect()
                     } else if probe_branch {
                         puzzle.get_ins_set(state.current_tile().to_condition(), false)
@@ -179,10 +179,16 @@ fn search<F>(puzzle: &Puzzle, frame: Frame, mut brancher: F) -> bool where F: Fn
                     } else if loosening_branch {
                         vec![ins.as_loosened(), ins.get_ins().as_loosened()]
                     } else { vec![] };
+                branched = true;
                 if nop_branch {
                     if candidate.count_ins() > max_ins {
                         return state.stars == 0;
                     }
+                } else if probe_branch {
+                    candidate[method_index][ins_index].remove_cond(state.current_tile().to_condition());
+//                    if !candidate[method_index][ins_index].is_gray() {
+//                        branched = false;
+//                    }
                 }
                 for &instruction in instructions.iter().rev() {
                     let mut temp = candidate.clone();
@@ -193,16 +199,13 @@ fn search<F>(puzzle: &Puzzle, frame: Frame, mut brancher: F) -> bool where F: Fn
                     }
                 }
 //                return state.stars == 0;
-                branched = true;
                 if nop_branch {
                     // this reduces performance but is necessary to find shorter solutions.
 //                    let left = max_ins
-//                    for i in ins_index..puzzle.methods[method_index] {
-//                        candidate[method_index][i] = HALT;
-//                    }
-//                    branched = false;
-                } else if probe_branch {
-
+                    for i in ins_index..puzzle.methods[method_index] {
+                        candidate[method_index][i] = HALT;
+                    }
+                    branched = false;
                 } else if loosening_branch {
 //                    candidate[method_index][ins_index] = candidate[method_index][ins_index].as_loosened();
 //                    branched = false;

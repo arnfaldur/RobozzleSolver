@@ -36,8 +36,12 @@ impl Ins {
         if self.is_ins(LEFT) { RIGHT } else if self.is_ins(RIGHT) { LEFT } else { HALT }
     }
     pub fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
-    pub fn get_probes(self, excluded: Ins) -> Ins {
-        (INS_COLOR_MASK & !excluded).to_probe()
+    pub fn get_probes(self, excluded: Ins) -> Vec<Ins> {
+        if (self & !excluded).is_gray() {
+            vec![]
+        } else {
+            vec![(self & !excluded).to_probe()]
+        }
 //        let mask = self.to_probe();
 //        return PROBES.iter()
 //            .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
@@ -97,6 +101,9 @@ impl Display for Ins {
             RED_COND => Color::Red,
             GREEN_COND => Color::Green,
             BLUE_COND => Color::Blue,
+            YELLOW_COND => Color::Yellow,
+            MAGENTA_COND => Color::Magenta,
+            CYAN_COND => Color::Cyan,
             _ => Color::Black,
         };
         let ins = self.get_ins();
@@ -112,10 +119,7 @@ impl Display for Ins {
             RIGHT => "→".to_string(),
             F1 | F2 | F3 | F4 | F5 => ins.get_fun_number().to_string(),
             MARK_RED | MARK_GREEN | MARK_BLUE => "●".to_string(),
-            NOP => match self.as_vanilla() {
-                RED_PROBE | GREEN_PROBE | BLUE_PROBE => "_".to_string(),
-                _ => " ".to_string(),
-            }
+            NOP => if self.is_probe() { "_" } else { " " }.to_string(),
             _ => " ".to_string(),
         };
         write!(f, "{}", string.color(foreground).on_color(background))
@@ -180,6 +184,9 @@ pub(crate) const GRAY_COND: Ins = Ins(0b00000000);
 pub(crate) const RED_COND: Ins = Ins(0b00100000);
 pub(crate) const GREEN_COND: Ins = Ins(0b01000000);
 pub(crate) const BLUE_COND: Ins = Ins(0b10000000);
+pub(crate) const YELLOW_COND: Ins = Ins(0b01100000);
+pub(crate) const MAGENTA_COND: Ins = Ins(0b10100000);
+pub(crate) const CYAN_COND: Ins = Ins(0b11000000);
 
 // masks for isolating instruction parts
 pub(crate) const MARK_MASK: Ins = Ins(0b00000111);
