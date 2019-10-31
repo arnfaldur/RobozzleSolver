@@ -12,13 +12,15 @@ use instructions::*;
 
 pub(crate) mod instructions;
 
+pub type TileType = u16;
+
 #[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
-pub struct Tile(pub u8);
+pub struct Tile(pub TileType);
 
 impl Tile {
-    fn touch(&mut self) { self.0 |= TILE_TOUCHED.0; }
+    fn touch(&mut self) { self.0 += TILE_TOUCHED.0; }
     fn clear_star(&mut self) { self.0 &= !TILE_STAR_MASK.0; }
-    pub(crate) fn is_touched(&self) -> bool { (self.0 & TILE_TOUCHED.0) > 0 }
+    pub(crate) fn touched(&self) -> TileType { self.0 >> 5 }
     pub(crate) fn has_star(&self) -> bool { (self.0 & TILE_STAR_MASK.0) > 0 }
     fn color(&self) -> Tile { Tile(self.0 & TILE_COLOR_MASK.0) }
     fn is_red(&self) -> bool { self.0 & RE.0 > 0 }
@@ -30,9 +32,9 @@ impl Tile {
     }
     fn mark(&mut self, instruction: Ins) {
         let color: u8 = instruction.get_mark_color().into();
-        self.0 = color | TILE_TOUCHED.0
+        self.0 = color as TileType | TILE_TOUCHED.0
     }
-    pub(crate) fn to_condition(&self) -> Ins { (self.0 << 5).into() }
+    pub(crate) fn to_condition(&self) -> Ins { ((self.0 as u8) << 5).into() }
 }
 
 type Map = [[Tile; 18]; 14];
@@ -99,7 +101,7 @@ const STACK_MATCH: usize = 1 << 6;
 #[derive(Copy, Clone)]
 pub struct Stack {
     pointer: usize,
-    pub data: [Ins; STACK_SIZE],
+    pub data: [InsPtr; STACK_SIZE],
 }
 
 impl PartialEq for Stack {
@@ -123,32 +125,32 @@ impl Hash for Stack {
         let mut i = self.pointer;
         while remaining > 0 && i > 0 {
             i -= 1;
-            if self.data[i] != NOP && self.data[i] != HALT {
-                self.data[i].hash(state);
-                remaining -= 1;
-            }
+//            if self.data[i] != NOP && self.data[i] != HALT {
+            self.data[i].hash(state);
+            remaining -= 1;
+//            }
         }
     }
 }
 
 impl Index<usize> for Stack {
-    type Output = Ins;
+    type Output = InsPtr;
     fn index(&self, index: usize) -> &Self::Output {
         &self.data[self.pointer - index - 1]
     }
 }
 
 impl Stack {
-    fn push(&mut self, element: Ins) {
+    fn push(&mut self, element: InsPtr) {
         self.data[self.pointer] = element;
         self.pointer += 1;
     }
-    fn pop(&mut self) -> Ins {
-        let result = self.top();
+    fn pop(&mut self) -> InsPtr {
+        let &result = self.top();
         self.pointer -= 1;
         return result;
     }
-    pub fn top(&self) -> Ins { self.data[self.pointer - 1] }
+    pub fn top(&self) -> &InsPtr { &self.data[self.pointer - 1] }
     pub(crate) fn len(&self) -> usize { self.pointer }
     fn empty(&self) -> bool { self.pointer == 0 }
     pub(crate) fn clear(&mut self) { self.pointer = 0; }
@@ -284,7 +286,7 @@ impl Default for State {
             stars: 1,
             stack: Stack {
                 pointer: 0,
-                data: [HALT; STACK_SIZE],
+                data: [INSPTR_NULL; STACK_SIZE],
             },
             map: [[_N; 18]; 14],
             direction: Direction::Up,
@@ -309,7 +311,10 @@ impl State {
     pub fn initialize(&mut self, source: &Source, puzzle: &Puzzle) {
         self.invoke(source, puzzle, F1.source_index());
     }
-    pub fn ins_pointer(&self) -> Ins {
+    fn clear_star(&mut self) { self.map[self.y][self.x].clear_star(); }
+    fn touch(&mut self) { self.map[self.y][self.x].touch(); }
+    fn mark(&mut self, ins: Ins) { self.map[self.y][self.x].mark(ins) }
+    pub fn ins_pointer(&self) -> &InsPtr {
         let ins = self.stack.top();
 //        let ins = source[ins.get_method_index()][ins.get_ins_index()];
         return ins;
@@ -319,7 +324,7 @@ impl State {
         let ins = source[ins.get_method_index()][ins.get_ins_index()];
         return ins;
     }
-    pub(crate) fn current_tile(&mut self) -> &mut Tile { &mut self.map[self.y][self.x] }
+    pub(crate) fn current_tile(&self) -> &Tile { &self.map[self.y][self.x] }
     fn running(&self) -> bool {
         !self.stack.empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
     }
@@ -340,8 +345,8 @@ impl State {
                         return false;
                     } else {
                         self.stars -= self.current_tile().has_star() as usize;
-                        self.current_tile().clear_star();
-                        self.current_tile().touch();
+                        self.clear_star();
+                        self.touch();
                     }
                 }
                 LEFT => self.direction = self.direction.left(),
@@ -349,7 +354,7 @@ impl State {
                 F1 | F2 | F3 | F4 | F5 => {
                     self.invoke(source, puzzle, ins.source_index());
                 }
-                MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.current_tile().mark(ins),
+                MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.mark(ins),
                 _ => (),
             }
         }
@@ -358,7 +363,7 @@ impl State {
     fn invoke(&mut self, source: &Source, puzzle: &Puzzle, method: usize) {
         for i in (0..puzzle.methods[method]).rev() {
             let ins = source.0[method][i];
-            self.stack.push(ins.with_ins_index(i).with_method_index(method));
+            self.stack.push(InsPtr::new(method, i));
         }
     }
     pub(crate) fn get_hash(&self) -> u64 {
@@ -481,39 +486,39 @@ impl Display for Source {
     }
 }
 
-impl Display for Stack {
-    fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
-        write!(f, "Stack: ({}, ", self.pointer)?;
-        let mut count = 0;
-        for i in (0..self.pointer).rev() {
-            write!(f, "{}", self.data[i])?;
-            count += 1;
-            if count == 100 {
-                write!(f, "...")?;
-                break;
-            }
-        }
-        write!(f, ")")
-        //        write!(f, "{}]", self.data[self.data.len() - 1])
-    }
-}
-
-impl Debug for Stack {
-    fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
-        write!(f, "Stack: (P:{}, ", self.pointer)?;
-        let mut count = 0;
-        for i in (0..self.pointer).rev() {
-            write!(f, "{:?}, ", self.data[i])?;
-            count += 1;
-            if count == 100 {
-                write!(f, "...")?;
-                break;
-            }
-        }
-        write!(f, ")")
-        //        write!(f, "{}]", self.data[self.data.len() - 1])
-    }
-}
+//impl Display for Stack {
+//    fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
+//        write!(f, "Stack: ({}, ", self.pointer)?;
+//        let mut count = 0;
+//        for i in (0..self.pointer).rev() {
+//            write!(f, "{}", self.data[i])?;
+//            count += 1;
+//            if count == 100 {
+//                write!(f, "...")?;
+//                break;
+//            }
+//        }
+//        write!(f, ")")
+//        //        write!(f, "{}]", self.data[self.data.len() - 1])
+//    }
+//}
+//
+//impl Debug for Stack {
+//    fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
+//        write!(f, "Stack: (P:{}, ", self.pointer)?;
+//        let mut count = 0;
+//        for i in (0..self.pointer).rev() {
+//            write!(f, "{:?}, ", self.data[i])?;
+//            count += 1;
+//            if count == 100 {
+//                write!(f, "...")?;
+//                break;
+//            }
+//        }
+//        write!(f, ")")
+//        //        write!(f, "{}]", self.data[self.data.len() - 1])
+//    }
+//}
 
 impl Display for Puzzle {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
@@ -585,8 +590,8 @@ impl Display for State {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
         write!(
             f,
-            "At ({}, {}), stars: {}, Running: {}\n{}\nMap:\n",
-            self.x, self.y, self.stars, self.running(), self.stack
+            "At ({}, {}), stars: {}, Running: {}\nMap:\n",
+            self.x, self.y, self.stars, self.running()
         )?;
         let (mut miny, mut minx, mut maxy, mut maxx) = (14, 18, 0, 0);
         for y in 1..13 {

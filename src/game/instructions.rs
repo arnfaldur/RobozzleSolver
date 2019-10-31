@@ -3,7 +3,7 @@ use std::fmt::{Formatter, Error, Display, Debug};
 use colored::*;
 use serde::{Serialize, Deserialize};
 
-type InsType = u32;
+type InsType = u16;
 
 #[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Ins(InsType);
@@ -51,18 +51,12 @@ impl Ins {
     pub fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
     pub fn as_loosened(self) -> Ins { self | LOOSE_MASK }
     pub fn with_loosened(self, loosened: bool) -> Ins { if loosened { self.as_loosened() } else { self } }
-    pub fn with_ins_index(self, number: usize) -> Ins { self | Ins((number << 9) as InsType) }
-    pub fn get_ins_index(self) -> usize { ((self & INS_NUMBER_MASK).0 >> 9) as usize }
-    pub fn with_method_index(self, number: usize) -> Ins { self | Ins((number << 13) as InsType) }
-    pub fn get_method_index(self) -> usize { ((self & INS_METHOD_MASK).0 >> 13) as usize }
 }
 
 pub fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
     Ins(((red as u8) << 5 | (green as u8) << 6 | (blue as u8) << 7) as InsType)
 }
 
-const INS_METHOD_MASK: Ins = Ins(0b1110000000000000);
-const INS_NUMBER_MASK: Ins = Ins(0b0001111000000000);
 const LOOSE_MASK: Ins = Ins(0b0000000100000000);
 const VANILLA_MASK: Ins = Ins(0b0000000011111111);
 
@@ -93,6 +87,21 @@ impl std::ops::Not for Ins {
 
     fn not(self) -> Self::Output { Ins(!self.0) }
 }
+
+#[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
+pub struct InsPtr(u8);
+
+impl InsPtr {
+    pub fn new(method: usize, ins: usize) -> InsPtr {
+        InsPtr(((ins as u8) & INSPTR_INS_MASK) | ((method as u8) << 4))
+    }
+    pub fn get_ins_index(self) -> usize { (self.0 & INSPTR_INS_MASK) as usize }
+    pub fn get_method_index(self) -> usize { ((self.0 & INSPTR_METHOD_MASK) >> 4) as usize }
+}
+
+pub const INSPTR_NULL: InsPtr = InsPtr(0b11111111);
+const INSPTR_INS_MASK: u8 = 0b00001111;
+const INSPTR_METHOD_MASK: u8 = 0b11110000;
 
 impl Display for Ins {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {

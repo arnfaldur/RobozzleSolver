@@ -198,7 +198,7 @@ pub fn score_cmp(state: &State, puzzle: &Puzzle) -> usize {
     for y in 1..13 {
         for x in 1..17 {
             tiles += (state.map[y][x] != _N) as usize;
-            touched += state.map[y][x].is_touched() as usize;
+            touched += state.map[y][x].touched() as usize;
             stars += state.map[y][x].has_star() as usize;
         }
     }
