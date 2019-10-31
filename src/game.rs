@@ -3,6 +3,7 @@ use std::ops::{IndexMut, Index};
 use std::cmp::{max, min};
 use std::hash::{Hasher, Hash};
 use std::collections::hash_map::DefaultHasher;
+use std::mem;
 
 use colored::*;
 use serde::{Serialize, Deserialize};
@@ -19,8 +20,9 @@ pub struct Tile(pub TileType);
 
 impl Tile {
     fn touch(&mut self) { self.0 += TILE_TOUCHED.0; }
+    fn untouch(&mut self) { self.0 -= TILE_TOUCHED.0; }
     fn clear_star(&mut self) { self.0 &= !TILE_STAR_MASK.0; }
-    pub(crate) fn touched(&self) -> TileType { self.0 >> 5 }
+    pub(crate) fn touched(&self) -> usize { (self.0 >> 5) as usize}
     pub(crate) fn has_star(&self) -> bool { (self.0 & TILE_STAR_MASK.0) > 0 }
     fn color(&self) -> Tile { Tile(self.0 & TILE_COLOR_MASK.0) }
     fn is_red(&self) -> bool { self.0 & RE.0 > 0 }
@@ -94,7 +96,8 @@ impl IndexMut<usize> for Source {
     fn index_mut(&mut self, index: usize) -> &mut Self::Output { &mut self.0[index] }
 }
 
-const STACK_SIZE: usize = 1 << 10;
+// make the Stack struct exactly 2^10 bytes
+const STACK_SIZE: usize = (1 << 10) - mem::size_of::<usize>();
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 6;
 
@@ -268,15 +271,16 @@ impl Puzzle {
     }
 }
 
-#[derive(Eq, PartialEq, Copy, Clone)]
+#[derive(Eq, PartialEq, Clone)]
 pub struct State {
     pub(crate) steps: usize,
     pub(crate) stars: usize,
-    pub stack: Stack,
+    pub stack: Vec<InsPtr>,
     pub(crate) map: Map,
     direction: Direction,
     x: usize,
     y: usize,
+    inters: usize,
 }
 
 impl Default for State {
@@ -284,14 +288,12 @@ impl Default for State {
         State {
             steps: 0,
             stars: 1,
-            stack: Stack {
-                pointer: 0,
-                data: [INSPTR_NULL; STACK_SIZE],
-            },
+            stack: vec![],
             map: [[_N; 18]; 14],
             direction: Direction::Up,
             x: 1,
             y: 1,
+            inters: 0,
         }
     }
 }
@@ -313,9 +315,10 @@ impl State {
     }
     fn clear_star(&mut self) { self.map[self.y][self.x].clear_star(); }
     fn touch(&mut self) { self.map[self.y][self.x].touch(); }
+    fn untouch(&mut self) { self.map[self.y][self.x].untouch(); }
     fn mark(&mut self, ins: Ins) { self.map[self.y][self.x].mark(ins) }
     pub fn ins_pointer(&self) -> &InsPtr {
-        let ins = self.stack.top();
+        let ins = self.stack.last().unwrap_or(&INSPTR_NULL);
 //        let ins = source[ins.get_method_index()][ins.get_ins_index()];
         return ins;
     }
@@ -326,7 +329,7 @@ impl State {
     }
     pub(crate) fn current_tile(&self) -> &Tile { &self.map[self.y][self.x] }
     fn running(&self) -> bool {
-        !self.stack.empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
+        !self.stack.is_empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
         let ins = self.current_ins(source).as_vanilla();
@@ -346,18 +349,21 @@ impl State {
                     } else {
                         self.stars -= self.current_tile().has_star() as usize;
                         self.clear_star();
-                        self.touch();
                     }
                 }
                 LEFT => self.direction = self.direction.left(),
                 RIGHT => self.direction = self.direction.right(),
                 F1 | F2 | F3 | F4 | F5 => {
                     self.invoke(source, puzzle, ins.source_index());
+//                    self.max_stack = max(self.max_stack, self.stack.pointer);
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.mark(ins),
+                HALT => return self.running(),
                 _ => (),
             }
         }
+        self.touch();
+        self.inters = max(self.inters, self.current_tile().touched());
         return self.running();
     }
     fn invoke(&mut self, source: &Source, puzzle: &Puzzle, method: usize) {

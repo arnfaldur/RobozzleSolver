@@ -1,8 +1,9 @@
-#![feature(test, vec_remove_item, core_intrinsics)]
+#![feature(test, vec_remove_item, core_intrinsics, cfg_target_has_atomic)]
 #![allow(dead_code, ellipsis_inclusive_range_patterns)]
 #![allow(unused_imports)]
 #![allow(unused_mut)]
 #![allow(unused_must_use)]
+#![allow(unused)]
 #![allow(unreachable_code)]
 
 use std::time::{Instant, Duration};
@@ -14,8 +15,7 @@ use std::mem;
 
 use backtrack::*;
 use carlo::carlo;
-use web::encode_program;
-use crate::web::{start_web_solver, puzzle_from_string};
+use web::{encode_program, start_web_solver, puzzle_from_string};
 
 use constants::*;
 use game::{*, instructions::*};
@@ -35,7 +35,7 @@ fn main() {
 //    denial_test();return;
 //    println!("sizes: {}", mem::size_of::<State>());
 //    println!("sizes: {}", mem::size_of::<Frame>());
-//    println!("sizes: {}", mem::size_of::<State>());
+//    println!("sizes: {}", mem::size_of::<Source>());
 //    return;
     let face = "{\"About\":\"face\",\"AllowedCommands\":\"0\",\"Colors\":[\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRBRRRBRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRGGGGGGGGRBR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"10\",\"DifficultyVoteSum\":\"15\",\"Disliked\":\"8\",\"Featured\":\"false\",\"Id\":\"5088\",\"Items\":[\"################\",\"#######....#####\",\"####.....*..*###\",\"####.#*..#*...##\",\"###..########..#\",\"###.####.####..#\",\"##.*##########*#\",\"##.###########.#\",\"##.#.........#.#\",\"#..###########.#\",\"################\",\"################\"],\"Liked\":\"1\",\"RobotCol\":\"1\",\"RobotDir\":\"0\",\"RobotRow\":\"9\",\"Solutions\":\"47\",\"SubLengths\":[\"10\",\"10\",\"10\",\"10\",\"10\"],\"SubmittedBy\":\"oshabott59\",\"SubmittedDate\":\"2014-11-27T11:34:11.98\",\"Title\":\"Ionvoc6\"}";
 

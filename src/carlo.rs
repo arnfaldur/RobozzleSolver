@@ -171,7 +171,7 @@ pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>
     let  fullgram = *base;
     for i in 0..puzzle.methods.len() {
         for j in 0..puzzle.methods[i] {
-            let mask = (fullgram[i][j] != NOP) as u8;
+//            let mask = (fullgram[i][j] != NOP) as u8;
 //            fullgram[i][j].0 = fullgram[i][j].0 * mask + (1 - mask) * u8::from(*instruction_set.choose(&mut rng).unwrap_or(&NOP));
         }
     }

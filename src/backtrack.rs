@@ -3,13 +3,13 @@ use std::collections::{HashSet, HashMap, VecDeque, BinaryHeap};
 use std::borrow::{Borrow, BorrowMut};
 use std::cmp::{Ordering, max, min};
 use std::thread::{spawn, sleep};
-use std::sync::{Barrier, Arc};
 use std::time::Duration;
+use std::sync::{Barrier, Arc, atomic::AtomicUsize};
 
 use once_cell::sync::OnceCell;
 use crossbeam_channel::{unbounded, Receiver, Sender, bounded};
 
-use crate::game::{Source, Puzzle, State, TileType};
+use crate::game::{Source, Puzzle, State, TileType, won};
 use crate::game::instructions::*;
 use crate::constants::*;
 use crate::carlo::{score_cmp, carlo};
@@ -20,8 +20,8 @@ pub(crate) static REJECTS_2: OnceCell<HashSet<[Ins; 2]>> = OnceCell::new();
 pub(crate) static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 pub(crate) static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
-#[derive(Copy, Clone)]
-pub struct Frame { candidate: Source, state: State, inters: usize }
+#[derive(Clone)]
+pub struct Frame { candidate: Source, state: State, inters: usize, max_ins: usize }
 
 impl Frame {
     fn new(puzzle: &Puzzle) -> Frame {
@@ -29,6 +29,7 @@ impl Frame {
             candidate: puzzle.empty_source(),
             state: puzzle.initial_state(&NOGRAM),
             inters: 1,
+            max_ins: puzzle.methods.iter().sum()
         }
     }
 }
@@ -53,7 +54,7 @@ impl PartialEq for Frame {
 
 impl Eq for Frame {}
 
-const THREADS: usize = 11;
+const THREADS: usize = 1;
 
 pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
@@ -72,25 +73,28 @@ pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
             return trackback(&puzzle, thread, sclone, rclone);
         }));
     }
-    let mut seeds = VecDeque::new();
-
-//    for i in 2..=puzzle.methods.iter().sum() {
-    seeds.push_front(Frame::new(&puzzle));
+//    let mut seeds = VecDeque::new();
+    sender.send(Frame::new(&puzzle));
+////    for i in 2..=puzzle.methods.iter().sum() {
+//    seeds.push_front(Frame::new(&puzzle));
+////    }
+//    while let Some(branch) = seeds.pop_back() {
+//        let solved = search(
+//            &puzzle, branch,
+//            |branch| if branch.candidate.count_ins() >= 1 {
+//                sender.send(branch);
+//            } else {
+//                seeds.push_back(branch);
+//            },
+//        );
 //    }
-    while let Some(branch) = seeds.pop_back() {
-        let solved = search(
-            &puzzle, branch,
-            |branch| if branch.candidate.count_ins() >= 2 {
-                sender.send(branch);
-            } else {
-                seeds.push_back(branch);
-            },
-        );
-    }
     let mut result = vec![];
     for handle in threads {
         match handle.join() {
-            Ok(solutions) => { result.extend(solutions); }
+            Ok(solutions) => {
+                result.extend(solutions);
+                print!("X");
+            }
             Err(error) => println!("Thread joining error: {:?}", error),
         };
     }
@@ -106,13 +110,14 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
         candidates.push_back(outer_frame);
         while let Some(frame) = candidates.pop_back() {
             let candidate = frame.candidate;
+            let inters = frame.inters;
             considered += 1;
 
             let solved = search(
                 puzzle,
                 frame,
                 |branch| {
-                    if branch.state.current_tile().touched() > branch.inters as TileType {
+                    if branch.state.current_tile().touched() >= branch.inters {
                         sender.send(Frame { inters: branch.inters + 1, ..branch });
                     } else {
                         candidates.push_back(branch);
@@ -130,11 +135,12 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
 //                if state.stars == 0 { print!("solution: "); }
 //                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
 //                         considered, executed, rejects, denies, snips, duplicates);
-                println!("work queue: {}, inters: {}", sender.len(), frame.inters);
+                println!("work queue: {}, inters: {}", sender.len(), inters);
                 println!("candidates: {}, current: {}", candidates.len(), candidate);
                 for c in candidates.iter().rev().take(32) {
                     println!("{}", c.candidate);
                 }
+//                puzzle.execute(&candidate, true, won);
 //                print!(" and {}", candidates);
                 if solved {
                     result.push(candidate);
@@ -150,7 +156,7 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
     return result;
 }
 
-fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame, mut brancher: F) -> bool where F: FnMut(Frame) {
+fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters, max_ins }: Frame, mut brancher: F) -> bool where F: FnMut(Frame) {
     if deny(puzzle, &candidate, false) { return false; }
     let mut preferred = [true; 5];
     for i in 1..candidate.0.len() {
@@ -175,18 +181,23 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
             if nop_branch || probe_branch || loosening_branch {
                 let instructions: Vec<Ins> =
                     if nop_branch {
-                        puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
-                            .filter(|&ins| {
-                                !ins.is_function() || preferred[ins.source_index()]
-                            }).chain(
+                        [HALT].iter().chain(
+                            puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
+                                .filter(|&ins| {
+                                    !ins.is_function() || preferred[ins.source_index()]
+                                })).chain(
                             puzzle.get_cond_mask().get_probes(state.current_tile()
                                 .to_condition()).iter()
                         ).cloned().collect()
                     } else if probe_branch {
                         puzzle.get_ins_set(state.current_tile().to_condition(), false)
-                            .iter().map(|i| i.as_loosened()).collect()
+                            .iter().map(|i| i.as_loosened()).chain((
+                            if candidate[method_index][ins_index].remove_cond(state.current_tile().to_condition()).is_probe() {
+                                vec![candidate[method_index][ins_index].remove_cond(state.current_tile().to_condition())]
+                            } else { vec![] })
+                        ).collect()
                     } else if loosening_branch {
-                        vec![ins.get_ins().as_loosened()]
+                        vec![ins.as_loosened(), ins.get_ins().as_loosened()]
                     } else { vec![] };
                 branched = true;
                 if nop_branch {
@@ -194,7 +205,7 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
 //                        return state.stars == 0;
 //                    }
                 } else if probe_branch {
-                    candidate[method_index][ins_index].remove_cond(state.current_tile().to_condition());
+//                    candidate[method_index][ins_index].remove_cond(state.current_tile().to_condition());
 //                    if !candidate[method_index][ins_index].is_gray() {
 //                        branched = false;
 //                    }
@@ -203,7 +214,7 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
                     let mut temp = candidate.clone();
                     temp[method_index][ins_index] = instruction;
                     if !snip_around(puzzle, &temp, *ins_pointer) {
-                        let branch = Frame { candidate: temp.to_owned(), state: state.clone(), inters };
+                        let branch = Frame { candidate: temp.to_owned(), state: state.clone(), inters, max_ins };
                         brancher(branch);
                     }
                 }
@@ -211,14 +222,15 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
                 if nop_branch {
                     // this reduces performance but is necessary to find shorter solutions.
 //                    let left = max_ins
-                    for i in ins_index..puzzle.methods[method_index] {
-                        candidate[method_index][i] = HALT;
-                    }
-                    branched = false;
+//                    for i in ins_index..puzzle.methods[method_index] {
+//                        candidate[method_index][i] = HALT;
+//                    }
+//                    branched = false;
                 } else if loosening_branch {
-                    candidate[method_index][ins_index] = candidate[method_index][ins_index].as_loosened();
-                    branched = false;
+//                    candidate[method_index][ins_index] = candidate[method_index][ins_index].as_loosened();
+//                    branched = false;
                 }
+                return state.stars == 0;
             }
         }
         running = state.step(&candidate, puzzle);
@@ -284,7 +296,7 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
             if b.is_halt() { break; }
             denied |= a.is_function() && a.is_gray() && a.source_index() == m;
             if b.is_nop() { break; }
-//            denied |= banned_pair(puzzle, a, b, show);
+            denied |= banned_pair(puzzle, a, b, show);
 //            if show && denied { println!("de1"); }
             if a.is_function() && invoked[a.source_index()] == 1 && only_cond[a.source_index()].is_gray() {
                 denied |= banned_pair(puzzle, program[a.source_index()][puzzle.methods[a.source_index()] - 1], b, show);
@@ -339,7 +351,8 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
 }
 
 pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
-    if b == HALT { return false; }
+    if b.is_halt() { return false; }
+    if a.is_halt() && !b.is_halt() { return true; }
     let mut banned = false;
     if a.get_cond() == b.get_cond() {
         banned |= a.is_order_invariant() && b.is_order_invariant() && a > b;
