@@ -8,12 +8,13 @@ pub(crate) const BE: Tile = Tile(0b00100);
 pub(crate) const RS: Tile = Tile(0b01001);
 pub(crate) const GS: Tile = Tile(0b01010);
 pub(crate) const BS: Tile = Tile(0b01100);
-pub(crate) const _N: Tile = Tile(0b10000);
+pub(crate) const _N: Tile = Tile(0b00000);
 
 pub(crate) const TILE_STAR_MASK: Tile = Tile(0b00001000);
-pub(crate) const TILE_COLOR_MASK: Tile = Tile(0b00010111);
+pub(crate) const TILE_COLOR_MASK: Tile = Tile(0b00000111);
 
-pub(crate) const TILE_TOUCHED: Tile = Tile(0b00100000);
+pub(crate) const TILE_TOUCHED: Tile = Tile(0b00010000);
+pub(crate) const TILE_TOUCH_MASK: Tile = Tile(0b11110000);
 
 pub(crate) const NOGRAM: Source = Source([[HALT; 10]; 5]);
 

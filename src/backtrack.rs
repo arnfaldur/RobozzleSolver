@@ -4,7 +4,7 @@ use std::borrow::{Borrow, BorrowMut};
 use std::cmp::{Ordering, max, min};
 use std::thread::{spawn, sleep};
 use std::time::Duration;
-use std::sync::{Barrier, Arc, atomic::AtomicUsize};
+use std::sync::{Barrier, Arc, atomic::{AtomicUsize, Ordering as SyncOrdering}};
 
 use once_cell::sync::OnceCell;
 use crossbeam_channel::{unbounded, Receiver, Sender, bounded};
@@ -13,15 +13,18 @@ use crate::game::{Source, Puzzle, State, TileType, won};
 use crate::game::instructions::*;
 use crate::constants::*;
 use crate::carlo::{score_cmp, carlo};
+use crate::web::encode_program;
 
-const BACKTRACK_STACK_SIZE: usize = 2200; // 44 *
+const BACKTRACK_STACK_SIZE: usize = 2200;
+// 44 * 50
+static max_ins: AtomicUsize = AtomicUsize::new(0);
 
 pub(crate) static REJECTS_2: OnceCell<HashSet<[Ins; 2]>> = OnceCell::new();
 pub(crate) static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 pub(crate) static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
 #[derive(Clone)]
-pub struct Frame { candidate: Source, state: State, inters: usize, max_ins: usize }
+pub struct Frame { candidate: Source, state: State, inters: usize }
 
 impl Frame {
     fn new(puzzle: &Puzzle) -> Frame {
@@ -29,7 +32,6 @@ impl Frame {
             candidate: puzzle.empty_source(),
             state: puzzle.initial_state(&NOGRAM),
             inters: 1,
-            max_ins: puzzle.methods.iter().sum()
         }
     }
 }
@@ -54,7 +56,7 @@ impl PartialEq for Frame {
 
 impl Eq for Frame {}
 
-const THREADS: usize = 1;
+const THREADS: usize = 10;
 
 pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
@@ -65,16 +67,18 @@ pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
 //    for i in 2..puzzle.functions.iter().sum() {
 //    sender.send();
 //    }
+    max_ins.store(puzzle.methods.iter().sum(), SyncOrdering::Relaxed);
+//    max_ins.store(19, SyncOrdering::Relaxed);
 
+    sender.send(Frame::new(&puzzle));
     let mut threads = vec![];
     for thread in 0..THREADS {
         let (sclone, rclone) = (sender.clone(), receiver.clone());
         threads.push(spawn(move || {
-            return trackback(&puzzle, thread, sclone, rclone);
+            return backtrack_thread(&puzzle, thread, sclone, rclone);
         }));
     }
 //    let mut seeds = VecDeque::new();
-    sender.send(Frame::new(&puzzle));
 ////    for i in 2..=puzzle.methods.iter().sum() {
 //    seeds.push_front(Frame::new(&puzzle));
 ////    }
@@ -101,7 +105,8 @@ pub fn backtrack(puzzle: Puzzle, max_time: Duration) -> Vec<Source> {
     return result;
 }
 
-fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver: Receiver<Frame>) -> Vec<Source> {
+fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
+                    sender: Sender<Frame>, receiver: Receiver<Frame>) -> Vec<Source> {
     let mut result: Vec<Source> = vec![];
     let mut candidates = VecDeque::new();
     let mut considered: u64 = 0;
@@ -112,30 +117,33 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
             let candidate = frame.candidate;
             let inters = frame.inters;
             considered += 1;
-
+            if candidate.count_ins() > max_ins.load(SyncOrdering::Relaxed) { continue; }
             let solved = search(
                 puzzle,
                 frame,
-                |branch| {
-                    if branch.state.current_tile().touched() >= branch.inters {
-                        sender.send(Frame { inters: branch.inters + 1, ..branch });
-                    } else {
-                        candidates.push_back(branch);
+                |mut branch, is_nop| {
+                    if !is_nop || branch.candidate.count_ins() <= max_ins.load(SyncOrdering::Relaxed) {
+                        if branch.state.current_tile().touched() >= branch.inters {
+                            sender.send(Frame { inters: branch.inters + 1, ..branch });
+                        } else {
+                            branch.candidate.shade(max_ins.load(SyncOrdering::Relaxed));
+                            candidates.push_back(branch);
+                        }
                     }
                 },
             );
 
             if considered % (1 << 14) == 0 {
-                if receiver.is_empty() {
+                if receiver.is_empty() || receiver.len() > 50000000 {
                     drop(sender);
                     return result;
                 }
             }
-            if considered % 1000000 == 0 || solved {
+            if considered % (1 << 20) == 0 || solved {
 //                if state.stars == 0 { print!("solution: "); }
 //                println!("considered: {}, executed: {}, \nrejects: {}, denies: {}, \nsnips: {}, duplicates: {}",
 //                         considered, executed, rejects, denies, snips, duplicates);
-                println!("work queue: {}, inters: {}", sender.len(), inters);
+                println!("work queue: {}, inters: {}, max_ins: {}", sender.len(), inters, max_ins.load(SyncOrdering::Relaxed));
                 println!("candidates: {}, current: {}", candidates.len(), candidate);
                 for c in candidates.iter().rev().take(32) {
                     println!("{}", c.candidate);
@@ -144,9 +152,11 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
 //                print!(" and {}", candidates);
                 if solved {
                     result.push(candidate);
-                    while let Ok(dumped) = receiver.recv_timeout(Duration::from_millis(1)) {}
-                    drop(sender);
-                    return result;
+                    max_ins.store(candidate.count_ins() - 1, SyncOrdering::Relaxed);
+                    println!("Solution found! {} {}", candidate, encode_program(&candidate, puzzle));
+//                    while let Ok(dumped) = receiver.recv_timeout(Duration::from_millis(1)) {}
+//                    drop(sender);
+//                    return result;
 //                println!("candidates length is {}", candidates.len());
 //                break;
                 }
@@ -156,7 +166,8 @@ fn trackback(puzzle: &Puzzle, thread_id: usize, sender: Sender<Frame>, receiver:
     return result;
 }
 
-fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters, max_ins }: Frame, mut brancher: F) -> bool where F: FnMut(Frame) {
+fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame, mut brancher: F) -> bool where F: FnMut(Frame, bool) {
+    candidate.shade(max_ins.load(SyncOrdering::Relaxed));
     if deny(puzzle, &candidate, false) { return false; }
     let mut preferred = [true; 5];
     for i in 1..candidate.0.len() {
@@ -214,8 +225,8 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters, max_ins 
                     let mut temp = candidate.clone();
                     temp[method_index][ins_index] = instruction;
                     if !snip_around(puzzle, &temp, *ins_pointer) {
-                        let branch = Frame { candidate: temp.to_owned(), state: state.clone(), inters, max_ins };
-                        brancher(branch);
+                        let branch = Frame { candidate: temp.to_owned(), state: state.clone(), inters };
+                        brancher(branch, nop_branch);
                     }
                 }
 //                return state.stars == 0;

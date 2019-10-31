@@ -13,7 +13,7 @@ use instructions::*;
 
 pub(crate) mod instructions;
 
-pub type TileType = u16;
+pub type TileType = u8;
 
 #[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Tile(pub TileType);
@@ -22,7 +22,7 @@ impl Tile {
     fn touch(&mut self) { self.0 += TILE_TOUCHED.0; }
     fn untouch(&mut self) { self.0 -= TILE_TOUCHED.0; }
     fn clear_star(&mut self) { self.0 &= !TILE_STAR_MASK.0; }
-    pub(crate) fn touched(&self) -> usize { (self.0 >> 5) as usize}
+    pub(crate) fn touched(&self) -> usize { (self.0 >> 4) as usize}
     pub(crate) fn has_star(&self) -> bool { (self.0 & TILE_STAR_MASK.0) > 0 }
     fn color(&self) -> Tile { Tile(self.0 & TILE_COLOR_MASK.0) }
     fn is_red(&self) -> bool { self.0 & RE.0 > 0 }
@@ -34,7 +34,7 @@ impl Tile {
     }
     fn mark(&mut self, instruction: Ins) {
         let color: u8 = instruction.get_mark_color().into();
-        self.0 = color as TileType | TILE_TOUCHED.0
+        self.0 = color as TileType | (self.0 & TILE_TOUCH_MASK.0)
     }
     pub(crate) fn to_condition(&self) -> Ins { ((self.0 as u8) << 5).into() }
 }
@@ -72,6 +72,18 @@ impl Source {
         let mut hasher = DefaultHasher::new();
         self.hash(&mut hasher);
         return hasher.finish();
+    }
+    pub fn shade(&mut self, max_ins: usize) {
+        let diff = max_ins - self.count_ins();
+        for m in 0..5 {
+            let mut nops = 0;
+            for i in 0..10 {
+                nops += self[m][i].is_nop() as usize;
+                if nops > diff {
+                    self[m][i] = HALT;
+                }
+            }
+        }
     }
 }
 
