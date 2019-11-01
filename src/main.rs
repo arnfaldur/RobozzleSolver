@@ -38,19 +38,22 @@ fn main() {
 //    println!("sizes: {}", mem::size_of::<Source>());
 //    return;
     let face = "{\"About\":\"face\",\"AllowedCommands\":\"0\",\"Colors\":[\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRBRRRBRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRGGGGGGGGRBR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"10\",\"DifficultyVoteSum\":\"15\",\"Disliked\":\"8\",\"Featured\":\"false\",\"Id\":\"5088\",\"Items\":[\"################\",\"#######....#####\",\"####.....*..*###\",\"####.#*..#*...##\",\"###..########..#\",\"###.####.####..#\",\"##.*##########*#\",\"##.###########.#\",\"##.#.........#.#\",\"#..###########.#\",\"################\",\"################\"],\"Liked\":\"1\",\"RobotCol\":\"1\",\"RobotDir\":\"0\",\"RobotRow\":\"9\",\"Solutions\":\"47\",\"SubLengths\":[\"10\",\"10\",\"10\",\"10\",\"10\"],\"SubmittedBy\":\"oshabott59\",\"SubmittedDate\":\"2014-11-27T11:34:11.98\",\"Title\":\"Ionvoc6\"}";
+    let ternary = "{\"About\":\"R=2, G=1, B=0. The most significant bit is the last one. Count green turns.\",\"AllowedCommands\":\"7\",\"Colors\":[\"RRRRRBBBBBBBBBBG\",\"RRRRRGRRRRRRRRRB\",\"BBBBBGBBBBBBBGRB\",\"BRRRRGRRRRRRRBRB\",\"RRGGRBRGGRBBRBRB\",\"BRBBRBRBBRRBRBRB\",\"GRGBBBBBGRRBRGRB\",\"BRRBRBRGBBBGRRRB\",\"BRRBRBRRRRRRRGRB\",\"GBBGRGBBBBBBBBRB\",\"RRRRRRRRRRRRRRRB\",\"BRGBGBBBBBBBBBBG\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"1\",\"DifficultyVoteSum\":\"5\",\"Disliked\":\"0\",\"Featured\":\"false\",\"Id\":\"10459\",\"Items\":[\"#####..........*\",\"#####*#########.\",\".....*.......*#.\",\"*####*#######.#.\",\"*#**#*#**#*.#.#.\",\"*#..#.#..##.#*#.\",\"*#*.....*##.#*#.\",\".##.#.#*...*#*#.\",\".##.#.#######*#.\",\"*..*#*........#.\",\"###############.\",\".****..........*\"],\"Liked\":\"0\",\"RobotCol\":\"0\",\"RobotDir\":\"0\",\"RobotRow\":\"11\",\"Solutions\":\"2\",\"SubLengths\":[\"5\",\"10\",\"10\",\"5\",\"0\"],\"SubmittedBy\":\"scorpio\",\"SubmittedDate\":\"2018-03-27T23:19:44.29\",\"Title\":\"Ternary (4 digits)\"}";
 
     let puzzle = puzzle_from_string(face);
+//    puzzle.execute(&PUZZLE_656_SOLUTION, true, won);
+    println!("puzl: {}", puzzle);
     let puzzles = [
-        PUZZLE_42,
-        PUZZLE_536,
-        PUZZLE_656,
-        PUZZLE_1337,
+//        PUZZLE_42,
+//        PUZZLE_536,
+//        PUZZLE_656,
+//        PUZZLE_1337,
         puzzle,
 //        parse_level(),
     ];
     for puzzle in puzzles.iter() {
         let now = Instant::now();
-        let solutions = backtrack(*puzzle, Duration::from_secs(10));
+        let solutions = backtrack(*puzzle);
         if !solutions.is_empty() {
             println!("Solved! The solution(s) are:");
             for solution in solutions {

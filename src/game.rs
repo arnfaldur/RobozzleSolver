@@ -13,7 +13,7 @@ use instructions::*;
 
 pub(crate) mod instructions;
 
-pub type TileType = u8;
+pub type TileType = u16;
 
 #[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Tile(pub TileType);
@@ -22,7 +22,7 @@ impl Tile {
     fn touch(&mut self) { self.0 += TILE_TOUCHED.0; }
     fn untouch(&mut self) { self.0 -= TILE_TOUCHED.0; }
     fn clear_star(&mut self) { self.0 &= !TILE_STAR_MASK.0; }
-    pub(crate) fn touched(&self) -> usize { (self.0 >> 4) as usize}
+    pub(crate) fn touched(&self) -> usize { (self.0 >> 4) as usize }
     pub(crate) fn has_star(&self) -> bool { (self.0 & TILE_STAR_MASK.0) > 0 }
     fn color(&self) -> Tile { Tile(self.0 & TILE_COLOR_MASK.0) }
     fn is_red(&self) -> bool { self.0 & RE.0 > 0 }
@@ -109,7 +109,7 @@ impl IndexMut<usize> for Source {
 }
 
 // make the Stack struct exactly 2^10 bytes
-const STACK_SIZE: usize = (1 << 10) - mem::size_of::<usize>();
+const STACK_SIZE: usize = (1 << 9) - mem::size_of::<usize>();
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 6;
 
@@ -161,13 +161,13 @@ impl Stack {
         self.pointer += 1;
     }
     fn pop(&mut self) -> InsPtr {
-        let &result = self.top();
+        let &result = self.last();
         self.pointer -= 1;
         return result;
     }
-    pub fn top(&self) -> &InsPtr { &self.data[self.pointer - 1] }
+    pub fn last(&self) -> &InsPtr { &self.data[self.pointer - 1] }
     pub(crate) fn len(&self) -> usize { self.pointer }
-    fn empty(&self) -> bool { self.pointer == 0 }
+    fn is_empty(&self) -> bool { self.pointer == 0 }
     pub(crate) fn clear(&mut self) { self.pointer = 0; }
 }
 
@@ -287,12 +287,12 @@ impl Puzzle {
 pub struct State {
     pub(crate) steps: usize,
     pub(crate) stars: usize,
-    pub stack: Vec<InsPtr>,
+    pub stack: Stack,
     pub(crate) map: Map,
     direction: Direction,
     x: usize,
     y: usize,
-    inters: usize,
+    pub inters: usize,
 }
 
 impl Default for State {
@@ -300,7 +300,7 @@ impl Default for State {
         State {
             steps: 0,
             stars: 1,
-            stack: vec![],
+            stack: Stack { pointer: 0, data: [INSPTR_NULL; STACK_SIZE] },
             map: [[_N; 18]; 14],
             direction: Direction::Up,
             x: 1,
@@ -330,7 +330,7 @@ impl State {
     fn untouch(&mut self) { self.map[self.y][self.x].untouch(); }
     fn mark(&mut self, ins: Ins) { self.map[self.y][self.x].mark(ins) }
     pub fn ins_pointer(&self) -> &InsPtr {
-        let ins = self.stack.last().unwrap_or(&INSPTR_NULL);
+        let ins = self.stack.last();
 //        let ins = source[ins.get_method_index()][ins.get_ins_index()];
         return ins;
     }
@@ -341,7 +341,8 @@ impl State {
     }
     pub(crate) fn current_tile(&self) -> &Tile { &self.map[self.y][self.x] }
     fn running(&self) -> bool {
-        !self.stack.is_empty() && self.stars > 0 && self.stack.len() < STACK_SIZE - 12 && self.steps < MAX_STEPS
+        !self.stack.is_empty() && self.stars > 0 &&
+            self.stack.len() < STACK_SIZE - 10 && self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
         let ins = self.current_ins(source).as_vanilla();

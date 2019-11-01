@@ -1,18 +1,57 @@
-use std::io::{stdout, Write};
+use std::io::{prelude::*, stdout, Write};
 use std::process::{Command, Stdio};
 use std::thread::sleep;
 use std::time::Duration;
+use std::fs::File;
 
 use tokio::{prelude::*, runtime::Runtime};
-use fantoccini::{Client, Locator};
 use serde::{Serialize, Deserialize};
-use webdriver::common::LocatorStrategy::CSSSelector;
 use serde_json::Value;
+use webdriver::common::LocatorStrategy::CSSSelector;
+use fantoccini::{Client, Locator, error::{CmdError, CmdError::InvalidArgument}};
+
 
 use crate::game::{Puzzle, Source, instructions::*, Direction, make_puzzle, Tile};
 use crate::constants::*;
 use crate::backtrack::backtrack;
-use fantoccini::error::{CmdError, CmdError::InvalidArgument};
+
+#[derive(Debug)]
+enum SolverError {
+    Fantoccini(CmdError),
+    IOError(std::io::Error),
+    Error(String),
+}
+
+impl From<CmdError> for SolverError {
+    fn from(err: CmdError) -> Self {
+        SolverError::Fantoccini(err)
+    }
+}
+
+impl From<SolverError> for CmdError {
+    fn from(err: SolverError) -> Self {
+        match err {
+            SolverError::Fantoccini(e) => e,
+            _ => CmdError::InvalidArgument("Couldn't convert from Solver to Cmd error".to_string(), "sorry".to_string()),
+        }
+    }
+}
+
+impl From<std::io::Error> for SolverError {
+    fn from(err: std::io::Error) -> Self {
+        SolverError::IOError(err)
+    }
+}
+
+struct Storage {
+    solutions: Vec<Solution>
+}
+
+enum Solution {
+    Invalid,
+    Unsolved(Puzzle),
+    Solved(Puzzle, Source),
+}
 
 pub fn start_web_solver() {
     let mut gecko = Command::new("geckodriver.exe")
@@ -22,31 +61,47 @@ pub fn start_web_solver() {
         .spawn()
         .unwrap();
 
-    fetch_puzzle(5088);
+    solve_puzzles(10459);
 
     gecko.kill();
 }
 
 // username: Hugsun
 // password: 8r4WvSfxHGirMDxH6FBO
-/////////////8r4WvSfxHGirMDxH6FBO
 
-fn fetch_puzzle(puzzle_id: u64) -> Result<(), CmdError> {
+fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
     let rt = Runtime::new()?;
     rt.block_on(async {
-        let mut client = Client::new("http://localhost:4444").await.unwrap_or_else(|err| panic!("Couldn't connect to webdriver! {}", err));
+        let mut file = File::create("data/solutions.txt")?;
+        file.write_all(b"Hello, world!")?;
 
-        login(&mut client).await?;
 
-        solve_puzzle(&mut client, puzzle_id).await?;
+        let mut file = File::open("data/solutions.txt")?;
+        let mut contents = String::new();
+        file.read_to_string(&mut contents)?;
+        println!("contents: {}", contents);
+
+        let mut client = Client::new("http://localhost:4444").await
+            .unwrap_or_else(|err| panic!("Couldn't connect to webdriver! {}", err));
+
+        while let Err(e) = login(&mut client).await {
+            println!("login error: {:?}", e);
+            sleep(Duration::from_secs(1));
+        }
+
+        match solve_puzzle(&mut client, puzzle_id).await {
+            Ok(_) => {}
+            Err(e) => println!("solve puzzle error {:?}", e),
+        }
 
         client.close().await
-    })
+    })?;
+    return Ok(());
 }
 
-async fn login(client: &mut Client) -> Result<(), CmdError> {
-    client.goto("http://www.robozzle.com/beta/index.html").await?;
+async fn login(client: &mut Client) -> Result<(), SolverError> {
 
+    client.goto("http://www.robozzle.com/beta/index.html").await?;
     client.find(Locator::Css("#menu-signin")).await?.click().await?;
 
     let mut signin_form = client.form(Locator::Css("#dialog-signin")).await?;
@@ -56,23 +111,26 @@ async fn login(client: &mut Client) -> Result<(), CmdError> {
     sleep(Duration::from_millis(1500));
     signin_form.submit().await?;
     sleep(Duration::from_millis(1500));
+
     return Ok(());
 }
 
-async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), CmdError> {
+async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), SolverError> {
     let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
     url.push_str(puzzle_id.to_string().as_str());
     client.goto(url.as_str()).await?;
 
     let val = client.execute("return robozzle.level", vec![]).await?;
     if let Value::Null = val {
-        return Err(InvalidArgument("Puzzle doesn't exist".to_string(), "Sorry".to_string()));
+        return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
     }
     println!("level: {}", val.to_string());
-    let level_json: LevelJson = serde_json::from_value(val).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
+    let level_json: LevelJson = serde_json::from_value(val)
+        .unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
     let puzzle = level_to_puzzle(&level_json);
     println!("puzzle: {}", puzzle);
-    let mut solutions = backtrack(puzzle, Duration::from_secs(60));
+    let mut solutions = backtrack(puzzle);
+    solutions.sort_unstable_by_key(|sol| sol.count_ins());
     if let Some(solution) = solutions.pop() {
         url.push_str("&program=");
         url.push_str(encode_program(&solution, &puzzle).as_str());
@@ -280,7 +338,7 @@ impl StateEncoder {
 fn actualize_solution(program: &Source, puzzle: &Puzzle) -> Source {
     let mut result = *program;
     if puzzle.methods != puzzle.actual_methods {
-        let (mut mapping, mut invmap) = ([5; 5],[5; 5]);
+        let (mut mapping, mut invmap) = ([5; 5], [5; 5]);
         let mut marked = [false; 5];
         for i in 0..5 {
             for j in 0..5 {
