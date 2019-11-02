@@ -29,7 +29,6 @@ mod backtrack;
 
 mod web;
 
-
 fn main() {
 //    start_web_solver(); return;
 //    denial_test();return;
@@ -42,13 +41,12 @@ fn main() {
 
     let puzzle = puzzle_from_string(face);
 //    puzzle.execute(&PUZZLE_656_SOLUTION, true, won);
-    println!("puzl: {}", puzzle);
     let puzzles = [
-//        PUZZLE_42,
-//        PUZZLE_536,
-//        PUZZLE_656,
-//        PUZZLE_1337,
-        puzzle,
+        PUZZLE_42,
+        PUZZLE_536,
+        PUZZLE_656,
+        PUZZLE_1337,
+//        puzzle,
 //        parse_level(),
     ];
     for puzzle in puzzles.iter() {

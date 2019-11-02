@@ -115,7 +115,7 @@ const STACK_MATCH: usize = 1 << 6;
 
 #[derive(Copy, Clone)]
 pub struct Stack {
-    pointer: usize,
+    pub(crate) pointer: usize,
     pub data: [InsPtr; STACK_SIZE],
 }
 
@@ -268,9 +268,9 @@ impl Puzzle {
     }
     pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R where F: FnMut(&State, &Puzzle) -> R {
         let mut state = self.initial_state(source);
-        if show { println!("{}", state); }
+        if show { state.show(source); }
         while state.step(&source, self) {
-            if show { println!("{}", state); }
+            if show { state.show(source); }
         }
         return scoring(&state, self);
     }
@@ -390,6 +390,23 @@ impl State {
         self.hash(&mut state);
         return state.finish();
     }
+    fn show(&self, source: &Source) {
+        print!("Stack: ({}, ", self.stack.pointer);
+        let mut count = 0;
+        for i in (0..self.stack.pointer).rev() {
+            let ptr = self.stack.data[i];
+            print!("{}", source[ptr.get_method_index()][ptr.get_ins_index()]);
+            count += 1;
+            if count == 100 {
+                print!("...");
+                break;
+            }
+        }
+        println!(")");
+        print!("{}", self);
+        //        print!("{}]", self.data[self.data.len() - 1])
+    }
+
 }
 
 pub fn won(state: &State, _: &Puzzle) -> bool {
@@ -609,8 +626,8 @@ impl Display for State {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
         write!(
             f,
-            "At ({}, {}), stars: {}, Running: {}\nMap:\n",
-            self.x, self.y, self.stars, self.running()
+            "At ({}, {}), stars: {}, steps: {}, inters: {}, Running: {}\nMap:\n",
+            self.x, self.y, self.stars, self.steps, self.inters, self.running()
         )?;
         let (mut miny, mut minx, mut maxy, mut maxx) = (14, 18, 0, 0);
         for y in 1..13 {

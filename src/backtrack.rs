@@ -16,6 +16,7 @@ use crate::carlo::{score_cmp, carlo};
 use crate::web::encode_program;
 use rand::seq::SliceRandom;
 use rand::thread_rng;
+use std::mem;
 
 const BACKTRACK_STACK_SIZE: usize = 2200;
 // 44 * 50
@@ -26,37 +27,16 @@ pub(crate) static REJECTS_3: OnceCell<HashSet<[Ins; 3]>> = OnceCell::new();
 pub(crate) static REJECTS_4: OnceCell<HashSet<[Ins; 4]>> = OnceCell::new();
 
 #[derive(Clone)]
-pub struct Frame { candidate: Source, state: State, inters: usize }
+pub struct Frame { candidate: Source, inters: usize }
 
 impl Frame {
     fn new(puzzle: &Puzzle) -> Frame {
         Frame {
             candidate: puzzle.empty_source(),
-            state: puzzle.initial_state(&NOGRAM),
             inters: 2,
         }
     }
 }
-
-impl Ord for Frame {
-    fn cmp(&self, other: &Self) -> Ordering {
-        self.state.steps.cmp(&other.state.steps)
-    }
-}
-
-impl PartialOrd for Frame {
-    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
-        Some(self.cmp(other))
-    }
-}
-
-impl PartialEq for Frame {
-    fn eq(&self, other: &Self) -> bool {
-        self.cmp(other) == Ordering::Equal
-    }
-}
-
-impl Eq for Frame {}
 
 const THREADS: usize = 10;
 
@@ -70,7 +50,7 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
 //    sender.send();
 //    }
 //    MAX_INS.store(puzzle.methods.iter().sum(), SyncOrdering::Relaxed);
-    MAX_INS.store(19, SyncOrdering::Relaxed);
+    MAX_INS.store(25, SyncOrdering::Relaxed);
 
 //    sender.send(Frame::new(&puzzle));
     let mut threads = vec![];
@@ -81,13 +61,15 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
         }));
     }
     let mut seeds = VecDeque::new();
-//    for i in 2..=puzzle.methods.iter().sum() {
-    seeds.push_front(Frame::new(&puzzle));
-//    }
+    for i in 2..=10 {
+        let mut fra = Frame::new(&puzzle);
+        fra.inters = fibonacci(i + 1);
+        seeds.push_front(fra);
+    }
     while let Some(branch) = seeds.pop_back() {
         let solved = search(
             &puzzle, branch,
-            |branch, _| if branch.candidate.count_ins() >= 2 {
+            |branch, _| if branch.candidate.count_ins() >= 3 {
                 sender.send(branch);
             } else {
                 seeds.push_back(branch);
@@ -120,7 +102,6 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
         while let Some(frame) = candidates.pop_back() {
             let candidate = frame.candidate;
             let inters = frame.inters;
-            let steps = frame.state.steps;
             considered += 1;
             if candidate.count_ins() > MAX_INS.load(SyncOrdering::Relaxed) { continue; }
             let solved = search(
@@ -128,35 +109,32 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
                 frame,
                 |mut branch, is_nop| {
                     if !is_nop || branch.candidate.count_ins() <= MAX_INS.load(SyncOrdering::Relaxed) {
-                        if (branch.state.inters >= branch.inters) && (receiver.len() < (1 << 20)) {
-                            sender.send(Frame { inters: branch.inters + 1, ..branch });
-                        } else {
                             branch.candidate.shade(MAX_INS.load(SyncOrdering::Relaxed));
                             candidates.push_back(Frame {
-                                inters: branch.inters +
-                                    if branch.state.inters >= branch.inters { 1 } else { 0 },
+//                                inters: branch.inters +
+//                                    if branch.state.inters >= branch.inters { 1 } else { 0 },
                                 ..branch
                             });
-                        }
+
                     }
                 },
             );
 
-            if considered % (1 << 14) == 0 {
+            if considered % (1 << 16) == 0 {
                 if receiver.is_empty() || receiver.len() > 1 << 24 {
                     drop(sender);
                     return result;
                 }
             }
-            if considered % (1 << 22) == 0 || solved {
+            if considered % (1 << 24) == 0 || solved {
 //                if state.stars == 0 { print!("solution: "); }
 //                println!("considered: {}", considered);
-                println!("work queue: {}, inters: {}, MAX_INS: {}, steps: {}",
-                         sender.len(), inters, MAX_INS.load(SyncOrdering::Relaxed), steps);
-                println!("candidates: {}, current: {}", candidates.len(), candidate);
-                for c in candidates.iter().rev().take(32) {
-                    println!("{}", c.candidate);
-                }
+//                println!("work queue: {}, inters: {}, MAX_INS: {}, steps: {}",
+//                         sender.len(), inters, MAX_INS.load(SyncOrdering::Relaxed), steps);
+//                println!("candidates: {}, current: {}", candidates.len(), candidate);
+//                for c in candidates.iter().rev().take(32) {
+//                    println!("{}", c.candidate);
+//                }
 //                puzzle.execute(&candidate, true, won);
 //                print!(" and {}", candidates);
                 if solved {
@@ -175,10 +153,11 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
     return result;
 }
 
-fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
+fn search<F>(puzzle: &Puzzle, Frame { mut candidate, inters }: Frame,
              mut brancher: F) -> bool where F: FnMut(Frame, bool) {
 //    candidate.shade(MAX_INS.load(SyncOrdering::Relaxed));
 //    if deny(puzzle, &candidate, false) { return false; }
+    let mut state = puzzle.initial_state(&candidate);
     let mut preferred = [true; 5];
     for i in 1..candidate.0.len() {
         for j in (i + 1)..candidate.0.len() {
@@ -189,7 +168,7 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
     }
     let mut branched = false;
     let mut running = true;
-    while running {
+    while running && state.inters <= inters {
         if !branched {
             let ins_pointer = state.ins_pointer();
             let ins = state.current_ins(&candidate);
@@ -225,36 +204,14 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, mut state, inters }: Frame,
 //                let mut rng = thread_rng();
 //                instructions.shuffle(&mut rng);
                 branched = true;
-                if nop_branch {
-//                    if candidate.count_ins() > MAX_INS {
-//                        return state.stars == 0;
-//                    }
-                } else if probe_branch {
-//                    candidate[method_index][ins_index].remove_cond(state.current_tile().to_condition());
-//                    if !candidate[method_index][ins_index].is_gray() {
-//                        branched = false;
-//                    }
-                }
                 for &instruction in instructions.iter().rev() {
                     let mut temp = candidate.clone();
                     temp[method_index][ins_index] = instruction;
                     if !snip_around(puzzle, &temp, *ins_pointer, false)
                         && !deny(puzzle, &candidate, false) {
-                        let branch = Frame { candidate: temp.to_owned(), state: state.clone(), inters };
+                        let branch = Frame { candidate: temp.to_owned(), inters };
                         brancher(branch, nop_branch);
                     }
-                }
-//                return state.stars == 0;
-                if nop_branch {
-                    // this reduces performance but is necessary to find shorter solutions.
-//                    let left = MAX_INS
-//                    for i in ins_index..puzzle.methods[method_index] {
-//                        candidate[method_index][i] = HALT;
-//                    }
-//                    branched = false;
-                } else if loosening_branch {
-//                    candidate[method_index][ins_index] = candidate[method_index][ins_index].as_loosened();
-//                    branched = false;
                 }
                 return state.stars == 0;
             }
@@ -294,8 +251,6 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
     let mut denied = false;
     let mut only_cond = [HALT, NOP, NOP, NOP, NOP, ];
     let mut invoked = [1, 0, 0, 0, 0];
-//    let mut has_forward = false;
-//    let starting_tile = *puzzle.initial_state(program).current_tile();
     for m in 0..5 {
         let mut halt_count = 0;
         for i in 0..puzzle.methods[m] {
@@ -337,10 +292,18 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
             println!("function lengths {} < {}", acount, bcount);
             return true;
         }
+//        let mut same = true;
+//        for i in 0..10 {
+//            same &= a[i].is_halt() == b[i].is_halt() && a[i].is_nop() == b[i].is_nop();
+//        }
+//        if same {
+//            denied |= a > b;
+//        }
     }
 //    denied |= !has_forward;
     for m in 0..5 {
         let meth = program[m];
+        denied |= meth[0].is_function() && meth[0].source_index() == m;
         denied |= !program[m][0].is_halt() && program[m][1].is_halt();
         if show && denied {
             println!("ghal");
@@ -349,15 +312,10 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
         for i in 1..puzzle.methods[m] {
             let a = meth[i - 1];
             let b = meth[i];
-            if b.is_halt() {
-                if show && denied { println!("b is halt and bad"); }
-                return denied;
-            }
-            denied |= a.is_function() && a.is_gray() && a.source_index() == m;
+            denied |= !b.is_halt() && a.is_function() && a.is_gray() && a.source_index() == m;
             if show && denied { println!("de0"); }
-            if b.is_nop() { break; }
-            denied |= banned_pair(puzzle, a, b, show);
-            if show && denied { println!("de1"); }
+//            denied |= banned_pair(puzzle, a, b, show);
+//            if show && denied { println!("de1"); }
             if a.is_function() && invoked[a.source_index()] == 1 && only_cond[a.source_index()].is_gray() {
                 denied |= banned_pair(puzzle, program[a.source_index()][puzzle.methods[a.source_index()] - 1], b, show);
                 if show && denied { println!("de3"); }
@@ -377,23 +335,6 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
             }
             if show && denied { println!("de6"); }
         }
-//        for other in (m + 1)..5 {
-//            let mother = program.0[other];
-//            let mut same = true;
-//            for i in 0..10 {
-//                same &= meth[i].is_debug() == mother[i].is_debug();
-//            }
-//            if same {
-//                denied |= meth > mother;
-//            }
-//        }
-//        for i in 2..puzzle.functions[m] {
-//            let a = meth[i - 2];
-//            let b = meth[i - 1];
-//            let c = meth[i];
-//            if c == HALT || c == NOP { break; }
-//            denied |= banned_trio(puzzle, a, b, c, show);
-//        }
 //        if show && denied { println!("de11"); }
     }
     return denied;
@@ -530,6 +471,16 @@ fn banned_quartet(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, d: Ins, show: bool) -
 //        return false;
 //    }
 //}
+
+fn fibonacci(n: usize) -> usize {
+    let mut a = 0;
+    let mut b = 1;
+    for i in 0..n {
+        a += b;
+        mem::swap(&mut a, &mut b);
+    }
+    return a;
+}
 
 pub(crate) fn query_rejects_2(query: &[Ins; 2]) -> bool {
     return REJECTS_2.get().unwrap_or_else(|| {
