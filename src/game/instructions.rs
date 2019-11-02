@@ -48,9 +48,11 @@ impl Ins {
 //            .map(|ins| ins.as_loosened()).collect();
     }
     pub fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
-    pub fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
-    pub fn as_loosened(self) -> Ins { self | LOOSE_MASK }
-    pub fn with_loosened(self, loosened: bool) -> Ins { if loosened { self.as_loosened() } else { self } }
+    pub fn is_loose(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
+    pub fn as_loose(self) -> Ins { self | LOOSE_MASK }
+    pub fn with_loose(self, loose: bool) -> Ins { if loose { self.as_loose() } else { self } }
+    pub fn as_released(self, cond: Ins) -> Ins { Ins(cond.0 << 4) | self }
+    pub fn is_released(self, cond: Ins) -> bool { (Ins(cond.0 << 4) & self) == Ins(cond.0 << 4) }
 }
 
 pub fn with_conds(red: bool, green: bool, blue: bool) -> Ins {

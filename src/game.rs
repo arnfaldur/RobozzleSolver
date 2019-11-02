@@ -30,13 +30,13 @@ impl Tile {
     fn is_blue(&self) -> bool { self.0 & BE.0 > 0 }
     pub(crate) fn executes(&self, instruction: Ins) -> bool {
         let color = instruction.get_cond();
-        return color == GRAY_COND || color.has_cond(self.to_condition());
+        return color == GRAY_COND || color.has_cond(self.to_cond());
     }
     fn mark(&mut self, instruction: Ins) {
         let color: u8 = instruction.get_mark_color().into();
         self.0 = color as TileType | (self.0 & TILE_TOUCH_MASK.0)
     }
-    pub(crate) fn to_condition(&self) -> Ins { ((self.0 as u8) << 5).into() }
+    pub(crate) fn to_cond(&self) -> Ins { ((self.0 as u8) << 5).into() }
 }
 
 type Map = [[Tile; 18]; 14];

@@ -38,7 +38,7 @@ impl Frame {
     }
 }
 
-const THREADS: usize = 10;
+const THREADS: usize = 1;
 
 pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
@@ -61,11 +61,12 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
         }));
     }
     let mut seeds = VecDeque::new();
-    for i in 2..=10 {
+//    for i in 2..=10 {
+    let i = 10;
         let mut fra = Frame::new(&puzzle);
-        fra.inters = fibonacci(i + 1);
+        fra.inters = fibonacci(i + 30);
         seeds.push_front(fra);
-    }
+//    }
     while let Some(branch) = seeds.pop_back() {
         let solved = search(
             &puzzle, branch,
@@ -109,32 +110,27 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
                 frame,
                 |mut branch, is_nop| {
                     if !is_nop || branch.candidate.count_ins() <= MAX_INS.load(SyncOrdering::Relaxed) {
-                            branch.candidate.shade(MAX_INS.load(SyncOrdering::Relaxed));
-                            candidates.push_back(Frame {
-//                                inters: branch.inters +
-//                                    if branch.state.inters >= branch.inters { 1 } else { 0 },
-                                ..branch
-                            });
-
+                        branch.candidate.shade(MAX_INS.load(SyncOrdering::Relaxed));
+                        candidates.push_back(Frame {
+                            ..branch
+                        });
                     }
                 },
             );
-
             if considered % (1 << 16) == 0 {
                 if receiver.is_empty() || receiver.len() > 1 << 24 {
                     drop(sender);
                     return result;
                 }
             }
-            if considered % (1 << 24) == 0 || solved {
-//                if state.stars == 0 { print!("solution: "); }
+            if considered % (1 << 1) == 0 || solved {
 //                println!("considered: {}", considered);
-//                println!("work queue: {}, inters: {}, MAX_INS: {}, steps: {}",
-//                         sender.len(), inters, MAX_INS.load(SyncOrdering::Relaxed), steps);
-//                println!("candidates: {}, current: {}", candidates.len(), candidate);
-//                for c in candidates.iter().rev().take(32) {
-//                    println!("{}", c.candidate);
-//                }
+                println!("work queue: {}, inters: {}, MAX_INS: {}",
+                         sender.len(), inters, MAX_INS.load(SyncOrdering::Relaxed));
+                println!("candidates: {}, current: {}", candidates.len(), candidate);
+                for c in candidates.iter().rev().take(32) {
+                    println!("{}", c.candidate);
+                }
 //                puzzle.execute(&candidate, true, won);
 //                print!(" and {}", candidates);
                 if solved {
@@ -175,42 +171,73 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, inters }: Frame,
             let method_index = ins_pointer.get_method_index();
             let ins_index = ins_pointer.get_ins_index();
             let nop_branch = ins.is_nop();
-            let probe_branch = ins.is_probe() && state.current_tile().clone().executes(ins);
-            let loosening_branch = !ins.is_debug() && !ins.is_loosened()
-                && !state.current_tile().to_condition().is_cond(ins.get_cond());
-            if nop_branch || probe_branch || loosening_branch {
+            let release_branch = !state.current_tile().executes(ins)
+                && !ins.is_released(state.current_tile().to_cond())
+                && (candidate[method_index][0..puzzle.methods[method_index]].contains(&HALT)
+                // TODO: check if neccessary
+                || candidate[method_index][0..puzzle.methods[method_index]].contains(&NOP));
+            let loosening_branch = !ins.is_debug() && !ins.is_loose()
+                && !state.current_tile().to_cond().is_cond(ins.get_cond());
+            if nop_branch || release_branch {
                 let mut instructions: Vec<Ins> =
                     if nop_branch {
                         [HALT].iter().chain(
-                            puzzle.get_ins_set(state.current_tile().to_condition(), false).iter()
+                            puzzle.get_ins_set(state.current_tile().to_cond(), false).iter()
                                 .filter(|&ins| {
                                     !ins.is_function() || preferred[ins.source_index()]
-                                })).chain(
-                            puzzle.get_cond_mask().get_probes(state.current_tile()
-                                .to_condition()).iter()
+                                })
                         ).cloned().collect()
-                    } else if probe_branch {
-                        puzzle.get_ins_set(state.current_tile().to_condition(), false)
-                            .iter().map(|i| i.as_loosened()).chain((
-                            if candidate[method_index][ins_index]
-                                .remove_cond(state.current_tile().to_condition()).is_probe() {
-                                vec![candidate[method_index][ins_index]
-                                    .remove_cond(state.current_tile().to_condition())]
-                            } else { vec![] })
-                        ).collect()
+                    } else if release_branch {
+                        puzzle.get_ins_set(state.current_tile().to_cond(), false)
+                            .iter().map(|i| i.as_loose()
+                            .as_released(state.current_tile().to_cond())
+                            .as_released(ins.get_cond())).collect()
                     } else if loosening_branch {
-                        vec![ins.as_loosened(), ins.get_ins().as_loosened()]
+                        vec![ins.as_loose(), ins.get_ins().as_loose()]
                     } else { vec![] };
 //                let mut rng = thread_rng();
 //                instructions.shuffle(&mut rng);
-                branched = true;
-                for &instruction in instructions.iter().rev() {
+                if release_branch {
                     let mut temp = candidate.clone();
-                    temp[method_index][ins_index] = instruction;
-                    if !snip_around(puzzle, &temp, *ins_pointer, false)
-                        && !deny(puzzle, &candidate, false) {
-                        let branch = Frame { candidate: temp.to_owned(), inters };
-                        brancher(branch, nop_branch);
+                    temp[method_index][ins_index] = temp[method_index][ins_index]
+                        .as_released(state.current_tile().to_cond());
+                    let other_inss = if !ins.is_loose() {
+                        vec![ins.as_loose().as_released(state.current_tile().to_cond()),
+                             ins.get_ins().as_loose().as_released(state.current_tile().to_cond())]
+                    } else {
+                        vec![ins.as_released(state.current_tile().to_cond())]
+                    };
+                    let ins = temp[method_index][ins_index];
+                    for instruction in other_inss {
+                        let mut temp = temp.clone();
+                        temp[method_index][ins_index] = instruction;
+                        if !snip_around(puzzle, &temp, *ins_pointer, false)
+                            && !deny(puzzle, &temp, false) {
+                            let branch = Frame { candidate: temp.to_owned(), inters };
+                            brancher(branch, nop_branch);
+                        }
+                    }
+                    let mut temp = candidate.clone();
+                    for i in ((ins_index + 1)..puzzle.methods[method_index]).rev() {
+                        temp[method_index][i] = temp[method_index][i - 1];
+                    }
+                    for &instruction in instructions.iter().rev() {
+                        temp[method_index][ins_index] = instruction;
+                        if !snip_around(puzzle, &temp, *ins_pointer, false)
+                            && !deny(puzzle, &temp, false) {
+                            let branch = Frame { candidate: temp.to_owned(), inters };
+                            brancher(branch, nop_branch);
+                        }
+                    }
+                } else {
+                    for &instruction in instructions.iter().rev() {
+                        let mut temp = candidate.clone();
+                        temp[method_index][ins_index] = instruction;
+                        if !snip_around(puzzle, &temp, *ins_pointer, false)
+                            && !deny(puzzle, &candidate, false) {
+                            let branch = Frame { candidate: temp.to_owned(), inters };
+                            brancher(branch, nop_branch);
+                        }
                     }
                 }
                 return state.stars == 0;
@@ -258,8 +285,8 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
             if ins.is_function() {
                 invoked[ins.source_index()] += 1;
                 if only_cond[ins.source_index()] == NOP {
-                    only_cond[ins.source_index()] = ins.get_cond() | ins.with_loosened(true);
-                } else if only_cond[ins.source_index()] != (ins.get_cond() | ins.with_loosened(true)) {
+                    only_cond[ins.source_index()] = ins.get_cond() | ins.with_loose(true);
+                } else if only_cond[ins.source_index()] != (ins.get_cond() | ins.with_loose(true)) {
                     only_cond[ins.source_index()] = HALT;
                 }
                 let called = program[ins.source_index()];
@@ -328,7 +355,7 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
         if !only_cond[m].is_nop() && !only_cond[m].is_halt() {
             for i in 0..puzzle.methods[m] {
                 denied |= !meth[i].is_cond(only_cond[m].get_cond())
-                    && (meth[i].is_loosened() == only_cond[m].is_loosened());
+                    && (meth[i].is_loose() == only_cond[m].is_loose());
                 if !meth[i].is_turn() {
                     break;
                 }
