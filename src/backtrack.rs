@@ -123,7 +123,7 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
                     return result;
                 }
             }
-            if considered % (1 << 1) == 0 || solved {
+            if considered % (1 << 20) == 0 || solved {
 //                println!("considered: {}", considered);
                 println!("work queue: {}, inters: {}, MAX_INS: {}",
                          sender.len(), inters, MAX_INS.load(SyncOrdering::Relaxed));
@@ -177,8 +177,8 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, inters }: Frame,
                 // TODO: check if neccessary
                 || candidate[method_index][0..puzzle.methods[method_index]].contains(&NOP));
             let loosening_branch = !ins.is_debug() && !ins.is_loose()
-                && !state.current_tile().to_cond().is_cond(ins.get_cond());
-            if nop_branch || release_branch {
+                && !state.current_tile().executes(ins.get_cond());
+            if nop_branch || release_branch || loosening_branch {
                 let mut instructions: Vec<Ins> =
                     if nop_branch {
                         [HALT].iter().chain(

@@ -42,10 +42,10 @@ fn main() {
     let puzzle = puzzle_from_string(face);
 //    puzzle.execute(&PUZZLE_656_SOLUTION, true, won);
     let puzzles = [
-//        PUZZLE_42,
+        PUZZLE_42,
         PUZZLE_536,
-//        PUZZLE_656,
-//        PUZZLE_1337,
+        PUZZLE_656,
+        PUZZLE_1337,
 //        puzzle,
 //        parse_level(),
     ];
