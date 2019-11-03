@@ -63,9 +63,9 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
     let mut seeds = VecDeque::new();
 //    for i in 2..=10 {
     let i = 10;
-        let mut fra = Frame::new(&puzzle);
-        fra.inters = fibonacci(i + 30);
-        seeds.push_front(fra);
+    let mut fra = Frame::new(&puzzle);
+    fra.inters = fibonacci(i + 30);
+    seeds.push_front(fra);
 //    }
     while let Some(branch) = seeds.pop_back() {
         let solved = search(
@@ -190,11 +190,10 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, inters }: Frame,
                     } else if release_branch {
                         puzzle.get_ins_set(state.current_tile().to_cond(), false)
                             .iter().map(|i| i.as_loose()
-                            .as_released(state.current_tile().to_cond())
                             .as_released(ins.get_cond())).collect()
                     } else if loosening_branch {
                         vec![ins.as_loose(), ins.get_ins().as_loose()]
-                    } else { vec![] };
+                    } else { vec![] }.iter().map(|i| i.as_released(state.current_tile().to_cond()).as_released(ins.get_cond())).collect();
 //                let mut rng = thread_rng();
 //                instructions.shuffle(&mut rng);
                 if release_branch {

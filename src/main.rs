@@ -80,7 +80,7 @@ const RAND_FUNCS: [Method; 9] = [
 fn denial_test() {
     let template_puzzle = genboi(RE, GE, BS);
     let tmp = template_puzzle
-        .get_ins_set(INS_COLOR_MASK, true);
+        .get_ins_set(INS_COND_MASK, true);
     let instructions = [HALT].iter().chain(tmp.iter()
 //        .filter(|&ins| !ins.is_function() || ins.get_instruction() == F2));
         .filter(|&ins| !ins.is_function()));

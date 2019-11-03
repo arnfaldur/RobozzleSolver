@@ -83,7 +83,7 @@ impl Leaf {
 
 pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source> {
     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(1337);
-    let instruction_set = puzzle.get_ins_set(INS_COLOR_MASK, true);
+    let instruction_set = puzzle.get_ins_set(INS_COND_MASK, true);
     let mut stems: Vec<Leaf> = vec![Leaf { accumulator: 1.0, ..Leaf::default() }];
     let mut bestboi = Leaf { accumulator: MIN, ..Leaf::default() };
     let mut bestsource = Leaf::default();

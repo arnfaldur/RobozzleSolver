@@ -12,7 +12,7 @@ impl Ins {
     pub fn condition_to_color(self) -> Ins { Ins(self.as_vanilla().0 >> 5) }
     pub fn source_index(self) -> usize { (self.get_ins().0 - F1.0) as usize }
     pub fn fun_from_index(index: usize) -> Ins { Ins(index as InsType + F1.0) }
-    pub fn get_cond(self) -> Ins { self & INS_COLOR_MASK }
+    pub fn get_cond(self) -> Ins { self & INS_COND_MASK }
     pub fn get_ins(self) -> Ins { self & INS_MASK }
     fn get_fun_number(self) -> u8 { (self.get_ins().0 - F1.0 + 1) as u8 }
     pub fn get_mark_color(self) -> Ins { self & MARK_MASK }
@@ -53,6 +53,7 @@ impl Ins {
     pub fn with_loose(self, loose: bool) -> Ins { if loose { self.as_loose() } else { self } }
     pub fn as_released(self, cond: Ins) -> Ins { Ins(cond.0 << 4) | self }
     pub fn is_released(self, cond: Ins) -> bool { (Ins(cond.0 << 4) & self) == Ins(cond.0 << 4) }
+    pub fn get_release_as_cond(self) -> Ins { Ins((self.0 >> 4) & INS_COND_MASK.0) }
 }
 
 pub fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
@@ -124,7 +125,7 @@ impl Display for Ins {
             MARK_BLUE => Color::Blue,
             _ => Color::BrightWhite,
         };
-        let string = match ins {
+        let mut string = match ins {
             FORWARD => "↑".to_string(),
             LEFT => "←".to_string(),
             RIGHT => "→".to_string(),
@@ -133,6 +134,24 @@ impl Display for Ins {
             NOP => if self.is_probe() { "_" } else { " " }.to_string(),
             _ => " ".to_string(),
         };
+
+        write!(f, "{}", string.color(foreground).on_color(background))?;
+
+        let background = match self.get_release_as_cond() {
+            GRAY_COND => Color::BrightBlack,
+            RED_COND => Color::Red,
+            GREEN_COND => Color::Green,
+            BLUE_COND => Color::Blue,
+            YELLOW_COND => Color::Yellow,
+            MAGENTA_COND => Color::Magenta,
+            CYAN_COND => Color::Cyan,
+            _ => Color::Black,
+        };
+        let ins = self;
+        let foreground = Color::BrightWhite;
+        let mut string = if ins.is_loose() {
+            "L".to_string()
+        } else { ".".to_string() };
         write!(f, "{}", string.color(foreground).on_color(background))
     }
 }
@@ -202,7 +221,7 @@ pub(crate) const CYAN_COND: Ins = Ins(0b11000000);
 // masks for isolating instruction parts
 pub(crate) const MARK_MASK: Ins = Ins(0b00000111);
 pub(crate) const INS_MASK: Ins = Ins(0b00011111);
-pub(crate) const INS_COLOR_MASK: Ins = Ins(0b11100000);
+pub(crate) const INS_COND_MASK: Ins = Ins(0b11100000);
 
 // iterable lists of constants
 pub(crate) const INSTRUCTIONS: [Ins; 11] = [
