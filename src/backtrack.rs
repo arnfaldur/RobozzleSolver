@@ -38,7 +38,7 @@ impl Frame {
     }
 }
 
-const THREADS: usize = 1;
+const THREADS: usize = 10;
 
 pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
 //    let mut tested: HashSet<u64, _> = HashSet::new();
@@ -111,9 +111,7 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
                 |mut branch, is_nop| {
                     if !is_nop || branch.candidate.count_ins() <= MAX_INS.load(SyncOrdering::Relaxed) {
                         branch.candidate.shade(MAX_INS.load(SyncOrdering::Relaxed));
-                        candidates.push_back(Frame {
-                            ..branch
-                        });
+                        candidates.push_back(branch);
                     }
                 },
             );
@@ -123,7 +121,11 @@ fn backtrack_thread(puzzle: &Puzzle, thread_id: usize,
                     return result;
                 }
             }
-            if considered % (1 << 20) == 0 || solved {
+            if (considered % (1 << 0) == 0
+                && candidate[0][0].as_vanilla() == BLUE_LEFT
+                && candidate[0][1].as_vanilla() == BLUE_MARK_RED
+                && candidate[0][2].as_vanilla() == RED_MARK_GREEN
+                && candidate[0][3].as_vanilla().get_ins() == FORWARD) || solved {
 //                println!("considered: {}", considered);
                 println!("work queue: {}, inters: {}, MAX_INS: {}",
                          sender.len(), inters, MAX_INS.load(SyncOrdering::Relaxed));
@@ -201,10 +203,10 @@ fn search<F>(puzzle: &Puzzle, Frame { mut candidate, inters }: Frame,
                     temp[method_index][ins_index] = temp[method_index][ins_index]
                         .as_released(state.current_tile().to_cond());
                     let other_inss = if !ins.is_loose() {
-                        vec![ins.as_loose().as_released(state.current_tile().to_cond()),
-                             ins.get_ins().as_loose().as_released(state.current_tile().to_cond())]
+                        vec![ins.as_loose().as_released(state.current_tile().to_cond().as_released(ins.get_cond())-),
+                             ins.get_ins().as_loose().as_released(state.current_tile().to_cond()).as_released(ins.get_cond())]
                     } else {
-                        vec![ins.as_released(state.current_tile().to_cond())]
+                        vec![ins.as_released(state.current_tile().to_cond()).as_released(ins.get_cond())]
                     };
                     let ins = temp[method_index][ins_index];
                     for instruction in other_inss {

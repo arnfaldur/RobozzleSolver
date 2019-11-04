@@ -33,7 +33,7 @@ fn main() {
 //    start_web_solver(); return;
 //    denial_test();return;
 //    println!("sizes: {}", mem::size_of::<State>());
-    println!("sizes: {}", mem::size_of::<Frame>());
+//    println!("sizes: {}", mem::size_of::<Frame>());
 //    println!("sizes: {}", mem::size_of::<Source>());
 //    return;
     let face = "{\"About\":\"face\",\"AllowedCommands\":\"0\",\"Colors\":[\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRBRRRBRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRGGGGGGGGRBR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"10\",\"DifficultyVoteSum\":\"15\",\"Disliked\":\"8\",\"Featured\":\"false\",\"Id\":\"5088\",\"Items\":[\"################\",\"#######....#####\",\"####.....*..*###\",\"####.#*..#*...##\",\"###..########..#\",\"###.####.####..#\",\"##.*##########*#\",\"##.###########.#\",\"##.#.........#.#\",\"#..###########.#\",\"################\",\"################\"],\"Liked\":\"1\",\"RobotCol\":\"1\",\"RobotDir\":\"0\",\"RobotRow\":\"9\",\"Solutions\":\"47\",\"SubLengths\":[\"10\",\"10\",\"10\",\"10\",\"10\"],\"SubmittedBy\":\"oshabott59\",\"SubmittedDate\":\"2014-11-27T11:34:11.98\",\"Title\":\"Ionvoc6\"}";
@@ -42,9 +42,9 @@ fn main() {
     let puzzle = puzzle_from_string(face);
 //    puzzle.execute(&PUZZLE_656_SOLUTION, true, won);
     let puzzles = [
-        PUZZLE_42,
-        PUZZLE_536,
-        PUZZLE_656,
+//        PUZZLE_42,
+//        PUZZLE_536,
+//        PUZZLE_656,
         PUZZLE_1337,
 //        puzzle,
 //        parse_level(),
