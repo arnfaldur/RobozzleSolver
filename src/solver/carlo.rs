@@ -4,8 +4,7 @@ use rand::{SeedableRng, Rng};
 use statrs::prec::F64_PREC;
 use std::cmp::Ordering::Equal;
 
-use super::game::*;
-use crate::game::instructions::*;
+use crate::game::{*, instructions::*};
 use crate::constants::{NOGRAM, _N};
 
 #[derive(Clone, PartialEq, PartialOrd, Debug)]
@@ -206,7 +205,22 @@ pub fn score_cmp(state: &State, puzzle: &Puzzle) -> usize {
         + touched * (MAX_STEPS + 1)
         + MAX_STEPS - state.steps;
 }
-
 pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
-    return score_cmp(state, puzzle) as f64;
+    let mut touched = 0;
+    let mut stars = 0;
+    let mut tiles = 1;
+    for y in 1..13 {
+        for x in 1..17 {
+            tiles += (state.map[y][x] != _N) as usize;
+            touched += (state.map[y][x].touched() > 0) as usize;
+            stars += state.map[y][x].has_star() as usize;
+        }
+    }
+    return (((puzzle.stars - stars) * tiles * (MAX_STEPS + 1)
+        + touched * (MAX_STEPS + 1)
+        + MAX_STEPS - state.steps) as f64) / ((puzzle.stars * tiles * (MAX_STEPS + 1)) as f64);
 }
+
+//pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
+//    return (score_cmp(state, puzzle) as f64) / (puzzle.stars as f64);
+//}

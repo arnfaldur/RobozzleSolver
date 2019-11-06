@@ -68,6 +68,15 @@ impl Source {
         }
         return result;
     }
+    pub fn count_nop(&self) -> usize {
+        let mut result = 0;
+        for m in self.0.iter() {
+            for i in m.iter() {
+                result += !(i.is_nop() || i.is_halt()) as usize;
+            }
+        }
+        return result;
+    }
     pub fn get_hash(&self) -> u64 {
         let mut hasher = DefaultHasher::new();
         self.hash(&mut hasher);
@@ -272,6 +281,7 @@ impl Puzzle {
         while state.step(&source, self) {
             if show { println!("{}", state); }
         }
+        if show { println!("{}", state); }
         return scoring(&state, self);
     }
     pub(crate) fn get_cond_mask(&self) -> Ins {

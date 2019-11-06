@@ -1,19 +1,19 @@
-use std::io::{prelude::*, stdout, Write};
+use std::io::{prelude::*, Write};
 use std::process::{Command, Stdio};
 use std::thread::sleep;
 use std::time::Duration;
 use std::fs::File;
 
-use tokio::{prelude::*, runtime::Runtime};
+use tokio::runtime::Runtime;
 use serde::{Serialize, Deserialize};
 use serde_json::Value;
 use webdriver::common::LocatorStrategy::CSSSelector;
-use fantoccini::{Client, Locator, error::{CmdError, CmdError::InvalidArgument}};
+use fantoccini::{Client, Locator, error::CmdError};
 
 
 use crate::game::{Puzzle, Source, instructions::*, Direction, make_puzzle, Tile};
 use crate::constants::*;
-use crate::backtrack::backtrack;
+use crate::solver::backtrack::backtrack;
 
 #[derive(Debug)]
 enum SolverError {

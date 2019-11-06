@@ -336,7 +336,7 @@ pub(crate) const PUZZLE_TEST_1_SOLUTION: Source = Source([
     [HALT; 10],
 ]);
 
-use crate::backtrack::{REJECTS_2, REJECTS_3, REJECTS_4};
+use crate::solver::pruning::{REJECTS_2, REJECTS_3, REJECTS_4};
 
 pub(crate) fn init_rejects_2() {
     REJECTS_2.set([

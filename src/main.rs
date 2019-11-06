@@ -1,31 +1,25 @@
 #![feature(test, vec_remove_item, core_intrinsics, cfg_target_has_atomic)]
 #![allow(dead_code, ellipsis_inclusive_range_patterns)]
-#![allow(unused_imports)]
+#![allow(unused)]
+//#![warn(unused_imports)]
 #![allow(unused_mut)]
 #![allow(unused_must_use)]
-#![allow(unused)]
 #![allow(unreachable_code)]
 
 use std::time::{Instant, Duration};
-use std::collections::hash_map::DefaultHasher;
-use std::hash::Hash;
 use std::collections::{HashMap, HashSet};
-use std::thread;
-use std::mem;
 
-use backtrack::*;
-use carlo::carlo;
-use web::{encode_program, start_web_solver, puzzle_from_string};
-
+use web::{encode_program, puzzle_from_string};
 use constants::*;
 use game::{*, instructions::*};
+use solver::{pruning::{banned_pair, banned_trio}, solve};
+use crate::solver::carlo::{score, score_cmp};
 
 mod constants;
 mod game;
 mod tests;
 
-mod carlo;
-mod backtrack;
+mod solver;
 
 mod web;
 
@@ -41,19 +35,18 @@ fn main() {
     let ternary = "{\"About\":\"R=2, G=1, B=0. The most significant bit is the last one. Count green turns.\",\"AllowedCommands\":\"7\",\"Colors\":[\"RRRRRBBBBBBBBBBG\",\"RRRRRGRRRRRRRRRB\",\"BBBBBGBBBBBBBGRB\",\"BRRRRGRRRRRRRBRB\",\"RRGGRBRGGRBBRBRB\",\"BRBBRBRBBRRBRBRB\",\"GRGBBBBBGRRBRGRB\",\"BRRBRBRGBBBGRRRB\",\"BRRBRBRRRRRRRGRB\",\"GBBGRGBBBBBBBBRB\",\"RRRRRRRRRRRRRRRB\",\"BRGBGBBBBBBBBBBG\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"1\",\"DifficultyVoteSum\":\"5\",\"Disliked\":\"0\",\"Featured\":\"false\",\"Id\":\"10459\",\"Items\":[\"#####..........*\",\"#####*#########.\",\".....*.......*#.\",\"*####*#######.#.\",\"*#**#*#**#*.#.#.\",\"*#..#.#..##.#*#.\",\"*#*.....*##.#*#.\",\".##.#.#*...*#*#.\",\".##.#.#######*#.\",\"*..*#*........#.\",\"###############.\",\".****..........*\"],\"Liked\":\"0\",\"RobotCol\":\"0\",\"RobotDir\":\"0\",\"RobotRow\":\"11\",\"Solutions\":\"2\",\"SubLengths\":[\"5\",\"10\",\"10\",\"5\",\"0\"],\"SubmittedBy\":\"scorpio\",\"SubmittedDate\":\"2018-03-27T23:19:44.29\",\"Title\":\"Ternary (4 digits)\"}";
 
     let puzzle = puzzle_from_string(face);
-//    puzzle.execute(&PUZZLE_656_SOLUTION, true, won);
-    println!("puzl: {}", puzzle);
+//    println!("puzl: {}", puzzle);
     let puzzles = [
-//        PUZZLE_42,
-//        PUZZLE_536,
-//        PUZZLE_656,
-//        PUZZLE_1337,
+        PUZZLE_42,
+        PUZZLE_536,
+        PUZZLE_656,
+        PUZZLE_1337,
         puzzle,
 //        parse_level(),
     ];
     for puzzle in puzzles.iter() {
         let now = Instant::now();
-        let solutions = backtrack(*puzzle);
+        let solutions = solve(*puzzle);
         if !solutions.is_empty() {
             println!("Solved! The solution(s) are:");
             for solution in solutions {

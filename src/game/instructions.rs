@@ -42,10 +42,6 @@ impl Ins {
         } else {
             vec![(self & !excluded).to_probe()]
         }
-//        let mask = self.to_probe();
-//        return PROBES.iter()
-//            .filter(|&ins| (*ins & mask) == *ins && *ins != excluded.to_probe())
-//            .map(|ins| ins.as_loosened()).collect();
     }
     pub fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
     pub fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
