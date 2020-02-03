@@ -1,7 +1,7 @@
-use std::fmt::{Formatter, Error, Display, Debug};
+use std::fmt::{Debug, Display, Error, Formatter};
 
 use colored::*;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 type InsType = u16;
 
@@ -9,33 +9,87 @@ type InsType = u16;
 pub struct Ins(InsType);
 
 impl Ins {
-    pub fn condition_to_color(self) -> Ins { Ins(self.as_vanilla().0 >> 5) }
-    pub fn source_index(self) -> usize { (self.get_ins().0 - F1.0) as usize }
-    pub fn fun_from_index(index: usize) -> Ins { Ins(index as InsType + F1.0) }
-    pub fn get_cond(self) -> Ins { self & INS_COLOR_MASK }
-    pub fn get_ins(self) -> Ins { self & INS_MASK }
-    fn get_fun_number(self) -> u8 { (self.get_ins().0 - F1.0 + 1) as u8 }
-    pub fn get_mark_color(self) -> Ins { self & MARK_MASK }
-    pub fn get_mark_as_cond(self) -> Ins { self.get_mark_color().color_to_cond() }
-    pub fn color_to_cond(self) -> Ins { Ins(self.0 << 5).as_vanilla() }
-    pub fn is_cond(self, cond: Ins) -> bool { self.get_cond() == cond }
-    pub fn has_cond(self, cond: Ins) -> bool { self & cond == cond }
-    pub fn with_cond(self, cond: Ins) -> Ins { self.get_ins() | cond }
-    pub fn remove_cond(self, cond: Ins) -> Ins { self & !cond }
-    pub fn is_gray(self) -> bool { self.is_cond(GRAY_COND) }
-    pub fn is_mark(self) -> bool { (self & MARK_GRAY) == MARK_GRAY }
-    pub fn is_function(self) -> bool { self.get_ins() >= F1 && self.get_ins() <= F5 }
-    pub fn is_ins(self, ins: Ins) -> bool { self.get_ins() == ins }
-    pub fn is_order_invariant(self) -> bool { self.is_mark() || self.is_turn() }
-    pub fn is_turn(self) -> bool { self.is_ins(LEFT) || self.is_ins(RIGHT) }
-    pub fn to_probe(self) -> Ins { self.get_cond() | NOP }
-    pub fn is_probe(self) -> bool { !self.is_gray() && self.get_ins() == NOP }
-    pub fn is_nop(self) -> bool { self.as_vanilla() == NOP }
-    pub fn is_halt(self) -> bool { self.as_vanilla() == HALT }
-    pub fn other_turn(self) -> Ins {
-        if self.is_ins(LEFT) { RIGHT } else if self.is_ins(RIGHT) { LEFT } else { HALT }
+    pub fn condition_to_color(self) -> Ins {
+        Ins(self.as_vanilla().0 >> 5)
     }
-    pub fn is_debug(self) -> bool { (self.as_vanilla() & NOP) == NOP }
+    pub fn source_index(self) -> usize {
+        (self.get_ins().0 - F1.0) as usize
+    }
+    pub fn fun_from_index(index: usize) -> Ins {
+        Ins(index as InsType + F1.0)
+    }
+    pub fn get_cond(self) -> Ins {
+        self & INS_COLOR_MASK
+    }
+    pub fn get_ins(self) -> Ins {
+        self & INS_MASK
+    }
+    fn get_fun_number(self) -> u8 {
+        (self.get_ins().0 - F1.0 + 1) as u8
+    }
+    pub fn get_mark_color(self) -> Ins {
+        self & MARK_MASK
+    }
+    pub fn get_mark_as_cond(self) -> Ins {
+        self.get_mark_color().color_to_cond()
+    }
+    pub fn color_to_cond(self) -> Ins {
+        Ins(self.0 << 5).as_vanilla()
+    }
+    pub fn is_cond(self, cond: Ins) -> bool {
+        self.get_cond() == cond
+    }
+    pub fn has_cond(self, cond: Ins) -> bool {
+        self & cond == cond
+    }
+    pub fn with_cond(self, cond: Ins) -> Ins {
+        self.get_ins() | cond
+    }
+    pub fn remove_cond(self, cond: Ins) -> Ins {
+        self & !cond
+    }
+    pub fn is_gray(self) -> bool {
+        self.is_cond(GRAY_COND)
+    }
+    pub fn is_mark(self) -> bool {
+        (self & MARK_GRAY) == MARK_GRAY
+    }
+    pub fn is_function(self) -> bool {
+        self.get_ins() >= F1 && self.get_ins() <= F5
+    }
+    pub fn is_ins(self, ins: Ins) -> bool {
+        self.get_ins() == ins
+    }
+    pub fn is_order_invariant(self) -> bool {
+        self.is_mark() || self.is_turn()
+    }
+    pub fn is_turn(self) -> bool {
+        self.is_ins(LEFT) || self.is_ins(RIGHT)
+    }
+    pub fn to_probe(self) -> Ins {
+        self.get_cond() | NOP
+    }
+    pub fn is_probe(self) -> bool {
+        !self.is_gray() && self.get_ins() == NOP
+    }
+    pub fn is_nop(self) -> bool {
+        self.as_vanilla() == NOP
+    }
+    pub fn is_halt(self) -> bool {
+        self.as_vanilla() == HALT
+    }
+    pub fn other_turn(self) -> Ins {
+        if self.is_ins(LEFT) {
+            RIGHT
+        } else if self.is_ins(RIGHT) {
+            LEFT
+        } else {
+            HALT
+        }
+    }
+    pub fn is_debug(self) -> bool {
+        (self.as_vanilla() & NOP) == NOP
+    }
     pub fn get_probes(self, excluded: Ins) -> Vec<Ins> {
         if (self & !excluded).is_gray() {
             vec![]
@@ -43,10 +97,22 @@ impl Ins {
             vec![(self & !excluded).to_probe()]
         }
     }
-    pub fn as_vanilla(self) -> Ins { self & VANILLA_MASK }
-    pub fn is_loosened(self) -> bool { self & LOOSE_MASK == LOOSE_MASK }
-    pub fn as_loosened(self) -> Ins { self | LOOSE_MASK }
-    pub fn with_loosened(self, loosened: bool) -> Ins { if loosened { self.as_loosened() } else { self } }
+    pub fn as_vanilla(self) -> Ins {
+        self & VANILLA_MASK
+    }
+    pub fn is_loosened(self) -> bool {
+        self & LOOSE_MASK == LOOSE_MASK
+    }
+    pub fn as_loosened(self) -> Ins {
+        self | LOOSE_MASK
+    }
+    pub fn with_loosened(self, loosened: bool) -> Ins {
+        if loosened {
+            self.as_loosened()
+        } else {
+            self
+        }
+    }
 }
 
 pub fn with_conds(red: bool, green: bool, blue: bool) -> Ins {
@@ -70,18 +136,24 @@ impl From<u8> for Ins {
 
 impl std::ops::BitOr for Ins {
     type Output = Ins;
-    fn bitor(self, rhs: Self) -> Self::Output { Ins(self.0.bitor(rhs.0)) }
+    fn bitor(self, rhs: Self) -> Self::Output {
+        Ins(self.0.bitor(rhs.0))
+    }
 }
 
 impl std::ops::BitAnd for Ins {
     type Output = Ins;
-    fn bitand(self, rhs: Self) -> Self::Output { Ins(self.0.bitand(rhs.0)) }
+    fn bitand(self, rhs: Self) -> Self::Output {
+        Ins(self.0.bitand(rhs.0))
+    }
 }
 
 impl std::ops::Not for Ins {
     type Output = Ins;
 
-    fn not(self) -> Self::Output { Ins(!self.0) }
+    fn not(self) -> Self::Output {
+        Ins(!self.0)
+    }
 }
 
 #[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
@@ -91,8 +163,12 @@ impl InsPtr {
     pub fn new(method: usize, ins: usize) -> InsPtr {
         InsPtr(((ins as u8) & INSPTR_INS_MASK) | ((method as u8) << 4))
     }
-    pub fn get_ins_index(self) -> usize { (self.0 & INSPTR_INS_MASK) as usize }
-    pub fn get_method_index(self) -> usize { ((self.0 & INSPTR_METHOD_MASK) >> 4) as usize }
+    pub fn get_ins_index(self) -> usize {
+        (self.0 & INSPTR_INS_MASK) as usize
+    }
+    pub fn get_method_index(self) -> usize {
+        ((self.0 & INSPTR_METHOD_MASK) >> 4) as usize
+    }
 }
 
 pub const INSPTR_NULL: InsPtr = InsPtr(0b11111111);
@@ -133,37 +209,45 @@ impl Display for Ins {
 
 impl Debug for Ins {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error> {
-//        write!(f, "{:016b} ", self.0)?;
-//        write!(f, "{}{}", self.get_method_number(), self.get_ins_index())?;
-//        if self.is_branched() { write!(f, "V")?; }
-//        write!(f, "_")?;
+        //        write!(f, "{:016b} ", self.0)?;
+        //        write!(f, "{}{}", self.get_method_number(), self.get_ins_index())?;
+        //        if self.is_branched() { write!(f, "V")?; }
+        //        write!(f, "_")?;
         let ins = self.as_vanilla();
         if ins == NOP {
             write!(f, "NOP")
         } else if ins == HALT {
             write!(f, "HALT")
         } else {
-            write!(f, "{}", match ins.get_cond() {
-                RED_COND => "RED_",
-                GREEN_COND => "GREEN_",
-                BLUE_COND => "BLUE_",
-                _ => "",
-            })?;
-            write!(f, "{}", match ins.get_ins() {
-                FORWARD => "FORWARD",
-                LEFT => "LEFT",
-                RIGHT => "RIGHT",
-                F1 => "F1",
-                F2 => "F2",
-                F3 => "F3",
-                F4 => "F4",
-                F5 => "F5",
-                MARK_RED => "MARK_RED",
-                MARK_GREEN => "MARK_GREEN",
-                MARK_BLUE => "MARK_BLUE",
-                NOP => "PROBE",
-                _ => "",
-            })
+            write!(
+                f,
+                "{}",
+                match ins.get_cond() {
+                    RED_COND => "RED_",
+                    GREEN_COND => "GREEN_",
+                    BLUE_COND => "BLUE_",
+                    _ => "",
+                }
+            )?;
+            write!(
+                f,
+                "{}",
+                match ins.get_ins() {
+                    FORWARD => "FORWARD",
+                    LEFT => "LEFT",
+                    RIGHT => "RIGHT",
+                    F1 => "F1",
+                    F2 => "F2",
+                    F3 => "F3",
+                    F4 => "F4",
+                    F5 => "F5",
+                    MARK_RED => "MARK_RED",
+                    MARK_GREEN => "MARK_GREEN",
+                    MARK_BLUE => "MARK_BLUE",
+                    NOP => "PROBE",
+                    _ => "",
+                }
+            )
         }
     }
 }
@@ -176,8 +260,8 @@ pub(crate) const F2: Ins = Ins(4);
 pub(crate) const F3: Ins = Ins(5);
 pub(crate) const F4: Ins = Ins(6);
 pub(crate) const F5: Ins = Ins(7);
-// This isn't actually in the game
-pub(crate) const MARK_GRAY: Ins = Ins(0b00001000);
+
+pub(crate) const MARK_GRAY: Ins = Ins(0b00001000); // This isn't actually in the game
 pub(crate) const MARK_RED: Ins = Ins(0b00001001);
 pub(crate) const MARK_GREEN: Ins = Ins(0b00001010);
 pub(crate) const MARK_BLUE: Ins = Ins(0b00001100);
@@ -200,50 +284,17 @@ pub(crate) const INS_COLOR_MASK: Ins = Ins(0b11100000);
 
 // iterable lists of constants
 pub(crate) const INSTRUCTIONS: [Ins; 11] = [
-    FORWARD,
-    LEFT,
-    RIGHT,
-    F1,
-    F2,
-    F3,
-    F4,
-    F5,
-    MARK_RED,
-    MARK_GREEN,
-    MARK_BLUE,
+    FORWARD, LEFT, RIGHT, F1, F2, F3, F4, F5, MARK_RED, MARK_GREEN, MARK_BLUE,
 ];
-pub(crate) const MOVES: [Ins; 3] = [
-    FORWARD,
-    LEFT,
-    RIGHT,
-];
-pub(crate) const FUNCTIONS: [Ins; 5] = [
-    F1,
-    F2,
-    F3,
-    F4,
-    F5,
-];
-pub(crate) const MARKS: [Ins; 3] = [
-    MARK_RED,
-    MARK_GREEN,
-    MARK_BLUE,
-];
-pub(crate) const CONDITIONS: [Ins; 4] = [
-    GRAY_COND,
-    RED_COND,
-    GREEN_COND,
-    BLUE_COND
-];
+pub(crate) const MOVES: [Ins; 3] = [FORWARD, LEFT, RIGHT];
+pub(crate) const FUNCTIONS: [Ins; 5] = [F1, F2, F3, F4, F5];
+pub(crate) const MARKS: [Ins; 3] = [MARK_RED, MARK_GREEN, MARK_BLUE];
+pub(crate) const CONDITIONS: [Ins; 4] = [GRAY_COND, RED_COND, GREEN_COND, BLUE_COND];
 
 pub(crate) const RED_PROBE: Ins = Ins(NOP.0 | RED_COND.0);
 pub(crate) const GREEN_PROBE: Ins = Ins(NOP.0 | GREEN_COND.0);
 pub(crate) const BLUE_PROBE: Ins = Ins(NOP.0 | BLUE_COND.0);
-pub(crate) const PROBES: [Ins; 3] = [
-    RED_PROBE,
-    GREEN_PROBE,
-    BLUE_PROBE,
-];
+pub(crate) const PROBES: [Ins; 3] = [RED_PROBE, GREEN_PROBE, BLUE_PROBE];
 
 // constant combinations for brevity
 pub(crate) const RED_FORWARD: Ins = Ins(FORWARD.0 | RED_COND.0);
@@ -281,4 +332,3 @@ pub(crate) const BLUE_F5: Ins = Ins(F5.0 | BLUE_COND.0);
 pub(crate) const BLUE_MARK_RED: Ins = Ins(MARK_RED.0 | BLUE_COND.0);
 pub(crate) const BLUE_MARK_GREEN: Ins = Ins(MARK_GREEN.0 | BLUE_COND.0);
 pub(crate) const BLUE_MARK_BLUE: Ins = Ins(MARK_BLUE.0 | BLUE_COND.0);
-

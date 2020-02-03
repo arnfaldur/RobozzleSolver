@@ -1,19 +1,19 @@
+use std::fs::File;
 use std::io::{prelude::*, Write};
 use std::process::{Command, Stdio};
 use std::thread::sleep;
 use std::time::Duration;
-use std::fs::File;
 
-use tokio::runtime::Runtime;
-use serde::{Serialize, Deserialize};
+use fantoccini::{error::CmdError, Client, Locator};
+use serde::{Deserialize, Serialize};
 use serde_json::Value;
+use tokio::runtime::Runtime;
 use webdriver::common::LocatorStrategy::CSSSelector;
-use fantoccini::{Client, Locator, error::CmdError};
 
-
-use crate::game::{Puzzle, Source, instructions::*, Direction, make_puzzle, Tile};
 use crate::constants::*;
+use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
 use crate::solver::backtrack::backtrack;
+use tokio::io::AsyncReadExt;
 
 #[derive(Debug)]
 enum SolverError {
@@ -32,7 +32,10 @@ impl From<SolverError> for CmdError {
     fn from(err: SolverError) -> Self {
         match err {
             SolverError::Fantoccini(e) => e,
-            _ => CmdError::InvalidArgument("Couldn't convert from Solver to Cmd error".to_string(), "sorry".to_string()),
+            _ => CmdError::InvalidArgument(
+                "Couldn't convert from Solver to Cmd error".to_string(),
+                "sorry".to_string(),
+            ),
         }
     }
 }
@@ -44,7 +47,7 @@ impl From<std::io::Error> for SolverError {
 }
 
 struct Storage {
-    solutions: Vec<Solution>
+    solutions: Vec<Solution>,
 }
 
 enum Solution {
@@ -72,16 +75,23 @@ pub fn start_web_solver() {
 fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
     let rt = Runtime::new()?;
     rt.block_on(async {
-        let mut file = File::create("data/solutions.txt")?;
-        file.write_all(b"Hello, world!")?;
+        //let mut file = File::create("data/solutions.txt")?;
+        //file.write_all(b"Hello, world!")?;
 
+        let mut file = match File::open("data/solutions.txt") {
+            Err(e) => match File::create("data/solutions.txt") {
+                Err(e) => panic!("Unable to create missing file data/solutions.txt"),
+                Ok(file) => file,
+            },
+            Ok(file) => file,
+        };
 
-        let mut file = File::open("data/solutions.txt")?;
         let mut contents = String::new();
-        file.read_to_string(&mut contents)?;
+        file.read_to_string(&mut contents);
         println!("contents: {}", contents);
 
-        let mut client = Client::new("http://localhost:4444").await
+        let mut client = Client::new("http://localhost:4444")
+            .await
             .unwrap_or_else(|err| panic!("Couldn't connect to webdriver! {}", err));
 
         while let Err(e) = login(&mut client).await {
@@ -100,14 +110,21 @@ fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
 }
 
 async fn login(client: &mut Client) -> Result<(), SolverError> {
-
-    client.goto("http://www.robozzle.com/beta/index.html").await?;
-    client.find(Locator::Css("#menu-signin")).await?.click().await?;
+    client
+        .goto("http://www.robozzle.com/beta/index.html")
+        .await?;
+    client
+        .find(Locator::Css("#menu-signin"))
+        .await?
+        .click()
+        .await?;
 
     let mut signin_form = client.form(Locator::Css("#dialog-signin")).await?;
     signin_form.set_by_name("name", "Hugsun").await?;
     sleep(Duration::from_millis(1500));
-    signin_form.set_by_name("password", "8r4WvSfxHGirMDxH6FBO").await?;
+    signin_form
+        .set_by_name("password", "8r4WvSfxHGirMDxH6FBO")
+        .await?;
     sleep(Duration::from_millis(1500));
     signin_form.submit().await?;
     sleep(Duration::from_millis(1500));
@@ -125,8 +142,8 @@ async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), SolverE
         return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
     }
     println!("level: {}", val.to_string());
-    let level_json: LevelJson = serde_json::from_value(val)
-        .unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
+    let level_json: LevelJson =
+        serde_json::from_value(val).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
     let puzzle = level_to_puzzle(&level_json);
     println!("puzzle: {}", puzzle);
     let mut solutions = backtrack(puzzle);
@@ -135,20 +152,32 @@ async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), SolverE
         url.push_str("&program=");
         url.push_str(encode_program(&solution, &puzzle).as_str());
         client.goto(url.as_ref()).await?;
-//            client.execute("setRobotSpeed(10);",vec![]).await?;
-        client.find(Locator::Css("#program-go")).await?.click().await?;
+        //            client.execute("setRobotSpeed(10);",vec![]).await?;
+        client
+            .find(Locator::Css("#program-go"))
+            .await?
+            .click()
+            .await?;
         // can't seem to control where to click or drag
         // client.find(Locator::Css("#program-speed")).await?.click().await?;
-        while match client.find(Locator::Id("dialog-solved")).await?.attr("style").await? {
+        while match client
+            .find(Locator::Id("dialog-solved"))
+            .await?
+            .attr("style")
+            .await?
+        {
             None => true,
             Some(attribute) => attribute.eq("display: none;"),
-        } { sleep(Duration::from_millis(100)); }
+        } {
+            sleep(Duration::from_millis(100));
+        }
     }
     return Ok(());
 }
 
 pub fn puzzle_from_string(string: &str) -> Puzzle {
-    let level_json: LevelJson = serde_json::from_str(string).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
+    let level_json: LevelJson = serde_json::from_str(string)
+        .unwrap_or_else(|err| panic!("couldn't read JSON, error: {}", err));
     return level_to_puzzle(&level_json);
 }
 
@@ -176,7 +205,7 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
         '1' => Direction::Down,
         '2' => Direction::Left,
         '3' => Direction::Up,
-        _ => Direction::Up
+        _ => Direction::Up,
     };
     let mut methods = [0; 5];
     for m in 0..5 {
@@ -189,7 +218,11 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
         level.RobotCol.parse::<usize>().unwrap() + 1,
         level.RobotRow.parse::<usize>().unwrap() + 1,
         methods,
-        [(mflags & 0b1) > 0, (mflags & 0b10) > 0, (mflags & 0b100) > 0],
+        [
+            (mflags & 0b1) > 0,
+            (mflags & 0b10) > 0,
+            (mflags & 0b100) > 0,
+        ],
     );
 }
 
@@ -303,34 +336,43 @@ impl StateEncoder {
         }
     }
     fn encode_command(&mut self, cond: char, cmd: char) {
-        self.encode_bits(match cond {
-            'R' => 1,
-            'G' => 2,
-            'B' => 3,
-            _ => 0,
-        }, 2);
-        self.encode_bits(match cmd {
-            'f' => 1,
-            'l' => 2,
-            'r' => 3,
-            '1' | '2' | '3' | '4' | '5' => 4,
-            'R' | 'G' | 'B' => 5,
-            _ => 0,
-        }, 3);
+        self.encode_bits(
+            match cond {
+                'R' => 1,
+                'G' => 2,
+                'B' => 3,
+                _ => 0,
+            },
+            2,
+        );
+        self.encode_bits(
+            match cmd {
+                'f' => 1,
+                'l' => 2,
+                'r' => 3,
+                '1' | '2' | '3' | '4' | '5' => 4,
+                'R' | 'G' | 'B' => 5,
+                _ => 0,
+            },
+            3,
+        );
         let sublen = match cmd {
             '1' | '2' | '3' | '4' | '5' => 3,
             'R' | 'G' | 'B' => 2,
             _ => 0,
         };
         if sublen != 0 {
-            self.encode_bits(match cmd {
-                '1' => 0,
-                '2' | 'R' => 1,
-                '3' | 'G' => 2,
-                '4' | 'B' => 3,
-                '5' => 4,
-                _ => 0,
-            }, sublen);
+            self.encode_bits(
+                match cmd {
+                    '1' => 0,
+                    '2' | 'R' => 1,
+                    '3' | 'G' => 2,
+                    '4' | 'B' => 3,
+                    '5' => 4,
+                    _ => 0,
+                },
+                sublen,
+            );
         }
     }
 }
@@ -354,7 +396,8 @@ fn actualize_solution(program: &Source, puzzle: &Puzzle) -> Source {
             result[m] = program[mapping[m]];
             for i in 0..10 {
                 if result[m][i].is_function() {
-                    result[m][i] = result[m][i].get_cond() | Ins::fun_from_index(invmap[result[m][i].source_index()]);
+                    result[m][i] = result[m][i].get_cond()
+                        | Ins::fun_from_index(invmap[result[m][i].source_index()]);
                 }
             }
         }
@@ -369,8 +412,8 @@ pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
         val: 0,
         bits: 0,
     };
-// program_length = robozzle.program.length; would be expected to be like this:
-// let program_length = puzzle.functions.iter().filter(|&method| *method != 0).count();
+    // program_length = robozzle.program.length; would be expected to be like this:
+    // let program_length = puzzle.functions.iter().filter(|&method| *method != 0).count();
     let program_length = 5; // but it seems to be like this always.
     encode_state.encode_bits(0, 3); // Version number = 0
     encode_state.encode_bits(program_length, 3);
@@ -378,25 +421,28 @@ pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
         encode_state.encode_bits(puzzle.methods[i], 4);
         for j in 0..puzzle.methods[i] {
             let ins = solution[i][j];
-            encode_state.encode_command(match ins.get_cond() {
-                RED_COND => 'R',
-                GREEN_COND => 'G',
-                BLUE_COND => 'B',
-                _ => ' ',
-            }, match ins.get_ins() {
-                FORWARD => 'f',
-                LEFT => 'l',
-                RIGHT => 'r',
-                F1 => '1',
-                F2 => '2',
-                F3 => '3',
-                F4 => '4',
-                F5 => '5',
-                MARK_RED => 'R',
-                MARK_GREEN => 'G',
-                MARK_BLUE => 'B',
-                _ => ' ',
-            });
+            encode_state.encode_command(
+                match ins.get_cond() {
+                    RED_COND => 'R',
+                    GREEN_COND => 'G',
+                    BLUE_COND => 'B',
+                    _ => ' ',
+                },
+                match ins.get_ins() {
+                    FORWARD => 'f',
+                    LEFT => 'l',
+                    RIGHT => 'r',
+                    F1 => '1',
+                    F2 => '2',
+                    F3 => '3',
+                    F4 => '4',
+                    F5 => '5',
+                    MARK_RED => 'R',
+                    MARK_GREEN => 'G',
+                    MARK_BLUE => 'B',
+                    _ => ' ',
+                },
+            );
         }
     }
     encode_state.encode_bits(0, 5); // Flush
@@ -503,4 +549,3 @@ pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
 //
 //return program;
 //};
-

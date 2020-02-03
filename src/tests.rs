@@ -3,8 +3,8 @@ mod tests {
     use test::Bencher;
     use crate::game::{Source, won, instructions::*};
     use crate::constants::*;
-    use crate::carlo;
-    use crate::backtrack;
+    use crate::solver::carlo;
+    use crate::solver::backtrack;
     use rand::SeedableRng;
     use rand::seq::SliceRandom;
 
