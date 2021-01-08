@@ -73,7 +73,7 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
     //    }
     MAX_INS.store(puzzle.methods.iter().sum(), SyncOrdering::Relaxed);
     MAX_SCORE.store(16, SyncOrdering::Relaxed);
-    //MAX_INS.store(20, SyncOrdering::Relaxed);
+    MAX_INS.store(8, SyncOrdering::Relaxed);
 
     //    sender.send(Frame::new(&puzzle));
     let mut threads = vec![];
@@ -86,7 +86,7 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
     let mut seeds = VecDeque::new();
     //    for i in 2..=puzzle.methods.iter().sum() {
     //seeds.push_front(Frame::new(&puzzle));
-    for i in 0..64 {
+    for i in 0..50 {
         let mut f = Frame::new(&puzzle);
         //f.max_score = fibonacci(i);
         f.max_score = 1 << i;
@@ -114,6 +114,8 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
             Err(error) => println!("Thread joining error: {:?}", error),
         };
     }
+    result.sort();
+    result.dedup();
     return result;
 }
 
@@ -168,7 +170,7 @@ fn backtrack_thread(
                     return result;
                 }
             }
-            if considered % (1 << 22) == 0 || solved {
+            if considered % (1 << 20) == 0 || solved {
                 //                if state.stars == 0 { print!("solution: "); }
                 //                println!("considered: {}", considered);
                 println!(
@@ -189,7 +191,7 @@ fn backtrack_thread(
                     let mut solution = candidate.clone();
                     solution.sanitize();
                     result.push(solution);
-                    MAX_INS.store(solution.count_ins() - 1, SyncOrdering::Relaxed);
+                    MAX_INS.store(solution.count_ins() - 0, SyncOrdering::Relaxed);
 
                     println!("Solution found! {}", solution);
                     println!("code: {}", encode_program(&solution, puzzle));
@@ -313,9 +315,9 @@ where
                             candidate: temp.to_owned(),
                             state: state.clone(),
                             score: state.map.iter().fold(0, |acc, &x| {
-                                acc + x.iter().fold(0, |ac, &y| {
+                                acc + x.iter().fold(0, |ac, &y| -> i64 {
                                     ac + {
-                                        let ts = y.touches();
+                                        let ts: i64 = std::convert::TryInto::try_into(y.touches()).unwrap();
                                         ts * ts - 2 * ts
                                     } as i64
                                 })

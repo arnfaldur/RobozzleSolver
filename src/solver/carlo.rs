@@ -142,7 +142,7 @@ pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source>
 }
 
 pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins>, leaf: &Leaf) {
-    tree.remove_item(leaf);
+    panic!("tree.remove_item(leaf); was removed and needs to be replaced here!");
     let mut branch_factor = 0.0;
     for i in 0..puzzle.methods.len() {
         for j in 0..puzzle.methods[i] {

@@ -1,4 +1,4 @@
-#![feature(test, vec_remove_item, core_intrinsics, cfg_target_has_atomic)]
+#![feature(test, core_intrinsics, cfg_target_has_atomic)]
 #![allow(dead_code, ellipsis_inclusive_range_patterns)]
 #![allow(unused)]
 //#![warn(unused_imports)]
@@ -39,15 +39,16 @@ fn main() {
     let scratch = "{ \"About\": \"\", \"AllowedCommands\": \"0\", \"Colors\": [ \"GBBRBBRRBRBBRBRG\", \"GRRRBRRRBRBBRRBG\", \"GBBRBRRBRBBBRBRG\", \"GRRRBRRRBBRRBBRG\", \"GBRBBRRBRBRBRBRG\", \"GRRRBRRRBRBBRBRG\", \"GBBBRGRRRRRRRRRR\", \"RRRRRGRGRRRRRRRR\", \"RRRGRGRGRRRRRRRR\", \"RRGGGGGGGGRRRRRR\", \"RRRRGRGRGRRRRRRR\", \"RRRRGRRRGRRRRRRR\" ], \"CommentCount\": \"12\", \"DifficultyVoteCount\": \"9\", \"DifficultyVoteSum\": \"27\", \"Disliked\": \"1\", \"Featured\": \"false\", \"Id\": \"3558\", \"Items\": [ \"...............*\", \"*..............*\", \"*..............*\", \"*..............*\", \"*..............*\", \"*..............*\", \"*....*##########\", \"#####*#*########\", \"###*#*#*########\", \"##********######\", \"####*#*#*#######\", \"####*###*#######\" ], \"Liked\": \"10\", \"RobotCol\": \"1\", \"RobotDir\": \"0\", \"RobotRow\": \"0\", \"Solutions\": \"30\", \"SubLengths\": [ \"6\", \"4\", \"3\", \"0\", \"0\" ], \"SubmittedBy\": \"denisb\", \"SubmittedDate\": \"2012-03-29T02:57:04.293\", \"Title\": \"Scratch\" }";
     let odds_and_evens = "{ \"About\": \"Useful for #12522\", \"AllowedCommands\": \"0\", \"Colors\": [ \"BRRRRRRRBBBBBBBG\", \"BRRRRRRRBRRRRRRB\", \"BRRRRRBBGRBBBGRB\", \"BRRRRRBRRRGBRBRB\", \"BRRRBBGRRRRRRBRB\", \"BRRRBRRRRGBBBBRB\", \"BRRRBRRRRBRRRRRB\", \"BRRRBRRRRBRGBBBB\", \"BRRRBRRRRBRBRRRR\", \"BRRRGBBBBBRBRRRR\", \"BRRRRRRRRRRBRRRR\", \"GBBBBBBBBBBBRRRR\" ], \"CommentCount\": \"8\", \"DifficultyVoteCount\": \"7\", \"DifficultyVoteSum\": \"21\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"12574\", \"Items\": [ \".#######*.......\", \".#######.######.\", \".#####*..#*...#.\", \".#####.###.*#.#.\", \".###*..######.#.\", \".###.####....*#.\", \".###.####.#####.\", \".###.####.#....*\", \".###.####.#.####\", \".###.....*#.####\", \".##########.####\", \"...........*####\" ], \"Liked\": \"10\", \"RobotCol\": \"0\", \"RobotDir\": \"1\", \"RobotRow\": \"0\", \"Solutions\": \"20\", \"SubLengths\": [ \"5\", \"5\", \"5\", \"0\", \"0\" ], \"SubmittedBy\": \"scorpio\", \"SubmittedDate\": \"2019-10-08T14:48:03.153\", \"Title\": \"Odds and Evens (Lite edition)\" }";
     let playing_with_stacks_4 = "{ \"About\": \"Dr Mazhar's advice\\\" Two stacks;First stack pushs and pops first stack;\\\"\", \"AllowedCommands\": \"0\", \"Colors\": [ \"RRRRRRRRRRRRRRRR\", \"BBBRBBBRBBBRBBBR\", \"BRRRRRBRBRRRRRBR\", \"BRBRBRBRBRBRBRBR\", \"BRBRBRBRBRBRBRBR\", \"BRBRRRRRRRRRBRBR\", \"RRRRBRBRBRBRRRRR\", \"BRBRBRBRBRRRBRBR\", \"BRBRRRBRBRRRBRBR\", \"BRBBRBBRBBRBBRBR\", \"BRRRRRRRRRRRRRBR\", \"BBBBBBBRBBBBBBBR\" ], \"CommentCount\": \"0\", \"DifficultyVoteCount\": \"7\", \"DifficultyVoteSum\": \"16\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"12629\", \"Items\": [ \"################\", \".......#.......#\", \".#####.#.#####.#\", \".#...#.#.#...#.#\", \".#.#.#.#.#.#.#.#\", \".#.#.#.#.#.#.#.#\", \".#.#.#.#.#.#.#.#\", \".#.#*#.#.#*#.#.#\", \".#.###.#.###.#.#\", \".#.....#.....#.#\", \".#############.#\", \"...............#\" ], \"Liked\": \"8\", \"RobotCol\": \"0\", \"RobotDir\": \"0\", \"RobotRow\": \"11\", \"Solutions\": \"12\", \"SubLengths\": [ \"8\", \"3\", \"0\", \"0\", \"0\" ], \"SubmittedBy\": \"drmazhar\", \"SubmittedDate\": \"2019-11-15T03:53:45.16\", \"Title\": \"Playing With stacks (Version 4)\" }";
+    let center_cut = "{ \"About\": \"Everyone, join the fun! Make a puzzle!\", \"AllowedCommands\": \"0\", \"Colors\": [ \"RRRRRRRRRRRRRRRR\", \"BBRBRRRBRRBBRRRR\", \"BBRBRRRBRRBBRRRR\", \"RRBRRBRRBRRRBBBR\", \"BBRBRRRBRRBBRRRR\", \"BBBBRBRBBRBBBBBR\", \"BBGBBBGBGBBBBBGG\", \"BBRGBBRGRBGBBGRR\", \"BGRBGGRBRGBGGBRR\", \"GBRRBBRRRBRBBRRR\", \"BBRRBBRRRBRBBRRR\", \"BRRRRRRRRRRRRRRR\" ], \"CommentCount\": \"1\", \"DifficultyVoteCount\": \"7\", \"DifficultyVoteSum\": \"20\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"12684\", \"Items\": [ \"################\", \"**#*###*##**####\", \"**#*###*##**####\", \"****#*#**#*****#\", \"****#*#**#*****#\", \"***************.\", \"****************\", \"**#***#*#*****##\", \"**#***#*#*****##\", \"**##**###*#**###\", \"**##**###*#**###\", \"*###############\" ], \"Liked\": \"6\", \"RobotCol\": \"15\", \"RobotDir\": \"3\", \"RobotRow\": \"5\", \"Solutions\": \"9\", \"SubLengths\": [ \"6\", \"5\", \"3\", \"0\", \"0\" ], \"SubmittedBy\": \"jnpollack\", \"SubmittedDate\": \"2020-01-17T23:44:48.777\", \"Title\": \"Center Cut\" }";
 
     //    println!("puzl: {}", puzzle);
     let puzzles = [
-        PUZZLE_42,
-        PUZZLE_536,
-        PUZZLE_656,
-        PUZZLE_1337,
-        puzzle_from_string(playing_with_stacks_4),
-        puzzle_from_string(face),
+        //PUZZLE_42,
+        //PUZZLE_536,
+        //PUZZLE_656,
+        //PUZZLE_1337,
+        puzzle_from_string(scratch),
+        //puzzle_from_string(face),
         //        parse_level(),
     ];
     for puzzle in puzzles.iter() {

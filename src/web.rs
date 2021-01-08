@@ -73,7 +73,7 @@ pub fn start_web_solver() {
 // password: 8r4WvSfxHGirMDxH6FBO
 
 fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
-    let rt = Runtime::new()?;
+    let mut rt = Runtime::new()?;
     rt.block_on(async {
         //let mut file = File::create("data/solutions.txt")?;
         //file.write_all(b"Hello, world!")?;

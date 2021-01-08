@@ -1,8 +1,11 @@
 [package]
 name = "solver"
 version = "0.1.0"
-authors = ["arnfaldur <aarnaldur@gmail.com>"]
+authors = ["arnfaldur <aarnaldur+rust@gmail.com>"]
 edition = "2018"
+
+[profile.dev]
+opt-level = 3
 
 [profile.release]
 debug = true

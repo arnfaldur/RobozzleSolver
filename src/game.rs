@@ -1,4 +1,4 @@
-use std::cmp::{max, min};
+use std::cmp::{max, min, Ordering};
 use std::collections::hash_map::DefaultHasher;
 use std::fmt::{Debug, Display, Error, Formatter};
 use std::hash::{Hash, Hasher};
@@ -14,7 +14,7 @@ use std::collections::{HashSet, VecDeque};
 
 pub(crate) mod instructions;
 
-pub type TileType = u16;
+pub type TileType = u32;
 
 #[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Tile(pub TileType);
@@ -67,7 +67,7 @@ type Map = [[Tile; 18]; 14];
 
 pub type Method = [Ins; 10];
 
-#[derive(Eq, PartialEq, PartialOrd, Copy, Clone, Debug, Serialize, Deserialize)]
+#[derive(Eq, Ord, PartialEq, PartialOrd, Copy, Clone, Debug, Serialize, Deserialize)]
 pub struct Source(pub [Method; 5]);
 
 impl Source {
