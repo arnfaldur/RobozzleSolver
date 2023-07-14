@@ -1,11 +1,11 @@
-use std::fmt::{Display, Error, Formatter};
-use std::f64::{MIN, MIN_POSITIVE};
-use rand::{SeedableRng, Rng};
+use rand::{Rng, SeedableRng};
 use statrs::prec::F64_PREC;
 use std::cmp::Ordering::Equal;
+use std::f64::{MIN, MIN_POSITIVE};
+use std::fmt::{Display, Error, Formatter};
 
-use crate::game::{*, instructions::*};
 use crate::constants::{NOGRAM, _N};
+use crate::game::{instructions::*, *};
 
 #[derive(Clone, PartialEq, PartialOrd, Debug)]
 pub struct Leaf {
@@ -19,13 +19,29 @@ pub struct Leaf {
 
 impl Default for Leaf {
     fn default() -> Leaf {
-        Leaf { source: NOGRAM, samples: 1.0, accumulator: MIN_POSITIVE, dev: MIN_POSITIVE, divider: 1.0, correction: 1.0 }
+        Leaf {
+            source: NOGRAM,
+            samples: 1.0,
+            accumulator: MIN_POSITIVE,
+            dev: MIN_POSITIVE,
+            divider: 1.0,
+            correction: 1.0,
+        }
     }
 }
 
 impl Display for Leaf {
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
-        write!(f, "chance: {}%, mean: {}, dev:{}, samples: {}, divider: {}, source: {}", self.chance() * 100.0, self.mean(), self.std_dev(), self.samples, self.divider, self.source)
+        write!(
+            f,
+            "chance: {}%, mean: {}, dev:{}, samples: {}, divider: {}, source: {}",
+            self.chance() * 100.0,
+            self.mean(),
+            self.std_dev(),
+            self.samples,
+            self.divider,
+            self.source
+        )
     }
 }
 
@@ -36,7 +52,7 @@ impl Leaf {
         self.samples += 1.0;
         self.dev += (newscore - self.mean()) * (newscore - lastmean);
 
-// rolling std dev implementation: https://www.johndcook.com/blog/standard_deviation/
+        // rolling std dev implementation: https://www.johndcook.com/blog/standard_deviation/
     }
     fn mean(&self) -> f64 {
         self.accumulator / self.samples
@@ -45,24 +61,28 @@ impl Leaf {
         self.mean() / self.divider
     }
     fn variance(&self) -> f64 {
-        if self.samples > 1.5 { self.dev / (self.samples - 1.0) } else { MIN_POSITIVE }
+        if self.samples > 1.5 {
+            self.dev / (self.samples - 1.0)
+        } else {
+            MIN_POSITIVE
+        }
     }
     fn std_dev(&self) -> f64 {
         self.variance().sqrt()
     }
     fn uncorrected_chance(&self) -> f64 {
-//        let nml = Normal::new(self.mean(), self.std_dev());
-//        return (1.0 - nml.unwrap().cdf(0.5)) / self.divider;
-//        let alpha = ((1.0 - self.mean()) / self.variance() - 1.0 / self.mean()) * self.mean().powi(2);
-//        let beta = alpha * (1.0 / self.mean() - 1.0);
-//        let default = Beta::new(1.0, 4.0).unwrap();
-//        let bet = Beta::new(alpha, beta).unwrap_or(Beta::new(1.0, 4.0).unwrap());
-//        if bet == default {
-//            println!("bad: al: {},\t bet: {},\t m: {},\t v: {},\t s: {}", alpha, beta, self.mean(), self.variance(), self.std_dev());
-//        } else {
-//            println!("GUD: al: {},\t bet: {},\t m: {},\t v: {},\t s: {}", alpha, beta, self.mean(), self.variance(), self.std_dev());
-//        }
-//        return (1.0 - bet.cdf(0.999)) / self.divider;// + F64_PREC;
+        //        let nml = Normal::new(self.mean(), self.std_dev());
+        //        return (1.0 - nml.unwrap().cdf(0.5)) / self.divider;
+        //        let alpha = ((1.0 - self.mean()) / self.variance() - 1.0 / self.mean()) * self.mean().powi(2);
+        //        let beta = alpha * (1.0 / self.mean() - 1.0);
+        //        let default = Beta::new(1.0, 4.0).unwrap();
+        //        let bet = Beta::new(alpha, beta).unwrap_or(Beta::new(1.0, 4.0).unwrap());
+        //        if bet == default {
+        //            println!("bad: al: {},\t bet: {},\t m: {},\t v: {},\t s: {}", alpha, beta, self.mean(), self.variance(), self.std_dev());
+        //        } else {
+        //            println!("GUD: al: {},\t bet: {},\t m: {},\t v: {},\t s: {}", alpha, beta, self.mean(), self.variance(), self.std_dev());
+        //        }
+        //        return (1.0 - bet.cdf(0.999)) / self.divider;// + F64_PREC;
         self.divided_mean()
     }
     fn chance(&self) -> f64 {
@@ -83,30 +103,44 @@ impl Leaf {
 pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source> {
     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(1337);
     let instruction_set = puzzle.get_ins_set(INS_COLOR_MASK, true);
-    let mut stems: Vec<Leaf> = vec![Leaf { accumulator: 1.0, ..Leaf::default() }];
-    let mut bestboi = Leaf { accumulator: MIN, ..Leaf::default() };
+    let mut stems: Vec<Leaf> = vec![Leaf {
+        accumulator: 1.0,
+        ..Leaf::default()
+    }];
+    let mut bestboi = Leaf {
+        accumulator: MIN,
+        ..Leaf::default()
+    };
     let mut bestsource = Leaf::default();
     for _expansion in 0..expansions {
         let leaf_to_branch = stems.first().unwrap().clone();
         branches(&mut stems, puzzle, &instruction_set, &leaf_to_branch);
         let correction: f64 = F64_PREC + stems.iter().map(|l| l.uncorrected_chance()).sum::<f64>();
-//        println!("correction: {}", correction);
+        //        println!("correction: {}", correction);
         if correction == 0.0 {
             panic!("correction = 0!");
         }
-//        println!("stems: {}", stems.len());
+        //        println!("stems: {}", stems.len());
         let mut _counter = 0;
         let mut newbest = false;
         for stem in &mut stems {
             stem.correction = correction;
             let bonus = 64.0 * ((stem.samples < 64.0) as i64 as f64);
-            for _iteration in 0..(bonus + rng.gen_range(-0.5, 0.5) + max_iters as f64 * stem.chance()).round() as usize {
+            for _iteration in
+                0..(bonus + rng.gen_range(-0.5, 0.5) + max_iters as f64 * stem.chance()).round()
+                    as usize
+            {
                 _counter += 1;
                 let fullgram = random_program(puzzle, &stem.source, &instruction_set, &mut rng);
                 let newscore = puzzle.execute(&fullgram, false, score);
                 if newscore > bestboi.accumulator {
                     bestsource = stem.clone();
-                    bestboi = Leaf { source: fullgram, samples: 1.0, accumulator: newscore, ..Leaf::default() };
+                    bestboi = Leaf {
+                        source: fullgram,
+                        samples: 1.0,
+                        accumulator: newscore,
+                        ..Leaf::default()
+                    };
                     newbest = true;
                     if newscore >= 1.0 {
                         return Some(bestsource.source);
@@ -125,9 +159,11 @@ pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source>
                 b.samples = a.samples + b.samples;
                 b.dev = a.dev + b.dev;
                 true
-            } else { false }
+            } else {
+                false
+            }
         });
-//        println!("counter: {}", counter);
+        //        println!("counter: {}", counter);
         stems.sort_unstable_by(|a, b| b.chance().partial_cmp(&a.chance()).unwrap_or(Equal));
         let lastboi = stems.first().unwrap();
         println!(" length: {}, lastboi: {}", stems.len(), lastboi);
@@ -166,12 +202,17 @@ pub fn branches(tree: &mut Vec<Leaf>, puzzle: &Puzzle, instruction_set: &Vec<Ins
     }
 }
 
-pub fn random_program(puzzle: &Puzzle, base: &Source, instruction_set: &Vec<Ins>, mut _rng: impl Rng) -> Source {
-    let  fullgram = *base;
+pub fn random_program(
+    puzzle: &Puzzle,
+    base: &Source,
+    instruction_set: &Vec<Ins>,
+    mut _rng: impl Rng,
+) -> Source {
+    let fullgram = *base;
     for i in 0..puzzle.methods.len() {
         for j in 0..puzzle.methods[i] {
-//            let mask = (fullgram[i][j] != NOP) as u8;
-//            fullgram[i][j].0 = fullgram[i][j].0 * mask + (1 - mask) * u8::from(*instruction_set.choose(&mut rng).unwrap_or(&NOP));
+            //            let mask = (fullgram[i][j] != NOP) as u8;
+            //            fullgram[i][j].0 = fullgram[i][j].0 * mask + (1 - mask) * u8::from(*instruction_set.choose(&mut rng).unwrap_or(&NOP));
         }
     }
     return fullgram;
@@ -203,7 +244,8 @@ pub fn score_cmp(state: &State, puzzle: &Puzzle) -> usize {
     }
     return (puzzle.stars - stars) * tiles * (MAX_STEPS + 1)
         + touched * (MAX_STEPS + 1)
-        + MAX_STEPS - state.steps;
+        + MAX_STEPS
+        - state.steps;
 }
 pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
     let mut touched = 0;
@@ -218,7 +260,9 @@ pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
     }
     return (((puzzle.stars - stars) * tiles * (MAX_STEPS + 1)
         + touched * (MAX_STEPS + 1)
-        + MAX_STEPS - state.steps) as f64) / ((puzzle.stars * tiles * (MAX_STEPS + 1)) as f64);
+        + MAX_STEPS
+        - state.steps) as f64)
+        / ((puzzle.stars * tiles * (MAX_STEPS + 1)) as f64);
 }
 
 //pub fn score(state: &State, puzzle: &Puzzle) -> f64 {

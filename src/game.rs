@@ -333,6 +333,7 @@ impl Puzzle {
         result.initialize(source, self);
         return result;
     }
+    /// execute a source for the puzzle, returning a score
     pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R
     where
         F: FnMut(&State, &Puzzle) -> R,

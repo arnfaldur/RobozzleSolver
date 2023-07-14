@@ -1,12 +1,12 @@
 #[cfg(test)]
 mod tests {
-    use test::Bencher;
-    use crate::game::{Source, won, instructions::*};
     use crate::constants::*;
-    use crate::solver::carlo;
+    use crate::game::{instructions::*, won, Source};
     use crate::solver::backtrack;
-    use rand::SeedableRng;
+    use crate::solver::carlo;
     use rand::seq::SliceRandom;
+    use rand::SeedableRng;
+    use test::Bencher;
 
     extern crate test;
 
@@ -36,15 +36,10 @@ mod tests {
 
     #[test]
     fn test_puzzle_42_instruction_set() {
-        assert_eq!(vec![
-            FORWARD,
-            LEFT,
-            RIGHT,
-            F1,
-            F2,
-            F3,
-            F4,
-        ], PUZZLE_42.get_ins_set(GRAY_COND, true));
+        assert_eq!(
+            vec![FORWARD, LEFT, RIGHT, F1, F2, F3, F4,],
+            PUZZLE_42.get_ins_set(GRAY_COND, true)
+        );
     }
 
     #[test]
@@ -54,28 +49,31 @@ mod tests {
 
     #[test]
     fn test_puzzle_536_instruction_set() {
-        assert_eq!(vec![
-            FORWARD,
-            LEFT,
-            RIGHT,
-            F1,
-            F2,
-            RED_FORWARD,
-            RED_LEFT,
-            RED_RIGHT,
-            RED_F1,
-            RED_F2,
-            GREEN_FORWARD,
-            GREEN_LEFT,
-            GREEN_RIGHT,
-            GREEN_F1,
-            GREEN_F2,
-            BLUE_FORWARD,
-            BLUE_LEFT,
-            BLUE_RIGHT,
-            BLUE_F1,
-            BLUE_F2,
-        ], PUZZLE_536.get_ins_set(INS_COLOR_MASK, true));
+        assert_eq!(
+            vec![
+                FORWARD,
+                LEFT,
+                RIGHT,
+                F1,
+                F2,
+                RED_FORWARD,
+                RED_LEFT,
+                RED_RIGHT,
+                RED_F1,
+                RED_F2,
+                GREEN_FORWARD,
+                GREEN_LEFT,
+                GREEN_RIGHT,
+                GREEN_F1,
+                GREEN_F2,
+                BLUE_FORWARD,
+                BLUE_LEFT,
+                BLUE_RIGHT,
+                BLUE_F1,
+                BLUE_F2,
+            ],
+            PUZZLE_536.get_ins_set(INS_COLOR_MASK, true)
+        );
     }
 
     #[test]
@@ -85,23 +83,26 @@ mod tests {
 
     #[test]
     fn test_puzzle_656_instruction_set() {
-        assert_eq!(vec![
-            FORWARD,
-            LEFT,
-            RIGHT,
-            F1,
-            F2,
-            RED_FORWARD,
-            RED_LEFT,
-            RED_RIGHT,
-            RED_F1,
-            RED_F2,
-            BLUE_FORWARD,
-            BLUE_LEFT,
-            BLUE_RIGHT,
-            BLUE_F1,
-            BLUE_F2,
-        ], PUZZLE_656.get_ins_set(INS_COLOR_MASK, true));
+        assert_eq!(
+            vec![
+                FORWARD,
+                LEFT,
+                RIGHT,
+                F1,
+                F2,
+                RED_FORWARD,
+                RED_LEFT,
+                RED_RIGHT,
+                RED_F1,
+                RED_F2,
+                BLUE_FORWARD,
+                BLUE_LEFT,
+                BLUE_RIGHT,
+                BLUE_F1,
+                BLUE_F2,
+            ],
+            PUZZLE_656.get_ins_set(INS_COLOR_MASK, true)
+        );
     }
 
     #[test]
@@ -111,47 +112,105 @@ mod tests {
 
     #[test]
     fn test_puzzle_1337_instruction_set() {
-        assert_eq!(vec![
-            FORWARD,
-            LEFT,
-            RIGHT,
-            F1,
-            F2,
-            MARK_RED,
-            MARK_GREEN,
-            MARK_BLUE,
-            RED_FORWARD,
-            RED_LEFT,
-            RED_RIGHT,
-            RED_F1,
-            RED_F2,
-            RED_MARK_GREEN,
-            RED_MARK_BLUE,
-            GREEN_FORWARD,
-            GREEN_LEFT,
-            GREEN_RIGHT,
-            GREEN_F1,
-            GREEN_F2,
-            GREEN_MARK_RED,
-            GREEN_MARK_BLUE,
-            BLUE_FORWARD,
-            BLUE_LEFT,
-            BLUE_RIGHT,
-            BLUE_F1,
-            BLUE_F2,
-            BLUE_MARK_RED,
-            BLUE_MARK_GREEN,
-        ], PUZZLE_1337.get_ins_set(INS_COLOR_MASK, true));
+        assert_eq!(
+            vec![
+                FORWARD,
+                LEFT,
+                RIGHT,
+                F1,
+                F2,
+                MARK_RED,
+                MARK_GREEN,
+                MARK_BLUE,
+                RED_FORWARD,
+                RED_LEFT,
+                RED_RIGHT,
+                RED_F1,
+                RED_F2,
+                RED_MARK_GREEN,
+                RED_MARK_BLUE,
+                GREEN_FORWARD,
+                GREEN_LEFT,
+                GREEN_RIGHT,
+                GREEN_F1,
+                GREEN_F2,
+                GREEN_MARK_RED,
+                GREEN_MARK_BLUE,
+                BLUE_FORWARD,
+                BLUE_LEFT,
+                BLUE_RIGHT,
+                BLUE_F1,
+                BLUE_F2,
+                BLUE_MARK_RED,
+                BLUE_MARK_GREEN,
+            ],
+            PUZZLE_1337.get_ins_set(INS_COLOR_MASK, true)
+        );
     }
 
     #[test]
     fn test_puzzle_test_1() {
-        assert_eq!(true, PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, false, won));
+        assert_eq!(
+            true,
+            PUZZLE_TEST_1.execute(&PUZZLE_TEST_1_SOLUTION, false, won)
+        );
     }
 
     #[test]
     fn test_puzzle_test_1_instruction_set() {
-        assert_eq!(vec![
+        assert_eq!(
+            vec![
+                FORWARD,
+                LEFT,
+                RIGHT,
+                F1,
+                F2,
+                F3,
+                F4,
+                F5,
+                MARK_RED,
+                MARK_GREEN,
+                MARK_BLUE,
+                RED_FORWARD,
+                RED_LEFT,
+                RED_RIGHT,
+                RED_F1,
+                RED_F2,
+                RED_F3,
+                RED_F4,
+                RED_F5,
+                RED_MARK_GREEN,
+                RED_MARK_BLUE,
+                GREEN_FORWARD,
+                GREEN_LEFT,
+                GREEN_RIGHT,
+                GREEN_F1,
+                GREEN_F2,
+                GREEN_F3,
+                GREEN_F4,
+                GREEN_F5,
+                GREEN_MARK_RED,
+                GREEN_MARK_BLUE,
+                BLUE_FORWARD,
+                BLUE_LEFT,
+                BLUE_RIGHT,
+                BLUE_F1,
+                BLUE_F2,
+                BLUE_F3,
+                BLUE_F4,
+                BLUE_F5,
+                BLUE_MARK_RED,
+                BLUE_MARK_GREEN,
+            ],
+            PUZZLE_TEST_1.get_ins_set(INS_COLOR_MASK, true)
+        );
+    }
+
+    #[test]
+    fn test_debug_printing() {
+        let instructions = [
+            NOP,
+            HALT,
             FORWARD,
             LEFT,
             RIGHT,
@@ -163,43 +222,6 @@ mod tests {
             MARK_RED,
             MARK_GREEN,
             MARK_BLUE,
-            RED_FORWARD,
-            RED_LEFT,
-            RED_RIGHT,
-            RED_F1,
-            RED_F2,
-            RED_F3,
-            RED_F4,
-            RED_F5,
-            RED_MARK_GREEN,
-            RED_MARK_BLUE,
-            GREEN_FORWARD,
-            GREEN_LEFT,
-            GREEN_RIGHT,
-            GREEN_F1,
-            GREEN_F2,
-            GREEN_F3,
-            GREEN_F4,
-            GREEN_F5,
-            GREEN_MARK_RED,
-            GREEN_MARK_BLUE,
-            BLUE_FORWARD,
-            BLUE_LEFT,
-            BLUE_RIGHT,
-            BLUE_F1,
-            BLUE_F2,
-            BLUE_F3,
-            BLUE_F4,
-            BLUE_F5,
-            BLUE_MARK_RED,
-            BLUE_MARK_GREEN,
-        ], PUZZLE_TEST_1.get_ins_set(INS_COLOR_MASK, true));
-    }
-
-    #[test]
-    fn test_debug_printing() {
-        let instructions = [NOP, HALT, FORWARD, LEFT, RIGHT,
-            F1, F2, F3, F4, F5, MARK_RED, MARK_GREEN, MARK_BLUE,
             RED_FORWARD,
             RED_LEFT,
             RED_RIGHT,
@@ -289,13 +311,13 @@ mod tests {
 
     #[bench]
     fn bench_execute_42_times_10(b: &mut Bencher) {
-//        for instruction in PUZZLE_42.get_instruction_set() {
-//            print!("{}", show_instruction(instruction));
-//        }
-//        println!();
-//        for instruction in PUZZLE_536.get_instruction_set() {
-//            print!("{}", show_instruction(instruction));
-//        }
+        //        for instruction in PUZZLE_42.get_instruction_set() {
+        //            print!("{}", show_instruction(instruction));
+        //        }
+        //        println!();
+        //        for instruction in PUZZLE_536.get_instruction_set() {
+        //            print!("{}", show_instruction(instruction));
+        //        }
         let instruction_set = PUZZLE_42.get_ins_set(INS_COLOR_MASK, true);
         let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(42);
         let mut source: Source = Source([[NOP; 10]; 5]);
@@ -314,10 +336,10 @@ mod tests {
         b.iter(|| PUZZLE_42.execute(&PUZZLE_42_SOLUTION, false, carlo::score));
     }
 
-//    #[bench]
-//    fn bench_42_monte_carlo(b: &mut Bencher) {
-//        b.iter(|| carlo(&PUZZLE_42, 1 << 5, 1 << 5));
-//    }
+    //    #[bench]
+    //    fn bench_42_monte_carlo(b: &mut Bencher) {
+    //        b.iter(|| carlo(&PUZZLE_42, 1 << 5, 1 << 5));
+    //    }
 
     #[bench]
     fn bench_execute_536_times_10(b: &mut Bencher) {
@@ -339,10 +361,10 @@ mod tests {
         b.iter(|| PUZZLE_536.execute(&PUZZLE_536_SOLUTION, false, carlo::score));
     }
 
-//    #[bench]
-//    fn bench_536_monte_carlo(b: &mut Bencher) {
-//        b.iter(|| carlo(&PUZZLE_536, 1 << 5, 1 << 5));
-//    }
+    //    #[bench]
+    //    fn bench_536_monte_carlo(b: &mut Bencher) {
+    //        b.iter(|| carlo(&PUZZLE_536, 1 << 5, 1 << 5));
+    //    }
 
     #[bench]
     fn bench_execute_656_times_10(b: &mut Bencher) {
@@ -364,8 +386,8 @@ mod tests {
         b.iter(|| PUZZLE_656.execute(&PUZZLE_656_SOLUTION, false, carlo::score));
     }
 
-//    #[bench]
-//    fn bench_656_monte_carlo(b: &mut Bencher) {
-//        b.iter(|| carlo(&PUZZLE_656, 1 << 5, 1 << 5));
-//    }
+    //    #[bench]
+    //    fn bench_656_monte_carlo(b: &mut Bencher) {
+    //        b.iter(|| carlo(&PUZZLE_656, 1 << 5, 1 << 5));
+    //    }
 }
