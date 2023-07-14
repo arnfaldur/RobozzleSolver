@@ -232,14 +232,16 @@ impl Stack {
 
 #[derive(Eq, PartialEq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub enum Direction {
-    Up = 0b0001,
-    Left = 0b0010,
-    Down = 0b0100,
-    Right = 0b1000,
+    Up = 0b00,
+    Left = 0b01,
+    Down = 0b10,
+    Right = 0b11,
 }
 
+//#[derive()]
 impl Direction {
     fn left(&self) -> Direction {
+        return unsafe { std::mem::transmute(((*self as u8 + 1) & 0b11)) };
         match self {
             Direction::Up => Direction::Left,
             Direction::Left => Direction::Down,
@@ -248,6 +250,7 @@ impl Direction {
         }
     }
     fn right(&self) -> Direction {
+        return unsafe { std::mem::transmute(((*self as u8 + 3) & 0b11)) };
         match self {
             Direction::Up => Direction::Right,
             Direction::Left => Direction::Up,
@@ -443,12 +446,8 @@ impl State {
         if self.current_tile().executes(ins) {
             match ins.get_ins() {
                 FORWARD => {
-                    match &self.direction {
-                        Direction::Up => self.y -= 1,
-                        Direction::Left => self.x -= 1,
-                        Direction::Down => self.y += 1,
-                        Direction::Right => self.x += 1,
-                    };
+                    self.y = (self.y as i32 + [-1, 0, 1, 0][self.direction as usize]) as usize;
+                    self.x = (self.x as i32 + [0, -1, 0, 1][self.direction as usize]) as usize;
                     if *self.current_tile() == _N {
                         return false;
                     } else {
