@@ -60,9 +60,9 @@ impl PartialEq for Frame {
 
 impl Eq for Frame {}
 
-const THREADS: usize = 10;
+const THREADS: usize = 32;
 
-pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
+pub fn backtrack(puzzle: Puzzle) -> Vec<(usize, Source)> {
     //    let mut tested: HashSet<u64, _> = HashSet::new();
     //    for thread in 0..THREADS {
     //        thread::spawn(move || {
@@ -73,7 +73,7 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<Source> {
     //    }
     MAX_INS.store(puzzle.methods.iter().sum(), SyncOrdering::Relaxed);
     MAX_SCORE.store(16, SyncOrdering::Relaxed);
-    MAX_INS.store(8, SyncOrdering::Relaxed);
+    MAX_INS.store(9, SyncOrdering::Relaxed);
 
     //    sender.send(Frame::new(&puzzle));
     let mut threads = vec![];
@@ -124,11 +124,10 @@ fn backtrack_thread(
     thread_id: usize,
     sender: Sender<Frame>,
     receiver: Receiver<Frame>,
-) -> Vec<Source> {
-    let mut result: Vec<Source> = vec![];
+) -> Vec<(usize, Source)> {
+    let mut result: Vec<(usize, Source)> = vec![];
     let mut candidates = VecDeque::new();
     let mut considered: u64 = 0;
-    //    let mut visited: HashMap<_, Source> = HashMap::new();
     while let Ok(outer_frame) = receiver.recv_timeout(Duration::from_millis(100)) {
         if outer_frame.max_score > MAX_SCORE.load(SyncOrdering::Relaxed) {
             continue;
@@ -155,8 +154,13 @@ fn backtrack_thread(
                             max(branch.max_score * 2, MAX_SCORE.load(SyncOrdering::Relaxed));
                         MAX_SCORE.store(new_max, SyncOrdering::Relaxed);
                     //sender.send(Frame { ..branch });
-                    } else {
+                    } else if branch.candidate.count_ins() <= MAX_INS.load(SyncOrdering::Relaxed) {
+                        // let preshade = candidate.clone();
                         branch.candidate.shade(MAX_INS.load(SyncOrdering::Relaxed));
+                        // if (preshade.get_hash() != candidate.get_hash()) {
+                        //     println!("before shade: {}", preshade);
+                        //     println!(" after shade: {}", candidate);
+                        // }
                         //if !deny(&puzzle, &branch.candidate, false) {
                         candidates.push_back(Frame { ..branch });
                         //}
@@ -182,15 +186,15 @@ fn backtrack_thread(
                     steps
                 );
                 println!("candidates: {}, current: {}", candidates.len(), candidate);
-                for c in candidates.iter().rev().take(32) {
-                    println!("{}", c.candidate);
-                }
+                // for c in candidates.iter().rev().take(32) {
+                //     println!("{}", c.candidate);
+                // }
                 //                puzzle.execute(&candidate, true, won);
                 //                print!(" and {}", candidates);
                 if solved {
                     let mut solution = candidate.clone();
                     solution.sanitize();
-                    result.push(solution);
+                    result.push((steps, solution));
                     MAX_INS.store(solution.count_ins() - 0, SyncOrdering::Relaxed);
 
                     println!("Solution found! {}", solution);
@@ -317,7 +321,8 @@ where
                             score: state.map.iter().fold(0, |acc, &x| {
                                 acc + x.iter().fold(0, |ac, &y| -> i64 {
                                     ac + {
-                                        let ts: i64 = std::convert::TryInto::try_into(y.touches()).unwrap();
+                                        let ts: i64 =
+                                            std::convert::TryInto::try_into(y.touches()).unwrap();
                                         ts * ts - 2 * ts
                                     } as i64
                                 })

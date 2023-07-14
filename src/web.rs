@@ -147,10 +147,11 @@ async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), SolverE
     let puzzle = level_to_puzzle(&level_json);
     println!("puzzle: {}", puzzle);
     let mut solutions = backtrack(puzzle);
-    solutions.sort_unstable_by_key(|sol| sol.count_ins());
+    solutions.sort_unstable_by_key(|sol| sol.0);
+    solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
     if let Some(solution) = solutions.pop() {
         url.push_str("&program=");
-        url.push_str(encode_program(&solution, &puzzle).as_str());
+        url.push_str(encode_program(&solution.1, &puzzle).as_str());
         client.goto(url.as_ref()).await?;
         //            client.execute("setRobotSpeed(10);",vec![]).await?;
         client
@@ -177,7 +178,7 @@ async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), SolverE
 
 pub fn puzzle_from_string(string: &str) -> Puzzle {
     let level_json: LevelJson = serde_json::from_str(string)
-        .unwrap_or_else(|err| panic!("couldn't read JSON, error: {}", err));
+        .unwrap_or_else(|err| panic!("couldn't read JSON: {}\n error: {}", string, err));
     return level_to_puzzle(&level_json);
 }
 

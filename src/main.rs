@@ -40,6 +40,7 @@ fn main() {
     let odds_and_evens = "{ \"About\": \"Useful for #12522\", \"AllowedCommands\": \"0\", \"Colors\": [ \"BRRRRRRRBBBBBBBG\", \"BRRRRRRRBRRRRRRB\", \"BRRRRRBBGRBBBGRB\", \"BRRRRRBRRRGBRBRB\", \"BRRRBBGRRRRRRBRB\", \"BRRRBRRRRGBBBBRB\", \"BRRRBRRRRBRRRRRB\", \"BRRRBRRRRBRGBBBB\", \"BRRRBRRRRBRBRRRR\", \"BRRRGBBBBBRBRRRR\", \"BRRRRRRRRRRBRRRR\", \"GBBBBBBBBBBBRRRR\" ], \"CommentCount\": \"8\", \"DifficultyVoteCount\": \"7\", \"DifficultyVoteSum\": \"21\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"12574\", \"Items\": [ \".#######*.......\", \".#######.######.\", \".#####*..#*...#.\", \".#####.###.*#.#.\", \".###*..######.#.\", \".###.####....*#.\", \".###.####.#####.\", \".###.####.#....*\", \".###.####.#.####\", \".###.....*#.####\", \".##########.####\", \"...........*####\" ], \"Liked\": \"10\", \"RobotCol\": \"0\", \"RobotDir\": \"1\", \"RobotRow\": \"0\", \"Solutions\": \"20\", \"SubLengths\": [ \"5\", \"5\", \"5\", \"0\", \"0\" ], \"SubmittedBy\": \"scorpio\", \"SubmittedDate\": \"2019-10-08T14:48:03.153\", \"Title\": \"Odds and Evens (Lite edition)\" }";
     let playing_with_stacks_4 = "{ \"About\": \"Dr Mazhar's advice\\\" Two stacks;First stack pushs and pops first stack;\\\"\", \"AllowedCommands\": \"0\", \"Colors\": [ \"RRRRRRRRRRRRRRRR\", \"BBBRBBBRBBBRBBBR\", \"BRRRRRBRBRRRRRBR\", \"BRBRBRBRBRBRBRBR\", \"BRBRBRBRBRBRBRBR\", \"BRBRRRRRRRRRBRBR\", \"RRRRBRBRBRBRRRRR\", \"BRBRBRBRBRRRBRBR\", \"BRBRRRBRBRRRBRBR\", \"BRBBRBBRBBRBBRBR\", \"BRRRRRRRRRRRRRBR\", \"BBBBBBBRBBBBBBBR\" ], \"CommentCount\": \"0\", \"DifficultyVoteCount\": \"7\", \"DifficultyVoteSum\": \"16\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"12629\", \"Items\": [ \"################\", \".......#.......#\", \".#####.#.#####.#\", \".#...#.#.#...#.#\", \".#.#.#.#.#.#.#.#\", \".#.#.#.#.#.#.#.#\", \".#.#.#.#.#.#.#.#\", \".#.#*#.#.#*#.#.#\", \".#.###.#.###.#.#\", \".#.....#.....#.#\", \".#############.#\", \"...............#\" ], \"Liked\": \"8\", \"RobotCol\": \"0\", \"RobotDir\": \"0\", \"RobotRow\": \"11\", \"Solutions\": \"12\", \"SubLengths\": [ \"8\", \"3\", \"0\", \"0\", \"0\" ], \"SubmittedBy\": \"drmazhar\", \"SubmittedDate\": \"2019-11-15T03:53:45.16\", \"Title\": \"Playing With stacks (Version 4)\" }";
     let center_cut = "{ \"About\": \"Everyone, join the fun! Make a puzzle!\", \"AllowedCommands\": \"0\", \"Colors\": [ \"RRRRRRRRRRRRRRRR\", \"BBRBRRRBRRBBRRRR\", \"BBRBRRRBRRBBRRRR\", \"RRBRRBRRBRRRBBBR\", \"BBRBRRRBRRBBRRRR\", \"BBBBRBRBBRBBBBBR\", \"BBGBBBGBGBBBBBGG\", \"BBRGBBRGRBGBBGRR\", \"BGRBGGRBRGBGGBRR\", \"GBRRBBRRRBRBBRRR\", \"BBRRBBRRRBRBBRRR\", \"BRRRRRRRRRRRRRRR\" ], \"CommentCount\": \"1\", \"DifficultyVoteCount\": \"7\", \"DifficultyVoteSum\": \"20\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"12684\", \"Items\": [ \"################\", \"**#*###*##**####\", \"**#*###*##**####\", \"****#*#**#*****#\", \"****#*#**#*****#\", \"***************.\", \"****************\", \"**#***#*#*****##\", \"**#***#*#*****##\", \"**##**###*#**###\", \"**##**###*#**###\", \"*###############\" ], \"Liked\": \"6\", \"RobotCol\": \"15\", \"RobotDir\": \"3\", \"RobotRow\": \"5\", \"Solutions\": \"9\", \"SubLengths\": [ \"6\", \"5\", \"3\", \"0\", \"0\" ], \"SubmittedBy\": \"jnpollack\", \"SubmittedDate\": \"2020-01-17T23:44:48.777\", \"Title\": \"Center Cut\" }";
+    let writers_block = "{\"About\":\"\",\"AllowedCommands\":\"0\",\"Colors\":[\"RRRRRRRRRRRRRRRR\",\"RRRRGRBRRRRRRRRR\",\"RRRRBRBRBRGRRRRR\",\"RRBRBRBRBRBRRRRR\",\"BRBRBRBRBRBRBRRR\",\"BBBBBBBBBBBBBBBB\",\"BRBRRRBRBRRRBRBR\",\"BRBRRRBRGRRRBRBR\",\"BRGRRRBRRRRRBRBR\",\"GRRRRRBRRRRRGRBR\",\"RRRRRRBRRRRRRRGR\",\"RRRRRRGRRRRRRRRR\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"6\",\"DifficultyVoteSum\":\"19\",\"Disliked\":\"0\",\"Featured\":\"false\",\"Id\":\"14874\",\"Items\":[\"######*#########\",\"####*#.#*#######\",\"##*#.#.#.#*#####\",\"*#.#.#.#.#.#*###\",\".#.#.#.#.#.#.#*#\",\"...............*\",\".#.###.#.###.#.#\",\".#.###.#*###.#.#\",\".#*###.#####.#.#\",\"*#####.#####*#.#\",\"######.#######*#\",\"######*#########\"],\"Liked\":\"6\",\"RobotCol\":\"0\",\"RobotDir\":\"0\",\"RobotRow\":\"5\",\"Solutions\":\"12\",\"SubLengths\":[\"7\",\"7\",\"0\",\"0\",\"0\"],\"SubmittedBy\":\"axorion\",\"SubmittedDate\":\"2022-04-23T15:26:59.963\",\"Title\":\"Writer’s Block\"}";
 
     //    println!("puzl: {}", puzzle);
     let puzzles = [
@@ -47,8 +48,8 @@ fn main() {
         //PUZZLE_536,
         //PUZZLE_656,
         //PUZZLE_1337,
-        puzzle_from_string(scratch),
-        //puzzle_from_string(face),
+        //puzzle_from_string(scratch),
+        puzzle_from_string(writers_block),
         //        parse_level(),
     ];
     for puzzle in puzzles.iter() {
@@ -57,7 +58,12 @@ fn main() {
         if !solutions.is_empty() {
             println!("Solved! The solution(s) are:");
             for solution in solutions {
-                println!("{} code: {}", solution, encode_program(&solution, puzzle));
+                println!(
+                    "{} steps: {}, code: {}",
+                    solution.1,
+                    solution.0,
+                    encode_program(&solution.1, puzzle)
+                );
             }
         } else {
             println!("I couldn't find a solution :(");
