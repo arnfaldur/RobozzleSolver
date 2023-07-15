@@ -1,4 +1,4 @@
-#![feature(test, core_intrinsics, cfg_target_has_atomic)]
+#![feature(test, core_intrinsics)]
 #![allow(dead_code, ellipsis_inclusive_range_patterns)]
 #![allow(unused)]
 //#![warn(unused_imports)]
