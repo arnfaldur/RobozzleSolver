@@ -2,9 +2,14 @@ use super::*;
 
 #[test]
 fn parse_json() {
-    let level_json: LevelJson = serde_json::from_str(LEVEL_JSON).expect("couldn't read JSON");
-    let level_json: LevelJson = serde_json::from_str(LEVEL_JSON2).expect("couldn't read JSON");
+    let level_json: Puzzle = puzzle_from_string(LEVEL_JSON);
+    let level_json: Puzzle = puzzle_from_string(LEVEL_JSON2);
     assert!(true);
+}
+
+#[test]
+fn test_get_local_puzzle() {
+    get_local_puzzle(100);
 }
 
 const LEVEL_JSON: &str = "{

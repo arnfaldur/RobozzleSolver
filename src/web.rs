@@ -1,6 +1,8 @@
 use std::fs::File;
 use std::io::{prelude::*, Write};
+use std::path::{Path, PathBuf};
 use std::process::{Command, Stdio};
+use std::str::FromStr;
 use std::thread::sleep;
 use std::time::Duration;
 
@@ -20,7 +22,7 @@ use tokio::io::AsyncRead;
 mod tests;
 
 #[derive(Debug)]
-enum SolverError {
+pub enum SolverError {
     Fantoccini(CmdError),
     IOError(std::io::Error),
     Error(String),
@@ -80,7 +82,7 @@ pub fn start_web_solver() {
 // username: Hugsun
 // password: 8r4WvSfxHGirMDxH6FBO
 
-fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
+pub fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
     let mut rt = Runtime::new()?;
     rt.block_on(async {
         //let mut file = File::create("data/solutions.txt")?;
@@ -98,19 +100,15 @@ fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
         file.read_to_string(&mut contents);
         println!("contents: {}", contents);
 
-        // let mut client = Client::new("http://localhost:4444")
-        //     .await
-        //     .expect("Couldn't connect to webdriver!");
-
         let client = ClientBuilder::native()
             .connect("http://localhost:4444")
             .await
             .expect("Couldn't connect to webdriver!");
 
-        while let Err(e) = login(&client).await {
-            println!("login error: {:?}", e);
-            sleep(Duration::from_secs(1));
-        }
+        // while let Err(e) = login(&client).await {
+        //     println!("login error: {:?}", e);
+        //     sleep(Duration::from_secs(1));
+        // }
 
         match solve_puzzle(&client, puzzle_id).await {
             Ok(_) => {}
@@ -150,14 +148,7 @@ async fn solve_puzzle(client: &Client, puzzle_id: u64) -> Result<(), SolverError
     url.push_str(puzzle_id.to_string().as_str());
     client.goto(url.as_str()).await?;
 
-    let val = client.execute("return robozzle.level", vec![]).await?;
-    if let Value::Null = val {
-        return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
-    }
-    println!("level: {}", val.to_string());
-    let level_json: LevelJson = serde_json::from_value(val).expect("couldn't read JSON");
-    let puzzle = level_to_puzzle(&level_json);
-    println!("puzzle: {}", puzzle);
+    let puzzle = fetch_puzzle(client, puzzle_id).await?;
     let mut solutions = backtrack(puzzle);
     solutions.sort_unstable_by_key(|sol| sol.0);
     solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
@@ -165,7 +156,12 @@ async fn solve_puzzle(client: &Client, puzzle_id: u64) -> Result<(), SolverError
         url.push_str("&program=");
         url.push_str(encode_program(&solution.1, &puzzle).as_str());
         client.goto(url.as_ref()).await?;
-        //            client.execute("setRobotSpeed(10);",vec![]).await?;
+        client
+            .execute("$('#program-speed')[0].value = '10'", vec![])
+            .await?;
+        client
+            .execute("$('#program-speed').trigger('change')", vec![])
+            .await?;
         client
             .find(Locator::Css("#program-go"))
             .await?
@@ -186,6 +182,52 @@ async fn solve_puzzle(client: &Client, puzzle_id: u64) -> Result<(), SolverError
         }
     }
     return Ok(());
+}
+
+fn get_local_puzzle(puzzle_id: u64) -> Option<Puzzle> {
+    let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
+    path.push(puzzle_id.to_string());
+    return File::options().read(true).open(path).ok().map(|mut file| {
+        let mut string = String::new();
+        file.read_to_string(&mut string);
+        println!("level: {}", string);
+        return puzzle_from_string(&string);
+    });
+
+    //let mut file = File::create("data/solutions.txt")?;
+    //file.write_all(b"Hello, world!")?;
+}
+
+fn store_puzzle_locally(json: &str, puzzle_id: u64) {
+    let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
+    path.push(puzzle_id.to_string());
+    let mut file = File::options()
+        .write(true)
+        .create_new(true)
+        .open(path)
+        .expect("unable to open puzzle file");
+    file.write_all(json.as_bytes())
+        .expect("unable to write puzzle json to file");
+}
+
+async fn fetch_puzzle(client: &Client, puzzle_id: u64) -> Result<Puzzle, SolverError> {
+    if let Some(puzzle) = get_local_puzzle(puzzle_id) {
+        println!("Found cached puzzle");
+        println!("puzzle: {}", puzzle);
+        Ok(puzzle)
+    } else {
+        println!("Fetching puzzle");
+        let json = client.execute("return robozzle.level", vec![]).await?;
+        if let Value::Null = json {
+            return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
+        }
+        store_puzzle_locally(&json.to_string(), puzzle_id);
+        println!("level: {}", json.to_string());
+        let level_json: LevelJson = serde_json::from_value(json).expect("couldn't read JSON");
+        let puzzle = level_to_puzzle(&level_json);
+        println!("puzzle: {}", puzzle);
+        Ok(puzzle)
+    }
 }
 
 pub fn puzzle_from_string(string: &str) -> Puzzle {

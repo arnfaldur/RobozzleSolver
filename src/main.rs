@@ -10,13 +10,14 @@ use std::collections::{HashMap, HashSet};
 use std::time::{Duration, Instant};
 
 use crate::solver::carlo::{score, score_cmp};
+use clap::{Arg, Command};
 use constants::*;
 use game::{instructions::*, *};
 use solver::{
     pruning::{banned_pair, banned_trio},
     solve,
 };
-use web::{encode_program, puzzle_from_string, start_web_solver};
+use web::{encode_program, puzzle_from_string, solve_puzzles, start_web_solver};
 
 mod constants;
 mod game;
@@ -26,7 +27,33 @@ mod solver;
 
 mod web;
 
+fn cli() -> Command {
+    Command::new("solver")
+        .bin_name("solver")
+        .subcommand_required(true)
+        .subcommand(
+            Command::new("web").subcommand_required(true).subcommand(
+                Command::new("solve")
+                    .arg_required_else_help(true)
+                    .arg(Arg::new("puzzle ID").value_parser(0..20000)),
+            ),
+        )
+}
+
 fn main() {
+    match cli().get_matches().subcommand() {
+        Some(("web", sub_matches)) => match sub_matches.subcommand() {
+            Some(("solve", sub_matches)) => {
+                let puzzle_id = *sub_matches.get_one::<i64>("puzzle ID").expect("required");
+                solve_puzzles(puzzle_id as u64);
+            }
+            _ => todo!(),
+        },
+        _ => {
+            println!("no CLI match")
+        }
+    }
+    return;
     start_web_solver();
     return;
     //    println!("sizes: {}", mem::size_of::<State>());
