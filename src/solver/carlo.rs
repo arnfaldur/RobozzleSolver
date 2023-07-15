@@ -127,7 +127,7 @@ pub fn carlo(puzzle: &Puzzle, max_iters: i32, expansions: i32) -> Option<Source>
             stem.correction = correction;
             let bonus = 64.0 * ((stem.samples < 64.0) as i64 as f64);
             for _iteration in
-                0..(bonus + rng.gen_range(-0.5, 0.5) + max_iters as f64 * stem.chance()).round()
+                0..(bonus + rng.gen_range(-0.5..0.5) + max_iters as f64 * stem.chance()).round()
                     as usize
             {
                 _counter += 1;

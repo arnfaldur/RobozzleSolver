@@ -4,6 +4,7 @@ use std::process::{Command, Stdio};
 use std::thread::sleep;
 use std::time::Duration;
 
+use fantoccini::ClientBuilder;
 use fantoccini::{error::CmdError, Client, Locator};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
@@ -13,7 +14,7 @@ use webdriver::common::LocatorStrategy::CSSSelector;
 use crate::constants::*;
 use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
 use crate::solver::backtrack::backtrack;
-use tokio::io::AsyncReadExt;
+use tokio::io::AsyncRead;
 
 #[derive(Debug)]
 enum SolverError {
@@ -57,16 +58,16 @@ enum Solution {
 }
 
 pub fn start_web_solver() {
-    let mut gecko = Command::new("geckodriver.exe")
-        .stdin(Stdio::piped())
-        .stdout(Stdio::piped())
-        .stderr(Stdio::null()) // silence
-        .spawn()
-        .unwrap();
+    // let mut gecko = Command::new("/usr/bin/geckodriver")
+    //     .stdin(Stdio::piped())
+    //     .stdout(Stdio::piped())
+    //     .stderr(Stdio::null()) // silence
+    //     .spawn()
+    //     .expect("unable to start geckodriver");
 
     solve_puzzles(10459);
 
-    gecko.kill();
+    // gecko.kill();
 }
 
 // username: Hugsun
@@ -90,16 +91,21 @@ fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
         file.read_to_string(&mut contents);
         println!("contents: {}", contents);
 
-        let mut client = Client::new("http://localhost:4444")
-            .await
-            .unwrap_or_else(|err| panic!("Couldn't connect to webdriver! {}", err));
+        // let mut client = Client::new("http://localhost:4444")
+        //     .await
+        //     .expect("Couldn't connect to webdriver!");
 
-        while let Err(e) = login(&mut client).await {
+        let client = ClientBuilder::native()
+            .connect("http://localhost:4444")
+            .await
+            .expect("Couldn't connect to webdriver!");
+
+        while let Err(e) = login(&client).await {
             println!("login error: {:?}", e);
             sleep(Duration::from_secs(1));
         }
 
-        match solve_puzzle(&mut client, puzzle_id).await {
+        match solve_puzzle(&client, puzzle_id).await {
             Ok(_) => {}
             Err(e) => println!("solve puzzle error {:?}", e),
         }
@@ -109,7 +115,7 @@ fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
     return Ok(());
 }
 
-async fn login(client: &mut Client) -> Result<(), SolverError> {
+async fn login(client: &Client) -> Result<(), SolverError> {
     client
         .goto("http://www.robozzle.com/beta/index.html")
         .await?;
@@ -132,7 +138,7 @@ async fn login(client: &mut Client) -> Result<(), SolverError> {
     return Ok(());
 }
 
-async fn solve_puzzle(client: &mut Client, puzzle_id: u64) -> Result<(), SolverError> {
+async fn solve_puzzle(client: &Client, puzzle_id: u64) -> Result<(), SolverError> {
     let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
     url.push_str(puzzle_id.to_string().as_str());
     client.goto(url.as_str()).await?;

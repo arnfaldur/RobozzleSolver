@@ -16,7 +16,7 @@ use solver::{
     pruning::{banned_pair, banned_trio},
     solve,
 };
-use web::{encode_program, puzzle_from_string};
+use web::{encode_program, puzzle_from_string, start_web_solver};
 
 mod constants;
 mod game;
@@ -27,11 +27,11 @@ mod solver;
 mod web;
 
 fn main() {
-    //    start_web_solver(); return;
+    start_web_solver();
+    return;
     //    println!("sizes: {}", mem::size_of::<State>());
     //    println!("sizes: {}", mem::size_of::<Frame>());
     //    println!("sizes: {}", mem::size_of::<Source>());
-    //    return;
     let face = "{\"About\":\"face\",\"AllowedCommands\":\"0\",\"Colors\":[\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRBRRRBRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRGGGGGGGGRBR\",\"RRRRRRRRRRRRRRBR\",\"RRRRRRRRRRRRRRRR\",\"RRRRRRRRRRRRRRRR\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"10\",\"DifficultyVoteSum\":\"15\",\"Disliked\":\"8\",\"Featured\":\"false\",\"Id\":\"5088\",\"Items\":[\"################\",\"#######....#####\",\"####.....*..*###\",\"####.#*..#*...##\",\"###..########..#\",\"###.####.####..#\",\"##.*##########*#\",\"##.###########.#\",\"##.#.........#.#\",\"#..###########.#\",\"################\",\"################\"],\"Liked\":\"1\",\"RobotCol\":\"1\",\"RobotDir\":\"0\",\"RobotRow\":\"9\",\"Solutions\":\"47\",\"SubLengths\":[\"10\",\"10\",\"10\",\"10\",\"10\"],\"SubmittedBy\":\"oshabott59\",\"SubmittedDate\":\"2014-11-27T11:34:11.98\",\"Title\":\"Ionvoc6\"}";
     let ternary = "{\"About\":\"R=2, G=1, B=0. The most significant bit is the last one. Count green turns.\",\"AllowedCommands\":\"7\",\"Colors\":[\"RRRRRBBBBBBBBBBG\",\"RRRRRGRRRRRRRRRB\",\"BBBBBGBBBBBBBGRB\",\"BRRRRGRRRRRRRBRB\",\"RRGGRBRGGRBBRBRB\",\"BRBBRBRBBRRBRBRB\",\"GRGBBBBBGRRBRGRB\",\"BRRBRBRGBBBGRRRB\",\"BRRBRBRRRRRRRGRB\",\"GBBGRGBBBBBBBBRB\",\"RRRRRRRRRRRRRRRB\",\"BRGBGBBBBBBBBBBG\"],\"CommentCount\":\"0\",\"DifficultyVoteCount\":\"1\",\"DifficultyVoteSum\":\"5\",\"Disliked\":\"0\",\"Featured\":\"false\",\"Id\":\"10459\",\"Items\":[\"#####..........*\",\"#####*#########.\",\".....*.......*#.\",\"*####*#######.#.\",\"*#**#*#**#*.#.#.\",\"*#..#.#..##.#*#.\",\"*#*.....*##.#*#.\",\".##.#.#*...*#*#.\",\".##.#.#######*#.\",\"*..*#*........#.\",\"###############.\",\".****..........*\"],\"Liked\":\"0\",\"RobotCol\":\"0\",\"RobotDir\":\"0\",\"RobotRow\":\"11\",\"Solutions\":\"2\",\"SubLengths\":[\"5\",\"10\",\"10\",\"5\",\"0\"],\"SubmittedBy\":\"scorpio\",\"SubmittedDate\":\"2018-03-27T23:19:44.29\",\"Title\":\"Ternary (4 digits)\"}";
     let knot_3 = "{ \"About\": \"I spun the thread on the colors to mark the mid-points before warping it on left\", \"AllowedCommands\": \"0\", \"Colors\": [ \"RRRRRRRBBBBRBBBB\", \"RRBBBRRBRRRRRRRB\", \"RRBRRBRBRRRRRRRB\", \"RRBRRBRBRRRRRRRB\", \"RRBRRBRGRRRRRRRB\", \"RRGBBRBBBBBGRRRB\", \"RRBRBRGBBRRBRRRB\", \"RRBRBRRBRRRBRRRB\", \"RRBRGBBBBRRBRRRB\", \"RRBRRRRBRRRBRRRB\", \"RRRBBBBGBBBBRRRB\", \"RRRRBBBBBBBBBBBR\" ], \"CommentCount\": \"9\", \"DifficultyVoteCount\": \"2\", \"DifficultyVoteSum\": \"6\", \"Disliked\": \"0\", \"Featured\": \"false\", \"Id\": \"4426\", \"Items\": [ \"#######*********\", \"##****#*#######*\", \"##*##*#*#######*\", \"##*##*#*#######*\", \"##*#**#*#######*\", \"##***#******###*\", \"##*#*#***##*###*\", \"##*#*##*###*###*\", \"##*#******#*###*\", \"##**###*###*###*\", \"###*********###*\", \"####.***********\" ], \"Liked\": \"1\", \"RobotCol\": \"4\", \"RobotDir\": \"0\", \"RobotRow\": \"11\", \"Solutions\": \"6\", \"SubLengths\": [ \"5\", \"5\", \"5\", \"5\", \"5\" ], \"SubmittedBy\": \"shaggy12\", \"SubmittedDate\": \"2013-08-26T12:50:36.717\", \"Title\": \"Knot III\" }";
