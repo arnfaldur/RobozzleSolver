@@ -9,7 +9,7 @@ fn parse_json() {
 
 #[test]
 fn test_get_local_puzzle() {
-    get_local_puzzle(100);
+    get_local_level(100);
 }
 
 const LEVEL_JSON: &str = "{

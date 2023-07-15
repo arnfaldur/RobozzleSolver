@@ -83,10 +83,10 @@ pub fn solve_puzzles(puzzle_id: u64) -> Result<(), errors::SolverError> {
             )
             .await?;
 
-        while let Err(e) = login(&driver).await {
-            println!("login error: {:?}", e);
-            sleep(Duration::from_secs(1));
-        }
+        // while let Err(e) = login(&driver).await {
+        //     println!("login error: {:?}", e);
+        //     sleep(Duration::from_secs(1));
+        // }
 
         solve_puzzle(&driver, puzzle_id).await?;
         driver.quit().await
@@ -129,6 +129,8 @@ async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), errors::
     solutions.sort_unstable_by_key(|sol| sol.0);
     solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
     if let Some(solution) = solutions.pop() {
+        println!("Trying solution: {}", solution.1);
+        println!("that takes {} steps", solution.0);
         url.push_str("&program=");
         url.push_str(encode_program(&solution.1, &puzzle).as_str());
         driver.goto(url).await?;
@@ -150,7 +152,8 @@ async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), errors::
     return Ok(());
 }
 async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, errors::SolverError> {
-    if let Some(puzzle) = get_local_puzzle(puzzle_id) {
+    if let Some(level) = get_local_level(puzzle_id) {
+        let puzzle = level_to_puzzle(&level);
         println!("Found cached puzzle");
         println!("puzzle: {}", puzzle);
         Ok(puzzle)
@@ -173,18 +176,37 @@ async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, erro
     }
 }
 
-fn get_local_puzzle(puzzle_id: u64) -> Option<Puzzle> {
+fn get_local_level(puzzle_id: u64) -> Option<LevelJson> {
     let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
     path.push(puzzle_id.to_string());
     return File::options().read(true).open(path).ok().map(|mut file| {
         let mut string = String::new();
         file.read_to_string(&mut string);
         println!("level: {}", string);
-        return puzzle_from_string(&string);
+        let level_json: LevelJson = serde_json::from_str(&string).expect("couldn't read JSON");
+        return level_json;
     });
+}
 
-    //let mut file = File::create("data/solutions.txt")?;
-    //file.write_all(b"Hello, world!")?;
+pub fn get_all_local_levels() -> Vec<Level> {
+    let mut result = Vec::new();
+    for dir in std::fs::read_dir("data/puzzles").expect("unable to read puzzle directory") {
+        let path = dir.expect("unable to read dir").path();
+        let level_json = File::options()
+            .read(true)
+            .open(path)
+            .map(|mut file| {
+                let mut string = String::new();
+                file.read_to_string(&mut string);
+                let level_json: LevelJson =
+                    serde_json::from_str(&string).expect("couldn't read JSON");
+                return Level::from(level_json);
+            })
+            .expect("should be opening an existing file");
+        result.push(level_json);
+    }
+    result.sort_by_key(|lvl| lvl.id.clone());
+    return result;
 }
 
 fn store_puzzle_locally(json: &str, puzzle_id: u64) {
@@ -248,6 +270,42 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
             (mflags & 0b100) > 0,
         ],
     );
+}
+
+pub struct Level {
+    pub about: Value,
+    pub comment_count: String,
+    pub difficulty_vote_count: String,
+    pub difficulty_vote_sum: String,
+    pub disliked: String,
+    pub featured: String,
+    pub id: u64,
+    pub liked: String,
+    pub solutions: String,
+    pub submitted_by: String,
+    pub submitted_date: String,
+    pub title: String,
+    pub puzzle: Puzzle,
+}
+
+impl From<LevelJson> for Level {
+    fn from(value: LevelJson) -> Self {
+        Level {
+            puzzle: level_to_puzzle(&value),
+            about: value.About,
+            comment_count: value.CommentCount,
+            difficulty_vote_count: value.DifficultyVoteCount,
+            difficulty_vote_sum: value.DifficultyVoteSum,
+            disliked: value.Disliked,
+            featured: value.Featured,
+            id: value.Id.parse::<u64>().expect("puzzle id should be u64"),
+            liked: value.Liked,
+            solutions: value.Solutions,
+            submitted_by: value.SubmittedBy,
+            submitted_date: value.SubmittedDate,
+            title: value.Title,
+        }
+    }
 }
 
 // ---------------------------------------------------------------------------
