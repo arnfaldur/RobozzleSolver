@@ -20,55 +20,10 @@ use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile}
 use crate::solver::backtrack::backtrack;
 use tokio::io::AsyncRead;
 
+mod errors;
 #[cfg(test)]
 mod tests;
 
-#[derive(Debug)]
-pub enum SolverError {
-    Fantoccini(CmdError),
-    IOError(std::io::Error),
-    Error(String),
-    WebDriver(WebDriverError),
-}
-
-impl From<CmdError> for SolverError {
-    fn from(err: CmdError) -> Self {
-        SolverError::Fantoccini(err)
-    }
-}
-
-impl From<SolverError> for CmdError {
-    fn from(err: SolverError) -> Self {
-        match err {
-            SolverError::Fantoccini(e) => e,
-            _ => CmdError::InvalidArgument(
-                "Couldn't convert from Solver to Cmd error".to_string(),
-                "sorry".to_string(),
-            ),
-        }
-    }
-}
-impl From<SolverError> for WebDriverError {
-    fn from(value: SolverError) -> Self {
-        match value {
-            SolverError::WebDriver(err) => err,
-            _ => {
-                WebDriverError::CustomError("Couldn't convert from Solver to Cmd error".to_string())
-            }
-        }
-    }
-}
-impl From<std::io::Error> for SolverError {
-    fn from(err: std::io::Error) -> Self {
-        SolverError::IOError(err)
-    }
-}
-
-impl From<WebDriverError> for SolverError {
-    fn from(value: WebDriverError) -> Self {
-        SolverError::WebDriver(value)
-    }
-}
 struct Storage {
     solutions: Vec<Solution>,
 }
@@ -99,7 +54,7 @@ pub fn start_web_solver() {
 // username: Hugsun
 // password: 8r4WvSfxHGirMDxH6FBO
 
-pub fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
+pub fn solve_puzzles(puzzle_id: u64) -> Result<(), errors::SolverError> {
     let mut rt = Runtime::new()?;
     rt.block_on(async {
         //let mut file = File::create("data/solutions.txt")?;
@@ -139,7 +94,7 @@ pub fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
     return Ok(());
 }
 
-async fn login(driver: &WebDriver) -> Result<(), SolverError> {
+async fn login(driver: &WebDriver) -> Result<(), errors::SolverError> {
     driver
         .goto("http://www.robozzle.com/beta/index.html")
         .await?;
@@ -164,7 +119,7 @@ async fn login(driver: &WebDriver) -> Result<(), SolverError> {
 
     return Ok(());
 }
-async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), SolverError> {
+async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), errors::SolverError> {
     let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
     url.push_str(puzzle_id.to_string().as_str());
     driver.goto(url.as_str()).await?;
@@ -194,7 +149,7 @@ async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), SolverEr
     }
     return Ok(());
 }
-async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, SolverError> {
+async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, errors::SolverError> {
     if let Some(puzzle) = get_local_puzzle(puzzle_id) {
         println!("Found cached puzzle");
         println!("puzzle: {}", puzzle);
@@ -204,7 +159,9 @@ async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, Solv
         let json = driver.execute("return robozzle.level", vec![]).await?;
         let json = json.json();
         if let Value::Null = json {
-            return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
+            return Err(errors::SolverError::Error(
+                "Puzzle doesn't exist".to_string(),
+            ));
         }
         store_puzzle_locally(&json.to_string(), puzzle_id);
         println!("level: {}", json.to_string());
