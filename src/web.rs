@@ -16,6 +16,9 @@ use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile}
 use crate::solver::backtrack::backtrack;
 use tokio::io::AsyncRead;
 
+#[cfg(test)]
+mod tests;
+
 #[derive(Debug)]
 enum SolverError {
     Fantoccini(CmdError),
@@ -65,7 +68,11 @@ pub fn start_web_solver() {
     //     .spawn()
     //     .expect("unable to start geckodriver");
 
-    solve_puzzles(10459);
+    // ctrlc::set_handler(move || {
+    //     gecko.wait().expect("command wasn't running");
+    // });
+
+    solve_puzzles(81);
 
     // gecko.kill();
 }
@@ -148,8 +155,7 @@ async fn solve_puzzle(client: &Client, puzzle_id: u64) -> Result<(), SolverError
         return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
     }
     println!("level: {}", val.to_string());
-    let level_json: LevelJson =
-        serde_json::from_value(val).unwrap_or_else(|err| panic!("couldn't read JSON {}", err));
+    let level_json: LevelJson = serde_json::from_value(val).expect("couldn't read JSON");
     let puzzle = level_to_puzzle(&level_json);
     println!("puzzle: {}", puzzle);
     let mut solutions = backtrack(puzzle);
@@ -237,7 +243,7 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
 #[allow(non_snake_case)]
 #[derive(Serialize, Deserialize, Debug)]
 struct LevelJson {
-    About: String,
+    About: Value,
     AllowedCommands: String,
     Colors: Vec<String>,
     CommentCount: String,
@@ -257,60 +263,6 @@ struct LevelJson {
     SubmittedDate: String,
     Title: String,
 }
-
-const LEVEL_JSON: &str = "{
-\"About\": \"Collect starfruit! (See comments for hints - coming soon)\",
-\"AllowedCommands\": \"0\",
-\"Colors\": [
-\"RRRRRRRRRRRRRRRR\",
-\"RRRRRRGGGGRRRRRR\",
-\"RRRRRGGGGGGRRRRR\",
-\"RRRRRGGGGGGRRRRR\",
-\"RRRRRGGRRGGGGGRR\",
-\"RRRRRRGRRGGGGGGR\",
-\"RRGGGRRRRRGRGGGR\",
-\"RGGRRRRRRRRRRGGR\",
-\"RGGGGGGRRRGGGGGR\",
-\"RGGGGGRRRRRGGGRR\",
-\"RRGGGRRRRRRRRRRR\",
-\"BBBBBBBRRBBBBBBB\"
-],
-\"CommentCount\": \"0\",
-\"DifficultyVoteCount\": \"0\",
-\"DifficultyVoteSum\": \"0\",
-\"Disliked\": \"0\",
-\"Featured\": \"false\",
-\"Id\": \"1874\",
-\"Items\": [
-\"################\",
-\"######****######\",
-\"#####*....*#####\",
-\"#####*....*#####\",
-\"#####*....****##\",
-\"######*...*..**#\",
-\"##***##..#..*.*#\",
-\"#*............*#\",
-\"#*....*..#*...*#\",
-\"#*...*#..##***##\",
-\"##***##..#######\",
-\"...****.........\"
-],
-\"Liked\": \"0\",
-\"RobotCol\": \"8\",
-\"RobotDir\": \"0\",
-\"RobotRow\": \"3\",
-\"Solutions\": \"1\",
-\"SubLengths\": [
-\"10\",
-\"6\",
-\"4\",
-\"2\",
-\"0\"
-],
-\"SubmittedBy\": \"masterluk\",
-\"SubmittedDate\": \"2010-04-10T12:56:13.157\",
-\"Title\": \"Tree of Balance\"
-}";
 
 // ---------------------------------------------------------------------------
 
@@ -455,104 +407,3 @@ pub fn encode_program(program: &Source, puzzle: &Puzzle) -> String {
     encode_state.encode_bits(0, 5); // Flush
     return encode_state.output.clone();
 }
-
-//robozzle.decodeBits = function (decodeState, bits)
-//{
-//var val = 0;
-//for (var i = 0; i < bits; i + + ) {
-//if (decodeState.bits == 0) {
-//var c = decodeState.input.charCodeAt(decodeState.index);
-//decodeState.index + +;
-//if (c > = 97 & & c < 97 + 26) {
-//decodeState.val = c - 97;
-//} else if (c > = 65 & & c < 65 + 26) {
-//decodeState.val = c - 65 + 26;
-//} else if (c > = 48 & & c < 48 + 10) {
-//decodeState.val = c - 48 + 52;
-//} else if (c == 95) {
-//decodeState.val = 62;
-//} else if (c == 45) {
-//decodeState.val = 63;
-//} else {
-//decodeState.val = 0;
-//}
-//decodeState.bits = 6;
-//}
-//if (decodeState.val & (1 < < (6 - decodeState.bits))) {
-//val |= (1 < < i);
-//}
-//decodeState.bits - -;
-//}
-//return val;
-//};
-//
-//robozzle.decodeCommand = function (decodeState) {
-//var cond = robozzle.decodeBits(decodeState, 2);
-//switch (cond) {
-//case 1: cond = 'R'; break;
-//case 2: cond = 'G'; break;
-//case 3: cond = 'B'; break;
-//default: cond = null; break;
-//}
-//
-//var cmd = robozzle.decodeBits(decodeState, 3);
-//switch (cmd) {
-//case 1: cmd = 'f'; break;
-//case 2: cmd = 'l'; break;
-//case 3: cmd = 'r'; break;
-//case 4:
-//var subcmd = robozzle.decodeBits(decodeState, 3);
-//switch (subcmd) {
-//case 0: cmd = '1'; break;
-//case 1: cmd = '2'; break;
-//case 2: cmd = '3'; break;
-//case 3: cmd = '4'; break;
-//case 4: cmd = '5'; break;
-//default: cmd = null; break;
-//}
-//break;
-//case 5:
-//var subcmd = robozzle.decodeBits(decodeState, 2);
-//switch (subcmd) {
-//case 1: cmd = 'R'; break;
-//case 2: cmd = 'G'; break;
-//case 3: cmd = 'B'; break;
-//default: cmd = null; break;
-//}
-//break;
-//default: cmd = null; break;
-//}
-//
-//return [ cond, cmd ];
-//};
-//
-//robozzle.decodeProgram = function (input) {
-//if ( ! input) {
-//return null;
-//}
-//
-//var decodeState = {
-//input: input,
-//index: 0,
-//val: 0,
-//bits: 0
-//};
-//
-//var version = robozzle.decodeBits(decodeState, 3);
-//if (version != 0) {
-//return null;
-//}
-//
-//var program = [];
-//var length = robozzle.decodeBits(decodeState, 3);
-//for (var j = 0; j < length; j+ + ) {
-//var sub = [];
-//var sublen = robozzle.decodeBits(decodeState, 4);
-//for (var i = 0; i < sublen; i+ + ) {
-//sub.push(robozzle.decodeCommand(decodeState));
-//}
-//program.push(sub);
-//}
-//
-//return program;
-//};
