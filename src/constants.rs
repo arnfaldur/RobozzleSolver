@@ -95,6 +95,47 @@ pub(crate) const PUZZLE_NULL: Puzzle = Puzzle {
     blue: false,
 };
 
+const RAND_FUNCS: [Method; 9] = [
+    [F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
+    [
+        FORWARD, GREEN_F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT,
+    ],
+    [LEFT, RED_F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
+    [RIGHT, F1, HALT, HALT, HALT, HALT, HALT, HALT, HALT, HALT],
+    [
+        FORWARD, FORWARD, FORWARD, RIGHT, FORWARD, MARK_GRAY, FORWARD, MARK_RED, FORWARD, FORWARD,
+    ],
+    [
+        MARK_GREEN, FORWARD, FORWARD, RIGHT, FORWARD, MARK_GRAY, FORWARD, MARK_RED, FORWARD,
+        FORWARD,
+    ],
+    [
+        RED_RIGHT,
+        GREEN_LEFT,
+        FORWARD,
+        GREEN_RIGHT,
+        GREEN_LEFT,
+        FORWARD,
+        RED_RIGHT,
+        GREEN_LEFT,
+        FORWARD,
+        HALT,
+    ],
+    [
+        RED_RIGHT,
+        GREEN_LEFT,
+        FORWARD,
+        GREEN_RIGHT,
+        GREEN_LEFT,
+        FORWARD,
+        RED_RIGHT,
+        GREEN_LEFT,
+        FORWARD,
+        MARK_GREEN,
+    ],
+    [HALT; 10],
+];
+
 pub(crate) const PUZZLE_42: Puzzle = Puzzle {
     map: [
         [
