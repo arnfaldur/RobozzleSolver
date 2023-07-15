@@ -45,7 +45,7 @@ fn main() {
         Some(("web", sub_matches)) => match sub_matches.subcommand() {
             Some(("solve", sub_matches)) => {
                 let puzzle_id = *sub_matches.get_one::<i64>("puzzle ID").expect("required");
-                solve_puzzles(puzzle_id as u64);
+                solve_puzzles(puzzle_id as u64).expect("couldn't solve puzzle");
             }
             _ => todo!(),
         },

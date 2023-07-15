@@ -22,11 +22,11 @@ statrs = "*"
 once_cell = "*"
 crossbeam-channel = "*"
 webdriver = "*"
-fantoccini = "*"
 tokio = {version = "*", features = ["rt-multi-thread"]}
 serde = {version = "*", features = ["derive"]}
 serde_json = "*"
 clap = "*"
+thirtyfour = "0.31.0"
 
 
 # colored = "1.8.0"

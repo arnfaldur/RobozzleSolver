@@ -6,10 +6,12 @@ use std::str::FromStr;
 use std::thread::sleep;
 use std::time::Duration;
 
-use fantoccini::ClientBuilder;
-use fantoccini::{error::CmdError, Client, Locator};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
+use thirtyfour::extensions::addons::firefox::FirefoxTools;
+use thirtyfour::extensions::query::conditions;
+use thirtyfour::fantoccini::error::CmdError;
+use thirtyfour::prelude::*;
 use tokio::runtime::Runtime;
 use webdriver::common::LocatorStrategy::CSSSelector;
 
@@ -26,6 +28,7 @@ pub enum SolverError {
     Fantoccini(CmdError),
     IOError(std::io::Error),
     Error(String),
+    WebDriver(WebDriverError),
 }
 
 impl From<CmdError> for SolverError {
@@ -45,13 +48,27 @@ impl From<SolverError> for CmdError {
         }
     }
 }
-
+impl From<SolverError> for WebDriverError {
+    fn from(value: SolverError) -> Self {
+        match value {
+            SolverError::WebDriver(err) => err,
+            _ => {
+                WebDriverError::CustomError("Couldn't convert from Solver to Cmd error".to_string())
+            }
+        }
+    }
+}
 impl From<std::io::Error> for SolverError {
     fn from(err: std::io::Error) -> Self {
         SolverError::IOError(err)
     }
 }
 
+impl From<WebDriverError> for SolverError {
+    fn from(value: WebDriverError) -> Self {
+        SolverError::WebDriver(value)
+    }
+}
 struct Storage {
     solutions: Vec<Solution>,
 }
@@ -88,100 +105,115 @@ pub fn solve_puzzles(puzzle_id: u64) -> Result<(), SolverError> {
         //let mut file = File::create("data/solutions.txt")?;
         //file.write_all(b"Hello, world!")?;
 
-        let mut file = match File::open("data/solutions.txt") {
-            Err(e) => match File::create("data/solutions.txt") {
-                Err(e) => panic!("Unable to create missing file data/solutions.txt"),
-                Ok(file) => file,
-            },
-            Ok(file) => file,
-        };
+        let mut file = File::options()
+            .write(true)
+            .create(true)
+            .open("data/solutions.txt")
+            .expect("unable to open/create solutions file");
 
         let mut contents = String::new();
         file.read_to_string(&mut contents);
         println!("contents: {}", contents);
 
-        let client = ClientBuilder::native()
-            .connect("http://localhost:4444")
-            .await
-            .expect("Couldn't connect to webdriver!");
+        let caps = DesiredCapabilities::firefox();
+        let driver = WebDriver::new("http://localhost:4444", caps).await?;
+        let tools = FirefoxTools::new(driver.handle.clone());
+        tools
+            .install_addon(
+                std::fs::canonicalize("data/uBlock0_1.50.0.firefox.signed.xpi")
+                    .expect("unable to canonicalize addon path")
+                    .to_str()
+                    .unwrap(),
+                Some(true),
+            )
+            .await?;
 
-        // while let Err(e) = login(&client).await {
-        //     println!("login error: {:?}", e);
-        //     sleep(Duration::from_secs(1));
-        // }
-
-        match solve_puzzle(&client, puzzle_id).await {
-            Ok(_) => {}
-            Err(e) => println!("solve puzzle error {:?}", e),
+        while let Err(e) = login(&driver).await {
+            println!("login error: {:?}", e);
+            sleep(Duration::from_secs(1));
         }
 
-        client.close().await
+        solve_puzzle(&driver, puzzle_id).await?;
+        driver.quit().await
     })?;
     return Ok(());
 }
 
-async fn login(client: &Client) -> Result<(), SolverError> {
-    client
+async fn login(driver: &WebDriver) -> Result<(), SolverError> {
+    driver
         .goto("http://www.robozzle.com/beta/index.html")
         .await?;
-    client
-        .find(Locator::Css("#menu-signin"))
+    driver.find(By::Id("menu-signin")).await?.click().await?;
+
+    driver
+        .find(By::Id("dialog-signin"))
         .await?
-        .click()
+        .wait_until()
+        .condition(conditions::element_is_displayed(false))
         .await?;
 
-    let mut signin_form = client.form(Locator::Css("#dialog-signin")).await?;
+    let mut signin_form = driver.form(By::Id("dialog-signin")).await?;
     signin_form.set_by_name("name", "Hugsun").await?;
-    sleep(Duration::from_millis(1500));
+    sleep(Duration::from_millis(500));
     signin_form
         .set_by_name("password", "8r4WvSfxHGirMDxH6FBO")
         .await?;
-    sleep(Duration::from_millis(1500));
+    sleep(Duration::from_millis(500));
     signin_form.submit().await?;
-    sleep(Duration::from_millis(1500));
+    sleep(Duration::from_millis(500));
 
     return Ok(());
 }
-
-async fn solve_puzzle(client: &Client, puzzle_id: u64) -> Result<(), SolverError> {
+async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), SolverError> {
     let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
     url.push_str(puzzle_id.to_string().as_str());
-    client.goto(url.as_str()).await?;
+    driver.goto(url.as_str()).await?;
 
-    let puzzle = fetch_puzzle(client, puzzle_id).await?;
+    let puzzle = fetch_puzzle(driver, puzzle_id).await?;
     let mut solutions = backtrack(puzzle);
     solutions.sort_unstable_by_key(|sol| sol.0);
     solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
     if let Some(solution) = solutions.pop() {
         url.push_str("&program=");
         url.push_str(encode_program(&solution.1, &puzzle).as_str());
-        client.goto(url.as_ref()).await?;
-        client
+        driver.goto(url).await?;
+
+        driver
             .execute("$('#program-speed')[0].value = '10'", vec![])
             .await?;
-        client
+        driver
             .execute("$('#program-speed').trigger('change')", vec![])
             .await?;
-        client
-            .find(Locator::Css("#program-go"))
+        driver.find(By::Id("program-go")).await?.click().await?;
+        driver
+            .find(By::Id("dialog-solved"))
             .await?
-            .click()
-            .await?;
-        // can't seem to control where to click or drag
-        // client.find(Locator::Css("#program-speed")).await?.click().await?;
-        while match client
-            .find(Locator::Id("dialog-solved"))
+            .wait_until()
+            .condition(conditions::element_is_displayed(true))
             .await?
-            .attr("style")
-            .await?
-        {
-            None => true,
-            Some(attribute) => attribute.eq("display: none;"),
-        } {
-            sleep(Duration::from_millis(100));
-        }
     }
     return Ok(());
+}
+async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, SolverError> {
+    if let Some(puzzle) = get_local_puzzle(puzzle_id) {
+        println!("Found cached puzzle");
+        println!("puzzle: {}", puzzle);
+        Ok(puzzle)
+    } else {
+        println!("Fetching puzzle");
+        let json = driver.execute("return robozzle.level", vec![]).await?;
+        let json = json.json();
+        if let Value::Null = json {
+            return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
+        }
+        store_puzzle_locally(&json.to_string(), puzzle_id);
+        println!("level: {}", json.to_string());
+        let level_json: LevelJson =
+            serde_json::from_value(json.clone()).expect("couldn't read JSON");
+        let puzzle = level_to_puzzle(&level_json);
+        println!("puzzle: {}", puzzle);
+        Ok(puzzle)
+    }
 }
 
 fn get_local_puzzle(puzzle_id: u64) -> Option<Puzzle> {
@@ -208,26 +240,6 @@ fn store_puzzle_locally(json: &str, puzzle_id: u64) {
         .expect("unable to open puzzle file");
     file.write_all(json.as_bytes())
         .expect("unable to write puzzle json to file");
-}
-
-async fn fetch_puzzle(client: &Client, puzzle_id: u64) -> Result<Puzzle, SolverError> {
-    if let Some(puzzle) = get_local_puzzle(puzzle_id) {
-        println!("Found cached puzzle");
-        println!("puzzle: {}", puzzle);
-        Ok(puzzle)
-    } else {
-        println!("Fetching puzzle");
-        let json = client.execute("return robozzle.level", vec![]).await?;
-        if let Value::Null = json {
-            return Err(SolverError::Error("Puzzle doesn't exist".to_string()));
-        }
-        store_puzzle_locally(&json.to_string(), puzzle_id);
-        println!("level: {}", json.to_string());
-        let level_json: LevelJson = serde_json::from_value(json).expect("couldn't read JSON");
-        let puzzle = level_to_puzzle(&level_json);
-        println!("puzzle: {}", puzzle);
-        Ok(puzzle)
-    }
 }
 
 pub fn puzzle_from_string(string: &str) -> Puzzle {
