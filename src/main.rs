@@ -10,7 +10,8 @@ use std::collections::{HashMap, HashSet};
 use std::time::{Duration, Instant};
 
 use crate::solver::carlo::{score, score_cmp};
-use clap::{Arg, Command};
+use crate::web::just_fetch_many_levels;
+use clap::{Arg, ArgAction, Command};
 use constants::*;
 use game::{instructions::*, *};
 use solver::{
@@ -18,7 +19,8 @@ use solver::{
     solve,
 };
 use web::{
-    encode_program, get_all_local_levels, puzzle_from_string, solve_puzzles, start_web_solver,
+    encode_program, get_all_local_levels, just_fetch_level, puzzle_from_string, solve_puzzles,
+    start_web_solver,
 };
 
 mod constants;
@@ -39,7 +41,13 @@ fn cli() -> Command {
                 .subcommand(
                     Command::new("fetch")
                         .arg_required_else_help(true)
-                        .arg(Arg::new("puzzle ID").value_parser(0..20000)),
+                        .arg(Arg::new("puzzle ID").num_args(1..=2).value_parser(0..20000))
+                        .arg(
+                            Arg::new("long")
+                                .long("long")
+                                .short('l')
+                                .action(ArgAction::SetTrue),
+                        ),
                 )
                 .subcommand(
                     Command::new("solve")
@@ -50,7 +58,14 @@ fn cli() -> Command {
         .subcommand(
             Command::new("puzzles")
                 .subcommand_required(true)
-                .subcommand(Command::new("list")),
+                .subcommand(
+                    Command::new("list").arg(
+                        Arg::new("long")
+                            .long("long")
+                            .short('l')
+                            .action(ArgAction::SetTrue),
+                    ),
+                ),
         )
 }
 
@@ -62,17 +77,43 @@ fn main() {
                 solve_puzzles(puzzle_id as u64).expect("couldn't solve puzzle");
             }
             Some(("fetch", matches)) => {
-                let puzzle_id = *matches.get_one::<i64>("puzzle ID").expect("required");
-                todo!();
+                let first_puzzle_id = *matches.get_one::<i64>("puzzle ID").expect("required");
+                let puzzle_id_range: Vec<i64> = matches
+                    .get_many("puzzle ID")
+                    .expect("required")
+                    .copied()
+                    .collect();
+                if puzzle_id_range.len() == 1 {
+                    let level = just_fetch_level(puzzle_id_range[0] as u64)
+                        .expect("unable to fetch puzzle data");
+                    println!("Id: {:<5} Title: {}", level.id, level.title);
+                    if matches.get_flag("long") {
+                        println!("{}", level.puzzle);
+                    }
+                } else if puzzle_id_range.len() == 2 && puzzle_id_range[0] < puzzle_id_range[1] {
+                    let levels = just_fetch_many_levels(
+                        (puzzle_id_range[0] as u64)..=(puzzle_id_range[1] as u64),
+                    )
+                    .expect("unable to fetch puzzle data");
+                    for level in levels {
+                        println!("Id: {:<5} Title: {}", level.id, level.title);
+                        if matches.get_flag("long") {
+                            println!("{}", level.puzzle);
+                        }
+                    }
+                } else {
+                    panic!("incorrect arguments puzzle range {:?}", puzzle_id_range);
+                }
             }
             _ => todo!(),
         },
         Some(("puzzles", matches)) => match matches.subcommand() {
             Some(("list", matches)) => {
                 for level in get_all_local_levels() {
-                    println!("Id: {}", level.id);
-                    println!("Title: {}", level.title);
-                    println!("{}", level.puzzle);
+                    println!("Id: {:<5} Title: {}", level.id, level.title);
+                    if matches.get_flag("long") {
+                        println!("{}", level.puzzle);
+                    }
                 }
                 return;
 

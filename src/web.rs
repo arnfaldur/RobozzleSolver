@@ -1,5 +1,6 @@
 use std::fs::File;
 use std::io::{prelude::*, Write};
+use std::ops::{Range, RangeInclusive};
 use std::path::{Path, PathBuf};
 use std::process::{Command, Stdio};
 use std::str::FromStr;
@@ -19,6 +20,8 @@ use crate::constants::*;
 use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
 use crate::solver::backtrack::backtrack;
 use tokio::io::AsyncRead;
+
+use self::errors::SolverError;
 
 mod errors;
 #[cfg(test)]
@@ -55,10 +58,10 @@ pub fn start_web_solver() {
 // password: 8r4WvSfxHGirMDxH6FBO
 
 pub fn solve_puzzles(puzzle_id: u64) -> Result<(), errors::SolverError> {
-    let mut rt = Runtime::new()?;
+    let mut rt = Runtime::new().unwrap();
     rt.block_on(async {
-        //let mut file = File::create("data/solutions.txt")?;
-        //file.write_all(b"Hello, world!")?;
+        //let mut file = File::create("data/solutions.txt").unwrap();
+        //file.write_all(b"Hello, world!").unwrap();
 
         let mut file = File::options()
             .write(true)
@@ -70,61 +73,120 @@ pub fn solve_puzzles(puzzle_id: u64) -> Result<(), errors::SolverError> {
         file.read_to_string(&mut contents);
         println!("contents: {}", contents);
 
-        let caps = DesiredCapabilities::firefox();
-        let driver = WebDriver::new("http://localhost:4444", caps).await?;
-        let tools = FirefoxTools::new(driver.handle.clone());
-        tools
-            .install_addon(
-                std::fs::canonicalize("data/uBlock0_1.50.0.firefox.signed.xpi")
-                    .expect("unable to canonicalize addon path")
-                    .to_str()
-                    .unwrap(),
-                Some(true),
-            )
-            .await?;
+        let driver = get_driver().await.unwrap();
 
         // while let Err(e) = login(&driver).await {
         //     println!("login error: {:?}", e);
         //     sleep(Duration::from_secs(1));
         // }
 
-        solve_puzzle(&driver, puzzle_id).await?;
+        solve_puzzle(&driver, puzzle_id).await.unwrap();
         driver.quit().await
-    })?;
+    })
+    .unwrap();
     return Ok(());
+}
+pub fn just_fetch_level(puzzle_id: u64) -> Result<Level, errors::SolverError> {
+    if let Some(level_json) = get_local_level(puzzle_id) {
+        println!("Found cached puzzle {}", puzzle_id);
+        Ok(Level::from(level_json))
+    } else {
+        let mut rt = Runtime::new().unwrap();
+        return rt.block_on(async {
+            let driver = get_driver().await.unwrap();
+            goto_puzzle_url(puzzle_id, &driver).await;
+            let level_json = fetch_level_json(&driver, puzzle_id).await.unwrap();
+            driver.quit().await.unwrap();
+            Ok(Level::from(level_json))
+        });
+    }
+}
+
+pub fn just_fetch_many_levels(
+    puzzle_id_range: RangeInclusive<u64>,
+) -> Result<Vec<Level>, errors::SolverError> {
+    let mut result = Vec::new();
+    let mut last_standing = 0;
+    for puzzle_id in puzzle_id_range.clone() {
+        if let Some(level_json) = get_local_level(puzzle_id) {
+            println!("Found cached puzzle {}", puzzle_id);
+            result.push(Level::from(level_json));
+        } else {
+            last_standing = puzzle_id;
+            break;
+        }
+    }
+    if last_standing > 0 {
+        let mut rt = Runtime::new().unwrap();
+        rt.block_on(async {
+            let driver = get_driver().await.unwrap();
+            let level_jsons =
+                fetch_many_levels_json(&driver, last_standing..=(puzzle_id_range.last().unwrap()))
+                    .await
+                    .unwrap();
+            driver.quit().await.unwrap();
+            result.append(&mut level_jsons.into_iter().map(Level::from).collect());
+        });
+    }
+    return Ok(result);
+}
+
+async fn get_driver() -> Result<WebDriver, errors::SolverError> {
+    let caps = DesiredCapabilities::firefox();
+    let driver = WebDriver::new("http://localhost:4444", caps).await.unwrap();
+    let tools = FirefoxTools::new(driver.handle.clone());
+    tools
+        .install_addon(
+            std::fs::canonicalize("data/uBlock0_1.50.0.firefox.signed.xpi")
+                .expect("unable to canonicalize addon path")
+                .to_str()
+                .unwrap(),
+            Some(true),
+        )
+        .await
+        .unwrap();
+    Ok(driver)
 }
 
 async fn login(driver: &WebDriver) -> Result<(), errors::SolverError> {
     driver
         .goto("http://www.robozzle.com/beta/index.html")
-        .await?;
-    driver.find(By::Id("menu-signin")).await?.click().await?;
+        .await
+        .unwrap();
+    driver
+        .find(By::Id("menu-signin"))
+        .await
+        .unwrap()
+        .click()
+        .await
+        .unwrap();
 
     driver
         .find(By::Id("dialog-signin"))
-        .await?
+        .await
+        .unwrap()
         .wait_until()
         .condition(conditions::element_is_displayed(false))
-        .await?;
+        .await
+        .unwrap();
 
-    let mut signin_form = driver.form(By::Id("dialog-signin")).await?;
-    signin_form.set_by_name("name", "Hugsun").await?;
+    let mut signin_form = driver.form(By::Id("dialog-signin")).await.unwrap();
+    signin_form.set_by_name("name", "Hugsun").await.unwrap();
     sleep(Duration::from_millis(500));
     signin_form
         .set_by_name("password", "8r4WvSfxHGirMDxH6FBO")
-        .await?;
+        .await
+        .unwrap();
     sleep(Duration::from_millis(500));
-    signin_form.submit().await?;
+    signin_form.submit().await.unwrap();
     sleep(Duration::from_millis(500));
 
     return Ok(());
 }
 async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), errors::SolverError> {
-    let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
-    url.push_str(puzzle_id.to_string().as_str());
-    driver.goto(url.as_str()).await?;
+    let mut url = goto_puzzle_url(puzzle_id, driver).await;
 
-    let puzzle = fetch_puzzle(driver, puzzle_id).await?;
+    let puzzle = fetch_puzzle(driver, puzzle_id).await;
     let mut solutions = backtrack(puzzle);
     solutions.sort_unstable_by_key(|sol| sol.0);
     solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
@@ -133,59 +195,146 @@ async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), errors::
         println!("that takes {} steps", solution.0);
         url.push_str("&program=");
         url.push_str(encode_program(&solution.1, &puzzle).as_str());
-        driver.goto(url).await?;
+        driver.goto(url).await.unwrap();
 
         driver
             .execute("$('#program-speed')[0].value = '10'", vec![])
-            .await?;
+            .await
+            .unwrap();
         driver
             .execute("$('#program-speed').trigger('change')", vec![])
-            .await?;
-        driver.find(By::Id("program-go")).await?.click().await?;
+            .await
+            .unwrap();
+        driver
+            .find(By::Id("program-go"))
+            .await
+            .unwrap()
+            .click()
+            .await
+            .unwrap();
         driver
             .find(By::Id("dialog-solved"))
-            .await?
+            .await
+            .unwrap()
             .wait_until()
             .condition(conditions::element_is_displayed(true))
-            .await?
+            .await
+            .unwrap()
     }
     return Ok(());
 }
-async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<Puzzle, errors::SolverError> {
-    if let Some(level) = get_local_level(puzzle_id) {
-        let puzzle = level_to_puzzle(&level);
-        println!("Found cached puzzle");
-        println!("puzzle: {}", puzzle);
-        Ok(puzzle)
+async fn goto_puzzle_url(puzzle_id: u64, driver: &WebDriver) -> String {
+    let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
+    url.push_str(puzzle_id.to_string().as_str());
+    driver.goto(url.as_str()).await.unwrap();
+    url
+}
+async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Puzzle {
+    level_json_to_puzzle(&fetch_level_json(driver, puzzle_id).await.unwrap())
+}
+async fn fetch_many_levels_json(
+    driver: &WebDriver,
+    puzzle_id_range: RangeInclusive<u64>,
+) -> Result<Vec<LevelJson>, errors::SolverError> {
+    let mut result = Vec::new();
+    let mut url = "http://www.robozzle.com/beta/index.html".to_string();
+    driver.goto(url.as_str()).await.unwrap();
+    // Disable top solver fetching
+    let json = driver
+        .execute("robozzle.topSolvers = () => {};", vec![])
+        .await
+        .unwrap();
+    for puzzle_id in puzzle_id_range {
+        if let Some(level_json) = get_local_level(puzzle_id) {
+            println!("Found cached puzzle {}", puzzle_id);
+            result.push(level_json);
+        } else {
+            println!("Fetching puzzle");
+            // switch to different level
+            let json = driver
+                .execute_async(
+                    &format!(
+                        "
+                        let done = arguments[0];
+                        robozzle.service('GetLevel',
+                        {{levelId: {}}},
+                        function (result, response) {{
+                            done(response.GetLevelResult);
+                        }});",
+                        puzzle_id
+                    ),
+                    Vec::new(),
+                )
+                .await
+                .unwrap();
+            let json = json.json();
+            store_puzzle_locally(&json.to_string(), puzzle_id);
+            println!("level: {}", json.to_string());
+            serde_json::from_value(json.clone())
+                .map_err(|err| {
+                    eprintln!(
+                        "Error {}: failed to deserialize puzzle {} JSON {}",
+                        err,
+                        puzzle_id,
+                        json.clone()
+                    );
+                })
+                .ok()
+                .map(|level_json: LevelJson| {
+                    result.push(level_json);
+                });
+        }
+    }
+    return Ok(result);
+}
+
+async fn fetch_level_json(driver: &WebDriver, puzzle_id: u64) -> Option<LevelJson> {
+    if let Some(level_json) = get_local_level(puzzle_id) {
+        println!("Found cached puzzle {}", puzzle_id);
+        Some(level_json)
     } else {
         println!("Fetching puzzle");
-        let json = driver.execute("return robozzle.level", vec![]).await?;
+        let json = driver
+            .execute("return robozzle.level", vec![])
+            .await
+            .unwrap();
         let json = json.json();
-        if let Value::Null = json {
-            return Err(errors::SolverError::Error(
-                "Puzzle doesn't exist".to_string(),
-            ));
-        }
         store_puzzle_locally(&json.to_string(), puzzle_id);
         println!("level: {}", json.to_string());
-        let level_json: LevelJson =
-            serde_json::from_value(json.clone()).expect("couldn't read JSON");
-        let puzzle = level_to_puzzle(&level_json);
-        println!("puzzle: {}", puzzle);
-        Ok(puzzle)
+        return serde_json::from_value(json.clone())
+            .map_err(|err| {
+                eprintln!(
+                    "Error {}: failed to deserialize puzzle {} JSON {}",
+                    err,
+                    puzzle_id,
+                    json.clone()
+                );
+            })
+            .ok();
     }
 }
 
 fn get_local_level(puzzle_id: u64) -> Option<LevelJson> {
     let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
     path.push(puzzle_id.to_string());
-    return File::options().read(true).open(path).ok().map(|mut file| {
-        let mut string = String::new();
-        file.read_to_string(&mut string);
-        println!("level: {}", string);
-        let level_json: LevelJson = serde_json::from_str(&string).expect("couldn't read JSON");
-        return level_json;
-    });
+    return File::options()
+        .read(true)
+        .open(path)
+        .ok()
+        .and_then(|mut file| {
+            let mut string = String::new();
+            file.read_to_string(&mut string);
+            return serde_json::from_str(&string)
+                .map_err(|err| {
+                    eprintln!(
+                        "Error {}: failed to deserialize puzzle {} JSON {}",
+                        err,
+                        puzzle_id,
+                        string.clone()
+                    );
+                })
+                .ok();
+        });
 }
 
 pub fn get_all_local_levels() -> Vec<Level> {
@@ -199,7 +348,7 @@ pub fn get_all_local_levels() -> Vec<Level> {
                 let mut string = String::new();
                 file.read_to_string(&mut string);
                 let level_json: LevelJson =
-                    serde_json::from_str(&string).expect("couldn't read JSON");
+                    serde_json::from_str(&string).expect("couldn't deserialize JSON");
                 return Level::from(level_json);
             })
             .expect("should be opening an existing file");
@@ -212,26 +361,33 @@ pub fn get_all_local_levels() -> Vec<Level> {
 fn store_puzzle_locally(json: &str, puzzle_id: u64) {
     let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
     path.push(puzzle_id.to_string());
-    let mut file = File::options()
+    File::options()
         .write(true)
         .create_new(true)
         .open(path)
-        .expect("unable to open puzzle file");
-    file.write_all(json.as_bytes())
-        .expect("unable to write puzzle json to file");
+        .map_err(|err| {
+            eprintln!(
+                "unable to store puzzle {} locally.\nerror: {}\ndata: {}",
+                puzzle_id, err, json
+            );
+        })
+        .map(|mut file| {
+            file.write_all(json.as_bytes())
+                .expect("unable to write puzzle json to file");
+        });
 }
 
 pub fn puzzle_from_string(string: &str) -> Puzzle {
     let level_json: LevelJson = serde_json::from_str(string)
         .unwrap_or_else(|err| panic!("couldn't read JSON: {}\n error: {}", string, err));
-    return level_to_puzzle(&level_json);
+    return level_json_to_puzzle(&level_json);
 }
 
-fn level_to_puzzle(level: &LevelJson) -> Puzzle {
+fn level_json_to_puzzle(level_json: &LevelJson) -> Puzzle {
     let mut map = PUZZLE_NULL.map.clone();
     for y in 0..12 {
-        let mut cols = level.Colors[y].chars();
-        let mut tems = level.Items[y].chars();
+        let mut cols = level_json.Colors[y].chars();
+        let mut tems = level_json.Items[y].chars();
         for x in 0..16 {
             let color = match cols.next().unwrap_or(' ') {
                 'R' => RE,
@@ -246,7 +402,7 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
             }
         }
     }
-    let direction = match level.RobotDir.chars().next().unwrap_or(' ') {
+    let direction = match level_json.RobotDir.chars().next().unwrap_or(' ') {
         '0' => Direction::Right,
         '1' => Direction::Down,
         '2' => Direction::Left,
@@ -255,14 +411,14 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
     };
     let mut methods = [0; 5];
     for m in 0..5 {
-        methods[m] = level.SubLengths[m].parse().unwrap();
+        methods[m] = level_json.SubLengths[m].parse().unwrap();
     }
-    let mflags: u8 = level.AllowedCommands.parse().unwrap();
+    let mflags: u8 = level_json.AllowedCommands.parse().unwrap();
     return make_puzzle(
         map,
         direction,
-        level.RobotCol.parse::<usize>().unwrap() + 1,
-        level.RobotRow.parse::<usize>().unwrap() + 1,
+        level_json.RobotCol.parse::<usize>().unwrap() + 1,
+        level_json.RobotRow.parse::<usize>().unwrap() + 1,
         methods,
         [
             (mflags & 0b1) > 0,
@@ -274,15 +430,15 @@ fn level_to_puzzle(level: &LevelJson) -> Puzzle {
 
 pub struct Level {
     pub about: Value,
-    pub comment_count: String,
-    pub difficulty_vote_count: String,
-    pub difficulty_vote_sum: String,
-    pub disliked: String,
-    pub featured: String,
+    pub comment_count: u64,
+    pub difficulty_vote_count: u64,
+    pub difficulty_vote_sum: u64,
+    pub dislikes: u64,
+    pub featured: bool,
     pub id: u64,
-    pub liked: String,
-    pub solutions: String,
-    pub submitted_by: String,
+    pub likes: u64,
+    pub solution_count: u64,
+    pub submitted_by: Option<String>,
     pub submitted_date: String,
     pub title: String,
     pub puzzle: Puzzle,
@@ -291,16 +447,34 @@ pub struct Level {
 impl From<LevelJson> for Level {
     fn from(value: LevelJson) -> Self {
         Level {
-            puzzle: level_to_puzzle(&value),
+            puzzle: level_json_to_puzzle(&value),
             about: value.About,
-            comment_count: value.CommentCount,
-            difficulty_vote_count: value.DifficultyVoteCount,
-            difficulty_vote_sum: value.DifficultyVoteSum,
-            disliked: value.Disliked,
-            featured: value.Featured,
+            comment_count: value
+                .CommentCount
+                .parse::<u64>()
+                .expect("comment count should be u64"),
+            difficulty_vote_count: value
+                .DifficultyVoteCount
+                .parse::<u64>()
+                .expect("difficulty vote count should be u64"),
+            difficulty_vote_sum: value
+                .DifficultyVoteSum
+                .parse::<u64>()
+                .expect("difficulty vote sum should be u64"),
+            dislikes: value
+                .Disliked
+                .parse::<u64>()
+                .expect("dislikes should be u64"),
+            featured: value
+                .Featured
+                .parse::<bool>()
+                .expect("featured should be a boolean"),
             id: value.Id.parse::<u64>().expect("puzzle id should be u64"),
-            liked: value.Liked,
-            solutions: value.Solutions,
+            likes: value.Liked.parse::<u64>().expect("likes should be u64"),
+            solution_count: value
+                .Solutions
+                .parse::<u64>()
+                .expect("solution count should be u64"),
             submitted_by: value.SubmittedBy,
             submitted_date: value.SubmittedDate,
             title: value.Title,
@@ -311,7 +485,7 @@ impl From<LevelJson> for Level {
 // ---------------------------------------------------------------------------
 #[allow(non_snake_case)]
 #[derive(Serialize, Deserialize, Debug)]
-struct LevelJson {
+pub struct LevelJson {
     About: Value,
     AllowedCommands: String,
     Colors: Vec<String>,
@@ -328,7 +502,7 @@ struct LevelJson {
     RobotRow: String,
     Solutions: String,
     SubLengths: Vec<String>,
-    SubmittedBy: String,
+    SubmittedBy: Option<String>,
     SubmittedDate: String,
     Title: String,
 }
