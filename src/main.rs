@@ -18,10 +18,7 @@ use solver::{
     pruning::{banned_pair, banned_trio},
     solve,
 };
-use web::{
-    encode_program, get_all_local_levels, just_fetch_level, puzzle_from_string, solve_puzzles,
-    start_web_solver,
-};
+use web::{encode_program, get_all_local_levels, get_level, puzzle_from_string, solve_puzzle};
 
 mod constants;
 mod game;
@@ -74,7 +71,7 @@ fn main() {
         Some(("web", matches)) => match matches.subcommand() {
             Some(("solve", matches)) => {
                 let puzzle_id = *matches.get_one::<i64>("puzzle ID").expect("required");
-                solve_puzzles(puzzle_id as u64).expect("couldn't solve puzzle");
+                solve_puzzle(puzzle_id as u64, false).expect("couldn't solve puzzle");
             }
             Some(("fetch", matches)) => {
                 let first_puzzle_id = *matches.get_one::<i64>("puzzle ID").expect("required");
@@ -84,8 +81,8 @@ fn main() {
                     .copied()
                     .collect();
                 if puzzle_id_range.len() == 1 {
-                    let level = just_fetch_level(puzzle_id_range[0] as u64)
-                        .expect("unable to fetch puzzle data");
+                    let level =
+                        get_level(puzzle_id_range[0] as u64).expect("unable to fetch puzzle data");
                     println!("Id: {:<5} Title: {}", level.id, level.title);
                     if matches.get_flag("long") {
                         println!("{}", level.puzzle);
@@ -93,12 +90,16 @@ fn main() {
                 } else if puzzle_id_range.len() == 2 && puzzle_id_range[0] < puzzle_id_range[1] {
                     let levels = just_fetch_many_levels(
                         (puzzle_id_range[0] as u64)..=(puzzle_id_range[1] as u64),
-                    )
-                    .expect("unable to fetch puzzle data");
+                    );
                     for level in levels {
-                        println!("Id: {:<5} Title: {}", level.id, level.title);
-                        if matches.get_flag("long") {
-                            println!("{}", level.puzzle);
+                        match level {
+                            Ok(level) => {
+                                println!("Id: {:<5} Title: {}", level.id, level.title);
+                                if matches.get_flag("long") {
+                                    println!("{}", level.puzzle);
+                                }
+                            }
+                            Err(err) => eprintln!("level error: {:?}", err),
                         }
                     }
                 } else {

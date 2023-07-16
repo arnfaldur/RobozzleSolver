@@ -37,80 +37,102 @@ enum Solution {
     Solved(Puzzle, Source),
 }
 
-pub fn start_web_solver() {
-    // let mut gecko = Command::new("/usr/bin/geckodriver")
-    //     .stdin(Stdio::piped())
-    //     .stdout(Stdio::piped())
-    //     .stderr(Stdio::null()) // silence
-    //     .spawn()
-    //     .expect("unable to start geckodriver");
-
-    // ctrlc::set_handler(move || {
-    //     gecko.wait().expect("command wasn't running");
-    // });
-
-    solve_puzzles(81);
-
-    // gecko.kill();
-}
-
 // username: Hugsun
 // password: 8r4WvSfxHGirMDxH6FBO
 
-pub fn solve_puzzles(puzzle_id: u64) -> Result<(), errors::SolverError> {
-    let mut rt = Runtime::new().unwrap();
+pub fn solve_puzzle(puzzle_id: u64, login: bool) -> Result<(), SolverError> {
+    let mut rt = Runtime::new()?;
     rt.block_on(async {
-        //let mut file = File::create("data/solutions.txt").unwrap();
-        //file.write_all(b"Hello, world!").unwrap();
+        let driver = get_driver().await?;
 
-        let mut file = File::options()
-            .write(true)
-            .create(true)
-            .open("data/solutions.txt")
-            .expect("unable to open/create solutions file");
+        if login {
+            perform_login(&driver).await?
+        }
+        let mut url = goto_puzzle_url(puzzle_id, &driver).await;
 
-        let mut contents = String::new();
-        file.read_to_string(&mut contents);
-        println!("contents: {}", contents);
+        // let puzzle =
+        //     level_json_to_puzzle(&fetch_level_json(&driver, puzzle_id).await.unwrap()).await;
+        let puzzle = get_level(puzzle_id)?.puzzle;
+        let mut solutions = backtrack(puzzle);
+        solutions.sort_unstable_by_key(|sol| sol.0);
+        solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
+        if let Some(solution) = solutions.pop() {
+            println!("Trying solution: {}", solution.1);
+            println!("that takes {} steps", solution.0);
+            url.push_str("&program=");
+            url.push_str(encode_program(&solution.1, &puzzle).as_str());
+            driver.goto(url).await?;
 
-        let driver = get_driver().await.unwrap();
-
-        // while let Err(e) = login(&driver).await {
-        //     println!("login error: {:?}", e);
-        //     sleep(Duration::from_secs(1));
-        // }
-
-        solve_puzzle(&driver, puzzle_id).await.unwrap();
+            driver
+                .execute("$('#program-speed')[0].value = '10'", vec![])
+                .await?;
+            driver
+                .execute("$('#program-speed').trigger('change')", vec![])
+                .await?;
+            driver.find(By::Id("program-go")).await?.click().await?;
+            driver
+                .find(By::Id("dialog-solved"))
+                .await?
+                .wait_until()
+                .condition(conditions::element_is_displayed(true))
+                .await?
+        }
         driver.quit().await
-    })
-    .unwrap();
+    });
     return Ok(());
 }
-pub fn just_fetch_level(puzzle_id: u64) -> Result<Level, errors::SolverError> {
-    if let Some(level_json) = get_local_level(puzzle_id) {
-        println!("Found cached puzzle {}", puzzle_id);
-        Ok(Level::from(level_json))
-    } else {
-        let mut rt = Runtime::new().unwrap();
-        return rt.block_on(async {
-            let driver = get_driver().await.unwrap();
-            goto_puzzle_url(puzzle_id, &driver).await;
-            let level_json = fetch_level_json(&driver, puzzle_id).await.unwrap();
-            driver.quit().await.unwrap();
-            Ok(Level::from(level_json))
-        });
-    }
+pub fn get_levels(
+    puzzle_ids: impl Iterator<Item = u64>,
+) -> impl Iterator<Item = Result<Level, SolverError>> {
 }
+pub fn get_level(puzzle_id: u64) -> Result<Level, SolverError> {
+    return just_fetch_many_levels(puzzle_id..=puzzle_id)
+        .into_iter()
+        .next()
+        .unwrap();
+    // .map(|e| *e)
+    // .ok_or(SolverError::NoPuzzleForId);
+    //                                                     .and_then(|v| {
+    //     v.first()
+    //         .map(|e| *e)
+    //         .ok_or_else(|| SolverError::NoPuzzleForId)
+    // });
+}
+// pub fn just_fetch_level(puzzle_id: u64) -> Result<Level, SolverError> {
+//     return *just_fetch_many_levels(puzzle_id..=puzzle_id)[0];
+//     // return just_fetch_many_levels(puzzle_id..=puzzle_id).and_then(|v| {
+//     //     v.first()
+//     //         .map(|e| *e)
+//     //         .ok_or_else(|| SolverError::NoPuzzleForId)
+//     // });
+//     // if let Some(level_json) = get_local_level(puzzle_id) {
+//     //     println!("Found cached puzzle {}", puzzle_id);
+//     //     Ok(Level::from(level_json))
+//     // } else {
+//     //     let mut rt = Runtime::new().unwrap();
+//     //     return rt.block_on(async {
+//     //         let driver = get_driver().await.unwrap();
+//     //         goto_puzzle_url(puzzle_id, &driver).await;
+//     //         let level_json = fetch_level_json(&driver, puzzle_id).await.unwrap();
+//     //         driver.quit().await.unwrap();
+//     //         Ok(Level::from(level_json))
+//     //     });
+//     // }
+// }
 
 pub fn just_fetch_many_levels(
-    puzzle_id_range: RangeInclusive<u64>,
-) -> Result<Vec<Level>, errors::SolverError> {
+    puzzle_ids: impl Iterator<Item = u64>,
+) -> Vec<Result<Level, SolverError>> {
     let mut result = Vec::new();
     let mut last_standing = 0;
-    for puzzle_id in puzzle_id_range.clone() {
+    for puzzle_id in puzzle_ids.clone() {
         if let Some(level_json) = get_local_level(puzzle_id) {
             println!("Found cached puzzle {}", puzzle_id);
-            result.push(Level::from(level_json));
+            result.push(
+                level_json
+                    .ok_or(SolverError::NoPuzzleForId)
+                    .map(Level::from),
+            );
         } else {
             last_standing = puzzle_id;
             break;
@@ -121,19 +143,22 @@ pub fn just_fetch_many_levels(
         rt.block_on(async {
             let driver = get_driver().await.unwrap();
             let level_jsons =
-                fetch_many_levels_json(&driver, last_standing..=(puzzle_id_range.last().unwrap()))
-                    .await
-                    .unwrap();
+                fetch_many_levels_json(&driver, last_standing..=(puzzle_ids.last().unwrap())).await;
             driver.quit().await.unwrap();
-            result.append(&mut level_jsons.into_iter().map(Level::from).collect());
+            result.append(
+                &mut level_jsons
+                    .into_iter()
+                    .map(|e| e.map(Level::from))
+                    .collect(),
+            );
         });
     }
-    return Ok(result);
+    return result;
 }
 
-async fn get_driver() -> Result<WebDriver, errors::SolverError> {
+async fn get_driver() -> Result<WebDriver, SolverError> {
     let caps = DesiredCapabilities::firefox();
-    let driver = WebDriver::new("http://localhost:4444", caps).await.unwrap();
+    let driver = WebDriver::new("http://localhost:4444", caps).await?;
     let tools = FirefoxTools::new(driver.handle.clone());
     tools
         .install_addon(
@@ -143,12 +168,11 @@ async fn get_driver() -> Result<WebDriver, errors::SolverError> {
                 .unwrap(),
             Some(true),
         )
-        .await
-        .unwrap();
+        .await?;
     Ok(driver)
 }
 
-async fn login(driver: &WebDriver) -> Result<(), errors::SolverError> {
+async fn perform_login(driver: &WebDriver) -> Result<(), SolverError> {
     driver
         .goto("http://www.robozzle.com/beta/index.html")
         .await
@@ -183,46 +207,7 @@ async fn login(driver: &WebDriver) -> Result<(), errors::SolverError> {
 
     return Ok(());
 }
-async fn solve_puzzle(driver: &WebDriver, puzzle_id: u64) -> Result<(), errors::SolverError> {
-    let mut url = goto_puzzle_url(puzzle_id, driver).await;
 
-    let puzzle = fetch_puzzle(driver, puzzle_id).await;
-    let mut solutions = backtrack(puzzle);
-    solutions.sort_unstable_by_key(|sol| sol.0);
-    solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
-    if let Some(solution) = solutions.pop() {
-        println!("Trying solution: {}", solution.1);
-        println!("that takes {} steps", solution.0);
-        url.push_str("&program=");
-        url.push_str(encode_program(&solution.1, &puzzle).as_str());
-        driver.goto(url).await.unwrap();
-
-        driver
-            .execute("$('#program-speed')[0].value = '10'", vec![])
-            .await
-            .unwrap();
-        driver
-            .execute("$('#program-speed').trigger('change')", vec![])
-            .await
-            .unwrap();
-        driver
-            .find(By::Id("program-go"))
-            .await
-            .unwrap()
-            .click()
-            .await
-            .unwrap();
-        driver
-            .find(By::Id("dialog-solved"))
-            .await
-            .unwrap()
-            .wait_until()
-            .condition(conditions::element_is_displayed(true))
-            .await
-            .unwrap()
-    }
-    return Ok(());
-}
 async fn goto_puzzle_url(puzzle_id: u64, driver: &WebDriver) -> String {
     let mut url = "http://www.robozzle.com/beta/index.html?puzzle=".to_string();
     url.push_str(puzzle_id.to_string().as_str());
@@ -235,7 +220,7 @@ async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Puzzle {
 async fn fetch_many_levels_json(
     driver: &WebDriver,
     puzzle_id_range: RangeInclusive<u64>,
-) -> Result<Vec<LevelJson>, errors::SolverError> {
+) -> Vec<Result<LevelJson, SolverError>> {
     let mut result = Vec::new();
     let mut url = "http://www.robozzle.com/beta/index.html".to_string();
     driver.goto(url.as_str()).await.unwrap();
@@ -247,7 +232,7 @@ async fn fetch_many_levels_json(
     for puzzle_id in puzzle_id_range {
         if let Some(level_json) = get_local_level(puzzle_id) {
             println!("Found cached puzzle {}", puzzle_id);
-            result.push(level_json);
+            result.push(level_json.ok_or(SolverError::NoPuzzleForId));
         } else {
             println!("Fetching puzzle");
             // switch to different level
@@ -270,22 +255,22 @@ async fn fetch_many_levels_json(
             let json = json.json();
             store_puzzle_locally(&json.to_string(), puzzle_id);
             println!("level: {}", json.to_string());
-            serde_json::from_value(json.clone())
-                .map_err(|err| {
-                    eprintln!(
-                        "Error {}: failed to deserialize puzzle {} JSON {}",
-                        err,
-                        puzzle_id,
-                        json.clone()
-                    );
-                })
-                .ok()
-                .map(|level_json: LevelJson| {
-                    result.push(level_json);
-                });
+            let boi = serde_json::from_value::<LevelJson>(json.clone()); //             .map_err(|err| {
+
+            result.push(
+                boi.map_err(SolverError::from), //serde_json::from_value(json.clone()), //             .map_err(|err| {
+                                                //     eprintln!(
+                                                //         "Error {}: failed to deserialize puzzle {} JSON {}",
+                                                //         err,
+                                                //         puzzle_id,
+                                                //         json.clone()
+                                                //     );
+                                                //     err
+                                                // })
+            );
         }
     }
-    return Ok(result);
+    return result;
 }
 
 async fn fetch_level_json(driver: &WebDriver, puzzle_id: u64) -> Option<LevelJson> {
@@ -314,48 +299,119 @@ async fn fetch_level_json(driver: &WebDriver, puzzle_id: u64) -> Option<LevelJso
     }
 }
 
-fn get_local_level(puzzle_id: u64) -> Option<LevelJson> {
+async fn get_external_levels(
+    puzzle_ids: impl Iterator<Item = u64>,
+) -> impl Iterator<Item = Result<Level, SolverError>> {
+    let driver = get_driver().await.unwrap();
+    let mut url = "http://www.robozzle.com/beta/index.html".to_string();
+    driver.goto(url.as_str()).await.unwrap();
+    // Disable top solver fetching
+    let json = driver
+        .execute("robozzle.topSolvers = () => {};", vec![])
+        .await
+        .unwrap();
+    let mut result = Vec::new();
+    for puzzle_id in puzzle_ids {
+        println!("Fetching puzzle");
+        // switch to different level
+        let boi = get_on_page_level(&driver, puzzle_id, true).await;
+
+        result.push(boi.map_err(SolverError::from));
+    }
+    driver.quit().await.unwrap();
+    return result.into_iter();
+}
+
+async fn get_on_page_level(
+    driver: &WebDriver,
+    puzzle_id: u64,
+    store_locally: bool,
+) -> Result<LevelJson, serde_json::Error> {
+    let json = driver
+        .execute_async(
+            &format!(
+                "
+                    let done = arguments[0];
+                    robozzle.service('GetLevel',
+                    {{levelId: {}}},
+                    function (result, response) {{
+                        done(response.GetLevelResult);
+                    }});",
+                puzzle_id
+            ),
+            Vec::new(),
+        )
+        .await
+        .unwrap();
+    let json = json.json();
+    if store_locally {
+        store_puzzle_locally(&json.to_string(), puzzle_id);
+    }
+    println!("level: {}", json.to_string());
+    serde_json::from_value::<LevelJson>(json.clone())
+}
+
+fn get_local_level(puzzle_id: u64) -> Result<LevelJson, SolverError> {
     let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
     path.push(puzzle_id.to_string());
-    return File::options()
+    read_level_from_path(path)
+}
+
+fn get_local_levels(
+    puzzle_ids: impl Iterator<Item = u64>,
+) -> impl Iterator<Item = Result<Level, SolverError>> {
+    puzzle_ids.map(|puzzle_id| {
+        let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
+        path.push(puzzle_id.to_string());
+        read_level_from_path(path)
+    })
+}
+
+fn read_level_from_path(path: PathBuf) -> Result<Level, SolverError> {
+    File::options()
         .read(true)
         .open(path)
-        .ok()
+        .map_err(SolverError::IOError)
         .and_then(|mut file| {
             let mut string = String::new();
             file.read_to_string(&mut string);
-            return serde_json::from_str(&string)
-                .map_err(|err| {
-                    eprintln!(
-                        "Error {}: failed to deserialize puzzle {} JSON {}",
-                        err,
-                        puzzle_id,
-                        string.clone()
-                    );
-                })
-                .ok();
-        });
+            let level_json: Result<Level, _> = serde_json::from_str::<LevelJson>(&string)
+                .map_err(SolverError::Serde)
+                .map(Level::from);
+            return level_json;
+        })
 }
 
-pub fn get_all_local_levels() -> Vec<Level> {
-    let mut result = Vec::new();
-    for dir in std::fs::read_dir("data/puzzles").expect("unable to read puzzle directory") {
-        let path = dir.expect("unable to read dir").path();
-        let level_json = File::options()
-            .read(true)
-            .open(path)
-            .map(|mut file| {
-                let mut string = String::new();
-                file.read_to_string(&mut string);
-                let level_json: LevelJson =
-                    serde_json::from_str(&string).expect("couldn't deserialize JSON");
-                return Level::from(level_json);
-            })
-            .expect("should be opening an existing file");
-        result.push(level_json);
-    }
-    result.sort_by_key(|lvl| lvl.id.clone());
-    return result;
+pub fn get_all_local_levels() -> impl Iterator<Item = Level> {
+    // let mut result = Vec::new();
+    std::fs::read_dir("data/puzzles")
+        .expect("unable to read puzzle directory")
+        .filter_map(|dir| {
+            let path = dir.expect("unable to read dir").path();
+            read_level_from_path(path.clone())
+                .map_err(|err| {
+                    eprintln!(
+                        "Read level from path error: {:?}\n reading pathh: {:?}",
+                        err, path
+                    )
+                })
+                .ok()
+        })
+    // for dir in std::fs::read_dir("data/puzzles").expect("unable to read puzzle directory") {
+    //     let path = dir.expect("unable to read dir").path();
+    //     let level_json = File::options()
+    //         .read(true)
+    //         .open(path)
+    //         .map(|mut file| {
+    //             let mut string = String::new();
+    //             file.read_to_string(&mut string);
+    //             let level_json: LevelJson =
+    //                 serde_json::from_str(&string).expect("couldn't deserialize JSON");
+    //             return Level::from(level_json);
+    //         })
+    //         .expect("should be opening an existing file");
+    //     result.push(level_json);
+    // }
 }
 
 fn store_puzzle_locally(json: &str, puzzle_id: u64) {

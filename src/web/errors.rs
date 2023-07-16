@@ -26,6 +26,14 @@ pub enum SolverError {
     IOError(std::io::Error),
     Error(String),
     WebDriver(WebDriverError),
+    Serde(serde_json::Error),
+    NoPuzzleForId,
+}
+
+impl From<serde_json::Error> for SolverError {
+    fn from(value: serde_json::Error) -> Self {
+        SolverError::Serde(value)
+    }
 }
 
 impl From<CmdError> for SolverError {
