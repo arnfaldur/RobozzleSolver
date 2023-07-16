@@ -13,6 +13,7 @@ use crate::solver::carlo::{score, score_cmp};
 use clap::{Arg, ArgAction, Command};
 use constants::*;
 use game::{instructions::*, *};
+use solver::backtrack::{self, backtrack};
 use solver::{
     pruning::{banned_pair, banned_trio},
     solve,
@@ -80,7 +81,21 @@ fn cli() -> Command {
         )
         .subcommand(
             Command::new("backtrack")
-                .arg(Arg::new("puzzle ID").num_args(1..=2).value_parser(0..30000)),
+                .subcommand_negates_reqs(true)
+                .subcommand(
+                    Command::new("range").arg(
+                        Arg::new("puzzle ID")
+                            .required(true)
+                            .num_args(2)
+                            .value_parser(0..30000),
+                    ),
+                )
+                .arg(
+                    Arg::new("puzzle ID")
+                        .required(true)
+                        .num_args(1..=10)
+                        .value_parser(0..30000),
+                ),
         )
 }
 
@@ -97,45 +112,25 @@ fn main() {
                     .expect("required")
                     .copied()
                     .collect();
-                if let Some(boi) = matches.subcommand_matches("range") {
-                    if puzzle_ids.len() == 2 && puzzle_ids[0] < puzzle_ids[1] {
-                        let levels = get_levels((puzzle_ids[0] as u64)..=(puzzle_ids[1] as u64));
-                        for level in levels {
-                            match level {
-                                Ok(level) => {
-                                    println!("Id: {:<5} Title: {}", level.id, level.title);
-                                    if matches.get_flag("long") {
-                                        println!("{}", level.puzzle);
-                                    }
-                                }
-                                Err(err) => eprintln!("level error: {:?}", err),
-                            }
-                        }
-                    }
-                } else {
-                    if puzzle_ids.len() == 1 {
-                        let level =
-                            get_level(puzzle_ids[0] as u64).expect("unable to fetch puzzle data");
-                        println!("Id: {:<5} Title: {}", level.id, level.title);
-                        if matches.get_flag("long") {
-                            println!("{}", level.puzzle);
-                        }
-                    } else if puzzle_ids.len() > 1 {
-                        let levels = get_levels(puzzle_ids.into_iter().map(|n| n as u64));
-                        for level in levels {
-                            match level {
-                                Ok(level) => {
-                                    println!("Id: {:<5} Title: {}", level.id, level.title);
-                                    if matches.get_flag("long") {
-                                        println!("{}", level.puzzle);
-                                    }
-                                }
-                                Err(err) => eprintln!("level error: {:?}", err),
-                            }
-                        }
+                if puzzle_ids.len() == 1 {
+                    let level =
+                        get_level(puzzle_ids[0] as u64).expect("unable to fetch puzzle data");
+                    print_level(&level, matches.get_flag("long"));
+                } else if puzzle_ids.len() > 1 {
+                    let boi: Vec<_> = if matches.subcommand_matches("range").is_some() {
+                        get_levels((puzzle_ids[0] as u64)..=(puzzle_ids[1] as u64)).collect()
                     } else {
-                        panic!("incorrect arguments puzzle range {:?}", puzzle_ids);
-                    }
+                        get_levels(puzzle_ids.into_iter().map(|n| n as u64)).collect()
+                    };
+                    boi.into_iter().for_each(|level| match level {
+                        Ok(level) => print_level(&level, matches.get_flag("long")),
+                        Err(err) => eprintln!("level error: {:?}", err),
+                    });
+                } else {
+                    panic!(
+                        "incorrect arguments puzzle range {:?}, can't be > 10 :(",
+                        puzzle_ids
+                    );
                 }
             }
             _ => todo!(),
@@ -143,13 +138,8 @@ fn main() {
         Some(("puzzles", matches)) => match matches.subcommand() {
             Some(("list", matches)) => {
                 for level in get_all_local_levels() {
-                    println!("Id: {:<5} Title: {}", level.id, level.title);
-                    if matches.get_flag("long") {
-                        println!("{}", level.puzzle);
-                    }
+                    print_level(&level, matches.get_flag("long"));
                 }
-                return;
-
                 // face = 5088
                 // ternary = 10459
                 // knot_3 = 4426
@@ -161,21 +151,46 @@ fn main() {
             }
             _ => todo!(),
         },
-        Some(("puzzles", matches)) => match matches.subcommand() {
-            Some(("list", matches)) => {
-                for level in get_all_local_levels() {
-                    println!("Id: {:<5} Title: {}", level.id, level.title);
-                    if matches.get_flag("long") {
-                        println!("{}", level.puzzle);
+        Some(("backtrack", matches)) => {
+            let puzzle_ids: Vec<i64> = matches
+                .get_many("puzzle ID")
+                .expect("required")
+                .copied()
+                .collect();
+            if puzzle_ids.len() == 1 {
+                let level = get_level(puzzle_ids[0] as u64).expect("unable to fetch puzzle data");
+                print_level(&level, true);
+                backtrack(level.puzzle);
+            } else if puzzle_ids.len() > 1 {
+                let boi: Vec<_> = if matches.subcommand_matches("range").is_some() {
+                    get_levels((puzzle_ids[0] as u64)..=(puzzle_ids[1] as u64)).collect()
+                } else {
+                    get_levels(puzzle_ids.into_iter().map(|n| n as u64)).collect()
+                };
+                boi.into_iter().for_each(|level| match level {
+                    Ok(level) => {
+                        print_level(&level, true);
+                        backtrack(level.puzzle);
                     }
-                }
-                return;
+                    Err(err) => eprintln!("level error: {:?}", err),
+                });
+            } else {
+                panic!(
+                    "incorrect arguments puzzle range {:?}, can't be > 10 :(",
+                    puzzle_ids
+                );
             }
-            _ => todo!(),
-        },
+        }
         _ => {
             println!("no CLI match")
         }
+    }
+}
+
+fn print_level(level: &web::Level, long_output: bool) {
+    println!("Id: {:<5} Title: {}", level.id, level.title);
+    if long_output {
+        println!("{}", level.puzzle);
     }
 }
 
