@@ -2,10 +2,11 @@
 name = "solver"
 version = "0.1.0"
 authors = ["arnfaldur <aarnaldur+rust@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 [profile.dev]
 opt-level = 3
+debug = 2
 
 [profile.dbg]
 inherits = "dev"

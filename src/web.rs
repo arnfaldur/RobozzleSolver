@@ -1,8 +1,9 @@
 use std::fs::File;
-use std::io::{prelude::*, Write};
+use std::io::{prelude::*, ErrorKind, Write};
 use std::ops::{Range, RangeInclusive};
 use std::path::{Path, PathBuf};
 use std::process::{Command, Stdio};
+use std::result;
 use std::str::FromStr;
 use std::thread::sleep;
 use std::time::Duration;
@@ -84,76 +85,39 @@ pub fn solve_puzzle(puzzle_id: u64, login: bool) -> Result<(), SolverError> {
 pub fn get_levels(
     puzzle_ids: impl Iterator<Item = u64>,
 ) -> impl Iterator<Item = Result<Level, SolverError>> {
-}
-pub fn get_level(puzzle_id: u64) -> Result<Level, SolverError> {
-    return just_fetch_many_levels(puzzle_id..=puzzle_id)
-        .into_iter()
-        .next()
-        .unwrap();
-    // .map(|e| *e)
-    // .ok_or(SolverError::NoPuzzleForId);
-    //                                                     .and_then(|v| {
-    //     v.first()
-    //         .map(|e| *e)
-    //         .ok_or_else(|| SolverError::NoPuzzleForId)
-    // });
-}
-// pub fn just_fetch_level(puzzle_id: u64) -> Result<Level, SolverError> {
-//     return *just_fetch_many_levels(puzzle_id..=puzzle_id)[0];
-//     // return just_fetch_many_levels(puzzle_id..=puzzle_id).and_then(|v| {
-//     //     v.first()
-//     //         .map(|e| *e)
-//     //         .ok_or_else(|| SolverError::NoPuzzleForId)
-//     // });
-//     // if let Some(level_json) = get_local_level(puzzle_id) {
-//     //     println!("Found cached puzzle {}", puzzle_id);
-//     //     Ok(Level::from(level_json))
-//     // } else {
-//     //     let mut rt = Runtime::new().unwrap();
-//     //     return rt.block_on(async {
-//     //         let driver = get_driver().await.unwrap();
-//     //         goto_puzzle_url(puzzle_id, &driver).await;
-//     //         let level_json = fetch_level_json(&driver, puzzle_id).await.unwrap();
-//     //         driver.quit().await.unwrap();
-//     //         Ok(Level::from(level_json))
-//     //     });
-//     // }
-// }
-
-pub fn just_fetch_many_levels(
-    puzzle_ids: impl Iterator<Item = u64>,
-) -> Vec<Result<Level, SolverError>> {
+    //let levels = get_local_levels(puzzle_ids);
     let mut result = Vec::new();
-    let mut last_standing = 0;
-    for puzzle_id in puzzle_ids.clone() {
-        if let Some(level_json) = get_local_level(puzzle_id) {
-            println!("Found cached puzzle {}", puzzle_id);
-            result.push(
-                level_json
-                    .ok_or(SolverError::NoPuzzleForId)
-                    .map(Level::from),
-            );
-        } else {
-            last_standing = puzzle_id;
-            break;
-        }
-    }
-    if last_standing > 0 {
+    let mut remaining_puzzle_ids = Vec::new();
+    puzzle_ids.for_each(|puzzle_id| match get_local_level(puzzle_id) {
+        Ok(level) => result.push(Ok(level)),
+        Err(serr) => match serr {
+            SolverError::NoPuzzleForId => result.push(Err(serr)),
+            SolverError::IOError(ierr) => {
+                if ierr.kind() == ErrorKind::NotFound {
+                    remaining_puzzle_ids.push(puzzle_id);
+                } else {
+                    panic!("{:?}, IOError kind: {}", ierr, ierr.kind())
+                }
+            }
+            _ => panic!("{:?}", serr),
+        },
+    });
+    if remaining_puzzle_ids.len() > 0 {
         let mut rt = Runtime::new().unwrap();
         rt.block_on(async {
-            let driver = get_driver().await.unwrap();
-            let level_jsons =
-                fetch_many_levels_json(&driver, last_standing..=(puzzle_ids.last().unwrap())).await;
-            driver.quit().await.unwrap();
+            // let driver = get_driver().await.unwrap();
             result.append(
-                &mut level_jsons
-                    .into_iter()
-                    .map(|e| e.map(Level::from))
+                &mut get_external_levels(remaining_puzzle_ids.into_iter())
+                    .await
                     .collect(),
             );
+            // driver.quit().await
         });
     }
-    return result;
+    return result.into_iter();
+}
+pub fn get_level(puzzle_id: u64) -> Result<Level, SolverError> {
+    return get_levels(puzzle_id..=puzzle_id).next().unwrap();
 }
 
 async fn get_driver() -> Result<WebDriver, SolverError> {
@@ -214,90 +178,6 @@ async fn goto_puzzle_url(puzzle_id: u64, driver: &WebDriver) -> String {
     driver.goto(url.as_str()).await.unwrap();
     url
 }
-async fn fetch_puzzle(driver: &WebDriver, puzzle_id: u64) -> Puzzle {
-    level_json_to_puzzle(&fetch_level_json(driver, puzzle_id).await.unwrap())
-}
-async fn fetch_many_levels_json(
-    driver: &WebDriver,
-    puzzle_id_range: RangeInclusive<u64>,
-) -> Vec<Result<LevelJson, SolverError>> {
-    let mut result = Vec::new();
-    let mut url = "http://www.robozzle.com/beta/index.html".to_string();
-    driver.goto(url.as_str()).await.unwrap();
-    // Disable top solver fetching
-    let json = driver
-        .execute("robozzle.topSolvers = () => {};", vec![])
-        .await
-        .unwrap();
-    for puzzle_id in puzzle_id_range {
-        if let Some(level_json) = get_local_level(puzzle_id) {
-            println!("Found cached puzzle {}", puzzle_id);
-            result.push(level_json.ok_or(SolverError::NoPuzzleForId));
-        } else {
-            println!("Fetching puzzle");
-            // switch to different level
-            let json = driver
-                .execute_async(
-                    &format!(
-                        "
-                        let done = arguments[0];
-                        robozzle.service('GetLevel',
-                        {{levelId: {}}},
-                        function (result, response) {{
-                            done(response.GetLevelResult);
-                        }});",
-                        puzzle_id
-                    ),
-                    Vec::new(),
-                )
-                .await
-                .unwrap();
-            let json = json.json();
-            store_puzzle_locally(&json.to_string(), puzzle_id);
-            println!("level: {}", json.to_string());
-            let boi = serde_json::from_value::<LevelJson>(json.clone()); //             .map_err(|err| {
-
-            result.push(
-                boi.map_err(SolverError::from), //serde_json::from_value(json.clone()), //             .map_err(|err| {
-                                                //     eprintln!(
-                                                //         "Error {}: failed to deserialize puzzle {} JSON {}",
-                                                //         err,
-                                                //         puzzle_id,
-                                                //         json.clone()
-                                                //     );
-                                                //     err
-                                                // })
-            );
-        }
-    }
-    return result;
-}
-
-async fn fetch_level_json(driver: &WebDriver, puzzle_id: u64) -> Option<LevelJson> {
-    if let Some(level_json) = get_local_level(puzzle_id) {
-        println!("Found cached puzzle {}", puzzle_id);
-        Some(level_json)
-    } else {
-        println!("Fetching puzzle");
-        let json = driver
-            .execute("return robozzle.level", vec![])
-            .await
-            .unwrap();
-        let json = json.json();
-        store_puzzle_locally(&json.to_string(), puzzle_id);
-        println!("level: {}", json.to_string());
-        return serde_json::from_value(json.clone())
-            .map_err(|err| {
-                eprintln!(
-                    "Error {}: failed to deserialize puzzle {} JSON {}",
-                    err,
-                    puzzle_id,
-                    json.clone()
-                );
-            })
-            .ok();
-    }
-}
 
 async fn get_external_levels(
     puzzle_ids: impl Iterator<Item = u64>,
@@ -326,7 +206,7 @@ async fn get_on_page_level(
     driver: &WebDriver,
     puzzle_id: u64,
     store_locally: bool,
-) -> Result<LevelJson, serde_json::Error> {
+) -> Result<Level, serde_json::Error> {
     let json = driver
         .execute_async(
             &format!(
@@ -348,10 +228,10 @@ async fn get_on_page_level(
         store_puzzle_locally(&json.to_string(), puzzle_id);
     }
     println!("level: {}", json.to_string());
-    serde_json::from_value::<LevelJson>(json.clone())
+    serde_json::from_value::<LevelJson>(json.clone()).map(Level::from)
 }
 
-fn get_local_level(puzzle_id: u64) -> Result<LevelJson, SolverError> {
+fn get_local_level(puzzle_id: u64) -> Result<Level, SolverError> {
     let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
     path.push(puzzle_id.to_string());
     read_level_from_path(path)
@@ -360,11 +240,7 @@ fn get_local_level(puzzle_id: u64) -> Result<LevelJson, SolverError> {
 fn get_local_levels(
     puzzle_ids: impl Iterator<Item = u64>,
 ) -> impl Iterator<Item = Result<Level, SolverError>> {
-    puzzle_ids.map(|puzzle_id| {
-        let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
-        path.push(puzzle_id.to_string());
-        read_level_from_path(path)
-    })
+    puzzle_ids.map(get_local_level)
 }
 
 fn read_level_from_path(path: PathBuf) -> Result<Level, SolverError> {
@@ -375,8 +251,9 @@ fn read_level_from_path(path: PathBuf) -> Result<Level, SolverError> {
         .and_then(|mut file| {
             let mut string = String::new();
             file.read_to_string(&mut string);
-            let level_json: Result<Level, _> = serde_json::from_str::<LevelJson>(&string)
+            let level_json: Result<Level, _> = serde_json::from_str::<Option<LevelJson>>(&string)
                 .map_err(SolverError::Serde)
+                .and_then(|opt| opt.ok_or(SolverError::NoPuzzleForId))
                 .map(Level::from);
             return level_json;
         })
