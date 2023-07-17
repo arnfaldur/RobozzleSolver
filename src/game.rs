@@ -17,7 +17,7 @@ pub(crate) mod instructions;
 
 pub type TileType = u32;
 
-#[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
+#[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize, Debug)]
 pub struct Tile(pub TileType);
 
 impl Tile {
@@ -64,11 +64,12 @@ impl Tile {
     }
 }
 
-type Map = [[Tile; 18]; 14];
+#[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
+pub struct Map(pub [[Tile; 18]; 14]);
 
 pub type Method = [Ins; 10];
 
-#[derive(Eq, Ord, PartialEq, PartialOrd, Copy, Clone, Debug, Serialize, Deserialize)]
+#[derive(Eq, Ord, PartialEq, PartialOrd, Copy, Clone, Serialize, Deserialize)]
 pub struct Source(pub [Method; 5]);
 
 impl Source {
@@ -165,7 +166,7 @@ const STACK_SIZE: usize = (1 << 9) - mem::size_of::<usize>();
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 6;
 
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, Debug)]
 pub struct Stack {
     pointer: usize,
     pub data: [InsPtr; STACK_SIZE],
@@ -231,7 +232,7 @@ impl Stack {
     }
 }
 
-#[derive(Eq, PartialEq, Copy, Clone, Hash, Serialize, Deserialize)]
+#[derive(Eq, PartialEq, Copy, Clone, Hash, Serialize, Deserialize, Debug)]
 pub enum Direction {
     Up = 0b00,
     Left = 0b01,
@@ -371,7 +372,6 @@ pub struct State {
     direction: Direction,
     x: usize,
     y: usize,
-    pub inters: i64,
 }
 
 impl Default for State {
@@ -383,11 +383,10 @@ impl Default for State {
                 pointer: 0,
                 data: [INSPTR_NULL; STACK_SIZE],
             },
-            map: [[_N; 18]; 14],
+            map: Map([[_N; 18]; 14]),
             direction: Direction::Up,
             x: 1,
             y: 1,
-            inters: 0,
         }
     }
 }
@@ -408,19 +407,19 @@ impl State {
         self.invoke(source, puzzle, F1.source_index());
     }
     fn clear_star(&mut self) {
-        self.map[self.y][self.x].clear_star();
+        self.map.0[self.y][self.x].clear_star();
     }
     fn touch(&mut self) {
-        self.map[self.y][self.x].touch();
+        self.map.0[self.y][self.x].touch();
     }
     fn untouch(&mut self) {
-        self.map[self.y][self.x].untouch();
+        self.map.0[self.y][self.x].untouch();
     }
     fn touches(&self) -> usize {
-        self.map[self.y][self.x].touches()
+        self.map.0[self.y][self.x].touches()
     }
     fn mark(&mut self, ins: Ins) {
-        self.map[self.y][self.x].mark(ins)
+        self.map.0[self.y][self.x].mark(ins)
     }
     pub fn ins_pointer(&self) -> &InsPtr {
         let ins = self.stack.last();
@@ -433,7 +432,7 @@ impl State {
         return ins;
     }
     pub(crate) fn current_tile(&self) -> &Tile {
-        &self.map[self.y][self.x]
+        &self.map.0[self.y][self.x]
     }
     fn running(&self) -> bool {
         !self.stack.is_empty()
@@ -497,7 +496,7 @@ pub fn won(state: &State, _: &Puzzle) -> bool {
 
 pub fn genboi(ta: Tile, tb: Tile, tc: Tile) -> Puzzle {
     return make_puzzle(
-        [
+        Map([
             [
                 _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
             ],
@@ -540,7 +539,7 @@ pub fn genboi(ta: Tile, tb: Tile, tc: Tile) -> Puzzle {
             [
                 _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
             ],
-        ],
+        ]),
         Direction::Right,
         5,
         6,
@@ -567,12 +566,12 @@ pub fn make_puzzle(
     while let Some((x, y)) = frontier.pop_back() {
         for (dx, dy) in &[(1, 0), (0, 1), (-1, 0), (0, -1)] {
             let (nx, ny) = ((x as isize + dx) as usize, (y as isize + dy) as usize);
-            if map[ny][nx] != _N && !visited.contains(&(nx, ny)) {
+            if map.0[ny][nx] != _N && !visited.contains(&(nx, ny)) {
                 visited.insert((nx, ny));
                 frontier.push_front((nx, ny));
-                red |= map[ny][nx].is_red();
-                green |= map[ny][nx].is_green();
-                blue |= map[ny][nx].is_blue();
+                red |= map.0[ny][nx].is_red();
+                green |= map.0[ny][nx].is_green();
+                blue |= map.0[ny][nx].is_blue();
             }
         }
     }
@@ -587,9 +586,10 @@ pub fn make_puzzle(
     let actual_methods = methods;
     methods[1..5].sort_unstable_by(|a, b| b.cmp(a));
     let mut map_out = map.clone();
-    map_out[y][x].clear_star();
-    map_out[y][x].touch();
+    map_out.0[y][x].clear_star();
+    map_out.0[y][x].touch();
     let stars: usize = map_out
+        .0
         .iter()
         .map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>())
         .sum();
@@ -612,13 +612,14 @@ fn verify_puzzle(puzzle: &Puzzle) -> bool {
     let (mut red, mut green, mut blue) = (false, false, false);
     for y in 1..13 {
         for x in 1..17 {
-            red |= puzzle.map[y][x].is_red();
-            green |= puzzle.map[y][x].is_green();
-            blue |= puzzle.map[y][x].is_blue();
+            red |= puzzle.map.0[y][x].is_red();
+            green |= puzzle.map.0[y][x].is_green();
+            blue |= puzzle.map.0[y][x].is_blue();
         }
     }
     let stars: usize = puzzle
         .map
+        .0
         .iter()
         .map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>())
         .sum();

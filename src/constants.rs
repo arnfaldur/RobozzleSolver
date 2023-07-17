@@ -82,7 +82,7 @@ const TEST_SOURCE: Source = Source([
 ]);
 
 pub(crate) const PUZZLE_NULL: Puzzle = Puzzle {
-    map: [[_N; 18]; 14],
+    map: Map([[_N; 18]; 14]),
     direction: Direction::Down,
     x: 1,
     y: 1,
@@ -137,7 +137,7 @@ const RAND_FUNCS: [Method; 9] = [
 ];
 
 pub(crate) const PUZZLE_42: Puzzle = Puzzle {
-    map: [
+    map: Map([
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
@@ -180,7 +180,7 @@ pub(crate) const PUZZLE_42: Puzzle = Puzzle {
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
-    ],
+    ]),
     direction: Direction::Right,
     x: 5,
     y: 9,
@@ -202,7 +202,7 @@ pub(crate) const PUZZLE_42_SOLUTION: Source = Source([
     [HALT; 10],
 ]);
 pub(crate) const PUZZLE_536: Puzzle = Puzzle {
-    map: [
+    map: Map([
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
@@ -245,7 +245,7 @@ pub(crate) const PUZZLE_536: Puzzle = Puzzle {
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
-    ],
+    ]),
     direction: Direction::Right,
     x: 1,
     y: 1,
@@ -267,7 +267,7 @@ pub(crate) const PUZZLE_536_SOLUTION: Source = Source([
     [HALT; 10],
 ]);
 pub(crate) const PUZZLE_656: Puzzle = Puzzle {
-    map: [
+    map: Map([
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
@@ -310,7 +310,7 @@ pub(crate) const PUZZLE_656: Puzzle = Puzzle {
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
-    ],
+    ]),
     direction: Direction::Right,
     x: 1,
     y: 12,
@@ -333,7 +333,7 @@ pub(crate) const PUZZLE_656_SOLUTION: Source = Source([
 ]);
 
 pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
-    map: [
+    map: Map([
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
@@ -376,7 +376,7 @@ pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
-    ],
+    ]),
     direction: Direction::Right,
     x: 8,
     y: 7,
@@ -419,7 +419,7 @@ pub(crate) const PUZZLE_1337_SOLUTION: Source = Source([
 ]);
 
 pub(crate) const PUZZLE_TEST_1: Puzzle = Puzzle {
-    map: [
+    map: Map([
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
@@ -462,7 +462,7 @@ pub(crate) const PUZZLE_TEST_1: Puzzle = Puzzle {
         [
             _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
         ],
-    ],
+    ]),
     direction: Direction::Right,
     x: 2,
     y: 1,

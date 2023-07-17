@@ -231,7 +231,7 @@ async fn get_on_page_level(
     serde_json::from_value::<LevelJson>(json.clone()).map(Level::from)
 }
 
-fn get_local_level(puzzle_id: u64) -> Result<Level, SolverError> {
+pub fn get_local_level(puzzle_id: u64) -> Result<Level, SolverError> {
     let mut path = PathBuf::from_str("data/puzzles").expect("unable to create puzzle pathbuf");
     path.push(puzzle_id.to_string());
     read_level_from_path(path)
@@ -328,7 +328,7 @@ fn level_json_to_puzzle(level_json: &LevelJson) -> Puzzle {
                 'B' => BE,
                 _ => _N,
             };
-            map[y + 1][x + 1] = match tems.next().unwrap_or(' ') {
+            map.0[y + 1][x + 1] = match tems.next().unwrap_or(' ') {
                 '*' => Tile(color.0 | TILE_STAR_MASK.0),
                 '.' => color,
                 _ => _N,
@@ -361,6 +361,7 @@ fn level_json_to_puzzle(level_json: &LevelJson) -> Puzzle {
     );
 }
 
+#[derive(Clone)]
 pub struct Level {
     pub about: Value,
     pub comment_count: u64,

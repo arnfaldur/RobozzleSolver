@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 type InsType = u16;
 
 #[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
-pub struct Ins(InsType);
+pub struct Ins(InsType); // a single instruction
 
 impl Ins {
     pub fn condition_to_color(self) -> Ins {
@@ -156,7 +156,7 @@ impl std::ops::Not for Ins {
     }
 }
 
-#[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
+#[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize, Debug)]
 pub struct InsPtr(u8);
 
 impl InsPtr {

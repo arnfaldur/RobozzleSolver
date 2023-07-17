@@ -83,6 +83,49 @@ fn cli() -> Command {
             Command::new("backtrack")
                 .subcommand_negates_reqs(true)
                 .subcommand(
+                    Command::new("range")
+                        .arg(
+                            Arg::new("puzzle ID")
+                                .required(true)
+                                .num_args(2)
+                                .value_parser(0..30000),
+                        )
+                        .arg(
+                            Arg::new("timed")
+                                .long("timed")
+                                .short('t')
+                                .action(ArgAction::SetTrue),
+                        )
+                        .arg(
+                            Arg::new("quiet")
+                                .long("quiet")
+                                .short('q')
+                                .action(ArgAction::SetTrue),
+                        ),
+                )
+                .arg(
+                    Arg::new("puzzle ID")
+                        .required(true)
+                        .num_args(1..=10)
+                        .value_parser(0..30000),
+                )
+                .arg(
+                    Arg::new("timed")
+                        .long("timed")
+                        .short('t')
+                        .action(ArgAction::SetTrue),
+                )
+                .arg(
+                    Arg::new("quiet")
+                        .long("quiet")
+                        .short('q')
+                        .action(ArgAction::SetTrue),
+                ),
+        )
+        .subcommand(
+            Command::new("misc")
+                .subcommand_negates_reqs(true)
+                .subcommand(
                     Command::new("range").arg(
                         Arg::new("puzzle ID")
                             .required(true)
@@ -152,28 +195,72 @@ fn main() {
             _ => todo!(),
         },
         Some(("backtrack", matches)) => {
+            // let puzzle_ids: Vec<i64> = matches
+            //     .get_many("puzzle ID")
+            //     .expect("required")
+            //     .copied()
+            //     .collect();
+            let (matches, ranged) = if let Some(("range", matches)) = matches.subcommand() {
+                (matches, true)
+            } else {
+                (matches, false)
+            };
+            // let puzzle_ids: Vec<i64> = if let Some(("range", matches)) = matches.subcommand() {
+            //     matches
+            // } else {
+            //     matches
+            // }
+            // .get_many("puzzle ID")
+            // .expect("required")
+            // .copied()
+            // .collect();
             let puzzle_ids: Vec<i64> = matches
                 .get_many("puzzle ID")
                 .expect("required")
                 .copied()
                 .collect();
-            if puzzle_ids.len() == 1 {
-                let level = get_level(puzzle_ids[0] as u64).expect("unable to fetch puzzle data");
-                print_level(&level, true);
-                backtrack(level.puzzle);
-            } else if puzzle_ids.len() > 1 {
-                let boi: Vec<_> = if matches.subcommand_matches("range").is_some() {
+            let timed = matches.get_flag("timed");
+            let quiet = matches.get_flag("quiet");
+            if puzzle_ids.len() > 0 {
+                let boi: Vec<_> = if ranged {
                     get_levels((puzzle_ids[0] as u64)..=(puzzle_ids[1] as u64)).collect()
                 } else {
                     get_levels(puzzle_ids.into_iter().map(|n| n as u64)).collect()
                 };
+                let mut ids = Vec::new();
                 boi.into_iter().for_each(|level| match level {
                     Ok(level) => {
-                        print_level(&level, true);
-                        backtrack(level.puzzle);
+                        let now = Instant::now();
+                        let results = backtrack(level.puzzle);
+                        let el = now.elapsed();
+                        if !results.is_empty() {
+                            ids.push(level.id);
+                            print_level(&level, !quiet);
+                        }
+                        if timed && !results.is_empty() {
+                            println!(
+                                "Duration: {:02}:{:02}:{:02}.{:03}",
+                                el.as_secs() / (3600),
+                                (el.as_secs() / (60)) % 60,
+                                (el.as_secs()) % 60,
+                                el.subsec_millis()
+                            );
+                        }
+                        if !quiet && !results.is_empty() {
+                            println!("Solutions:");
+                            for result in results {
+                                println!(
+                                    "steps: {:>2}, solution length: {:>2}, code: {}",
+                                    result.0,
+                                    result.1.count_ins(),
+                                    result.1
+                                );
+                            }
+                        }
                     }
                     Err(err) => eprintln!("level error: {:?}", err),
                 });
+                dbg!(ids);
             } else {
                 panic!(
                     "incorrect arguments puzzle range {:?}, can't be > 10 :(",
@@ -188,7 +275,10 @@ fn main() {
 }
 
 fn print_level(level: &web::Level, long_output: bool) {
-    println!("Id: {:<5} Title: {}", level.id, level.title);
+    println!(
+        "Id: {:<5} | Title: {} | About: {}",
+        level.id, level.title, level.about
+    );
     if long_output {
         println!("{}", level.puzzle);
     }
