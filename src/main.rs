@@ -9,26 +9,20 @@
 use std::collections::{HashMap, HashSet};
 use std::time::{Duration, Instant};
 
-use crate::solver::carlo::{score, score_cmp};
 use clap::{value_parser, Arg, ArgAction, Command};
-use constants::*;
-use game::{instructions::*, *};
-use solver::backtrack::{self, backtrack};
-use solver::{
+
+use solver::constants::*;
+use solver::game::{instructions::*, *};
+use solver::solver::backtrack::{self, backtrack};
+use solver::solver::carlo::{score, score_cmp};
+use solver::solver::{
     pruning::{banned_pair, banned_trio},
     solve,
 };
-use web::{
-    encode_program, get_all_local_levels, get_level, get_levels, puzzle_from_string, solve_puzzle,
+use solver::web::{
+    self, encode_program, get_all_local_levels, get_level, get_levels, puzzle_from_string,
+    solve_puzzle,
 };
-
-mod constants;
-mod game;
-mod solver;
-mod web;
-
-#[cfg(test)]
-mod tests;
 
 fn cli() -> Command {
     Command::new("solver")
@@ -273,34 +267,34 @@ fn print_level(level: &web::Level, long_output: bool) {
     }
 }
 
-fn old_main() {
-    //    println!("puzl: {}", puzzle);
-    let puzzles = [
-        //PUZZLE_42,
-        //PUZZLE_536,
-        //PUZZLE_656,
-        PUZZLE_1337,
-        //puzzle_from_string(scratch),
-        // puzzle_from_string(writers_block),
-        //        parse_level(),
-    ];
-    for puzzle in puzzles.iter() {
-        let now = Instant::now();
-        let solutions = solve(*puzzle);
-        if !solutions.is_empty() {
-            println!("Solved! The solution(s) are:");
-            for solution in solutions {
-                println!(
-                    "{} steps: {}, code: {}",
-                    solution.1,
-                    solution.0,
-                    encode_program(&solution.1, puzzle)
-                );
-            }
-        } else {
-            println!("I couldn't find a solution :(");
-        }
-        println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
-    }
-    //    println!("prog: {}", encode_program(&PUZZLE_656_SOLUTION, &PUZZLE_656));
-}
+// fn old_main() {
+//     //    println!("puzl: {}", puzzle);
+//     let puzzles = [
+//         //PUZZLE_42,
+//         //PUZZLE_536,
+//         //PUZZLE_656,
+//         PUZZLE_1337,
+//         //puzzle_from_string(scratch),
+//         // puzzle_from_string(writers_block),
+//         //        parse_level(),
+//     ];
+//     for puzzle in puzzles.iter() {
+//         let now = Instant::now();
+//         let solutions = solve(*puzzle);
+//         if !solutions.is_empty() {
+//             println!("Solved! The solution(s) are:");
+//             for solution in solutions {
+//                 println!(
+//                     "{} steps: {}, code: {}",
+//                     solution.1,
+//                     solution.0,
+//                     encode_program(&solution.1, puzzle)
+//                 );
+//             }
+//         } else {
+//             println!("I couldn't find a solution :(");
+//         }
+//         println!("The solver took {} seconds.\n", now.elapsed().as_secs_f64());
+//     }
+//     //    println!("prog: {}", encode_program(&PUZZLE_656_SOLUTION, &PUZZLE_656));
+// }

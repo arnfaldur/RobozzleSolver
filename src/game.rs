@@ -1,4 +1,3 @@
-use std::cmp::Ordering;
 use std::collections::hash_map::DefaultHasher;
 use std::fmt::Debug;
 use std::hash::{Hash, Hasher};
@@ -13,8 +12,8 @@ use crate::constants::*;
 use instructions::*;
 use std::collections::{HashSet, VecDeque};
 
-pub(crate) mod display;
-pub(crate) mod instructions;
+pub mod display;
+pub mod instructions;
 
 pub type TileType = u32;
 
@@ -314,22 +313,22 @@ pub enum Direction {
 //#[derive()]
 impl Direction {
     fn left(&self) -> Direction {
-        return unsafe { std::mem::transmute(((*self as u8 + 1) & 0b11)) };
-        match self {
-            Direction::Up => Direction::Left,
-            Direction::Left => Direction::Down,
-            Direction::Down => Direction::Right,
-            Direction::Right => Direction::Up,
-        }
+        return unsafe { std::mem::transmute((*self as u8 + 1) & 0b11) };
+        // match self {
+        //     Direction::Up => Direction::Left,
+        //     Direction::Left => Direction::Down,
+        //     Direction::Down => Direction::Right,
+        //     Direction::Right => Direction::Up,
+        // }
     }
     fn right(&self) -> Direction {
-        return unsafe { std::mem::transmute(((*self as u8 + 3) & 0b11)) };
-        match self {
-            Direction::Up => Direction::Right,
-            Direction::Left => Direction::Up,
-            Direction::Down => Direction::Left,
-            Direction::Right => Direction::Down,
-        }
+        return unsafe { std::mem::transmute((*self as u8 + 3) & 0b11) };
+        // match self {
+        //     Direction::Up => Direction::Right,
+        //     Direction::Left => Direction::Up,
+        //     Direction::Down => Direction::Left,
+        //     Direction::Right => Direction::Down,
+        // }
     }
 }
 

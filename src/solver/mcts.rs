@@ -1,6 +1,6 @@
 use crate::constants::NOGRAM;
 use crate::game::{instructions::*, Puzzle, Source};
-use crate::solver::carlo::{carlo, score};
+use crate::solver::carlo::score;
 use crate::solver::pruning::{deny, snip_around};
 use std::f64::consts::SQRT_2;
 use std::f64::INFINITY;
@@ -82,7 +82,7 @@ impl Node {
                         .iter()
                         .map(|i| i.as_loosened())
                         .chain(
-                            (if self.source[method_index][ins_index]
+                            if self.source[method_index][ins_index]
                                 .remove_cond(state.current_tile().to_condition())
                                 .is_probe()
                             {
@@ -90,7 +90,7 @@ impl Node {
                                     .remove_cond(state.current_tile().to_condition())]
                             } else {
                                 vec![]
-                            }),
+                            },
                         )
                         .collect()
                 } else if loosening_branch {
@@ -153,7 +153,7 @@ pub fn monte_carlo(puzzle: &Puzzle) -> Vec<Source> {
         }
         node.scores += score;
         return score;
-    };
+    }
     let mut score = 0.0;
     let mut checks = 0;
     while score < 1.0 {
@@ -213,7 +213,7 @@ fn rollout(puzzle: &Puzzle, node: &mut Node) -> f64 {
                     .iter()
                     .map(|i| i.as_loosened())
                     .chain(
-                        (if candidate[method_index][ins_index]
+                        if candidate[method_index][ins_index]
                             .remove_cond(state.current_tile().to_condition())
                             .is_probe()
                         {
@@ -221,7 +221,7 @@ fn rollout(puzzle: &Puzzle, node: &mut Node) -> f64 {
                                 .remove_cond(state.current_tile().to_condition())]
                         } else {
                             vec![]
-                        }),
+                        },
                     )
                     .collect()
             } else if loosening_branch {

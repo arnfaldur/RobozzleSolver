@@ -15,6 +15,10 @@ opt-level = 0
 [profile.release]
 debug = 1
 
+[[bench]]
+name = "backtrack"
+harness = false
+
 [dependencies]
 colored = "*"
 rand = "*"
@@ -29,3 +33,6 @@ clap = "*"
 thirtyfour = "*"
 coz = "*"
 smallvec = "*"
+
+[dev-dependencies]
+criterion = "*"

@@ -1,12 +1,11 @@
 use crate::game::{Puzzle, Source};
 
 use backtrack::backtrack;
-use mcts::monte_carlo;
 
-pub(crate) mod pruning;
+pub mod pruning;
 
-pub(crate) mod backtrack;
-pub(crate) mod carlo;
+pub mod backtrack;
+pub mod carlo;
 mod mcts;
 
 pub fn solve(puzzle: Puzzle) -> Vec<(usize, Source)> {

@@ -5,16 +5,12 @@ use std::thread::spawn;
 use std::time::{Duration, Instant};
 
 use crossbeam_channel::{unbounded, Receiver, Sender};
-use rand::thread_rng;
 
 use super::pruning::*;
 use crate::constants::*;
 use crate::game::instructions::*;
 use crate::game::{Puzzle, Source, State};
 use crate::web::encode_program;
-use rand::prelude::SliceRandom;
-use serde_json::error::Category::Syntax;
-use std::f32::MAX;
 
 const BACKTRACK_STACK_SIZE: usize = 2200;
 // 44 * 50

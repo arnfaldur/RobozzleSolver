@@ -1,9 +1,6 @@
 use std::fs::File;
 use std::io::{prelude::*, ErrorKind, Write};
-use std::ops::{Range, RangeInclusive};
-use std::path::{Path, PathBuf};
-use std::process::{Command, Stdio};
-use std::result;
+use std::path::PathBuf;
 use std::str::FromStr;
 use std::thread::sleep;
 use std::time::Duration;
@@ -12,14 +9,12 @@ use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use thirtyfour::extensions::addons::firefox::FirefoxTools;
 use thirtyfour::extensions::query::conditions;
-use thirtyfour::fantoccini::error::CmdError;
 use thirtyfour::prelude::*;
 use tokio::runtime::Runtime;
 
 use crate::constants::*;
 use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
 use crate::solver::backtrack::backtrack;
-use tokio::io::AsyncRead;
 
 use self::errors::SolverError;
 
@@ -41,7 +36,7 @@ enum Solution {
 // password: 8r4WvSfxHGirMDxH6FBO
 
 pub fn solve_puzzle(puzzle_id: u64, login: bool) -> Result<(), SolverError> {
-    let mut rt = Runtime::new()?;
+    let rt = Runtime::new()?;
     rt.block_on(async {
         let driver = get_driver().await?;
 
@@ -78,7 +73,7 @@ pub fn solve_puzzle(puzzle_id: u64, login: bool) -> Result<(), SolverError> {
                 .await?
         }
         driver.quit().await
-    });
+    })?;
     return Ok(());
 }
 pub fn get_levels(
@@ -102,7 +97,7 @@ pub fn get_levels(
         },
     });
     if remaining_puzzle_ids.len() > 0 {
-        let mut rt = Runtime::new().unwrap();
+        let rt = Runtime::new().unwrap();
         rt.block_on(async {
             // let driver = get_driver().await.unwrap();
             result.append(
@@ -157,7 +152,7 @@ async fn perform_login(driver: &WebDriver) -> Result<(), SolverError> {
         .await
         .unwrap();
 
-    let mut signin_form = driver.form(By::Id("dialog-signin")).await.unwrap();
+    let signin_form = driver.form(By::Id("dialog-signin")).await.unwrap();
     signin_form.set_by_name("name", "Hugsun").await.unwrap();
     sleep(Duration::from_millis(500));
     signin_form
@@ -182,10 +177,10 @@ async fn get_external_levels(
     puzzle_ids: impl Iterator<Item = u64>,
 ) -> impl Iterator<Item = Result<Level, SolverError>> {
     let driver = get_driver().await.unwrap();
-    let mut url = "http://www.robozzle.com/beta/index.html".to_string();
+    let url = "http://www.robozzle.com/beta/index.html".to_string();
     driver.goto(url.as_str()).await.unwrap();
     // Disable top solver fetching
-    let json = driver
+    driver
         .execute("robozzle.topSolvers = () => {};", vec![])
         .await
         .unwrap();
@@ -249,7 +244,7 @@ fn read_level_from_path(path: PathBuf) -> Result<Level, SolverError> {
         .map_err(SolverError::IOError)
         .and_then(|mut file| {
             let mut string = String::new();
-            file.read_to_string(&mut string);
+            file.read_to_string(&mut string)?;
             let level_json: Result<Level, _> = serde_json::from_str::<Option<LevelJson>>(&string)
                 .map_err(SolverError::Serde)
                 .and_then(|opt| opt.ok_or(SolverError::NoPuzzleForId))
@@ -306,7 +301,8 @@ fn store_puzzle_locally(json: &str, puzzle_id: u64) {
         .map(|mut file| {
             file.write_all(json.as_bytes())
                 .expect("unable to write puzzle json to file");
-        });
+        })
+        .unwrap();
 }
 
 pub fn puzzle_from_string(string: &str) -> Puzzle {
@@ -454,16 +450,15 @@ impl StateEncoder {
             self.val |= (if val & (1 << i) > 0 { 1 } else { 0 }) << self.bits;
             self.bits += 1;
             if self.bits == 6 {
-                let mut c;
-                if self.val < 26 {
-                    c = char::from((97 + self.val) as u8);
+                let c = if self.val < 26 {
+                    char::from((97 + self.val) as u8)
                 } else if self.val < 52 {
-                    c = char::from((65 + self.val - 26) as u8);
+                    char::from((65 + self.val - 26) as u8)
                 } else if self.val < 62 {
-                    c = char::from((48 + self.val - 52) as u8);
+                    char::from((48 + self.val - 52) as u8)
                 } else {
-                    c = '-';
-                }
+                    '-'
+                };
                 self.output.push(c);
                 self.val = 0;
                 self.bits = 0;

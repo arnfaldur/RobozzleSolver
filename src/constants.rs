@@ -1,7 +1,5 @@
 use super::game::*;
 use crate::game::instructions::*;
-use std::collections::HashSet;
-
 pub(crate) const RE: Tile = Tile(0b00001);
 pub(crate) const GE: Tile = Tile(0b00010);
 pub(crate) const BE: Tile = Tile(0b00100);

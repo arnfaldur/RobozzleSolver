@@ -1,23 +1,5 @@
-use std::fs::File;
-use std::io::{prelude::*, Write};
-use std::path::{Path, PathBuf};
-use std::process::{Command, Stdio};
-use std::str::FromStr;
-use std::thread::sleep;
-use std::time::Duration;
-
-use serde::{Deserialize, Serialize};
-use serde_json::Value;
-use thirtyfour::extensions::addons::firefox::FirefoxTools;
-use thirtyfour::extensions::query::conditions;
 use thirtyfour::fantoccini::error::CmdError;
 use thirtyfour::prelude::*;
-use tokio::runtime::Runtime;
-
-use crate::constants::*;
-use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
-use crate::solver::backtrack::backtrack;
-use tokio::io::AsyncRead;
 
 #[derive(Debug)]
 pub enum SolverError {
