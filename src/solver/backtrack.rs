@@ -23,6 +23,8 @@ pub struct Frame {
     pub state: State,
     pub score: i64,
     pub max_score: i64,
+    pub max_steps: usize,
+    pub max_instructions: usize,
 }
 
 impl Frame {
@@ -32,6 +34,8 @@ impl Frame {
             state: puzzle.initial_state(&NOGRAM),
             score: 0,
             max_score: 1,
+            max_steps: usize::MAX,
+            max_instructions: puzzle.methods.iter().sum(),
         }
     }
 }
@@ -48,6 +52,7 @@ pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> 
     'outer: for i in 0..50 {
         let mut outer_frame = Frame::new(&puzzle);
         outer_frame.max_score = 1 << i;
+        outer_frame.max_steps = 1 << (5 + i * 2);
         let puzzle = &puzzle;
         let mut candidates = VecDeque::new();
         let mut considered: u64 = 0;
@@ -86,22 +91,12 @@ pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> 
                     break 'outer;
                 }
             }
-            // if considered % (1 << 20) == 0 || solved {
+            // if considered % (1 << 10) == 0 || solved {
             //     println!(
             //         "score: {}, MAX_INS: {}, MAX_SCORE: {}, steps: {}",
             //         score, max_instructions, max_score, steps
             //     );
-            //     if solved {
-            //         let mut solution = candidate.clone();
-            //         solution.sanitize();
-            //         result.push((steps, solution));
-            //         max_instructions = solution.count_ins();
-
-            //         println!("Solution found! {}", solution);
-            //         println!("code: {}", encode_program(&solution, puzzle));
-            //     } else {
-            //         println!("candidates: {}, current: {}", candidates.len(), candidate);
-            //     }
+            //     println!("candidates: {}, current: {}", candidates.len(), candidate);
             // }
         }
         coz::progress!("outer frame");
@@ -118,6 +113,8 @@ fn search<F>(
         mut state,
         score,
         max_score,
+        max_steps,
+        max_instructions,
     }: Frame,
     mut brancher: F,
 ) -> bool
@@ -134,7 +131,7 @@ where
     }
     let mut branched = false;
     let mut running = true;
-    while running {
+    while running && state.steps < max_steps {
         if !branched {
             let ins_pointer = state.ins_pointer();
             let ins = state.current_ins(&candidate);
@@ -214,6 +211,8 @@ where
                             }) + state.steps as i64
                                 + 4 * (state.stars as i64 - puzzle.stars as i64),
                             max_score,
+                            max_steps,
+                            max_instructions,
                         };
                         brancher(branch, nop_branch);
                         coz::progress!("branching");
