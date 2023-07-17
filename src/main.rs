@@ -11,6 +11,7 @@ use std::time::{Duration, Instant};
 
 use clap::{value_parser, Arg, ArgAction, Command};
 
+use colored::Colorize;
 use solver::constants::*;
 use solver::game::{instructions::*, *};
 use solver::solver::backtrack::{self, backtrack};
@@ -210,17 +211,17 @@ fn main() {
                 } else {
                     get_levels(puzzle_ids.into_iter().map(|n| n as u64)).collect()
                 };
-                let mut ids = Vec::new();
+                let mut results = Vec::new();
                 boi.into_iter().for_each(|level| match level {
                     Ok(level) => {
                         let now = Instant::now();
                         print_level(&level, !quiet);
-                        let results = backtrack(level.puzzle, timeout);
+                        let solutions = backtrack(level.puzzle, timeout);
                         let el = now.elapsed();
-                        if !results.is_empty() {
-                            ids.push(level.id);
+                        if !solutions.is_empty() {
+                            results.push((el, level.id));
                         }
-                        if timed && !results.is_empty() {
+                        if timed && !solutions.is_empty() {
                             println!(
                                 "Duration: {:02}:{:02}:{:02}.{:03}",
                                 el.as_secs() / (3600),
@@ -229,21 +230,54 @@ fn main() {
                                 el.subsec_millis()
                             );
                         }
-                        if !quiet && !results.is_empty() {
+                        if !quiet {
                             println!("Solutions:");
-                            for result in results {
+                            if solutions.is_empty() {
+                                let message = ("Unable to solve puzzle!");
                                 println!(
-                                    "steps: {:>2}, solution length: {:>2}, code: {}",
-                                    result.0,
-                                    result.1.count_ins(),
-                                    result.1
+                                    "{}",
+                                    std::iter::repeat('!')
+                                        .take(message.len() + 2)
+                                        .collect::<String>()
+                                        .color(colored::Color::Red)
                                 );
+                                println!(
+                                    "{}{}{}",
+                                    "!".color(colored::Color::Red),
+                                    message.on_red(),
+                                    "!".color(colored::Color::Red)
+                                );
+                                println!(
+                                    "{}",
+                                    std::iter::repeat('!')
+                                        .take(message.len() + 2)
+                                        .collect::<String>()
+                                        .color(colored::Color::Red)
+                                );
+                            } else {
+                                for solution in solutions {
+                                    println!(
+                                        "steps: {:>2}, solution length: {:>2}, code: {}",
+                                        solution.0,
+                                        solution.1.count_ins(),
+                                        solution.1
+                                    );
+                                }
                             }
                         }
                     }
                     Err(err) => eprintln!("level error: {:?}", err),
                 });
-                //dbg!(ids);
+                if timed {
+                    results.sort_by_key(|&(t, _)| t);
+                    for result in results {
+                        println!(
+                            "puzzle {:<5} took {} seconds",
+                            result.1,
+                            result.0.as_secs_f64()
+                        );
+                    }
+                }
             } else {
                 panic!(
                     "incorrect arguments puzzle range {:?}, can't be > 10 :(",

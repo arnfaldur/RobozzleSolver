@@ -21,6 +21,7 @@ pub type TileType = u32;
 pub struct Tile(pub TileType);
 
 impl Tile {
+    const MAX_TOUCHES: TileType = u32::MAX >> 4;
     fn touch(&mut self) {
         self.0 += TILE_TOUCHED.0;
     }
@@ -161,8 +162,8 @@ impl IndexMut<usize> for Source {
     }
 }
 
-// make the Stack struct exactly 2^10 bytes
-const STACK_SIZE: usize = (1 << 9) - mem::size_of::<usize>();
+type Stack = StackArr;
+
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 6;
 
@@ -226,21 +227,21 @@ impl StackVec {
 }
 
 #[derive(Copy, Clone, Debug)]
-pub struct Stack {
+pub struct StackArr {
     pointer: usize,
-    pub data: [InsPtr; STACK_SIZE],
+    pub data: [InsPtr; Self::STACK_SIZE],
 }
 
-impl Default for Stack {
+impl Default for StackArr {
     fn default() -> Self {
         Self {
             pointer: 0,
-            data: [INSPTR_NULL; STACK_SIZE],
+            data: [INSPTR_NULL; Self::STACK_SIZE],
         }
     }
 }
 
-impl PartialEq for Stack {
+impl PartialEq for StackArr {
     fn eq(&self, other: &Self) -> bool {
         if self.pointer != other.pointer {
             return false;
@@ -255,9 +256,9 @@ impl PartialEq for Stack {
     }
 }
 
-impl Eq for Stack {}
+impl Eq for StackArr {}
 
-impl Hash for Stack {
+impl Hash for StackArr {
     fn hash<H: Hasher>(&self, state: &mut H) {
         let mut remaining = STACK_MATCH;
         let mut i = self.pointer;
@@ -271,14 +272,16 @@ impl Hash for Stack {
     }
 }
 
-impl Index<usize> for Stack {
+impl Index<usize> for StackArr {
     type Output = InsPtr;
     fn index(&self, index: usize) -> &Self::Output {
         &self.data[self.pointer - index - 1]
     }
 }
 
-impl Stack {
+impl StackArr {
+    // make the StackArr struct exactly 2^10 bytes
+    const STACK_SIZE: usize = (1 << 9) - mem::size_of::<usize>();
     fn push(&mut self, element: InsPtr) {
         self.data[self.pointer] = element;
         self.pointer += 1;
@@ -509,7 +512,8 @@ impl State {
     fn running(&self) -> bool {
         !self.stack.is_empty()
             && self.stars > 0
-            && self.stack.len() < STACK_SIZE - 10
+            && self.map.0[self.y][self.x].touches() < Tile::MAX_TOUCHES as usize
+            && self.stack.len() < StackArr::STACK_SIZE - 10
             && self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
