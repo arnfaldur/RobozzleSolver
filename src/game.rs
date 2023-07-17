@@ -7,6 +7,7 @@ use std::ops::{Index, IndexMut};
 
 use colored::*;
 use serde::{Deserialize, Serialize};
+use smallvec::SmallVec;
 
 use crate::constants::*;
 use instructions::*;
@@ -166,17 +167,87 @@ const STACK_SIZE: usize = (1 << 9) - mem::size_of::<usize>();
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 6;
 
+#[derive(Clone, Debug)]
+pub struct StackVec(pub SmallVec<[InsPtr; 32]>);
+
+impl Default for StackVec {
+    fn default() -> Self {
+        Self(Default::default())
+    }
+}
+impl PartialEq for StackVec {
+    fn eq(&self, other: &Self) -> bool {
+        if self.0.len() != other.0.len() {
+            return false;
+        } else if self.0.len() <= STACK_MATCH {
+            return self.0 == other.0;
+        } else if self.0.len() > STACK_MATCH {
+            return self.0.get((self.0.len() - STACK_MATCH)..self.0.len())
+                == other.0.get((self.0.len() - STACK_MATCH)..self.0.len());
+        } else {
+            return false;
+        }
+    }
+}
+
+impl Eq for StackVec {}
+
+impl Hash for StackVec {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        self.0
+            .get((self.0.len() - STACK_MATCH).max(0)..self.0.len())
+            .hash(state);
+    }
+}
+impl Index<usize> for StackVec {
+    type Output = InsPtr;
+    fn index(&self, index: usize) -> &Self::Output {
+        &self.0[self.0.len() - index - 1]
+    }
+}
+impl StackVec {
+    fn push(&mut self, element: InsPtr) {
+        self.0.push(element);
+    }
+    fn pop(&mut self) -> InsPtr {
+        self.0.pop().unwrap()
+    }
+    pub fn last(&self) -> &InsPtr {
+        self.0.last().unwrap()
+    }
+    pub(crate) fn len(&self) -> usize {
+        self.0.len()
+    }
+    fn is_empty(&self) -> bool {
+        self.len() == 0
+    }
+    pub(crate) fn clear(&mut self) {
+        self.0.clear();
+    }
+}
+
 #[derive(Copy, Clone, Debug)]
 pub struct Stack {
     pointer: usize,
     pub data: [InsPtr; STACK_SIZE],
 }
 
+impl Default for Stack {
+    fn default() -> Self {
+        Self {
+            pointer: 0,
+            data: [INSPTR_NULL; STACK_SIZE],
+        }
+    }
+}
+
 impl PartialEq for Stack {
     fn eq(&self, other: &Self) -> bool {
-        if self.pointer <= STACK_MATCH && self.pointer == other.pointer {
+        if self.pointer != other.pointer {
+            return false;
+        } else if self.pointer <= STACK_MATCH {
             return self.data.get(0..self.pointer) == other.data.get(0..other.pointer);
-        } else if self.pointer > STACK_MATCH && other.pointer > STACK_MATCH {
+        } else if self.pointer > STACK_MATCH {
             let start = self.pointer - STACK_MATCH;
             return self.data.get(start..self.pointer) == other.data.get(start..other.pointer);
         } else {
@@ -384,10 +455,7 @@ impl Default for State {
         State {
             steps: 0,
             stars: 1,
-            stack: Stack {
-                pointer: 0,
-                data: [INSPTR_NULL; STACK_SIZE],
-            },
+            stack: Default::default(),
             map: Map([[_N; 18]; 14]),
             direction: Direction::Up,
             x: 1,

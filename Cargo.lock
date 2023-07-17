@@ -1218,6 +1218,7 @@ dependencies = [
  "rand_pcg",
  "serde",
  "serde_json",
+ "smallvec",
  "statrs",
  "thirtyfour",
  "tokio",
