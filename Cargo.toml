@@ -15,6 +15,13 @@ opt-level = 0
 [profile.release]
 debug = 1
 
+[[bin]]
+name = "solver"
+bench = false
+
+[lib]
+bench = false
+
 [[bench]]
 name = "backtrack"
 harness = false

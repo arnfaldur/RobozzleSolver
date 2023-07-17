@@ -310,82 +310,82 @@ fn test_debug_printing() {
     }
 }
 
-#[bench]
-fn bench_execute_42_times_10(b: &mut Bencher) {
-    //        for instruction in PUZZLE_42.get_instruction_set() {
-    //            print!("{}", show_instruction(instruction));
-    //        }
-    //        println!();
-    //        for instruction in PUZZLE_536.get_instruction_set() {
-    //            print!("{}", show_instruction(instruction));
-    //        }
-    let instruction_set = PUZZLE_42.get_ins_set(INS_COLOR_MASK, true);
-    let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(42);
-    let mut source: Source = Source([[NOP; 10]; 5]);
-    for iteration in 0..10 {
-        for i in 0..5 {
-            for ins in 0..PUZZLE_42.methods[i] {
-                source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
-            }
-        }
-        b.iter(|| PUZZLE_42.execute(&source, false, carlo::score));
-    }
-}
+// #[bench]
+// fn bench_execute_42_times_10(b: &mut Bencher) {
+//     //        for instruction in PUZZLE_42.get_instruction_set() {
+//     //            print!("{}", show_instruction(instruction));
+//     //        }
+//     //        println!();
+//     //        for instruction in PUZZLE_536.get_instruction_set() {
+//     //            print!("{}", show_instruction(instruction));
+//     //        }
+//     let instruction_set = PUZZLE_42.get_ins_set(INS_COLOR_MASK, true);
+//     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(42);
+//     let mut source: Source = Source([[NOP; 10]; 5]);
+//     for iteration in 0..10 {
+//         for i in 0..5 {
+//             for ins in 0..PUZZLE_42.methods[i] {
+//                 source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
+//             }
+//         }
+//         b.iter(|| PUZZLE_42.execute(&source, false, carlo::score));
+//     }
+// }
 
-#[bench]
-fn bench_execute_42_solution(b: &mut Bencher) {
-    b.iter(|| PUZZLE_42.execute(&PUZZLE_42_SOLUTION, false, carlo::score));
-}
+// #[bench]
+// fn bench_execute_42_solution(b: &mut Bencher) {
+//     b.iter(|| PUZZLE_42.execute(&PUZZLE_42_SOLUTION, false, carlo::score));
+// }
 
-//    #[bench]
-//    fn bench_42_monte_carlo(b: &mut Bencher) {
-//        b.iter(|| carlo(&PUZZLE_42, 1 << 5, 1 << 5));
-//    }
+// //    #[bench]
+// //    fn bench_42_monte_carlo(b: &mut Bencher) {
+// //        b.iter(|| carlo(&PUZZLE_42, 1 << 5, 1 << 5));
+// //    }
 
-#[bench]
-fn bench_execute_536_times_10(b: &mut Bencher) {
-    let instruction_set = PUZZLE_536.get_ins_set(INS_COLOR_MASK, true);
-    let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(536);
-    let mut source: Source = Source([[NOP; 10]; 5]);
-    for _iteration in 0..10 {
-        for i in 0..5 {
-            for ins in 0..PUZZLE_536.methods[i] {
-                source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
-            }
-        }
-        b.iter(|| PUZZLE_536.execute(&source, false, carlo::score));
-    }
-}
+// #[bench]
+// fn bench_execute_536_times_10(b: &mut Bencher) {
+//     let instruction_set = PUZZLE_536.get_ins_set(INS_COLOR_MASK, true);
+//     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(536);
+//     let mut source: Source = Source([[NOP; 10]; 5]);
+//     for _iteration in 0..10 {
+//         for i in 0..5 {
+//             for ins in 0..PUZZLE_536.methods[i] {
+//                 source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
+//             }
+//         }
+//         b.iter(|| PUZZLE_536.execute(&source, false, carlo::score));
+//     }
+// }
 
-#[bench]
-fn bench_execute_536_solution(b: &mut Bencher) {
-    b.iter(|| PUZZLE_536.execute(&PUZZLE_536_SOLUTION, false, carlo::score));
-}
+// #[bench]
+// fn bench_execute_536_solution(b: &mut Bencher) {
+//     b.iter(|| PUZZLE_536.execute(&PUZZLE_536_SOLUTION, false, carlo::score));
+// }
 
-//    #[bench]
-//    fn bench_536_monte_carlo(b: &mut Bencher) {
-//        b.iter(|| carlo(&PUZZLE_536, 1 << 5, 1 << 5));
-//    }
+// //    #[bench]
+// //    fn bench_536_monte_carlo(b: &mut Bencher) {
+// //        b.iter(|| carlo(&PUZZLE_536, 1 << 5, 1 << 5));
+// //    }
 
-#[bench]
-fn bench_execute_656_times_10(b: &mut Bencher) {
-    let instruction_set = PUZZLE_656.get_ins_set(INS_COLOR_MASK, true);
-    let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(656);
-    let mut source: Source = Source([[NOP; 10]; 5]);
-    for _iteration in 0..10 {
-        for i in 0..5 {
-            for ins in 0..PUZZLE_656.methods[i] {
-                source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
-            }
-        }
-        b.iter(|| PUZZLE_656.execute(&source, false, carlo::score));
-    }
-}
+// #[bench]
+// fn bench_execute_656_times_10(b: &mut Bencher) {
+//     let instruction_set = PUZZLE_656.get_ins_set(INS_COLOR_MASK, true);
+//     let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(656);
+//     let mut source: Source = Source([[NOP; 10]; 5]);
+//     for _iteration in 0..10 {
+//         for i in 0..5 {
+//             for ins in 0..PUZZLE_656.methods[i] {
+//                 source[i][ins] = *instruction_set.choose(&mut rng).unwrap_or(&NOP);
+//             }
+//         }
+//         b.iter(|| PUZZLE_656.execute(&source, false, carlo::score));
+//     }
+// }
 
-#[bench]
-fn bench_execute_656_solution(b: &mut Bencher) {
-    b.iter(|| PUZZLE_656.execute(&PUZZLE_656_SOLUTION, false, carlo::score));
-}
+// #[bench]
+// fn bench_execute_656_solution(b: &mut Bencher) {
+//     b.iter(|| PUZZLE_656.execute(&PUZZLE_656_SOLUTION, false, carlo::score));
+// }
 
 //    #[bench]
 //    fn bench_656_monte_carlo(b: &mut Bencher) {
