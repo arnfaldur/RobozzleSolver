@@ -40,26 +40,6 @@ impl Frame {
     }
 }
 
-impl Ord for Frame {
-    fn cmp(&self, other: &Self) -> Ordering {
-        self.state.steps.cmp(&other.state.steps)
-    }
-}
-
-impl PartialOrd for Frame {
-    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
-        Some(self.cmp(other))
-    }
-}
-
-impl PartialEq for Frame {
-    fn eq(&self, other: &Self) -> bool {
-        self.cmp(other) == Ordering::Equal
-    }
-}
-
-impl Eq for Frame {}
-
 const THREADS: usize = 32;
 
 pub fn obacktrack(puzzle: Puzzle) -> Vec<(usize, Source)> {
@@ -353,7 +333,7 @@ where
     return state.stars == 0;
 }
 
-pub fn backtrack(puzzle: Puzzle) -> Vec<(usize, Source)> {
+pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> {
     let mut max_instructions = puzzle.methods.iter().sum();
     let mut max_steps = usize::MAX;
     let mut max_score = 16;
@@ -397,8 +377,11 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<(usize, Source)> {
                 result.push((steps, solution));
                 max_instructions = solution.count_ins();
             }
-            if now.elapsed().as_nanos() > 5_000_000 {
-                break 'outer;
+            coz::progress!("backtrack frame");
+            if let Some(timeout) = timeout {
+                if now.elapsed().as_millis() > timeout {
+                    break 'outer;
+                }
             }
             // if considered % (1 << 20) == 0 || solved {
             //     println!(
@@ -418,6 +401,7 @@ pub fn backtrack(puzzle: Puzzle) -> Vec<(usize, Source)> {
             //     }
             // }
         }
+        coz::progress!("outer frame");
     }
     result.sort();
     result.dedup();
@@ -529,12 +513,34 @@ where
                             max_score,
                         };
                         brancher(branch, nop_branch);
+                        coz::progress!("branching");
                     }
                 }
                 return state.stars == 0;
             }
         }
+        coz::progress!("search state step");
         running = state.step(&candidate, puzzle);
     }
     return state.stars == 0;
 }
+
+impl Ord for Frame {
+    fn cmp(&self, other: &Self) -> Ordering {
+        self.state.steps.cmp(&other.state.steps)
+    }
+}
+
+impl PartialOrd for Frame {
+    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+        Some(self.cmp(other))
+    }
+}
+
+impl PartialEq for Frame {
+    fn eq(&self, other: &Self) -> bool {
+        self.cmp(other) == Ordering::Equal
+    }
+}
+
+impl Eq for Frame {}

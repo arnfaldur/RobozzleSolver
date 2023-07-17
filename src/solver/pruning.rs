@@ -7,6 +7,7 @@ use crate::game::{instructions::*, *};
 use std::collections::HashSet;
 
 pub(crate) fn snip_around(puzzle: &Puzzle, temp: &Source, ins_pointer: InsPtr, show: bool) -> bool {
+    coz::begin!("snip around");
     let m = ins_pointer.get_method_index();
     let i = ins_pointer.get_ins_index();
     let mut result = false;
@@ -16,6 +17,7 @@ pub(crate) fn snip_around(puzzle: &Puzzle, temp: &Source, ins_pointer: InsPtr, s
         result |= banned_pair(puzzle, a, b, show);
         if show && result {
             println!("banned pair {}", j);
+            coz::end!("snip around");
             return true;
         }
     }
@@ -26,13 +28,23 @@ pub(crate) fn snip_around(puzzle: &Puzzle, temp: &Source, ins_pointer: InsPtr, s
         result |= banned_trio(puzzle, a, b, c, show);
         if show && result {
             println!("banned trio {}", j);
+            coz::end!("snip around");
             return true;
         }
     }
+    coz::end!("snip around");
     return result;
 }
 
+#[inline]
 pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
+    coz::begin!("deny");
+    let result = deny_inner(puzzle, program, show);
+    coz::end!("deny");
+    return result;
+}
+
+fn deny_inner(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
     let mut denied = false;
     let mut only_cond = [HALT, NOP, NOP, NOP, NOP];
     let mut invoked = [0; 5];
@@ -177,10 +189,18 @@ pub(crate) fn deny(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
         //        }
         //        if show && denied { println!("de11"); }
     }
-    return denied;
+    denied
 }
 
+#[inline]
 pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
+    coz::begin!("banned pair");
+    let result = banned_pair_inner(b, a, show, puzzle);
+    coz::end!("banned pair");
+    return result;
+}
+
+fn banned_pair_inner(b: Ins, a: Ins, show: bool, puzzle: &Puzzle) -> bool {
     if b.is_halt() {
         return false;
     }
@@ -300,12 +320,16 @@ pub fn banned_pair(puzzle: &Puzzle, a: Ins, b: Ins, show: bool) -> bool {
         println!("Some other pair issue a: {:?} b: {:?}", a, b);
         return true;
     }
-    banned //|| query_rejects_2(&[a, b])
+    banned
+    //|| query_rejects_2(&[a, b])
 }
 
 pub fn banned_trio(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, show: bool) -> bool {
+    coz::begin!("banned trio");
     if c.is_debug() {
-        return banned_pair(puzzle, a, b, show);
+        let result = banned_pair(puzzle, a, b, show);
+        coz::end!("banned trio");
+        return result;
     }
     let mut banned = false;
     if a.get_cond() == b.get_cond() && a.get_cond() == c.get_cond() {
@@ -323,14 +347,20 @@ pub fn banned_trio(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, show: bool) -> bool 
         banned |= a > b || b > c;
         //        banned |= a.get_cond() != b.get_cond() && a.get_cond() != c.get_cond() && b.get_cond() != c.get_cond() && !a.is_gray() && !b.is_gray() && !c.is_gray();
     }
-    banned || query_rejects_3(&[a, b, c])
+    let result = banned || query_rejects_3(&[a, b, c]);
+    coz::end!("banned trio");
+    return result;
 }
 
 pub fn banned_quartet(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, d: Ins, show: bool) -> bool {
-    if d == HALT {
-        return banned_trio(puzzle, a, b, c, show);
-    }
-    query_rejects_4(&[a, b, c, d])
+    coz::begin!("banned quartet");
+    let result = if d == HALT {
+        banned_trio(puzzle, a, b, c, show)
+    } else {
+        query_rejects_4(&[a, b, c, d])
+    };
+    coz::end!("banned quartet");
+    return result;
 }
 
 //pub fn reject(state: &State, puzzle: &Puzzle, program: &Source) -> bool {

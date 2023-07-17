@@ -10,7 +10,7 @@ use std::collections::{HashMap, HashSet};
 use std::time::{Duration, Instant};
 
 use crate::solver::carlo::{score, score_cmp};
-use clap::{Arg, ArgAction, Command};
+use clap::{value_parser, Arg, ArgAction, Command};
 use constants::*;
 use game::{instructions::*, *};
 use solver::backtrack::{self, backtrack};
@@ -82,44 +82,41 @@ fn cli() -> Command {
         .subcommand(
             Command::new("backtrack")
                 .subcommand_negates_reqs(true)
-                .subcommand(
-                    Command::new("range")
-                        .arg(
-                            Arg::new("puzzle ID")
-                                .required(true)
-                                .num_args(2)
-                                .value_parser(0..30000),
-                        )
-                        .arg(
-                            Arg::new("timed")
-                                .long("timed")
-                                .short('t')
-                                .action(ArgAction::SetTrue),
-                        )
-                        .arg(
-                            Arg::new("quiet")
-                                .long("quiet")
-                                .short('q')
-                                .action(ArgAction::SetTrue),
-                        ),
-                )
-                .arg(
-                    Arg::new("puzzle ID")
-                        .required(true)
-                        .num_args(1..=10)
-                        .value_parser(0..30000),
-                )
                 .arg(
                     Arg::new("timed")
                         .long("timed")
                         .short('t')
+                        .global(true)
                         .action(ArgAction::SetTrue),
                 )
                 .arg(
                     Arg::new("quiet")
                         .long("quiet")
                         .short('q')
+                        .global(true)
                         .action(ArgAction::SetTrue),
+                )
+                .arg(
+                    Arg::new("timeout")
+                        .long("timeout")
+                        .short('o')
+                        .global(true)
+                        .action(ArgAction::Set)
+                        .value_parser(value_parser!(u128)),
+                )
+                .subcommand(
+                    Command::new("range").arg(
+                        Arg::new("puzzle ID")
+                            .required(true)
+                            .num_args(2)
+                            .value_parser(0..30000),
+                    ),
+                )
+                .arg(
+                    Arg::new("puzzle ID")
+                        .required(true)
+                        .num_args(1..=10)
+                        .value_parser(0..30000),
                 ),
         )
         .subcommand(
@@ -160,14 +157,19 @@ fn main() {
                         get_level(puzzle_ids[0] as u64).expect("unable to fetch puzzle data");
                     print_level(&level, matches.get_flag("long"));
                 } else if puzzle_ids.len() > 1 {
-                    let boi: Vec<_> = if matches.subcommand_matches("range").is_some() {
+                    let level_res: Vec<_> = if matches.subcommand_matches("range").is_some() {
                         get_levels((puzzle_ids[0] as u64)..=(puzzle_ids[1] as u64)).collect()
                     } else {
                         get_levels(puzzle_ids.into_iter().map(|n| n as u64)).collect()
                     };
-                    boi.into_iter().for_each(|level| match level {
+                    let only_one = level_res.len() == 1;
+                    level_res.into_iter().for_each(|level| match level {
                         Ok(level) => print_level(&level, matches.get_flag("long")),
-                        Err(err) => eprintln!("level error: {:?}", err),
+                        Err(err) => {
+                            if only_one {
+                                eprintln!("level error: {:?}", err)
+                            }
+                        }
                     });
                 } else {
                     panic!(
@@ -195,25 +197,11 @@ fn main() {
             _ => todo!(),
         },
         Some(("backtrack", matches)) => {
-            // let puzzle_ids: Vec<i64> = matches
-            //     .get_many("puzzle ID")
-            //     .expect("required")
-            //     .copied()
-            //     .collect();
             let (matches, ranged) = if let Some(("range", matches)) = matches.subcommand() {
                 (matches, true)
             } else {
                 (matches, false)
             };
-            // let puzzle_ids: Vec<i64> = if let Some(("range", matches)) = matches.subcommand() {
-            //     matches
-            // } else {
-            //     matches
-            // }
-            // .get_many("puzzle ID")
-            // .expect("required")
-            // .copied()
-            // .collect();
             let puzzle_ids: Vec<i64> = matches
                 .get_many("puzzle ID")
                 .expect("required")
@@ -221,6 +209,7 @@ fn main() {
                 .collect();
             let timed = matches.get_flag("timed");
             let quiet = matches.get_flag("quiet");
+            let timeout = matches.get_one::<u128>("timeout").map(|e| *e);
             if puzzle_ids.len() > 0 {
                 let boi: Vec<_> = if ranged {
                     get_levels((puzzle_ids[0] as u64)..=(puzzle_ids[1] as u64)).collect()
@@ -231,11 +220,11 @@ fn main() {
                 boi.into_iter().for_each(|level| match level {
                     Ok(level) => {
                         let now = Instant::now();
-                        let results = backtrack(level.puzzle);
+                        print_level(&level, !quiet);
+                        let results = backtrack(level.puzzle, timeout);
                         let el = now.elapsed();
                         if !results.is_empty() {
                             ids.push(level.id);
-                            print_level(&level, !quiet);
                         }
                         if timed && !results.is_empty() {
                             println!(
@@ -260,7 +249,7 @@ fn main() {
                     }
                     Err(err) => eprintln!("level error: {:?}", err),
                 });
-                dbg!(ids);
+                //dbg!(ids);
             } else {
                 panic!(
                     "incorrect arguments puzzle range {:?}, can't be > 10 :(",

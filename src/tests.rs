@@ -399,7 +399,7 @@ fn bench_execute_656_solution(b: &mut Bencher) {
 //         .collect();
 //     for level in levels.iter() {
 //         b.iter(|| {
-//             backtrack(level.puzzle);
+//             backtrack(level.puzzle, None);
 //         });
 //     }
 // }
@@ -409,7 +409,7 @@ fn bench_execute_656_solution(b: &mut Bencher) {
 //     fn bench_backtrack_{n}(b: &mut Bencher) {{
 //         let level = get_local_level({n}).unwrap(
 //         b.iter(|| {{
-//             backtrack(level.puzzle);
+//             backtrack(level.puzzle, None);
 //         }});
 //     }}
 //     """)
@@ -418,7 +418,7 @@ fn bench_execute_656_solution(b: &mut Bencher) {
 fn bench_backtrack_24(b: &mut Bencher) {
     let level = get_local_level(24).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -426,7 +426,7 @@ fn bench_backtrack_24(b: &mut Bencher) {
 fn bench_backtrack_27(b: &mut Bencher) {
     let level = get_local_level(27).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -434,7 +434,7 @@ fn bench_backtrack_27(b: &mut Bencher) {
 fn bench_backtrack_45(b: &mut Bencher) {
     let level = get_local_level(45).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -442,7 +442,7 @@ fn bench_backtrack_45(b: &mut Bencher) {
 fn bench_backtrack_46(b: &mut Bencher) {
     let level = get_local_level(46).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -450,7 +450,7 @@ fn bench_backtrack_46(b: &mut Bencher) {
 fn bench_backtrack_52(b: &mut Bencher) {
     let level = get_local_level(52).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -458,7 +458,7 @@ fn bench_backtrack_52(b: &mut Bencher) {
 fn bench_backtrack_59(b: &mut Bencher) {
     let level = get_local_level(59).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -466,7 +466,7 @@ fn bench_backtrack_59(b: &mut Bencher) {
 fn bench_backtrack_61(b: &mut Bencher) {
     let level = get_local_level(61).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -474,7 +474,7 @@ fn bench_backtrack_61(b: &mut Bencher) {
 fn bench_backtrack_63(b: &mut Bencher) {
     let level = get_local_level(63).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -482,7 +482,7 @@ fn bench_backtrack_63(b: &mut Bencher) {
 fn bench_backtrack_67(b: &mut Bencher) {
     let level = get_local_level(67).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -490,7 +490,7 @@ fn bench_backtrack_67(b: &mut Bencher) {
 fn bench_backtrack_68(b: &mut Bencher) {
     let level = get_local_level(68).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -498,7 +498,7 @@ fn bench_backtrack_68(b: &mut Bencher) {
 fn bench_backtrack_73(b: &mut Bencher) {
     let level = get_local_level(73).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -506,7 +506,7 @@ fn bench_backtrack_73(b: &mut Bencher) {
 fn bench_backtrack_75(b: &mut Bencher) {
     let level = get_local_level(75).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -514,7 +514,7 @@ fn bench_backtrack_75(b: &mut Bencher) {
 fn bench_backtrack_76(b: &mut Bencher) {
     let level = get_local_level(76).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -522,7 +522,7 @@ fn bench_backtrack_76(b: &mut Bencher) {
 fn bench_backtrack_105(b: &mut Bencher) {
     let level = get_local_level(105).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -530,7 +530,7 @@ fn bench_backtrack_105(b: &mut Bencher) {
 fn bench_backtrack_108(b: &mut Bencher) {
     let level = get_local_level(108).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -538,7 +538,7 @@ fn bench_backtrack_108(b: &mut Bencher) {
 fn bench_backtrack_123(b: &mut Bencher) {
     let level = get_local_level(123).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -546,7 +546,7 @@ fn bench_backtrack_123(b: &mut Bencher) {
 fn bench_backtrack_126(b: &mut Bencher) {
     let level = get_local_level(126).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -554,7 +554,7 @@ fn bench_backtrack_126(b: &mut Bencher) {
 fn bench_backtrack_136(b: &mut Bencher) {
     let level = get_local_level(136).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -562,7 +562,7 @@ fn bench_backtrack_136(b: &mut Bencher) {
 fn bench_backtrack_138(b: &mut Bencher) {
     let level = get_local_level(138).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -570,7 +570,7 @@ fn bench_backtrack_138(b: &mut Bencher) {
 fn bench_backtrack_139(b: &mut Bencher) {
     let level = get_local_level(139).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -578,7 +578,7 @@ fn bench_backtrack_139(b: &mut Bencher) {
 fn bench_backtrack_140(b: &mut Bencher) {
     let level = get_local_level(140).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -586,7 +586,7 @@ fn bench_backtrack_140(b: &mut Bencher) {
 fn bench_backtrack_147(b: &mut Bencher) {
     let level = get_local_level(147).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -594,7 +594,7 @@ fn bench_backtrack_147(b: &mut Bencher) {
 fn bench_backtrack_202(b: &mut Bencher) {
     let level = get_local_level(202).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }
 
@@ -602,6 +602,6 @@ fn bench_backtrack_202(b: &mut Bencher) {
 fn bench_backtrack_220(b: &mut Bencher) {
     let level = get_local_level(220).unwrap();
     b.iter(|| {
-        assert!(backtrack(level.puzzle).len() > 0);
+        assert!(backtrack(level.puzzle, None).len() > 0);
     });
 }

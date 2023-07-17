@@ -60,7 +60,7 @@ impl Tile {
         self.0 = color as TileType | (self.0 & TILE_TOUCH_MASK.0)
     }
     pub(crate) fn to_condition(&self) -> Ins {
-        ((self.0 as u8) << 5).into()
+        ((self.0 << 5) & 0b11111111).into()
     }
 }
 
@@ -279,6 +279,7 @@ pub struct Puzzle {
 
 impl Puzzle {
     pub(crate) fn get_ins_set(&self, colors: Ins, gray: bool) -> Vec<Ins> {
+        coz::begin!("get instruction set");
         let functions = self
             .methods
             .iter()
@@ -312,6 +313,7 @@ impl Puzzle {
                 }
             }
         }
+        coz::end!("get instruction set");
         return result;
     }
     pub(crate) fn empty_source(&self) -> Source {
@@ -340,6 +342,7 @@ impl Puzzle {
     where
         F: FnMut(&State, &Puzzle) -> R,
     {
+        coz::begin!("execute");
         let mut state = self.initial_state(source);
         if show {
             println!("{}", state);
@@ -352,7 +355,9 @@ impl Puzzle {
         if show {
             println!("{}", state);
         }
-        return scoring(&state, self);
+        let result = scoring(&state, self);
+        coz::end!("execute");
+        return result;
     }
     pub(crate) fn get_cond_mask(&self) -> Ins {
         if (self.red as u8) + (self.green as u8) + (self.blue as u8) > 1 {
@@ -441,6 +446,7 @@ impl State {
             && self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
+        coz::begin!("step");
         let ins = self.current_ins(source).as_vanilla();
         self.stack.pop();
         self.steps += 1;
@@ -450,6 +456,7 @@ impl State {
                     self.y = (self.y as i32 + [-1, 0, 1, 0][self.direction as usize]) as usize;
                     self.x = (self.x as i32 + [0, -1, 0, 1][self.direction as usize]) as usize;
                     if *self.current_tile() == _N {
+                        coz::end!("step");
                         return false;
                     } else {
                         self.stars -= self.current_tile().has_star() as usize;
@@ -463,11 +470,15 @@ impl State {
                     //                    self.max_stack = max(self.max_stack, self.stack.pointer);
                 }
                 MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.mark(ins),
-                HALT => return self.running(),
+                HALT => {
+                    coz::end!("step");
+                    return self.running();
+                }
                 _ => (),
             }
         }
         self.touch();
+        coz::end!("step");
         return self.running();
     }
     fn intersection_cost(&self, intersections: i64) -> i64 {

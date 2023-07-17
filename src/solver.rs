@@ -10,5 +10,5 @@ pub(crate) mod carlo;
 mod mcts;
 
 pub fn solve(puzzle: Puzzle) -> Vec<(usize, Source)> {
-    return backtrack(puzzle);
+    return backtrack(puzzle, None);
 }

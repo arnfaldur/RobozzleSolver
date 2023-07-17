@@ -3,10 +3,10 @@ use std::fmt::{Debug, Display, Error, Formatter};
 use colored::*;
 use serde::{Deserialize, Serialize};
 
-type InsType = u16;
+pub type InsType = u16;
 
 #[derive(PartialEq, Eq, Ord, PartialOrd, Copy, Clone, Hash, Serialize, Deserialize)]
-pub struct Ins(InsType); // a single instruction
+pub struct Ins(pub InsType); // a single instruction
 
 impl Ins {
     pub fn condition_to_color(self) -> Ins {
@@ -125,6 +125,12 @@ const VANILLA_MASK: Ins = Ins(0b0000000011111111);
 impl From<Ins> for u8 {
     fn from(ins: Ins) -> Self {
         ins.0 as u8
+    }
+}
+
+impl From<u32> for Ins {
+    fn from(val: u32) -> Self {
+        Ins(val as InsType)
     }
 }
 

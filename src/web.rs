@@ -15,7 +15,6 @@ use thirtyfour::extensions::query::conditions;
 use thirtyfour::fantoccini::error::CmdError;
 use thirtyfour::prelude::*;
 use tokio::runtime::Runtime;
-use webdriver::common::LocatorStrategy::CSSSelector;
 
 use crate::constants::*;
 use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
@@ -54,7 +53,7 @@ pub fn solve_puzzle(puzzle_id: u64, login: bool) -> Result<(), SolverError> {
         // let puzzle =
         //     level_json_to_puzzle(&fetch_level_json(&driver, puzzle_id).await.unwrap()).await;
         let puzzle = get_level(puzzle_id)?.puzzle;
-        let mut solutions = backtrack(puzzle);
+        let mut solutions = backtrack(puzzle, None);
         solutions.sort_unstable_by_key(|sol| sol.0);
         solutions.sort_unstable_by_key(|sol| sol.1.count_ins());
         if let Some(solution) = solutions.pop() {

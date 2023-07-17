@@ -13,7 +13,6 @@ use thirtyfour::extensions::query::conditions;
 use thirtyfour::fantoccini::error::CmdError;
 use thirtyfour::prelude::*;
 use tokio::runtime::Runtime;
-use webdriver::common::LocatorStrategy::CSSSelector;
 
 use crate::constants::*;
 use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
