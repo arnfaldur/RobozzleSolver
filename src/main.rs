@@ -46,7 +46,7 @@ fn cli() -> Command {
                         .arg(
                             Arg::new("puzzle ID")
                                 .required(true)
-                                .num_args(1..=10)
+                                .num_args(1..=100)
                                 .value_parser(0..30000),
                         )
                         .arg(
@@ -110,7 +110,7 @@ fn cli() -> Command {
                 .arg(
                     Arg::new("puzzle ID")
                         .required(true)
-                        .num_args(1..=10)
+                        .num_args(1..=100)
                         .value_parser(0..30000),
                 ),
         )
@@ -128,7 +128,7 @@ fn cli() -> Command {
                 .arg(
                     Arg::new("puzzle ID")
                         .required(true)
-                        .num_args(1..=10)
+                        .num_args(1..=100)
                         .value_parser(0..30000),
                 ),
         )
@@ -212,6 +212,7 @@ fn main() {
                     get_levels(puzzle_ids.into_iter().map(|n| n as u64)).collect()
                 };
                 let mut results = Vec::new();
+                let now = Instant::now();
                 boi.into_iter().for_each(|level| match level {
                     Ok(level) => {
                         let now = Instant::now();
@@ -230,31 +231,33 @@ fn main() {
                                 el.subsec_millis()
                             );
                         }
-                        if !quiet {
+                        if solutions.is_empty() {
                             println!("Solutions:");
-                            if solutions.is_empty() {
-                                let message = ("Unable to solve puzzle!");
-                                println!(
-                                    "{}",
-                                    std::iter::repeat('!')
-                                        .take(message.len() + 2)
-                                        .collect::<String>()
-                                        .color(colored::Color::Red)
-                                );
-                                println!(
-                                    "{}{}{}",
-                                    "!".color(colored::Color::Red),
-                                    message.on_red(),
-                                    "!".color(colored::Color::Red)
-                                );
-                                println!(
-                                    "{}",
-                                    std::iter::repeat('!')
-                                        .take(message.len() + 2)
-                                        .collect::<String>()
-                                        .color(colored::Color::Red)
-                                );
-                            } else {
+                            let message = ("Unable to solve puzzle!");
+                            println!(
+                                "{}",
+                                std::iter::repeat('!')
+                                    .take(message.len() + 2)
+                                    .collect::<String>()
+                                    .color(colored::Color::Red)
+                            );
+                            println!(
+                                "{}{}{}",
+                                "!".color(colored::Color::Red),
+                                message.on_red(),
+                                "!".color(colored::Color::Red)
+                            );
+                            println!(
+                                "{}",
+                                std::iter::repeat('!')
+                                    .take(message.len() + 2)
+                                    .collect::<String>()
+                                    .color(colored::Color::Red)
+                            );
+                        }
+                        if !quiet {
+                            if !solutions.is_empty() {
+                                println!("Solutions:");
                                 for solution in solutions {
                                     println!(
                                         "steps: {:>2}, solution length: {:>2}, code: {}",
@@ -272,11 +275,12 @@ fn main() {
                     results.sort_by_key(|&(t, _)| t);
                     for result in results {
                         println!(
-                            "puzzle {:<5} took {} seconds",
+                            "puzzle {:<5} took {:.8} seconds",
                             result.1,
                             result.0.as_secs_f64()
                         );
                     }
+                    println!("Total time: {} seconds", now.elapsed().as_secs_f64());
                 }
             } else {
                 panic!(

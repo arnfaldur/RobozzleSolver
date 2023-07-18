@@ -15,15 +15,13 @@ use crate::web::encode_program;
 const BACKTRACK_STACK_SIZE: usize = 2200;
 // 44 * 50
 static MAX_INS: AtomicUsize = AtomicUsize::new(0);
-static MAX_SCORE: AtomicI64 = AtomicI64::new(0);
 
 #[derive(Clone)]
 pub struct Frame {
     pub candidate: Source,
     pub state: State,
-    pub score: i64,
-    pub max_score: i64,
     pub max_steps: usize,
+    pub max_touches: usize,
     pub max_instructions: usize,
 }
 
@@ -32,58 +30,85 @@ impl Frame {
         Frame {
             candidate: puzzle.empty_source(),
             state: puzzle.initial_state(&NOGRAM),
-            score: 0,
-            max_score: 1,
             max_steps: usize::MAX,
-            max_instructions: puzzle.methods.iter().sum(),
+            max_touches: usize::MAX,
+            max_instructions: usize::MAX,
         }
     }
 }
 
 pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> {
-    let mut max_instructions = puzzle.methods.iter().sum();
-    let mut max_steps = usize::MAX;
-    let mut max_score = 16;
-    max_instructions = 9;
+    //let mut max_instructions = puzzle.methods.iter().sum();
+    let mut max_steps = 8;
+    let mut max_touches = 400;
+    let mut max_instructions = 3;
+
+    let mut last_duration = Duration::ZERO;
+    //let mut costs = [Duration::ZERO, Duration::ZERO, Duration::ZERO];
+    let mut costs: [f64; 3] = [0.0, 0.0, f64::MAX];
+    let mut pick = 0;
 
     let now = Instant::now();
 
+    let mut last_outer_steps = 0;
+    let mut solved = false;
     let mut result: Vec<(usize, Source)> = vec![];
     'outer: for i in 0..50 {
+        if max_instructions >= puzzle.methods.iter().sum() {
+            costs[0] = f64::MAX;
+        }
+
+        let (pock, pickers_steps) = costs
+            .iter()
+            .enumerate()
+            .fold((0, f64::MAX), |(mini, min), (i, &steps)| {
+                (if steps < min { (i, steps) } else { (mini, min) })
+            });
+        pick = pock;
+        if pick == 0 {
+            //max_instructions = (max_instructions + 1).min(7);
+            max_instructions += 1;
+        } else if pick == 1 {
+            max_steps = (max_steps as f64 * 1.61803398875).ceil() as usize;
+        } else if pick == 2 {
+            max_touches += 1;
+        }
+        // println!(
+        //     "increased {} to {}, dur: {}",
+        //     ["max_instructions", "max_steps", "max_touches"][pick],
+        //     [max_instructions, max_steps, max_touches][pick],
+        //     pickers_steps,
+        // );
+
+        let now = Instant::now();
         let mut outer_frame = Frame::new(&puzzle);
-        outer_frame.max_score = 1 << i;
-        outer_frame.max_steps = 1 << (5 + i * 2);
-        let puzzle = &puzzle;
+        outer_frame.max_steps = max_steps;
+        outer_frame.max_instructions = max_instructions;
+        outer_frame.candidate.shade(max_instructions);
+
         let mut candidates = VecDeque::new();
         let mut considered: u64 = 0;
         if result.len() == 0 {
             candidates.push_back(outer_frame);
         }
-        while let Some(frame) = candidates.pop_back() {
+        let mut outer_steps = 0;
+        while let Some(mut frame) = candidates.pop_back() {
             let candidate = frame.candidate;
-            let score = frame.score;
             let steps = frame.state.steps;
-            considered += 1;
-            if candidate.count_ins() > max_instructions {
-                continue;
-            }
-            let solved = search(puzzle, frame, |mut branch, is_nop_branch| {
-                // This is executed at the heart of the search function
-                if !is_nop_branch || branch.candidate.count_ins() <= max_instructions {
-                    if branch.score > branch.max_score {
-                        max_score = max(branch.max_score * 2, max_score);
-                    } else if branch.candidate.count_ins() <= max_instructions {
-                        branch.candidate.shade(max_instructions);
-                        candidates.push_back(Frame { ..branch });
-                    }
-                }
-            });
 
-            if solved {
+            frame.max_steps = frame.max_steps.min(max_steps);
+
+            considered += 1;
+            let (is_solution, after_steps) = search(&puzzle, &mut frame, &mut candidates);
+            outer_steps += (after_steps);
+
+            if is_solution {
                 let mut solution = candidate.clone();
                 solution.sanitize();
-                result.push((steps, solution));
-                max_instructions = solution.count_ins();
+                result.push((frame.state.steps, solution));
+                max_steps = max_steps.min(steps);
+                solved = true;
+                coz::progress!("backtrack frame");
             }
             coz::progress!("backtrack frame");
             if let Some(timeout) = timeout {
@@ -91,140 +116,199 @@ pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> 
                     break 'outer;
                 }
             }
-            // if considered % (1 << 10) == 0 || solved {
-            //     println!(
-            //         "score: {}, MAX_INS: {}, MAX_SCORE: {}, steps: {}",
-            //         score, max_instructions, max_score, steps
-            //     );
-            //     println!("candidates: {}, current: {}", candidates.len(), candidate);
-            // }
+            if true || considered % (1 << 8) == 0 || solved {
+                // println!(
+                //     "max_ins: {}, after_steps: {}, max_steps: {}",
+                //     max_instructions, after_steps, max_steps
+                // );
+                // println!(
+                //     "candidates: {}, current: {}, ins: {}",
+                //     candidates.len(),
+                //     candidate,
+                //     candidate.count_ins()
+                // );
+                // if candidate.0[0][0] == BLUE_F2
+                //     && candidate.0[0][1] == RED_F1
+                //     && candidate.0[1][0] == BLUE_FORWARD
+                //     && candidate.0[1][1] == BLUE_F2
+                //     && candidate.0[1][2] == RED_RIGHT
+                // {
+                //     println!("This is it");
+                //     break;
+                // }
+                // for c in candidates.iter().rev().take(10) {
+                //     println!("queued: {}, ins: {}", c.candidate, c.candidate.count_ins());
+                // }
+                // if solved {
+                //     break;
+                // }
+            }
         }
+        if costs[pick] == 0.0 {
+            costs[pick] = outer_steps as f64;
+            costs[pick] = 2.0;
+        } else if pick == 0 {
+            costs[pick] += outer_steps as f64 / last_outer_steps as f64;
+        } else if pick == 1 {
+            costs[pick] += 2.0 * outer_steps as f64 / last_outer_steps as f64;
+        }
+        last_outer_steps = outer_steps;
+
         coz::progress!("outer frame");
+        // println!(
+        //     "outer {} took {} seconds {}",
+        //     i,
+        //     now.elapsed().as_secs_f64(),
+        //     solved
+        // );
+        if solved {
+            break 'outer;
+        }
     }
     result.sort();
     result.dedup();
     return result;
 }
 
-fn search<F>(
+fn search(
     puzzle: &Puzzle,
-    Frame {
-        mut candidate,
-        mut state,
-        score,
-        max_score,
-        max_steps,
-        max_instructions,
-    }: Frame,
-    mut brancher: F,
-) -> bool
-where
-    F: FnMut(Frame, bool),
-{
+    mut frame: &mut Frame,
+    mut candidates: &mut VecDeque<Frame>,
+) -> (bool, usize) {
+    // let frame = Frame {
+    //     candidate,
+    //     state,
+    //     max_steps,
+    //     max_touches,
+    //     max_instructions,
+    // }
     let mut preferred = [true; 5];
-    for i in 1..candidate.0.len() {
-        for j in (i + 1)..candidate.0.len() {
-            if candidate.0[i] == candidate.0[j] {
-                preferred[j] = false;
+    for i in 1..frame.candidate.0.len() {
+        for j in (i + 1)..frame.candidate.0.len() {
+            if frame.candidate.0[i] == frame.candidate.0[j] {
+                //preferred[j] = false;
             }
         }
     }
-    let mut branched = false;
+    let mut steps = 0;
     let mut running = true;
-    while running && state.steps < max_steps {
-        if !branched {
-            let ins_pointer = state.ins_pointer();
-            let ins = state.current_ins(&candidate);
-            let method_index = ins_pointer.get_method_index();
-            let ins_index = ins_pointer.get_ins_index();
-            let nop_branch = ins.is_nop();
-            let probe_branch = ins.is_probe() && state.current_tile().clone().executes(ins);
-            let loosening_branch = !ins.is_debug()
-                && !ins.is_loosened()
-                && !state.current_tile().to_condition().is_cond(ins.get_cond());
-            if nop_branch || probe_branch || loosening_branch {
-                // instructions for branches of current program
-                let mut instructions: Vec<Ins> = if nop_branch {
-                    // Noop (unallocated) instruction hit, branches are all puzzle-legal
-                    // commands of the color of the current tile and a probe instruction.
-                    [
-                    // HALT // including halt is questionable
-                    ]
-                    .iter()
-                    .chain(
-                        puzzle
-                            .get_ins_set(state.current_tile().to_condition(), false)
-                            .iter()
-                            .filter(|&ins| !ins.is_function() || preferred[ins.source_index()]),
-                    )
-                    .chain(
-                        puzzle
-                            .get_cond_mask()
-                            .get_probes(state.current_tile().to_condition())
-                            .iter(),
-                    )
-                    .cloned()
-                    .collect()
-                } else if probe_branch {
-                    // probe instruction hit(a nop with a color),
-                    // add a branch for each command of the current tile.
-                    puzzle
-                        .get_ins_set(state.current_tile().to_condition(), false)
-                        .iter()
-                        .map(|i| i.as_loosened())
-                        .chain(
-                            if candidate[method_index][ins_index]
-                                .remove_cond(state.current_tile().to_condition())
-                                .is_probe()
-                            {
-                                vec![candidate[method_index][ins_index]
-                                    .remove_cond(state.current_tile().to_condition())]
-                            } else {
-                                vec![]
-                            },
-                        )
-                        .collect()
-                } else if loosening_branch {
-                    // try to make current instruction gray.
-                    vec![ins.as_loosened(), ins.get_ins().as_loosened()]
-                } else {
-                    vec![]
-                };
-                branched = true;
-                for &instruction in instructions.iter().rev() {
-                    let mut temp = candidate.clone();
-                    temp[method_index][ins_index] = instruction;
-                    if !snip_around(puzzle, &temp, *ins_pointer, false)
-                        && !deny(puzzle, &candidate, false)
-                    {
-                        let branch = Frame {
-                            candidate: temp.to_owned(),
-                            state: state.clone(),
-                            score: state.map.0.iter().fold(0, |acc, &x| {
-                                acc + x.iter().fold(0, |ac, &y| -> i64 {
-                                    ac + {
-                                        let ts: i64 =
-                                            std::convert::TryInto::try_into(y.touches()).unwrap();
-                                        ts * ts - 2 * ts
-                                    } as i64
-                                })
-                            }) + state.steps as i64
-                                + 4 * (state.stars as i64 - puzzle.stars as i64),
-                            max_score,
-                            max_steps,
-                            max_instructions,
-                        };
-                        brancher(branch, nop_branch);
-                        coz::progress!("branching");
-                    }
+    while running && frame.state.steps < frame.max_steps
+    //&& frame.state.current_tile().touches() <= frame.max_touches
+    {
+        let ins = frame.state.current_ins(&frame.candidate);
+        let ins_pointer = frame.state.ins_pointer();
+        let method_index = ins_pointer.get_method_index();
+        let ins_index = ins_pointer.get_ins_index();
+        let nop_branch = ins.is_nop();
+        let probe_branch = ins.is_probe() && frame.state.current_tile().clone().executes(ins);
+        let loosening_branch = !ins.is_debug()
+            && !ins.is_loosened()
+            && !frame
+                .state
+                .current_tile()
+                .to_condition()
+                .is_cond(ins.get_cond());
+        if nop_branch || probe_branch || loosening_branch {
+            // instructions for branches of current program
+            let instructions = get_instructions(
+                puzzle,
+                &frame,
+                nop_branch,
+                probe_branch,
+                loosening_branch,
+                preferred,
+                method_index,
+                ins_index,
+                ins,
+            );
+            let mut instructions = instructions.iter();
+            let replacement_instruction = instructions.next().unwrap();
+            for &instruction in instructions {
+                let mut temp = frame.candidate.clone();
+                temp[method_index][ins_index] = instruction;
+                if !snip_around(puzzle, &temp, *ins_pointer, false)
+                    && !deny(puzzle, &frame.candidate, false)
+                    && temp.count_ins() <= frame.max_instructions
+                {
+                    let mut branch = Frame {
+                        candidate: temp.to_owned(),
+                        state: frame.state.clone(),
+                        ..*frame
+                    };
+                    branch.candidate.shade(branch.max_instructions);
+                    candidates.push_back(branch);
+                    coz::progress!("branching");
                 }
-                return state.stars == 0;
             }
+
+            steps += 1;
+            frame.candidate[method_index][ins_index] = *replacement_instruction;
+            //break;
         }
+
         coz::progress!("search state step");
-        running = state.step(&candidate, puzzle);
+        running = frame.state.step(&frame.candidate, puzzle);
     }
-    return state.stars == 0;
+    return (frame.state.stars == 0, steps);
+}
+
+fn get_instructions(
+    puzzle: &Puzzle,
+    frame: &Frame,
+    nop_branch: bool,
+    probe_branch: bool,
+    loosening_branch: bool,
+    preferred: [bool; 5],
+    method_index: usize,
+    ins_index: usize,
+    ins: Ins,
+) -> Vec<Ins> {
+    if nop_branch {
+        // Noop (unallocated) instruction hit, branches are all puzzle-legal
+        // commands of the color of the current tile and a probe instruction.
+        [
+            //HALT, // including halt is questionable
+        ]
+        .iter()
+        .chain(
+            puzzle
+                .get_ins_set(frame.state.current_tile().to_condition(), false)
+                .iter()
+                .filter(|&ins| !ins.is_function() || preferred[ins.source_index()]),
+        )
+        .chain(
+            puzzle
+                .get_cond_mask()
+                .get_probes(frame.state.current_tile().to_condition())
+                .iter(),
+        )
+        .cloned()
+        .collect()
+    } else if probe_branch {
+        // probe instruction hit(a nop with a color),
+        // add a branch for each command of the current tile.
+        puzzle
+            .get_ins_set(frame.state.current_tile().to_condition(), false)
+            .iter()
+            .map(|i| i.as_loosened())
+            .chain(
+                frame.candidate[method_index][ins_index]
+                    .remove_cond(frame.state.current_tile().to_condition())
+                    .is_probe()
+                    .then(|| {
+                        frame.candidate[method_index][ins_index]
+                            .remove_cond(frame.state.current_tile().to_condition())
+                    }),
+            )
+            .collect()
+    } else if loosening_branch {
+        // try to make current instruction gray.
+        //vec![ins.as_loosened(), ins.get_ins().as_loosened()]
+        vec![ins.get_ins().as_loosened(), ins.as_loosened()]
+        //vec![ins.get_ins().as_loosened()]
+    } else {
+        vec![]
+    }
 }
 
 impl Ord for Frame {

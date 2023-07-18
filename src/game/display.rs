@@ -241,8 +241,7 @@ impl Display for Frame {
     fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
         writeln!(f, "Frame:");
         writeln!(f, "Candidate: {}", self.candidate);
-        write!(f, "State: {}", self.state);
-        write!(f, "Score: {}, Max score: {}", self.score, self.max_score)
+        write!(f, "State: {}", self.state)
         //write!(f, "{}[2J", 27 as char) // control character to clear screen
     }
 }
@@ -252,8 +251,6 @@ impl Debug for Frame {
         f.debug_struct("Frame")
             .field("candidate", &self.candidate)
             .field("state", &self.state)
-            .field("score", &self.score)
-            .field("max_score", &self.max_score)
             .finish()
     }
 }

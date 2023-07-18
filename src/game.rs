@@ -162,13 +162,13 @@ impl IndexMut<usize> for Source {
     }
 }
 
-type Stack = StackArr;
+type Stack = StackVec;
 
 pub(crate) const MAX_STEPS: usize = 1 << 12;
 const STACK_MATCH: usize = 1 << 6;
 
 #[derive(Clone, Debug)]
-pub struct StackVec(pub SmallVec<[InsPtr; 32]>);
+pub struct StackVec(pub SmallVec<[InsPtr; 1 << 8]>);
 
 impl Default for StackVec {
     fn default() -> Self {
@@ -513,8 +513,8 @@ impl State {
         !self.stack.is_empty()
             && self.stars > 0
             && self.map.0[self.y][self.x].touches() < Tile::MAX_TOUCHES as usize
-            && self.stack.len() < StackArr::STACK_SIZE - 10
-            && self.steps < MAX_STEPS
+        //&& self.stack.len() < StackArr::STACK_SIZE - 10
+        //&& self.steps < MAX_STEPS
     }
     pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
         coz::begin!("step");
