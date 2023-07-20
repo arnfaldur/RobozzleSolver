@@ -238,7 +238,7 @@ pub fn score_cmp(state: &State, puzzle: &Puzzle) -> usize {
     for y in 1..13 {
         for x in 1..17 {
             tiles += (state.map.0[y][x] != _N) as usize;
-            touched += state.map.0[y][x].touched() as usize;
+            touched += state.map.0[y][x].touches() as usize;
             stars += state.map.0[y][x].has_star() as usize;
         }
     }
@@ -254,7 +254,7 @@ pub fn score(state: &State, puzzle: &Puzzle) -> f64 {
     for y in 1..13 {
         for x in 1..17 {
             tiles += (state.map.0[y][x] != _N) as usize;
-            touched += (state.map.0[y][x].touched() > 0) as usize;
+            touched += (state.map.0[y][x].touches() > 0) as usize;
             stars += state.map.0[y][x].has_star() as usize;
         }
     }

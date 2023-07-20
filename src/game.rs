@@ -34,9 +34,6 @@ impl Tile {
     fn clear_star(&mut self) {
         self.0 &= !TILE_STAR_MASK.0;
     }
-    pub(crate) fn touched(&self) -> usize {
-        (self.0 >> 4) as usize
-    }
     pub(crate) fn has_star(&self) -> bool {
         (self.0 & TILE_STAR_MASK.0) > 0
     }
@@ -511,6 +508,15 @@ impl State {
     }
     fn touches(&self) -> usize {
         self.map.0[self.y][self.x].touches()
+    }
+    pub fn max_touches(&self) -> usize {
+        self.map
+            .0
+            .iter()
+            .map(|r| r.iter().map(|e| e.touches()).max())
+            .max()
+            .flatten()
+            .expect("the map should have elements")
     }
     fn mark(&mut self, ins: Ins) {
         self.map.0[self.y][self.x].mark(ins)
