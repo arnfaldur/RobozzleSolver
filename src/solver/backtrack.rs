@@ -1,5 +1,6 @@
 use std::cmp::{max, Ordering, Reverse};
 use std::collections::{BinaryHeap, HashSet, VecDeque};
+use std::hash::{Hash, Hasher};
 use std::io::{stdout, Write};
 use std::sync::atomic::{AtomicI64, AtomicUsize, Ordering as SyncOrdering};
 use std::thread::spawn;
@@ -14,6 +15,7 @@ use crate::game::{Puzzle, Source, State};
 use crate::web::encode_program;
 
 const BACKTRACK_STACK_SIZE: usize = 2200;
+const PHI: f64 = 1.61803398875;
 // 44 * 50
 static MAX_INS: AtomicUsize = AtomicUsize::new(0);
 
@@ -38,15 +40,41 @@ impl Frame {
     }
 }
 
-#[derive(PartialEq, Eq, Clone, Copy, Hash, Default)]
+#[derive(Clone, Copy, Default)]
 struct Limit {
-    cost: usize,
+    cost: f64,
+    old_steps: usize,
     steps: usize,
     touches: usize,
     instructions: usize,
+    increased: Increased,
 }
 
-impl Limit {}
+impl Hash for Limit {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        self.steps.hash(state);
+        self.touches.hash(state);
+        self.instructions.hash(state);
+    }
+}
+
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
+enum Increased {
+    #[default]
+    Steps,
+    Touches,
+    Instructions,
+}
+
+impl Eq for Limit {}
+
+impl PartialEq for Limit {
+    fn eq(&self, other: &Self) -> bool {
+        self.steps == other.steps
+            && self.touches == other.touches
+            && self.instructions == other.instructions
+    }
+}
 
 impl PartialOrd for Limit {
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
@@ -56,7 +84,7 @@ impl PartialOrd for Limit {
 impl Ord for Limit {
     fn cmp(&self, other: &Self) -> Ordering {
         self.cost
-            .cmp(&other.cost)
+            .total_cmp(&other.cost)
             .then_with(|| self.steps.cmp(&other.steps))
             .then_with(|| self.touches.cmp(&other.touches))
             .then_with(|| self.instructions.cmp(&other.instructions))
@@ -64,34 +92,41 @@ impl Ord for Limit {
 }
 
 pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> {
+    let instruction_set_length = puzzle.get_ins_set(INS_COLOR_MASK, true).len();
     //let mut max_instructions = puzzle.methods.iter().sum();
-    let mut max_steps = [usize::MAX; 50];
-    let mut max_touches = 2;
-    let mut max_instructions = 50;
+    let mut step_cap = [usize::MAX; 50];
+    let mut checked = [0; 50];
+    let mut touch_cap = [usize::MAX; 50];
+    let mut instruction_cap = puzzle.methods.iter().sum();
 
-    let mut last_duration = Duration::ZERO;
-    //let mut costs = [Duration::ZERO, Duration::ZERO, Duration::ZERO];
-    let mut costs: [f64; 3] = [100000.0, 0.0, 0.0];
-    let mut pick = 0;
+    let reachable_tiles = puzzle.count_tiles();
 
-    let now = Instant::now();
+    // ------------------------------------------------------------
+    const PRINT_STUFF: bool = false;
+    // ------------------------------------------------------------
 
     let mut priorities = BinaryHeap::new();
     priorities.push(Reverse(Limit {
-        cost: 0,
-        steps: 8,
-        touches: 100,
-        instructions: 2,
+        cost: 2.0,
+        old_steps: 1,
+        steps: 1000000,
+        touches: 8,
+        instructions: 1,
+        increased: Increased::Steps,
     }));
     let mut done_limits = HashSet::new();
     let mut last_outer_steps = 0;
     let mut solved = false;
     let mut result: Vec<(usize, Source)> = vec![];
-    'outer: while let Some(Reverse(limit)) = priorities.pop() {
-        if !done_limits.insert(limit) || limit.instructions >= max_instructions {
+    'outer: while let Some(Reverse(mut limit)) = priorities.pop() {
+        limit.instructions = limit.instructions.min(instruction_cap);
+        if solved {
+            limit.steps = (step_cap[limit.instructions]);
+            limit.touches = (touch_cap[limit.instructions]);
+        }
+        if !done_limits.insert(limit) {
             continue;
         }
-        stdout().flush().unwrap();
         let now = Instant::now();
         let mut outer_frame = Frame::new(&puzzle);
         outer_frame.max_steps = limit.steps;
@@ -99,30 +134,56 @@ pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> 
         outer_frame.max_instructions = limit.instructions;
         outer_frame.candidate.shade(outer_frame.max_instructions);
 
-        let mut candidates = VecDeque::new();
-        let mut considered: u64 = 0;
-        if (false || result.len() == 0) {
-            candidates.push_back(outer_frame);
+        if PRINT_STUFF {
+            print!(
+                "{{s: {:>4}, t: {:>4}, i: {:>2}}}, o {:>10}, c {:>10.1}",
+                limit.steps, limit.touches, limit.instructions, limit.old_steps, limit.cost,
+            );
+            stdout().flush().unwrap();
         }
-        let mut outer_branches = 0;
+
+        let mut candidates = VecDeque::new();
+        candidates.push_back(outer_frame);
+        let mut branches: u64 = 0;
         let mut outer_steps = 0;
+        let mut step_deaths = 0;
+        let mut touch_deaths = 0;
+        let mut both_deaths = 0;
         while let Some(mut frame) = candidates.pop_back() {
-            let candidate = frame.candidate;
+            frame.max_steps = frame.max_steps.min(step_cap[limit.instructions] - 1);
 
-            frame.max_steps = frame.max_steps.min(max_steps[limit.instructions] - 1);
-
-            considered += 1;
-            let (is_solution, after_steps, branches) = search(&puzzle, &mut frame, &mut candidates);
+            branches += 1;
+            let (is_solution, after_steps, step_death, touch_death) =
+                search(&puzzle, &mut frame, &mut candidates);
             outer_steps += after_steps;
-            outer_branches += branches;
+            step_deaths += (step_death & !touch_death) as usize;
+            touch_deaths += (touch_death & !step_death) as usize;
+            both_deaths += (step_death & touch_death) as usize;
 
             if is_solution {
                 let mut solution = frame.candidate.clone();
                 solution.sanitize();
+                let max_touches = frame.state.max_touches();
                 result.push((frame.state.steps, solution));
-                max_steps[limit.instructions] = frame.state.steps;
-                max_instructions = limit.instructions;
+                for incnt in 1..=limit.instructions {
+                    step_cap[incnt] = frame.state.steps * (limit.instructions - incnt + 1);
+                    touch_cap[incnt] = max_touches * (limit.instructions - incnt + 1);
+                }
+                instruction_cap = limit.instructions - 1;
                 solved = true;
+                if PRINT_STUFF {
+                    println!();
+                    println!(
+                        "solved! candidates: {}, current: {}, ins: {}, steps: {}, touches: {}, code: {}",
+                        candidates.len(),
+                        frame.candidate,
+                        frame.candidate.count_ins(),
+                        frame.state.steps,
+                        max_touches,
+                        encode_program(&frame.candidate, &puzzle)
+                    );
+                }
+                candidates.clear();
                 coz::progress!("backtrack frame");
             }
             coz::progress!("backtrack frame");
@@ -131,7 +192,7 @@ pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> 
                     break 'outer;
                 }
             }
-            if true || considered % (1 << 8) == 0 || solved {
+            if true || branches % (1 << 8) == 0 || solved {
                 // println!(
                 //     "max_ins: {}, after_steps: {}, max_steps: {}",
                 //     max_instructions, after_steps, max_steps
@@ -150,35 +211,52 @@ pub fn backtrack(puzzle: Puzzle, timeout: Option<u128>) -> Vec<(usize, Source)> 
                 // }
             }
         }
-        print!(
-            "{{s: {:>3}, t: {:>2}, i: {:>2}}}, {:>10}",
-            limit.steps, limit.touches, limit.instructions, limit.cost
-        );
-        print!(
-            ", took {:>6} branches, {:>11} steps",
-            outer_branches, outer_steps
-        );
-        println!();
-        if outer_steps as f64 > limit.cost as f64 * 1.2 {
-            priorities.push(Reverse(Limit {
-                cost: outer_steps,
-                steps: (limit.steps as f64 * 1.61803398875).ceil() as usize,
-                ..limit
-            }));
+        let deaths = step_deaths + touch_deaths + both_deaths;
+        let death_ratio = deaths as f64 / branches as f64;
+
+        if PRINT_STUFF {
+            print!(", took {:>7} branches, {:>11} steps", branches, outer_steps);
+            print!(
+                ", s {}, t {}, b {}, r {:.3}",
+                step_deaths, touch_deaths, both_deaths, death_ratio
+            );
+            println!();
         }
-        // if outer_steps as f64 > limit.cost as f64 * 1.2 {
-        //     priorities.push(Limit {
-        //         cost: outer_steps,
-        //         touches: limit.touches + 1,
-        //         ..limit
-        //     });
-        // }
-        if limit.instructions < puzzle.methods.iter().sum() {
-            priorities.push(Reverse(Limit {
-                cost: outer_steps,
-                instructions: limit.instructions + 1,
+
+        if deaths > 0 {
+            let scale = 2.0;
+            let cost = outer_steps as f64
+                + (outer_steps as f64 * death_ratio * scale)
+                    * (1.0 + 1.2_f64.powf((limit.touches as f64) / 3.0));
+            let next_touches = (limit.touches as f64 * scale).ceil() as usize;
+            let next_steps = limit.touches * reachable_tiles / 1;
+            let limit = Limit {
+                cost,
+                old_steps: outer_steps,
+                touches: next_touches,
+                increased: Increased::Steps,
                 ..limit
-            }));
+            };
+            // println!(
+            //     "adding steps {{s: {:>3}, t: {:>2}, i: {:>2}}}, c {:>10}",
+            //     limit.steps, limit.touches, limit.instructions, limit.cost,
+            // );
+            priorities.push(Reverse(limit));
+        }
+        if death_ratio < 0.9 {
+            let cost = outer_steps as f64 * (instruction_set_length as f64 / 2.0);
+            let limit = Limit {
+                cost,
+                old_steps: outer_steps,
+                instructions: limit.instructions + 1,
+                increased: Increased::Instructions,
+                ..limit
+            };
+            // println!(
+            //     "adding instr {{s: {:>3}, t: {:>2}, i: {:>2}}}, c {:>10}",
+            //     limit.steps, limit.touches, limit.instructions, limit.cost,
+            // );
+            priorities.push(Reverse(limit));
         }
     }
 
@@ -191,7 +269,7 @@ fn search(
     puzzle: &Puzzle,
     mut frame: &mut Frame,
     mut candidates: &mut VecDeque<Frame>,
-) -> (bool, usize, usize) {
+) -> (bool, usize, bool, bool) {
     let mut preferred = [true; 5];
     for i in 1..frame.candidate.0.len() {
         for j in (i + 1)..frame.candidate.0.len() {
@@ -201,7 +279,6 @@ fn search(
         }
     }
     let mut steps = 0;
-    let mut branches = 0;
     let mut running = true;
     while running
         && frame.state.steps < frame.max_steps
@@ -248,7 +325,6 @@ fn search(
                         ..*frame
                     };
                     branch.candidate.shade(branch.max_instructions);
-                    branches += 1;
                     candidates.push_back(branch);
                     coz::progress!("branching");
                 }
@@ -262,7 +338,12 @@ fn search(
         coz::progress!("search state step");
         running = frame.state.step(&frame.candidate, puzzle);
     }
-    return (frame.state.stars == 0, steps, branches);
+    return (
+        frame.state.stars == 0,
+        steps,
+        frame.state.steps >= frame.max_steps,
+        frame.state.current_tile().touches() > frame.max_touches,
+    );
 }
 
 fn get_instructions(

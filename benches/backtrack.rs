@@ -10,6 +10,7 @@ use solver::web::get_levels;
 fn bench_backtrack_easy_puzzles(c: &mut Criterion) {
     let benchmark_group_name = "Easy puzzles 1.0";
     let puzzle_ids = &[123, 27, 46, 45, 220, 24, 52, 264, 147, 222, 68, 202, 138];
+    // 123 27 46 45 220 24 52 264 147 222 68 202 138
 
     let mut group = c.benchmark_group(benchmark_group_name);
     group.warm_up_time(Duration::from_millis(30));
