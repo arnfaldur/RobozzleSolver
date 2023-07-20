@@ -439,6 +439,25 @@ impl Puzzle {
             GRAY_COND
         }
     }
+    pub fn count_tiles(&self) -> usize {
+        let mut tiles = 0;
+        // test which colors are reachable
+        let mut frontier = VecDeque::new();
+        frontier.push_front((self.x, self.y));
+        let mut visited = HashSet::new();
+        visited.insert((self.x, self.y));
+        while let Some((x, y)) = frontier.pop_back() {
+            for (dx, dy) in &[(1, 0), (0, 1), (-1, 0), (0, -1)] {
+                let (nx, ny) = ((x as isize + dx) as usize, (y as isize + dy) as usize);
+                if self.map.0[ny][nx] != _N && !visited.contains(&(nx, ny)) {
+                    visited.insert((nx, ny));
+                    frontier.push_front((nx, ny));
+                    tiles += 1;
+                }
+            }
+        }
+        return tiles;
+    }
 }
 
 #[derive(Eq, PartialEq, Clone)]
@@ -657,14 +676,6 @@ pub fn make_puzzle(
             }
         }
     }
-    // check which colors are on the map
-    //for y in 1..13 {
-    //    for x in 1..17 {
-    //        red |= map[y][x].is_red();
-    //        green |= map[y][x].is_green();
-    //        blue |= map[y][x].is_blue();
-    //    }
-    //}
     let actual_methods = methods;
     methods[1..5].sort_unstable_by(|a, b| b.cmp(a));
     let mut map_out = map.clone();
