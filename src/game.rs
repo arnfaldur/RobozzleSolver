@@ -408,7 +408,7 @@ impl Puzzle {
         return result;
     }
     /// execute a source for the puzzle, returning a score
-    pub(crate) fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R
+    pub fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R
     where
         F: FnMut(&State, &Puzzle) -> R,
     {
@@ -442,7 +442,6 @@ impl Puzzle {
         let mut frontier = VecDeque::new();
         frontier.push_front((self.x, self.y));
         let mut visited = HashSet::new();
-        visited.insert((self.x, self.y));
         while let Some((x, y)) = frontier.pop_back() {
             for (dx, dy) in &[(1, 0), (0, 1), (-1, 0), (0, -1)] {
                 let (nx, ny) = ((x as isize + dx) as usize, (y as isize + dy) as usize);
@@ -669,7 +668,6 @@ pub fn make_puzzle(
     let mut frontier = VecDeque::new();
     frontier.push_front((x, y));
     let mut visited = HashSet::new();
-    visited.insert((x, y));
     while let Some((x, y)) = frontier.pop_back() {
         for (dx, dy) in &[(1, 0), (0, 1), (-1, 0), (0, -1)] {
             let (nx, ny) = ((x as isize + dx) as usize, (y as isize + dy) as usize);
