@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBBBBBBBBBR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "28",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "857",
+  "Items": [
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "91",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sillymystery",
+  "SubmittedDate": "2009-06-22T23:52:50.53",
+  "Title": "star land"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGRRRRGGRR",
+    "RRBRRRRGRBRRRGRR",
+    "RRBRBRRRRBBRRGRR",
+    "RRBBBRRBRBBRRRRR",
+    "RBBRBRBBRBBRRBRR",
+    "RBBGBRBRBRBBRBRR",
+    "RBRBBBBGBGBBBBRR",
+    "RBGBBRBBBBBBRBBR",
+    "RBBRBGBBRBRBGBBR",
+    "RBBGBBBBGBGBBBBR",
+    "RBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "117",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "771",
+  "Items": [
+    "################",
+    "##*###..#*##..##",
+    "##.#*##.#.*##.##",
+    "##.*.##*#..##.##",
+    "#*...#*.#..##*##",
+    "#..#.#..*..*#.##",
+    "#....*.#.#..*.##",
+    "#.#...........*#",
+    "#....#......#..#",
+    "#..#....#.#....#",
+    "#..............#",
+    "#..............#"
+  ],
+  "Liked": "37",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "164",
+  "SubLengths": [
+    "5",
+    "8",
+    "9",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "petwolverine",
+  "SubmittedDate": "2009-06-15T00:47:08.47",
+  "Title": "Memory hole, or a memory for holes"
+}

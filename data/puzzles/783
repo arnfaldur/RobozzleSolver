@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBRRBBBBBRR",
+    "RRBBBBBRRBBBBBRR",
+    "RRBBBBBRBBBBBBRR",
+    "RRBBBBRBBBBBBBRR",
+    "RRBBBRBBBBBBBBRR",
+    "RRBBRBBBBBBBBBRR",
+    "RRBRBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "66",
+  "DifficultyVoteSum": "161",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "783",
+  "Items": [
+    "##************##",
+    "##************##",
+    "##************##",
+    "##************##",
+    "##************##",
+    "##************##",
+    "##*****.******##",
+    "##************##",
+    "##************##",
+    "##************##",
+    "##************##",
+    "##************##"
+  ],
+  "Liked": "55",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "339",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-16T05:24:37.86",
+  "Title": "Spiral Technique III"
+}

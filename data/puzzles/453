@@ -1,0 +1,53 @@
+{
+  "About": "(Some) colors will lead you",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBRBGBGBGBGBGRR",
+    "BRRBBBRBRBRBRBRB",
+    "RGRGBRBRBRBBBRRB",
+    "BBRRRBBBRBBRBBBG",
+    "BRBGRBRBRBRBRBBB",
+    "BBBBRBRBBBBBBBBB",
+    "BBBBRBRBBGRBBGBB",
+    "RBBGRBRBBRBBBBBR",
+    "BRRRRGBGBRBRRBRB",
+    "BRGBGRRBBGRBBGBR",
+    "BRBBRBBBBRBBBBBB",
+    "BRRBBRRBRBBBBRBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "39",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "453",
+  "Items": [
+    "..............##",
+    ".##...#.#.#.#.#.",
+    "..#...........#.",
+    "..###...#.......",
+    "....#.#.#.#.#...",
+    "....#.#.........",
+    "....#.#.........",
+    "....#.#..#......",
+    ".####....#.##.#.",
+    ".#...##.........",
+    ".#..............",
+    ".#*..##.#......."
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "97",
+  "SubLengths": [
+    "4",
+    "2",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wilbert",
+  "SubmittedDate": "2009-05-05T13:21:15.377",
+  "Title": "Color Maze"
+}

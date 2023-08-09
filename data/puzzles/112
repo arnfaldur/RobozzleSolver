@@ -1,0 +1,53 @@
+{
+  "About": "Count steps and turn",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBGBBBBRRRRR",
+    "RRGRRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRGGRRRRGGRRR",
+    "RBBGRGGBBBGRBRRR",
+    "BRRRRRRRRRBRBRRR",
+    "BRRRRRRRRRBRBRRR",
+    "BRRRRRRRBBGRBRRR",
+    "BRRRRRRRBBBBRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "191",
+  "DifficultyVoteSum": "529",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "112",
+  "Items": [
+    "################",
+    "################",
+    "##..........####",
+    "##..#######.####",
+    "###.#######.####",
+    "###.#**####..###",
+    "....#**....#.###",
+    ".#########.#.###",
+    ".#########.#.###",
+    ".######....#.###",
+    ".######......###",
+    ".###############"
+  ],
+  "Liked": "185",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1161",
+  "SubLengths": [
+    "2",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T16:54:44.877",
+  "Title": "Dizziness"
+}

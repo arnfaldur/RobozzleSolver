@@ -1,0 +1,53 @@
+{
+  "About": "One side tells you how far to go",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRBRRRRBBRRRBR",
+    "RBRRBBRRRBBRRRBR",
+    "RBBBBBRBRBBBBBBR",
+    "RBBBBBBBRBBBBBBB",
+    "GGGGGGGGGGGGGGGG",
+    "BBBBBBRBBBBBBBBR",
+    "RBBRBBRBRBBRBRBR",
+    "RBBRBRRBRBBRBRBR",
+    "RBRRBRRRRBBRRRRR",
+    "RRRRBRRRRRBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "70",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "378",
+  "Items": [
+    "################",
+    "####*####**#####",
+    "#*##*####**###*#",
+    "#**#**#*#**#*#*#",
+    "#*****#*#******#",
+    "****************",
+    ".***************",
+    "****************",
+    "#*****#*#******#",
+    "#**#**#*#**#*#*#",
+    "#*##*####**###*#",
+    "####*####**#####"
+  ],
+  "Liked": "17",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "75",
+  "SubLengths": [
+    "7",
+    "10",
+    "7",
+    "3",
+    "2"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-25T00:04:20.25",
+  "Title": "Oscillations"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBGRRRRRRR",
+    "RRRRRBRRGBBBRRRR",
+    "RRRRRBRRGRRBRRRR",
+    "RRRRGGGGGRRBRRRR",
+    "RRRRBRRGGGGGRRRR",
+    "RRRRBRRGRRBRRRRR",
+    "RRRRBBBGRRBRRRRR",
+    "RRRRRRRGBBBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "75",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "976",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####****#######",
+    "#####*##****####",
+    "#####*##*##*####",
+    "####***.*##*####",
+    "####*##*****####",
+    "####*##*##*#####",
+    "####****##*#####",
+    "#######****#####",
+    "################"
+  ],
+  "Liked": "25",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "81",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-04T01:45:39.423",
+  "Title": "another ninja star"
+}

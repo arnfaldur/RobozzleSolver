@@ -1,0 +1,53 @@
+{
+  "About": "Spinning can be healthy.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRBGRRRRRBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRBRRBRRRRBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RBBBRRRRBRRRGRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRRGBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "88",
+  "DifficultyVoteSum": "228",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "828",
+  "Items": [
+    "################",
+    "#######......###",
+    "####....####.###",
+    "####.#######.###",
+    "####.#######.###",
+    "####.##*####.###",
+    "####.##..###.###",
+    "#....###.###.###",
+    "########.###..##",
+    "########......##",
+    "################",
+    "################"
+  ],
+  "Liked": "65",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "473",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mheiberg",
+  "SubmittedDate": "2009-06-21T06:20:06.733",
+  "Title": "Dizzy"
+}

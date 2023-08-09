@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBRBBRBRBRRRBRR",
+    "RBRBRBRBRRBRBRRR",
+    "GBGGGBGBGGGBGGRR",
+    "RBRRRBRBRRBRBRGR",
+    "RBRRRBRBRBRRRBGR",
+    "RGGGGGGGGGGGGGGR",
+    "GRRBBBBRBBBBRRGG",
+    "RGGBGGBGBGGBGGRG",
+    "RRRBRRBRBBBBRRRG",
+    "RRRBRRBRRRRBRRRG",
+    "GGGBGGBGGGGBGGGR",
+    "RRRBBBBRRRRBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "266",
+  "DifficultyVoteSum": "297",
+  "Disliked": "220",
+  "Featured": "false",
+  "Id": "47",
+  "Items": [
+    "#..#..#.#.###.##",
+    "#.#.#.#.##.#.###",
+    "..............*#",
+    "#.###.#.##.#.#.#",
+    "#.###.#.#.###..#",
+    "*..............*",
+    ".##....#....##..",
+    "*.............*.",
+    "###.##.#....###.",
+    "###.##.####.###.",
+    "*..............*",
+    "###....####.####"
+  ],
+  "Liked": "118",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "944",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "crpietschmann",
+  "SubmittedDate": "2009-02-24T17:06:28.453",
+  "Title": "MIX '09"
+}

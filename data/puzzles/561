@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBRRRRRRR",
+    "BBBBBBBBBBBBBBBR",
+    "BBGBBBGBBBBBBBBR",
+    "BBBBGBBBBBGBGBBB",
+    "BBBBBBBBGBBBBBBB",
+    "RRBBBBBBBBBBBGBB",
+    "RRBBBBBBBBBBBBBB",
+    "BBBBGBBBGBBGBBBB",
+    "BBBBBBGBBBBBBBRR",
+    "BBGBBBBBBBGBBBRR",
+    "GBBBBBBBBBBBBRRR",
+    "BBBBBBBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "38",
+  "DifficultyVoteSum": "113",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "561",
+  "Items": [
+    ".........#######",
+    "...............#",
+    "......*........#",
+    "....*.....*.*...",
+    "........*.......",
+    "##...........*..",
+    "##..............",
+    "....*...*..*....",
+    "......*.......##",
+    "..*.......*...##",
+    "*............###",
+    ".............###"
+  ],
+  "Liked": "28",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "105",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-20T17:48:26.047",
+  "Title": "Swim"
+}

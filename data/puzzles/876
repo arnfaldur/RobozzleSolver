@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBBBBBRRRRR",
+    "RRRRBGBBBBBBRRRR",
+    "RRRGGBRRRRRBBRRR",
+    "RRRBBRRRRRRRBRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBRRRRRRBBRRR",
+    "RRRBGBRRRRBGBRRR",
+    "RRRRBGBBBBGBRRRR",
+    "RRRRRGBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "39",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "876",
+  "Items": [
+    "#####******#####",
+    "####********####",
+    "###***####***###",
+    "###**######*.###",
+    "###**###########",
+    "###**###########",
+    "###**###########",
+    "###**###########",
+    "###**######**###",
+    "###***####***###",
+    "####********####",
+    "#####******#####"
+  ],
+  "Liked": "12",
+  "RobotCol": "12",
+  "RobotDir": "2",
+  "RobotRow": "3",
+  "Solutions": "47",
+  "SubLengths": [
+    "10",
+    "3",
+    "2",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-25T04:12:41.547",
+  "Title": "C is for Complex"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "253",
+  "DifficultyVoteSum": "465",
+  "Disliked": "23",
+  "Featured": "false",
+  "Id": "736",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "**##############",
+    "*###############",
+    "*###############",
+    "*###############",
+    "*###############",
+    "*###############",
+    "*###############",
+    "*###############",
+    ".###############"
+  ],
+  "Liked": "193",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1581",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-10T06:39:51.297",
+  "Title": "stack and turn"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBG",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "60",
+  "DifficultyVoteSum": "148",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "727",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "###############*",
+    "###############.",
+    "###############.",
+    "................",
+    "###############.",
+    "###############.",
+    "###############*",
+    "################",
+    "################"
+  ],
+  "Liked": "46",
+  "RobotCol": "8",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "333",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-09T06:27:21.5",
+  "Title": "hammered 3"
+}

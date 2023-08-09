@@ -1,0 +1,53 @@
+{
+  "About": "Expanding perimeter",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGRRBBRRGGRRR",
+    "RRRGRRBBBBRRGRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRGRRBBBBRRGRRR",
+    "RRRGGRRBBRRGGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "36",
+  "DifficultyVoteSum": "126",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "175",
+  "Items": [
+    "################",
+    "###..##**##..###",
+    "###.##****##.###",
+    "#####******#####",
+    "####********####",
+    "###**********###",
+    "###****.*****###",
+    "####********####",
+    "#####******#####",
+    "###.##****##.###",
+    "###..##**##..###",
+    "################"
+  ],
+  "Liked": "29",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "115",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-21T09:50:11.407",
+  "Title": "Growth"
+}

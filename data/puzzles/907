@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBBRRB",
+    "BRRRRRRRRRRRRBRB",
+    "BRRBBBBBBBBRRBRB",
+    "BRBRRRRRRRRBRBRB",
+    "BRBRRBBBBGRBRBRB",
+    "BRBRRBBBBBBRRBRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRRBBBBBBBBBBRRB",
+    "BRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "63",
+  "DifficultyVoteSum": "158",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "907",
+  "Items": [
+    "*...............",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#.....*#.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "65",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "323",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-26T19:57:42.313",
+  "Title": "Backtrack Spiral"
+}

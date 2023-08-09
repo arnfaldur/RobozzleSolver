@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRGGBGGRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "116",
+  "DifficultyVoteSum": "225",
+  "Disliked": "16",
+  "Featured": "false",
+  "Id": "980",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "#######*########",
+    "#######.########",
+    "#####*...*######",
+    "#######.########",
+    "#######*########",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "89",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "7",
+  "Solutions": "661",
+  "SubLengths": [
+    "2",
+    "3",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-07-04T09:04:36.627",
+  "Title": "Simple Cross 3"
+}

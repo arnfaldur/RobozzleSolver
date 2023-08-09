@@ -1,0 +1,53 @@
+{
+  "About": "Where did all the leaves go?",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRBRRBBBRBBR",
+    "RBRBBBRRBRRRBRRB",
+    "BRBRRRRRRRRRBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRRBBBBRBBBBRRRR",
+    "RRBRRRRBRRRRBRRR",
+    "RRBRRRRBRRRRBRRB",
+    "BRBRRBRBRBRRBRRB",
+    "RBRBBRRBRRBBRBBR",
+    "BRRRRBRBRBRRRRRB",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "73",
+  "DifficultyVoteSum": "292",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "358",
+  "Items": [
+    "*#####*#*######*",
+    "*#####*#********",
+    "*******#*###*##*",
+    "*#*###*#*###*##*",
+    "*#*#########*###",
+    "##***********###",
+    "##*####*####*##*",
+    "*#*##*#*#*##*##*",
+    "*#*##*#*#*##*##*",
+    "******#*#*******",
+    "*####*#*#*#####*",
+    "*####*#.#*#####*"
+  ],
+  "Liked": "76",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "600",
+  "SubLengths": [
+    "5",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-18T21:11:20.923",
+  "Title": "Tree III"
+}

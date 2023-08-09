@@ -1,0 +1,53 @@
+{
+  "About": "Blue = Red mod Green",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRGGBRRRRRRRRR",
+    "BRRGGGGBBRRRRRRR",
+    "BRRRRRRRRGGGBBRR",
+    "BRRRRRGGBRRRRRRR",
+    "BRRRRRRRGGGGBBBR",
+    "BRGGBRRRRRRRRRRR",
+    "BRRRRGGGBRRRRRRR",
+    "BRRRRRGGGBBRRRRR",
+    "BRRRRRRGGGGBBRRR",
+    "BRRRGGGGBBBRRRRR",
+    "BRRRRRRRRRRGGGBR",
+    "BRRRGGGGGBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "40",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "399",
+  "Items": [
+    ".******#########",
+    "*********#######",
+    "**************##",
+    "*********#######",
+    "***************#",
+    "*****###########",
+    "*********#######",
+    "***********#####",
+    "*************###",
+    "***********#####",
+    "***************#",
+    "************####"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "51",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-29T04:50:45.907",
+  "Title": "Modulo"
+}

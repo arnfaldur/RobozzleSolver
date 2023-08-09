@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGRRRRRRRRRRRR",
+    "RRGBRGRRRRRRRRRR",
+    "RRBRGBRGRRRRRRRR",
+    "RRRGBRGBRGRRRRRR",
+    "RRRRRGBRGBRGRRRR",
+    "RRRRRRRGBRGBRGRR",
+    "RRRRRRRRRGBRGBRR",
+    "RRRRRRRRRRRGBRRR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "61",
+  "DifficultyVoteSum": "183",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "147",
+  "Items": [
+    "################",
+    "##**############",
+    "##*.**##########",
+    "##*...**########",
+    "##**....**######",
+    "####**....**####",
+    "######**....**##",
+    "########**...*##",
+    "##########**.*##",
+    "############.*##",
+    "################",
+    "################"
+  ],
+  "Liked": "56",
+  "RobotCol": "12",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "250",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "filou",
+  "SubmittedDate": "2009-03-16T18:22:04.343",
+  "Title": "Trial by fire"
+}

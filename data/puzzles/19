@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBRRRRRBBBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBBBRRRRRBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1176",
+  "DifficultyVoteSum": "2080",
+  "Disliked": "85",
+  "Featured": "true",
+  "Id": "19",
+  "Items": [
+    "################",
+    "##...#####...###",
+    "##..********.###",
+    "##.*#######*.###",
+    "###*#######*####",
+    "###*#######*####",
+    "###*#######*####",
+    "###*#######*####",
+    "##.*#######*.###",
+    "##.*********.###",
+    "##...#####...###",
+    "################"
+  ],
+  "Liked": "1164",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "7277",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:00.97",
+  "Title": "Red loop"
+}

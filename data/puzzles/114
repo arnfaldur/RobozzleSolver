@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBRGRGRBRRRRR",
+    "RRRRBGGGGGBRRRRR",
+    "RRRRBRGRGRBRRRRR",
+    "RRRRBGGGGGBRRRRR",
+    "RRRRBRGRGRBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "60",
+  "DifficultyVoteSum": "177",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "114",
+  "Items": [
+    "################",
+    "################",
+    "####*******#####",
+    "####*#*#*#*#####",
+    "####*******#####",
+    "####*#*#*#*#####",
+    "####**.****#####",
+    "####*#*#*#*#####",
+    "####*******#####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "62",
+  "RobotCol": "6",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "288",
+  "SubLengths": [
+    "4",
+    "5",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T20:52:36.127",
+  "Title": "Prison"
+}

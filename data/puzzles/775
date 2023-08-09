@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBBRRBB",
+    "RBBRRRRRRBGRRRRB",
+    "RBGRRRRRRBBBRRGB",
+    "RRRRRRBBRRRRRRRR",
+    "BBRBBBGBRRRRRBRB",
+    "BGRRBGRRRRRRRGBB",
+    "BBBBRBRRRRRRRRRR",
+    "RRRBRRRRGRBRRRRR",
+    "RRRBGBRRBRBRRRRR",
+    "RRRBBBRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "68",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "775",
+  "Items": [
+    "################",
+    "################",
+    "#########*.*##.*",
+    "#*.######.*.....",
+    "#.*######*.*##*.",
+    "##.###.*######.#",
+    "*...*.*.#####...",
+    ".*...*.......*.*",
+    "*.....##########",
+    "###.....*..#####",
+    "###.*.##..*#####",
+    "###*.*##########"
+  ],
+  "Liked": "12",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "79",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-15T14:14:10.203",
+  "Title": "Two Recursions"
+}

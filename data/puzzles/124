@@ -1,0 +1,53 @@
+{
+  "About": "For my 5-yr. old daughter",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "168",
+  "DifficultyVoteSum": "173",
+  "Disliked": "174",
+  "Featured": "false",
+  "Id": "124",
+  "Items": [
+    "################",
+    "################",
+    "###......#######",
+    "#####..#########",
+    "#####..#########",
+    "####....########",
+    "####.##.########",
+    "####.##*########",
+    "####.##.########",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "44",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "585",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "elroy",
+  "SubmittedDate": "2009-03-11T00:16:01.077",
+  "Title": "Kiddie 2"
+}

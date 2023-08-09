@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBBRRRBBBRR",
+    "RRRRBBGBBRBBGBBR",
+    "RRRBBGRGBBBGRGBB",
+    "RRRBGRRRGBGRRRGB",
+    "RRRBBGRGBBBGRGBB",
+    "RRBBGRRRGBGRRRGB",
+    "RBBGRRRRRGRRRGBB",
+    "RBGRRRRRRRRRRRGB",
+    "RBBGRRRGRRRGRGBB",
+    "RRRBGRGBGRGBGBBR",
+    "RRRBBGBBBGBBBBRR",
+    "RRRRBBBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "129",
+  "DifficultyVoteSum": "251",
+  "Disliked": "25",
+  "Featured": "false",
+  "Id": "572",
+  "Items": [
+    "#####...###...##",
+    "####.***.#.***.#",
+    "###.**#**.**#**.",
+    "###.*#.#***#.#*.",
+    "###.**#*****#**.",
+    "##.**###***###*.",
+    "#.**##.##*##.**.",
+    "#.*####.....##*.",
+    "#***###*###*#**.",
+    "###.*#***#****.#",
+    "###**********.##",
+    "####.........###"
+  ],
+  "Liked": "82",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "503",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-05-22T04:54:30.983",
+  "Title": "monster 2"
+}

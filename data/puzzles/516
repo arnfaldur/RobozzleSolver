@@ -1,0 +1,53 @@
+{
+  "About": "/",
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBBRR",
+    "RRRRRRRRRRRBBBRR",
+    "RRRRRRRRRRBBBRRR",
+    "RRRRRRRRRBBBRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRBBBRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "110",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "516",
+  "Items": [
+    "################",
+    "############.*##",
+    "###########.*.##",
+    "##########.*.###",
+    "#########.*.####",
+    "########.*.#####",
+    "#######.*.######",
+    "######.*.#######",
+    "#####.*.########",
+    "####.*.#########",
+    "###.*.##########",
+    "###*.###########"
+  ],
+  "Liked": "39",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "170",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-05-13T16:24:34.03",
+  "Title": "Forward Slash"
+}

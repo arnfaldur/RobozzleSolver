@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBBBBBGBBBBBR",
+    "RRRRBRRRRRRRRRBR",
+    "RRRRBRBBGBBRRRBR",
+    "RRRRGRGRRRBRRRBR",
+    "RRRRBRBBRRGRRRBR",
+    "RRRRBRRRRRBRRRGR",
+    "RRRRBBBGBBBRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRGGGGGRRBR",
+    "RRRRRRRGRRRRBGBR",
+    "RRRRRRRGGGGGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "63",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "759",
+  "Items": [
+    "####...........#",
+    "####.#########.#",
+    "####.#.....###.#",
+    "####.#.###.###.#",
+    "####.#.*##.###.#",
+    "####.#####.###.#",
+    "####.......###.#",
+    "##############.#",
+    "##############.#",
+    "#######.....##.#",
+    "#######........#",
+    "#######.....####"
+  ],
+  "Liked": "15",
+  "RobotCol": "11",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "50",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-14T02:51:23.157",
+  "Title": "Battery 2"
+}

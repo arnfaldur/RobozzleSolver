@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGRRRRRRRGR",
+    "RRRRRBBRRRRRRRBR",
+    "RRGBGBBRRRGRRBBR",
+    "RRBBBBBRRRBBRBBR",
+    "RBBBBBBBRRBBGBBR",
+    "RBBBBBBBRBBBBBBR",
+    "GBBBBBBBRBBBBBBR",
+    "BBBBBBBBRBBBBBBR",
+    "BBBBBBBBGBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "66",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "641",
+  "Items": [
+    "################",
+    "################",
+    "######*#######*#",
+    "#####**#######*#",
+    "##*****###*##**#",
+    "##*****###**#**#",
+    "#*******##*****#",
+    "#*******#******#",
+    "********#******#",
+    "********#******#",
+    "***************#",
+    ".**************#"
+  ],
+  "Liked": "15",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "47",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-03T11:35:47.733",
+  "Title": "Interpolation"
+}

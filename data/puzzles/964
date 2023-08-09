@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGBRRRRRRBGGGGG",
+    "RRRBRRRRRRBRRRRR",
+    "RRRBRRRRRRBRRRRR",
+    "RRRBRRRRRRBRRRRR",
+    "RRRGGBRRRBGRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRGGGGBRRRRRR",
+    "RRRRRRRRBGGGBRRR",
+    "RRRBGGGGGRRRBRRR",
+    "RRRBRRRRRRRRBRRR",
+    "RRRBRRRRRRRRBRRR",
+    "RGGGRRRRRRRRGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "59",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "964",
+  "Items": [
+    ".***######******",
+    "###*######*####*",
+    "###*######*####*",
+    "###*######*####*",
+    "###***###**####*",
+    "#####*###*#####*",
+    "#####*****#####*",
+    "########*****##*",
+    "###******###*##*",
+    "###*########*##*",
+    "###*########*##*",
+    "****########****"
+  ],
+  "Liked": "15",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "34",
+  "SubLengths": [
+    "2",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-02T21:49:41.907",
+  "Title": "Wiggle"
+}

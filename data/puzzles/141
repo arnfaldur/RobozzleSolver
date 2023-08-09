@@ -1,0 +1,53 @@
+{
+  "About": "Recursion is like a spring - it stores energy",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBBBBRR",
+    "RRRRRRRRRBRRRBRR",
+    "RRRBBBBRRBRRRBRR",
+    "RRBRRRRBRRRRRBRR",
+    "RRBRRRRBRRRRRBRR",
+    "RRBRRBBRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRGBBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "106",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "141",
+  "Items": [
+    "################",
+    "#########.....##",
+    "#########.###.##",
+    "##......#*###.##",
+    "##.####.#####.##",
+    "##.####.#####.##",
+    "##.##...#####.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##............##",
+    "################",
+    "################"
+  ],
+  "Liked": "25",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "86",
+  "SubLengths": [
+    "2",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sam0737",
+  "SubmittedDate": "2009-03-15T13:54:44.767",
+  "Title": "Double Recursion 1"
+}

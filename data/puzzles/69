@@ -1,0 +1,53 @@
+{
+  "About": "Follow the green arrows",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBBBRR",
+    "RBRBBBBBBGRBBBBR",
+    "RBGBBBBRGBBBBBBR",
+    "RBBBBBBBBBGBBBBR",
+    "RBBBBRGBBBRBBBBR",
+    "RBRGBBBBBBBBRBBR",
+    "RBBBBBBBBBBBGBBR",
+    "RBBBBGBGBBBBBBBR",
+    "RBBBBRBRBBBGRBBR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "349",
+  "DifficultyVoteSum": "850",
+  "Disliked": "42",
+  "Featured": "false",
+  "Id": "69",
+  "Items": [
+    "################",
+    "##............##",
+    "#..............#",
+    "#............*.#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "##............##",
+    "################"
+  ],
+  "Liked": "334",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "1439",
+  "SubLengths": [
+    "3",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "amazed",
+  "SubmittedDate": "2009-02-27T13:35:42.47",
+  "Title": "Arrows"
+}

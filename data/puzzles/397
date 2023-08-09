@@ -1,0 +1,53 @@
+{
+  "About": "Simple Rules",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBRBRGBRBRBRGBGR",
+    "RBRBRBRRBRBRBRBR",
+    "RGBGBGBRBRBRBRBR",
+    "RBRBRBRRBRBRBRBR",
+    "RBRBRGBBGBGBGBGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "328",
+  "DifficultyVoteSum": "606",
+  "Disliked": "68",
+  "Featured": "false",
+  "Id": "397",
+  "Items": [
+    "################",
+    "................",
+    ".*.*.**.*.*.***.",
+    ".*.*.*..*.*.*.*.",
+    ".*.*.**.*.*.*.*.",
+    ".*.*.*..*.*.*.*.",
+    ".*.*.**.*******.",
+    "................",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "297",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "1398",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-29T02:35:59.377",
+  "Title": "Hello!"
+}

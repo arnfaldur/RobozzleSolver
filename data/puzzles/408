@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGGGGRRRRRR",
+    "RRRRRGRRRGRRRRRR",
+    "RRRRRGRBRGRRRRRR",
+    "RRRRRGRRRGRRRRRR",
+    "RRRRRGGGGGRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "77",
+  "DifficultyVoteSum": "206",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "408",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####*...*######",
+    "#####.*.*.######",
+    "#####.....######",
+    "#####.*.*.######",
+    "#####*...*######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "58",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "254",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "matush",
+  "SubmittedDate": "2009-05-01T05:27:29.127",
+  "Title": "Squares"
+}

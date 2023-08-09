@@ -1,0 +1,53 @@
+{
+  "About": "applies recursion, function reuse, and shimmying",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGRRRRR",
+    "BRRRRRRRRRGRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRBGBRRRR",
+    "BRRRRRRRBRBRBRRR",
+    "BRRRRRRRRRBRRRRR",
+    "BRRRRRRRRBRBRRRR",
+    "BRRRRRRRBRRRBRRR",
+    "BRRRRRRRRRRRRRRR",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "76",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "835",
+  "Items": [
+    "...........#####",
+    ".#########*#####",
+    ".#########.#####",
+    ".########...####",
+    ".#########.#####",
+    ".########*.*####",
+    ".#######.#.#.###",
+    ".#########.#####",
+    ".########.#.####",
+    ".#######.###.###",
+    ".###############",
+    "................"
+  ],
+  "Liked": "23",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "145",
+  "SubLengths": [
+    "4",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-21T19:17:18.377",
+  "Title": "Hangman"
+}

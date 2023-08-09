@@ -1,0 +1,53 @@
+{
+  "About": "There's some lovely filth over here!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBRBGGBBBBBBRR",
+    "RGGBBBBGBGGGGGBR",
+    "RBBRBRBBRBBRRBBR",
+    "RBBBGBBBBBBBBGBR",
+    "BBBRBRBBRRRRBRBR",
+    "GBBBBBBBBGGRBRBR",
+    "BBRBBBBBBBGRBRBR",
+    "BBBRBRBGBBBBBBBR",
+    "BBBRBRGBBBBBBBGR",
+    "BBBRBRRRRRBBBBGR",
+    "GGRBGBBBBBBBGGGR",
+    "RRRRRBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "86",
+  "DifficultyVoteSum": "203",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "583",
+  "Items": [
+    "#**.*.........*#",
+    "*..............#",
+    "#..#.#..#..**..#",
+    "*..............#",
+    "...#.#..#**#.#.#",
+    "...........#.#.#",
+    "...........#.#.#",
+    "...#.#.........*",
+    "...#.#.........*",
+    "...#.####*.....*",
+    "..*............*",
+    "####*.......***#"
+  ],
+  "Liked": "55",
+  "RobotCol": "9",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "197",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-05-24T04:12:47.827",
+  "Title": "Autonomous Collective"
+}

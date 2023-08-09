@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBRBBBRBBBGGGRR",
+    "GBBBRBBRBBGGRRRR",
+    "GBBRBBBBRGGGGRRR",
+    "GBBBBRRBBBBBRRRR",
+    "GRBRBBBBBBBGRRRR",
+    "GBBBBRBRBBBBGRRR",
+    "GRBBBBBBRBGGGGGG",
+    "GBBBRBBBRBBGGGRR",
+    "GRRBBBBBRRRRRRRR",
+    "GRBBBBBBRGGGGGGR",
+    "GBBBRBRBBBBGRRRR",
+    "GBRBBBBRBGGGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "79",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "747",
+  "Items": [
+    "....***....***##",
+    ".....**...**####",
+    "....****.****###",
+    "............####",
+    "..*........*####",
+    "......*.....*###",
+    "..******..******",
+    ".....***...***##",
+    "........########",
+    "..******.******#",
+    ".....*.....*####",
+    "...****..****###"
+  ],
+  "Liked": "23",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "82",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-11T14:44:35.75",
+  "Title": "Measurements 2"
+}

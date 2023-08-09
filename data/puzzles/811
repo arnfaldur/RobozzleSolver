@@ -1,0 +1,53 @@
+{
+  "About": "(a hint for Bad Medicine)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRGRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRGRRRRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "113",
+  "DifficultyVoteSum": "223",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "811",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####..#*.######",
+    "#####*....######",
+    "######.#.#######",
+    "#####..#.*######",
+    "#####.*#..######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "90",
+  "RobotCol": "5",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "1687",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "0cache",
+  "SubmittedDate": "2009-06-19T17:48:31.923",
+  "Title": "Counting by turns"
+}

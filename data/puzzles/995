@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRBBBRBBBRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "82",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "995",
+  "Items": [
+    "################",
+    "################",
+    "########*#######",
+    "######*.*.*#####",
+    "######.***.#####",
+    "#####***#***####",
+    "######..**.#####",
+    "######*.*.*#####",
+    "########*#######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "23",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "153",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-05T13:24:09.11",
+  "Title": "Twinkle"
+}

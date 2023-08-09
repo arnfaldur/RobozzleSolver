@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRBBGRRRRRRR",
+    "RRRRRRGGGBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "66",
+  "DifficultyVoteSum": "179",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "409",
+  "Items": [
+    "################",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "######***#######",
+    "######.***######",
+    "######****######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "57",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "226",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "matush",
+  "SubmittedDate": "2009-05-01T16:34:50.017",
+  "Title": "Finger"
+}

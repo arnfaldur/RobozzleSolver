@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RBGBGGBBBBBGBBGR",
+    "RRBRBBRRRRRBRRBR",
+    "RBBBBGRRRRBBGGBR",
+    "RRRRRBRRRRRRBBRR",
+    "RRGBGBBBGBBBBGRR",
+    "RRBRBRRRBRRRRBRR",
+    "RBBGBRRRBGRRRGRR",
+    "RRRBRRRRRBRRRBRR",
+    "RRRBGRRRBGBGBBRR",
+    "RRRRBRRRRBRBRRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "48",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "715",
+  "Items": [
+    ".***************",
+    "##*#**#####*##*#",
+    "*******##*******",
+    "#####*######**##",
+    "#**************#",
+    "##*#*###*####*##",
+    "******#****#***#",
+    "###*#####*###*##",
+    "##****#********#",
+    "####*####*#*####",
+    "###***********##",
+    "################"
+  ],
+  "Liked": "14",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "59",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-08T10:24:14.953",
+  "Title": "Cross the Bridges"
+}

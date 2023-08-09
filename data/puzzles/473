@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBRRBRRRRRR",
+    "GBBBBBBBBBBBBBBG",
+    "BBBBBBBBBBBBBBBB",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBGBRRRRRR",
+    "RRRRRBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "13",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "473",
+  "Items": [
+    "#######..#######",
+    "#######..#######",
+    "######...*######",
+    "................",
+    "*..............*",
+    "#######..#######",
+    "#######..#######",
+    "#######..#######",
+    "#######..#######",
+    "#######..#######",
+    "######....######",
+    "#####...*..#####"
+  ],
+  "Liked": "2",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "6",
+  "SubLengths": [
+    "2",
+    "4",
+    "2",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-07T21:21:15.297",
+  "Title": "Airplane"
+}

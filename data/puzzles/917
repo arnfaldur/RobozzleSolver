@@ -1,0 +1,53 @@
+{
+  "About": "swimmers and sunbathers (green sand!?)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRBBBBBBRBBBRBBB",
+    "BBBRBBRBBBBRBBBR",
+    "BBRBBRBBBRBBBBRB",
+    "BRBBRBBBRBBBRBBB",
+    "RBBBBBBRBBBRBBBR",
+    "BBBBRBBBRBRBBBRB",
+    "BBBRBBBRBBBBBRBB",
+    "BBRBBBRBBBBBBBBB",
+    "GRGGGRGGRGGGGRGG",
+    "GGGGGGGGGGGRGGGG",
+    "GGGGGGRGGGGGGGGR",
+    "GGRGGGGGGGRGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "29",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "917",
+  "Items": [
+    ".#....*.#...#...",
+    "...#*.#..*.#...#",
+    "..#..#...#....#.",
+    ".#..#.*.#.*.#*.*",
+    "#..*...#...#...#",
+    "....#...#*#.*.#.",
+    ".*.#.*.#.....#..",
+    "..#...#....*....",
+    ".*......*.......",
+    "...*.......*....",
+    "................",
+    "................"
+  ],
+  "Liked": "9",
+  "RobotCol": "4",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "23",
+  "SubLengths": [
+    "5",
+    "5",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-28T04:00:31.827",
+  "Title": "Day at the Beach"
+}

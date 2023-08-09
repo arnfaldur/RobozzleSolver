@@ -1,0 +1,53 @@
+{
+  "About": "shows how one simple turn at the start affects \"Plus (part 1)\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRBBBGBBBRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "54",
+  "DifficultyVoteSum": "156",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "801",
+  "Items": [
+    "################",
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "###*.......*####",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "41",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "165",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-18T16:03:49.673",
+  "Title": "Plus (part 2)"
+}

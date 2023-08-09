@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRBBBBBBBBBBBBB",
+    "RRRBBBBBBBGBBBBB",
+    "RRRBBBRBBBBBBBBB",
+    "RRRBBBBRBBBBBRBB",
+    "RRRBBBBBRBBBRBBB",
+    "RRRBBBBBBRRRBBBB",
+    "RRRBBBBBBBRRBBGB",
+    "RRRBBBBBBBBRBBBB",
+    "RRRBBBBBBBBBRBBB",
+    "RRRBBBBBBBBBBRBB",
+    "RRRBBBBBBBBBBBRB",
+    "RRRBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "47",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "250",
+  "Items": [
+    "###.............",
+    "###.******.****.",
+    "###.**#......**.",
+    "###.*.*#....*#*.",
+    "###.*..*#..*#.*.",
+    "###.*...*#*#..*.",
+    "###.*....*#*..*.",
+    "###.*...*.*#*.*.",
+    "###.*..*...*#**.",
+    "###.*.*.....*#*.",
+    "###.**.......*#.",
+    "###..**********#"
+  ],
+  "Liked": "12",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "44",
+  "SubLengths": [
+    "5",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-31T21:45:30.72",
+  "Title": "diagonals"
+}

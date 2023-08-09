@@ -1,0 +1,53 @@
+{
+  "About": "turn out the lights",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBRBRBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRBRBBBBBRBRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RBRBBBRBRBBBRBRR",
+    "GGGGGGGGGGGGGGGR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "42",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "508",
+  "Items": [
+    "#######.########",
+    "######*.*#######",
+    "#####*.*.*######",
+    "####*.*.*.*#####",
+    "###*.*.*.*.*####",
+    "##*.*.*.*.*.*###",
+    "#*.*.*.*.*.*.*##",
+    "*.*.*.*.*.*.*.*#",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "################"
+  ],
+  "Liked": "14",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "71",
+  "SubLengths": [
+    "5",
+    "5",
+    "4",
+    "3",
+    "2"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-05-12T16:32:35.11",
+  "Title": "Holiday Tree"
+}

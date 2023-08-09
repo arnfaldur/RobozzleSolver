@@ -1,0 +1,53 @@
+{
+  "About": "... times 2",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBBBBBBBBBBBBBBR",
+    "GBBBBBBRRRRRRRRB",
+    "GBBRRRRBRRRRRRRB",
+    "GRRBRRRBRRRRRRRB",
+    "BBRBRRRBRRRRRRRB",
+    "RBRBRRRBRRRRRRRB",
+    "RRRBRRRBRRRRRRRB",
+    "RRRRRRRBRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "70",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "337",
+  "Items": [
+    "################",
+    "................",
+    "........#######.",
+    "....###.#######.",
+    "..#.###.#######.",
+    "*.#.###.#######.",
+    "#*#.###.#######.",
+    "###*###.#######.",
+    "#######*#######.",
+    "###############*",
+    "################",
+    "################"
+  ],
+  "Liked": "18",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "91",
+  "SubLengths": [
+    "8",
+    "8",
+    "6",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-04-11T14:15:48.063",
+  "Title": "log base 2"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBBRR",
+    "RRRRRRRRRRRBBBBR",
+    "RRRRRRRRRRRBBRBB",
+    "RRRRRRRRRRRRBBRB",
+    "BGRGRRGRRGRGGBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "111",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "404",
+  "Items": [
+    "################",
+    "################",
+    "############**##",
+    "###########****#",
+    "###########**#**",
+    "############**#*",
+    ".............*##",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "28",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "80",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-30T04:36:47.313",
+  "Title": "Instruction Stack"
+}

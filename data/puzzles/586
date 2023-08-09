@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRGBBBBBBBBBBBBG",
+    "RRBRRRRBRRRRRRRB",
+    "GBBBBBBBBBGRRRRB",
+    "BRBRRRRBRRBRRRRB",
+    "BRBRRRRBRRBRRRRB",
+    "BRBRRRRBRRBRRRRB",
+    "BRBRRRRGBBBBBBBG",
+    "RRBRRRRRRRBRRRRR",
+    "RRGBBBBBBBGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "48",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "586",
+  "Items": [
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "##*............*",
+    "##.####.#######.",
+    "*.........*####.",
+    ".#.####.##.####.",
+    ".#.####.##.####.",
+    ".#.####.##.####.",
+    ".#.####*.......*",
+    "##.#######.#####",
+    "##*.......*#####"
+  ],
+  "Liked": "11",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "50",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "chief",
+  "SubmittedDate": "2009-05-24T17:22:47.39",
+  "Title": "Doubletime"
+}

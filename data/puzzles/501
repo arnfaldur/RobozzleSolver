@@ -1,0 +1,53 @@
+{
+  "About": "Green is the new red.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRBBBGBRRRBGBRRR",
+    "RBRRRRRBRBRRRBRR",
+    "RRBGRRRGRGRRRBRR",
+    "RRRRBRRBRRRRRBRR",
+    "RRGBRRRRBRRRRGRR",
+    "RBRRRRBRGRRRRBRR",
+    "RGRRRRRBRRRBGRRR",
+    "RBRRBGBRRRBRRRRR",
+    "RRBRRRRBRRRGBRRR",
+    "RRRRRRRGRRRRRBRR",
+    "RRRRRRRBRRBGBRRR",
+    "BGBBBGBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "80",
+  "DifficultyVoteSum": "190",
+  "Disliked": "15",
+  "Featured": "false",
+  "Id": "501",
+  "Items": [
+    "#*...*.*#*.*.*##",
+    "#.#####.#.###.##",
+    "#*.**##*#*###.##",
+    "####.##.**###.##",
+    "#**.*#**.####*##",
+    "#.####.#*####.##",
+    "#*####*.*#*.**##",
+    "#.#*.*.*##.#####",
+    "#*.*###.##**.*##",
+    "#######*#####.##",
+    "#######.#*.*.*##",
+    ".*...*.*########"
+  ],
+  "Liked": "63",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "214",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "taintedfalcon",
+  "SubmittedDate": "2009-05-11T22:29:34.877",
+  "Title": "Herring"
+}

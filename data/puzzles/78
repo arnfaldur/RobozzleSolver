@@ -1,0 +1,53 @@
+{
+  "About": "fun stuff",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRRRRGRRRRR",
+    "RRRRGRRRRRRGRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRGRRRRRRGRRRR",
+    "RRRRRGRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "94",
+  "DifficultyVoteSum": "269",
+  "Disliked": "15",
+  "Featured": "false",
+  "Id": "78",
+  "Items": [
+    "################",
+    "################",
+    "#####*####*#####",
+    "####********####",
+    "#####******#####",
+    "#####******#####",
+    "#####******#####",
+    "#####******#####",
+    "####.*******####",
+    "#####*####*#####",
+    "################",
+    "################"
+  ],
+  "Liked": "75",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "484",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "3",
+    "5"
+  ],
+  "SubmittedBy": "hidn",
+  "SubmittedDate": "2009-02-28T20:16:59.093",
+  "Title": "Easy Recursion"
+}

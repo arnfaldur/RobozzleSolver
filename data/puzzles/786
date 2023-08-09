@@ -1,0 +1,53 @@
+{
+  "About": "is not the territory",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRBBBRRR",
+    "BBBBBBBBBBRRBRRR",
+    "BBBBBBBBBBRRBRRR",
+    "BBBBRBRBBRRRBRRR",
+    "RBGBRBRRBRRRBBBB",
+    "RBRBRBRRGRRRRRRB",
+    "RBRBRGRRRRBBBBBB",
+    "RBRGRRRRRRBRRRRR",
+    "RBRRBBBBBBBRRRBR",
+    "RBRRBRRRRRRRRRBR",
+    "RBRRBRRRRRRRRRBR",
+    "RGRRBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "55",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "786",
+  "Items": [
+    "............*###",
+    "..........##.###",
+    "..........##.###",
+    "....*.*..*##.###",
+    "*.*.#.#*.###*..*",
+    "#.#.#.##*######.",
+    "#.#.#*####*....*",
+    "#.#*######.#####",
+    "#.##*.....*###*#",
+    "#.##.#########.#",
+    "#.##.#########.#",
+    "#*##*.........*#"
+  ],
+  "Liked": "19",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "55",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "petwolverine",
+  "SubmittedDate": "2009-06-17T04:37:38.267",
+  "Title": "The Map"
+}

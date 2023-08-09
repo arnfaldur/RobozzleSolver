@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRRRBGBGBRBRRRR",
+    "RRRRBGBGBGBRRRRR",
+    "RRRRGBRBRBGBRRRR",
+    "RRRRBGBRBGBRRRRR",
+    "RRRRGBRBRBGBRRRR",
+    "RRRRBGBGBGBRRRRR",
+    "RRRRRBGBGBRBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "238",
+  "DifficultyVoteSum": "546",
+  "Disliked": "25",
+  "Featured": "false",
+  "Id": "214",
+  "Items": [
+    "################",
+    "################",
+    "####.#.#.#.#####",
+    "#####..*..#.####",
+    "####.*...*.#####",
+    "####..#.#...####",
+    "####...#..*#####",
+    "####..#.#...####",
+    "####.*...*.#####",
+    "#####..*..#.####",
+    "################",
+    "################"
+  ],
+  "Liked": "211",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "1013",
+  "SubLengths": [
+    "2",
+    "3",
+    "4",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "rogerio",
+  "SubmittedDate": "2009-03-28T04:22:44.61",
+  "Title": "Knight's tour"
+}

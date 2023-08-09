@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBG",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRGBBBBBBGRRRB",
+    "BRRRBRRRRRRBRRRB",
+    "BRRRBRRRRRRBRRRB",
+    "BRRRBRRRRRRBRRRB",
+    "BRRRBRRRRRRRRRRB",
+    "BRRRBRRRRRRRRRRB",
+    "BRRRBRRRRRRRRRRB",
+    "RRRRGBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "60",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "948",
+  "Items": [
+    "................",
+    ".##############.",
+    ".#............#.",
+    ".#.##########.#.",
+    ".#.#........#.#.",
+    ".#.#.######.#.#.",
+    ".#.#.#....#.#.#.",
+    ".#.#.#.##*#.#.#.",
+    ".#.#.#.######.#.",
+    ".#.#.#........#.",
+    ".#.#.##########.",
+    "...#............"
+  ],
+  "Liked": "16",
+  "RobotCol": "11",
+  "RobotDir": "3",
+  "RobotRow": "7",
+  "Solutions": "88",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-07-01T03:15:26.593",
+  "Title": "Inner Path"
+}

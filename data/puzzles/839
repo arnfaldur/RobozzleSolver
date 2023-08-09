@@ -1,0 +1,53 @@
+{
+  "About": "Deceptively simple.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGBBBGRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "90",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "839",
+  "Items": [
+    "################",
+    "#####.....######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####*###*######",
+    "################",
+    "################"
+  ],
+  "Liked": "25",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "104",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-22T04:41:23.5",
+  "Title": "Reverse Polarity"
+}

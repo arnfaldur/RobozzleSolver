@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1506",
+  "DifficultyVoteSum": "2145",
+  "Disliked": "200",
+  "Featured": "true",
+  "Id": "52",
+  "Items": [
+    "################",
+    "############*###",
+    "###########..###",
+    "##########..####",
+    "#########..#####",
+    "########..######",
+    "#######..#######",
+    "######..########",
+    "#####..#########",
+    "####..##########",
+    "################",
+    "################"
+  ],
+  "Liked": "1354",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "7258",
+  "SubLengths": [
+    "2",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "splattne",
+  "SubmittedDate": "2009-02-25T06:26:18.017",
+  "Title": "Stairways to Heaven"
+}

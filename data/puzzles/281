@@ -1,0 +1,53 @@
+{
+  "About": "The innocent shall suffer... big time.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGGRRRRRGGGRR",
+    "RRRRGGGRRGGGGGRR",
+    "RRGGGGGGGGGGGGRR",
+    "RRGGGGBGGGBGGGRB",
+    "RRGGGBGGGGGBGGRB",
+    "RRRGBGBGGGBGBGRB",
+    "RBGGGGGGGGGGGGGB",
+    "RBGGGGBBBBBGGGGB",
+    "RBGGGGGGGGGGGGGR",
+    "RBGGGGGGGGGGGGGR",
+    "RBRRRRRBRRBRRRRR",
+    "RBRRBBBBRRBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "147",
+  "DifficultyVoteSum": "282",
+  "Disliked": "34",
+  "Featured": "false",
+  "Id": "281",
+  "Items": [
+    "####..#####...##",
+    "####...##.....##",
+    "##............##",
+    "##............#*",
+    "##............#.",
+    "###...........#.",
+    "#...............",
+    "#...............",
+    "#..............#",
+    "#*.............#",
+    "#.#####.##.#####",
+    "#.##....##....##"
+  ],
+  "Liked": "94",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "709",
+  "SubLengths": [
+    "3",
+    "7",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shpope",
+  "SubmittedDate": "2009-04-03T17:45:00.077",
+  "Title": "Ignignokt"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBRRRRRRRRRRRR",
+    "RBRRBRRRRRRRBBBR",
+    "RRGRBRRRRRRBRRRB",
+    "RRBRBRBGBBBGRGBR",
+    "RRGRBRBRRRRRRBRR",
+    "RBRRBRRBGRGGRGBR",
+    "RBRGRRRRBRBBRRRB",
+    "RBRBRRRBGRBRBBBR",
+    "RBRGRRBRRRBRRRRR",
+    "RBRRBRBRRRGBBBBR",
+    "RBRRBRBRBRRRRRRB",
+    "RRRRGBGRRBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "31",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "887",
+  "Items": [
+    "#****###########",
+    "#*##*######*****",
+    "#**#*#**###*###*",
+    "##*#*#******#***",
+    "#**#*#*######*##",
+    "#*##*#***#**#***",
+    "#*#**###*#**###*",
+    "#*#*##***#******",
+    "#*#**#*###*#####",
+    "#*##*#*#*#******",
+    "#.##*#*#*######*",
+    "####***#********"
+  ],
+  "Liked": "8",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "122",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pedrorz",
+  "SubmittedDate": "2009-06-25T19:05:15.827",
+  "Title": "magic"
+}

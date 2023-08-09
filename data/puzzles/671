@@ -1,0 +1,53 @@
+{
+  "About": "Better than flip flop?",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RGBBBBBBBBBBBGRR",
+    "RBRRRRRRRRRRRBRR",
+    "RBRGBBBBBBBGRBRR",
+    "RBRBRRRRRRRBRBRR",
+    "RBRBRGBBBGRBRBRR",
+    "RBRRRBRRRBRBRBRR",
+    "RBRBRBRGBGRBRBRR",
+    "RBRBRBRRRRRBRBRR",
+    "RGBGRGBBBBBGRBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RGBBBBBBBBBBBGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "625",
+  "DifficultyVoteSum": "862",
+  "Disliked": "104",
+  "Featured": "false",
+  "Id": "671",
+  "Items": [
+    "#.............##",
+    "#.###########.##",
+    "#.#.........#.##",
+    "#.#.#######.#.##",
+    "#.#.#.....#.#.##",
+    "#.#.#.###.#.#.##",
+    "#.#.#.#*..#.#.##",
+    "#.#.#.#####.#.##",
+    "#...#.......#.##",
+    "#############.##",
+    "#.............##",
+    "################"
+  ],
+  "Liked": "428",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "2951",
+  "SubLengths": [
+    "6",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "0cache",
+  "SubmittedDate": "2009-06-04T15:24:10.61",
+  "Title": "Greek key I"
+}

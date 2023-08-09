@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGGRRRRRRR",
+    "RRRRRGGRGGRRRRRR",
+    "RRRRRGRBRGRRRRRR",
+    "RRRRRGGRGGRRRRRR",
+    "RRRRRRGGGRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1664",
+  "DifficultyVoteSum": "3456",
+  "Disliked": "137",
+  "Featured": "false",
+  "Id": "416",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "######***#######",
+    "#####*.*.*######",
+    "#####**.**######",
+    "#####*.*.*######",
+    "######***#######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1299",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "13139",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-02T13:35:40.64",
+  "Title": "Red Cross"
+}

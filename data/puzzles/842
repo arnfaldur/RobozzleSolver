@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBRBRBRBGRRRRRR",
+    "RBRRRRRRRBRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRBRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "60",
+  "DifficultyVoteSum": "137",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "842",
+  "Items": [
+    "#.........######",
+    "#.#######.######",
+    "#.#######.######",
+    "#.######*.######",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############"
+  ],
+  "Liked": "42",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "317",
+  "SubLengths": [
+    "2",
+    "9",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-22T06:25:35.28",
+  "Title": "turn on red"
+}

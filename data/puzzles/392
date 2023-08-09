@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBRRR",
+    "BRRRRRRRRRRRRGRR",
+    "BRRRRRRRRRGRRBRR",
+    "BRRGBGBGGRGRRBRR",
+    "BRBRRRRRRRBRRBRR",
+    "BRBRRBRRRRBRRBRR",
+    "BRRRRBRBBGRRRBRR",
+    "BBGRRBRRRRBRRBRR",
+    "BRRRRBRRRRGRRBRR",
+    "BRRRRBRRRRRBGRRR",
+    "GRRRRBRRRRRRRRRR",
+    "RBBBGRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "374",
+  "DifficultyVoteSum": "1021",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "392",
+  "Items": [
+    "..............##",
+    ".############.##",
+    ".#########.##.##",
+    ".#.......#.##.##",
+    ".#.##.####.##.##",
+    ".#.##.####.##.##",
+    ".#.##.#....##.##",
+    ".*.##.####.##.##",
+    ".####.####.##.##",
+    ".####.####....##",
+    ".####.##########",
+    "......##########"
+  ],
+  "Liked": "326",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2688",
+  "SubLengths": [
+    "4",
+    "3",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-28T23:36:38.577",
+  "Title": "2-Bit Instructions"
+}

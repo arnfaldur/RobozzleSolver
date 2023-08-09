@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBGBRRRRR",
+    "RRRRBGBRBGBRRRRR",
+    "RRRRBGBRBGBBBRRR",
+    "RRRRBGBBBGGGGRRR",
+    "RRRRBGGBBGBBBRRR",
+    "RRRRBBGGGGBRRRRR",
+    "RRRBBBGBBBBRRRRR",
+    "RRRGGGGBRRRRRRRR",
+    "RRRBBGBBRRRRRRRR",
+    "RRRRBGBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "78",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "394",
+  "Items": [
+    "################",
+    "########.*.#####",
+    "####.*.#.*.#####",
+    "####.*.#.*...###",
+    "####.*...****###",
+    "####.**..*...###",
+    "####..*.**.#####",
+    "###...*....#####",
+    "###****.########",
+    "###..*..########",
+    "####.*.#########",
+    "################"
+  ],
+  "Liked": "22",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "74",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-29T01:23:03.61",
+  "Title": "Deadly Dead Ends"
+}

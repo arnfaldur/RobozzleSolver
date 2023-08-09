@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRGBBBBGRRRRR",
+    "RRRRRGBBBBGRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "101",
+  "DifficultyVoteSum": "293",
+  "Disliked": "12",
+  "Featured": "false",
+  "Id": "107",
+  "Items": [
+    "################",
+    "################",
+    "#######**#######",
+    "######*..*######",
+    "#####*....*#####",
+    "####*......*####",
+    "####*......*####",
+    "#####*....*#####",
+    "######*..*######",
+    "#######**#######",
+    "################",
+    "################"
+  ],
+  "Liked": "97",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "405",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-08T16:22:24.11",
+  "Title": "Small field"
+}

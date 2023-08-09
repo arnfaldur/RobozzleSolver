@@ -1,0 +1,53 @@
+{
+  "About": "one for color to turn on, and one for direction of turn",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRGB",
+    "GGBBBBBBBGGBBBRB",
+    "GGBBGGBBBBGGGBRB",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBGRBGGRB",
+    "GRRRRRRRRBRGRBRB",
+    "GRRRRRRRRBRGRBRB",
+    "GRRRRRBGRBRGRBRB",
+    "GRBBBBBGRBRGRBRB",
+    "GRBGGGGGGGRGRBRB",
+    "GRRRRRRRRRRGRBRB",
+    "BGGGGGGGGGGBRGBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "56",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "417",
+  "Items": [
+    "...............*",
+    "..............#.",
+    "..............#.",
+    "###############.",
+    "*........*#*.*#.",
+    ".########.#.#.#.",
+    ".########.#.#.#.",
+    ".#####**#.#.#.#.",
+    ".#*....*#.#.#.#.",
+    ".#*......*#.#.#.",
+    ".##########.#.#.",
+    "*..........*#*.*"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "109",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-02T14:29:49.297",
+  "Title": "2 bit instructions"
+}

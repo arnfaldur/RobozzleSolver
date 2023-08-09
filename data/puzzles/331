@@ -1,0 +1,53 @@
+{
+  "About": "Mmmm... Smooth and Menthol",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRBRRRRRRBRRRB",
+    "BRRRRBRRRRBRRRRB",
+    "BRRRBRBRRBRBRRRB",
+    "RBRRBRRRRRRBRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRRBRRRRR",
+    "RRBBBBRRRRBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "26",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "331",
+  "Items": [
+    "##########...###",
+    "##...........###",
+    ".#...........##.",
+    ".#............#.",
+    ".#............#.",
+    "#..............#",
+    "##............##",
+    "##............##",
+    "##............##",
+    "##............##",
+    "#####.####.#####",
+    "##....####...*##"
+  ],
+  "Liked": "6",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "58",
+  "SubLengths": [
+    "7",
+    "3",
+    "3",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "shpope",
+  "SubmittedDate": "2009-04-09T11:41:17.343",
+  "Title": "Err"
+}

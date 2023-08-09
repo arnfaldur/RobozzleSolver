@@ -1,0 +1,53 @@
+{
+  "About": "The bottom row tells the robot the colors on which it should turn.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGBBRRRRRRRRRRRR",
+    "RRRRGRRRRRRRGRBR",
+    "RRRRBRRRRRRRBRRG",
+    "RRRRBRRRRRGBBGRB",
+    "RRRRBRRRRRGRRRRB",
+    "RRRRGRRRRRGRRRRB",
+    "GRBRBRRBBBBRBRRG",
+    "GRRRGRRRRRBRRGRB",
+    "RRRBGRRRRRRGGRRG",
+    "RRRRRRRRRRRRRRRG",
+    "BGRGRGRRRGGRRGRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "103",
+  "DifficultyVoteSum": "358",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "305",
+  "Items": [
+    "################",
+    "#****###########",
+    "####*#######****",
+    "####*#######*##*",
+    "####*#####****#*",
+    "####*#####*#**#*",
+    "####*#####*####*",
+    "**************#*",
+    "*###*#####*##*#*",
+    "*****#####****#*",
+    "###############*",
+    ".***************"
+  ],
+  "Liked": "102",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "786",
+  "SubLengths": [
+    "4",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T04:02:23.767",
+  "Title": "Follow directions"
+}

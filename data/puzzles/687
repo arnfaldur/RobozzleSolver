@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRGRRRRRRRRRR",
+    "RRRRGBRRRRRRRGRR",
+    "RRRRRGBRRRRRGBGR",
+    "RRRRRRGBRRRGBRRR",
+    "RRRRRRRGBRGBRRRR",
+    "RRRRRRBBBGBRRRRR",
+    "RRRRRBGBBBRRRRRR",
+    "RRRRBGRBGRRRRRRR",
+    "RRRBGRRRBGRRRRRR",
+    "RGBGRRRRRBGRRRRR",
+    "RRGRRRRRRRBGRRRR",
+    "RRRRRRRRRRGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "60",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "687",
+  "Items": [
+    "#####*##########",
+    "####*.*######*##",
+    "#####*.*####*.*#",
+    "######*.*##*.*##",
+    "#######*.#*.*###",
+    "#####*...*.*####",
+    "####*.*...*#####",
+    "###*.*#.*#######",
+    "##*.*##*.*######",
+    "#*.*####*.*#####",
+    "##*######*.*####",
+    "##########*#####"
+  ],
+  "Liked": "19",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "5",
+  "Solutions": "76",
+  "SubLengths": [
+    "10",
+    "5",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "catbert",
+  "SubmittedDate": "2009-06-05T22:16:50.563",
+  "Title": "Hurricane"
+}

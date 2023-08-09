@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBRG",
+    "GRBBBBBBBBBBBBRG",
+    "GRBBBBBBBBBBBBRG",
+    "GRBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "234",
+  "DifficultyVoteSum": "415",
+  "Disliked": "32",
+  "Featured": "false",
+  "Id": "578",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    ".............*..",
+    "..*.............",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "175",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "1129",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ssancho",
+  "SubmittedDate": "2009-05-22T22:47:38.86",
+  "Title": "Pong"
+}

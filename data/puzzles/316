@@ -1,0 +1,53 @@
+{
+  "About": "Hopefully free of bugs this time!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBBBR",
+    "RRRBBBBBBBBBBBBR",
+    "RRRRRRRBBBBBBBBR",
+    "RRRRRRRBBBBBBBBR",
+    "RRRRRRRBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBRRRBBBBBBBBR",
+    "RBBBRRRRBBBBBBBR",
+    "RBBBRRRRBBBBBBRR",
+    "RRRRRRRRBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "70",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "316",
+  "Items": [
+    "###............#",
+    "##.*******.****.",
+    "##.************.",
+    "###....********.",
+    "######.********.",
+    "#......********.",
+    ".**************.",
+    ".***...********.",
+    ".***.##.*******.",
+    ".***.##.******.#",
+    "#...###.*****.##",
+    "########.....###"
+  ],
+  "Liked": "14",
+  "RobotCol": "10",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "51",
+  "SubLengths": [
+    "6",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T22:25:43.25",
+  "Title": "Simply Connected Shape II"
+}

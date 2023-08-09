@@ -1,0 +1,53 @@
+{
+  "About": "Using algebra to solve the problem",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGRRRRRGRRRRRGGG",
+    "GGRRRRRGRRRRRGGG",
+    "RRRRBRRRRRBRRRRR",
+    "RRRRBRRRRRBRRRRR",
+    "BBRBGBBBGBRBBBGB",
+    "RRBRRRRRBRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRRRRRGRRRR",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "66",
+  "DifficultyVoteSum": "157",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "638",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "...###...###....",
+    "...#*#...#*#....",
+    "####.#####.#####",
+    "...............*",
+    "##*#####*#####*#",
+    ".###...###...###",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "43",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "242",
+  "SubLengths": [
+    "9",
+    "6",
+    "8",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-03T01:41:54.453",
+  "Title": "Algebra"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "This puzzle is dedicated to those that enjoy bad puns.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RBRRRBBBRBRRRBRR",
+    "RBBRBBBBBBBRBBBR",
+    "RBBBBBRBBBBBBBBR",
+    "RBBBBRRBBBRRBBBR",
+    "RBBRRRRRBRRRRBRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "429",
+  "DifficultyVoteSum": "1431",
+  "Disliked": "8",
+  "Featured": "true",
+  "Id": "14",
+  "Items": [
+    "################",
+    "#####...########",
+    "#..#..*....#...#",
+    "#....*.*.*...*.#",
+    "#.*.*.*........#",
+    "#.........**.*.#",
+    "#..**..........#",
+    "#.*.....*....*.#",
+    "#...###...##...#",
+    "#######.*.######",
+    "#######...######",
+    "################"
+  ],
+  "Liked": "377",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "2897",
+  "SubLengths": [
+    "10",
+    "2",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:00.047",
+  "Title": "Can you reach the stars?"
+}

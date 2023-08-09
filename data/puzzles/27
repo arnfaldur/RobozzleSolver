@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBBRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7194",
+  "DifficultyVoteSum": "10182",
+  "Disliked": "617",
+  "Featured": "true",
+  "Id": "27",
+  "Items": [
+    "################",
+    "############**##",
+    "###########**###",
+    "##########**####",
+    "#########**#####",
+    "########**######",
+    "#######**#######",
+    "######**########",
+    "#####**#########",
+    "####**##########",
+    "###.*###########",
+    "################"
+  ],
+  "Liked": "7803",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "183209",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2008-12-15T04:03:43",
+  "Title": "Stairs"
+}

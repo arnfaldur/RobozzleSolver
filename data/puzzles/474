@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBBBGRRRRRRRRRRR",
+    "BRRRBRRRRRRRRRRR",
+    "GBGRGBBGRRRRRRRR",
+    "RRBRRRRBRRRRRRRR",
+    "RRGBBGRBRRRRRRRR",
+    "RRRRRBRBRRRRRRRR",
+    "GBGRRBRBRGRRRRRR",
+    "BRBRRBRBRBRRRRRR",
+    "BRGBBGRGBGRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRGGGRGRRRGRGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "40",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "474",
+  "Items": [
+    "################",
+    ".....###########",
+    ".###.###########",
+    "...#....########",
+    "##.####.########",
+    "##....#.########",
+    "#####.#.########",
+    "...##.#.#*######",
+    ".#.##.#.#.######",
+    ".#....#...######",
+    ".###############",
+    "...............*"
+  ],
+  "Liked": "9",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "24",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-08T05:07:24.53",
+  "Title": "Command Sequence"
+}

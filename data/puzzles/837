@@ -1,0 +1,53 @@
+{
+  "About": "Mwah Ha Ha Ha. You use all of the slots and try recursion r only hints",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BBRRRRRRRRRRRRRR",
+    "BBBRRRRRRRRRRRRR",
+    "BBBBRRRRRRRRRRRR",
+    "BBBBBRRRRRRRRRRR",
+    "BBBBBBRRRRRRRRRR",
+    "BBBBBBBRRRRRRRRR",
+    "BBBBBBBBRRRRRRRR",
+    "BBBBBBBBBRRRRRRR",
+    "BBBBBBBBBBRRRRRR",
+    "BBBBBBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "129",
+  "DifficultyVoteSum": "247",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "837",
+  "Items": [
+    "*###############",
+    ".*##############",
+    "*.*#############",
+    ".*.*############",
+    "*.*.*###########",
+    ".*.*.*##########",
+    "*.*.*.*#########",
+    ".*.*.*.*########",
+    "*.*.*.*.*#######",
+    ".*.*.*.*.*######",
+    "*.*.*.*.*.*#####",
+    ".*.*.*.*.*.*####"
+  ],
+  "Liked": "83",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "698",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thisisthename",
+  "SubmittedDate": "2009-06-21T20:44:01.22",
+  "Title": "Try Recursion"
+}

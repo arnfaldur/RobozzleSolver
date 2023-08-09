@@ -1,0 +1,53 @@
+{
+  "About": "Dr Mazhar's advice\" Two stacks;First stack pushs and pops first stack;\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBBRBBBRBBBRBBBR",
+    "BRRRRRBRBRRRRRBR",
+    "BRBRBRBRBRBRBRBR",
+    "BRBRBRBRBRBRBRBR",
+    "BRBRRRRRRRRRBRBR",
+    "RRRRBRBRBRBRRRRR",
+    "BRBRBRBRBRRRBRBR",
+    "BRBRRRBRBRRRBRBR",
+    "BRBBRBBRBBRBBRBR",
+    "BRRRRRRRRRRRRRBR",
+    "BBBBBBBRBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "27",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "12629",
+  "Items": [
+    "################",
+    ".......#.......#",
+    ".#####.#.#####.#",
+    ".#...#.#.#...#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#*#.#.#*#.#.#",
+    ".#.###.#.###.#.#",
+    ".#.....#.....#.#",
+    ".#############.#",
+    "...............#"
+  ],
+  "Liked": "13",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "67",
+  "SubLengths": [
+    "8",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "drmazhar",
+  "SubmittedDate": "2019-11-15T03:53:45.16",
+  "Title": "Playing With stacks (Version 4)"
+}

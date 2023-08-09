@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRGGGGBRRRRRRRRR",
+    "RRGGGGBRRRRRRRRR",
+    "RRRGBRBBGGRRRRRR",
+    "RRRGBRRRGGRRRRRR",
+    "BRRGBBRRRBBRRRRR",
+    "BBRGRRRRBBRRRRGG",
+    "RBRRRRGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "30",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "946",
+  "Items": [
+    "################",
+    "######.#########",
+    "######*#########",
+    "######*#########",
+    "######*#########",
+    "##*****#########",
+    "##*****#########",
+    "##********######",
+    "##********######",
+    "*************###",
+    "**#**##***##****",
+    "#*#*************"
+  ],
+  "Liked": "8",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "27",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-30T22:54:30.547",
+  "Title": "Tetris"
+}

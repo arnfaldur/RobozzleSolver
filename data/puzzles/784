@@ -1,0 +1,53 @@
+{
+  "About": "nice Stiletto's?",
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRGBRRRRRRRR",
+    "RRRBRRBBBRRRRRRR",
+    "RRRBRRRBRRRRRRRR",
+    "RRRRBBBBBBRRRRRR",
+    "RRRRRRRBRRBRRRRR",
+    "RRRRRRRBRRBBRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRBRRBRRRRRRRR",
+    "RRGRBRRBRRGGRRRR",
+    "RRGGRGRRBBRGRRRR",
+    "RRRRGGRRRRGRRRRR",
+    "RRRRRRRRRGGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "91",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "784",
+  "Items": [
+    "######.....#####",
+    "###.##......####",
+    "###.###.###..###",
+    "###........#####",
+    "#######.##.#####",
+    "#######.##..####",
+    "####....########",
+    "####.##.########",
+    "##**.*#.#***####",
+    "##****#...**####",
+    "####**###**#####",
+    "#########**#####"
+  ],
+  "Liked": "27",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "110",
+  "SubLengths": [
+    "6",
+    "2",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-16T17:58:21.233",
+  "Title": "run 4 ur life!"
+}

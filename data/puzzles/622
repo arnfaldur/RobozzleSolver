@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "BRGRGRGRGGGRGRRB",
+    "BRGRRGRRBRRRRGRB",
+    "BGRBGRGRGBRRGRGB",
+    "BGRRBRGRGRGBGRGB",
+    "BGRRRGRRGGRRRGRB",
+    "BRRRRBRRRRRRRBRB",
+    "BRRRRRRRRRRRRGRB",
+    "BGBGRGGGRRGRBRGB",
+    "BBRGRRRGRRBRGGGB",
+    "BRGRRRBBRRGRGRBB",
+    "BGGGRGGGRRGRRGGB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1",
+  "DifficultyVoteSum": "5",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "622",
+  "Items": [
+    "................",
+    ".**************.",
+    ".**************.",
+    ".********#*****.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".************#*.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    "................"
+  ],
+  "Liked": "0",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "3",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-31T03:41:16.28",
+  "Title": "Jigsaw"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBRRRRRRRRB",
+    "RRRRRBBRRRRRBRRB",
+    "BRBRRBBRRRBRBRRB",
+    "BRBRRBBRRRBRBRRB",
+    "BBBRRGBRBRBBGBRB",
+    "BBBRRBRRBRBBBBRR",
+    "RGRBRBBRGRRGBBRB",
+    "BBBBBGBBBRBBGRBB",
+    "BGBRGBBGGBBGBBGB",
+    "BBBBGBBGBRBBBBGB",
+    "BBBBBBBBBBBBBBBB",
+    "GRGGRRGRRGGRRGRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "49",
+  "DifficultyVoteSum": "159",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "217",
+  "Items": [
+    "######*########*",
+    "#####*.#####*##.",
+    "*#*##..###*#.##.",
+    ".#.##..###.#.##.",
+    ".*.##..#*#.*.*#.",
+    "...##..#.#....#.",
+    "...*#..#.#....#.",
+    "....*..*.#....*.",
+    ".........*......",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "40",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "171",
+  "SubLengths": [
+    "7",
+    "5",
+    "5",
+    "4",
+    "3"
+  ],
+  "SubmittedBy": "bofh",
+  "SubmittedDate": "2009-03-28T09:20:15.313",
+  "Title": "Towers"
+}

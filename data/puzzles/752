@@ -1,0 +1,53 @@
+{
+  "About": "tasty sprinkles show the way",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRBBBRBBRRRRR",
+    "RRRRRRBBRBBGRRRR",
+    "RRRBBBBGGBBGBRRR",
+    "RRBGGRBRRBBBGBRR",
+    "RRBBBRRRRRRRGBRR",
+    "RRBRGBRRRRBBBBRR",
+    "RRBBBBBRRGBBRRRR",
+    "RRRBGBRRBGBBBRRR",
+    "RRRRGBBBBBBBRRRR",
+    "RRRRRBGBBRRRRRRR",
+    "RRRRRRGBBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "24",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "752",
+  "Items": [
+    "######....######",
+    "#####...*..#####",
+    "####**..*..*####",
+    "###....**..*.###",
+    "##.***.##...*.##",
+    "##...*####***.##",
+    "##.**.####....##",
+    "##.....##*..**##",
+    "###.*.**.*...###",
+    "####*.......####",
+    "#####.*..**#####",
+    "######*...######"
+  ],
+  "Liked": "7",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "50",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-13T05:26:57.47",
+  "Title": "Donut"
+}

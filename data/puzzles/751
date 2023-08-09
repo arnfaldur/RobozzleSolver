@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBGBBBBBBG",
+    "GRRRRRRRRRRRRRRB",
+    "BRGBBBBBBBBBBGRG",
+    "BRBRRRRRRRRRRBRB",
+    "BRBRRBBBRBBBRBRB",
+    "BRBRBBRBBBRBBGRB",
+    "BRBRRRRRRRRRRRRB",
+    "BRGBBBBBRBBBBGRB",
+    "BRRRRGGGGGGGRBRB",
+    "GBBBBBBGBBBBBGRB",
+    "RRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "49",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "751",
+  "Items": [
+    "................",
+    ".##############.",
+    ".#............#.",
+    ".#.##########.#.",
+    ".#.##...#...#.#.",
+    ".#.#..*...*...#.",
+    ".#.############.",
+    ".#......*.....#.",
+    ".####.......#.#.",
+    ".......*......#.",
+    "###############.",
+    "#..............."
+  ],
+  "Liked": "16",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "76",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-12T14:45:44.343",
+  "Title": "Cookie Monster"
+}

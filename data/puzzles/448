@@ -1,0 +1,53 @@
+{
+  "About": "stop where the sequence differs from the one on the left",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RGBBBBBRGBBBBBRR",
+    "RBBBGBGRBBBBRRRR",
+    "RGGBGBBRGBRRRRRR",
+    "RBBBGGGRBBBGGGRR",
+    "RBGBGBGRBGBGBGRR",
+    "RBGGGBBRGRRRRRRR",
+    "RGGBBGGRGGBGRRRR",
+    "RGBBGBBRGBBBRRRR",
+    "RBGBGGBRBGBGGGRR",
+    "RBBBGGBRBBBGGBRR",
+    "RBBBGBBRBBGRRRRR",
+    "RGGGGGBRGBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "28",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "448",
+  "Items": [
+    ".******.*******#",
+    ".***....***.####",
+    ".*......*.######",
+    ".**************#",
+    ".**************#",
+    ".........#######",
+    ".***....***.####",
+    ".***....***.####",
+    ".*****..*****.##",
+    ".**************#",
+    ".**.....**.#####",
+    ".*......*.######"
+  ],
+  "Liked": "8",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "19",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-05T01:58:29.22",
+  "Title": "comparison"
+}

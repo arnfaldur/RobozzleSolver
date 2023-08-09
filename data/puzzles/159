@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGRBBRBRBBRBGBR",
+    "RRBRGRRRRRRRRRBR",
+    "RRRRBRBBBBBGBRRR",
+    "RRBRRRGRRRRRRRBR",
+    "RRRRBRBRBGBRBRRR",
+    "RRBRRRBRRRGRRRBR",
+    "RRRRBRBGBBBRBRRR",
+    "RRBRRRRRRRRRGRBR",
+    "RRRRBGBRBRBRBRBR",
+    "RRBRRRRRRRRRRRGR",
+    "RRBGBBRBRBRBRBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1883",
+  "DifficultyVoteSum": "3983",
+  "Disliked": "71",
+  "Featured": "false",
+  "Id": "159",
+  "Items": [
+    "#**#############",
+    "##*#..*.*..*.*.#",
+    "##.#*#########.#",
+    "##*#.#.....*.#*#",
+    "##.#*#*#####*#.#",
+    "##*#.#.#.*.#.#*#",
+    "##.#*#.###*#*#.#",
+    "##*#.#.*...#.#*#",
+    "##.#*#######*#.#",
+    "##*#.*.*.*.*.#.#",
+    "##.###########*#",
+    "##.*..*.*.*.*..#"
+  ],
+  "Liked": "1582",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "11824",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "patatino",
+  "SubmittedDate": "2009-03-19T11:59:58.407",
+  "Title": "labyrinth"
+}

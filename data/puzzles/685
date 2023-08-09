@@ -1,0 +1,53 @@
+{
+  "About": "Rhymes like INRI",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "19",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "685",
+  "Items": [
+    "####.......#####",
+    "####.****..#####",
+    "####.*****.#####",
+    "####....**.#####",
+    "####....**.#####",
+    "####.*****.#####",
+    "####.*****.#####",
+    "####....**.#####",
+    "####....**.#####",
+    "####.*****.#####",
+    "####.****..#####",
+    "####.......#####"
+  ],
+  "Liked": "1",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "19",
+  "SubLengths": [
+    "2",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-05T16:06:35.657",
+  "Title": "Three"
+}

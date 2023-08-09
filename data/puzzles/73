@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRGRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "251",
+  "DifficultyVoteSum": "272",
+  "Disliked": "229",
+  "Featured": "false",
+  "Id": "73",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "#######*****####",
+    "#######.****####",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "98",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "898",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2009-02-27T19:45:25.72",
+  "Title": "red round"
+}

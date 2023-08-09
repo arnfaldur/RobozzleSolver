@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRGRGRRRRRGRR",
+    "GBRRRRRBGGGGGGRR",
+    "RRRRRRRRRGRGRGRR",
+    "GRRRRBRRRRRRRGRR",
+    "RRRRRRRRGGGGGGRR",
+    "RRRRRRRGRGRRRGRR",
+    "RBRRRBGGRGRRRGRR",
+    "RRRRRRRGRGGGGGGR",
+    "RRRGRGRGRGRRRGRR",
+    "RBRBRBGGGGGGGGGR",
+    "RGRRRRRGRGRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "43",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "261",
+  "Items": [
+    "#####.#.#####*##",
+    "........******##",
+    "#.###.#.#*#*#*##",
+    "......#.#####*##",
+    "#.###.#.******##",
+    "#.###.#*#*###*##",
+    "#......*#*###*##",
+    "#.#####*#******#",
+    "#.#.#.#*#*###*##",
+    "#......********#",
+    "#.#####*#*######",
+    "################"
+  ],
+  "Liked": "9",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "4",
+  "Solutions": "54",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-03T03:12:16.173",
+  "Title": "Facsimile"
+}

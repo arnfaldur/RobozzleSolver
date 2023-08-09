@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1190",
+  "DifficultyVoteSum": "2809",
+  "Disliked": "56",
+  "Featured": "true",
+  "Id": "42",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "####*********###",
+    "####*#######*###",
+    "####*#######*###",
+    "####*#######*###",
+    "####.********###",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1004",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "6893",
+  "SubLengths": [
+    "5",
+    "2",
+    "2",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-24T14:39:03.593",
+  "Title": "The powers"
+}

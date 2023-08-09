@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGGRRRGGRRRGGRR",
+    "RRGGRRRGGRGGGGRR",
+    "RRRGGRRRGGGGRRRR",
+    "RRRGGRGGGGRGGRRR",
+    "RRRRGGGGRRRGGRRR",
+    "RRGGGGRGGRRRGGRR",
+    "RRGGRRRGGRRRGGRR",
+    "RRRGGRRRGGRRRGGR",
+    "RRRGGRGGGGRGGGGR",
+    "RRRRRRGGRRRGGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "131",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "712",
+  "Items": [
+    "##*####*####*###",
+    "##***##****#***#",
+    "#***##***#****##",
+    "###****#****#*##",
+    "##***#****#***##",
+    "##*#****#****###",
+    "##****#.**##***#",
+    "#***#****##***##",
+    "###****#****#***",
+    "##***#****#****#",
+    "####****#****#*#",
+    "#######*####*###"
+  ],
+  "Liked": "46",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "258",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-08T08:54:58.673",
+  "Title": "Skewed Maze"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBGBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "115",
+  "DifficultyVoteSum": "228",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "873",
+  "Items": [
+    "################",
+    "##*****.******##",
+    "##************##",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######*.#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######"
+  ],
+  "Liked": "100",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "7",
+  "Solutions": "1548",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-24T15:49:48.733",
+  "Title": "T is for Trivial"
+}

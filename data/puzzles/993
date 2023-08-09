@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRBGBRRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRBBBBBBBBRR",
+    "RRRRRRBBBBBBBBBR",
+    "RRRRRRBBBBBBBBBR",
+    "RRRRRBBBBBBBBBBR",
+    "BBBBBBBBBBBBBBBR",
+    "BRRRRRBBBBBBBBRR",
+    "BBBBBBBBBBBRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1",
+  "DifficultyVoteSum": "5",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "993",
+  "Items": [
+    "########***#####",
+    "######******####",
+    "######********##",
+    "######*********#",
+    "######*********#",
+    "#####**********#",
+    "*******.*******#",
+    "**************##",
+    "***********#####",
+    "######****######",
+    "################",
+    "################"
+  ],
+  "Liked": "0",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "5",
+  "SubLengths": [
+    "9",
+    "4",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-05T05:30:56.593",
+  "Title": "paint your own path"
+}

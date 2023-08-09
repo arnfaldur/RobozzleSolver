@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RGGGGGGGGGGGRRRR",
+    "GRGGGGGGGGGRGRRR",
+    "GGGGGGGGGGGGGRRR",
+    "GGGRRRRRRRGGGRRR",
+    "GGGRRRRRRRGGGGGR",
+    "GGGGGGGGRRGRGGGG",
+    "GRGGGGGRGRRGGGGR",
+    "RGGGGGGGGRRRRRRR",
+    "RRRRRRGGGRRRRRRR",
+    "RRRRRRGGGGGGGGGG",
+    "RRRRRRGRGGGGGGGB",
+    "RRRRRRRGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "40",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "938",
+  "Items": [
+    "#***********####",
+    "*************###",
+    "*************###",
+    "***#######***###",
+    "***#######*****#",
+    "********##****.*",
+    "*********##****#",
+    "#********#######",
+    "######***#######",
+    "######**********",
+    "######**********",
+    "#######*********"
+  ],
+  "Liked": "11",
+  "RobotCol": "14",
+  "RobotDir": "2",
+  "RobotRow": "5",
+  "Solutions": "30",
+  "SubLengths": [
+    "10",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-30T04:15:19.343",
+  "Title": "Carve Your Own Puzzle"
+}

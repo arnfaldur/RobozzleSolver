@@ -1,0 +1,53 @@
+{
+  "About": "Combine stack memory and color markup",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRGGGR",
+    "RRRRRRRRRRBGRRRG",
+    "RRRRRRBRRRBGRGRG",
+    "RRRBRRBRRRBRGRRG",
+    "RBRBRRBRRRBRRRRG",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "110",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "176",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "###########.....",
+    "##########*.###.",
+    "######*###..#.#.",
+    "###*##.###....#.",
+    "#*#.##.###.####.",
+    "**.*..*...*....*"
+  ],
+  "Liked": "23",
+  "RobotCol": "13",
+  "RobotDir": "1",
+  "RobotRow": "8",
+  "Solutions": "88",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-21T15:08:53",
+  "Title": "Turn on star :)"
+}

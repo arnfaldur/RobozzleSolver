@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRBBBBBBBBBBBBBR",
+    "RRBGGGGGBBGGGGBR",
+    "RRBGBBBGBGGBBGBB",
+    "RRBGBRBGGGBBBGGB",
+    "RBBGBRBBBBBBGGBB",
+    "RBGGBRBBBBBBGBBR",
+    "RBGBBRBGGGGBGGBR",
+    "RBGBBBBBBBGBBGBR",
+    "RBGBGBBBBBGBBGBR",
+    "RBGGGGGGBBGBBGBR",
+    "RBBBBBGBBBGGGGBR",
+    "RRRRRBBBRBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "46",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "238",
+  "Items": [
+    "##.............#",
+    "##.*****..****.#",
+    "##.*...*.**..*..",
+    "##.*.#.***...*..",
+    "#..*.#......**..",
+    "#.**.#......*..#",
+    "#.*..#..***.**.#",
+    "#.*.......*..*.#",
+    "#.*.......*..*.#",
+    "#.******..*..*.#",
+    "#.........****.#",
+    "#####...#......#"
+  ],
+  "Liked": "13",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "111",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "nebulo",
+  "SubmittedDate": "2009-03-30T07:59:15.297",
+  "Title": "labyrinth"
+}

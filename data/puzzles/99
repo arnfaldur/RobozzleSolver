@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBRRRRRR",
+    "BBBBBBBBBBRRRRRR",
+    "BRBRBRBRBBRRRRRR",
+    "RBBBRBBBRBRRRRRR",
+    "BBBBBBBBBBRRRRRR",
+    "BRBRBRBRBBRRRRRR",
+    "RBBBRBBBRBRRRRRR",
+    "BBRBBBRBBBRRRRRR",
+    "BRBRBRBRBBRRRRRR",
+    "BBBBBBBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "58",
+  "DifficultyVoteSum": "129",
+  "Disliked": "30",
+  "Featured": "false",
+  "Id": "99",
+  "Items": [
+    "################",
+    ".........*######",
+    "........*.######",
+    "*.........######",
+    ".*...*....######",
+    ".......*..######",
+    "....*.....######",
+    "..*.......######",
+    ".*........######",
+    "......*...######",
+    "...*......######",
+    "################"
+  ],
+  "Liked": "23",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "156",
+  "SubLengths": [
+    "5",
+    "4",
+    "3",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-05T18:43:40.377",
+  "Title": "Jump to star"
+}

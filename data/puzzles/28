@@ -1,0 +1,53 @@
+{
+  "About": "Complex path from simple program",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRRGRGGGGBRRRRR",
+    "RRRRGRRRRRBRRRRR",
+    "RRRRRRGGRRGBRRRR",
+    "RRRRBBGRBRGBRRRR",
+    "RRRRGRRBBRBRRRRR",
+    "RRRRGRRRRRBRRRRR",
+    "RRRRBBBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "187",
+  "DifficultyVoteSum": "585",
+  "Disliked": "57",
+  "Featured": "true",
+  "Id": "28",
+  "Items": [
+    "################",
+    "####**##########",
+    "####*******#####",
+    "###********#####",
+    "###*********####",
+    "####********####",
+    "####***.***#####",
+    "####*******#####",
+    "####******######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "130",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "748",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2008-12-15T17:24:34.797",
+  "Title": "A twisty path"
+}

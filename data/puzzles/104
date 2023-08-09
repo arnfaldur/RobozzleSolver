@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGGRRRRRRRR",
+    "RRRRRGRGRRRRRRRR",
+    "RRRRRGRBGGGRRRRR",
+    "RRRGGBRRRRGRRRRR",
+    "RRRGRRRRRRBGGGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "819",
+  "DifficultyVoteSum": "1906",
+  "Disliked": "35",
+  "Featured": "false",
+  "Id": "104",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "#####...########",
+    "#####.#.########",
+    "#####.#....#####",
+    "###...####.#####",
+    "###.######...*##",
+    "###.############"
+  ],
+  "Liked": "643",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "4869",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jacob_c",
+  "SubmittedDate": "2009-03-07T14:51:46.203",
+  "Title": "coroutines"
+}

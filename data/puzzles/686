@@ -1,0 +1,53 @@
+{
+  "About": "Just enhance the memory index.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRBGBGBRRRRR",
+    "RRRRRRRBGBRRRRRR",
+    "RRRRRRBGBGBRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "22",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "686",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "#######*#*######",
+    "######*****#####",
+    "#######.**######",
+    "######*****#####",
+    "#######*#*######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "2",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "12",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": {},
+  "SubmittedDate": "2009-06-05T18:53:54.5",
+  "Title": "Is it simple?"
+}

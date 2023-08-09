@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGBBBGGBBBBGGGGG",
+    "GGGGBRRBRRBRRRGR",
+    "GGGGBBBBGGBBBBBG",
+    "RRRRRRRGRRGRRRBG",
+    "GGGGGGGGRRGGRRBG",
+    "GRGRGRGGRRGGRRBG",
+    "RRRRGRRGRRGRRRBG",
+    "GGGGBBBBGGBBBBBG",
+    "GGGGBRRBRRBRRRGR",
+    "GGBBBGGBBBBGGGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "35",
+  "DifficultyVoteSum": "101",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "860",
+  "Items": [
+    "................",
+    "..***..****.....",
+    "....*##*##*###.#",
+    "....****..*****.",
+    "#######.##.###*.",
+    "........##..##*.",
+    ".#.#.#..##..##*.",
+    "####.##.##.###*.",
+    "....****..*****.",
+    "....*##*##*###.#",
+    "..***..****.....",
+    "................"
+  ],
+  "Liked": "29",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "160",
+  "SubLengths": [
+    "5",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-23T04:46:18.187",
+  "Title": "Azure Key"
+}

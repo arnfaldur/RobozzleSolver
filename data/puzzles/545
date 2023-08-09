@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGRRGRGRRRRRRRRR",
+    "GGBBGBGGRRRRRRRR",
+    "RBRRBRGRRRRRRRRR",
+    "GGGRBRRRRRRRRRRR",
+    "RGRRBRRRRRRRRRRR",
+    "RRRGGBBBRRRRRRRR",
+    "RGRRBRGRRRRRRRRR",
+    "GGBBGBGGRRRRRRRR",
+    "RGRRBRGRRRRRRRRR",
+    "RRRGGGRRRRRRRRRR",
+    "RRRRGRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "57",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "545",
+  "Items": [
+    "################",
+    "#.##.#.##*#*##*#",
+    "........********",
+    "#.##.#.##*#*##*#",
+    "...#.######*#***",
+    "#.##.######*##*#",
+    "###.....*****###",
+    "#.##.#.##*#*##*#",
+    "........********",
+    "#.##.#.##*#*##*#",
+    "###...####***###",
+    "####.######*####"
+  ],
+  "Liked": "13",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "79",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-17T16:51:11.36",
+  "Title": "Ternary Tree Symmetry"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "\"And after that make another right\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBGRGBBBBBGR",
+    "RRRRBRBRBRRRRRBR",
+    "RRRRBRBRBRRBBBRR",
+    "RRBBRRBRBRBRRRRR",
+    "RBRRRRBRBRRBBBGR",
+    "RBRRBBRRBRRRRRRR",
+    "RBRBRRRRBRRBGRRR",
+    "RBRRBBBBGRBRBRRR",
+    "RBRRRRRRRRBRGBRR",
+    "RGBBBBBBBBGRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "BBBBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "77",
+  "DifficultyVoteSum": "282",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "310",
+  "Items": [
+    "####***#*******#",
+    "####*#*#*#####*#",
+    "####*#*#*#*****#",
+    "#****#*#*#*#####",
+    "#*####*#*#****.#",
+    "#*#****#*#######",
+    "#*#*####*#***###",
+    "#*#******#*#*###",
+    "#*########*#***#",
+    "#**********###*#",
+    "##############*#",
+    "***************#"
+  ],
+  "Liked": "74",
+  "RobotCol": "14",
+  "RobotDir": "2",
+  "RobotRow": "4",
+  "Solutions": "443",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T11:47:04.64",
+  "Title": "Very Early Warning"
+}

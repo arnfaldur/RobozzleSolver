@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGBGBGBGBGRRR",
+    "RRRRBGBGBGBGBRRR",
+    "RRRRGBGBGBGBGRRR",
+    "RRRRBGBGBGBGBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "672",
+  "DifficultyVoteSum": "1397",
+  "Disliked": "111",
+  "Featured": "true",
+  "Id": "18",
+  "Items": [
+    "################",
+    "################",
+    "####.........###",
+    "####*..**.**.###",
+    "####.***.*..*###",
+    "####*..*..**.###",
+    "####**..*.*.*###",
+    "####.........###",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "605",
+  "RobotCol": "12",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "2878",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:00.797",
+  "Title": "There can be more than one (solution)"
+}

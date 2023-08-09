@@ -1,0 +1,53 @@
+{
+  "About": "The longest I've seen is 3bits. This method is only limited by the step limit.",
+  "AllowedCommands": "5",
+  "Colors": [
+    "RBBBBBBBBBBRRRBR",
+    "BRRRRRRRRRRBRBRB",
+    "BRRRGBBRRRRGBGRB",
+    "BRRRBRBRRRRRRRRB",
+    "BRRGRRRRRRRRRRRB",
+    "BRRGBRRGRBRRBRBG",
+    "BRRRRBRRRRRRRRRR",
+    "BRGBBRRRRBBBRRBR",
+    "BRGBBBBBGRRRGGRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRGBBBBBBBBBBBBR",
+    "RBRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "37",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "782",
+  "Items": [
+    "*..........*#*.*",
+    ".##########.#.#.",
+    ".###*..####*.*#.",
+    ".###.#*########.",
+    ".##**##########.",
+    ".##*.*#*.......*",
+    ".####.##########",
+    ".#****##*...**.*",
+    ".#***...*###**#.",
+    ".##############.",
+    ".#*............*",
+    "*.*#############"
+  ],
+  "Liked": "11",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "43",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-06-16T00:38:43.453",
+  "Title": "binary counting - 7bits"
+}

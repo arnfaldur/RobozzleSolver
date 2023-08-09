@@ -1,0 +1,53 @@
+{
+  "About": "First color after red determines which way to turn",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRRGBBRRRRR",
+    "RRRRRGRRRRRRRRRR",
+    "RRRRRRGGGBRRRGRR",
+    "BRRBBBRRGRRRGBBG",
+    "BRRRRRRRGRBRRBRR",
+    "BRRRRRRRRRGRRRRR",
+    "GRRBRRBGBRGRRRRR",
+    "RRRRRRRRRRGRBGRG",
+    "RRRRRRRRRRRRRRRG",
+    "RRRRRRRRRRRRRRRG",
+    "BGBGBGBGRRRRRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "40",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "338",
+  "Items": [
+    "################",
+    "#####******#####",
+    "#####*####*#####",
+    "#####*********##",
+    "*******#********",
+    "*#####*#*#*##*#*",
+    "*#######*#*##*#*",
+    "*##.*****#*##*#*",
+    "*#########****#*",
+    "*##############*",
+    "*##############*",
+    "****************"
+  ],
+  "Liked": "11",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "19",
+  "SubLengths": [
+    "7",
+    "5",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-11T18:42:25.25",
+  "Title": "First Impressions"
+}

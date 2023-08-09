@@ -1,0 +1,53 @@
+{
+  "About": "Colors and recursion",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGBBRBBBGR",
+    "BRRRBRRBRRRRRRBR",
+    "GBGBGRRGBBBBGBGR",
+    "BRBRRRRGBRRRBRRR",
+    "BRBRRRRRRRRRBRRR",
+    "BRGBBBBGBBBBGRRR",
+    "BRBRRRRBRRRRBRBR",
+    "BRBRBGRBRRRRBRBR",
+    "RRBRRBRBRRGBGBGR",
+    "RRBRRBRBRRBRRRBR",
+    "RRGBBGRBRRGBBBBR",
+    "RRRRRRRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "124",
+  "DifficultyVoteSum": "466",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "152",
+  "Items": [
+    "*###*#*...*....*",
+    ".###.##.######.#",
+    ".....##........#",
+    ".#.#*#*..*##.#*#",
+    ".#.#########.###",
+    ".#...........#*#",
+    ".#.####.####.#.#",
+    ".#.*..*.##*#.#.#",
+    "*#.##.#.##.....#",
+    "##.##.#.##.###.#",
+    "#*....#.#*.....*",
+    "#####*#.######*#"
+  ],
+  "Liked": "119",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1071",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-18T22:00:09.86",
+  "Title": "Tree"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "How many are important?",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRBBBBRRRRRRRR",
+    "RRRGBGGBGGGRRRRR",
+    "RRRGBRRBBBBBRRRR",
+    "RRRGBBBBBRGBRRRR",
+    "RRBBBBRRBRGBRRRR",
+    "RRBGRBRRBBBBRRRR",
+    "RRBGRBBBBBGRRRRR",
+    "RRBBBBBRRBGRRRRR",
+    "RRRGGGBGGBGRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "64",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "327",
+  "Items": [
+    "####*..*########",
+    "###........#####",
+    "###..##.*..*####",
+    "###.*....#..####",
+    "##*......#..####",
+    "##..#......*####",
+    "##..#....*.#####",
+    "##*..*.##..#####",
+    "###........#####",
+    "######*..*######",
+    "################",
+    "################"
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "103",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "blake",
+  "SubmittedDate": "2009-04-08T23:10:30.157",
+  "Title": "Seven Squares"
+}

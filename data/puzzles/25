@@ -1,0 +1,53 @@
+{
+  "About": "",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRBRBBRBRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRBRBBRBRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "848",
+  "DifficultyVoteSum": "1950",
+  "Disliked": "44",
+  "Featured": "true",
+  "Id": "25",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "######******####",
+    "######*#**#*####",
+    "######**.***####",
+    "######******####",
+    "######*#**#*####",
+    "######******####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "685",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "4346",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2008-12-15T03:57:50.657",
+  "Title": "A window"
+}

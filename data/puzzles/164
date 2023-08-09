@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRGR",
+    "RRGBBBBRRRRBBBBR",
+    "RRRBRRRRRRRRRRRR",
+    "RRRBRRRRRRRGRRRR",
+    "RRGBBBBBBBBRRRRR",
+    "RRRBRRRRRRRRRRBR",
+    "RRRBRRRRRRRBRRBR",
+    "RRRBBRRRRRRBRRBR",
+    "RRRBBRRRRRRRGRRR",
+    "RRRGRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRRRRBRRRRBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "94",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "164",
+  "Items": [
+    "##############.#",
+    "##.............#",
+    "###.##########.#",
+    "###.#######.##.#",
+    "##..........##.#",
+    "###.#######.##.#",
+    "###.#######.##.#",
+    "###**######.##.#",
+    "###**........#.#",
+    "###.##########.#",
+    "##############.#",
+    "................"
+  ],
+  "Liked": "28",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "87",
+  "SubLengths": [
+    "5",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-20T00:02:26.827",
+  "Title": "Hidden rule"
+}

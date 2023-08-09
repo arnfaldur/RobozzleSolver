@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRGBRRBGRRRRR",
+    "RRRRGBRBBRBGRRRR",
+    "RRRGBRBRRBRBGRRR",
+    "RRGBRBRBBRBRBGRR",
+    "RRGBRBRBBRBRBGRR",
+    "RRRGBRBRRBRBGRRR",
+    "RRRRGBRBBRBGRRRR",
+    "RRRRRGBRRBGRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRRRGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "24",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "739",
+  "Items": [
+    "#######**#######",
+    "######****######",
+    "#####******#####",
+    "####********####",
+    "###**********###",
+    "##************##",
+    "##*****.******##",
+    "###**********###",
+    "####********####",
+    "#####******#####",
+    "######****######",
+    "#######**#######"
+  ],
+  "Liked": "5",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "26",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-10T14:51:14.97",
+  "Title": "Color Explosion"
+}

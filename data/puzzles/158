@@ -1,0 +1,53 @@
+{
+  "About": "Nothing special just fun",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRGRRRRRRRRRR",
+    "RRRRBBBRRRRRRRRR",
+    "RRRBBRBBRRRRRRRR",
+    "RRBBRRRBBRRRRRRR",
+    "RBBRGRGRBBRRRRRR",
+    "BBRRRRRRRBGRRRRR",
+    "RRRBBBRRBBRRRRRR",
+    "RRBBRRRBBRRRRRRR",
+    "RRRBBRBBRRRRRRRR",
+    "RRRRBBBRRRRRRRRR",
+    "RRRRRGRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "123",
+  "DifficultyVoteSum": "348",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "158",
+  "Items": [
+    "#####.##########",
+    "####...#########",
+    "###..#..########",
+    "##..###..#######",
+    "#..#.#.#..######",
+    "..#######..#####",
+    "##...*##..######",
+    "##..###..#######",
+    "###..#..########",
+    "####...#########",
+    "#####.##########",
+    "################"
+  ],
+  "Liked": "106",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "919",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "prudnikoff",
+  "SubmittedDate": "2009-03-19T10:51:56.78",
+  "Title": "Keep smilin'"
+}

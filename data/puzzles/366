@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "101",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "366",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "##########*#####",
+    "##########*#####",
+    "..........*#####",
+    "##########*#####",
+    "##########*#####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "19",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "88",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cheffan",
+  "SubmittedDate": "2009-04-21T03:26:23.97",
+  "Title": "Hammered 2"
+}

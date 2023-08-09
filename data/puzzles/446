@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBRRBBBRRRRRRR",
+    "BBBBBRBBBRRRRRRR",
+    "BBBBBRBBBRRRRRRR",
+    "RRBBBRBBBBRBBBBR",
+    "RRBBBRBBBBBBBBBB",
+    "RBBBBRRBBBBBBBBB",
+    "RBBBRRRRRBBBRBBB",
+    "RBBBRRRRRRRRRBBB",
+    "RBBBBBBBRRRRRBBB",
+    "RBBBBBBBBBBBBBBB",
+    "RRBBBBBBBBBBBBBB",
+    "RRRRRRRBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "196",
+  "DifficultyVoteSum": "590",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "446",
+  "Items": [
+    ".....#...#######",
+    "..**.#.*.#######",
+    "...*.#.*.#######",
+    "##.*.#.*........",
+    "#..*.#.***.****.",
+    "#.**.#...***..*.",
+    "#.*..###......*.",
+    "#.*.#########.*.",
+    "#.*......####.*.",
+    "#.******......*.",
+    "#......********.",
+    "######.........."
+  ],
+  "Liked": "176",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "1333",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-04T15:39:52.03",
+  "Title": "Warning Signs"
+}

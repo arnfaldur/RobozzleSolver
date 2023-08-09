@@ -1,0 +1,53 @@
+{
+  "About": "Warning! Binary math detected!",
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRBBBBBBBBBRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRBBBBBRBRRRR",
+    "RRRRRRBBBBRBRRRR",
+    "RRRBRRRRBBRBRRRR",
+    "RRRRRBBRRBRBRRRR",
+    "RRRBRBBRGBRBRRRR",
+    "RRRBRBBRGRRBRRRR",
+    "RRRBBBBBBGRRRRRR",
+    "RRRRRBBBBBRGRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "48",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "194",
+  "Items": [
+    "###.********####",
+    "###*#######*####",
+    "###*#*****#*####",
+    "###*#*****#*####",
+    "###*#**#**#*####",
+    "#####**#**#*####",
+    "###*#**#**#*####",
+    "###*#**#**#*####",
+    "###*******#*####",
+    "#####*****#*####",
+    "#####*#####*####",
+    "#####*******####"
+  ],
+  "Liked": "12",
+  "RobotCol": "3",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "59",
+  "SubLengths": [
+    "6",
+    "6",
+    "6",
+    "10",
+    "6"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-25T16:50:53.297",
+  "Title": "RoboZZle vs Turing machine (Part I)"
+}

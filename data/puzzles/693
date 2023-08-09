@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBRRR",
+    "BRBBBBBBBBBBGRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRBRRR",
+    "BGBBBBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "73",
+  "DifficultyVoteSum": "166",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "693",
+  "Items": [
+    "*............###",
+    ".*...........###",
+    "..#########*.###",
+    "..##########.###",
+    "..##########.###",
+    "..##########.###",
+    "..##########.###",
+    "..##########.###",
+    "..##########.###",
+    "..##########.###",
+    "..##########.###",
+    "............*###"
+  ],
+  "Liked": "48",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "308",
+  "SubLengths": [
+    "4",
+    "6",
+    "2",
+    "3",
+    "4"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-06T08:31:27.173",
+  "Title": "The Three Red Stars"
+}

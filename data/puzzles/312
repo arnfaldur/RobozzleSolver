@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBGBBGBBBBGBBBR",
+    "RRGRGRRRBRRRRRGR",
+    "RBBGBBGBBBBGBBBR",
+    "RRRRBRRRBRRRRRBR",
+    "RRRRGRRRGRRRRRGR",
+    "RRRRBRRRBRRRRRBR",
+    "RBBGBBGBBBBGBBBR",
+    "RRGRGRRRGRRRRRGR",
+    "RBBGBBGBBBRRRBBR",
+    "RRBRBRRRBRRRRRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "82",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "312",
+  "Items": [
+    "##*#*###*#####*#",
+    "****************",
+    "##*#*###*#####*#",
+    "****************",
+    "##*#*###*#####*#",
+    "####*###*#####*#",
+    "##*#*###*#####*#",
+    "****************",
+    "##*#*###*#####*#",
+    "****.******#****",
+    "##*#*###*#####*#",
+    "##*#*###*#####*#"
+  ],
+  "Liked": "18",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "51",
+  "SubLengths": [
+    "3",
+    "8",
+    "8",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T14:33:17.187",
+  "Title": "Incomplete Weave"
+}

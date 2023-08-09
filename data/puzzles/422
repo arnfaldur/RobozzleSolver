@@ -1,0 +1,53 @@
+{
+  "About": "hopefully a little harder to hack this time...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GGGGBBBGGGBBBGRR",
+    "BBGGBGGBGGGBBGGR",
+    "RRRRRRRRRRRRRGBR",
+    "BGGGGGGGGGGBRBBR",
+    "RRRRRRGGGBRGRGBR",
+    "RBBBBBGBBBRGRGGR",
+    "RBGRRRBRGGBGRBGR",
+    "RRBRRRBRGRRRRBBR",
+    "GBGBBRGBGRRRRGBR",
+    "BRBRGRRRRRRRRRRB",
+    "BGGRBGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "29",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "422",
+  "Items": [
+    ".**************.",
+    "..............**",
+    "**************.*",
+    "#############*.*",
+    "*..........*#*.*",
+    "######*..*#.#*.*",
+    "#*....*.*.#.#*.*",
+    "#**###.#.*.*#*.*",
+    "##.###.#.####*.*",
+    "*.*.*#*.*####*.*",
+    ".#.#.##########.",
+    "*.*#*..........*"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "29",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "8",
+    "8"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-02T23:59:35.577",
+  "Title": "2 bit instructions (2)"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBRRRRRRRRRRBRR",
+    "RBRRBRRRRRRRBRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRRBRRRRRR",
+    "RBRRRRBRRRRRRBRR",
+    "RRRRRRRRRRBRRRRB",
+    "BRRBRRRBRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRBRRRRRRRRRRRRB",
+    "RBRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "89",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "322",
+  "Items": [
+    "##*##########*##",
+    ".**#.*********##",
+    "##*####*#####*##",
+    "##*####*#####*##",
+    "##*####*#*###*##",
+    "#*******#*###*##",
+    "#######*#*******",
+    "*****##*#*######",
+    "#*#######*######",
+    "#*#######*######",
+    "#***************",
+    "#*##############"
+  ],
+  "Liked": "23",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "86",
+  "SubLengths": [
+    "6",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-08T09:19:17.25",
+  "Title": "Bigger is better"
+}

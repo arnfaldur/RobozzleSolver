@@ -1,0 +1,53 @@
+{
+  "About": "red X green = blue",
+  "AllowedCommands": "7",
+  "Colors": [
+    "GRRGGBBBBRRRRRRR",
+    "GRRRGGGBBBBBBBBB",
+    "GRRGGGGBBBBBBBBR",
+    "GRRRGGBBBBBBRRRR",
+    "GRGBRRRRRRRRRRRR",
+    "GRGGGBBBRRRRRRRR",
+    "GRRRRGGBBBBBBBBR",
+    "GRRGBBRRRRRRRRRR",
+    "GRRRGGBBBBBBRRRR",
+    "GRRRGBBBRRRRRRRR",
+    "GRGGGGBBBBRRRRRR",
+    "GRRRRGGGBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "47",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "367",
+  "Items": [
+    ".....****#######",
+    ".......*********",
+    ".......********#",
+    "......******####",
+    "...*############",
+    ".....***########",
+    ".......********#",
+    "....**##########",
+    "......******####",
+    ".....***########",
+    "......****######",
+    "........********"
+  ],
+  "Liked": "13",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "61",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-04-21T14:44:38.063",
+  "Title": "multiplication"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Toggle at junctions",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRGBBGBBGBBGBBRR",
+    "RRBBRBRBBBBBRRBR",
+    "RRBRRBRRBRRBBRBR",
+    "RRGBBRBBRBBRBBGR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRGBBRBBRBBRBBRR",
+    "RRBBRBRBBBBBRRBR",
+    "RRBBRBBRBBRBRBBR",
+    "RRGBBGBBGBBGBBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "323",
+  "DifficultyVoteSum": "963",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "401",
+  "Items": [
+    "##*************#",
+    "##*.#*#.*..*##*#",
+    "##*##*##*##*.#*#",
+    "##*************#",
+    "##############*#",
+    "##############*#",
+    "##*************#",
+    "##*.#*#.*..*##*#",
+    "##*.#*.#*.#*#.*#",
+    "##**.**********#",
+    "################",
+    "################"
+  ],
+  "Liked": "293",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "1730",
+  "SubLengths": [
+    "6",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-29T19:35:33.157",
+  "Title": "Color Changing"
+}

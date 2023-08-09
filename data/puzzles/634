@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBRRRBRRRBRRRBRR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRGRBRGRBRGRBRGR",
+    "BRRGRRRGRRRGRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3844",
+  "DifficultyVoteSum": "8971",
+  "Disliked": "134",
+  "Featured": "false",
+  "Id": "634",
+  "Items": [
+    "...#...#...#...#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#...#...#...#.*"
+  ],
+  "Liked": "3793",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "44406",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-02T11:35:20.983",
+  "Title": "mountains"
+}

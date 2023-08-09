@@ -1,0 +1,53 @@
+{
+  "About": "your engine is building energy, release it in the pit stops before you explode",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGGGGGRRRRRR",
+    "RRGRRRRRRRGRRGRR",
+    "RRGRRRRBRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRGRRGRRRGRR",
+    "RRGRRRRRRRGGGRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGRRGRRRRRRRRRR",
+    "RRRRRRGGGGGGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "60",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "853",
+  "Items": [
+    "################",
+    "##............##",
+    "##.#######.##.##",
+    "##.###.*#####.##",
+    "##.###.######.##",
+    "##.###.######.##",
+    "##.###.##.###.##",
+    "##.###........##",
+    "##.#############",
+    "##.#############",
+    "##.##.##########",
+    "##...........###"
+  ],
+  "Liked": "16",
+  "RobotCol": "12",
+  "RobotDir": "2",
+  "RobotRow": "11",
+  "Solutions": "62",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-22T23:06:21.547",
+  "Title": "Energy Overload"
+}

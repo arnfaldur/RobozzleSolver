@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBBBBBBB",
+    "RRRRRBRRRRRRRRRB",
+    "RRRRRBBBBBBBBBRB",
+    "RRRRRBRRRRRRRBRB",
+    "RRRRRBBBBBBBRBRB",
+    "BRRRRBRRRRRBRBRB",
+    "RBRRRBBBBBRBRBRB",
+    "RRBRRBRRRBRBRBRB",
+    "RRRBRBBBRBRBRBRB",
+    "RRRRBBRBRBRBRBRB",
+    "BBBBBRBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "59",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "534",
+  "Items": [
+    "################",
+    "#####***********",
+    "#####*#########*",
+    "#####*********#*",
+    "#####*#######*#*",
+    "#####*******#*#*",
+    ".####*#####*#*#*",
+    "..###*****#*#*#*",
+    "...##*###*#*#*#*",
+    "....#***#*#*#*#*",
+    ".....*#*#*#*#*#*",
+    "......**********"
+  ],
+  "Liked": "13",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "56",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-16T09:53:20.25",
+  "Title": "Perspective IV"
+}

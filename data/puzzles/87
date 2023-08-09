@@ -1,0 +1,53 @@
+{
+  "About": "All work and no play...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBGGGGGGGGR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRGRRRRRRRRRBRR",
+    "RRRGBBBGGGGRRBRR",
+    "RRRGRRRRRBRRRBRR",
+    "RRRGRRRRRGRRRGRR",
+    "RRRBRRRRRGRRRGRR",
+    "RRRBRRRRRRRRRGRR",
+    "RRRBRRRRRRRRRGRR",
+    "RRGGGGGGBBBBBGRR",
+    "RRRRRRRRRRRRRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "332",
+  "DifficultyVoteSum": "1008",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "87",
+  "Items": [
+    "...............#",
+    "#############.##",
+    "#############.##",
+    "###.#########.##",
+    "###........##.##",
+    "###.#####.###.##",
+    "###.####*.###.##",
+    "###.#####.###.##",
+    "###.#########.##",
+    "###.#########.##",
+    "##............##",
+    "#############.##"
+  ],
+  "Liked": "293",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "2316",
+  "SubLengths": [
+    "5",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2009-03-03T08:48:13.657",
+  "Title": "Red run"
+}

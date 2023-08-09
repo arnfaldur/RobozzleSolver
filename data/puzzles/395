@@ -1,0 +1,53 @@
+{
+  "About": "up-down counter",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGBBBGBRBGRRR",
+    "RRRRRRRRBBBBBRRR",
+    "GBBGGBBBBBGRBRRR",
+    "BRRBBBRRRBGRBRRR",
+    "BRRRBGBBBBBRBRRR",
+    "BRGBRRRBGRBRBRRR",
+    "BBBBBRRRRRBRBRRR",
+    "BBRRGBBBBBGRBRRR",
+    "BRRRRRRRRRRRBRRR",
+    "RRRRRRRRRRRRBRRR",
+    "GBBBBBRBBBBBGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "61",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "395",
+  "Items": [
+    "####******#**###",
+    "####*###*****###",
+    "***********#*###",
+    "*##****##**#*###",
+    "*###*******#*###",
+    "*#**###**#*#*###",
+    "*****#####*#*###",
+    ".*##***.***#*###",
+    "*###########*###",
+    "*###########*###",
+    "*************###",
+    "################"
+  ],
+  "Liked": "18",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "74",
+  "SubLengths": [
+    "7",
+    "7",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-29T01:39:30.687",
+  "Title": "4-State FSM"
+}

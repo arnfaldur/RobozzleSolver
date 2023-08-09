@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGGGGGGGGGGGGRR",
+    "RRGBBBBBBBBBBGRR",
+    "RRGGGGGGGGGGGGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "813",
+  "DifficultyVoteSum": "1429",
+  "Disliked": "106",
+  "Featured": "false",
+  "Id": "139",
+  "Items": [
+    "#######..#######",
+    "#######..#######",
+    "################",
+    "################",
+    "################",
+    "##............##",
+    "##.......*....##",
+    "##............##",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "764",
+  "RobotCol": "6",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "3749",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "aalku",
+  "SubmittedDate": "2009-03-14T19:39:10.593",
+  "Title": "Duel"
+}

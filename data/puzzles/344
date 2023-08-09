@@ -1,0 +1,53 @@
+{
+  "About": "Turn left, but when?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGGBBBGGBBBGBBR",
+    "RBRRRRRBRRBGBGBR",
+    "RGRRRRRBRRGBGBGR",
+    "RBGBRBGBRRBGBGBR",
+    "RBRRRRRGRRBBGBBR",
+    "RBRRRRRBRRRRRRRR",
+    "RGGBBBBRRRGBGBRR",
+    "RBRRRRRRRRBGBGRR",
+    "RBRRRRRRRRGBGBRR",
+    "RGGBBBBBBBBGBGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "35",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "344",
+  "Items": [
+    "################",
+    "#*..*..*.......#",
+    "#.#####.##.....#",
+    "#.#####.##.....#",
+    "#*.***.*##.....#",
+    "#.#####.##.....#",
+    "#.#####.########",
+    "#*..*..*##*..*##",
+    "#.########....##",
+    "#.########....##",
+    "#.........*..*##",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "10",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "21",
+  "SubLengths": [
+    "8",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "countdown_0",
+  "SubmittedDate": "2009-04-15T19:57:51.673",
+  "Title": "Rewind tape"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Red = sqrt(Blue)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBRRRRRRRRRRRRRR",
+    "GBBBBRRRRRRRRRRR",
+    "GBBBBBBBBBRRRRRR",
+    "GBBBBRRRRRRRRRRR",
+    "GBRRRRRRRRRRRRRR",
+    "GBBBBBBBBBRRRRRR",
+    "GBBBBBBBBBRRRRRR",
+    "GBRRRRRRRRRRRRRR",
+    "GBRRRRRRRRRRRRRR",
+    "GBBBBRRRRRRRRRRR",
+    "GBBBBRRRRRRRRRRR",
+    "GBBBBBBBBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "43",
+  "DifficultyVoteSum": "130",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "393",
+  "Items": [
+    ".**#############",
+    "*******#########",
+    "*************###",
+    "*******#########",
+    "***#############",
+    "*************###",
+    "*************###",
+    "***#############",
+    "***#############",
+    "*******#########",
+    "*******#########",
+    "*************###"
+  ],
+  "Liked": "35",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "195",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-28T23:53:17.64",
+  "Title": "Square Root"
+}

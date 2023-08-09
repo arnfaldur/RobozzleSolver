@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBGBBBGBBBBR",
+    "RRRRBRRRBRRRRRRR",
+    "RRRRGRRRGRRRRRRR",
+    "RRRRBRRRBRRRRRRR",
+    "RRBBBRRRBRRRBBBR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRGRRRRRRRGRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRBBBBGBBBGBBBBR",
+    "RRRRBRRRBRRRBRRR",
+    "RRRRBRRRBRRRBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "66",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "580",
+  "Items": [
+    "####*###*###*###",
+    "##*...........*#",
+    "####.###.###*###",
+    "####.###.#######",
+    "####.###.###*###",
+    "##*..*#*.*#*..*#",
+    "####.###*###.###",
+    "####.#######.###",
+    "####.###*###.###",
+    "##*...........*#",
+    "####.###.###.###",
+    "####*###.###*###"
+  ],
+  "Liked": "21",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "88",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-23T04:30:44.233",
+  "Title": "Broken Connections"
+}

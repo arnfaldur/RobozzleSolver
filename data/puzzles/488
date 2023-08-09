@@ -1,0 +1,53 @@
+{
+  "About": "I'm such a good artist. Simpler than you would think.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRGRRRRRRRRRBRR",
+    "RRRRBRBBRRRRGRBR",
+    "RRRRBBBRBRRRBRBR",
+    "RRRGBRBBBBBBBBRR",
+    "RRRRBBBBRRRRBRRR",
+    "RRRRRBBRBBBBBRRR",
+    "RRRRRBBBBBBBBGRR",
+    "RRRRBRRBRRRRBRBR",
+    "RRRRGRRBRRRRBRBR",
+    "RRRRRGBRRRRRBRBR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "677",
+  "DifficultyVoteSum": "981",
+  "Disliked": "114",
+  "Featured": "false",
+  "Id": "488",
+  "Items": [
+    "###*..######...#",
+    "###......###*#.#",
+    "###......###.#.#",
+    "###*...........#",
+    "###......###.###",
+    "####.........###",
+    "####.........*.#",
+    "####.##.####.#.#",
+    "####*##.####.#.#",
+    "####.*..####.#.#",
+    "############.*.#",
+    "################"
+  ],
+  "Liked": "589",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "2827",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "taintedfalcon",
+  "SubmittedDate": "2009-05-10T01:13:41.453",
+  "Title": "Bunny"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRBBR",
+    "RRRRRRRRRRRRBBRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRBBRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "31",
+  "DifficultyVoteSum": "104",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "239",
+  "Items": [
+    "#############**#",
+    "############**##",
+    "###########**###",
+    "##########**####",
+    "#########**#####",
+    "########.*######",
+    "#######**#######",
+    "######**########",
+    "#####**#########",
+    "####**##########",
+    "###**###########",
+    "##**############"
+  ],
+  "Liked": "32",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "108",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-30T08:31:58.827",
+  "Title": "Double Staircase"
+}

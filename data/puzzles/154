@@ -1,0 +1,53 @@
+{
+  "About": "maybe it's a red herring",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBRRR",
+    "GBBBBBBBBBBBRRRR",
+    "GBBBBBBBBBBRRRRR",
+    "GBBBBBBBBBRRRRRR",
+    "GBBBBBBBBRRRRRRR",
+    "GBBBBBBBRRRRRRRR",
+    "GBBBBBBRRRRRRRRR",
+    "GBBBBBRRRRRRRRRR",
+    "GBBBBRRRRRRRRRRR",
+    "GBBBRRRRRRRRRRRR",
+    "GBBRRRRRRRRRRRRR",
+    "GBRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1244",
+  "DifficultyVoteSum": "3091",
+  "Disliked": "55",
+  "Featured": "false",
+  "Id": "154",
+  "Items": [
+    "*************.##",
+    "************####",
+    "***********.####",
+    "**********.#####",
+    "*********.######",
+    "********.#######",
+    "*******.########",
+    "******.#########",
+    "*****.##########",
+    "****.###########",
+    "***.############",
+    "*..#############"
+  ],
+  "Liked": "1008",
+  "RobotCol": "1",
+  "RobotDir": "2",
+  "RobotRow": "11",
+  "Solutions": "7453",
+  "SubLengths": [
+    "5",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-19T00:59:01.657",
+  "Title": "Missing red tile"
+}

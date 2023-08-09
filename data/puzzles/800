@@ -1,0 +1,53 @@
+{
+  "About": "this is very easy, but do \"Plus (part2)\" next to see the effect of one turn",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRBBBGBBBRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "823",
+  "DifficultyVoteSum": "1091",
+  "Disliked": "86",
+  "Featured": "false",
+  "Id": "800",
+  "Items": [
+    "################",
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "###*.......*####",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "622",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "3912",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-18T16:03:46.173",
+  "Title": "Plus (part 1)"
+}

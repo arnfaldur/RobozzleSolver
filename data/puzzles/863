@@ -1,0 +1,53 @@
+{
+  "About": "easy",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBGBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "103",
+  "DifficultyVoteSum": "213",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "863",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "####*.....*#####",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "83",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "1539",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-23T12:42:57.39",
+  "Title": "minus (part 1)"
+}

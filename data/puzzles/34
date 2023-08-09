@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "311",
+  "DifficultyVoteSum": "935",
+  "Disliked": "3",
+  "Featured": "true",
+  "Id": "34",
+  "Items": [
+    "##............##",
+    "##.##########.##",
+    "##.#........#.##",
+    "##.#.######.#.##",
+    "##.#.#....#.#.##",
+    "##.#.#.##.#.#.##",
+    "##.#.#.#..#.#.##",
+    "##.#.#.####.#.##",
+    "##.#.#......#.##",
+    "##.#.########.##",
+    "##*#..........##",
+    "################"
+  ],
+  "Liked": "278",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2008",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-21T01:38:54.937",
+  "Title": "Don't fall off the spiral"
+}

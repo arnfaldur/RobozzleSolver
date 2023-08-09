@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGRBRRRRRRR",
+    "RRRRGRGRBBBRRRRR",
+    "RRRRGRRRRRBRRRRR",
+    "RRRRGGGRBBBRRRRR",
+    "RRRRRRGRBRRRRRRR",
+    "GRRRRRGRBBBBBBBR",
+    "GRRRRRRRRRRRRRBR",
+    "GGGGGGGRBBBBBBBR",
+    "RRRRRRGRBRRRRRRR",
+    "RGRRRRGRBBBBBBRR",
+    "RGRRRRRRRRRRRBRR",
+    "RGGGGGBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "86",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "413",
+  "Items": [
+    "######.#*#######",
+    "####...#...#####",
+    "####.#####.#####",
+    "####...#...#####",
+    "######.#.#######",
+    ".......#.......#",
+    ".#############.#",
+    ".......#.......#",
+    "######.#.#######",
+    "#......#......##",
+    "#.###########.##",
+    "#.............##"
+  ],
+  "Liked": "21",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "89",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "3"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-02T09:11:10.047",
+  "Title": "Winding Path II"
+}

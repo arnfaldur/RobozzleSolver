@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBGBGBBGBGBGBGBB",
+    "RRBRBRRBRBRBRBRR",
+    "RRGRBRRBRBRBRRRR",
+    "RRRRBRRBRBRBRRRR",
+    "RGBBRRRBRBRBRRRR",
+    "RRRRRGRBRBRBRRRR",
+    "RBBRRBRBRBRBRRRR",
+    "BRRBRRBRRBRBRRRR",
+    "BBBBRBRBRBRBRRRR",
+    "BBGBRRBBBRRBRRRR",
+    "BRBRRRRGRRRBRRRR",
+    "RBBBBBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "283",
+  "DifficultyVoteSum": "818",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "249",
+  "Items": [
+    "...............*",
+    "##.#.##.#.#.*.*#",
+    "##*#.##.#.#.***#",
+    "####.##.#.#.####",
+    "#*...##.#.#.####",
+    "#####*#.#.#.####",
+    "....#.#.#.#.####",
+    "....#...#.#.####",
+    "....#.#.#.#.####",
+    "..*.#.....#.####",
+    "....###*###.####",
+    "............####"
+  ],
+  "Liked": "251",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1705",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-31T19:51:49.593",
+  "Title": "straying from the path"
+}

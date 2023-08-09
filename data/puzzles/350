@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RBBBRRRRRRRRRRRB",
+    "BBBBBRRRRRRRBRBB",
+    "BBBBBBRBRRRBBBBB",
+    "BBBBBBBBBRBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "RRRGGGGRGGRRRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "114",
+  "DifficultyVoteSum": "428",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "350",
+  "Items": [
+    "################",
+    "################",
+    "##*#############",
+    "#***###########*",
+    ".****#######*#**",
+    "******#*###*****",
+    "*********#******",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************"
+  ],
+  "Liked": "116",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "4",
+  "Solutions": "828",
+  "SubLengths": [
+    "7",
+    "7",
+    "7",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-16T15:07:52.61",
+  "Title": "Plus or Minus One"
+}

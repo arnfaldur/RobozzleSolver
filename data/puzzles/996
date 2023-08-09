@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBRRBBBBBRR",
+    "RRBRBRBRRBRBRBRR",
+    "RRBBRBBRRBBRBBRR",
+    "RRBRBRBRRBRBRBRR",
+    "RRBBBBGBBGBBBBRR",
+    "RRRRRRBRRBRRRRRR",
+    "RRBBBBGBBGBBBBRR",
+    "RRBRBRBRRBRBRBRR",
+    "RRBBRBBRRBBRBBRR",
+    "RRBRBRBRRBRBRBRR",
+    "RRBBBBBRRBBBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "75",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "996",
+  "Items": [
+    "##*****##*****##",
+    "##*#*#*##*#*#*##",
+    "##*****##*****##",
+    "##*#*#*##*#*#*##",
+    "##************##",
+    "######*##*######",
+    "##******.*****##",
+    "##*#*#*##*#*#*##",
+    "##*****##*****##",
+    "##*#*#*##*#*#*##",
+    "##*****##*****##",
+    "################"
+  ],
+  "Liked": "25",
+  "RobotCol": "8",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "133",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-05T18:17:57.47",
+  "Title": "Pac Man"
+}

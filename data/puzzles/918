@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBRRR",
+    "BGRBGRRRBGRRGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "92",
+  "DifficultyVoteSum": "202",
+  "Disliked": "20",
+  "Featured": "false",
+  "Id": "918",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "############*###",
+    ".............###",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "68",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "360",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-28T04:56:40.313",
+  "Title": "red green is the code III"
+}

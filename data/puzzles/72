@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBRRR",
+    "BRRRRRRRRRBGRBRR",
+    "BRRRRRRRRBGRBBRR",
+    "BRRRRRRRBGRBRBRR",
+    "BRRRRRRBGRBRRBRR",
+    "BBBBBBBBRBRRRBRR",
+    "RBBBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2873",
+  "DifficultyVoteSum": "4977",
+  "Disliked": "245",
+  "Featured": "false",
+  "Id": "72",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#............###",
+    ".#########..*.##",
+    ".########.....##",
+    ".#######....#.##",
+    ".######....##.##",
+    "..........###.##",
+    "#............###",
+    "################",
+    "################"
+  ],
+  "Liked": "2203",
+  "RobotCol": "1",
+  "RobotDir": "2",
+  "RobotRow": "8",
+  "Solutions": "18450",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "glum",
+  "SubmittedDate": "2009-02-27T19:43:49.703",
+  "Title": "One star"
+}

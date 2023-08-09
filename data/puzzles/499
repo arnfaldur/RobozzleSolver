@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRBBBRBBBRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "981",
+  "DifficultyVoteSum": "2274",
+  "Disliked": "50",
+  "Featured": "false",
+  "Id": "499",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "####*.....*#####",
+    "#######.########",
+    "#######.########",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "738",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "5748",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rainault",
+  "SubmittedDate": "2009-05-11T21:17:46.407",
+  "Title": "Feeling a little cross"
+}

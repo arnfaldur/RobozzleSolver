@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBRRRRRRRR",
+    "BGBBBRGBRRRRRRRR",
+    "BRBBBBBBRRRRRRRR",
+    "BBBBBBBBRRRRRRRR",
+    "BGRBBGBBRRRRRRRR",
+    "BBBBBRRBRRRRRRRR",
+    "BBBBBBGBRRRRRRRR",
+    "BGRBBBBBRRRRRRRR",
+    "BBBBBBRBRRRRRRRR",
+    "BRBGRBGBRRRRRRRR",
+    "BGBBRGBBRRRRRRRR",
+    "BBBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "40",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "631",
+  "Items": [
+    "........####*###",
+    ".******.#******#",
+    ".*.*..*.#*##*#*#",
+    ".*.*..*.#*##*#*#",
+    ".******.#******#",
+    "...*.**.#**#*###",
+    "...*.**.#**#*###",
+    ".**************#",
+    ".*.*.**.#**#*#*#",
+    ".*.****.#****#*#",
+    ".*****..##*****#",
+    "........########"
+  ],
+  "Liked": "8",
+  "RobotCol": "3",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "77",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-01T09:11:44.39",
+  "Title": "Symmetry - Arrows"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGRGRRRRGGRGGGB",
+    "RRRRRRRRRRRRRRRG",
+    "BGGRRRGRRGRRGBRG",
+    "GRRRRRRRRRRRRGRR",
+    "RRBRGRRGRRGBRRRR",
+    "RRRRRRRRRRRGRRRR",
+    "GRRRBRRRRRRGRGRG",
+    "GRRRRRRRRGGBRRRG",
+    "RRRRRRRRRRRRRGRR",
+    "RRBGGGRGRRGRGBRG",
+    "GRRRRRRRRRRRRRRG",
+    "BGGGGRRRGGGRRGGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "124",
+  "DifficultyVoteSum": "306",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "405",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "101",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1063",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-30T09:21:56.97",
+  "Title": "Another Hidden Rule"
+}

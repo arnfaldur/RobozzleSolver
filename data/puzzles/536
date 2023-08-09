@@ -1,0 +1,53 @@
+{
+  "About": "A simple puzzle for understanding the call stack",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBGBBBBBBBR",
+    "RRRRRRRRRRRRRRBR",
+    "BBBBBBRBBBBBBRBR",
+    "BRRRRRRRRRRRBRBR",
+    "BRBBBBGBBBBRBRBR",
+    "BRBRRRRRRRRRGRRR",
+    "RRGRBBBBBBBRBRBR",
+    "BRBRRRRRRRRRBRBR",
+    "BRBBBBBRBBBBBRBR",
+    "BRRRRRRRRRRRRRBR",
+    "BBBBBBBGBBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "968",
+  "DifficultyVoteSum": "2523",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "536",
+  "Items": [
+    "...............#",
+    "##############.#",
+    ".............#.#",
+    ".###########.#.#",
+    ".#.........#.#.#",
+    ".#.#######.#.#.#",
+    ".#.#*......#.#.#",
+    ".#.#########.#.#",
+    ".#...........#.#",
+    ".#############.#",
+    "...............#",
+    "################"
+  ],
+  "Liked": "806",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "6493",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T11:44:35.843",
+  "Title": "Recursed"
+}

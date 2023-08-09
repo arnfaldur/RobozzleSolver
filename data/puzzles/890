@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGRGRGRGRGRGRRR",
+    "RGBBBBBBBBBBBGRR",
+    "RRBRBRBRBRBRBRRR",
+    "RGBBBBBBBBBBBGRR",
+    "RRBRBRBRBRBRBRRR",
+    "RGBBBBBRBBBBBGRR",
+    "RRBRBRBRBRBRBRRR",
+    "RGBBBBBBBBBBBGRR",
+    "RRBRBRBRBRBRBRRR",
+    "RGBBBBBBBBBBBGRR",
+    "RRBRBRBRBRBRBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "43",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "890",
+  "Items": [
+    "################",
+    "##*#*#*#*#*#*###",
+    "#*...........*##",
+    "##.#.#.#.#.#.###",
+    "#*...........*##",
+    "##.#.#.#.#.#.###",
+    "#............*##",
+    "##.#.#.#.#.#.###",
+    "#*...........*##",
+    "##.#.#.#.#.#.###",
+    "#*...........*##",
+    "##*#*#*#*#*#*###"
+  ],
+  "Liked": "10",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "53",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-25T22:29:29.767",
+  "Title": "Waffle Iron"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Make a bigger and bigger rotated rectangle! :)",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGRRRRRRRR",
+    "RRRRRGGGGRRRRRRR",
+    "RRRRGGGGGGRRRRRR",
+    "RRRGGGGGGGGRRRRR",
+    "RRGGGGGGGGGGRRRR",
+    "RRGGGGGGGGGGGGRR",
+    "RRRGGGGGGGGGGGRR",
+    "RRRRGGGGGGGGGRRR",
+    "RRRRRGGGGGGGRRRR",
+    "RRRRRRGGGGGRRRRR",
+    "RRRRRRRGGGRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "19",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "652",
+  "Items": [
+    ".....####.......",
+    "....##**##......",
+    "...##****##.....",
+    "..##******##....",
+    ".##********##...",
+    ".#**********###.",
+    ".#*****.******#.",
+    ".##***********#.",
+    "..##*********##.",
+    "...##*******##..",
+    "....##*****##...",
+    ".....##***##...."
+  ],
+  "Liked": "2",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "26",
+  "SubLengths": [
+    "6",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T00:26:46.453",
+  "Title": "Rotated Rectangle"
+}

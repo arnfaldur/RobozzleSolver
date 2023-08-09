@@ -1,0 +1,53 @@
+{
+  "About": "Remember... get the star.",
+  "AllowedCommands": "1",
+  "Colors": [
+    "BRBRBRBRBRBRBRBR",
+    "BRBRGGBRBRBRBRBR",
+    "BRBRBRBRBRBRBRBR",
+    "BRBRBRGGBRGGBRBR",
+    "BRBRBRBRBRBRBRGG",
+    "BRGGBRBRBRBRBRBR",
+    "BRBRBRBRGGBRBRBR",
+    "BRBRBRBRBRBRGGBR",
+    "GGBRBRBRBRBRBRBR",
+    "BRBRBRBRBRBRBRBR",
+    "BRBRBRBRBRBRBRBR",
+    "BRBRBRBRBRBRBRBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "112",
+  "DifficultyVoteSum": "413",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "192",
+  "Items": [
+    ".#.#.#.#.#.#.#.#",
+    ".#.#...#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#...#...#.#",
+    ".#.#.#.#.#.#.#.*",
+    ".#...#.#.#.#.#.#",
+    ".#.#.#.#...#.#.#",
+    ".#.#.#.#.#.#...#",
+    "...#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#"
+  ],
+  "Liked": "117",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "924",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-25T11:44:22.953",
+  "Title": "Bridge Finder"
+}

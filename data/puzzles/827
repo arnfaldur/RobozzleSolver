@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBGR",
+    "RRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBGRRB",
+    "GRRRRRRRRRRRRGRB",
+    "BRGRBBBBBBBBBRRB",
+    "BBBRRRRRRRRRRRRG",
+    "BRGBBGRGRBBBBBBR",
+    "BRBRRRRBRRRRRRRR",
+    "BRRRRBRBRRRRRRRR",
+    "BRGBRGRBRRRRRRRR",
+    "BRRRRRRGRRRRRRRR",
+    "RGBBBBBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "76",
+  "DifficultyVoteSum": "172",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "827",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#............#.",
+    ".*.############.",
+    "......#.........",
+    ".#.##.#.########",
+    ".#.##.#.########",
+    ".#....#.########",
+    ".######.########",
+    "........########"
+  ],
+  "Liked": "69",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "438",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-21T05:55:41.017",
+  "Title": "when to turn ?"
+}

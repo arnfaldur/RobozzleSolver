@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "57",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "992",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######**#######",
+    "######****######",
+    "#####******#####",
+    "####***.****####",
+    "####********####",
+    "#####******#####",
+    "######****######",
+    "#######**#######",
+    "################"
+  ],
+  "Liked": "11",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "57",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-05T04:09:07.657",
+  "Title": "rotaded square"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBRRRRRRRRRRR",
+    "BBBBBBRRRRRRRRRR",
+    "BBBBBBBRRRRRRRRR",
+    "RRRBBBBBRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRBRBBBRRRRRRRR",
+    "RBBBBBBBRRRRRRRR",
+    "BBBBBBBRRRRRRRRR",
+    "BBBBBBRRRRRRRRRR",
+    "BBBBBBBBRRRRRRRR",
+    "BBBBBBBBRRRRRRRR",
+    "RBBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "37",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "590",
+  "Items": [
+    "......##########",
+    "..***.#####****#",
+    "....*...###*####",
+    "###.***.#***####",
+    "###...*.#*######",
+    "###...*.#*######",
+    ".....**.#**#####",
+    ".*****..##*****#",
+    ".*.....#######*#",
+    ".*......######*#",
+    ".**************#",
+    "........########"
+  ],
+  "Liked": "9",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "47",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-25T13:34:21.297",
+  "Title": "Symmetry - Warning Signs"
+}

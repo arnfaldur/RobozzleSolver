@@ -1,0 +1,53 @@
+{
+  "About": "Watch the holes!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBRGBBBBBBRBBGR",
+    "GBBRRBBGGBBRRRGR",
+    "GBBRRRGGGBBRRRGG",
+    "GBBRRRRRGBBRRRRR",
+    "GBBRRRGGGBBRRRGG",
+    "GBBRRRRRGBBRRRRR",
+    "GBBRRRGGGBBRRRGG",
+    "GBBRRRRRGBBRRRRR",
+    "GBBRRRGGGBBRRRGG",
+    "GBBRRRRRGBBRRRRR",
+    "RBBBBBBGRBBBBBBG",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "36",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "537",
+  "Items": [
+    ".**************#",
+    "************##**",
+    "****##******##**",
+    "****##******##**",
+    "****##******##**",
+    "****##******##**",
+    "****##******##**",
+    "****##******##**",
+    "****##******##**",
+    "****##******##**",
+    "****************",
+    "################"
+  ],
+  "Liked": "5",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "14",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T12:47:43.767",
+  "Title": "Recursed Revisited"
+}

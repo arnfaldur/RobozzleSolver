@@ -1,0 +1,53 @@
+{
+  "About": "Left on green... right on green?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRRRBRRRRRBRRR",
+    "BRRBRRRBGRGBRRGB",
+    "RRBRBRRRBRBRRRBR",
+    "RBGRGBRRBRBRGBRR",
+    "BRRRRRBRBRBRBRRR",
+    "RBGRGBRRRBRRGBRR",
+    "RRBRBRRRRRRRRRBR",
+    "RBGRGBRRRBRRGBRR",
+    "BRRRRRBRBRBRBRRR",
+    "RBGRGBRRBRBRGBBR",
+    "RRBRBRRRBRBRRRRB",
+    "BBGRGBBBGRGBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "363",
+  "DifficultyVoteSum": "1086",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "439",
+  "Items": [
+    ".#####.#####.###",
+    ".#...#...#...#.*",
+    "##.#.###.#.###.#",
+    "...#...#.#.#...#",
+    ".#####.#.#.#.###",
+    "...#...#...#...#",
+    "##.#.#########.#",
+    "...#...#...#...#",
+    ".#####.#.#.#.###",
+    "...#...#.#.#....",
+    "##.#.###.#.####.",
+    "...#.....#......"
+  ],
+  "Liked": "315",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1913",
+  "SubLengths": [
+    "8",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "coolchrisrm",
+  "SubmittedDate": "2009-05-04T02:15:36.22",
+  "Title": "Easy Peezy"
+}

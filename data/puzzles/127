@@ -1,0 +1,53 @@
+{
+  "About": "Take a quick tour of the world courtesy of Air Robozzle.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BGBBBRBBBGGBBRBB",
+    "BGGBGGGGBBGBBGGB",
+    "BGGBGBGBBRGBBGGB",
+    "BBRBBBBBBBBBBBGB",
+    "BBBBBBBBBBGGBBBB",
+    "BGGBGRBBBBGGGBBB",
+    "RGBBGBBGBBBGBBBB",
+    "BBBBGBGGBBBRBBBG",
+    "BGRBGGGBBBBBBRBG",
+    "GGBBBBBBRBBBBGGG",
+    "GGGBBBBBGGGBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "49",
+  "DifficultyVoteSum": "164",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "127",
+  "Items": [
+    "................",
+    ".....*.......*..",
+    "................",
+    ".........*......",
+    "..*.............",
+    "................",
+    ".....*..........",
+    "*...............",
+    "...........*....",
+    "..*..........*..",
+    "........*.......",
+    "................"
+  ],
+  "Liked": "41",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "136",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-03-11T06:20:11.827",
+  "Title": "Jet-setter"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "some stars were accidentally missing in \"Abacus\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRBRRR",
+    "RRBRRRRRBRRRBRRR",
+    "BRBRRRRRBRRRBRRR",
+    "BRBRRRRRBRRRBRBR",
+    "BRBRBRRRBRRRGRBR",
+    "BRGRBRRRGRBRGRBR",
+    "GRGRBRBRGRBRGRBR",
+    "GRGRBRBRGRBRGRGR",
+    "GRGRGRBRGRBRGRGR",
+    "GRGRGRBRGRGRGRGR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "26",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "798",
+  "Items": [
+    "..*....*....*..#",
+    "*#*#*#*#*#*#.#*#",
+    "*#.#*#*#.#*#.#*#",
+    ".#.#*#*#.#*#.#*#",
+    ".#.#*#*#.#*#.#.#",
+    ".#.#.#*#.#*#*#.#",
+    ".#*#.#*#*#.#*#.#",
+    "*#*#.#.#*#.#*#.#",
+    "*#*#.#.#*#.#*#*#",
+    "*#*#*#.#*#.#*#*#",
+    "*#*#*#.#*#*#*#*#",
+    ".*...*...*...*.#"
+  ],
+  "Liked": "7",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "19",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-18T14:46:47.923",
+  "Title": "Abacus II"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRGBRBBBBBGBBBGB",
+    "BBBBBBGBBBBBGBBB",
+    "BGBBGRBBBGBBBBBB",
+    "GBRBBBBBRBBBBGBB",
+    "BGBGBRBGBBRBBRBB",
+    "RRBBRBBBBBBBGBBG",
+    "GBBBBBBGBBBRBBBB",
+    "BGBRBRBGBGBGBGBB",
+    "BBBBBBGBBBBBBBGB",
+    "RBBRBBRBBBGBBBRB",
+    "BBBBRBBBRBRBBBBB",
+    "BBBBBBBGBBBBRBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "43",
+  "DifficultyVoteSum": "158",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "81",
+  "Items": [
+    "...........***..",
+    ".........*......",
+    "..........*.....",
+    ".....*......*...",
+    "......*.......*.",
+    "........**......",
+    "..*.....*.......",
+    "....*...........",
+    "..........*..*..",
+    "................",
+    "......*.........",
+    "................"
+  ],
+  "Liked": "26",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "129",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "seka",
+  "SubmittedDate": "2009-03-01T16:01:20.233",
+  "Title": "Find a way"
+}

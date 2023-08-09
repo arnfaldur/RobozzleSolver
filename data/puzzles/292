@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGGGGGGGBGGGGGGG",
+    "RGRRRRRRGRRRRRRG",
+    "RGRRRRRRGRRRRRRG",
+    "RGRRRRRRGRRRRRRG",
+    "RBGGGGGGBGGGGGGG",
+    "RGRRRRRRGRRRRRRG",
+    "RGRRRRRRGRRRRRRG",
+    "RGRRRRRRGRRRRRRG",
+    "RGRRRRRRGRRRRRRG",
+    "RGGGGGGGBGGGGGGG",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "66",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "292",
+  "Items": [
+    "################",
+    "#*......*......*",
+    "#.######.######.",
+    "#*######.######*",
+    "#.######.######.",
+    "#...............",
+    "#.######.######.",
+    "#.######.######*",
+    "#*######.######.",
+    "#.######.######.",
+    "#*......*......*",
+    "################"
+  ],
+  "Liked": "7",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "92",
+  "SubLengths": [
+    "10",
+    "8",
+    "7",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-05T00:33:44.047",
+  "Title": "Window"
+}

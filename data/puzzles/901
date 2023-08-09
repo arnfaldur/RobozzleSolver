@@ -1,0 +1,53 @@
+{
+  "About": "Can you hear me now?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRBBB",
+    "RRRRRRRRRGBBRBRB",
+    "RRRRRBBBRBRBRBRB",
+    "RBBBRRRBRRRBRRRB",
+    "BRRRRRRRRRRRRRRR",
+    "RRRBBBRBRBRBRBRB",
+    "RRRRRRRGBBRBRBRB",
+    "RRRRRRRRRRRBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "22",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "901",
+  "Items": [
+    "################",
+    "#############...",
+    "#########*..#.#.",
+    "#####...#.#.#.#.",
+    "#...#*#.#*#.#*#.",
+    ".*#*#*#*#*#*#*#*",
+    "###...#.#.#.#.#.",
+    "#######*..#.#.#.",
+    "###########...#.",
+    "###############.",
+    "##############*.",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "22",
+  "SubLengths": [
+    "5",
+    "10",
+    "4",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-26T12:52:14.077",
+  "Title": "Sonic"
+}

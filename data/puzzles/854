@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "166",
+  "DifficultyVoteSum": "220",
+  "Disliked": "31",
+  "Featured": "false",
+  "Id": "854",
+  "Items": [
+    "################",
+    "################",
+    "#####..***..####",
+    "#####..***..####",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "########.#######"
+  ],
+  "Liked": "141",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "2412",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sillymystery",
+  "SubmittedDate": "2009-06-22T23:35:56.877",
+  "Title": "hammer time"
+}

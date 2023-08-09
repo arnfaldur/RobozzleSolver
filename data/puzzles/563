@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBRRRRRRRRRR",
+    "BBGBGBBRRRRRRRRR",
+    "BGBGBGBBRRRRRRRR",
+    "BBBBBBGBRRRRRRRR",
+    "RRRBBGBBRRRRRRRR",
+    "RRBBGBBRRRRRRRRR",
+    "RBBGBBRRRRRRRRRR",
+    "RBGBBRBBRRRRRRRR",
+    "RBBGBBBGRRRRRRRR",
+    "RRBBGBGBRRRRRRRR",
+    "RRRBBGBBRRRRRRRR",
+    "RRRRBBBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "101",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "563",
+  "Items": [
+    "#.....####.....#",
+    "..*.*..##..*.*..",
+    ".*.*.*....*.*.*.",
+    "......*..*......",
+    "###..*....*..###",
+    "##..*..##..*..##",
+    "#..*..####..*..#",
+    "#.*..#....#..*.#",
+    "#..*....*...*..#",
+    "##..*.*..*.*..##",
+    "###..*....*..###",
+    "####...##...####"
+  ],
+  "Liked": "25",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "8",
+  "Solutions": "118",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-21T01:32:37.593",
+  "Title": "Symmetry - Diagonal Path"
+}

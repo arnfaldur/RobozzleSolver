@@ -1,0 +1,53 @@
+{
+  "About": "R=2, G=1, B=0. The most significant bit is the last one. Count green turns.",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRBBBBBBBBBBG",
+    "RRRRRGRRRRRRRRRB",
+    "BBBBBGBBBBBBBGRB",
+    "BRRRRGRRRRRRRBRB",
+    "RRGGRBRGGRBBRBRB",
+    "BRBBRBRBBRRBRBRB",
+    "GRGBBBBBGRRBRGRB",
+    "BRRBRBRGBBBGRRRB",
+    "BRRBRBRRRRRRRGRB",
+    "GBBGRGBBBBBBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "BRGBGBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1",
+  "DifficultyVoteSum": "5",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "10459",
+  "Items": [
+    "#####..........*",
+    "#####*#########.",
+    ".....*.......*#.",
+    "*####*#######.#.",
+    "*#**#*#**#*.#.#.",
+    "*#..#.#..##.#*#.",
+    "*#*.....*##.#*#.",
+    ".##.#.#*...*#*#.",
+    ".##.#.#######*#.",
+    "*..*#*........#.",
+    "###############.",
+    ".****..........*"
+  ],
+  "Liked": "0",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "2",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "scorpio",
+  "SubmittedDate": "2018-03-27T23:19:44.29",
+  "Title": "Ternary (4 digits)"
+}

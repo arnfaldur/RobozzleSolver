@@ -1,0 +1,53 @@
+{
+  "About": "",
+  "AllowedCommands": "7",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "30",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "677",
+  "Items": [
+    "...***..........",
+    "...****.........",
+    "...*****........",
+    "....*****.......",
+    ".....*****......",
+    "......**.**.....",
+    "........****....",
+    "........*****...",
+    ".........*****..",
+    "..........*****.",
+    "...........****.",
+    "............***."
+  ],
+  "Liked": "4",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "45",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "paninmischa",
+  "SubmittedDate": "2009-06-05T03:18:02.483",
+  "Title": "Thick backward slash"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Time to learn how the stack works.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRBBR",
+    "RRRRRRRRRRRRBBRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRBBBBBBRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "673",
+  "DifficultyVoteSum": "958",
+  "Disliked": "91",
+  "Featured": "false",
+  "Id": "840",
+  "Items": [
+    "################",
+    "################",
+    "##############*#",
+    "#############..#",
+    "############..##",
+    "###########..###",
+    "##########..####",
+    "#########..#####",
+    "##........######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "494",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "3520",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-22T04:56:39.64",
+  "Title": "The Stack"
+}

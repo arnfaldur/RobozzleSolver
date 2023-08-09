@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRBBR",
+    "RGGGRGGGRGGGRBBR",
+    "RGGGRGGGRGGGRBBR",
+    "RRRRRRRRRRRRRBBR",
+    "RRRRRRRRRRRRRBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRBBB",
+    "RRRRRRRRRRRRRRBR",
+    "RBBBRBBBRBBBRRBR",
+    "RRBRRRBRRRBRRRBR",
+    "RRBRRRBRRRBRRRBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "30",
+  "DifficultyVoteSum": "92",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "969",
+  "Items": [
+    "#############.##",
+    "#############..#",
+    ".............**#",
+    ".............**#",
+    "#############**#",
+    "#############**#",
+    "################",
+    "#############...",
+    "##############.#",
+    "#...#...#...##.#",
+    "##.###.###.###.#",
+    "##.###.###.###.#"
+  ],
+  "Liked": "28",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "105",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-03T13:04:00.187",
+  "Title": "hammer"
+}

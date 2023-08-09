@@ -1,0 +1,53 @@
+{
+  "About": "G = /, R = *, B = \\n. Each line is /*...*/ or //...\\n.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRBBBBBBRGRRRRRR",
+    "GGRRRRBRRRRRRRRR",
+    "GRBBRBBBGBBBBRGR",
+    "GGRRGRRGRRRBRRRR",
+    "GRGBGRBBRRBGRBRG",
+    "GRRRRGRRRRRRRRRR",
+    "GGBRRRRRRRRRRRRR",
+    "GGGGGRGGGRRRRBRR",
+    "GGRGRGRGRGRGGGBR",
+    "GRRGRRRRRRRRRRRR",
+    "GGRRRRRGGGRBRRRR",
+    "GRGGGRRBGGGGGRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "81",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "445",
+  "Items": [
+    ".........*######",
+    "*.....*#########",
+    "*.............*#",
+    "*..........*####",
+    "*..............*",
+    "*....*##########",
+    "*.*#############",
+    "*............*##",
+    "*.............*#",
+    "*..*############",
+    "*..........*####",
+    "*..............*"
+  ],
+  "Liked": "20",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "43",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-04T15:00:18.127",
+  "Title": "/* Comments? */"
+}

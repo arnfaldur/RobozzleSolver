@@ -1,0 +1,53 @@
+{
+  "About": "a little harder than the first",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBRRBRRBBBRBBB",
+    "BBBBRBBGBRBRBBBR",
+    "BRBBRRBGBGBBRBBR",
+    "BRRBRBRRBGBBGRBR",
+    "BBRBBRBRRRBRRRRB",
+    "BBRBBRRRBRBBRRGR",
+    "BBGBGRBRRRBGRBGR",
+    "BBGBRBRRGRBRRBRR",
+    "GGRBRGBRGRBRRRRB",
+    "GRRGRGRRRRGRRGRR",
+    "RRRRRRBRRRRRRRRG",
+    "RRRRRRGRRRRRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "115",
+  "DifficultyVoteSum": "386",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "212",
+  "Items": [
+    "................",
+    ".......*........",
+    ".......*.*......",
+    ".......#.*..*...",
+    ".......#.#..#...",
+    ".......#.#..#.*.",
+    "..*.*..#.#.*#.*.",
+    "..*.#..#*#.##.#.",
+    "**#.#*.#*#.##.#.",
+    "*##*#*.###*##*#.",
+    "######.########*",
+    "######*########*"
+  ],
+  "Liked": "111",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "711",
+  "SubLengths": [
+    "7",
+    "9",
+    "7",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-28T01:19:23.843",
+  "Title": "Parity Checker II"
+}

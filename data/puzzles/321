@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGRGGGGGGGGGGGG",
+    "RGRRRGGGGGGGGGGG",
+    "RRRBRRGGRRGGGGRB",
+    "BRBBBRRRRRRGRRRB",
+    "BBBBBBRRBBRRRRBB",
+    "BBBBBBBBBBBRBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "89",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "321",
+  "Items": [
+    "................",
+    "................",
+    "...*............",
+    "*.*#*...........",
+    "#*#.#*..**....*.",
+    ".#...#**##*.**#.",
+    "......##..#*##..",
+    "...........#....",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "21",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "100",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-08T06:12:03.577",
+  "Title": "Rift"
+}

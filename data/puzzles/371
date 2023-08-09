@@ -1,0 +1,53 @@
+{
+  "About": "blue / red = green",
+  "AllowedCommands": "7",
+  "Colors": [
+    "GBBBBBBBBBRRRGGG",
+    "GBBBBBBRRRGGRRRR",
+    "GBBBBRRGGRRRRRRR",
+    "GBBBBRGGGGRRRRRR",
+    "GBBBBBBBBRRRRGGR",
+    "GBBRGGRRRRRRRRRR",
+    "GBBBBBBRRGGGRRRR",
+    "GBBBBBBBBRRGGGGR",
+    "GBBBBBBBRGGGGGGG",
+    "GBBBBBBBBBRRRGGG",
+    "GBBBBBRGGGGGRRRR",
+    "GBBBBRRGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "49",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "371",
+  "Items": [
+    "...............*",
+    "...........*####",
+    "........*#######",
+    ".........*######",
+    "..............*#",
+    ".....*##########",
+    "...........*####",
+    "..............*#",
+    "...............*",
+    "...............*",
+    "...........*####",
+    "........*#######"
+  ],
+  "Liked": "13",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "61",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-04-22T20:21:20.063",
+  "Title": "division"
+}

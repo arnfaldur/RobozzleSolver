@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRRGRRGRRRRRR",
+    "RRRRRRGRRGRRRRRR",
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRRRRRGRRRRRR",
+    "RRRRRRRRRGRRRRRR",
+    "RBBRRRRRBGRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "36",
+  "DifficultyVoteSum": "101",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "922",
+  "Items": [
+    "####........####",
+    "###..........###",
+    "##............##",
+    "#..............#",
+    "................",
+    "*.....****......",
+    "######*##*######",
+    "######*##*######",
+    "######****######",
+    "#########*######",
+    "#########*######",
+    ".........*######"
+  ],
+  "Liked": "28",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "90",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-28T12:34:43.297",
+  "Title": "q with a very big hat"
+}

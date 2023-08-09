@@ -1,0 +1,53 @@
+{
+  "About": "Ryusho's First puzzle",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGBGBGBGBGBGR",
+    "RRRRBRBRBRBRBRBR",
+    "RRRRGBGBGBGBGBGR",
+    "RRRRBRBRBRBRBRBR",
+    "RRRRGBGBRBRBGBGR",
+    "RRRRBRBRBRBRBRBR",
+    "RRRRGBGBRBRBGBGR",
+    "RRRRBRBRBRBRBRBR",
+    "RRRRGBGBRBGBGBGR",
+    "RRRRBRBRBRBRBRBR",
+    "RRRRGBGBGBGBGBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "148",
+  "DifficultyVoteSum": "290",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "780",
+  "Items": [
+    "################",
+    "####*.*.*.*.*.*#",
+    "####.#.#.#.#.#.#",
+    "####*.*.*.*.*.*#",
+    "####.#.#.#.#.#.#",
+    "####*.*.*.*.*.*#",
+    "####.#.#.#.#.#.#",
+    "####*.*...*.*.*#",
+    "####.#.#.#.#.#.#",
+    "####*.*...*.*.*#",
+    "####.#.#.#.#.#.#",
+    "####*.*.*.*.*.*#"
+  ],
+  "Liked": "143",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "1720",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ryusho",
+  "SubmittedDate": "2009-06-15T20:32:17.657",
+  "Title": "Criss Cross"
+}

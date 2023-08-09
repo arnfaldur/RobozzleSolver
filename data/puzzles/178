@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRGBGGBGRRRRR",
+    "RRRRRBRBBRBRRRRR",
+    "RGBBGGBBBBGGBBGR",
+    "RBGBGRRBBRRGBGBR",
+    "RBBRBRRBBRRBRBBR",
+    "RGGBBBBRRBBBBGGR",
+    "RGGBBBBRRBBBBGGR",
+    "RBBRBRRBBRRBRBBR",
+    "RBGBGRRBBRRGBGBR",
+    "RGBBGGBBBBGGBBGR",
+    "RRRRRBRBBRBRRRRR",
+    "RRRRRGBGGBGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "96",
+  "DifficultyVoteSum": "273",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "178",
+  "Items": [
+    "#####*.**.*#####",
+    "#####.#..#.#####",
+    "#*..**....**..*#",
+    "#.*.*##..##*.*.#",
+    "#..#.##..##.#..#",
+    "#**..........**#",
+    "#**..........**#",
+    "#..#.##..##.#..#",
+    "#.*.*##..##*.*.#",
+    "#*..**....**..*#",
+    "#####.#..#.#####",
+    "#####*.**.*#####"
+  ],
+  "Liked": "104",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "774",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-21T18:23:17.75",
+  "Title": "Right Experiment"
+}

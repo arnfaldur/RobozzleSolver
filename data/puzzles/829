@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBB",
+    "GRRRRRRRRRRRRRRR",
+    "BRRBRRRRRRRRRRRR",
+    "GRGRGRRRRRRRRRRR",
+    "BRBRBRRRRRRRRRRR",
+    "GRGRGRRRRRRRRRRR",
+    "BRBRBRRRRRRRRRRR",
+    "GRRBGBGBGBGBGRRR",
+    "BRRRBRRRRRRRRRRR",
+    "GRRRGRRRRRRRRRRR",
+    "BRRRBRRRRRRRRRRR",
+    "RGBGRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "64",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "829",
+  "Items": [
+    "................",
+    ".###############",
+    ".#...###########",
+    ".#.#.###########",
+    ".#.#.###########",
+    ".#.#.###########",
+    ".#.#.#######*###",
+    ".#...........###",
+    ".###.###########",
+    ".###.###########",
+    ".###.###########",
+    ".....###########"
+  ],
+  "Liked": "13",
+  "RobotCol": "15",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "62",
+  "SubLengths": [
+    "5",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sticky",
+  "SubmittedDate": "2009-06-21T08:31:22.22",
+  "Title": "Stacked"
+}

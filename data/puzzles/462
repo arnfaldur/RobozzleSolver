@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBGBGBBGBGBBBG",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "GRGBGBBGBBGBBGRG",
+    "BRBRRRRRRRRRRBRB",
+    "BRGRRRRRRRRRRGRB",
+    "GRGRRRRGBGBGBGRG",
+    "BRBRRRRRRRRRRRRB",
+    "GRGBBBGBGBGBBGBG",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRB",
+    "GBBGBBBGBBBGBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "71",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "462",
+  "Items": [
+    ".*...*...*..**..",
+    ".##############.",
+    "*##############*",
+    ".#..*...*..*..#*",
+    ".#.##########*#.",
+    "*#*##########*#*",
+    ".#.####..*.*..#.",
+    ".#*############*",
+    ".#...*..*..**...",
+    "*###############",
+    ".##############*",
+    ".....*...*...*.."
+  ],
+  "Liked": "23",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "63",
+  "SubLengths": [
+    "3",
+    "3",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-05-06T12:25:20.28",
+  "Title": "Just a spiral"
+}

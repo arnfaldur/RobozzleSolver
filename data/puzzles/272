@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBBBBR",
+    "RBRBGGBRBGBGRBRB",
+    "BRGBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBRR",
+    "RBRGBRBBBBRBGBRR",
+    "RBBBBGBBBRGBRBRR",
+    "RRBRBBRRRRRBBRRR",
+    "RBRGBRBBBBBRRRRR",
+    "RRRBBBBBGBBBBRRR",
+    "RRRRRRGBRBBBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "31",
+  "DifficultyVoteSum": "108",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "272",
+  "Items": [
+    "################",
+    "#......*.......#",
+    "#.*.**.*.*.**...",
+    ".......*.......#",
+    "#....*........##",
+    "#....*........##",
+    "#........**...##",
+    "##.#..#####..###",
+    "#...***.*..#####",
+    "###..........###",
+    "#####.........##",
+    "################"
+  ],
+  "Liked": "32",
+  "RobotCol": "9",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "104",
+  "SubLengths": [
+    "3",
+    "6",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-03T09:14:33.983",
+  "Title": "Follow the arrow"
+}

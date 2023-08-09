@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGGGGGGGGGBGGRR",
+    "RRBRRRRRRRRRRRRR",
+    "BBBBRBBBGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRBRRRRRGRRRRRRR",
+    "RRBRRRRRBRRRRRRR",
+    "RRBRGRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBRBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "30",
+  "DifficultyVoteSum": "94",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "612",
+  "Items": [
+    "################",
+    "################",
+    "##*...........*#",
+    "##.###########.#",
+    "........*#####.#",
+    "*#.#####.#####.#",
+    "##.#####.#####.#",
+    "##.#####.#####.#",
+    "##*.....*#####.#",
+    "##############.#",
+    "##############.#",
+    "..............*#"
+  ],
+  "Liked": "32",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "77",
+  "SubLengths": [
+    "4",
+    "4",
+    "3",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "ssancho",
+  "SubmittedDate": "2009-05-29T22:05:29.703",
+  "Title": "Reuse"
+}

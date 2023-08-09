@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBRRRRRRRR",
+    "BRRRRRRRRGRRRRRR",
+    "BRRRRRRRRGRGRRRR",
+    "BRRRRRRRRGBBBRRG",
+    "BRRRRBGRGRGRRRRB",
+    "BRRRBRRRRGRRRRRB",
+    "BRRRBRRRRBRRRRRB",
+    "BRRRBRRRRBRRRRRG",
+    "BRRRBRRRRBRRRRRR",
+    "BRRRBRRRRBRRRRRG",
+    "BRRRBRRRRBRRRRRR",
+    "GRGRGRGRGRBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "78",
+  "Disliked": "18",
+  "Featured": "false",
+  "Id": "836",
+  "Items": [
+    "........########",
+    ".#######*.######",
+    ".########...####",
+    ".########.......",
+    ".###........###.",
+    ".###.####.#####.",
+    ".###.####.#####.",
+    ".###.####.#####.",
+    ".###.####.#####.",
+    ".###.####.#####.",
+    ".###.####.#####.",
+    "................"
+  ],
+  "Liked": "12",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "117",
+  "SubLengths": [
+    "7",
+    "7",
+    "7",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sticky",
+  "SubmittedDate": "2009-06-21T19:28:46.077",
+  "Title": "Seven Again"
+}

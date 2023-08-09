@@ -1,0 +1,53 @@
+{
+  "About": "See if you can solve this puzzle using the paint commands",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRBRRBRRR",
+    "RRRRRRBRRBRRBRBR",
+    "RRRRRBRBRBRRBRBR",
+    "RRBBBBBRRRBBBBBR",
+    "RRRRRBRRRRRRBRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1075",
+  "DifficultyVoteSum": "2647",
+  "Disliked": "25",
+  "Featured": "false",
+  "Id": "280",
+  "Items": [
+    "################",
+    "################",
+    "#########*..*###",
+    "#########.##.###",
+    "#####*.*#.##.#*#",
+    "#####.#.#.##.#.#",
+    "##.*.*.*#*..*.*#",
+    "#####.######.###",
+    "#####*......*###",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "913",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "6588",
+  "SubLengths": [
+    "5",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evilpettingzoo",
+  "SubmittedDate": "2009-04-03T16:30:58.267",
+  "Title": "Fun with paint"
+}

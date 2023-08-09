@@ -1,0 +1,53 @@
+{
+  "About": "Just follow the path",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RRRRRRRRRGGGGGGR",
+    "RRRRRRRRRGGBBGGR",
+    "RRRRRRRRRGGBBGGR",
+    "RRRRRRRRRGGBBGGR",
+    "RRRRRRBBBGGBBGGR",
+    "RRRRRRRRRGGBBGGR",
+    "RRRRRRRRRGGBBGGR",
+    "RRRRRRRRRGGGGGGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "85",
+  "DifficultyVoteSum": "121",
+  "Disliked": "24",
+  "Featured": "false",
+  "Id": "519",
+  "Items": [
+    "################",
+    "#*********.....#",
+    "#########*.....#",
+    "#########*.....#",
+    "#########*.....#",
+    "#########*.....#",
+    "######..**.....#",
+    "#########......#",
+    "#########......#",
+    "#########......#",
+    "################",
+    "################"
+  ],
+  "Liked": "50",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "499",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ajji",
+  "SubmittedDate": "2009-05-13T23:20:53.127",
+  "Title": "star path"
+}

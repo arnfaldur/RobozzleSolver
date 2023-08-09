@@ -1,0 +1,53 @@
+{
+  "About": "Make your way through traffic to the checkpoints",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBGBBBBBBGBRRRGR",
+    "BRBRRRBRRBRRRRBR",
+    "BRBRRRBRRBRRRRBR",
+    "GBBBBBGBBGBBGBGR",
+    "BRBRRRRRRBRRRRBR",
+    "GBGBRRRRRGBBBBGR",
+    "BRRRRRGBBGRRRRBR",
+    "BRRRRRBRRRRRRRBR",
+    "GBBBBBGBRRRRGBBR",
+    "BRBRRRBRRBRRBRBR",
+    "GBGBBBBBBGBBGBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "85",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "246",
+  "Items": [
+    "*#*###*##*####*#",
+    "...........*##.*",
+    ".#.###.##.####.#",
+    ".#.###.##.##*#.#",
+    "...............*",
+    ".#.######.####.#",
+    "....*#*##......*",
+    ".#####....*###.#",
+    ".#*###.#####*#.#",
+    "........**##...*",
+    ".#.###.##.##.#.#",
+    "...............*"
+  ],
+  "Liked": "23",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "67",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-31T11:49:49.267",
+  "Title": "Gridlock"
+}

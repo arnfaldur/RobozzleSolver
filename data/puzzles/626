@@ -1,0 +1,53 @@
+{
+  "About": "for noobs like me who are still learning....",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBGRGBBGRGBBBBB",
+    "BBBGRGBBGRGBBBBB",
+    "BBBGRGBBGRGBBBBB",
+    "BBBGRGBBGRGBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBRBBBBBBBBRBBBB",
+    "BBBRBBBBBBRBBBBB",
+    "BBBBRBBBBRBBBBBB",
+    "BBBBBRRRRBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "514",
+  "DifficultyVoteSum": "731",
+  "Disliked": "92",
+  "Featured": "false",
+  "Id": "626",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    ".........**.....",
+    ".........**.....",
+    ".........*......",
+    "..........******",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "372",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2112",
+  "SubLengths": [
+    "3",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jesusgeek94",
+  "SubmittedDate": "2009-05-31T22:29:17.077",
+  "Title": ":)"
+}

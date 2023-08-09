@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBGRRRRRRR",
+    "RRRRRRRBBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "634",
+  "DifficultyVoteSum": "1828",
+  "Disliked": "35",
+  "Featured": "false",
+  "Id": "472",
+  "Items": [
+    "#######**#######",
+    "#######.*#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######"
+  ],
+  "Liked": "461",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "3730",
+  "SubLengths": [
+    "2",
+    "2",
+    "2",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-07T20:34:47.483",
+  "Title": "Elevator"
+}

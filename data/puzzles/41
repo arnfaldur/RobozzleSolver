@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRBBBRBRRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRRRBRBBBRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2251",
+  "DifficultyVoteSum": "5110",
+  "Disliked": "72",
+  "Featured": "true",
+  "Id": "41",
+  "Items": [
+    "################",
+    "################",
+    "#########*######",
+    "#########.######",
+    "########..######",
+    "####*..#.#######",
+    "######.....#####",
+    "########.#..*###",
+    "#######..#######",
+    "#######.########",
+    "#######*########",
+    "################"
+  ],
+  "Liked": "2056",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "16700",
+  "SubLengths": [
+    "7",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "poiuy",
+  "SubmittedDate": "2009-02-24T14:14:58.327",
+  "Title": "The windmill"
+}

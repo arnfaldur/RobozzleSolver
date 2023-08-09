@@ -1,0 +1,53 @@
+{
+  "About": "Recolor the whole square :)",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RGGRRGRRRRGRRRGR",
+    "GRRGRGGGRRGGGRRR",
+    "GGGGRGRGRRGRGRGR",
+    "GRRGRGGGRRGRGRGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "116",
+  "DifficultyVoteSum": "298",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "276",
+  "Items": [
+    "################",
+    "################",
+    "#####****#######",
+    "#####****#######",
+    "#####**.*#######",
+    "#####****#######",
+    "################",
+    "################",
+    "#..##.####.###.#",
+    ".##.#...##...###",
+    "....#.#.##.#.#.#",
+    ".##.#...##.#.#.#"
+  ],
+  "Liked": "99",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "1152",
+  "SubLengths": [
+    "5",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-03T12:53:13.89",
+  "Title": "Flood fill"
+}

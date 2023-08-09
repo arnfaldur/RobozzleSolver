@@ -1,0 +1,53 @@
+{
+  "About": "The Rift grows unstable - those stars better be worth something...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "RGGGRGGGRGRGGGRG",
+    "RGRGRGGRRGRGRRRB",
+    "RRRRRRGRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "BRRRBRRRBRBRRRBB",
+    "BRBRBRRBBRBRBBBB",
+    "BBBBBBRBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "25",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "477",
+  "Items": [
+    "................",
+    "................",
+    "*...*...*.*...*.",
+    "#.*.#..*#.#.**#.",
+    "#*#*#*.##*#*###.",
+    "######*########.",
+    ".###.###.#.###..",
+    ".#.#.##..#.#....",
+    "......#.........",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "7",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "22",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "fatbuddha",
+  "SubmittedDate": "2009-05-08T12:04:17.36",
+  "Title": "Jagged Rift"
+}

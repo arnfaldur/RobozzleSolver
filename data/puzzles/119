@@ -1,0 +1,53 @@
+{
+  "About": "A classic Hitchcock puzzle.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GGGGGGGGGRRRRRRR",
+    "GRRRRRRRGRRRRRRR",
+    "GRRBBBRRGRRRRRRR",
+    "GRBRRRBRGRRRRRRR",
+    "GRBRGRRRGRRRRRRR",
+    "GRBRGRRRGRRRRRRR",
+    "GRBRGGGGGRBBRRRR",
+    "GRBRRRRRRRGRBRRR",
+    "GRRBBBBBBBRRBRRR",
+    "GRRRRRRRRRRRBRRR",
+    "RBBBBBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "68",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "119",
+  "Items": [
+    "################",
+    ".........#######",
+    ".#######.#######",
+    ".#.....#.#######",
+    ".#.###.#.#######",
+    ".#.#*#.#.#######",
+    ".#.#.###.#######",
+    ".#.#.....#...###",
+    ".#.#######.#.###",
+    ".#.........#.###",
+    ".###########.###",
+    ".............###"
+  ],
+  "Liked": "13",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "72",
+  "SubLengths": [
+    "2",
+    "4",
+    "4",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "raijuzero",
+  "SubmittedDate": "2009-03-10T16:39:52.093",
+  "Title": "Vertigo"
+}

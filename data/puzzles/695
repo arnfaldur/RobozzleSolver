@@ -1,0 +1,53 @@
+{
+  "About": "Follow the yellow... err green... err red brick road.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBGGGGGGGBRBBBRR",
+    "RBGBBBBBGBRRRBBB",
+    "RBGGGBRBGBRBRRRB",
+    "BBBBGBRBGBRBBBRB",
+    "BGGGGBRBGBBRRRRB",
+    "BGBBBBRBGBBRBBBB",
+    "BGBBBBRBRBBRBBBB",
+    "BGGGBBRBRBBRRRRB",
+    "BBBGGGBBRBBBBBRB",
+    "BBBBBGBBRRRBRBRB",
+    "BGGGGGBBBBRBBBRB",
+    "BBBBBBBRRBRRRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "65",
+  "DifficultyVoteSum": "160",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "695",
+  "Items": [
+    "#.*******.#...##",
+    "#.*.....*.#**...",
+    "#.***.#.*.#.***.",
+    "....*.#.*.#...*.",
+    ".****.#.*..****.",
+    ".*....#.*..*....",
+    ".*....#.*..*....",
+    ".***..#.*..****.",
+    "...***..*.....*.",
+    ".....*..***.#.*.",
+    "..****....*...*.",
+    ".......##.*****."
+  ],
+  "Liked": "59",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "344",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-06T13:02:43.313",
+  "Title": "Going to Oz"
+}

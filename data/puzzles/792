@@ -1,0 +1,53 @@
+{
+  "About": "First green, then N steps",
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRBBGGBBG",
+    "RRRRRRRRBRRRRRRB",
+    "RRRRRRRRGRRRRRRB",
+    "GBBRBBBGBGBBBGRB",
+    "BRRRRRRRGRRRRBRB",
+    "GRRRRRRRBRRRRGRR",
+    "BRRRRRRRGBGBBRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRGRG",
+    "RBBBGBBGBBBRBGRB",
+    "RRRRRRRRRRRRRRRB",
+    "GBBBGBBGBBBRBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "31",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "792",
+  "Items": [
+    "########*......*",
+    "########.######.",
+    "########.######.",
+    "........*....*#.",
+    ".#######.####.#.",
+    ".#######.####.#.",
+    ".#######*....*#.",
+    ".##############.",
+    ".############*#.",
+    "*............*#.",
+    "###############.",
+    "...............*"
+  ],
+  "Liked": "7",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "17",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "hbandura",
+  "SubmittedDate": "2009-06-17T22:11:08.407",
+  "Title": "Waiting for my turn"
+}

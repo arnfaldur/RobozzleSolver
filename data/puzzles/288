@@ -1,0 +1,53 @@
+{
+  "About": "Just consider where you call F2",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGGRGGRRRR",
+    "RRRRRGRRGGGRGRRR",
+    "RRRRGGGRRGRGGRRR",
+    "RRRRGRRGRRGGRRRR",
+    "RRRRGGRRBRRGGRRR",
+    "RRRRRGGRRGRRGRRR",
+    "RRRRRGRGRRGRGRRR",
+    "RRRRRRGGGRGGRRRR",
+    "RRRRRRRRGGGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "69",
+  "DifficultyVoteSum": "143",
+  "Disliked": "19",
+  "Featured": "false",
+  "Id": "288",
+  "Items": [
+    "################",
+    "######...#...###",
+    "#####..#...#.###",
+    "####....#.#..###",
+    "####.##..#..####",
+    "####..##*.#..###",
+    "#####...#..#.###",
+    "#####.#.##...###",
+    "#####....#..####",
+    "########...#####",
+    "################",
+    "################"
+  ],
+  "Liked": "45",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "276",
+  "SubLengths": [
+    "9",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-04T23:41:44.03",
+  "Title": "Aim for Blue dot"
+}

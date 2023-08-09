@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGRGGRRRRRRRR",
+    "RRRRGRGRRRRRRRRR",
+    "RRRRGGGRRRRRRRRR",
+    "RRRRRGRRRRRRRRRR",
+    "RRRRBGBRRRRRRRRR",
+    "RRRRGRGRRRRRRRRR",
+    "RRRRGGGRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "63",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "429",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "###.*#**########",
+    "####*#*#########",
+    "####***#########",
+    "#####*##########",
+    "####***#########",
+    "####*#*#########",
+    "####***#########",
+    "################",
+    "################"
+  ],
+  "Liked": "19",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "135",
+  "SubLengths": [
+    "7",
+    "4",
+    "4",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-03T10:18:53.983",
+  "Title": "Swimming Frog"
+}

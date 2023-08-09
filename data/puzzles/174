@@ -1,0 +1,53 @@
+{
+  "About": "No risk no fun",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBRRRRRRRRRRR",
+    "RRRBRBRRRRRRRRRR",
+    "RBBGRBRRRRRRRRRR",
+    "BRRRRBRRRRRRRRRR",
+    "BRRRRBRRRRRRRRRR",
+    "RGRRRBRRRRRRRRRR",
+    "RRGRRGBBBRBBBBBR",
+    "RRRGRRRRRRRRRRRB",
+    "RRRBRRRRRRRRRRRB",
+    "RRRBRRRRRRRRRRRB",
+    "RRRBRRRRRRRRRRRB",
+    "RRRRBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "39",
+  "Disliked": "31",
+  "Featured": "false",
+  "Id": "174",
+  "Items": [
+    "###*.*##########",
+    "###.#.##########",
+    "*..*#.##########",
+    ".####.##########",
+    ".####.##########",
+    "**###.##########",
+    "#**##*..*#.....*",
+    "##**###########.",
+    "###.###########.",
+    "###.###########.",
+    "###.###########.",
+    "###*...........*"
+  ],
+  "Liked": "15",
+  "RobotCol": "10",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "132",
+  "SubLengths": [
+    "4",
+    "2",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "risk",
+  "SubmittedDate": "2009-03-21T07:48:12.767",
+  "Title": "Rellop"
+}

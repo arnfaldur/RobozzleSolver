@@ -1,0 +1,53 @@
+{
+  "About": "\"Turn right when you get up there.\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBGRB",
+    "RBRRRRRRRRRRRBRB",
+    "RGBBBBBBBGRRRBRB",
+    "RRRRRRRRRBRRRBRB",
+    "RRRRBRRRRBRRRBRB",
+    "RRRBRBRGBBBGRBRB",
+    "RRRBRBRBRBRBRBRB",
+    "RRBBBRRBRRBGRBRB",
+    "RBRBRRRBRRRRRBRB",
+    "RBRRBBBGRRBBBRRB",
+    "RBRRRRRRRBRRRRRB",
+    "RGRRRRRRRRBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "595",
+  "DifficultyVoteSum": "1608",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "309",
+  "Items": [
+    "#*************#*",
+    "#*###########*#*",
+    "#*********###*#*",
+    "#########*###*#*",
+    "###***###*###*#*",
+    "###*#*#*****#*#*",
+    "###*#*#*#*#*#*#*",
+    "#*****#*#***#*#*",
+    "#*#*###*#####*#*",
+    "#*#*****#*****#*",
+    "#*#######*#####*",
+    "#.#######*******"
+  ],
+  "Liked": "499",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "3272",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T11:33:14.733",
+  "Title": "Early Warning"
+}

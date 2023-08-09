@@ -1,0 +1,53 @@
+{
+  "About": "Turn.  No, not here, up there.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBBRBBBBBRBBRB",
+    "RRRBRRRRRRBRBRRB",
+    "RRRBRRRRRRRRBRRR",
+    "RRRBRRRBRBBRBRRB",
+    "RRRBRRRBRRRRGRRB",
+    "RRRBRRRGRRRRBRRB",
+    "RRRRRRRBBGBBBRRB",
+    "RRRBRRRRRRRRRRRB",
+    "RRRBBBBBBBBBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBRBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "265",
+  "DifficultyVoteSum": "670",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "137",
+  "Items": [
+    "###........#....",
+    "###.######.#.##.",
+    "###.######.#.##.",
+    "###.###....#.##.",
+    "###.###.####.##.",
+    "###.###.####.##.",
+    "###.###......##.",
+    "###.###########.",
+    "###..........*#.",
+    "###############.",
+    "###############.",
+    "................"
+  ],
+  "Liked": "255",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1719",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-14T10:35:44.5",
+  "Title": "Delayed Reaction"
+}

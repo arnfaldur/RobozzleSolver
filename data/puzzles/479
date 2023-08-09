@@ -1,0 +1,53 @@
+{
+  "About": "list on the right = sort (list of green sequences on the left)",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RGBBBBBRGRRRRRRR",
+    "RGGGGGBRGRRRRRRR",
+    "RGGGGGGRGGRRRRRR",
+    "RGGGGGBRGGGRRRRR",
+    "RGGGBBBRGGGRRRRR",
+    "RGBBBBBRGGGGGRRR",
+    "RGGGGGBRGGGGGRRR",
+    "RGGBBBBRGGGGGRRR",
+    "RGGGGGBRGGGGGRRR",
+    "RGGGBBBRGGGGGGRR",
+    "BRRRRRRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "51",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "479",
+  "Items": [
+    ".......*.......#",
+    ".*......*#####.#",
+    ".*****..*#####.#",
+    ".******.**####.#",
+    ".*****..***###.#",
+    ".***....***###.#",
+    ".*......*****#.#",
+    ".*****..*****#.#",
+    ".**.....*****#.#",
+    ".*****..*****#.#",
+    ".***....******.#",
+    "*......*.......#"
+  ],
+  "Liked": "16",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "87",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "5"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-08T17:56:17.017",
+  "Title": "sorting"
+}

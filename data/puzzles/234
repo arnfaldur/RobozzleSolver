@@ -1,0 +1,53 @@
+{
+  "About": "can you beat the ninja star?",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRRBRRBBRRRR",
+    "RRRRRRRBBBBBRRRR",
+    "RRRRBBBBBRRRRRRR",
+    "RRRRBBRRBRRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "84",
+  "DifficultyVoteSum": "224",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "234",
+  "Items": [
+    "################",
+    "################",
+    "######**########",
+    "######**########",
+    "#######.##**####",
+    "#######...**####",
+    "####**...#######",
+    "####**##.#######",
+    "########**######",
+    "########**######",
+    "################",
+    "################"
+  ],
+  "Liked": "76",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "782",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-03-29T15:46:58.703",
+  "Title": "\"Shuriken\""
+}

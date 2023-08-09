@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBGBBBBBBBBBB",
+    "BBBBBBGBBBBBBBBB",
+    "BBBBBBBGBBBBBBBB",
+    "BBBBBBBBGBBBBBBB",
+    "BBBBBBBBBGBBBBBB",
+    "BBBBBBBBBBGBBBBB",
+    "BBBBBBBBBBBGBBBB",
+    "BBBBBBBBBBBBGBBB",
+    "BBBBBBBBBBBBBGBB",
+    "BBBBBBBBBBBBBBGB",
+    "BBBBBBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "514",
+  "DifficultyVoteSum": "749",
+  "Disliked": "68",
+  "Featured": "false",
+  "Id": "565",
+  "Items": [
+    "................",
+    ".....*..........",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "...............*"
+  ],
+  "Liked": "438",
+  "RobotCol": "14",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "2197",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-05-21T04:09:00.157",
+  "Title": "diagonale"
+}

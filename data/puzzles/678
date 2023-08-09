@@ -1,0 +1,53 @@
+{
+  "About": "color is good",
+  "AllowedCommands": "3",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGRRRRRRGGGGG",
+    "GGGGGRRRRRRGGGGG",
+    "GGGGGRRBBRRGGGGG",
+    "GGGGGRRBBRRGGGGG",
+    "GGGGGRRRRRRGGGGG",
+    "GGGGGRRRRRRGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "23",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "678",
+  "Items": [
+    "................",
+    "...***.***......",
+    "...*.*.*.*......",
+    "...*******......",
+    "...********.....",
+    "...*.*.******...",
+    "...****.***.*...",
+    "...*.*******....",
+    "...*******......",
+    "...*.**.*.......",
+    "....*****.......",
+    "................"
+  ],
+  "Liked": "3",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "55",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "paninmischa",
+  "SubmittedDate": "2009-06-05T05:28:20.39",
+  "Title": "Color is good"
+}

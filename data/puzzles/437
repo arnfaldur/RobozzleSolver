@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRBRRBRRBRRBRRR",
+    "RRRGGRRGBRRRGGRR",
+    "GGRGRBRRRRRRRRRR",
+    "RGBGGRGGRGRBGGRR",
+    "GGRGGRGGRRRRGRBB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRGGBRGRRRRRRBB",
+    "RRRRRRRRRRRRGGRR",
+    "RBBRGRGGRRRRGGRR",
+    "RRRGGRRRBGRBRGRR",
+    "RRRRBRRBRRBRRBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "78",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "437",
+  "Items": [
+    ".##*##*##*##*###",
+    "..#..#.....#..##",
+    "..#.....#..#..##",
+    ".....#..#.....##",
+    "..#..#..#..#....",
+    "###############.",
+    "###.....#..#....",
+    "###..#..#..#..##",
+    "#*...#..#..#..##",
+    "###..#........##",
+    "####*##*##*##*##",
+    "################"
+  ],
+  "Liked": "23",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "96",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-03T18:29:55.267",
+  "Title": "Spot The Difference"
+}

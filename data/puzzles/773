@@ -1,0 +1,53 @@
+{
+  "About": "in honer of Taintedfalcon!",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGGRGGGRRRR",
+    "RRRRRGRGRGRGRRRR",
+    "RRRRRGGGGGGGRRRR",
+    "RRRRRRRGRGRRRRRR",
+    "RRRRRGGGGGGGRRRR",
+    "RRRRRGRGRGRGRRRR",
+    "RRRRRGGGRGGGRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "69",
+  "DifficultyVoteSum": "162",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "773",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####*.*#*.*####",
+    "#####.#.#.#.####",
+    "#####*...*.*####",
+    "#######.#.######",
+    "#####*.*.*.*####",
+    "#####.#.#.#.####",
+    "#####*.*#*.*####",
+    "################",
+    "################"
+  ],
+  "Liked": "72",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "805",
+  "SubLengths": [
+    "3",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-15T06:51:48.14",
+  "Title": "LUCKY CHARMS!"
+}

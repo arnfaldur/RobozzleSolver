@@ -1,0 +1,53 @@
+{
+  "About": "Race your car two laps to the finish, then pit stop",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBBRRRRRRRR",
+    "RRRRGGRGBBBBBBRR",
+    "RRRGGBRBGGRRRGBR",
+    "RRGGBRRRRRRRRRGR",
+    "RGGBRRRRRRRRRBGB",
+    "BGBRRRRRBGRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BGBRRRRRRRRRRRRB",
+    "RGGRRBRRRRRRRBGB",
+    "RRBBGGBRRRRRBGGR",
+    "RRRRRGGRRRRRGGRR",
+    "RRRRRRBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "87",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "741",
+  "Items": [
+    "####*****#######",
+    "###*****.******#",
+    "##****#********#",
+    "#****###.####***",
+    "****####.####***",
+    "***#####.*####**",
+    "**############**",
+    "***###########**",
+    "******#######***",
+    "#******#####****",
+    "####***********#",
+    "#####*********##"
+  ],
+  "Liked": "29",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "135",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-10T21:11:49.547",
+  "Title": "Grand Prix VIII"
+}

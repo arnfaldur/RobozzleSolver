@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRGGGGGRGGGGGRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBBGBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "38",
+  "DifficultyVoteSum": "113",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "387",
+  "Items": [
+    "################",
+    "##***********###",
+    "##***********###",
+    "##***********###",
+    "##***********###",
+    "##***********###",
+    "##*****.*****###",
+    "##***********###",
+    "##***********###",
+    "##***********###",
+    "##***********###",
+    "##***********###"
+  ],
+  "Liked": "34",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "162",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-28T22:17:01.423",
+  "Title": "Gift Wrapped"
+}

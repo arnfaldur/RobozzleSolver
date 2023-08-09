@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "BRGRGRGRGGRGGRGB",
+    "BRRGGRRGRGBRRBGB",
+    "BBBRBBGBGRGBBBGB",
+    "BGRBGGBGRRGGBBRB",
+    "BRGRRRGRGGBRGBGB",
+    "BBBBBGBGRGBGBBGB",
+    "BGRGBBGBGBGGGBGB",
+    "BRGRGRRGRGBBGBRB",
+    "BBBBGBBBGRGBGBBB",
+    "BRGGBRGGBGBGRGRB",
+    "BGRRGGGRGGBGGBGB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "67",
+  "DifficultyVoteSum": "169",
+  "Disliked": "12",
+  "Featured": "false",
+  "Id": "632",
+  "Items": [
+    "...............*",
+    ".............*..",
+    "...........*....",
+    "...*........*...",
+    "................",
+    "......*.....*...",
+    "................",
+    "................",
+    "...*.......*....",
+    "................",
+    ".............*..",
+    "................"
+  ],
+  "Liked": "36",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "145",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-01T09:45:44.907",
+  "Title": "maze"
+}

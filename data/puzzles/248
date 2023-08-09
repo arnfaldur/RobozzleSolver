@@ -1,0 +1,53 @@
+{
+  "About": "You come to a crossroads ...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRBRRR",
+    "RRRRRRRBRRRRGBRR",
+    "RRRRRRRBRRRRBRRR",
+    "RRRRRRRBRRRRGBBR",
+    "RRRRRRRBRRRRBRRR",
+    "RRRRRRRGBBBBGBBR",
+    "RRRRRRRBRRRRRRRR",
+    "RRBRBRRBRRRRRRRR",
+    "RRGBGBGGBBBRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "BRBRRRRRRRRRRRRR",
+    "BBGBBBRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "68",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "248",
+  "Items": [
+    "############*###",
+    "#######*####.*##",
+    "#######.####.###",
+    "#######.####..*#",
+    "#######.####.###",
+    "#######.......*#",
+    "#######.########",
+    "##*#*##.########",
+    "##........*#####",
+    "##.#############",
+    "*#.#############",
+    ".....*##########"
+  ],
+  "Liked": "20",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "60",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-31T17:03:58.267",
+  "Title": "Backtracking"
+}

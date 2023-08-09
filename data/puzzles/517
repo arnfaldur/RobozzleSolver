@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBGGGGGGGGGGBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBGBBBBBBBR",
+    "RBBRGBBBBBBBBBBR",
+    "RBBBRBBBBBBBBBBR",
+    "RBRBBBBBBBBBBGRR",
+    "RBBBBBBBRRRBRRRR",
+    "RBBBBRBBBGBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "31",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "517",
+  "Items": [
+    ".##############.",
+    "#..............#",
+    "#..............#",
+    "#.*............#",
+    "#.**..*..*.....#",
+    "#..............#",
+    "#.......*......#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    ".##############."
+  ],
+  "Liked": "3",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "37",
+  "SubLengths": [
+    "3",
+    "7",
+    "6",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "neohero",
+  "SubmittedDate": "2009-05-13T16:43:28.767",
+  "Title": "what did you learn so far?"
+}

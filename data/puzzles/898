@@ -1,0 +1,53 @@
+{
+  "About": "But what does it _mean_?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBRGBBBBBBRRRR",
+    "BRRRGRRRRRRRGRRR",
+    "BRRRBRRRBBBGRRRB",
+    "BRRRRRRBRRRRRRRG",
+    "BRRRRRRBRRRRRRRB",
+    "BRRBBBRRRRRBRRRB",
+    "GRBRRRRRRRRGRRRB",
+    "BRBRRRBBBBGRGBGR",
+    "BRRRRBRRRRRRRRRG",
+    "BBRRRBRRBBBRRRRB",
+    "BBRRRGRRRRRGRRRB",
+    "RBBBBRRRRBGRBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "56",
+  "DifficultyVoteSum": "144",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "898",
+  "Items": [
+    "*...*.......*###",
+    ".###.#######.##*",
+    ".###.##*....*##.",
+    ".###*##.#######.",
+    ".######.###*###.",
+    ".#*...**###.###.",
+    ".#.########.###.",
+    ".#.##*.....*...*",
+    ".**##.#########.",
+    "..###.#*...*###.",
+    "..###.#####.###.",
+    "*....*##*..*...*"
+  ],
+  "Liked": "48",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "217",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-26T11:09:04.093",
+  "Title": "Secret Code"
+}

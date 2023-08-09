@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGBBBBBBRRRRRRRR",
+    "BGBBBBBBRRRRRRRR",
+    "BGGGGGGGRRRRRRRR",
+    "BGBGBBBBRRRRRRRR",
+    "BBBGBGGGRRRRRRRR",
+    "GGGGBGBBRRRRRRRR",
+    "BGBGBGBBRRRRRRRR",
+    "BGBGBGBBRRRRRRRR",
+    "BGBGBGBBRRRRRRRR",
+    "BGBBBGBBRRRRRRRR",
+    "BGGGGGGGRRRRRRRR",
+    "BGBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "37",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "601",
+  "Items": [
+    "........######*#",
+    ".*......######*#",
+    ".***....####***#",
+    "...*....####*###",
+    "...*.******#*###",
+    ".***.*..##*#***#",
+    ".*...*..##*###*#",
+    ".*...*..##*###*#",
+    ".*...*..##*###*#",
+    ".*...*..##*###*#",
+    ".*****..##*****#",
+    "........########"
+  ],
+  "Liked": "14",
+  "RobotCol": "1",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "65",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-27T16:32:28.187",
+  "Title": "Symmetry - Don't Miss The Turn"
+}

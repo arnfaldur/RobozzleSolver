@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGGGRGGGRRR",
+    "RRRGGGRRRGRRRGRR",
+    "RRGRRRRBRRRBRGRR",
+    "RRGRBBBBBBBBRGRR",
+    "RRGRBBBBBBBBRGRR",
+    "RRGRRRRRRRBBRGRR",
+    "RRRGGGGGGRBBRGRR",
+    "RRRRBBBRRRRBRGRR",
+    "RRBBRRRBRRRBRGRR",
+    "RRBRRGRBBBBBRGRR",
+    "RRBRGGRRRRRRRGRR",
+    "RRBRGGGGGGGGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "929",
+  "DifficultyVoteSum": "2148",
+  "Disliked": "42",
+  "Featured": "true",
+  "Id": "17",
+  "Items": [
+    "######...#...###",
+    "###...***.***.##",
+    "##.****.***.*.##",
+    "##.*........*.##",
+    "##.*........*.##",
+    "##.*******..*.##",
+    "###......*..*.##",
+    "####...####.*.##",
+    "##..***.###.*.##",
+    "##.**.*.....*.##",
+    "##.*..*******.##",
+    "##...........###"
+  ],
+  "Liked": "780",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "6038",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:00.627",
+  "Title": "The star-studded path I"
+}

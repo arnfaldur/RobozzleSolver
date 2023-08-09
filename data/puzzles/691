@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBBBBR",
+    "RRBBBBBBBBRBBBBR",
+    "RRBBBBBBRBBBRBBR",
+    "RRBBBBBGBBRBBBBR",
+    "RRBBBBBRBBBBBRBR",
+    "RGBBBBBBRBBBBGBG",
+    "RGBBBBBBRGRBRBBG",
+    "RGBBBBBBGRRBBBBG",
+    "RGBBBBBBGBBBBGBG",
+    "RGBBBBBBBBBBBBBG",
+    "RGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "356",
+  "DifficultyVoteSum": "543",
+  "Disliked": "77",
+  "Featured": "false",
+  "Id": "691",
+  "Items": [
+    "#...............",
+    "#...............",
+    "#.........#.....",
+    "#.......#...#...",
+    "#...............",
+    "#......#*....#..",
+    "#...............",
+    "#.......#...#...",
+    "#.........#.....",
+    "#...............",
+    "#...............",
+    "#..............."
+  ],
+  "Liked": "265",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1375",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-06T07:03:27.203",
+  "Title": "hahaha"
+}

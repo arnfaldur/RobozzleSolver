@@ -1,0 +1,53 @@
+{
+  "About": "Don't complain because it's too easy",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBRRBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "30",
+  "DifficultyVoteSum": "32",
+  "Disliked": "24",
+  "Featured": "false",
+  "Id": "265",
+  "Items": [
+    "################",
+    "################",
+    "##....#.#.#.##.#",
+    "##.####.#.#..#.#",
+    "##....#.#.#.#..#",
+    "#####.#.#.#.##.#",
+    "#####.#.#.####.#",
+    "##.............#",
+    "###########.##.#",
+    "###########....#",
+    "##############.#",
+    "###########*...#"
+  ],
+  "Liked": "11",
+  "RobotCol": "5",
+  "RobotDir": "2",
+  "RobotRow": "2",
+  "Solutions": "91",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-03T05:39:06.093",
+  "Title": "Sung"
+}

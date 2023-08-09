@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBGBBBBBGBBB",
+    "BBBBBGBGBBBGBGBB",
+    "BBBBGBRBGBGBRBGB",
+    "BBBBBGBGBBBGBGBB",
+    "BBBBGBBBGBGBBBGB",
+    "BBBGBBRBBGBBRGBB",
+    "BBGBBBBRRRRRBBGB",
+    "BBBGBBBGBBBGBGBB",
+    "BBGBGBGBGBGBGBBB",
+    "BGBBBGBBBGBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "30",
+  "DifficultyVoteSum": "39",
+  "Disliked": "18",
+  "Featured": "false",
+  "Id": "568",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "..*.............",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "13",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "139",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-05-21T12:50:24.22",
+  "Title": "monster"
+}

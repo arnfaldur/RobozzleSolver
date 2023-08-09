@@ -1,0 +1,53 @@
+{
+  "About": "Green means go, red means no",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBRRBRGBRGBGRBRR",
+    "RRRRRRRGRRRRRGRR",
+    "RGRRRRRGRRGRRRRR",
+    "RBRRRRRBGRBRGBRR",
+    "RRRRRRRRRRGRRGRR",
+    "RGRRRRRGRRRRRRRR",
+    "RBRGBRGBGRBGGBRR",
+    "RRRRGRRGRRRRRGRR",
+    "RGRRRRRRRRRRRRRR",
+    "RBRGBGRBRRRRRBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "59",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "797",
+  "Items": [
+    "#*##*##*##*##*##",
+    "***************#",
+    "#*##*##*##*##*##",
+    "#*#####*##*##*##",
+    "***###*********#",
+    "#*#####*##*##*##",
+    "#*##*##*##*##*##",
+    "*******.*******#",
+    "#*##*##*##*##*##",
+    "#*##*##*#####*##",
+    "*********###***#",
+    "#*##*##*#####*##"
+  ],
+  "Liked": "19",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "65",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-18T11:29:33.157",
+  "Title": "Directed Graph Traversal"
+}

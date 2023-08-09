@@ -1,0 +1,53 @@
+{
+  "About": "I thought springs stored energy... oh wait... they do.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBR",
+    "GRRRRRRRRRRRRRRB",
+    "GRRRRRGGGGGGGRRB",
+    "GRRRRRGRRRRRGRRB",
+    "GRRRRRGRRRRRGRRB",
+    "GRRRRRRBBRRRGRRB",
+    "GRRRRRGRRBRRGRRB",
+    "GRRRRRGRRBRRGRRB",
+    "GGGGGGGBBRRRGRRB",
+    "RRRRRRRRRRRRGRRB",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "53",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "817",
+  "Items": [
+    "****************",
+    "*##############*",
+    "*#####*******##*",
+    "*#####*#####*##*",
+    "*#####*#####*##*",
+    "*#####****##*##*",
+    "*#####*##*##*##*",
+    "*#####*##*##*##*",
+    "**********##*##*",
+    "############*##*",
+    "###############*",
+    ".***************"
+  ],
+  "Liked": "15",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "67",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-20T06:03:24.017",
+  "Title": "Slinky"
+}

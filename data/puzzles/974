@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "38",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "974",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "########.#######",
+    "#######***######",
+    "######*****#####",
+    "#####*******####",
+    "####*********###",
+    "###***********##",
+    "##*************#",
+    "#***************"
+  ],
+  "Liked": "13",
+  "RobotCol": "8",
+  "RobotDir": "1",
+  "RobotRow": "4",
+  "Solutions": "36",
+  "SubLengths": [
+    "5",
+    "5",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-04T00:04:14.407",
+  "Title": "Pyramid"
+}

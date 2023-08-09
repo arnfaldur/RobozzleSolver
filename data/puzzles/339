@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "GGGGGGGGGGGGGGGR",
+    "BBBBBBGRRBBBBBBB",
+    "BGBBBBRRRBBBBBBB",
+    "BRBBBGRRRBBBBRBB",
+    "BRBGGRRRRBBBBRBB",
+    "GRBRRRRRRBBBBRBR",
+    "RRBRRRRRRBBRRRBR",
+    "RRGRRRRRRBRRRRBR",
+    "RRRRRRRRRBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "79",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "339",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "................",
+    ".......##*******",
+    "......###*******",
+    ".#....###****#**",
+    ".#...####****#**",
+    ".#.######****#*#",
+    "##.######**###*#",
+    "##.######*####*#",
+    "#########*######"
+  ],
+  "Liked": "22",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "74",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-04-14T04:03:42.453",
+  "Title": "complement mirror"
+}

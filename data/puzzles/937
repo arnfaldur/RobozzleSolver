@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRBBBBBGBBBBRBRB",
+    "BRBRRRRGRRRBRBRB",
+    "BRBRBBBGBBRBRBRB",
+    "BRBRBRRGRBRBRBRB",
+    "BRBRBRBGRBRBRBRB",
+    "GGGGGGGRGGGGGGGG",
+    "BRBRBRBGRBRBRBRB",
+    "BRBRBRBGBBRBRBRB",
+    "BRBRBRRGRRRBRBRB",
+    "BRBRBBBGBBBBRBRB",
+    "BRBRRRRGRRRRRBRB",
+    "BRBBBBBGBBBBBBRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "49",
+  "DifficultyVoteSum": "129",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "937",
+  "Items": [
+    ".#**********#*#.",
+    ".#*####.###*#*#.",
+    ".#*#******#*#*#.",
+    ".#*#*##.#*#*#*#.",
+    ".#*#*#**#*#*#*#.",
+    "..*.*.*..*.*.*..",
+    ".#*#*#*.#*#*#*#.",
+    ".#*#*#****#*#*#.",
+    ".#*#*##.###*#*#.",
+    ".#*#********#*#.",
+    ".#*####.#####*#.",
+    ".#************#."
+  ],
+  "Liked": "43",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "232",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-30T00:01:28.047",
+  "Title": "Simple Spiral"
+}

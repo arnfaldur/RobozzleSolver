@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "207",
+  "DifficultyVoteSum": "549",
+  "Disliked": "18",
+  "Featured": "true",
+  "Id": "21",
+  "Items": [
+    "########*#######",
+    "#######***######",
+    "######*#.#*#####",
+    "#####**...**####",
+    "######*#.#*#####",
+    "########.#######",
+    "######*#.#*#####",
+    "#####**...**####",
+    "######*#.#*#####",
+    "#######***######",
+    "########*#######",
+    "################"
+  ],
+  "Liked": "189",
+  "RobotCol": "8",
+  "RobotDir": "1",
+  "RobotRow": "5",
+  "Solutions": "1081",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:01.327",
+  "Title": "Strange shape"
+}

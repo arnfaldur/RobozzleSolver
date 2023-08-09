@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRGGRRRRR",
+    "RRRRRRRRGGGRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBBRBBBBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "35",
+  "DifficultyVoteSum": "99",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "950",
+  "Items": [
+    "#########..#####",
+    "########...#####",
+    "########***#####",
+    "########*.*#####",
+    "######*******###",
+    "######*.*.*.*###",
+    "######*.*****###",
+    "######..*.*.*###",
+    "######*******###",
+    "######*.*.*.*###",
+    "######***.***###",
+    "################"
+  ],
+  "Liked": "26",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "93",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-01T07:27:32.157",
+  "Title": "bottle"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGRRRRGGGGBB",
+    "RBBBBGRRGGBBBBRB",
+    "RRRRRBRRGRRRRRRB",
+    "GBRRRBBRGRGGGGRB",
+    "GBRRRRRGGRGRRRBB",
+    "GBRRRRRRRRGRRRRR",
+    "GBRRRRRBBRBGGGGG",
+    "GBRRRBBGBRBBBBBG",
+    "GBRRRBRGBRRRRRRB",
+    "RGGGGRRGBRRRRRRB",
+    "RRRRRRRGBGGGRRRB",
+    "RRRRRRRGGRRRBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "234",
+  "DifficultyVoteSum": "720",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "313",
+  "Items": [
+    "#.....#.........",
+    "#.***.#.*******.",
+    "####*.#.*#####*.",
+    ".*##*...*#*****.",
+    ".*##*****#*.....",
+    ".*########*.####",
+    ".*##*****#*.....",
+    ".*##*...*#*****.",
+    ".*##*.#.*#####*.",
+    ".****.#.*#####*.",
+    "......#.*******.",
+    "#######........."
+  ],
+  "Liked": "188",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "1022",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T17:58:01.267",
+  "Title": "Colorful Path"
+}

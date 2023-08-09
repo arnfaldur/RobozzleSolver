@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBBRGBR",
+    "RRRRRRRRRRRRRRBR",
+    "BRRGGBBBBBBBBBBR",
+    "BRRRRRRRRRRRRRRR",
+    "BBBBBBBBBRRRGGGB",
+    "RRRRRRRRRRRRRRRB",
+    "RRBRRRRGGGGBBBBB",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRGGGGGBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRGGGGGGBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "36",
+  "DifficultyVoteSum": "103",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "791",
+  "Items": [
+    "################",
+    "####........**.#",
+    "##############.#",
+    ".****..........#",
+    ".###############",
+    ".........******.",
+    "###############.",
+    "##.********.....",
+    "##.#############",
+    "##.**********.##",
+    "#############.##",
+    "************..##"
+  ],
+  "Liked": "30",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "155",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-17T21:55:44.187",
+  "Title": "Progressive Jackpot"
+}

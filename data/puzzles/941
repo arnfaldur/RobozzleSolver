@@ -1,0 +1,53 @@
+{
+  "About": "A hint for the technique to use to solve Chameleon Spiral.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGBBBBBBBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRGGGGGBBBBBRBR",
+    "RRRGRRRRRRRRBRBR",
+    "RRRGRGGGBBBRBRBR",
+    "RRRGRGRRRRBRBRBR",
+    "RRRGRGRGRRGRGRGR",
+    "RRRBRBRBBGGRGRGR",
+    "RRRBRBRRRRRRGRGR",
+    "RRRBRBBBBGGGGRGR",
+    "RRRBRRRRRRRRRRGR",
+    "RRRBBBBBBGGGGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "114",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "941",
+  "Items": [
+    "#..............#",
+    "##############.#",
+    "###..........#.#",
+    "###.########.#.#",
+    "###.#......#.#.#",
+    "###.#.####.#.#.#",
+    "###.#.#*##.#.#.#",
+    "###.#.#....#.#.#",
+    "###.#.######.#.#",
+    "###.#........#.#",
+    "###.##########.#",
+    "###............#"
+  ],
+  "Liked": "39",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "133",
+  "SubLengths": [
+    "5",
+    "2",
+    "2",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-30T15:26:03.093",
+  "Title": "Chameleon Spiral 2"
+}

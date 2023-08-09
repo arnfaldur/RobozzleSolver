@@ -1,0 +1,53 @@
+{
+  "About": "skip & return",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRGRRRGRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBBRBBRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBBRBBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRGRRRGRRRRRR",
+    "RRRRRBRRRBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "93",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "226",
+  "Items": [
+    "################",
+    "#####*###*######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####..#..######",
+    "#####.....######",
+    "#####..#..######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####.###.######",
+    "#####*###*######"
+  ],
+  "Liked": "25",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "97",
+  "SubLengths": [
+    "5",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-28T19:56:45.937",
+  "Title": "The Big \"H\""
+}

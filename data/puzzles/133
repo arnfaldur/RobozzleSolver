@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RBRRRBBBRBRRRBRR",
+    "RBBRBBBBBBBRBBBR",
+    "RBBBBBRBBBBBBBBR",
+    "RBBBBRRBBBRRBBBR",
+    "RBBRRRRRBRRRRBRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "63",
+  "DifficultyVoteSum": "189",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "133",
+  "Items": [
+    "################",
+    "#####...########",
+    "#..#..*....#...#",
+    "#....*.*.*...*.#",
+    "#.*.*.*........#",
+    "#.........**.*.#",
+    "#..**..........#",
+    "#.*.....*....*.#",
+    "#...###...##...#",
+    "#######.*.######",
+    "#######...######",
+    "################"
+  ],
+  "Liked": "46",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "167",
+  "SubLengths": [
+    "9",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "frfunny",
+  "SubmittedDate": "2009-03-13T06:41:45.923",
+  "Title": "Can you reach the stars only by F1 & F2?"
+}

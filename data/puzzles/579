@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGGGGGGGRR",
+    "RGRRBRRRRRBRRGRR",
+    "RGRRBRRRRRBRRGRR",
+    "RGBBRBBGBBRBBGRR",
+    "RGRRBRRBRRBRRGRR",
+    "RGBBRBBRBBRBBGRR",
+    "RGRRBRRBRRBRRGRR",
+    "RGBBRBBGBBRBBGRR",
+    "RGRRBRRRRRBRRGRR",
+    "RGRRBRRRRRBRRGRR",
+    "RGGGGGGGGGGGGGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "246",
+  "DifficultyVoteSum": "443",
+  "Disliked": "25",
+  "Featured": "false",
+  "Id": "579",
+  "Items": [
+    "#...*.....*...##",
+    "#.##.#####.##.##",
+    "#.##.#####.##.##",
+    "#*..*..*..*..*##",
+    "#.##.##.##.##.##",
+    "#*..*.....*..*##",
+    "#.##.##.##.##.##",
+    "#*..*..*..*..*##",
+    "#.##.#####.##.##",
+    "#.##.#####.##.##",
+    "#...*.....*...##",
+    "################"
+  ],
+  "Liked": "193",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "5",
+  "Solutions": "960",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-23T01:13:19.923",
+  "Title": "Green Borders"
+}

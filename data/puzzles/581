@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBRBBBBBBBBBBBRR",
+    "RBRBRRRRRRRRRBRR",
+    "RBRBRRBBBBBBRBRR",
+    "RBRBRBRRRRRBRBRR",
+    "RBRBRBRRBRRBRBRR",
+    "RBRBRBRGRBRBRBRR",
+    "RBRBRBRRRBRBRBRR",
+    "RBRBRRBBBRRBRBRR",
+    "RBRBRRRRRRRBRBRR",
+    "RBRBBBBBBBBBRBRR",
+    "RBRRRRRRRRRRRBRR",
+    "RBBBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "37",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "581",
+  "Items": [
+    "#*#...........##",
+    "#.#.#########.##",
+    "#.#.#.......#.##",
+    "#.#.#.#####.#.##",
+    "#.#.#.#...#.#.##",
+    "#.#.#.#.#.#.#.##",
+    "#.#.#.###.#.#.##",
+    "#.#.#.....#.#.##",
+    "#.#.#######.#.##",
+    "#.#.........#.##",
+    "#.###########.##",
+    "#.............##"
+  ],
+  "Liked": "9",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "35",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-23T15:42:40.983",
+  "Title": "Out of Paint"
+}

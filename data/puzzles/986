@@ -1,0 +1,53 @@
+{
+  "About": "First Green = start counting blue, second green = stop counting, etc.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGBBBBBBGBRRRRRR",
+    "RRRRRRRRRRRRRRRB",
+    "RGBBBBGBGGRRRRRG",
+    "GRRRRRRRRRRRRBRB",
+    "BRRGBGGBGBRRRGRB",
+    "GRBRRRRRRRRBRBRB",
+    "BRGRBRRRRRRBRBRG",
+    "GRBRRRGBBGBRRGRB",
+    "GRGRRRRRRRRRRRRB",
+    "GRRGGBBGBGBGGRRR",
+    "GRRRRRRRRRRRRRRR",
+    "RRRRBBGBGBGBBBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "53",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "986",
+  "Items": [
+    "..******........",
+    "###############.",
+    "..****........#.",
+    ".############.#*",
+    "*#..*..*....#.#*",
+    ".#.########.#*#*",
+    ".#.#*######.#*#.",
+    ".#*#...**...#.#.",
+    ".#.##########.#.",
+    ".#......*.....#.",
+    ".##############.",
+    ".......*...***.."
+  ],
+  "Liked": "15",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "70",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T16:30:23.547",
+  "Title": "Counting - Start / Stop"
+}

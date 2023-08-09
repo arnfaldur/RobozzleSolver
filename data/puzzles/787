@@ -1,0 +1,53 @@
+{
+  "About": "A rest after work",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBRBBBBBRR",
+    "RRRRBRRRRRRRRBRR",
+    "RRRRBRBBGRBBRBRR",
+    "RRRRBRBRRRRBRRRR",
+    "RRRRRRBRRRRRRBRR",
+    "RRRRBRRRRRRRRBRR",
+    "RRRRBRBRRRRRRBRR",
+    "RRRRBRBBBBRBBBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "93",
+  "DifficultyVoteSum": "194",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "787",
+  "Items": [
+    "################",
+    "################",
+    "####..........##",
+    "####.########.##",
+    "####.#......#.##",
+    "####.#.####*#.##",
+    "####.#.######.##",
+    "####.#.######.##",
+    "####.#.######.##",
+    "####.#........##",
+    "################",
+    "################"
+  ],
+  "Liked": "80",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "552",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jedistef",
+  "SubmittedDate": "2009-06-17T09:00:41.267",
+  "Title": "Piece of cake"
+}

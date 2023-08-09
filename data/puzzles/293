@@ -1,0 +1,53 @@
+{
+  "About": "Turn which way? on what color?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRRBRBRGRRBRBRRB",
+    "RRRRRRRRRRRRRRRR",
+    "BRRGRBRGRRGRGRRR",
+    "RRRBRRRRBRBRBRRG",
+    "RRRRBBBBRRBRBRRR",
+    "RRRRRRRRRRRBRRRR",
+    "BRGRRRRRRRRRRRRG",
+    "RRRBRRBBBBBGBRRR",
+    "BGBRRBRRRRRRRBRR",
+    "RRRRRRGRBRBGBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRBRBRRGRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "46",
+  "DifficultyVoteSum": "145",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "293",
+  "Items": [
+    ".***#******#****",
+    "###*#*####*#*##*",
+    "**#*#****#*#*##*",
+    "*##*####*#*#*##*",
+    "*##******#*#*##*",
+    "*#########***##*",
+    "****###########*",
+    "###*#*********#*",
+    "****#*#######*#*",
+    "*####****#****#*",
+    "*#######*#*####*",
+    "*********#******"
+  ],
+  "Liked": "43",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "191",
+  "SubLengths": [
+    "7",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-05T02:59:21.36",
+  "Title": "Multiple Personalities"
+}

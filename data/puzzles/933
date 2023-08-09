@@ -1,0 +1,53 @@
+{
+  "About": "A new start position, but fewer commands.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRGBBBBBBBGRBRR",
+    "RRRBRRRRRRRBRBRR",
+    "RRRBRGBBBGRBRBRR",
+    "RRRBRBRRRBRBRBRR",
+    "RRRBRBRBRBRBRBRR",
+    "RRRBRBRBBGRBRBRR",
+    "RRRBRBRRRRRBRBRR",
+    "RRRBRGBBBBBGRBRR",
+    "RRRBRRRRRRRRRBRR",
+    "RRRBBBBBBBBBBGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "45",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "933",
+  "Items": [
+    "#.............##",
+    "#############.##",
+    "###.........#.##",
+    "###.#######.#.##",
+    "###.#.....#.#.##",
+    "###.#.###.#.#.##",
+    "###.#.#*#.#.#.##",
+    "###.#.#...#.#.##",
+    "###.#.#####.#.##",
+    "###.#.......#.##",
+    "###.#########.##",
+    "###...........##"
+  ],
+  "Liked": "9",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "83",
+  "SubLengths": [
+    "2",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-29T15:05:35.313",
+  "Title": "Unmarked Turn Spiral 3"
+}

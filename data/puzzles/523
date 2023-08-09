@@ -1,0 +1,53 @@
+{
+  "About": "Red, green or blue - find out what cha gonna do",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRGRGRGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRBRBRBGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRGRGRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "332",
+  "DifficultyVoteSum": "571",
+  "Disliked": "55",
+  "Featured": "false",
+  "Id": "523",
+  "Items": [
+    "################",
+    "#########*#*#*##",
+    "#########.#.#.##",
+    "#########.#.#.##",
+    "#########.#.#.##",
+    "#########.#.#.##",
+    "#######.......*#",
+    "#########.#.#.##",
+    "#########.#.#.##",
+    "#########.#.#.##",
+    "#########.#.#.##",
+    "#########*#*#*##"
+  ],
+  "Liked": "248",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "1365",
+  "SubLengths": [
+    "3",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "stufi04",
+  "SubmittedDate": "2009-05-14T15:14:32.97",
+  "Title": "Six-way"
+}

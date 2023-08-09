@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBBBBBBG",
+    "RBBBBBBBBBBBBBGR",
+    "RBBBBBBBBBBBBGRR",
+    "RBBBBBBBBBBBGRRR",
+    "RBBBBBBBBBBGRRRR",
+    "RBBBBBBBBBGRRRRR",
+    "RBBBBBBBBGRRRRRR",
+    "RBBBBBBBGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "121",
+  "DifficultyVoteSum": "318",
+  "Disliked": "19",
+  "Featured": "false",
+  "Id": "92",
+  "Items": [
+    "...............*",
+    "................",
+    "................",
+    "................",
+    "................",
+    "...............#",
+    "..............##",
+    ".............###",
+    "............####",
+    "...........#####",
+    "..........######",
+    ".........#######"
+  ],
+  "Liked": "83",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "623",
+  "SubLengths": [
+    "3",
+    "2",
+    "6",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-04T14:04:00.563",
+  "Title": "king's way"
+}

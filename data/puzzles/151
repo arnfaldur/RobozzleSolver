@@ -1,0 +1,53 @@
+{
+  "About": "Upsides and Downsides",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRGRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRGRRRRBRRRR",
+    "RRRRRRBRGRRBGRRR",
+    "RRRRRRBRBRRBBRRR",
+    "BBRRBRGBGRBGGBRB",
+    "RRBBRBRRRBRRRRBR",
+    "RRRBRBRRRRRRRRBR",
+    "RRRBRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "461",
+  "DifficultyVoteSum": "1189",
+  "Disliked": "15",
+  "Featured": "false",
+  "Id": "151",
+  "Items": [
+    "###########*####",
+    "###########.####",
+    "######*####.####",
+    "######.#*##.*###",
+    "######.#.##..###",
+    "...............*",
+    "##..#.###.####.#",
+    "##*.#.###*####.#",
+    "###.#*########.#",
+    "###*##########.#",
+    "##############.#",
+    "##############*#"
+  ],
+  "Liked": "390",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "3018",
+  "SubLengths": [
+    "8",
+    "7",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-17T14:19:00.687",
+  "Title": "Graph"
+}

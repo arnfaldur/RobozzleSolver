@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGRGRBRBRBGRR",
+    "RRRRRBRBRBRBRBRR",
+    "RRRRGRBRBRBRBGRR",
+    "RRRRRBRBRBRBRBRR",
+    "RRRRBRBRBRBRBRRR",
+    "RRRRGBRBRBRBRBRR",
+    "RRRRBRBRBRBRBGRR",
+    "RRRRRBRBRBRBRBRR",
+    "RRRRBRBRBRBRBRRR",
+    "RRRRRBRBRBRBRBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "36",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "531",
+  "Items": [
+    "################",
+    "####..........##",
+    "####*..*...*..##",
+    "####..........##",
+    "####........*.##",
+    "####.*........##",
+    "####..........##",
+    "####*...*.....##",
+    "####.......*..##",
+    "####......*...##",
+    "####..........##",
+    "################"
+  ],
+  "Liked": "3",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "47",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T07:23:08.063",
+  "Title": "Crazy Checkers"
+}

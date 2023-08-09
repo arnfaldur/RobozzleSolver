@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBRBBBBBBBRBR",
+    "RRRRBBRBBBBBRBBR",
+    "RRRRBBBRBBBRBBBR",
+    "RRRRBBBBRBRBBBBR",
+    "RRRRBBBBBRBBBBBR",
+    "RRRRBBBBRBRBBBBR",
+    "RRRRBBBRBBBRBBBR",
+    "RRRRBBRBBBBBRBBR",
+    "RRRRBRBBBBBBBRBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "56",
+  "DifficultyVoteSum": "74",
+  "Disliked": "24",
+  "Featured": "false",
+  "Id": "764",
+  "Items": [
+    "####*.........*#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####*.........*#",
+    "################"
+  ],
+  "Liked": "38",
+  "RobotCol": "9",
+  "RobotDir": "1",
+  "RobotRow": "5",
+  "Solutions": "233",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-14T10:33:29.577",
+  "Title": "big red X 2"
+}

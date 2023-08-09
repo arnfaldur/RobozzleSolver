@@ -1,0 +1,53 @@
+{
+  "About": "Spin!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRRBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRRBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "58",
+  "DifficultyVoteSum": "145",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "290",
+  "Items": [
+    "################",
+    "#####.****.#####",
+    "#####*####*#####",
+    "#####*####*#####",
+    "#####*#.*#*#####",
+    "#####*#.##*#####",
+    "#####*#.##......",
+    "#####*#....#####",
+    "#####*####*#####",
+    "#####*####*#####",
+    "#####*####*#####",
+    "#####.****.#####"
+  ],
+  "Liked": "37",
+  "RobotCol": "15",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "231",
+  "SubLengths": [
+    "6",
+    "6",
+    "2",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-04T23:57:49.267",
+  "Title": "Spinning Madness Part2"
+}

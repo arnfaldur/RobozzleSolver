@@ -1,0 +1,53 @@
+{
+  "About": "How inefficient!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBRRRRRRRRRRRR",
+    "RRBRBRRRRRBRRRRR",
+    "RRBRBRRRRRRBRRRR",
+    "RRRRBRRRBRRBRRBR",
+    "RBRRBRRRBRRBRBRB",
+    "RBRRBRRRRRRBRBRB",
+    "BRRRBRRBRRRBRBRR",
+    "RRRRRRRBRRRBRBRR",
+    "RRRRRBRBRRRRBRRR",
+    "RRRRRBRBRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "131",
+  "DifficultyVoteSum": "374",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "65",
+  "Items": [
+    "##...###########",
+    "##.#.####...####",
+    "##.#.###..#.####",
+    "#..#.###.##.#...",
+    "#.##.###.##.#.#.",
+    "#.##.##..##.#.#*",
+    "..##.##.###.#.##",
+    "####..#.###.#.##",
+    "#####.#.###...##",
+    "#####.#.########",
+    "#####...########",
+    "################"
+  ],
+  "Liked": "130",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "650",
+  "SubLengths": [
+    "2",
+    "2",
+    "2",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-02-27T01:29:49.89",
+  "Title": "Continuations"
+}

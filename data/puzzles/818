@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBBBBBBBBBBBBGBR",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRBBG",
+    "BRRRRRRRRRRRRBRR",
+    "BRRRRRRRRRRRRBBG",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRBBG",
+    "BRRRRRRRRRRRRBRR",
+    "BRRRRRRRRRRRRBBG",
+    "BRRRRRRRRRRRRRRB",
+    "GBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "82",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "818",
+  "Items": [
+    "################",
+    "****************",
+    "*##############*",
+    "*############***",
+    "*##.##.#...##*##",
+    "*#.#.###.#.##***",
+    "*#...#.#...####*",
+    "*#.#.#.#.#.##***",
+    "*#.#.#.#.##.#*##",
+    "*############***",
+    "*##############*",
+    "**.*************"
+  ],
+  "Liked": "18",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "117",
+  "SubLengths": [
+    "2",
+    "7",
+    "3",
+    "4",
+    "3"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-20T08:02:11.127",
+  "Title": "AIR Rocket"
+}

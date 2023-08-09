@@ -1,0 +1,53 @@
+{
+  "About": "Similar to Battery2 with right on red once and recharging as needed.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "BBBBBGBBBBBRRRRR",
+    "GRGGBBBBBBBBBBBR",
+    "BBBBBBBRBBBBBGBB",
+    "RRBBBRBBRRBRBRGB",
+    "RBBRGRRBBBBBRBBB",
+    "BRBBBBGBBBRBBBBB",
+    "BRBBBBBBRBBBGBBB",
+    "BBBRBBRBBGRBRGRB",
+    "GBBRBBRBBBRBRBRG",
+    "BGBBBRBBGBBRRBRB",
+    "BBBRRRRRRRRBGBRB",
+    "RRRRRRRRRRRRRBGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "55",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "769",
+  "Items": [
+    "***************#",
+    "*#*************#",
+    "****************",
+    "##***#**##***#**",
+    "#***************",
+    "****************",
+    "*#**************",
+    "******#***#*#*#*",
+    "***#********#*#*",
+    "************#*#*",
+    "****#*********#*",
+    "**.*************"
+  ],
+  "Liked": "14",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "51",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-14T19:27:52.687",
+  "Title": "Batteries Plus Paint"
+}

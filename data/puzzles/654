@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGBBBGRRRRRRRRR",
+    "RRGBBBBBGRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGBGRRRRRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGBBBBBBBBGRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGBBBBBBBBBBBBB",
+    "RRGBBBBBBBBBBGRR",
+    "RRGBBBBBBBGRRRRR",
+    "RRGBBBBBBBBBGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "118",
+  "DifficultyVoteSum": "430",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "654",
+  "Items": [
+    "##*#############",
+    "##.****#########",
+    "##*******#######",
+    "##*#############",
+    "##***###########",
+    "##*#############",
+    "##**********####",
+    "##*#############",
+    "##**************",
+    "##************##",
+    "##*********#####",
+    "##***********###"
+  ],
+  "Liked": "131",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "984",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-04T00:49:38.733",
+  "Title": "Linked List"
+}

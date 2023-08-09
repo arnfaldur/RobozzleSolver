@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1575",
+  "DifficultyVoteSum": "4028",
+  "Disliked": "52",
+  "Featured": "false",
+  "Id": "615",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "...............*",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1385",
+  "RobotCol": "6",
+  "RobotDir": "2",
+  "RobotRow": "5",
+  "Solutions": "15106",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-30T11:20:46.36",
+  "Title": "Turn around"
+}

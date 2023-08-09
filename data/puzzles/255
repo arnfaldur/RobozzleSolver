@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRBBBBRRRRRRRRR",
+    "RRRBBBBBRRRRRRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBBRRBBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "15",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "255",
+  "Items": [
+    "###**###########",
+    "###***##########",
+    "###****#########",
+    "###*****########",
+    "####*********###",
+    "####*********###",
+    "#**************#",
+    "#******.*******#",
+    "##************##",
+    "###**********###",
+    "###*********####",
+    "###**##**#######"
+  ],
+  "Liked": "1",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "6",
+  "SubLengths": [
+    "7",
+    "7",
+    "2",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "bofh",
+  "SubmittedDate": "2009-04-02T03:58:30.11",
+  "Title": "Ant III"
+}

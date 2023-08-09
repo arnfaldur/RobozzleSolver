@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGGGRRRRR",
+    "RRRRRRRRGRGRRRRR",
+    "RRRRRRRRGRGRGGGR",
+    "RRRRRRRRGRGRGRGR",
+    "GGGRRRRRGRGRGRGR",
+    "GRGRRRRRRRGRGRGR",
+    "GRGRGGGRRRGRRRGR",
+    "RRGRGRGRRRGRRRGR",
+    "RRGRRRGRRRGRRRGR",
+    "RRGRRRGRRRGRRRGR",
+    "GRGGGRGGGRGGGRGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "56",
+  "DifficultyVoteSum": "255",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "257",
+  "Items": [
+    "################",
+    "########...#####",
+    "########.#.#####",
+    "########.#.#...#",
+    "########.#.#.#.#",
+    "...#####.#.#.#.#",
+    ".#.#####.#.#.#.#",
+    ".#.#...#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#.#.#.#.#.#.#.#",
+    ".#...#...#...#.*"
+  ],
+  "Liked": "60",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "358",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-02T05:50:12.627",
+  "Title": "Winding Path"
+}

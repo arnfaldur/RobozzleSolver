@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RGGGGBBRBBGGGGGR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "112",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "260",
+  "Items": [
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "####.......#####",
+    "####...*.*.#####",
+    "####..*.*..#####",
+    "*....*.*.*.....*",
+    "####..*.*..#####",
+    "####.*.*.*.#####",
+    "####.......#####",
+    "#######.########",
+    "#######*########"
+  ],
+  "Liked": "35",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "220",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-04-02T22:50:19.22",
+  "Title": "crosshairs"
+}

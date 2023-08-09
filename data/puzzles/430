@@ -1,0 +1,53 @@
+{
+  "About": "Where is the pattern?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "BRBRRBBRRRRRRRRR",
+    "RGBRBRRBRRRRRRRR",
+    "RGRBGRBRRRRRRRRR",
+    "BRGRRRGRRRRRRRRR",
+    "BBBRGGGRRRRRRRRR",
+    "BRBBRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "38",
+  "DifficultyVoteSum": "104",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "430",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "***#############",
+    "*#*#****########",
+    "********########",
+    "********########",
+    "*******#########",
+    "***#***#########",
+    "*******#########",
+    ".###############"
+  ],
+  "Liked": "22",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "86",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "h4x012",
+  "SubmittedDate": "2009-05-03T12:33:15.767",
+  "Title": "rAnDoM"
+}

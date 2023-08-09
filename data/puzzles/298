@@ -1,0 +1,53 @@
+{
+  "About": "Random solution",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRBBRBBBRBBBBG",
+    "RRRRRRRRRRGBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "57",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "298",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "##.*..*...*....*",
+    "##########*....*",
+    "###########.####",
+    "###########.####",
+    "###########.####",
+    "###########*####"
+  ],
+  "Liked": "8",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "72",
+  "SubLengths": [
+    "7",
+    "3",
+    "2",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-05T05:40:49.453",
+  "Title": "Eeek"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBBBBB",
+    "RRRRRRRRRRRBRRRB",
+    "RRRRRRRRRRRBRBRB",
+    "RRRRRRRRRRRBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "BGGGGGGGGGGGGGGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "23",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "998",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "###########.....",
+    "###########.###.",
+    "###########.#*#.",
+    "###########...#.",
+    "###############.",
+    "................"
+  ],
+  "Liked": "6",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "89",
+  "SubLengths": [
+    "10",
+    "4",
+    "6",
+    "5",
+    "3"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-06T09:43:04.297",
+  "Title": "second kind of memory 2"
+}

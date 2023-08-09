@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "43",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "323",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######**#######",
+    "#######**#######",
+    "#####******#####",
+    "#####**.***#####",
+    "#####******#####",
+    "#####******#####",
+    "#######**#######",
+    "#######**#######",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "36",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "troc",
+  "SubmittedDate": "2009-04-08T16:20:40.047",
+  "Title": "Red Bean"
+}

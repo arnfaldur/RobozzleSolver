@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBBBBBBBRRR",
+    "RBRRRRRRRRRRBRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "873",
+  "DifficultyVoteSum": "1999",
+  "Disliked": "43",
+  "Featured": "false",
+  "Id": "330",
+  "Items": [
+    "#............###",
+    "#.##########*###",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############",
+    "#.##############"
+  ],
+  "Liked": "660",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "9316",
+  "SubLengths": [
+    "3",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-09T07:33:13.813",
+  "Title": "Learning Stack"
+}

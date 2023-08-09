@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGBBBBBBGRRR",
+    "RRRRRBRRRRRRBRRR",
+    "RRRRRBRRRRRRBRRR",
+    "RRRRRBRBBBBBGRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRBRGRGRRRRRRRR",
+    "RRRBRRBRRRRRRRRR",
+    "RRRGBBGRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4161",
+  "DifficultyVoteSum": "10743",
+  "Disliked": "199",
+  "Featured": "false",
+  "Id": "644",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####........###",
+    "#####.######.###",
+    "#####.######.###",
+    "#####.#......###",
+    "#####.##########",
+    "###*#...########",
+    "###.##.#########",
+    "###....#########",
+    "################"
+  ],
+  "Liked": "4230",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "59680",
+  "SubLengths": [
+    "5",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sarsdp",
+  "SubmittedDate": "2009-06-03T18:59:04.517",
+  "Title": "Right on red"
+}

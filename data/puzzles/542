@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRGGRGBBBBGRRRR",
+    "RRGBGRBRRRGBGRRR",
+    "RRBGGRBGGRGGGRRR",
+    "RRBRRRGBGRRRRRRR",
+    "RRBRGGRBRGBBGRRR",
+    "RRBRGBBRBBGRBRRR",
+    "RRGBBGRBRGGRBRRR",
+    "RRRRRRGBGRRRBRRR",
+    "RRGGGRGGBRGGBRRR",
+    "RRGBGRRRBRGBGRRR",
+    "RRRGBBBBGRGGRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "75",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "542",
+  "Items": [
+    "###**#.....*####",
+    "##*.*#.###*.*###",
+    "##.**#...#***###",
+    "##.###...#######",
+    "##.#..#.#....###",
+    "##.#.......#.###",
+    "##....#.#..#.###",
+    "######...###.###",
+    "##***#...#**.###",
+    "##*.*###.#*.*###",
+    "###*.....#**####",
+    "################"
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "63",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-17T02:39:32.953",
+  "Title": "Vortex"
+}

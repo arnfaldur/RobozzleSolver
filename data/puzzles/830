@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRRRRRRRGRRRGRRR",
+    "BRRRRRRRBRRRBRRR",
+    "BRGRRRGRBRRRBRGR",
+    "BRBRRRBRBRRRBRBR",
+    "BRBRGRBRBRGRBRBR",
+    "GGGGGGGGGGGGGGGG",
+    "RGRBRBRBRGRBRBRG",
+    "RRRBRBRBRRRBRBRR",
+    "RRRGRBRGRRRGRBRR",
+    "RRRRRBRRRRRRRBRR",
+    "RRRRRGRRRRRRRGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "77",
+  "DifficultyVoteSum": "173",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "830",
+  "Items": [
+    "*#######*###*###",
+    ".#######.###.###",
+    ".#*###*#.###.#*#",
+    ".#.###.#.###.#.#",
+    ".#.#*#.#.#*#.#.#",
+    ".***************",
+    "#*#.#.#.#*#.#.#*",
+    "###.#.#.###.#.##",
+    "###*#.#*###*#.##",
+    "#####.#######.##",
+    "#####*#######*##",
+    "################"
+  ],
+  "Liked": "56",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "507",
+  "SubLengths": [
+    "3",
+    "4",
+    "4",
+    "5",
+    "2"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-21T11:18:59.593",
+  "Title": "Wave"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBRRRR",
+    "BRBBBBBGGGGBRRRR",
+    "BBRBBBBGGGGBRRRR",
+    "BBBRBBBGGGGBRRRR",
+    "BBBBRBBGGGGBRRRR",
+    "BBBBBRBBBBBBRRRR",
+    "BBBBBBRBBBBBRRRR",
+    "BGGGGBBRBBBBRRRR",
+    "BGGGGBBBRBBBRRRR",
+    "BGGGGBBBBRBBRRRR",
+    "BGGGGBBBBBRBRRRR",
+    "BBBBBBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "62",
+  "DifficultyVoteSum": "148",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "761",
+  "Items": [
+    "***********.####",
+    "************####",
+    "**********.*####",
+    "**********.*####",
+    "**********.*####",
+    "**********.*####",
+    "**********.*####",
+    "**********.*####",
+    "**********.*####",
+    "**********.*####",
+    "*..........*####",
+    "************####"
+  ],
+  "Liked": "49",
+  "RobotCol": "11",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "319",
+  "SubLengths": [
+    "7",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-14T05:36:26.423",
+  "Title": "mirror percent"
+}

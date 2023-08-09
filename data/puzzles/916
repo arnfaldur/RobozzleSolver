@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "33",
+  "DifficultyVoteSum": "91",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "916",
+  "Items": [
+    "#########*######",
+    "#########.######",
+    "######*...######",
+    "#######.#.######",
+    "#######.#.######",
+    "#######.#*######",
+    "##*.........*###",
+    "#######.#.######",
+    "#######...*#####",
+    "#######.########",
+    "#######.########",
+    "#######*########"
+  ],
+  "Liked": "31",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "103",
+  "SubLengths": [
+    "3",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-27T21:58:39",
+  "Title": "Ternion"
+}

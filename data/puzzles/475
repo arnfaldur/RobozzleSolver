@@ -1,0 +1,53 @@
+{
+  "About": "By the time you've collected one star you should be nearly there...",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRBBRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRBBRBGRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRGBBGRRR",
+    "RRRRRRRRRGGRBRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RRRRRRRRRBBBGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "54",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "475",
+  "Items": [
+    "################",
+    "####...*########",
+    "####.###########",
+    "####.#..########",
+    "####....########",
+    "######.#########",
+    "######.....#####",
+    "##########.#####",
+    "#########....###",
+    "#########..#.###",
+    "############.###",
+    "#########*...###"
+  ],
+  "Liked": "18",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "56",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "fatbuddha",
+  "SubmittedDate": "2009-05-08T06:58:27.89",
+  "Title": "Two Stars"
+}

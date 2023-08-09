@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGBBBBBBBBR",
+    "RRRRRRGRBRRBRRRR",
+    "RRRRRRGRBRGBRRRR",
+    "RRRRRRRRBRBBRRRR",
+    "RRRRRRRRRRBBBRRR",
+    "RRRRRRGGBBBBBGRR",
+    "RRRRRRGGGRBBGGRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "41",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "582",
+  "Items": [
+    "######**.*.*..*#",
+    "######.#*##.##.#",
+    "######.#.**....#",
+    "######*.*...##.#",
+    "######......**.#",
+    "######......*..#",
+    "######......***#",
+    "#######*..*.##.#",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "21",
+  "SubLengths": [
+    "8",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "vparot",
+  "SubmittedDate": "2009-05-23T20:34:53.78",
+  "Title": "Addi(c)tive Trip"
+}

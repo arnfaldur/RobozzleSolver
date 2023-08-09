@@ -1,0 +1,53 @@
+{
+  "About": "Easy if you think about it",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "30",
+  "DifficultyVoteSum": "35",
+  "Disliked": "19",
+  "Featured": "false",
+  "Id": "452",
+  "Items": [
+    "................",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "................"
+  ],
+  "Liked": "13",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "91",
+  "SubLengths": [
+    "5",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wilbert",
+  "SubmittedDate": "2009-05-05T10:36:28.483",
+  "Title": "Mommy's new shirt"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "S.P.T. to A.P.W.B.D.      Dark Lord and (?) Harry Potter",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRGGBBGGRRRRR",
+    "RRRRGGBGGBGGRRRR",
+    "RRRGGGGGGBGGGRRR",
+    "RRRGGGGBBGGGGRRR",
+    "RRRGGGGRGGGGGRRR",
+    "RRRRGGGGGGGGRRRR",
+    "RRRRRGGBGGGRRRRR",
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRBRRRRBRRRRR",
+    "RRRRBRRRRRRBRRRR",
+    "RRRBRRRRRRRRBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "64",
+  "DifficultyVoteSum": "168",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "386",
+  "Items": [
+    "######....######",
+    "#####...*..#####",
+    "####........####",
+    "###......*...###",
+    "###....*.....###",
+    "###..........###",
+    "####........####",
+    "#####..*...#####",
+    "######....######",
+    "#####.....*#####",
+    "####.......*####",
+    "###.........*###"
+  ],
+  "Liked": "41",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "180",
+  "SubLengths": [
+    "5",
+    "4",
+    "6",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "traditore",
+  "SubmittedDate": "2009-04-28T18:42:38.89",
+  "Title": "The Lost Prophecy"
+}

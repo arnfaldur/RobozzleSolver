@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBGBGBBBRRRRR",
+    "BRRRRRRRRRRGRBRR",
+    "BRRGBGBGBRRBRRGR",
+    "BRBRRRRRRGRGRRBR",
+    "GRBRRRRRRBRBRRGR",
+    "BRBRRRRRRBRGRRBR",
+    "GRGRRRRBGRRBRRBR",
+    "BRBRRRRRRRRBRRBR",
+    "BRGRRRRRRRRBRGGR",
+    "BRRBBBGBBBGRRBRR",
+    "BRRRRRRRRRRRRBRR",
+    "RBBBGBBBGBBBGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "39",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "464",
+  "Items": [
+    "************####",
+    "*##########*#**#",
+    "*#********#*##*#",
+    "*#*######*#*##*#",
+    "*#*######*#*##*#",
+    "*#*######*#*##*#",
+    "*#*####.**#*##*#",
+    "*#*########*##*#",
+    "*#*########*#**#",
+    "*#**********#*##",
+    "*############*##",
+    "**************##"
+  ],
+  "Liked": "6",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "42",
+  "SubLengths": [
+    "2",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-05-06T15:15:29.39",
+  "Title": "Red Herring"
+}

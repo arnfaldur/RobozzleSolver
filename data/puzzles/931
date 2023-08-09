@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRGBBBBBBBGRBRR",
+    "RRRBRRRRRRRBRBRR",
+    "RRRBRGBBBGRBRBRR",
+    "RRRBRBRRRBRBRBRR",
+    "RRRBRBRBRBRBRBRR",
+    "RRRBRBRBBGRBRBRR",
+    "RRRBRBRRRRRBRBRR",
+    "RRRBRGBBBBBGRBRR",
+    "RRRBRRRRRRRRRBRR",
+    "RRRBBBBBBBBBBGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "68",
+  "DifficultyVoteSum": "155",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "931",
+  "Items": [
+    "#.............##",
+    "#############.##",
+    "###.........#.##",
+    "###.#######.#.##",
+    "###.#.....#.#.##",
+    "###.#.###.#.#.##",
+    "###.#.#*#.#.#.##",
+    "###.#.#...#.#.##",
+    "###.#.#####.#.##",
+    "###.#.......#.##",
+    "###.#########.##",
+    "###...........##"
+  ],
+  "Liked": "62",
+  "RobotCol": "13",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "383",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-29T14:59:07.203",
+  "Title": "Unmarked Turn Spiral 1"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Yet another simple painting pattern",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "99",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "284",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "*.*.*.*..*.*.*.*",
+    "*.*.*.*..*.*.*.*",
+    "*.*.*.*..*.*.*.*",
+    "*.*.*.*..*.*.*.*",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "18",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "94",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "life96",
+  "SubmittedDate": "2009-04-04T06:46:44.47",
+  "Title": "Flood fill again"
+}

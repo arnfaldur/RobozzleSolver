@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRGGGGGGGGGRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "BRRRRRRBRRRRRRBR",
+    "BRRRRRRBRRRRRRBR",
+    "BRRRRRRBRRRRRRBR",
+    "BRRRRRRBRRRRRRBR",
+    "BRRRRRRBRRRRRRBR",
+    "BRRRRRRBRRRRRRBR",
+    "BRRRRRRBRRRRRRBR",
+    "BGGGGGGGGGGGGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "52",
+  "DifficultyVoteSum": "140",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "441",
+  "Items": [
+    "###*.......*####",
+    "##*.###.###.*###",
+    "#*.####.####.*##",
+    "*.#####.#####.*#",
+    ".######.######.#",
+    ".######.######.#",
+    ".###.......###.#",
+    ".##..##.##..##.#",
+    ".#..###.###..#.#",
+    "...####.####...#",
+    "..#####.#####..#",
+    ".*.*.*.*.*.*.*.#"
+  ],
+  "Liked": "32",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "151",
+  "SubLengths": [
+    "5",
+    "5",
+    "6",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "dance4life51",
+  "SubmittedDate": "2009-05-04T10:00:46.86",
+  "Title": "Peace"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Seriously, just guess.",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBRRBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBRBRRR",
+    "RRRBRBBBBBBRBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBRRBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4",
+  "DifficultyVoteSum": "18",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "949",
+  "Items": [
+    "######****######",
+    "######*##*######",
+    "######****######",
+    "###**********###",
+    "###********#*###",
+    "###*#******#*###",
+    "###****.*****###",
+    "######****######",
+    "######*##*######",
+    "######****######",
+    "################",
+    "################"
+  ],
+  "Liked": "1",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "10",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dooey100",
+  "SubmittedDate": "2009-07-01T06:03:38.687",
+  "Title": "Guess The Solution"
+}

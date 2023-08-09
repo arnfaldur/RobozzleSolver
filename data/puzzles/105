@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRGR",
+    "RBRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5122",
+  "DifficultyVoteSum": "8087",
+  "Disliked": "426",
+  "Featured": "false",
+  "Id": "105",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#..............#",
+    "#.############*#",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "4497",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "4",
+  "Solutions": "64263",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jacob_c",
+  "SubmittedDate": "2009-03-07T16:54:07.39",
+  "Title": "zipline"
+}

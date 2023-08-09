@@ -1,0 +1,53 @@
+{
+  "About": "but above the lake is the harsh vacuum of space",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "GBBBBBBBBBBBBBBG",
+    "RGGBBGBBBBBBBBBG",
+    "RGBBGRGGBBBBBBGR",
+    "GBBGRRRGGGGBBBGR",
+    "GBBGGRGBBBGBBBGR",
+    "GBBBBGGBBBGBBBGR",
+    "GBBBGGRGGBGGBBGR",
+    "RGBBBBGGGBGRGBGR",
+    "RRGBBBBBBBGGBBGR",
+    "RRRGGGGGGGRRGGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "39",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "813",
+  "Items": [
+    "################",
+    "################",
+    "..*************.",
+    "#..**.*********.",
+    "#.**.#..******.#",
+    ".**.###....***.#",
+    ".**..#.***.***.#",
+    ".****..***.***.#",
+    ".***..#..*..**.#",
+    "#.****...*.#.*.#",
+    "##.*******..**.#",
+    "###.......##..##"
+  ],
+  "Liked": "10",
+  "RobotCol": "1",
+  "RobotDir": "2",
+  "RobotRow": "2",
+  "Solutions": "39",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-19T20:40:05.563",
+  "Title": "Go For a Swim I"
+}

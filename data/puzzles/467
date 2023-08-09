@@ -1,0 +1,53 @@
+{
+  "About": "This is the way it was meant to be...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "BRBBRRRRRRRRRRRR",
+    "BRBBBRRRRRRRRRRR",
+    "RRBBBBRRRRRRRRRR",
+    "RRBRBBBRRRRRRRRR",
+    "BRBBRBBBRRRRRRRR",
+    "RRBBBRBBBRRRRRRR",
+    "RRBRBBRBBBRRRRRR",
+    "RRBRRBBRBBBRRRRR",
+    "BRBBRRBBRBBBRRRR",
+    "RRBBBRRBBRBBBRRR",
+    "RRBRBBRRBBRBBBRR",
+    "GGGBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "66",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "467",
+  "Items": [
+    "*#**############",
+    "*#***###########",
+    "*#****##########",
+    "*#*#***#########",
+    "*#**#***########",
+    "*#***#***#######",
+    "*#*#**#***######",
+    "*#*##**#***#####",
+    "*#**##**#***####",
+    "*#***##**#***###",
+    "*#*#**##**#***##",
+    ".*************##"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "77",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-06T19:36:30.923",
+  "Title": "Traversing The Hypotenuse (finished)"
+}

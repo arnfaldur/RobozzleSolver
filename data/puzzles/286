@@ -1,0 +1,53 @@
+{
+  "About": "Record distance between red tiles - Walk on green",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBRBBR",
+    "BRRRRRRRRRRRRRRB",
+    "BRRBBBRBBBBBBGRB",
+    "BRBRRRRRRRRRRGRB",
+    "RRBRRGGGGGGGRGRB",
+    "BRBRRGRRRRRGRGRR",
+    "BRBRRGRRRRRGRGRB",
+    "BRBRRGRGGGGGRGRB",
+    "BRBRRGRRRRRRRGRB",
+    "BRBRRGGGGGGGGGRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRBBBBRBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "40",
+  "DifficultyVoteSum": "135",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "286",
+  "Items": [
+    "................",
+    ".##############.",
+    ".#............#.",
+    ".#.##########.#.",
+    ".#.##.......#.#.",
+    ".#.##.#####.#.#.",
+    ".#.##.#####.#.#.",
+    ".#.##.#*....#.#.",
+    ".#.##.#######.#.",
+    ".#.##.........#.",
+    ".#.############.",
+    ".#.............."
+  ],
+  "Liked": "39",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "141",
+  "SubLengths": [
+    "5",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-04-04T22:50:32.063",
+  "Title": "Measurements"
+}

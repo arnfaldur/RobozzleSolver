@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBB",
+    "RGRRRRRRRRRRRRRG",
+    "RGBGGGGGGGGGGGBG",
+    "RGBRBBBBBBBBBRBG",
+    "RGBRGRRRRRRRGRBG",
+    "RGBRGBGGGGGBGRBG",
+    "RGBRBBBBBBRBGRBG",
+    "RGBGGGGGGGGBGRBG",
+    "RGRRRRRRRRRRGRBG",
+    "RBBBBBBBBBBBBRBG",
+    "GGGGGGGGGGGGGGBG",
+    "RRRRRRRRRRRRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1665",
+  "DifficultyVoteSum": "3186",
+  "Disliked": "95",
+  "Featured": "false",
+  "Id": "225",
+  "Items": [
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "1364",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "10714",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mathew995",
+  "SubmittedDate": "2009-03-28T19:22:06.907",
+  "Title": "timer"
+}

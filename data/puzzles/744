@@ -1,0 +1,53 @@
+{
+  "About": "Collect The Fruits",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBRBBBRBBBRBBBGR",
+    "BRRRRRRRRRRRRRBR",
+    "BRRRRRRRRRBBBGBR",
+    "BRRBRRRBRRBRRBBR",
+    "BRRBRRRBRRBRRBBR",
+    "BRRRBBBRBBRRRBBR",
+    "BRRRRRRRRRRRRBBR",
+    "GBBBBBBBBBBBBGBR",
+    "BBRBBBRBBBRBBBGR",
+    "RRBRRRBRRRBRRRRR",
+    "RRBRRRBRRRBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "45",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "744",
+  "Items": [
+    "...............#",
+    ".#############.#",
+    ".#***#***#.....#",
+    ".#*.*#*.*#.##..#",
+    ".##.###.##.##..#",
+    ".##........##..#",
+    ".############..#",
+    "...............#",
+    "...............#",
+    "##.###.###.#####",
+    "#*.*#*.*#*.*####",
+    "#***#***#***####"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "41",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-11T10:17:36.983",
+  "Title": "Long Journey 3"
+}

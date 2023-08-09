@@ -1,0 +1,53 @@
+{
+  "About": "This should give you an idea of how to solve my larger puzzle: Tetris",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRGRRR",
+    "RRRRRRRRRRRRGRRR",
+    "RRRRRRRRRRRRGRRR",
+    "RRRRRRRRRRRRGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRGGRRRRR",
+    "BBRRRRGGRGGRRRRR",
+    "RBRRRRGGRBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "GGGGRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "74",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "965",
+  "Items": [
+    "################",
+    "############.###",
+    "############.###",
+    "############.###",
+    "############.###",
+    "################",
+    "################",
+    ".########**#####",
+    "..####**#**#####",
+    "#..###**#**####.",
+    "#...##*.***###..",
+    "....##*****###.#"
+  ],
+  "Liked": "19",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "98",
+  "SubLengths": [
+    "2",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-07-02T22:13:49.657",
+  "Title": "Tetris Pieces"
+}

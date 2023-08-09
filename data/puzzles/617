@@ -1,0 +1,53 @@
+{
+  "About": "Clearly inspired by Mark Byers' puzzle",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBBRBBBBBBR",
+    "RRRRRRRRRRRRRRBR",
+    "BBRBBBRBBRRRRRBR",
+    "BRRRBRRRBRRRRRBR",
+    "BRBBRBBRBRRRRRRR",
+    "BRRRBRRRRRRRRRBR",
+    "RRBRBRBRBRBRBRBR",
+    "BRRRRRRRBRRRBRBR",
+    "BRBBBRBBBRBBRBBR",
+    "BRRRRRRRRRRRBRRR",
+    "BBBBBBRBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "48",
+  "DifficultyVoteSum": "145",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "617",
+  "Items": [
+    "##......*......#",
+    "##############.#",
+    "..*...*..#####.#",
+    ".###.###.#####.#",
+    ".#..*..#.#####*#",
+    ".#*#.#*#*#####.#",
+    "*#.*.*.#.#.*.#.#",
+    ".#######.#*#.#.#",
+    ".#*..*...#..*..#",
+    ".###########.###",
+    "......*......###",
+    "################"
+  ],
+  "Liked": "51",
+  "RobotCol": "2",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "186",
+  "SubLengths": [
+    "2",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-30T14:01:50.11",
+  "Title": "Turn around 3"
+}

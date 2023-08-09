@@ -1,0 +1,53 @@
+{
+  "About": "Now, where was I? Oh yes!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBBBBBBBBBBBR",
+    "RRRBRRRRRRRRRRRB",
+    "RRRBRRRRBBBBBRRB",
+    "RRRBRRRBRRRRRBRB",
+    "RRRBRRRBRRRRRBRB",
+    "RRRBRRBBBBRRRBRB",
+    "RRRBRRRBRBRRRBRB",
+    "RRRBRRRBBBRRRBRB",
+    "RRRBRRRRRRRRRBRB",
+    "RRRRBBBBBBBBBRRB",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "36",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "585",
+  "Items": [
+    "###*************",
+    "###*###########*",
+    "###*###*******#*",
+    "###*###*#####*#*",
+    "###*###*#####*#*",
+    "###*##****###*#*",
+    "###*###*#*###*#*",
+    "###*###***###*#*",
+    "###*#########*#*",
+    "###***********#*",
+    "###############*",
+    ".***************"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "47",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ssancho",
+  "SubmittedDate": "2009-05-24T15:35:26.97",
+  "Title": "Easy to Distract"
+}

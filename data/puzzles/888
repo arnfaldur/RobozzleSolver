@@ -1,0 +1,53 @@
+{
+  "About": "Life, the Universe, and... oh, something else.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRGRRRRRRRRRR",
+    "RRBRRBRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRGBBGRRRRRRR",
+    "RRRRRBRRRGRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRRGBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "99",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "888",
+  "Items": [
+    "################",
+    "##.##*##########",
+    "##.##.##########",
+    "##*..*##########",
+    "#####.##########",
+    "#####...*#######",
+    "#####*##.*######",
+    "#######*.#######",
+    "######**########",
+    "#####*.#########",
+    "#####*...*######",
+    "################"
+  ],
+  "Liked": "20",
+  "RobotCol": "2",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "241",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-25T21:31:10.14",
+  "Title": "Forty-Two"
+}

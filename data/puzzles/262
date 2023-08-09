@@ -1,0 +1,53 @@
+{
+  "About": "Red tile... hmmm",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRGBGBGRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2710",
+  "DifficultyVoteSum": "4818",
+  "Disliked": "200",
+  "Featured": "false",
+  "Id": "262",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "#######.########",
+    "######.*.#######",
+    "#####.*.*.######",
+    "######.*.#######",
+    "#######.########",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "2083",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "22682",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-03T05:18:44.453",
+  "Title": "Star"
+}

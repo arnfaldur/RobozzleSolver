@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRRBGBRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2047",
+  "DifficultyVoteSum": "3922",
+  "Disliked": "56",
+  "Featured": "false",
+  "Id": "285",
+  "Items": [
+    "################",
+    "######*...*#####",
+    "######.#*#.#####",
+    "######*...*#####",
+    "########.#######",
+    "#######.#.######",
+    "########.#######",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1788",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "4",
+  "Solutions": "15060",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "deepak",
+  "SubmittedDate": "2009-04-04T17:27:25.907",
+  "Title": "The Skull"
+}

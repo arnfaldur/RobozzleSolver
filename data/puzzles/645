@@ -1,0 +1,53 @@
+{
+  "About": "Obstacle Course! Play other puzzles if you're having difficulty with a section!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBR",
+    "BRRRRRRRRBRRRRRR",
+    "GRRRRRRRRBRBBBBB",
+    "BRRRRRRRRBRBGGGB",
+    "GRRRRRRRRBRBGRGB",
+    "BRRRRRRRRGRBGRGB",
+    "BRRRRRRRRBRBGRGB",
+    "BRRRRRRRRBRBGGGB",
+    "GRRRRRRRRBRBBBBR",
+    "BRRRRRRRRBRRRRRG",
+    "BRRRRRRRRBBBGBBB",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "80",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "645",
+  "Items": [
+    "*..............*",
+    ".########.######",
+    "*########.#.....",
+    ".#*****##.#.***.",
+    "*#*###*##.#.*#*.",
+    ".#*###*##*#.*#*.",
+    ".#*###*##.#.*#*.",
+    ".#*###*##.#.***.",
+    "*#####*##.#....*",
+    ".#####*##.#####*",
+    ".#####*##...*...",
+    "*******#########"
+  ],
+  "Liked": "24",
+  "RobotCol": "14",
+  "RobotDir": "2",
+  "RobotRow": "8",
+  "Solutions": "86",
+  "SubLengths": [
+    "5",
+    "3",
+    "4",
+    "7",
+    "6"
+  ],
+  "SubmittedBy": "bahkoo",
+  "SubmittedDate": "2009-06-03T19:45:03.077",
+  "Title": "Lessons Learned"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Don't miss the loop",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RGGGRGGGGRRRGGGR",
+    "GBBBGBBBBGRGBBBG",
+    "GBGBBBGGBGRGBGBG",
+    "GBGGGGRGBGRGBBBG",
+    "GBGRRRRGBBGGBGBG",
+    "GBGGGGGRGBGGBBBG",
+    "GBBBBBGRGBGRGGBG",
+    "RGGGGBGRGBGRRGBG",
+    "RRRRGBGRGBGRRGBG",
+    "RGGGGBGRGBGGGGBG",
+    "GBBBBBGRGBBBBBBG",
+    "RGGGGGRRRGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "112",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "169",
+  "Items": [
+    "#...#....###...#",
+    "..........#.....",
+    "..........#.....",
+    "......#...#..*..",
+    "...####.........",
+    ".......#........",
+    ".......#...#....",
+    "#......#...##...",
+    "####...#...##...",
+    "#......#........",
+    ".......#........",
+    "#.....###......."
+  ],
+  "Liked": "20",
+  "RobotCol": "1",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "139",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-20T11:06:18.563",
+  "Title": "Loopy Maze"
+}

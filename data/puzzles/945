@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBRRBBBRBBBRBBB",
+    "BBRRRRBBRBBRRRBB",
+    "BRRRRRRBRBRRRRRB",
+    "RRRRRBRRRRRBRRRR",
+    "RRRRRBBRRRBBRRRR",
+    "RRBBBBBBRBBBRRRR",
+    "RRBBRRRRRRBBRRRR",
+    "BRBRRRRRRRRBRRRR",
+    "BBRRRRRRRRBBRRRR",
+    "BBBRRRRRRBBBRRRB",
+    "RRRRRRRRRRRRRRBB",
+    "RRRRRRRRRRRRRBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "61",
+  "DifficultyVoteSum": "141",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "945",
+  "Items": [
+    "...##...#...#...",
+    ".******.#.*****.",
+    ".*####*.#.*###*.",
+    "#*###.*###*.##*#",
+    "#*###.*****.##*#",
+    "#*......#...##*#",
+    "#*.********.##*#",
+    ".*.*######*.##*#",
+    ".**********.##*#",
+    "...*#####...##*.",
+    "#.*************.",
+    "###*#########..."
+  ],
+  "Liked": "56",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "495",
+  "SubLengths": [
+    "2",
+    "8",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-30T22:43:02.89",
+  "Title": "Laser Reflection"
+}

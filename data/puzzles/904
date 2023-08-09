@@ -1,0 +1,53 @@
+{
+  "About": "You _are_ the weakest link. Goodbye!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBRRRRRRRRRRRR",
+    "BRRBRRRRRRRRRRRR",
+    "BRBBBBRRRRRRRRRR",
+    "BBBBRBRRRRRRRRRR",
+    "RRBRBBBBRRRRRRRR",
+    "RRBBBBRBRRRRRRRR",
+    "RRRRBRBBBBRRRRRR",
+    "RRRRBBBBRBRRRRRR",
+    "RRRRRRBRBBBBRRRR",
+    "RRRRRRBBBBRBRRRR",
+    "RRRRRRRRBRRBRRRR",
+    "RRRRRRRRBBBGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "73",
+  "DifficultyVoteSum": "170",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "904",
+  "Items": [
+    "*..*############",
+    ".##.############",
+    ".#*..*##########",
+    "*..*#.##########",
+    "##.#*...########",
+    "##*..*#.########",
+    "####.#*..*######",
+    "####*..*#.######",
+    "######.#*..*####",
+    "######*..*#.####",
+    "########.##.####",
+    "########*..*####"
+  ],
+  "Liked": "62",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "4",
+  "Solutions": "274",
+  "SubLengths": [
+    "10",
+    "10",
+    "4",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-26T14:48:48.187",
+  "Title": "The Weakest Link"
+}

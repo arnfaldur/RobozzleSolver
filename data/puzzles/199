@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "BBBBBBBBBBBBBBRR",
+    "BRRRRRRRRRRRRBRR",
+    "BRRRRRRRRRRRRBRR",
+    "BRRRRRRRRRRRRBRR",
+    "BRRRRRRRRRRRRBRR",
+    "BRRRRRRRBBRRRBRR",
+    "BRRRRRRRBBRRRBRR",
+    "BRRRRRRRBRRRRBRR",
+    "BRRRRRRRBBBBBBRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "105",
+  "DifficultyVoteSum": "365",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "199",
+  "Items": [
+    "..............##",
+    ".############.##",
+    ".############.##",
+    ".############.##",
+    ".############.##",
+    ".#######...##.##",
+    ".#######...##.##",
+    ".#######.####.##",
+    ".#######......##",
+    ".###############",
+    ".###############",
+    "*###############"
+  ],
+  "Liked": "103",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "944",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-26T12:21:06.983",
+  "Title": "Fibonacci Spiral"
+}

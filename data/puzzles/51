@@ -1,0 +1,53 @@
+{
+  "About": "Recursion is a piece of cake.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGRGGRRRRRR",
+    "RRRRRGGBRGGRRRRR",
+    "RRRRGGRBRRGGRRRR",
+    "RRRGGRRBRRRGGRRR",
+    "RRGGRRRBRRRRGGRR",
+    "RRGRRRRRRBBBBRRR",
+    "RRRBBBBRRRRRRGRR",
+    "RRGGRRRRBRRRGGRR",
+    "RRRGGRRRBRRGGRRR",
+    "RRRRGGRRBRGGRRRR",
+    "RRRRRGGRBGGRRRRR",
+    "RRRRRRGGRGRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "102",
+  "DifficultyVoteSum": "341",
+  "Disliked": "4",
+  "Featured": "true",
+  "Id": "51",
+  "Items": [
+    "######.*..######",
+    "#####...#..#####",
+    "####..#.##*.####",
+    "###.*##.###..###",
+    "##..###*####..##",
+    "##.####..*...*##",
+    "##*...*..####.##",
+    "##..####*###..##",
+    "###..###.##*.###",
+    "####.*##.#..####",
+    "#####..#...#####",
+    "######..*.######"
+  ],
+  "Liked": "97",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "684",
+  "SubLengths": [
+    "2",
+    "7",
+    "7",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-02-25T04:38:48.593",
+  "Title": "Cartwheel"
+}

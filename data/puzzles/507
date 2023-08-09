@@ -1,0 +1,53 @@
+{
+  "About": "dont be so hard on yourself...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "RRRRRRRRRBBBBBBB",
+    "RRGRRRRRRBRRRRRB",
+    "RRBRRGBGRBRBBBRB",
+    "RRRRBRRRRBRBBBRB",
+    "RRRBRBRRRBBBRRRB",
+    "RGRRBRGRRBBBRBBB",
+    "RGBGRRBRRBBBRBBB",
+    "RRRRRRGRRBBBBBBB",
+    "RRRRRRRRRBBBRBBB",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "27",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "507",
+  "Items": [
+    "................",
+    "#########.......",
+    "##****###.......",
+    "##*##***#.......",
+    "#**#.##*#.......",
+    "#*#.#.#*#.......",
+    "#*##.#*.#.......",
+    "#***##*##.......",
+    "###****##.......",
+    "#########.......",
+    "................",
+    "................"
+  ],
+  "Liked": "5",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "60",
+  "SubLengths": [
+    "5",
+    "8",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-05-12T09:52:56.39",
+  "Title": "WTF?"
+}

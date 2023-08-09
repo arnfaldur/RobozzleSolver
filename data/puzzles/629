@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBRRRGGG",
+    "GBBBBBBRRRGGRRRR",
+    "GBBBBRRGGRRRRRRR",
+    "GBBBBRGGGGRRRRRR",
+    "GBBBBBBBBRRRRGGR",
+    "GBBRGGRRRRRRRRRR",
+    "GBBBBBBRRGGGRRRR",
+    "GBBBBBBBBRRGGGGR",
+    "GBBBBBBBRGGGGGGG",
+    "GBBBBBBBBBRRRGGG",
+    "GBRGRRRRRRRRRRRR",
+    "GBBBBRRGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "30",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "629",
+  "Items": [
+    "...............*",
+    "*..........*####",
+    "*.......*#######",
+    "*........*######",
+    "*.............*#",
+    "*....*##########",
+    "*..........*####",
+    "*.............*#",
+    "*..............*",
+    "*..............*",
+    "*..*############",
+    "*.......*#######"
+  ],
+  "Liked": "9",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "42",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-01T06:40:52.03",
+  "Title": "Division 2"
+}

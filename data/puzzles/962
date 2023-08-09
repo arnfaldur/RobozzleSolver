@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBRRRRRRRRRRBBB",
+    "BRBRRRRRRRRRRBRB",
+    "BBGBBBBBBBBBBGBB",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRBBBBBBRRBRR",
+    "RRBRRBRRRRBRRBRR",
+    "RRBRRBRRRRBRRBRR",
+    "RRBRRBBRRBBRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "BBGBBBBRRBBBBGBB",
+    "BRBRRRRBBRRRRBRB",
+    "BBBRRRRBBRRRRBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "52",
+  "DifficultyVoteSum": "137",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "962",
+  "Items": [
+    "***##########***",
+    "*#*##########*#*",
+    "****************",
+    "##*##########*##",
+    "##*##......##*##",
+    "##*##.####.##*##",
+    "##*##.####.##*##",
+    "##*##......##*##",
+    "##*##########*##",
+    "****************",
+    "*#*####..####*#*",
+    "***####..####***"
+  ],
+  "Liked": "46",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "261",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-02T20:16:42.627",
+  "Title": "Castle Walls"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "GBBBBBBBBBBRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRGBBGRRRRRRRRR",
+    "BRRBRRBRRRRRRRRR",
+    "BRRRRRBRRRRRRRRR",
+    "BRRRRRBRRRRRRRRR",
+    "GBBBBBGRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "53",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "955",
+  "Items": [
+    "########*******#",
+    "########*#####*#",
+    "...........*##*#",
+    ".#######*##*##*#",
+    ".#######*##****#",
+    ".#######*#######",
+    ".#######*#######",
+    ".##....#*#######",
+    ".##.##.#*#######",
+    ".##.##.#********",
+    ".#####.#########",
+    ".......#########"
+  ],
+  "Liked": "14",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "75",
+  "SubLengths": [
+    "2",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-01T22:56:23.377",
+  "Title": "Carbon Copy: Vertical Flip"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRBBBBRRRRRRRRR",
+    "RRBBBBBBRRRRRRRR",
+    "RRBBBBBBBRRRRRRR",
+    "RRRBBBBBBBRRRRRR",
+    "RRRBBBBBBBRRRRRR",
+    "RRRRBBBBBBRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRRRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "52",
+  "DifficultyVoteSum": "178",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "121",
+  "Items": [
+    "#######**#######",
+    "#####.**...#####",
+    "####.**.....####",
+    "###..**......###",
+    "###...**.....###",
+    "##.....**.....##",
+    "##......**....##",
+    "###......**..###",
+    "###......**..###",
+    "####.....**.####",
+    "#####...**.#####",
+    "#######.*#######"
+  ],
+  "Liked": "40",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "213",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-10T18:22:02.343",
+  "Title": "(mt) ispeP"
+}

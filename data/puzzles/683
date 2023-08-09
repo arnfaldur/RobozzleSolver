@@ -1,0 +1,53 @@
+{
+  "About": "it is not so  easy as you think",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "76",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "683",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "#######**#######",
+    "######****######",
+    "######*.**######",
+    "#######**#######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "105",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "paninmischa",
+  "SubmittedDate": "2009-06-05T12:59:22.797",
+  "Title": "Is it easy?"
+}

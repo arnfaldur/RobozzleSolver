@@ -1,0 +1,53 @@
+{
+  "About": "Harry has ONE big head!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRBBBBBBRBBBBBRR",
+    "RBBBBBBRRBBBBBBR",
+    "BBBBBBRRBBBBBBBB",
+    "BBBBBBBRRBBBBBBB",
+    "BBBBBBBBRBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BRRRBBBBBBBBRRRB",
+    "RBBBRBBRRBBRBBBR",
+    "BGGGBRRBBRRBGGGB",
+    "BGRGBRBBBBRBGRGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "43",
+  "Disliked": "16",
+  "Featured": "false",
+  "Id": "279",
+  "Items": [
+    "################",
+    "####........####",
+    "##......*.....##",
+    "#..............#",
+    "......*.........",
+    "................",
+    "........*.......",
+    "................",
+    ".###*..**..*###.",
+    "#...#..##..#...#",
+    ".....##..##.....",
+    "..#..#....#..#.."
+  ],
+  "Liked": "6",
+  "RobotCol": "8",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "97",
+  "SubLengths": [
+    "7",
+    "6",
+    "3",
+    "8",
+    "0"
+  ],
+  "SubmittedBy": "traditore",
+  "SubmittedDate": "2009-04-03T15:14:43.22",
+  "Title": "The Chosen One"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBGGGGBGBBBR",
+    "RRRRBBBBBBRRBBBR",
+    "RRRRBBBBRBBBBBBR",
+    "RRRBBBBBBGGBBBBR",
+    "RRRRBBRBBBBBBBBR",
+    "RRRRRRRBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "170",
+  "DifficultyVoteSum": "180",
+  "Disliked": "188",
+  "Featured": "false",
+  "Id": "128",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "###*...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "################",
+    "################"
+  ],
+  "Liked": "36",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "580",
+  "SubLengths": [
+    "5",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igramul",
+  "SubmittedDate": "2009-03-11T08:07:53.483",
+  "Title": "Walk back"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Variation on \"Reflection\" theme",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGRRBBBRRRRR",
+    "RRGGRRGRBBBBRRRR",
+    "RGGRGRGRBRBBRRRR",
+    "RGRGRRGRBBBBRRRR",
+    "RGRRRRGRRRRBRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "261",
+  "DifficultyVoteSum": "879",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "94",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "##.....#***#####",
+    "#....#.#****####",
+    "#..#.#.#*#**####",
+    "#....#.#****####",
+    "#.####.####*####",
+    "#.####******####",
+    "################"
+  ],
+  "Liked": "239",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "1735",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-04T17:32:07.267",
+  "Title": "Treasure Hunters"
+}

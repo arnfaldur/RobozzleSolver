@@ -1,0 +1,53 @@
+{
+  "About": "For the Greater Good...?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRBBRBBRRRRRR",
+    "RRRRBBGRGBBRRRRR",
+    "RRRBBGRRRGBBRRRR",
+    "RRBBRGRRRGRBBRRR",
+    "RBBRRGRRRGRRBBRR",
+    "BBRRRRGRGRRRRBBR",
+    "BBBBBBBRBBBBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "98",
+  "DifficultyVoteSum": "236",
+  "Disliked": "29",
+  "Featured": "false",
+  "Id": "303",
+  "Items": [
+    "#######.########",
+    "######...#######",
+    "#####*...*######",
+    "####.......#####",
+    "###*..#.#..*####",
+    "##..#.#*#.#..###",
+    "#..##.#.#.##..##",
+    "..####...####..#",
+    "*.............*#",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "53",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "394",
+  "SubLengths": [
+    "10",
+    "7",
+    "9",
+    "4",
+    "2"
+  ],
+  "SubmittedBy": "traditore",
+  "SubmittedDate": "2009-04-05T20:11:08",
+  "Title": "The Deathly Hallows"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRBBBR",
+    "RRRRRBBBBBBBBRBR",
+    "RBBBBBRBBRRBBRBR",
+    "RBRRBBRBBBBBBBBR",
+    "RBBBBBBBGBBBBBBB",
+    "RRBBBBBBBBRBBRRB",
+    "RRBRBBRRBBRBBBBB",
+    "RRBRBBBBBBBBRRRR",
+    "RRBBBRBBBBBBBRRR",
+    "RRRRRRBRBBRRBRRR",
+    "RRRRRRBRBBBBBRRR",
+    "RRRRRRBBBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "26",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "663",
+  "Items": [
+    "############***#",
+    "#####********#*#",
+    "#*****#**##**#*#",
+    "#*##**#********#",
+    "#*******.*******",
+    "##********#**##*",
+    "##*#**##**#*****",
+    "##*#***.****####",
+    "##***#*******###",
+    "######*#**##*###",
+    "######*#*****###",
+    "######***#######"
+  ],
+  "Liked": "6",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "17",
+  "SubLengths": [
+    "7",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T05:12:25.593",
+  "Title": "Can you see that?"
+}

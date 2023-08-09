@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBRBBRRBRBBRBRG",
+    "GRRRBRRRBRBBRRBG",
+    "GBBRBRRBRBBBRBRG",
+    "GRRRBRRRBBRRBBRG",
+    "GBRBBRRBRBRBRBRG",
+    "GRRRBRRRBRBBRBRG",
+    "GBBBRGRRRRRRRRRR",
+    "RRRRRGRGRRRRRRRR",
+    "RRRGRGRGRRRRRRRR",
+    "RRGGGGGGGGRRRRRR",
+    "RRRRGRGRGRRRRRRR",
+    "RRRRGRRRGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "27",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "3558",
+  "Items": [
+    "...............*",
+    "*..............*",
+    "*..............*",
+    "*..............*",
+    "*..............*",
+    "*..............*",
+    "*....*##########",
+    "#####*#*########",
+    "###*#*#*########",
+    "##********######",
+    "####*#*#*#######",
+    "####*###*#######"
+  ],
+  "Liked": "10",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "33",
+  "SubLengths": [
+    "6",
+    "4",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "denisb",
+  "SubmittedDate": "2012-03-29T02:57:04.293",
+  "Title": "Scratch"
+}

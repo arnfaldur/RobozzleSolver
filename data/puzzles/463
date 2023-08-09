@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBRRRR",
+    "BRBBBBBBBBBBRRRR",
+    "BBRBBBBBBBBBRRRR",
+    "BBBRRRRRRRRRRRRR",
+    "BBBRBBBBBBBRRRRR",
+    "BBBBRBBBBBBRRRRR",
+    "BBBBBRRRRRRRRRRR",
+    "BBBBBRBBBBRRRRRR",
+    "BBBBBBRBBBRRRRRR",
+    "BBBBBBBRRRRRRRRR",
+    "BBBBBBBRRRRRRRBR",
+    "BBBBBBBGBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "42",
+  "DifficultyVoteSum": "135",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "463",
+  "Items": [
+    ".***********####",
+    "..**********####",
+    "...*********####",
+    "...#############",
+    "....*******#####",
+    ".....******#####",
+    ".....###########",
+    "......****######",
+    ".......***######",
+    ".......#########",
+    ".......#######*#",
+    "...............#"
+  ],
+  "Liked": "47",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "146",
+  "SubLengths": [
+    "3",
+    "6",
+    "4",
+    "4",
+    "4"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-05-06T13:08:55.813",
+  "Title": "Big F"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Dedicated to one of the first shock sites.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRGBBBBGRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "60",
+  "DifficultyVoteSum": "126",
+  "Disliked": "28",
+  "Featured": "false",
+  "Id": "556",
+  "Items": [
+    "################",
+    "################",
+    "###....##....###",
+    "##..##....##..##",
+    ".*...*.*..*...*.",
+    "....#......#....",
+    ".*...*..*.*...*.",
+    "...###....###...",
+    "##....#..#....##",
+    "#######..#######",
+    "#######..#######",
+    "#######..#######"
+  ],
+  "Liked": "28",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "213",
+  "SubLengths": [
+    "6",
+    "4",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-19T20:18:53.11",
+  "Title": "Dedication"
+}

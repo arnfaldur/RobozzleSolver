@@ -1,0 +1,53 @@
+{
+  "About": "Wizard.",
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRBRBRRRRRRRR",
+    "RRRRBRBRBRRRRRRR",
+    "RRRBRBRBRBRRRRRR",
+    "RRBRBRBRBRBRRRRR",
+    "RBRBRBRBRBRBRRRR",
+    "RRBRBRRRBRBRRRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRRRRRRRBRBRRRR",
+    "RRRRRRRRRRBRBRRR",
+    "RRRRRRRRRRRRRBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "57",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "647",
+  "Items": [
+    "#####.*.########",
+    "#####*#*########",
+    "###.*.*.*.######",
+    "###*#*#*#*######",
+    "#.*.*.*.*.*.####",
+    "#*#*#*#*#*#*####",
+    "#.*.*.#.*.*.####",
+    "###*#*#*#*#*####",
+    "###.*.*.*.*.####",
+    "#########*#*####",
+    "#########.*.*.##",
+    "#############*##"
+  ],
+  "Liked": "12",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "57",
+  "SubLengths": [
+    "4",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-06-03T21:12:27.157",
+  "Title": "Christmas Lights 2"
+}

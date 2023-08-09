@@ -1,0 +1,53 @@
+{
+  "About": "(that's six)",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "29",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "233",
+  "Items": [
+    "################",
+    "################",
+    "########..*#####",
+    "########.#######",
+    "######*...*#####",
+    "########.#######",
+    "######*...*#####",
+    "########.#######",
+    "########..*#####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "5",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "20",
+  "SubLengths": [
+    "3",
+    "3",
+    "4",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-29T15:15:43.923",
+  "Title": "two and four"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "compare the nibbles and take the prize",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRGBGBRGBGGRRRR",
+    "RRRBGBGRBGBGRRRR",
+    "RRRBGBGRBGBBRRRR",
+    "RRRGGBGRGGBBRRRR",
+    "RRRGGBBRGGBGRRRR",
+    "RRRBBBGRBBGGRRRR",
+    "RRRBBGBRBGBBRRRR",
+    "RRRBGBGRBBBBRRRR",
+    "RRRBBBBRBBBGRRRR",
+    "RRRBBBBRBBBBRRRR",
+    "RRRGGGBRGGGBRRRR",
+    "RRRGGGGRGGBGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "24",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "460",
+  "Items": [
+    "##...........*##",
+    "##.....*.....###",
+    "#*...........###",
+    "#*...........###",
+    "##...........*##",
+    "##...........*##",
+    "##...........*##",
+    "#*...........###",
+    "##...........*##",
+    "##.....*.....###",
+    "##.....*.....###",
+    "#*...........###"
+  ],
+  "Liked": "4",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "19",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-05T22:13:29.423",
+  "Title": "comparison II"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "color the intersections to remember how many times you've seen them",
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "BBBBBGGGGGGBBBBB",
+    "RRBRRRRRRRRRRBRR",
+    "BBBBBRRRRRRBBBBB",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "19",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "825",
+  "Items": [
+    "################",
+    "################",
+    "##*##########*##",
+    "##.##########.##",
+    "*...*......*...*",
+    "##.##########.##",
+    "*...*######*...*",
+    "##.##########.##",
+    "##*##########*##",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "5",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "38",
+  "SubLengths": [
+    "7",
+    "7",
+    "7",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-21T04:36:10.843",
+  "Title": "Carbon Copy"
+}

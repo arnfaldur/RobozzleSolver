@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRBBBRBBBRRRRR",
+    "RRRRRBBBBRBRRRRR",
+    "RRRRRBRBBBBRRRRR",
+    "RRRRRBBBRBBBRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "60",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "699",
+  "Items": [
+    "################",
+    "################",
+    "#########*######",
+    "######****######",
+    "####***#***#####",
+    "#####****#*#####",
+    "#####*#*.**#####",
+    "#####***#***####",
+    "######****######",
+    "######*#########",
+    "################",
+    "################"
+  ],
+  "Liked": "13",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "62",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-06T14:22:14.203",
+  "Title": "Shuriken's Revenge"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Use all colors",
+  "AllowedCommands": "7",
+  "Colors": [
+    "GGGGGGGGGGBRGGRG",
+    "RRRRRGBGGGGGGGRG",
+    "GGRRRRRRRRRRRRRG",
+    "RBRRRRRRRRRRRRBG",
+    "BRRRRRRRRRRRRRGG",
+    "GRGGBRGGGGGBRGRG",
+    "GRRRRRRGRRRRRRRG",
+    "GRRRRRRBGRRRRRRB",
+    "GRRRRRRGBRRRRRRR",
+    "GRRRRRRRGRRRRRRR",
+    "GRRBGGGGGGRBGGRG",
+    "GRGGRBGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "28",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "196",
+  "Items": [
+    "****************",
+    "****************",
+    "**############**",
+    "**############**",
+    "**############**",
+    "****************",
+    "*######**######*",
+    "*######**######.",
+    "*######**######*",
+    "*######**######*",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "6",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "10",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-25T18:31:19.267",
+  "Title": "RoboZZle vs Turing machine (Part II)"
+}

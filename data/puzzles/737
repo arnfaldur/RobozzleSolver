@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGGGGGRRRRRRRR",
+    "RGRRRRRRGRRRRRRR",
+    "RGRRRRRRGRRRRRRR",
+    "RRGGRRRRBGGGGRRR",
+    "RRRRGRRRRRRRRBRR",
+    "RRRRBGGGGGRRRRBR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRBGGRRRRGRRRRR",
+    "RRRGRRGRRRGRRRRR",
+    "RRRGRRGRRRGRRRRR",
+    "RRRGRBRRRRGRRRRR",
+    "RGGRRBGGGGBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "61",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "737",
+  "Items": [
+    "#........#######",
+    "#.######.#######",
+    "#.######.#######",
+    "#....###......##",
+    "####.########..#",
+    "####.......###.*",
+    "##########.#####",
+    "###....###.#####",
+    "###.##.###.#####",
+    "###.##.###.#####",
+    "###.#..###.#####",
+    "#...#......#####"
+  ],
+  "Liked": "17",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "40",
+  "SubLengths": [
+    "2",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-06-10T07:16:00.687",
+  "Title": "Parity Correction"
+}

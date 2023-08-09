@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRRRGGGBBBRRRR",
+    "BRRGGGGGBBRRRRRR",
+    "BRRRRRRRGGGGBBBB",
+    "BRRRRRGGGBBBRRRR",
+    "BRGGGGGGGGBRRRRR",
+    "BRRRRRGGGGGBBBBB",
+    "BRRRRRRRRRRRGBRR",
+    "BRRRGGGGGGBBBRRR",
+    "BRRRRRRGGGGBBBBR",
+    "BRGBRRRRRRRRRRRR",
+    "BRRRRRGGGGBBBBRR",
+    "BRRRRGGGGGGBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "24",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "689",
+  "Items": [
+    ".........***####",
+    "*.......**######",
+    "*...........****",
+    "*........***####",
+    "*.........*#####",
+    "*..........*****",
+    "*............*##",
+    "*.........***###",
+    "*..........****#",
+    "*..*############",
+    "*.........****##",
+    "*..........****#"
+  ],
+  "Liked": "6",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "13",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-06T03:37:40.593",
+  "Title": "Minimum"
+}

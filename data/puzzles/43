@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBRRRBRRRRBRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "318",
+  "DifficultyVoteSum": "793",
+  "Disliked": "14",
+  "Featured": "true",
+  "Id": "43",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "###*........*###",
+    "#######*########",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "308",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2127",
+  "SubLengths": [
+    "10",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-24T14:55:42.75",
+  "Title": "Do while"
+}

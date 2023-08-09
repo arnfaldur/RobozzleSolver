@@ -1,0 +1,53 @@
+{
+  "About": "Play the first half, then rewind.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBBBBBBBBBRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "109",
+  "DifficultyVoteSum": "476",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "66",
+  "Items": [
+    "#####..*########",
+    "#####*...*######",
+    "#####*.*########",
+    "#####*.......*##",
+    "#####*.....*####",
+    "#####*.*########",
+    "#####*.*########",
+    "#####*.....*####",
+    "#####*.......*##",
+    "#####*.*########",
+    "#####*...*######",
+    "#####*.*########"
+  ],
+  "Liked": "118",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1062",
+  "SubLengths": [
+    "4",
+    "5",
+    "4",
+    "4",
+    "4"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-02-27T02:19:51.47",
+  "Title": "Reflection"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Descend the staircases to win.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRBRRRRBBRRRR",
+    "RRBRRBBRRRBBBRRR",
+    "BRBRRBBRRRBRBBRR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRRRRRGBGRRBBRR",
+    "BRRRRRRBBBRBBRRR",
+    "GRRRRRRRRBRRRRRR",
+    "BBRBRRRBRRRRRRRR",
+    "RBBBRRRBBRRBBBRR",
+    "RRBBRRRRBBRBBRRR",
+    "RRRBRRRRRBGBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "49",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "925",
+  "Items": [
+    "##########*#####",
+    "#####*####**####",
+    "##*##**###***###",
+    ".**********#**##",
+    "#############*##",
+    "#######***##**##",
+    "**********#**###",
+    "*########*#*####",
+    "**#*****###*####",
+    "#***###**##***##",
+    "##**####**#**###",
+    "###*#####***####"
+  ],
+  "Liked": "16",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "46",
+  "SubLengths": [
+    "6",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-28T23:52:00.39",
+  "Title": "Staircases"
+}

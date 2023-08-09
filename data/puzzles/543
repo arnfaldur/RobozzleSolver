@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRGRGR",
+    "RRRRRRGRGRGRGRGR",
+    "RRRRGRGRGRGRGRGR",
+    "RRGRGRGRGRGRGRGR",
+    "BRRRRRRRRRRRRRRB",
+    "RBGBBBBBBBBBBBBR",
+    "RBGBBBBBBBBBGBBR",
+    "RBGBGBBBGBGBGBBR",
+    "RBGBGBBBGBGBGBGR",
+    "RBGBGBGBGBGBGBGR",
+    "BRRRRRRRRRRRRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "59",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "543",
+  "Items": [
+    "##############*#",
+    "############*#*#",
+    "######*#*#*#*#*#",
+    "####*#*#*#*#*#*#",
+    "##*#*#*#*#*#*#*#",
+    "*..............*",
+    "..*.............",
+    "..*.........*...",
+    "..*.*...*.*.*...",
+    "..*.*...*.*.*.*.",
+    "..*.*.*.*.*.*.*.",
+    "*..............*"
+  ],
+  "Liked": "10",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "60",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "5"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-17T04:24:47.797",
+  "Title": "sorting II"
+}

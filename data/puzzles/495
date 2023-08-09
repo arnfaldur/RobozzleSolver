@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRBRBRBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBRBRBRBRBRBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "42",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "495",
+  "Items": [
+    "#######.########",
+    "######...#######",
+    "######*#*#######",
+    "#####.....######",
+    "#####*#*#*######",
+    "####.......#####",
+    "####*#*#*#*#####",
+    "###.........####",
+    "###*#*#*#*#*####",
+    "##...........###",
+    "##*#*#*#*#*#*###",
+    "################"
+  ],
+  "Liked": "12",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "74",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-11T19:20:28.407",
+  "Title": "Mountain"
+}

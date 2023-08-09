@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGRGRGRBRRRRRR",
+    "RRRRRRRRRGRRRRRR",
+    "RRRRRRBGBRRRBRRR",
+    "RRRRRRRRGGRRRRRR",
+    "RRRRRRGRRRRRGRRR",
+    "RRRRRRBRGBRRRRRR",
+    "RRRRRRRRRRRRGRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRBGRGRGRGGBRR",
+    "RRRRBGRGBRRRBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "31",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "306",
+  "Items": [
+    "################",
+    "##.......*######",
+    "#########.######",
+    "######*.*.##*..*",
+    "######.#..##.###",
+    "######.#..##.###",
+    "######*..*##.###",
+    "########.###.###",
+    "########.###.###",
+    "####*........*##",
+    "####*...*###**##",
+    "################"
+  ],
+  "Liked": "13",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "396",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "goonq",
+  "SubmittedDate": "2009-04-06T04:38:03.36",
+  "Title": "Snake"
+}

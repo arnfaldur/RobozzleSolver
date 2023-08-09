@@ -1,0 +1,53 @@
+{
+  "About": "see \"1-2-3-4-5\" as hint",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRBRBBBBBBBRBRRR",
+    "RRBBRBBBBBRBBRRR",
+    "RRBBBRBBBRBBBRRR",
+    "RRBBBBRBRBBBBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBBBBRBRBBBBRRR",
+    "RRBBBRBBBRBBBRRR",
+    "RRBBRBBBBBRBBRRR",
+    "RRBRBBBBBBBRBRRR",
+    "RRRBBBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "43",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "172",
+  "Items": [
+    "################",
+    "###*.*.*.*.*####",
+    "##*#*.*.*.*#*###",
+    "##.*#*.*.*#*.###",
+    "##*.*#*.*#*.*###",
+    "##.*.*#*#*.*.###",
+    "##*.*.*.*.*.*###",
+    "##.*.*#*#*.*.###",
+    "##*.*#*.*#*.*###",
+    "##.*#*.*.*#*.###",
+    "##*#*.*.*.*#*###",
+    "###*.*...*.*####"
+  ],
+  "Liked": "12",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "33",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-20T20:19:40.453",
+  "Title": "1-2-3-4... emm... 5..."
+}

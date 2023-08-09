@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "GRRRRRRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1105",
+  "DifficultyVoteSum": "1840",
+  "Disliked": "197",
+  "Featured": "false",
+  "Id": "70",
+  "Items": [
+    "................",
+    "...*....**......",
+    "..........*.....",
+    "......***..*....",
+    ".....***....*...",
+    "....****....*...",
+    ".....*.**...*...",
+    "........**.*....",
+    ".....*...**.....",
+    "....*.******....",
+    "...*.......**...",
+    "................"
+  ],
+  "Liked": "912",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "4641",
+  "SubLengths": [
+    "4",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "nondead",
+  "SubmittedDate": "2009-02-27T14:26:57.22",
+  "Title": "USSR"
+}

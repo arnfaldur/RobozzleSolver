@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBRRRRRBBRBRR",
+    "RRRRBBBGBBGBRBRR",
+    "BBGBGRRBBBGBBGRR",
+    "RRBRBRRBRRRBRBRR",
+    "RBBBGBBGRRRGBGBB",
+    "RRBRRRRBRRRBRRRR",
+    "RRGBBGBBBRRBRRRR",
+    "RRBRBGBBBGBBBBRR",
+    "RRBRBBRRRBBGGRRR",
+    "BBGBGRRRRGBBGBBB",
+    "RRRRBRRRRBRRRRRR",
+    "RBBBGBBGRBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "132",
+  "DifficultyVoteSum": "489",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "552",
+  "Items": [
+    "####.#####..#.##",
+    "####...****.#.##",
+    "...**##*..****##",
+    "##.#*##*###.#*##",
+    "#...****###***..",
+    "##.####.###*####",
+    "##****...##*####",
+    "##*#.*****.*..##",
+    "##*#..###*.**###",
+    "..***####****...",
+    "####*####.######",
+    "#...****#.######"
+  ],
+  "Liked": "127",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "895",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-19T16:45:03.797",
+  "Title": "Forest Path"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Simple stack based double spiral puzzle.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBRRRRRRRRRR",
+    "BRRRRRBRRRRRRRRR",
+    "BRRBRRBRRRRRRRRR",
+    "BRBRBRBRRRRRRRRR",
+    "BRBRRRBRRRRRRRRR",
+    "BRRBBBRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RBBBBBBGGRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "51",
+  "DifficultyVoteSum": "147",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "881",
+  "Items": [
+    "################",
+    "################",
+    "*******##*******",
+    "*#####*##*#####*",
+    "*#***#*##*#***#*",
+    "*#*#.#*##*#*#*#*",
+    "*#*###*##*###*#*",
+    "*#*****##*****#*",
+    "*##############*",
+    "****************",
+    "################",
+    "################"
+  ],
+  "Liked": "44",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "238",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-25T16:22:06.047",
+  "Title": "Easy Double Spiral"
+}

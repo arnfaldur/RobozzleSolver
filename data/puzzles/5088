@@ -1,0 +1,53 @@
+{
+  "About": "face",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRRRBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRGGGGGGGGRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "15",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "5088",
+  "Items": [
+    "################",
+    "#######....#####",
+    "####.....*..*###",
+    "####.#*..#*...##",
+    "###..########..#",
+    "###.####.####..#",
+    "##.*##########*#",
+    "##.###########.#",
+    "##.#.........#.#",
+    "#..###########.#",
+    "################",
+    "################"
+  ],
+  "Liked": "1",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "53",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "oshabott59",
+  "SubmittedDate": "2014-11-27T11:34:11.98",
+  "Title": "Ionvoc6"
+}

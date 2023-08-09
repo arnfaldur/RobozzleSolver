@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGGGGGRRRR",
+    "RRRRRRGBBBBBGGGR",
+    "RRRGRRGBGGGBBBBG",
+    "RGGBGRGBGRGBGGBG",
+    "GBBBGGGBGRRGRGBG",
+    "RGGBBBBBGRRRRGBG",
+    "RRRGBGGGRGGGRGBG",
+    "RRRGBGRRGBBBGGBG",
+    "RGGGBGGGRGGBGGBG",
+    "GBBBBBBBGGBBGGBG",
+    "RGGGGGGBBBBGRGBG",
+    "RRRRRRRGGGGRRRGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "176",
+  "DifficultyVoteSum": "415",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "146",
+  "Items": [
+    "#######.....####",
+    "######.........#",
+    "###.##..........",
+    "#..*.#...#.*....",
+    ".*.......##.#...",
+    "#........####...",
+    "###.....#...#...",
+    "###...##.*......",
+    "#.......#.......",
+    "................",
+    "#...........#.*.",
+    "#######....###.#"
+  ],
+  "Liked": "133",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "725",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "filou",
+  "SubmittedDate": "2009-03-16T17:43:32.423",
+  "Title": "Amazer"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "A hint for 'Counting and Doubling'.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGGGGGGGG",
+    "RRRRRRRRRRRRRRRR",
+    "GRRRRRRRRBBBBRRR",
+    "GRRRRRRRRRRRRRRR",
+    "GRRGRRGRRBRRRRRR",
+    "GRRRRRGRRRRRRRRR",
+    "RRRGGGRRRGRRRRRG",
+    "RRRRRRRRRRRRBRRG",
+    "RRRRRRGGGRRRBRRG",
+    "RRRRRRRRRRRRRRRG",
+    "BBBBBRRRRRRRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "51",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "985",
+  "Items": [
+    "################",
+    "................",
+    "###############.",
+    ".............##.",
+    ".###########.##.",
+    ".##.*#....##.##.",
+    ".##.##.##.##.##.",
+    ".##.......##.##.",
+    ".#####.#####.##.",
+    ".#####.......##.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "13",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "34",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T15:45:46.173",
+  "Title": "Counting And Halving"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Demonstrates an unintended alternative solution to the original problem.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGGGGGRRRRRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRBRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRRRRRGGGRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRRRRRGGGGGGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "50",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "867",
+  "Items": [
+    "################",
+    "##............##",
+    "##.##########.##",
+    "##.###.*#####.##",
+    "##.###.######.##",
+    "##.###.######.##",
+    "##.###.######.##",
+    "##.###........##",
+    "##.#############",
+    "##.#############",
+    "##.#############",
+    "##...........###"
+  ],
+  "Liked": "13",
+  "RobotCol": "12",
+  "RobotDir": "2",
+  "RobotRow": "11",
+  "Solutions": "59",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-23T16:56:00.297",
+  "Title": "Energy Overload - No Pit Stops"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "oh, you turn on green ;-)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRBG",
+    "BBGBGBBBBBGRBRRB",
+    "BGRBRBGBBGRRRRRB",
+    "BRRRRGRRRRRRRRRB",
+    "BRRRRRRRRGRRRRRG",
+    "RRRRRRRRRGRRRRRB",
+    "RGGGBGRRRGRRRRRB",
+    "RGBGBGBGRGRGGGRB",
+    "RRRRRBRBRGRBRBRB",
+    "RRRRRBRGGGRGRBRB",
+    "RRRRRBRRRRRGRBRB",
+    "RRRRRGGBBBGGRGBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "49",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "447",
+  "Items": [
+    ".***************",
+    "..*.*.....**.*#*",
+    ".*#.#.*..*##*##*",
+    ".##*#*#**######*",
+    ".########*#####*",
+    ".########*#####*",
+    "#*****###*#####*",
+    "#*******#*#***#*",
+    "#####*#*#*#*#*#*",
+    "#####*#***#*#*#*",
+    "#####*#####*#*#*",
+    "#####*******#***"
+  ],
+  "Liked": "14",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "25",
+  "SubLengths": [
+    "10",
+    "10",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-05T00:23:11.767",
+  "Title": "When to turn?"
+}

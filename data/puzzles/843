@@ -1,0 +1,53 @@
+{
+  "About": "The first and last segments in each row are the same length",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBGBBBGRRRRRRR",
+    "GBGBBBBBBBBBGBGR",
+    "GBBGBGBBBGBBGRRR",
+    "GGBGBBGBGBGBBGGR",
+    "GBBBGBGGBGGBBBGR",
+    "GGGRRRRRRRRRRRRR",
+    "GBBGBGBBGRRRRRRR",
+    "GBBBBBGBBGBBBBBG",
+    "GBBBBBBGBBBBBBGR",
+    "GBBGBBBGGBBGRRRR",
+    "GBGBBGBGRRRRRRRR",
+    "GBBBGBGBBGBBBGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "30",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "843",
+  "Items": [
+    ".********#######",
+    "***************#",
+    "*************###",
+    "***************#",
+    "***************#",
+    "***#############",
+    "*********#######",
+    "****************",
+    "***************#",
+    "************####",
+    "********########",
+    "**************##"
+  ],
+  "Liked": "6",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "15",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-22T06:56:24.78",
+  "Title": "Matching Lengths"
+}

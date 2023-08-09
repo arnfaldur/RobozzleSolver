@@ -1,0 +1,53 @@
+{
+  "About": "Not just a line anymore",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRBBBBBBBBBRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRBRBRBRBRBRBRRR",
+    "RBBBBBBBBBBBBBRR",
+    "RRBRBRBRBRBRBRRR",
+    "RBBBBBBBBBBBBBRR",
+    "RRBRBRBRBRBRBRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRBRBRBRBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "18",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "684",
+  "Items": [
+    "###.*.*.*.*.####",
+    "####.#.#.#.#####",
+    "###.*.*.*.*.####",
+    "##.#.#.#.#.#.###",
+    "#.*.*.*.*.*.*.##",
+    "##.#.#.#.#.#.###",
+    "#.*.*.*.*.*.*.##",
+    "##.#.#.#.#.#.###",
+    "###.*.*.*.*.####",
+    "####.#.#.#.#####",
+    "###.*.*.*.*.####",
+    "####.#.#.#.#####"
+  ],
+  "Liked": "4",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "22",
+  "SubLengths": [
+    "5",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-05T14:26:50.687",
+  "Title": "Pile up the stars"
+}

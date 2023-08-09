@@ -1,0 +1,53 @@
+{
+  "About": "",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRBR",
+    "RBRRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRRBRRRRRBRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRBRRRRRRBRRRR",
+    "RRRBRRRRRRRRBRRR",
+    "RRBRRRRRRRRRRBRR",
+    "RBRRRRRRRRRRRRBR",
+    "BRRRRRRRRRRRRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "745",
+  "DifficultyVoteSum": "1407",
+  "Disliked": "92",
+  "Featured": "true",
+  "Id": "44",
+  "Items": [
+    "...............*",
+    "*.............*.",
+    ".*...........*..",
+    "..*.........*...",
+    "...*.......*....",
+    "....*.....*.....",
+    "***********.....",
+    "....*......*....",
+    "...*........*...",
+    "..*..........*..",
+    ".*............*.",
+    "*..............*"
+  ],
+  "Liked": "688",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "2724",
+  "SubLengths": [
+    "4",
+    "2",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2009-02-24T16:17:01.733",
+  "Title": "Convergence"
+}

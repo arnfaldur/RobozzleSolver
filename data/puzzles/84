@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRBRRBRRRRRRR",
+    "RRRRRBRBBRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1257",
+  "DifficultyVoteSum": "3113",
+  "Disliked": "52",
+  "Featured": "false",
+  "Id": "84",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "#####....#######",
+    "#####.##.#######",
+    "#####.#..#######",
+    "#####.##########",
+    "#####....*######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1111",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "6257",
+  "SubLengths": [
+    "5",
+    "2",
+    "2",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-02T05:16:54.5",
+  "Title": "Simple spiral"
+}

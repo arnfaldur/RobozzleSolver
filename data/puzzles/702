@@ -1,0 +1,53 @@
+{
+  "About": "Relative indexing",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BGGBBBBBBBBBBBBB",
+    "BGGGGGGGGBBBBRRR",
+    "BRRBBBBBBBBBBBBR",
+    "BGGGBBBBBBBRRRRR",
+    "BRBBBBBBRRRRRRRR",
+    "BRRRBBBBBBBBBRRR",
+    "BRBBBBBBBBRRRRRR",
+    "BGGGBRRRRRRRRRRR",
+    "BRRRRRRRBBBRRRRR",
+    "BRRRRRBBBBBRRRRR",
+    "BRRBBRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "63",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "702",
+  "Items": [
+    "################",
+    "****************",
+    "*************###",
+    "***************#",
+    "***********#####",
+    "********########",
+    "*************###",
+    "**********######",
+    "****.###########",
+    "***********#####",
+    "***********#####",
+    "*****###########"
+  ],
+  "Liked": "13",
+  "RobotCol": "4",
+  "RobotDir": "2",
+  "RobotRow": "8",
+  "Solutions": "60",
+  "SubLengths": [
+    "5",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-06T18:27:46.953",
+  "Title": "Linked List III"
+}

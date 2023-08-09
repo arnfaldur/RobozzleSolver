@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGGGGGGGGGGRR",
+    "RRRRBBBBBBBBBGRR",
+    "RRRRRBBBBBBBGRRR",
+    "RRRRRRBBBBBGRRRR",
+    "RRRRRRRBBBGRRRRR",
+    "RRRRRRRRBGRRRRRR",
+    "RRRRRRRRBGRRRRRR",
+    "RRRRRRRBBBGRRRRR",
+    "RRRRRRBBBBBGRRRR",
+    "RRRRRBBBBBBBGRRR",
+    "RRRRBBBBBBBBBGRR",
+    "RRRGGGGGGGGGGGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "56",
+  "DifficultyVoteSum": "130",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "850",
+  "Items": [
+    "###...........##",
+    "###...........##",
+    "####.........###",
+    "#####.**.**.####",
+    "######.***.#####",
+    "#######.*.######",
+    "#######.*.######",
+    "######..*..#####",
+    "#####..***..####",
+    "####..*****..###",
+    "###..*******..##",
+    "###...........##"
+  ],
+  "Liked": "52",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "367",
+  "SubLengths": [
+    "5",
+    "4",
+    "4",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-22T20:41:43.937",
+  "Title": "Hourglass"
+}

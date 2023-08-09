@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGRBRRRRRRRRR",
+    "RRRRBRBRBRGRRRRR",
+    "RRBRBRBRBRBRRRRR",
+    "BRBRBRBRBRBRBRRR",
+    "BBBBBBBBBBBBBBBB",
+    "BRBRRRBRBRRRBRBR",
+    "BRBRRRBRGRRRBRBR",
+    "BRGRRRBRRRRRBRBR",
+    "GRRRRRBRRRRRGRBR",
+    "RRRRRRBRRRRRRRGR",
+    "RRRRRRGRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "32",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "14874",
+  "Items": [
+    "######*#########",
+    "####*#.#*#######",
+    "##*#.#.#.#*#####",
+    "*#.#.#.#.#.#*###",
+    ".#.#.#.#.#.#.#*#",
+    "...............*",
+    ".#.###.#.###.#.#",
+    ".#.###.#*###.#.#",
+    ".#*###.#####.#.#",
+    "*#####.#####*#.#",
+    "######.#######*#",
+    "######*#########"
+  ],
+  "Liked": "9",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "18",
+  "SubLengths": [
+    "7",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axorion",
+  "SubmittedDate": "2022-04-23T15:26:59.963",
+  "Title": "Writer’s Block"
+}

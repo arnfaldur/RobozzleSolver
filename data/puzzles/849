@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBGBBBRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RGBGBGBGBGBGBGRR",
+    "RRRRBRRBRRBRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "30",
+  "DifficultyVoteSum": "97",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "849",
+  "Items": [
+    "################",
+    "####.......#####",
+    "######...#######",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#*...........*##",
+    "####.#...#.#####",
+    "#######.########",
+    "#######.########",
+    "################",
+    "################"
+  ],
+  "Liked": "29",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "91",
+  "SubLengths": [
+    "2",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-22T20:05:39.627",
+  "Title": "Airplane 2"
+}

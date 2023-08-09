@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRRBRRRRRRRBRRR",
+    "RRRBBBRRRRRBBBRR",
+    "RRRBBBRRRRRBBBRR",
+    "RRRBBBRRRRRBBBRR",
+    "RRBBBBBBRBBBBBBR",
+    "RRBBBBBBBBBBBBBR",
+    "RRBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "710",
+  "DifficultyVoteSum": "1657",
+  "Disliked": "44",
+  "Featured": "true",
+  "Id": "37",
+  "Items": [
+    "################",
+    "####*#######*###",
+    "####.#######.###",
+    "###*.*#####*.*##",
+    "###...#####...##",
+    "###...#####...##",
+    "##*...**#**...*#",
+    "##......*......#",
+    "##.............#",
+    "##.............#",
+    "################",
+    "################"
+  ],
+  "Liked": "507",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "4137",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-21T14:36:33.077",
+  "Title": "On the edge"
+}

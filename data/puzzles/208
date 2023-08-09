@@ -1,0 +1,53 @@
+{
+  "About": "Count turns on red to draw the P.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBRRBBRRRBRBRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBBBBRRBBRRRR",
+    "RRRRRRRBRRRRRBBB",
+    "RBRRRRRBRRRRRRRB",
+    "BBBRRRRRRRRRBRBB",
+    "BRBBBRBBBRRRRRBR",
+    "BRRRRRRRRRRRRRBR",
+    "RRBRRRRRRRRRRRRR",
+    "RRRRRRRRRRBRRBRR",
+    "RRRRBRRRBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "71",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "208",
+  "Items": [
+    "################",
+    "**##********####",
+    "#*##*######*####",
+    "#*##********####",
+    "#*####**#####***",
+    "#*******#####*#*",
+    "***###*#####****",
+    "*#***#***####**#",
+    "***************#",
+    "##*#*###*####*##",
+    "####*###*#.***##",
+    "####*****#######"
+  ],
+  "Liked": "14",
+  "RobotCol": "10",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "66",
+  "SubLengths": [
+    "8",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jharkeld",
+  "SubmittedDate": "2009-03-27T21:06:40.157",
+  "Title": "Roundabout Recursion \"P\""
+}

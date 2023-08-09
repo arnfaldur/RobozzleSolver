@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBRBRBRBRBRBRRR",
+    "RRBRBRBRBRBRBRRR",
+    "BBRBRBRBRBRBRBBR",
+    "RRBRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRRBBR",
+    "RRBRRRRRRRRRBRRR",
+    "BBRRRRRRRRRRRBBR",
+    "RRBRRRRRRRRRBRRR",
+    "BBRBRBRBRBRBRBBR",
+    "RRBRBRBRBRBRBRRR",
+    "RRBRBRBRBRBRBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "215",
+  "DifficultyVoteSum": "374",
+  "Disliked": "19",
+  "Featured": "false",
+  "Id": "726",
+  "Items": [
+    "################",
+    "##*#*#*#*#*#*###",
+    "##.#.#.#.#.#.###",
+    "*.............*#",
+    "##.#########.###",
+    "*..#########..*#",
+    "##.#########.###",
+    "*..#########..*#",
+    "##.#########.###",
+    "*.............*#",
+    "##.#.#.#.#.#.###",
+    "##*#*#*#*#*#*###"
+  ],
+  "Liked": "169",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "1124",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-08T22:59:17.483",
+  "Title": "Chip"
+}

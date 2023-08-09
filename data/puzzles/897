@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBBRRB",
+    "BRRRRRRRRRRRRBRB",
+    "BRRBBBBBBBBGRBRB",
+    "BRRBBBBBBBBBBRRB",
+    "BRRRRRRRRRRRRBRB",
+    "RBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRBBBRBBBRBBBRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "76",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "897",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#.........*#.#.",
+    ".#............#.",
+    ".############.#.",
+    "................",
+    "#############.##",
+    "#..............#",
+    "#.###########..#",
+    "#*##############"
+  ],
+  "Liked": "18",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "82",
+  "SubLengths": [
+    "7",
+    "2",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-26T10:00:51.547",
+  "Title": "the long path"
+}

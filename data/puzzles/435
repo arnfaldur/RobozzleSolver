@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRBRBRBRBRBRBRRR",
+    "GRRBRRGBRBGRRRRR",
+    "GRGRGBRRGRRBRRRR",
+    "RBGRRRRRGRGRGBBR",
+    "BRBRBRBRBRBRBRRB",
+    "RRRRRRRRRRRRRRRB",
+    "BRBRBRBRBRBRBRRB",
+    "GRRBRRRRGBGRRBBR",
+    "RRRRGRRBRRRRRRRR",
+    "GBGRGBGRGRRBGRRR",
+    "BRBRBRBRBRBRBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "32",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "435",
+  "Items": [
+    ".#.#.#.#.#.#.###",
+    ".#...#.....#.###",
+    ".#.#...#.#...###",
+    "...#.#.#.#.#....",
+    "*#*#*#*#*#*#*##.",
+    "###############.",
+    "*#*#*#*#*#*#*##.",
+    ".#...#.#...#....",
+    ".#.#.#...#.#.###",
+    "...#...#.#...###",
+    ".#.#.#.#.#.#.###",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "40",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-03T17:27:05.983",
+  "Title": "Minority Rule"
+}

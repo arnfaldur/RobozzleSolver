@@ -1,0 +1,53 @@
+{
+  "About": "But I want blue bar!",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2211",
+  "DifficultyVoteSum": "3920",
+  "Disliked": "106",
+  "Featured": "false",
+  "Id": "289",
+  "Items": [
+    "################",
+    "################",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######.*#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "#######**#######",
+    "################"
+  ],
+  "Liked": "1819",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "16571",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-04T23:45:17.86",
+  "Title": "Colorful Bar"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGBBGRRRRRR",
+    "RRRRRGBBBRRRRRRR",
+    "RRBBGGBBBGBRRRRR",
+    "RRRRBRGBBRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRGBBBBBBBRRRRR",
+    "RRRGGRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "43",
+  "DifficultyVoteSum": "105",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "497",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "######*..*..####",
+    "#####.....*.####",
+    "##*..*...*.*####",
+    "####.#*...*.####",
+    "####.#####..####",
+    "###.........####",
+    "###*.###########",
+    "################"
+  ],
+  "Liked": "29",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "130",
+  "SubLengths": [
+    "5",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-11T20:02:01.017",
+  "Title": "True blue"
+}

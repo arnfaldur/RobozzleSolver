@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGBRGBRGRGBRRRR",
+    "RRRRRRRRRRRRRGRR",
+    "RBRBRBGRBRGGRBRR",
+    "RGRBRRRRRRRRRGRR",
+    "RBRRRGBRGGRGRRRR",
+    "RRRGRGRRRRRBRBRR",
+    "RBRRRBRGRBRRRGRR",
+    "RGRGRRRRRBRBRRRR",
+    "RRRBRBRRRRRGRGRR",
+    "RBRRRRRGBRBGRBRR",
+    "RGRGRRRRRRRRRGRR",
+    "RRRBBRBRGRGBRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "109",
+  "DifficultyVoteSum": "228",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "776",
+  "Items": [
+    "#.............##",
+    "#.###########.##",
+    "#.#.........#.##",
+    "#.#.#######.#.##",
+    "#.#.#.....#.#.##",
+    "#.#.#.###.#.#.##",
+    "#.#.#.#*#.#.#.##",
+    "#.#.#.#...#.#.##",
+    "#.#.#.#####.#.##",
+    "#.#.#.......#.##",
+    "#.#.#########.##",
+    "#.#...........##"
+  ],
+  "Liked": "108",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1495",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-15T14:58:57.36",
+  "Title": "Turn on Pair"
+}

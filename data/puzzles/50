@@ -1,0 +1,53 @@
+{
+  "About": "Figure the path to the star",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBR",
+    "BRRRRRRRRRGBBBRR",
+    "BRRRRRRRRRBRRRBR",
+    "BBBBBBBBBBRRRRBR",
+    "BRRRRRRRRRRRRRBR",
+    "BRRRRRRRRRRRRRGR",
+    "RBBBBBBBBRRRRRBR",
+    "BRRRRRRRBRRRRRBR",
+    "GBBBBBBBBBBBBBGR",
+    "BRRRRRRRBRRRRRBR",
+    "BRRRRRRRBRRRRRBR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "213",
+  "DifficultyVoteSum": "519",
+  "Disliked": "58",
+  "Featured": "true",
+  "Id": "50",
+  "Items": [
+    "...............#",
+    ".#########.....#",
+    ".#########.###.#",
+    "......*....###.#",
+    ".#############.#",
+    ".#############.#",
+    ".........#####.#",
+    ".#######.#####.#",
+    "...............#",
+    ".#######.#####.#",
+    ".#######.#####.#",
+    "...............#"
+  ],
+  "Liked": "148",
+  "RobotCol": "8",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "727",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "avatare",
+  "SubmittedDate": "2009-02-25T00:49:18.127",
+  "Title": "Where does this path lead to"
+}

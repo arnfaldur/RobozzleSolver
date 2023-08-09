@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBBB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "94",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "806",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "................",
+    ".##############*",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############"
+  ],
+  "Liked": "26",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "116",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-19T06:48:51.673",
+  "Title": "double call stack"
+}

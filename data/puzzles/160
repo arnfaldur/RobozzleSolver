@@ -1,0 +1,53 @@
+{
+  "About": "two solutions - simple and optimized",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBGGGRRRRR",
+    "RRRRRRRBBBGRRRRR",
+    "RRRRGGGRRBGRRRRR",
+    "RRRRGBBBRRRBRRRR",
+    "RRRRBRGGBBBBRRRR",
+    "RRRRBRRRGGGGRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "198",
+  "DifficultyVoteSum": "432",
+  "Disliked": "33",
+  "Featured": "false",
+  "Id": "160",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "####.*******####",
+    "####********####",
+    "####********####",
+    "####********####",
+    "####********####",
+    "####********####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "154",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "776",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-19T14:34:05.343",
+  "Title": "Shifting colors"
+}

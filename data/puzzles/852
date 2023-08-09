@@ -1,0 +1,53 @@
+{
+  "About": "Even Easier Version Without Paint, Charge Up To Start Then Run The Algorithm.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBGBBBBBRRRRR",
+    "GRRRRRRRRRBRRRRR",
+    "BBBBBBRRBBBRRRRR",
+    "RRRRRRBRRRBRRRRR",
+    "RRRRRRBRRRBRRRRR",
+    "RRRRRRBRRRRBBBBB",
+    "RRRRRRBRRRRRRBRB",
+    "RRRRRRBRRRRRRGRB",
+    "RRRRRRBRRRRRRBRG",
+    "RRRRRRRBBBGBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRBGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "65",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "852",
+  "Items": [
+    "***********#####",
+    "*#########*#####",
+    "*******#***#####",
+    "######*###*#####",
+    "######*###*#####",
+    "######*###******",
+    "######*######*#*",
+    "######*######*#*",
+    "######**#####*#*",
+    "#######*******#*",
+    "###############*",
+    "##.*************"
+  ],
+  "Liked": "16",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "60",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-22T21:18:51.313",
+  "Title": "Batteries Not Plus Paint III"
+}

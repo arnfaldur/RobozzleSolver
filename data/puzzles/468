@@ -1,0 +1,53 @@
+{
+  "About": "Highway to Hell",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRBBRRRRRRRRRRRR",
+    "RBBRRRRRRRRRRRRR",
+    "BBRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "165",
+  "DifficultyVoteSum": "373",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "468",
+  "Items": [
+    "################",
+    "################",
+    "#######**#######",
+    "######....######",
+    "#####..##..#####",
+    "####..####..####",
+    "###..######..###",
+    "##..########..##",
+    "#..##########..#",
+    "..############..",
+    ".##############*",
+    "################"
+  ],
+  "Liked": "135",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "1498",
+  "SubLengths": [
+    "6",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "coolchrisrm",
+  "SubmittedDate": "2009-05-06T21:34:18.063",
+  "Title": "Stairway to Heaven"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGBGGBBBGBBBBRR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRBRBGGRRRRRRRR",
+    "RRRBRRRRRRRRRRRR",
+    "RBRBRGBBBBRRRRRR",
+    "RBRBRGRRRBRBRBRR",
+    "RBRGRGRRRBRGRBRR",
+    "RGRGRGRGGBRGRBRR",
+    "RRRBRRRRRRRGRGRR",
+    "RBRGRBBBBRBGRGRR",
+    "RRRGRRRRRRRRRGRR",
+    "RRRBBBBRGRGGRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "74",
+  "DifficultyVoteSum": "162",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "779",
+  "Items": [
+    "#.............##",
+    "#.###########.##",
+    "#.#.........#.##",
+    "#.#.#######.#.##",
+    "#.#.#.....#.#.##",
+    "#.#.#.###.#.#.##",
+    "#.#.#.###.#.#.##",
+    "#.#.#.#*..#.#.##",
+    "#.#.#.#####.#.##",
+    "#.#.#.......#.##",
+    "#.#.#########.##",
+    "#.#...........##"
+  ],
+  "Liked": "57",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "186",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-15T16:02:32.017",
+  "Title": "Turn on Four of a Kind"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "New and improved!  Look at the corners",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RGRRRRRRRRRRRRRR",
+    "RRGRRBRRRRRRRRRR",
+    "RRRGRGRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRGRRRBRRRRR",
+    "RRRRRRRRRRGRRBRR",
+    "RRRRRRRRRRGRGRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "26",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "403",
+  "Items": [
+    "#.##############",
+    ".*##############",
+    "#*.#############",
+    "#**#############",
+    "##*##.##########",
+    "##****##########",
+    "#####*##.#######",
+    "#####****#.#####",
+    "########***##.##",
+    "##########****#.",
+    "#############***",
+    "###############*"
+  ],
+  "Liked": "4",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "41",
+  "SubLengths": [
+    "5",
+    "6",
+    "7",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-30T03:52:50.093",
+  "Title": "Addition Modulo 3 (Plus 1) - II"
+}

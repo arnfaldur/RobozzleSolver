@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGRRGRRGGRRBBRR",
+    "RGRRGRGRRRRBBBRR",
+    "RRRRRRRRRRGBBBRR",
+    "RRGRRGRRRRBBBBRR",
+    "RRRGRRRRRBBBBBRR",
+    "RRRRRRRRRBRBBBRR",
+    "RGRRRRRBBBBGBBRR",
+    "RRGRRBBBBBBBBBRR",
+    "RRRRBGBBBBRGRGRR",
+    "RRRBBRBBBBBRBBRR",
+    "RRRBBBBBBBBBRBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "41",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "557",
+  "Items": [
+    "##.##.##..##..##",
+    "#.##.#.####...##",
+    "##########...*##",
+    "##.##.##......##",
+    "###.####......##",
+    "######..#..*..##",
+    "#.####........##",
+    "##.##....*....##",
+    "####......#..*##",
+    "###........#..##",
+    "###.........#.##",
+    "################"
+  ],
+  "Liked": "4",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "55",
+  "SubLengths": [
+    "10",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "cobaltblue",
+  "SubmittedDate": "2009-05-19T22:45:11.843",
+  "Title": "StealthBomber"
+}

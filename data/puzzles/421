@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRBGGGBRRRRR",
+    "RRRRRRBGBGBRRRRR",
+    "RRRRRRBGGGBRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "73",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "421",
+  "Items": [
+    "################",
+    "################",
+    "#####....***####",
+    "#####....*.*####",
+    "#####..*****####",
+    "#####***.***####",
+    "#####*..**.*####",
+    "#####*******####",
+    "#####.......####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "22",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "81",
+  "SubLengths": [
+    "5",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-02T19:37:50.017",
+  "Title": "Follow the stars"
+}

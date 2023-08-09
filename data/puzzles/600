@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "RRBBBGBRRRRRRRBB",
+    "BRRBRGRBBBRRRBRR",
+    "BRRRRRRRBBBRRBRB",
+    "RRRBBRBRGRRRBRBG",
+    "RBRGRRRBRGBGRRBG",
+    "GRBRBRRBRGRGRBBR",
+    "RRGRRRBRRRBRRBRR",
+    "RRGRRRRBRRRRGRRR",
+    "RGRRBRBGRRRRGGGR",
+    "RRRRGRGRRRGRRGRR",
+    "RRRRGRRRRRGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "31",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "600",
+  "Items": [
+    ".***************",
+    ".....*..........",
+    ".....*..........",
+    ".....#..........",
+    ".....#..*......*",
+    "...*.#..#*.*...*",
+    "*..#.#..#*.*...#",
+    "#.*#.#..##.#...#",
+    "#.*#.#..##.#*..#",
+    "#*##.#.*##.#***#",
+    "####*#*###*##*##",
+    "####*#####*#####"
+  ],
+  "Liked": "7",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "27",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-27T14:48:16.64",
+  "Title": "Palindromes 2"
+}

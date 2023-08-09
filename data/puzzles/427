@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGBBRRRRRRRRRRRR",
+    "RGBBBBBBRRRRRRRR",
+    "RGBBBBBBBBBBRRRR",
+    "RGBBBBBBBBBBBBRR",
+    "RGBBBBBBBBBBBBBR",
+    "RGBBBBBBBBBBBBBR",
+    "RGBBBBBBBBBBBBRR",
+    "RGBBBBBBBBBBRRRR",
+    "RGBBBBBBBRRRRRRR",
+    "RGBBBRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "62",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "427",
+  "Items": [
+    "################",
+    "#.***###########",
+    "#********#######",
+    "#***********####",
+    "#*************##",
+    "#**************#",
+    "#**************#",
+    "#*************##",
+    "#***********####",
+    "#********#######",
+    "#****###########",
+    "################"
+  ],
+  "Liked": "11",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "64",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-03T09:24:32.327",
+  "Title": "Parabola"
+}

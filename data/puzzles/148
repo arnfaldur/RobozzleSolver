@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGGGGGRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRBRRRRRRR",
+    "RRBRRRRBBBRRRRRR",
+    "RRBRRRBBBBBRRRRR",
+    "RRBRRBBBBBBBRRRR",
+    "RRBRRRBBBBBRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "68",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "148",
+  "Items": [
+    "##......*#######",
+    "##.#####*#######",
+    "##.#####*#######",
+    "##.#####*#######",
+    "##.####***######",
+    "##.###*.*.*#####",
+    "##.##*..*..*####",
+    "##.#*...*...*###",
+    "##.##*.***.*####",
+    "#######*#*######",
+    "#######***######",
+    "################"
+  ],
+  "Liked": "16",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "43",
+  "SubLengths": [
+    "4",
+    "9",
+    "4",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-16T19:57:57.767",
+  "Title": "Light goes out"
+}

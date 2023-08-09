@@ -1,0 +1,53 @@
+{
+  "About": "Well that's a nice watch...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBRBRBRBBBBB",
+    "BBBBBBRBRBRBRBBB",
+    "BBBBBBRBRBRBRBBB",
+    "BBBBBBRBRBRBRBBB",
+    "BBBBBBRRRRRRRBBB",
+    "BBBRRBRRRRRRRBBB",
+    "BBBBRRRRRRRRRBBB",
+    "BBBBBRRRRRRRRBBB",
+    "BBBBBBRRRRRRBBBB",
+    "BBBBBBBGRRRGBBBB",
+    "BBBBBBBRRRRRBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "100",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "120",
+  "Items": [
+    "................",
+    "......#.#.#.....",
+    "......#.#.#.#...",
+    "......#.#.#.#...",
+    "......#*#*#*#...",
+    "......#######...",
+    "...##*#######...",
+    "....#########...",
+    ".....########...",
+    "......##...#....",
+    "................",
+    ".......#...#...."
+  ],
+  "Liked": "18",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "190",
+  "SubLengths": [
+    "7",
+    "10",
+    "5",
+    "4",
+    "3"
+  ],
+  "SubmittedBy": "raijuzero",
+  "SubmittedDate": "2009-03-10T17:07:46.64",
+  "Title": "The HAND!"
+}

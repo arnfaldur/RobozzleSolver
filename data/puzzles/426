@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRBRRRBRRRBRR",
+    "RBBBBBRRRBBBBBRR",
+    "RBRBRBRRRBRBRBRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBRRRBRRRBRRRR",
+    "RBRBRBRBRBRBRBRR",
+    "RBBBBBRBRBBBBBRR",
+    "RBRRRBRBRBRRRBRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "55",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "426",
+  "Items": [
+    "################",
+    "#*###*###*###*##",
+    "#*****###*****##",
+    "#*#*#*###*#*#*##",
+    "###*#######*####",
+    "###****.****####",
+    "###*###*###*####",
+    "#*#*#*#*#*#*#*##",
+    "#*****#*#*****##",
+    "#*###*#*#*###*##",
+    "#######*########",
+    "################"
+  ],
+  "Liked": "12",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "44",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-03T08:51:45.267",
+  "Title": "Fractal"
+}

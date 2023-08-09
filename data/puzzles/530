@@ -1,0 +1,53 @@
+{
+  "About": "\"What a happy little cloud!\" - Bob Ross",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRBBBBBBBBBBBBRR",
+    "RBBRBRBBBBBBRBRR",
+    "BBBBBBRBBBBRBBBB",
+    "RBBBBBBBRRBBBBBB",
+    "RBBBBBRBBBBRBBBR",
+    "RRRBBBBRRRRBBBBR",
+    "BBGRBRBBBGBBRBRG",
+    "RRRRGRRRRGGRRRRG",
+    "RRRGRGRRRGRGRRRG",
+    "RRRGGGRRRGGRRRRG",
+    "RRRGRGRRRGRRRRRR",
+    "RRRGRGRRRGRRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "109",
+  "DifficultyVoteSum": "260",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "530",
+  "Items": [
+    "##............##",
+    "#..*.*......*.*#",
+    "......#....#....",
+    "#.......##......",
+    "#.....#....#...#",
+    "###....####....#",
+    "*.*..*...*..*..*",
+    ".#.#.#..#..#.#..",
+    ".#..#..#..#..#..",
+    "........#..##.#.",
+    ".#..#..##.###.##",
+    ".#..#..##.###.#."
+  ],
+  "Liked": "88",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "1017",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T06:47:52.827",
+  "Title": "Happy"
+}

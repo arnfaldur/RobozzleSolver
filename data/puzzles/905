@@ -1,0 +1,53 @@
+{
+  "About": "What do you do when there _is_ no pattern?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBBBBBBBBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRBBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBBRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRBBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBBRRRRRBRRRBRR",
+    "RRBBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "40",
+  "DifficultyVoteSum": "108",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "905",
+  "Items": [
+    "##...........*##",
+    "##.##########.##",
+    "##.#########*.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.*#########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.#########*.##",
+    "##.##########.##",
+    "##.*#####*###.##",
+    "##*..........*##"
+  ],
+  "Liked": "25",
+  "RobotCol": "2",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "129",
+  "SubLengths": [
+    "10",
+    "8",
+    "8",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-26T15:06:18.843",
+  "Title": "Efficiency"
+}

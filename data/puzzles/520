@@ -1,0 +1,53 @@
+{
+  "About": "ahhh shooot!",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RGGRRRRRBRRRRBRR",
+    "RGBRRRRRRRRRRGRB",
+    "RGBRRRRRRRRRRRRR",
+    "RGBRBRRRRRRRRGRR",
+    "RGBRRRRRRRRRRRRR",
+    "RGBRBRRRRRRRRGRR",
+    "RGBRRRRRRRRRRRRR",
+    "RGBRBRRRRRRRRGRR",
+    "RGBRRRRRRRRRRRRR",
+    "RGBRBRRRRRRRRGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRBRRRBGRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "142",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "520",
+  "Items": [
+    "#**#####*....*##",
+    "#**..........*.*",
+    "#**#####.####.#*",
+    "#**#*........*#*",
+    "#**#.###.######*",
+    "#**#*........*#*",
+    "#**#####.####.#*",
+    "#**#*........*#*",
+    "#**#.###.######*",
+    "#**#*........*#*",
+    "##.#####.####.#*",
+    "..*.....*...**#*"
+  ],
+  "Liked": "45",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "151",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-05-14T05:34:31.017",
+  "Title": "Shoots and Ladders"
+}

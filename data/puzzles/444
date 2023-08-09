@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBRBBBBBRBBBBR",
+    "RRRRRRRRRRRRRRRB",
+    "RBRBBBBRBBBBBRRB",
+    "BRRRRRRRRRRRRBRB",
+    "BRRBRRBBBBBRRRRB",
+    "BRBRRRRRRRRRRRRR",
+    "BRRRBRRRRRRRRBRB",
+    "BRBRRBRBBRBRRBRB",
+    "BRRRRRRRRRRRRBRB",
+    "RRRBBBBRRBBBBRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBRBBBBBRBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "692",
+  "DifficultyVoteSum": "1903",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "444",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "601",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "3591",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-04T14:29:50.173",
+  "Title": "Not yet... not yet..."
+}

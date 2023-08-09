@@ -1,0 +1,53 @@
+{
+  "About": "direction posts and danger signs",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBRRBBBBBGRR",
+    "RBRRBBBBBBRRBBRR",
+    "RRGBRRBBBBBGBRRR",
+    "RRBBBBBBBRRBBRRR",
+    "RBBBGBRRGBBBBBRR",
+    "RBRBBBBBBBBRBBRR",
+    "RBRBBRRBRBBRBBRR",
+    "RBGBBBBBRRBBBGRR",
+    "RRBBRBRBBBBBRBRR",
+    "RRBBRBRBRBBBRBRR",
+    "RBRRGBBBRRBGBBRR",
+    "RBBBBRRBBBBRRBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "28",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "911",
+  "Items": [
+    "#...*..#*...*.##",
+    "#..#.......#..##",
+    "#....#*..*....##",
+    "##*......#...###",
+    "#....*.#....*.##",
+    "#.#.....*.....##",
+    "#..*.#....*#..##",
+    "#....*..#...*.##",
+    "##..#...*.....##",
+    "#.....#....*#.##",
+    "#.#..*..#.*...##",
+    "#....#..*..#..##"
+  ],
+  "Liked": "7",
+  "RobotCol": "1",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "56",
+  "SubLengths": [
+    "2",
+    "5",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-27T05:39:35.923",
+  "Title": "Minefield"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBBRRRRRBRR",
+    "RRRRBBBBRRRRRBRR",
+    "RRRBBBBBRRRBRBRR",
+    "RRBBBBBBRRBBRBBR",
+    "RBBBBBBBRBBBRBBR",
+    "BBBBBBBBBBBBBBBR",
+    "RGRGRGRGRGRGRGRR",
+    "RRGGRRGGRRGGRRGR",
+    "RRRRGGGGRRRRRGRR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "63",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "198",
+  "Items": [
+    "#######*########",
+    "######**########",
+    "#####***#####*##",
+    "####****#####*##",
+    "###*****###*#*##",
+    "##******##**#**#",
+    "#*******#***#**#",
+    ".**************#",
+    "...............#",
+    "...............#",
+    "...............#",
+    "...............#"
+  ],
+  "Liked": "14",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "7",
+  "Solutions": "99",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-26T11:47:55.673",
+  "Title": "Binary Counting"
+}

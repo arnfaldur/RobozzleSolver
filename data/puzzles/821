@@ -1,0 +1,53 @@
+{
+  "About": "Its easy to see on what color to turn which direction, but when?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRGGGBBRRBRR",
+    "RRRGRRRRRRRRRBRR",
+    "RRRBRRRBGRRRRBRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRRRRRRRRBRR",
+    "RRRRGGRGBRRRRRRR",
+    "RRRRRRRRRBBBGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "39",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "821",
+  "Items": [
+    "################",
+    "#............*##",
+    "#############.##",
+    "#############.##",
+    "###*.......*#.##",
+    "###.#######.#.##",
+    "##*.###....*#.##",
+    "##.##*.*#####.##",
+    "##.##########.##",
+    "##*......####.##",
+    "########*....*##",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "38",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-20T20:02:08.983",
+  "Title": "Sir Countalot"
+}

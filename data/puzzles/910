@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGBBBBBBBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRBBBBBRRRRRRBR",
+    "RRRBRRRRRRRRRRBR",
+    "RRRBRRRRGGGRRRBR",
+    "RRRBRRRRRRGRRRBR",
+    "RRRBRRRGRRBRGRRR",
+    "RRRGRBRRRBBRGRRR",
+    "RRRGRBRRRRRRGRRR",
+    "RRRGRBBBBGGGGRRR",
+    "RRRGRRRRRRRRRRRR",
+    "RRRGGGGGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "72",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "910",
+  "Items": [
+    "#..............#",
+    "##############.#",
+    "###..........#.#",
+    "###.########.#.#",
+    "###.#......#.#.#",
+    "###.#.####.#.#.#",
+    "###.#.#*##.#.#.#",
+    "###.#.#....#.#.#",
+    "###.#.######.#.#",
+    "###.#........#.#",
+    "###.##########.#",
+    "###............#"
+  ],
+  "Liked": "21",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "67",
+  "SubLengths": [
+    "7",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-27T04:19:18.703",
+  "Title": "Chameleon Spiral"
+}

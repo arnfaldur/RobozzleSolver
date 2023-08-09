@@ -1,0 +1,53 @@
+{
+  "About": "It's easy too...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGGGGGGGGGGR",
+    "RRGRRRRRRRRRGGBG",
+    "RRGRRRRRRRRGGRGG",
+    "RRGRRRRRRRGGRGRG",
+    "RRGRRRRRRGGRGRRG",
+    "RRGGGGGGGGRGRRRG",
+    "RRRGGGGGGGGGGGGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "127",
+  "DifficultyVoteSum": "382",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "82",
+  "Items": [
+    "################",
+    "###............#",
+    "##.#########..*.",
+    "##.########.....",
+    "##.#######....#.",
+    "##.######....##.",
+    "##..........###.",
+    "###............#",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "131",
+  "RobotCol": "3",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "883",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "glum",
+  "SubmittedDate": "2009-03-01T17:50:17.827",
+  "Title": "One Star 2"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "All tiles should be blue when you finish the level.",
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBRRGBRRRRRBBBRR",
+    "BRBRBRBRRRBRRRBR",
+    "RBBBBBRRRRBRRRBR",
+    "RRBRBRRRRRBRRRBR",
+    "RRBRGBBBBBGBBBRR",
+    "RRBRBRRRRRBRRRRR",
+    "RRBRBRRRRRBRRRRR",
+    "RRBRBRRRRRBRRRRR",
+    "GBRBGBBBBBGRRRRR",
+    "BRRRBRRRRRBRRRRR",
+    "RBBBRRRRRRBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "182",
+  "DifficultyVoteSum": "615",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "526",
+  "Items": [
+    "################",
+    "*.*#*.*###*...*#",
+    ".#.#.#.###.###.#",
+    "*.....*###.###.#",
+    "##.#.#####.###.#",
+    "##.#*.....*...*#",
+    "##.#.#####.#####",
+    "##.#.#####.#####",
+    "##.#.#####.#####",
+    "*.*.*.....*#####",
+    ".###.#####.#####",
+    "*...*#####*#####"
+  ],
+  "Liked": "168",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "940",
+  "SubLengths": [
+    "4",
+    "3",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rainault",
+  "SubmittedDate": "2009-05-15T04:25:57.36",
+  "Title": "Bumpin' around"
+}

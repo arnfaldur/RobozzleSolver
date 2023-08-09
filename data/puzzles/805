@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "250",
+  "DifficultyVoteSum": "455",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "805",
+  "Items": [
+    "################",
+    "################",
+    ".*##############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############",
+    ".###############"
+  ],
+  "Liked": "197",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1344",
+  "SubLengths": [
+    "3",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-19T06:29:29.89",
+  "Title": "double stack"
+}

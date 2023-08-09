@@ -1,0 +1,53 @@
+{
+  "About": "The number of blue squares determines everything.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBRRRRRRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBRRRRRBRRR",
+    "RBRBRRRRRRRRRBRR",
+    "RRBRRRRBRRRRRBRR",
+    "RRRRRRRBRRRRRBRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRBRRRRRRRRRRRR",
+    "RRRRRRRRBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "75",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "256",
+  "Items": [
+    "################",
+    "#.**********####",
+    "###########*####",
+    "###########*####",
+    "###########*####",
+    "###*****###***##",
+    "#*#*###*#####*##",
+    "#***###*#####*##",
+    "#######*#####*##",
+    "###*****#####*##",
+    "###*#########*##",
+    "###***********##"
+  ],
+  "Liked": "17",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "91",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-02T04:08:30",
+  "Title": "Counting problem"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "You've reached the end when you've seen an equal amount of each color",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGRRRRRRGG",
+    "RRRRRRRGRRRRRRGG",
+    "RRRGGRRBGRRRGRGB",
+    "RRRGGRRGGRRRGRBG",
+    "RRRBGRGGBRRGGGBG",
+    "RRRGGRGGGRRGGGGB",
+    "RGRBBRBBGRGGGGBG",
+    "RGRGBRGBBRGBBGGB",
+    "GGRBGGGBBRBBBBGB",
+    "GBRGBGBGGRGGBBBG",
+    "BBGBBBBBBGBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "139",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "356",
+  "Items": [
+    "#######*######**",
+    "#######*######**",
+    "###**##**###*#**",
+    "###**##**###*#**",
+    "###**#***##*****",
+    "###**#***##*****",
+    "#*#**#***#******",
+    "#*#**#***#******",
+    "**#******#******",
+    "**#******#******",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "40",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "168",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-18T11:32:01.28",
+  "Title": "Balanced Colors"
+}

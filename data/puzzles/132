@@ -1,0 +1,53 @@
+{
+  "About": "So close, yet so far",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGBBBBRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "356",
+  "DifficultyVoteSum": "960",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "132",
+  "Items": [
+    "################",
+    "####....*.######",
+    "####.###########",
+    "####.###########",
+    "####.###########",
+    "####.###########",
+    "####.###########",
+    "####.###########",
+    "####.###########",
+    "####.###########",
+    "####*###########",
+    "################"
+  ],
+  "Liked": "312",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "2916",
+  "SubLengths": [
+    "2",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-12T17:43:21.343",
+  "Title": "Split"
+}

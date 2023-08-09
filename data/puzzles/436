@@ -1,0 +1,53 @@
+{
+  "About": "A simple variation of your basic maze level.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBGGGGGRGGGGGBG",
+    "RGBRBBBBRBBBBRBG",
+    "GGRGGGGGGGGRGGBG",
+    "BBBBBBBBBBRBGGBG",
+    "GGGGGGGGGGGGRGBG",
+    "RRRRRRRRRRRRRGBG",
+    "RRGBGGGGGGGGRGBG",
+    "RRGBRBBBBBBBRGBG",
+    "RRGBGGGGGRGGGGRG",
+    "GGGRGGRRGBRBBBBB",
+    "BBBBBBRRGBGGGGGG",
+    "GGGGGGRRGBGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "83",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "436",
+  "Items": [
+    "#.......#.......",
+    "#..*...*#....*..",
+    "..*........*....",
+    "..........*.....",
+    "............#...",
+    "#############...",
+    "##..........#...",
+    "##..*.......#...",
+    "##.......*....*.",
+    "...*..##..*.....",
+    "......##........",
+    "......##...#####"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "86",
+  "SubLengths": [
+    "8",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-03T17:45:49.14",
+  "Title": "Don't miss the turn!"
+}

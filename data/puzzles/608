@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBBRRRRRRRRRRR",
+    "BBGBGRRRRRRRRRRR",
+    "RRRGGBRRRRRRRRRR",
+    "RRBBRRRRRRRRRRRR",
+    "RBGGBRRRRRRRRRRR",
+    "BBGBGRRRRRRRRRRR",
+    "RGBBGBBBRRRRRRRR",
+    "RBBRBBGBRRRRRRRR",
+    "BGGRRRBRRRRRRRRR",
+    "RRBBGBGRRRRRRRRR",
+    "BBGBGRBRRRRRRRRR",
+    "RRRRBRBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "25",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "608",
+  "Items": [
+    "###..###########",
+    "...**######***##",
+    "###**.#####**###",
+    "##.*########*###",
+    "#.**.#######**##",
+    "..***######***##",
+    "#****...###****#",
+    "#*.#..****####*#",
+    ".**###*##*###**#",
+    "##*.***##***#*##",
+    "..***#.####***##",
+    "####.#.#########"
+  ],
+  "Liked": "6",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "16",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-28T21:20:25.077",
+  "Title": "Symmetry - Forest Path"
+}

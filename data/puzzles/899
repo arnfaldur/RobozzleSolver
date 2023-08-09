@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBRBBBBRRRRR",
+    "RRGRBRBRBRGRRRRR",
+    "RRBBBBBRBBBRRRRR",
+    "RRBRGRBRBRGRRRRR",
+    "RRRBBBRBRBRRRRRR",
+    "RRBRRRGRGRBRRRRR",
+    "RRBBBBBBRBBRRRRR",
+    "RRGRGRBRBRGRRRRR",
+    "RRRBBBBRBBBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "38",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "899",
+  "Items": [
+    "################",
+    "################",
+    "##*.......*#####",
+    "##.#.#.#.#.#####",
+    "##..*.....*#####",
+    "##.#.#.#.#.#####",
+    "##....*.*..#####",
+    "##.#.#.#.#.#####",
+    "##....*.*..#####",
+    "##.#.#.#.#.#####",
+    "##..*.....*#####",
+    "################"
+  ],
+  "Liked": "7",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "56",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "hanami279",
+  "SubmittedDate": "2009-06-26T11:09:31.53",
+  "Title": "Magic square"
+}

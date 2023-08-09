@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGBRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRGBGRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRGGRRRRRRRRRRR",
+    "RGBGRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRR",
+    "GGRRRRRRRRRRRRRR",
+    "GRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "66",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "576",
+  "Items": [
+    "######....######",
+    "######.##.######",
+    "######.##.######",
+    "####...##...####",
+    "####.######.####",
+    "####.######.####",
+    "####.######.####",
+    "###..######..###",
+    "#...########...#",
+    "#.############.#",
+    "..############..",
+    ".##############*"
+  ],
+  "Liked": "20",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "82",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-22T14:19:22.25",
+  "Title": "Symmetry - Zigzag"
+}

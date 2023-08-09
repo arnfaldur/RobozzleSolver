@@ -1,0 +1,53 @@
+{
+  "About": "a lil harder",
+  "AllowedCommands": "4",
+  "Colors": [
+    "BBBGRGBBGRGBBBBB",
+    "BBBGRGBBGRGBBBBB",
+    "BBBGRGBBGRGBBBBB",
+    "BBBGRGBBGRGBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBRRRRBBBBBBB",
+    "BBBBRBBBBRBBBBBB",
+    "BBBRBBBBBBRBBBBB",
+    "BBRBBBBBBBBRBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "35",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "704",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    ".........**.....",
+    ".........**.....",
+    ".........*......",
+    "..........******",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "5",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "84",
+  "SubLengths": [
+    "3",
+    "4",
+    "5",
+    "2",
+    "1"
+  ],
+  "SubmittedBy": "jesusgeek94",
+  "SubmittedDate": "2009-06-06T22:19:05.28",
+  "Title": ":("
+}

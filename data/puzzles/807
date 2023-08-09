@@ -1,0 +1,53 @@
+{
+  "About": "easy if know how loop",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "35",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "807",
+  "Items": [
+    "#######***######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######***######"
+  ],
+  "Liked": "6",
+  "RobotCol": "8",
+  "RobotDir": "1",
+  "RobotRow": "5",
+  "Solutions": "71",
+  "SubLengths": [
+    "9",
+    "5",
+    "4",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "falseinteger",
+  "SubmittedDate": "2009-06-19T07:20:27.28",
+  "Title": "First step"
+}

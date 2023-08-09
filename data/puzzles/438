@@ -1,0 +1,53 @@
+{
+  "About": "pointy!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRGRBBRRRRRRRRR",
+    "RRRGRRBBRRRRRRRR",
+    "RGRGRRRBRRRRRRRR",
+    "RGRBRRRRRRRRRRRR",
+    "RGRGRRRBRRRRRRRR",
+    "RRRGRRRBRRRRRRRR",
+    "RRRGRRBBRRRRRRRR",
+    "RRRGRBBRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "673",
+  "DifficultyVoteSum": "975",
+  "Disliked": "102",
+  "Featured": "false",
+  "Id": "438",
+  "Items": [
+    "################",
+    "###...##########",
+    "###.#..#########",
+    "#...##..########",
+    "#...###..#######",
+    "#.#......*######",
+    "#...###..#######",
+    "#...###.########",
+    "###.##..########",
+    "###.#..#########",
+    "###...##########",
+    "################"
+  ],
+  "Liked": "515",
+  "RobotCol": "1",
+  "RobotDir": "2",
+  "RobotRow": "5",
+  "Solutions": "2739",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pro_master",
+  "SubmittedDate": "2009-05-04T01:22:44",
+  "Title": "Bow and arrow"
+}

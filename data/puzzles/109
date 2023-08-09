@@ -1,0 +1,53 @@
+{
+  "About": "Shortest demo for stack-based memory",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBBBBB",
+    "RRRRRRRRRRRBRRRB",
+    "RRRRRRRRRRRBRBRB",
+    "RRRRRRRRRRRBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "GRGRGGRGGGRGGGGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "312",
+  "DifficultyVoteSum": "1015",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "109",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "###########.....",
+    "###########.###.",
+    "###########.#*#.",
+    "###########...#.",
+    "###############.",
+    "................"
+  ],
+  "Liked": "309",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "3265",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T08:32:00.657",
+  "Title": "Second kind of memory"
+}

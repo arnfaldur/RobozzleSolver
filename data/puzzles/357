@@ -1,0 +1,53 @@
+{
+  "About": "The idea came to me while solving \"Square Growth\" by snydej",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRBBBRRRRRRRRRRR",
+    "RRBBBBRRRRRRRRRR",
+    "RRBBBBBRRRRRRRRR",
+    "RRRBBBBBRRRRRRRR",
+    "RRRRBBBBBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRBBBBBRRRR",
+    "RRRRRRRRBBBBBRRR",
+    "RRRRRRRRRBBBBBRR",
+    "RRRRRRRRRRBBBBRR",
+    "RRRRRRRRRRRBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "60",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "357",
+  "Items": [
+    "##***###########",
+    "##****##########",
+    "##*****#########",
+    "###*****########",
+    "####*****#######",
+    "#####**.**######",
+    "######*.***#####",
+    "#######*****####",
+    "########*****###",
+    "#########*****##",
+    "##########****##",
+    "###########***##"
+  ],
+  "Liked": "14",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "51",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "countdown_0",
+  "SubmittedDate": "2009-04-18T16:34:53.687",
+  "Title": "Painting the stairs"
+}

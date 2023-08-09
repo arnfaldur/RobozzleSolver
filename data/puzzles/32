@@ -1,0 +1,53 @@
+{
+  "About": "Another interesting variant of the puzzle.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBGGGGBBBGGGBBBR",
+    "BRRRRRRRRRRRRRRG",
+    "BRGBBBGGGBBBGGRB",
+    "GRBRRRRRRRRRRGRB",
+    "GRBRRRRRRRRRRBRB",
+    "GRBRBBBBBGRRRBRG",
+    "BRGRBRRRRGRRRBRG",
+    "BRGRBBBBRGRRRGRG",
+    "BRGRBRRRRBRRRGRB",
+    "GRBRBRGGGBRRRGRB",
+    "GRRRBRRRRRRBRRRB",
+    "RGBBRGGGBBBRGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "153",
+  "DifficultyVoteSum": "437",
+  "Disliked": "13",
+  "Featured": "true",
+  "Id": "32",
+  "Items": [
+    "#..............#",
+    ".**************.",
+    ".*............*.",
+    ".*.##########.*.",
+    ".*.*****#####.*.",
+    ".*.*......###.*.",
+    ".*.*.##.*.###.*.",
+    ".*.*....*.###.*.",
+    ".*.*.****.###.*.",
+    ".*.*.*....***.*.",
+    ".***.******.***.",
+    "#...#......#...#"
+  ],
+  "Liked": "118",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "534",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-20T18:09:26.36",
+  "Title": "Star-studded path IV"
+}

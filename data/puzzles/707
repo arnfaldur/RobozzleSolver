@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBRRRRRRRB",
+    "BBBBBBBBRBBBBBRB",
+    "BBBBBBBBRBRRRBRB",
+    "BBBBBBBBRBBBRBRB",
+    "BBBBBBBBRRRRRBRB",
+    "BBBBBBBBBBBBBBRB",
+    "BBBBBBBRRRRRRRRB",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "88",
+  "DifficultyVoteSum": "131",
+  "Disliked": "29",
+  "Featured": "false",
+  "Id": "707",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "..........*.....",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "65",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "1469",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "samual",
+  "SubmittedDate": "2009-06-07T13:10:31.53",
+  "Title": "who can do this?"
+}

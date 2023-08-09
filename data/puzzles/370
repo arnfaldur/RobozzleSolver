@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBBBRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RBBBBBBBRBBBGRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "48",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "370",
+  "Items": [
+    "################",
+    "########....*###",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "............*###",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########....*###",
+    "################",
+    "################"
+  ],
+  "Liked": "14",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "55",
+  "SubLengths": [
+    "4",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-04-22T18:13:09.767",
+  "Title": "pitchfork"
+}

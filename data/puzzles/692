@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGRG",
+    "RRRRGGBGGGGGGBBG",
+    "RRRGGBRBGGGGBRBG",
+    "RRGGBRRRBGGBRRRB",
+    "RGGBRRRRRBBRRRRR",
+    "RGBRRRRRBBRRRRRB",
+    "RGGBRRRBBRRRRRBG",
+    "RRGGBRBGGBRRRBGG",
+    "RRRGGBGGGGBRBGGR",
+    "RRRRGGGRRGGBGGRR",
+    "RRRRRRRRRRGGGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "35",
+  "DifficultyVoteSum": "96",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "692",
+  "Items": [
+    "................",
+    ".###..*......*..",
+    ".##.............",
+    ".#..............",
+    "................",
+    "...............*",
+    "........*.......",
+    ".#..............",
+    ".##............#",
+    ".###...##.....##",
+    ".#########...###",
+    ".###############"
+  ],
+  "Liked": "21",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "115",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "1"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-06T07:54:05.11",
+  "Title": "two red eggs"
+}

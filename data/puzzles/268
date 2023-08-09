@@ -1,0 +1,53 @@
+{
+  "About": "Avoid the hole! and SPIN!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRBRBRRR",
+    "RRRRRRRRRBGGGBRR",
+    "RRRRRRRRRRGRGRRR",
+    "RRRRRRRRRBGRRBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRBRR",
+    "RRRRRRRRRRBRBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "126",
+  "DifficultyVoteSum": "324",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "268",
+  "Items": [
+    "################",
+    "################",
+    "##########.#.###",
+    "#########..*..##",
+    "##########*#*###",
+    "#########..#..##",
+    "##########*#*###",
+    "#########..*..##",
+    "##########.#.###",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "109",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "1027",
+  "SubLengths": [
+    "6",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-03T06:13:54.22",
+  "Title": "Spining Madness"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGBBBBBRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRBRRRRRRR",
+    "RRBRRRRBBBRRRRRR",
+    "RRBRRRBBBBBRRRRR",
+    "RRBRRBBBBBBBRRRR",
+    "RRBRRRBBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "82",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "182",
+  "Items": [
+    "##.......#######",
+    "##.#####.#######",
+    "##.#####.#######",
+    "##.#####.#######",
+    "##.####***######",
+    "##.###*****#####",
+    "##.##*******####",
+    "##.#*********###",
+    "##.##*******####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "18",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "78",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-22T21:42:04.813",
+  "Title": "Light goes out (simple version)"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Made a stupid error by adding red border, fixed.",
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "41",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "788",
+  "Items": [
+    "######.*.#######",
+    "######*.*#######",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#*...........*##",
+    "#######.########",
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########"
+  ],
+  "Liked": "9",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "5",
+  "Solutions": "53",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-17T15:10:31.657",
+  "Title": "Red-Blue cross (redone)"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Hitting the target requires very careful aim.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RGGGGBBRBBGGGGGR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4",
+  "DifficultyVoteSum": "17",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "924",
+  "Items": [
+    "#######*########",
+    "#######*########",
+    "#######*########",
+    "####**.*.**#####",
+    "####*.*****#####",
+    "####.*****.#####",
+    "****************",
+    "####.*****.#####",
+    "####*******#####",
+    "####**.*.**#####",
+    "#######*########",
+    "#######*########"
+  ],
+  "Liked": "3",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "10",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-28T19:27:06.407",
+  "Title": "Bullseye"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBGBBBBBBBB",
+    "RBRBBBBGBBBBBBRB",
+    "RBRBRBBGBBBBRBRB",
+    "RBRBRBRBRBRBRBRB",
+    "RBRBRBRBRGRGRGRG",
+    "RGRGRGRGRGRGRGRG",
+    "RBRBRBRBRBRBRBRB",
+    "RBRBRBRBGBRBRBRB",
+    "RBRBRBBBGBBBRBRB",
+    "RBRBBBBBGBBBBBRB",
+    "RBBBBBBBGBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "38",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "781",
+  "Items": [
+    "#***************",
+    "#.**************",
+    "#*#***********#*",
+    "#*#*#*******#*#*",
+    "#*#*#*#***#*#*#*",
+    "#*#*#*#*#*#*#*#*",
+    "#*#*#*#*#*#*#*#*",
+    "#*#*#*#*#*#*#*#*",
+    "#*#*#*#***#*#*#*",
+    "#*#*#*******#*#*",
+    "#*#***********#*",
+    "#***************"
+  ],
+  "Liked": "8",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "46",
+  "SubLengths": [
+    "4",
+    "4",
+    "3",
+    "8",
+    "8"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-15T22:01:13.017",
+  "Title": "Black Fences"
+}

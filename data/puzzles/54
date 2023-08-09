@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRBRBBBBRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "121",
+  "DifficultyVoteSum": "321",
+  "Disliked": "10",
+  "Featured": "true",
+  "Id": "54",
+  "Items": [
+    "################",
+    "################",
+    "########**######",
+    "########**######",
+    "######*#****####",
+    "######*.****####",
+    "########**######",
+    "########**######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "103",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "843",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "czvxbc",
+  "SubmittedDate": "2009-02-25T19:18:00.03",
+  "Title": "Too easy"
+}

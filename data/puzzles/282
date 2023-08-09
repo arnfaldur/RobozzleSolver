@@ -1,0 +1,53 @@
+{
+  "About": "Now with added stack tricks!",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGRGRRGRRRRRGRR",
+    "GBRRRRRBRGGGGGRR",
+    "RBBRBGRRRRRRRGRR",
+    "RRRRRGRRRRRGRGRR",
+    "RRGBRBRRGGGGGGRR",
+    "RRRRRRRGRGRGRGRR",
+    "RBRRRBGGRGGGGGRR",
+    "RRRGRRRGRGRRRGRR",
+    "RRRRRRRGRGGGGGRR",
+    "RBRRRGRGGGGGGGGR",
+    "RGRRRRRGRRGRGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "59",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "282",
+  "Items": [
+    "################",
+    "##*#*##*#####*##",
+    "********#*****##",
+    "#*****#*#####*##",
+    "#*###*#*###*#*##",
+    "#*****#*******##",
+    "#*#*#*#.#*#*#*##",
+    "#*******#*****##",
+    "#*#*###*#*###*##",
+    "#*#####*#*****##",
+    "#*****#********#",
+    "#*#####*##*#*###"
+  ],
+  "Liked": "14",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "61",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-04T01:54:32.53",
+  "Title": "Facsimile II"
+}

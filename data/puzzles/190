@@ -1,0 +1,53 @@
+{
+  "About": "Spiced up with painting.",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRGBBBBBBRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRGBBBBBBRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRBBBBBBGRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "141",
+  "DifficultyVoteSum": "343",
+  "Disliked": "31",
+  "Featured": "false",
+  "Id": "190",
+  "Items": [
+    "################",
+    "#####......*####",
+    "#####*......####",
+    "#####......*####",
+    "#####*......####",
+    "#####......*####",
+    "#####*......####",
+    "#####......*####",
+    "#####*......####",
+    "#####*.....*####",
+    "################",
+    "################"
+  ],
+  "Liked": "114",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "569",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "homeropata",
+  "SubmittedDate": "2009-03-24T14:12:39.953",
+  "Title": "Tricky kind of recursion"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Useful for #12522",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRRRRRBBBBBBBG",
+    "BRRRRRRRBRRRRRRB",
+    "BRRRRRBBGRBBBGRB",
+    "BRRRRRBRRRGBRBRB",
+    "BRRRBBGRRRRRRBRB",
+    "BRRRBRRRRGBBBBRB",
+    "BRRRBRRRRBRRRRRB",
+    "BRRRBRRRRBRGBBBB",
+    "BRRRBRRRRBRBRRRR",
+    "BRRRGBBBBBRBRRRR",
+    "BRRRRRRRRRRBRRRR",
+    "GBBBBBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "29",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "12574",
+  "Items": [
+    ".#######*.......",
+    ".#######.######.",
+    ".#####*..#*...#.",
+    ".#####.###.*#.#.",
+    ".###*..######.#.",
+    ".###.####....*#.",
+    ".###.####.#####.",
+    ".###.####.#....*",
+    ".###.####.#.####",
+    ".###.....*#.####",
+    ".##########.####",
+    "...........*####"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "50",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "scorpio",
+  "SubmittedDate": "2019-10-08T14:48:03.153",
+  "Title": "Odds and Evens (Lite edition)"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRBRBBRRRRRR",
+    "RRRRRBRBBRBRRRRR",
+    "RRRRGBBBBBRRRRRR",
+    "RRRRRRBBBBBGRRRR",
+    "RRRRRBRBBRBRRRRR",
+    "RRRRRRBBRBRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3869",
+  "DifficultyVoteSum": "8116",
+  "Disliked": "178",
+  "Featured": "false",
+  "Id": "223",
+  "Items": [
+    "################",
+    "################",
+    "########*#######",
+    "#####*....*#####",
+    "#####.#..#.#####",
+    "####*......#####",
+    "#####......*####",
+    "#####.#..#.#####",
+    "#####*....*#####",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "3811",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "39829",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-28T18:28:13.797",
+  "Title": "right on red, ??? on green"
+}

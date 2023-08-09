@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRBRRRRR",
+    "RRRRRRRRBRBRRRRR",
+    "RRBRRRBBGBGBBRRR",
+    "RRBRRRRRBRBRRRRR",
+    "BBGBBRBBGBBRBRRR",
+    "RRBRBRBRBRBRBRRR",
+    "BBGBGBGBGBGBGBBR",
+    "RRBRBRBRBRBRBRRR",
+    "BBGBBRBBGBBRBRRR",
+    "RRBRRRRRBRRRRRRR",
+    "RRBRRRBBGBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "430",
+  "DifficultyVoteSum": "1114",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "88",
+  "Items": [
+    "################",
+    "########*#*#####",
+    "########.#.#####",
+    "##*###*.....*###",
+    "##.#####.#.#####",
+    "*...*#*...*#*###",
+    "##.#.#.#.#.#.###",
+    "*.............*#",
+    "##.#.#.#.#.#.###",
+    "*...*#*...*#*###",
+    "##.#####.#######",
+    "##*###*...*#####"
+  ],
+  "Liked": "373",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "2666",
+  "SubLengths": [
+    "5",
+    "5",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-03T20:30:22.203",
+  "Title": "Incomplete grid"
+}

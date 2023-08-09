@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRGGBBBBBBRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRGGBBBBRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRGGGBBBRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRGGBBBBBBBBR",
+    "BRRRRRRRRRRRRRRR",
+    "BRGBRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRGGGBBBBBBBBB",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "38",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "625",
+  "Items": [
+    "......******####",
+    ".###############",
+    ".....****#######",
+    ".###############",
+    ".....***########",
+    ".###############",
+    ".......********#",
+    ".###############",
+    "...*############",
+    ".###############",
+    ".......*********",
+    ".###############"
+  ],
+  "Liked": "10",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "57",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "chief",
+  "SubmittedDate": "2009-05-31T13:04:51.53",
+  "Title": "Multiplication"
+}

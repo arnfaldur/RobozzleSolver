@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGRRRRGRRRBRR",
+    "GRRRGRRRBBBRRGRR",
+    "BRBRBRRRGGBGGBRB",
+    "GBBBGRRGGGGGGBGB",
+    "BGGBGBGBBBGBGGGB",
+    "RRRRRRRRRRRRRRRR",
+    "BGGBGGBBBBGBGGGB",
+    "GGBGGRRBGGGGGBBB",
+    "BRGRBRRRGGBBBBRG",
+    "BRRRGRRRGBGRRGRR",
+    "RRRRBRRRRBRRRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "57",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "624",
+  "Items": [
+    "################",
+    "####*####*###*##",
+    "*###*###***##*##",
+    "*#*#*###******#*",
+    "*****##*********",
+    "****************",
+    ".***************",
+    "****************",
+    "*****##*********",
+    "*#*#*###******#*",
+    "*###*###***##*##",
+    "####*####*###*##"
+  ],
+  "Liked": "17",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "65",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-31T06:45:04.437",
+  "Title": "Imperfect Reflection"
+}

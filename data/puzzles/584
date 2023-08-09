@@ -1,0 +1,53 @@
+{
+  "About": "Boost on green, left on red and ...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRRRRRRRRRRRRR",
+    "BRRGBBBGBBBGBBBR",
+    "BRBRRRRRRRRRRRRB",
+    "BRBRRGBBBGBBBRRG",
+    "GRBRBRRRRRRRRBRB",
+    "BRGRBRBGBBBRRGRB",
+    "BRBRBRRRRRRBRBRB",
+    "BRBRBBBBGBBRRBRG",
+    "GRBRRRRRRRRRRBRB",
+    "BRBBBBGBBBGBBRRB",
+    "BRRRRRRRRRRRRRRB",
+    "RBBBGBBBGBBBGBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "308",
+  "DifficultyVoteSum": "1035",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "584",
+  "Items": [
+    ".###############",
+    ".#..............",
+    ".#.############.",
+    ".#.#..........#.",
+    ".#.#.########.#.",
+    ".#.#.#*.....#.#.",
+    ".#.#.######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "248",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "1827",
+  "SubLengths": [
+    "4",
+    "3",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-24T07:39:08.14",
+  "Title": "Boost Spiral"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBRBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBRBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBRBBBBBRR",
+    "RBBBRBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "82",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "243",
+  "Items": [
+    "################",
+    "#.............##",
+    "#.........*...##",
+    "#.............##",
+    "#.*...........##",
+    "#.............##",
+    "#......*......##",
+    "#.......*.....##",
+    "#...*.........##",
+    "#.............##",
+    "#............*##",
+    "################"
+  ],
+  "Liked": "22",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "88",
+  "SubLengths": [
+    "5",
+    "5",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "nebulo",
+  "SubmittedDate": "2009-03-30T11:41:05.11",
+  "Title": "quarter"
+}

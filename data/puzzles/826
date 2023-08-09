@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BGGGRGGGGGGRRRRR",
+    "BRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "BRRRRRRRRRBRRRRR",
+    "BRRRRRRRRBRBRRRR",
+    "BRRRRRRRRBRBRRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "55",
+  "DifficultyVoteSum": "138",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "826",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "...........#####",
+    ".#########*#####",
+    ".#########.#####",
+    ".#########.#####",
+    ".########.#.####",
+    ".########...####",
+    ".###############"
+  ],
+  "Liked": "39",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "175",
+  "SubLengths": [
+    "4",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-21T05:10:12.687",
+  "Title": "crane"
+}

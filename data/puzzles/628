@@ -1,0 +1,53 @@
+{
+  "About": "Are very uncomfortable.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRBBBGRRRBRRRRRR",
+    "RRBRRBBBBBRRRRRR",
+    "RRBRRBRRRRRRRRRR",
+    "RRBBBBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "257",
+  "DifficultyVoteSum": "769",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "628",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####*****######",
+    "#####*###*######",
+    "#####*###*######",
+    "##***.###*######",
+    "##*##*****######",
+    "##*##*##########",
+    "##****##########",
+    "################",
+    "################"
+  ],
+  "Liked": "227",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "1462",
+  "SubLengths": [
+    "6",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-05-31T22:54:45.937",
+  "Title": "Handcuffs"
+}

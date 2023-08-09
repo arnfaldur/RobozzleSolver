@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGRRRRRRRRRRGGG",
+    "GRGRRRRRRRRRRGRG",
+    "GGBBBBBBBBBBBBGG",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "GGBBBBBBBBBBBBGG",
+    "GRGRRRRRRRRRRGRG",
+    "GGGRRRRRRRRRRGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "665",
+  "DifficultyVoteSum": "958",
+  "Disliked": "39",
+  "Featured": "false",
+  "Id": "999",
+  "Items": [
+    "***##########***",
+    "*#*##########*#*",
+    "**............**",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "**............**",
+    "*#*##########*#*",
+    "***##########***"
+  ],
+  "Liked": "554",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "5877",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-07-06T10:15:56.797",
+  "Title": "Get The Greens"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRBBRBBRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "47",
+  "DifficultyVoteSum": "118",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "673",
+  "Items": [
+    "################",
+    "################",
+    "######**########",
+    "######**#**#####",
+    "#######****#####",
+    "#####***.#######",
+    "#####**#**######",
+    "########**######",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "40",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "159",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-04T16:48:05.5",
+  "Title": "Ninja Throwing Star"
+}

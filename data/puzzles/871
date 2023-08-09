@@ -1,0 +1,53 @@
+{
+  "About": "...almost golden.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGGGGGGGGGGGGGGG",
+    "BGGGGGGGGRRRRRRR",
+    "BBGGGGGGGRRRRRRR",
+    "BGGGGGGGGRRRRRRR",
+    "BGGGGGGGGRRRRRRR",
+    "BGGGGGGGGRRRRRRR",
+    "BGGGGGGGGRRBBBRR",
+    "BGGGGGGGGGGBBBRR",
+    "BGGGGGGGGGGBBBRR",
+    "BBBBBBBBBBBBBBRR",
+    "BBBBBBBBBBBBBBRR",
+    "BBBBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "67",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "871",
+  "Items": [
+    "................",
+    ".*************..",
+    ".*...........*..",
+    ".*...........*..",
+    ".*...........*..",
+    ".*...........*..",
+    ".*.......*...*..",
+    ".*.......*...*..",
+    ".*.......*****..",
+    ".*..............",
+    ".*..............",
+    ".*.............."
+  ],
+  "Liked": "17",
+  "RobotCol": "10",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "95",
+  "SubLengths": [
+    "4",
+    "5",
+    "4",
+    "6",
+    "4"
+  ],
+  "SubmittedBy": "dannythorne",
+  "SubmittedDate": "2009-06-24T00:12:07.983",
+  "Title": "Fibonacci Spiral II"
+}

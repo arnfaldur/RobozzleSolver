@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBRBRRRRRRRRR",
+    "BRRRRBRRRRRRRRRR",
+    "BRRRGRRRRRRRRRRR",
+    "BRRGRRRRRRRRRRRR",
+    "BRGRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BRGRRRRRRRRRRRRR",
+    "BRRGRRRRRRRRRRRR",
+    "BRRRGRRRRRRRRRRR",
+    "BRRRRBRRRRRRRRRR",
+    "RBBBBRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "65",
+  "DifficultyVoteSum": "70",
+  "Disliked": "33",
+  "Featured": "false",
+  "Id": "609",
+  "Items": [
+    ".....*.#########",
+    "*####*##########",
+    "*###**##########",
+    "*##**###########",
+    "*#**############",
+    "***#############",
+    "***#############",
+    "*#**############",
+    "*##**###########",
+    "*###**##########",
+    "*####*##########",
+    "******##########"
+  ],
+  "Liked": "26",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "241",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "center566",
+  "SubmittedDate": "2009-05-29T14:22:46.687",
+  "Title": "1"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBBBBBBRR",
+    "RRRRBBBBBBRRRBRR",
+    "RRRRBRRRBBRRRBRR",
+    "RRRRBRRRBBRRRBRR",
+    "RRRRBRRRBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBRBRBR",
+    "RRRRRRRBRBBRBRBR",
+    "RRRRRRRBRBBRBRBR",
+    "RRRRRRRBRBBBBBBR",
+    "RRRRRRRBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4",
+  "DifficultyVoteSum": "18",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "518",
+  "Items": [
+    "################",
+    "########*....*##",
+    "####*.....###.##",
+    "####.###..#.#.##",
+    "####.#.#..###.##",
+    "####.###......*#",
+    "####...........#",
+    "####*......#*#.#",
+    "#######.#..#.#.#",
+    "#######.#*.#.#.#",
+    "#######.#......#",
+    "#######*.....###"
+  ],
+  "Liked": "2",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "16",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-05-13T17:42:17.89",
+  "Title": "Skull Island"
+}

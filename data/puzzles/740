@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "BBBBBGGBGRRRRRRR",
+    "BGGGGGGBGGRRRRRR",
+    "GGGGGGGBGGRRRRRR",
+    "BGGGGGGBGGGGRRRR",
+    "BBBGGGGBGGGGRRRR",
+    "BBBBBBGBGGGGGGRR",
+    "BGGGGGGBGGGGGGRR",
+    "BBBBBGGBGGGGGGRR",
+    "BGGGGGGBGGGGGGRR",
+    "BBBGGGGBGGGGGGGR",
+    "RRRRRRRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "74",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "740",
+  "Items": [
+    "........########",
+    ".....**.*#######",
+    ".******.**######",
+    "*******.**######",
+    ".******.****####",
+    "...****.****####",
+    "......*.******##",
+    ".******.******##",
+    ".....**.******##",
+    ".******.******##",
+    "...****.*******#",
+    "...............#"
+  ],
+  "Liked": "19",
+  "RobotCol": "6",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "52",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-10T17:18:11.25",
+  "Title": "Sorting III"
+}

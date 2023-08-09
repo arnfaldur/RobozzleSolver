@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "5",
+  "Colors": [
+    "RGGGGGGGGGGGGGGG",
+    "RBRRRGRRRGRRRGRR",
+    "RBRRRGRRRGRRRGRR",
+    "RBRRGGGRGGGRGGGR",
+    "BRRRGGGRGGGRGGGR",
+    "BRRRGRRRGRRRGRRR",
+    "BRRRGGGRGGGRGGGR",
+    "RBRRGGGRGGGRGGGR",
+    "BRRRGGGRGGGRGGGR",
+    "BRRRGRRRGRRRGRRR",
+    "BGRRGGGRGGGRGGGR",
+    "RBRRGGGRGGGRGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "97",
+  "DifficultyVoteSum": "404",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "328",
+  "Items": [
+    "#***************",
+    "#*###*###*###*##",
+    "#*###*###*###*##",
+    "***#***#***#***#",
+    "***#***#***#***#",
+    "*###*###*###*###",
+    "***#***#***#***#",
+    "***#***#***#***#",
+    "***#***#***#***#",
+    "*###*###*###*###",
+    "*.*#***#***#***#",
+    "***#***#***#***#"
+  ],
+  "Liked": "118",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "1097",
+  "SubLengths": [
+    "4",
+    "10",
+    "5",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-09T04:16:23.157",
+  "Title": "Replication Engine"
+}

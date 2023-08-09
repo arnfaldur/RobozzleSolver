@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBBRRRR",
+    "RRRRRRRRBRRBRRRR",
+    "RRRRRRRBRRRBRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRBRRRRRBRRRR",
+    "RRRRBRRRRRRBRRRR",
+    "RRRBBRRRRRRBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "710",
+  "DifficultyVoteSum": "1998",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "511",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#########...####",
+    "########....####",
+    "#######...#.####",
+    "######...##.####",
+    "#####...###.####",
+    "####...####.####",
+    "###...#####*####",
+    "################",
+    "################"
+  ],
+  "Liked": "608",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "4573",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ajji",
+  "SubmittedDate": "2009-05-12T20:41:32.297",
+  "Title": "Up then Down"
+}

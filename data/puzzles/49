@@ -1,0 +1,53 @@
+{
+  "About": "Look at the colors",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGRGRGRGRGRGRGRG",
+    "GRGRGRGRGRGRGRGR",
+    "RGBBBBBBBBBBBBRG",
+    "GBRGRGRGRGRGRGBR",
+    "RGBBBBBBBBBBBBRG",
+    "GBGRGRGRGRGRGRBR",
+    "RGBBBBBBBBBBBBRG",
+    "GBRGRGRGRGRGRGBR",
+    "RGBBBBBBBBBBBBRG",
+    "GBGRGRGRGRGRGRGR",
+    "RGBBBBBBBBBBBBRG",
+    "GRGRGRGRGRGRGRGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1289",
+  "DifficultyVoteSum": "2012",
+  "Disliked": "216",
+  "Featured": "false",
+  "Id": "49",
+  "Items": [
+    "................",
+    "................",
+    "..*...*..*..*...",
+    "................",
+    ".*..*..*..*..*..",
+    "................",
+    "..*..*..*..*..*.",
+    "................",
+    "..*.*..*..*..*..",
+    "................",
+    ".*..*..*..*.....",
+    "................"
+  ],
+  "Liked": "1071",
+  "RobotCol": "13",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "5286",
+  "SubLengths": [
+    "5",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "crpietschmann",
+  "SubmittedDate": "2009-02-24T17:33:29.03",
+  "Title": "Christmas Quilt"
+}

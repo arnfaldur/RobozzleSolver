@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRBRRRBBBBR",
+    "RRRRRRRBRRRBRBRR",
+    "RRRRRRRBRRRRRBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "518",
+  "DifficultyVoteSum": "1350",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "188",
+  "Items": [
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.*##.####",
+    "#######.###.....",
+    "#######.###.#.##",
+    "#######.#####.##",
+    "#.............##",
+    "#############.##",
+    "#############.##",
+    "#############.##"
+  ],
+  "Liked": "487",
+  "RobotCol": "11",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "2931",
+  "SubLengths": [
+    "3",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-24T00:04:44.827",
+  "Title": "Cut in half"
+}

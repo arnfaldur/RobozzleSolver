@@ -1,0 +1,53 @@
+{
+  "About": "Easier Version, No Recharging, Turn Left If Non-Blue In Shimmy Part.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "BBBBBGBBBBBRRRRR",
+    "GRRRRRRRRRBRRRRR",
+    "BBBBBBRBBRBRRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRRBRBRGRRBBBBB",
+    "RRRRBRBRBRRRRRRB",
+    "RGBBRRBRBRRRRRRB",
+    "RBRRRRBGBRRRRRRG",
+    "RBBGBBRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRBGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "51",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "851",
+  "Items": [
+    "***********#####",
+    "*#########*#####",
+    "*********#*#####",
+    "####*#*#*#*#####",
+    "####*#*#*#*#####",
+    "####*#*#*#******",
+    "####*#*#*######*",
+    "#****#*#*######*",
+    "#*####***######*",
+    "#*****#########*",
+    "###############*",
+    "##.*************"
+  ],
+  "Liked": "14",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "58",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-06-22T21:18:48.03",
+  "Title": "Batteries Plus Paint II"
+}

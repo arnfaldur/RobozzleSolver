@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBGGGBRRRRRR",
+    "RRRBGBGBGBGBRRRR",
+    "RRRRRBGGGBRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4",
+  "DifficultyVoteSum": "16",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "659",
+  "Items": [
+    "################",
+    "#######*########",
+    "#######*########",
+    "######.**#######",
+    "#####*****######",
+    "###*********####",
+    "#####*****######",
+    "######***#######",
+    "#######*########",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "2",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "21",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T02:49:19.03",
+  "Title": "Clock!"
+}

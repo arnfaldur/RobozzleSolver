@@ -1,0 +1,53 @@
+{
+  "About": "I spun the thread on the colors to mark the mid-points before warping it on left",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBBBBRBBBB",
+    "RRBBBRRBRRRRRRRB",
+    "RRBRRBRBRRRRRRRB",
+    "RRBRRBRBRRRRRRRB",
+    "RRBRRBRGRRRRRRRB",
+    "RRGBBRBBBBBGRRRB",
+    "RRBRBRGBBRRBRRRB",
+    "RRBRBRRBRRRBRRRB",
+    "RRBRGBBBBRRBRRRB",
+    "RRBRRRRBRRRBRRRB",
+    "RRRBBBBGBBBBRRRB",
+    "RRRRBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "10",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "4426",
+  "Items": [
+    "#######*********",
+    "##****#*#######*",
+    "##*##*#*#######*",
+    "##*##*#*#######*",
+    "##*#**#*#######*",
+    "##***#******###*",
+    "##*#*#***##*###*",
+    "##*#*##*###*###*",
+    "##*#******#*###*",
+    "##**###*###*###*",
+    "###*********###*",
+    "####.***********"
+  ],
+  "Liked": "2",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "8",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "shaggy12",
+  "SubmittedDate": "2013-08-26T12:50:36.717",
+  "Title": "Knot III"
+}

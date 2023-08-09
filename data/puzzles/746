@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBRRRRRRRRRRRRRR",
+    "GBBBBBBBBBBRRRRR",
+    "GGGGGGGGGGBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRBBBBBBBGR",
+    "RRRBBBBBGGGGGGGR",
+    "RRRBGGGGGRRRRRRR",
+    "RRRBRRRRRRRRRRRR",
+    "RRRBRRRRRRRRRRRR",
+    "RGBBBBBBBBBBRRRR",
+    "RGGGGGGGGGGBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "74",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "746",
+  "Items": [
+    "#.##############",
+    ".**********#####",
+    "..........*#####",
+    "##########*#####",
+    "##########*#####",
+    "#######*******.#",
+    "###*****.......#",
+    "###*.....#######",
+    "###*############",
+    "###*############",
+    "#.**********####",
+    "#..........*####"
+  ],
+  "Liked": "27",
+  "RobotCol": "1",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "80",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-11T13:46:56.627",
+  "Title": "Waterfalls"
+}

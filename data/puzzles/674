@@ -1,0 +1,53 @@
+{
+  "About": "I don't know what an Elephantrix is.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRBBBBRBBRRRR",
+    "RRRRRBBRBBBBRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "64",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "674",
+  "Items": [
+    "################",
+    "################",
+    "######*.########",
+    "######..#..#####",
+    "#######....#####",
+    "#####....#*.####",
+    "#####.*#....####",
+    "######....######",
+    "######..#..#####",
+    "#########.*#####",
+    "################",
+    "################"
+  ],
+  "Liked": "7",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "64",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azechiel",
+  "SubmittedDate": "2009-06-04T21:33:30.267",
+  "Title": "Elephantrix"
+}

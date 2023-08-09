@@ -1,0 +1,53 @@
+{
+  "About": "Can YOU open the locket?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRBBRRRBBRRRR",
+    "RRRRRBRRRRRBBRRR",
+    "RRRRRBRRRRRRBRRR",
+    "RRRRRBBRRRRGGGRR",
+    "RRRRRRBBRRGRRRRR",
+    "RRRRRRRBBGRGGGGG",
+    "RRRRRRRRBGGRRRGG",
+    "RRRRRRRRRGGGGGRG",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRGGGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "102",
+  "DifficultyVoteSum": "270",
+  "Disliked": "23",
+  "Featured": "false",
+  "Id": "215",
+  "Items": [
+    "######.....#####",
+    "#####..###..####",
+    "#####.#####..###",
+    "#####.######.###",
+    "#####*.####...##",
+    "######.*##....*#",
+    "#######...*.....",
+    "########*.......",
+    "#########.....*.",
+    "##########*....#",
+    "###########...##",
+    "################"
+  ],
+  "Liked": "61",
+  "RobotCol": "5",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "338",
+  "SubLengths": [
+    "10",
+    "9",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "traditore",
+  "SubmittedDate": "2009-03-28T07:45:26.343",
+  "Title": "Slytherin's Locket"
+}

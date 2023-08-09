@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBRBBRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRBBBBBRBBBBBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBGGGBRBGGGBRRR",
+    "RRRGRGBRBGRGRRRR",
+    "RRBGGGBRBGGGBRRR",
+    "RRBRRRBRBRRRBRRR",
+    "RRBBRBBRBBRBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "139",
+  "DifficultyVoteSum": "284",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "745",
+  "Items": [
+    "#####..#.*######",
+    "######.#.#######",
+    "######.#.#######",
+    "######.#.#######",
+    "##...........###",
+    "##.###.#.###.###",
+    "##.....#.....###",
+    "##.....#.....###",
+    "##.....#.....###",
+    "##.###.#.###.###",
+    "##.....#.....###",
+    "################"
+  ],
+  "Liked": "116",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "1420",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-11T10:22:33.877",
+  "Title": "glasses"
+}

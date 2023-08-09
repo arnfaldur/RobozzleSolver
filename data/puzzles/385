@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBRRRRRRRRRRR",
+    "RRRBBRRRRRRBBRRR",
+    "RRRBBRRRRRRBBRRR",
+    "RRRBGBBBBBBBBBBB",
+    "RRRBBBBBBBBGBBGB",
+    "RRRBBRRRRRRBBBBR",
+    "RRRBBRRRRRRBBBBR",
+    "RRRBBRRRRBBGBBGR",
+    "RRRBBRRRRBBBBBBR",
+    "RRRRRRRRRRRRRBBR",
+    "RRRRRRRRRRRRRBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "122",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "385",
+  "Items": [
+    "##.**.##########",
+    "##.**.####....##",
+    "##.**.####.**.##",
+    "##.**......**...",
+    "##.*************",
+    "##.****.********",
+    "##.**......****.",
+    "##.**.##...****.",
+    "##.**.##.******.",
+    "##.**.##.******.",
+    "##....##.....**.",
+    "############.**."
+  ],
+  "Liked": "36",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "132",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-28T17:23:36.78",
+  "Title": "double width"
+}

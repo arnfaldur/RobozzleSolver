@@ -1,0 +1,53 @@
+{
+  "About": "bugfixed, hopefully...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGGGGGGGGR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RGGGGGGGGGGGGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "109",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "605",
+  "Items": [
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#.............*.",
+    ".*............*.",
+    ".*............*.",
+    ".*.............#",
+    "#..............#",
+    "#..............#"
+  ],
+  "Liked": "34",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "134",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ssancho",
+  "SubmittedDate": "2009-05-27T23:33:18.593",
+  "Title": "Pong 2"
+}

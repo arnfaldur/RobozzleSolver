@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRGRRBBBRRRRGRRR",
+    "RGRRBBBBBBBRRGRR",
+    "GRRBBBBBBBBBRRGG",
+    "RRBBBBBBBBBBBRRR",
+    "RBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBBBBBBB",
+    "RGBBBBBBBBBBBBBB",
+    "RRBBBBBBBBBBBBBB",
+    "GRRBBBBBBBBBBRRR",
+    "RGRRBBBBBBBBRRGG",
+    "RRGRRBBBBBBRRGRR",
+    "RRRGRRBBRRRRGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "34",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "651",
+  "Items": [
+    "...##***####....",
+    "..##*******##...",
+    ".##*********##..",
+    "##***********###",
+    "#***************",
+    "#***************",
+    "#.****.*********",
+    "##**************",
+    ".##**********###",
+    "..##********##..",
+    "...##******##...",
+    "....##**####...."
+  ],
+  "Liked": "6",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "40",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T00:19:59.28",
+  "Title": "Horizontal Egg"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Go past red, keep going until 3 reds, turn right, turn left if 1st one is green",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRGBRGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBRGRBRGGRRRRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRGRRRRRRRRBRB",
+    "GRRRRRRGRRRRRBRR",
+    "GRRRRRRRRRGBRBRR",
+    "GRBRRRRRRRRRRRRG",
+    "RRRRRBBRRGRRRRRG",
+    "BRRRRRRRRRRRBRRR",
+    "RRRBBBGRRRRRRRRR",
+    "RRRRRRRRRBBRRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "65",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "623",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#......#####.#.",
+    ".#.####....##.#.",
+    ".#.#######.*#.#.",
+    ".#.##########.#.",
+    ".#........###.#.",
+    ".########.....#.",
+    ".......########.",
+    "######.........."
+  ],
+  "Liked": "22",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "46",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-31T05:07:27.093",
+  "Title": "One function"
+}

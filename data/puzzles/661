@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRBBGRRRRRRRRRRR",
+    "RRRBRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBRBBGRRRRRRRR",
+    "RRRGRRBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRBBGRRRRR",
+    "RRRRRRGRRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRBBGRR",
+    "RRRRRRRRRGRRBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "106",
+  "DifficultyVoteSum": "218",
+  "Disliked": "20",
+  "Featured": "false",
+  "Id": "661",
+  "Items": [
+    ".***.###########",
+    "###*############",
+    "###*############",
+    "###****.########",
+    "###.##*#########",
+    "######*#########",
+    "######****.#####",
+    "######.##*######",
+    "#########*######",
+    "#########****.##",
+    "#########.##*###",
+    "############*###"
+  ],
+  "Liked": "63",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "299",
+  "SubLengths": [
+    "4",
+    "3",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T03:07:45.173",
+  "Title": "Easy Worm"
+}

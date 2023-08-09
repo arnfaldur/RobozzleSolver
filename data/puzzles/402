@@ -1,0 +1,53 @@
+{
+  "About": "Observe the corners",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBBRRRRRRRRRRRR",
+    "RGRBRRRRRRRRRRRR",
+    "RRGBBBBRRRRRRRRR",
+    "RRRGRGBRRRRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRGRRBBBRRRR",
+    "RRRRRRRRRRGBBBBR",
+    "RRRRRRRRRRGRGRBB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "52",
+  "Disliked": "12",
+  "Featured": "false",
+  "Id": "402",
+  "Items": [
+    "...#############",
+    "...#############",
+    "#...############",
+    "#...############",
+    "##.....#########",
+    "##.....#########",
+    "#####.....######",
+    "#####.......####",
+    "########.......#",
+    "##########......",
+    "#############...",
+    "###############*"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "92",
+  "SubLengths": [
+    "5",
+    "6",
+    "6",
+    "3",
+    "2"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-29T22:31:00.5",
+  "Title": "Addition Modulo 3 (Plus 1)"
+}

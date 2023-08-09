@@ -1,0 +1,53 @@
+{
+  "About": "Where can I get more whack?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBRBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBRBBBBBBBR",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBRBBBBB",
+    "BRBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "72",
+  "DifficultyVoteSum": "203",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "396",
+  "Items": [
+    "..*.............",
+    "...........*....",
+    "................",
+    "................",
+    "................",
+    "................",
+    "....*...........",
+    "...*...*........",
+    "................",
+    "................",
+    ".*..............",
+    "................"
+  ],
+  "Liked": "63",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "178",
+  "SubLengths": [
+    "3",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-04-29T01:54:36.233",
+  "Title": "Out of whack"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRGBBGRRRRRRRRR",
+    "RRRBGBBBBBGRRRRR",
+    "RRRBBRBRRRBRRRRR",
+    "RRRGBBGBGBBRRRRR",
+    "RRRRGBBRBRBRRRRR",
+    "RRRRRRGBBBGRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRBGRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "364",
+  "DifficultyVoteSum": "1086",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "500",
+  "Items": [
+    "################",
+    "######*#########",
+    "######.#########",
+    "###....#########",
+    "###........#####",
+    "###..#.###.#####",
+    "###........#####",
+    "####...#.#.#####",
+    "######.....#####",
+    "########.#######",
+    "#######..#######",
+    "################"
+  ],
+  "Liked": "332",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "2135",
+  "SubLengths": [
+    "3",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rainault",
+  "SubmittedDate": "2009-05-11T21:47:08.53",
+  "Title": "Movable paint"
+}

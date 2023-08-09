@@ -1,0 +1,53 @@
+{
+  "About": "",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBRRRRRRBBRR",
+    "RRBBRBBBBBBBBBRR",
+    "RRBBBBBBBRRRRRRR",
+    "RRBBRBBBBBBBBBRR",
+    "RRRRRBRRRRRRBBRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "140",
+  "DifficultyVoteSum": "387",
+  "Disliked": "9",
+  "Featured": "true",
+  "Id": "38",
+  "Items": [
+    "#......#########",
+    "#.****.#########",
+    "#....*.#########",
+    "####.*.####....#",
+    "#....*......**.#",
+    "#.**.*********.#",
+    "#.*****.*......#",
+    "#.**.*********.#",
+    "#....*......**.#",
+    "####.*.####....#",
+    "####.*.#########",
+    "####...#########"
+  ],
+  "Liked": "115",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "941",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-21T17:29:31",
+  "Title": "The chambers"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRBBBBBGBRRRRR",
+    "RRRBGBBBBBBRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBBBBBBBBRRRRR",
+    "RRRRBBBBBBGBRRRR",
+    "RRRRBGBBBBBRRRRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "29",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "359",
+  "Items": [
+    "################",
+    "#######*..######",
+    "####..*....#####",
+    "###.......*#####",
+    "####..*....*####",
+    "###*.*..*...####",
+    "###...*..*.*####",
+    "###*....*..#####",
+    "####*.......####",
+    "####....*..#####",
+    "#####..*########",
+    "################"
+  ],
+  "Liked": "5",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "24",
+  "SubLengths": [
+    "6",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "vladi4a",
+  "SubmittedDate": "2009-04-19T14:39:25.483",
+  "Title": "A strange blue spot"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "The red sequence is the same length as the first green or blue sequence.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBGGRRRRRRR",
+    "RRRRRRRRRRRRRRRG",
+    "RBGBGGGGBGBGGRRG",
+    "RRRRRRRRRRRRRGRG",
+    "RRRBGGBGBBGRRBRG",
+    "GRRRRRRRRRRBRBRB",
+    "GRGRRRRBGGGRRGRG",
+    "BRGRRRRRRRRRRGRR",
+    "BRRRRRBGBGGGGRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRBGGBBBGBBGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "72",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "990",
+  "Items": [
+    "################",
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*.......#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "22",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "47",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T18:38:45.5",
+  "Title": "Counting - First Sequence"
+}

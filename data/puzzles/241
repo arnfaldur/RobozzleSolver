@@ -1,0 +1,53 @@
+{
+  "About": "With bugfixes",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBR",
+    "RRRRRRBBBBBBBBRG",
+    "RRRRRRRRRBBBBRGR",
+    "RRRRRRRRRRBBRGRR",
+    "RRRRRRRRRRBRGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "72",
+  "DifficultyVoteSum": "212",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "241",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "*...............",
+    "######*.........",
+    "#########*.....#",
+    "##########*...##",
+    "##########...###",
+    "################",
+    "################"
+  ],
+  "Liked": "73",
+  "RobotCol": "10",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "439",
+  "SubLengths": [
+    "4",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "esef",
+  "SubmittedDate": "2009-03-30T11:28:54.22",
+  "Title": "Resonance 2"
+}

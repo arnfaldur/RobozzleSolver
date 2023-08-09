@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BRRRBRRRRRRRRRRR",
+    "BRRRBRRRRRRRBRRR",
+    "BRRRBRRRRRRRBRRR",
+    "BRRRBRRRRRRRBRBR",
+    "BRBRBRRRBRRRBRBR",
+    "BRBRBRRRBRBRBRBR",
+    "BBBRBRRRBRBRBRBR",
+    "BBBRBBRRBRBRBBBR",
+    "BBBRBBRRBBBRBBBR",
+    "BBBRBBRRBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1623",
+  "DifficultyVoteSum": "5686",
+  "Disliked": "36",
+  "Featured": "false",
+  "Id": "656",
+  "Items": [
+    "*###*###########",
+    "*###*#######*###",
+    "*###*#######*###",
+    "*###*#######*#*#",
+    "*#*#*###*###*#*#",
+    "*#*#*###*#*#*#*#",
+    "***#*###*#*#*#*#",
+    "***#**##*#*#***#",
+    "***#**##***#***#",
+    "***#**##********",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "1470",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "13006",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T01:10:55.017",
+  "Title": "Limit your stack!"
+}

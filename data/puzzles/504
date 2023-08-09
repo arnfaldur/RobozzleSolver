@@ -1,0 +1,53 @@
+{
+  "About": "... and I drank all your beer.",
+  "AllowedCommands": "4",
+  "Colors": [
+    "BBBBBBBBBBBBGBBB",
+    "GBBBBBBBBBBBBBBB",
+    "BBGGGGGGGGGBBBBB",
+    "BGBBBBBBGGBBBBBB",
+    "BGGBBBBBBBBBBBBB",
+    "BBGBBGBBBBBBBBBB",
+    "BGGGGGGGGGGGGGGB",
+    "BBBBBBBBBBGGBGBB",
+    "BBBBBBGBBBBGBGBB",
+    "BBBGGGGBBBBBBGBB",
+    "BBGBBBBBBBBBBBBG",
+    "BGGGBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "28",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "504",
+  "Items": [
+    "............*...",
+    "*...............",
+    "..*********.....",
+    ".*......**......",
+    ".**............*",
+    "..*..*..........",
+    "..*..*....**.*..",
+    "..........**.*..",
+    "......*....*.*..",
+    "...****......*..",
+    "..*............*",
+    ".***............"
+  ],
+  "Liked": "5",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "46",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-05-12T05:11:53.843",
+  "Title": "Sorry, my kid barfed on your carpet"
+}

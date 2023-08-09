@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBRBBBRRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRRBRRRBRBRRRR",
+    "RRRBBBRRRBBBRRRR",
+    "RRRBRBRRRBRRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRRBBBRBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "54",
+  "DifficultyVoteSum": "123",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "768",
+  "Items": [
+    "################",
+    "###*****#***####",
+    "###*#*#*#*#*####",
+    "###*********####",
+    "#####*###*#*####",
+    "###***###***####",
+    "###*#*###*######",
+    "###****.****####",
+    "###*#*#*#*#*####",
+    "###***#*****####",
+    "################",
+    "################"
+  ],
+  "Liked": "42",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "210",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-14T18:01:17.877",
+  "Title": "Squares With Holes"
+}

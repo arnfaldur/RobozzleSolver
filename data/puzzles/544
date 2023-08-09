@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "BGRRRRRRRRRRRRRG",
+    "GGRRRBRRRRGRRRRR",
+    "RRBRRRRRRRRRRGRR",
+    "RRRRRRRBGRRRRRRR",
+    "RRRRBRRRRRRGRRRR",
+    "RRRRRRGRRBRRRRRR",
+    "BRRRRRBRRGRRRRRB",
+    "RRRRGRRRRRRBRRRR",
+    "RRRRRRRGBRRRRRRR",
+    "RRGRRRRRRRRRRBRR",
+    "RRRRRGRRRRBRRRGG",
+    "GRRRRRRRRRRRRRGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "23",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "544",
+  "Items": [
+    "................",
+    ".............*#.",
+    "............#**.",
+    "............##..",
+    "................",
+    "................",
+    "................",
+    "................",
+    "..##............",
+    ".**#............",
+    ".#*.............",
+    "................"
+  ],
+  "Liked": "2",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "42",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "danr",
+  "SubmittedDate": "2009-05-17T06:56:14.953",
+  "Title": "Are we there yet?"
+}

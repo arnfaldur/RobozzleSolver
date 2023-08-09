@@ -1,0 +1,53 @@
+{
+  "About": "Everyone, join the fun! Make a puzzle!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBRBRRRBRRBBRRRR",
+    "BBRBRRRBRRBBRRRR",
+    "RRBRRBRRBRRRBBBR",
+    "BBRBRRRBRRBBRRRR",
+    "BBBBRBRBBRBBBBBR",
+    "BBGBBBGBGBBBBBGG",
+    "BBRGBBRGRBGBBGRR",
+    "BGRBGGRBRGBGGBRR",
+    "GBRRBBRRRBRBBRRR",
+    "BBRRBBRRRBRBBRRR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "27",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "12684",
+  "Items": [
+    "################",
+    "**#*###*##**####",
+    "**#*###*##**####",
+    "****#*#**#*****#",
+    "****#*#**#*****#",
+    "***************.",
+    "****************",
+    "**#***#*#*****##",
+    "**#***#*#*****##",
+    "**##**###*#**###",
+    "**##**###*#**###",
+    "*###############"
+  ],
+  "Liked": "9",
+  "RobotCol": "15",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "21",
+  "SubLengths": [
+    "6",
+    "5",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jnpollack",
+  "SubmittedDate": "2020-01-17T23:44:48.777",
+  "Title": "Center Cut"
+}

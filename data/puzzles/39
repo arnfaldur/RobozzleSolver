@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRBBBRRR",
+    "RRRRRRRRRRBRBRRR",
+    "RRRRRRRRBBBRBRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3582",
+  "DifficultyVoteSum": "7049",
+  "Disliked": "389",
+  "Featured": "true",
+  "Id": "39",
+  "Items": [
+    "################",
+    "################",
+    "##########...###",
+    "##########.#.###",
+    "########...#*###",
+    "########.#######",
+    "########...#####",
+    "##########.#####",
+    "########...#####",
+    "########.#######",
+    "######...#######",
+    "################"
+  ],
+  "Liked": "3049",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "26260",
+  "SubLengths": [
+    "10",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-24T13:40:17.593",
+  "Title": "Smart reuse"
+}

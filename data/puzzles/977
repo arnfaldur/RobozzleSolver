@@ -1,0 +1,53 @@
+{
+  "About": "Don't count single green tiles or blue tiles.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBGGBBBGGBGGBRRR",
+    "RRRRRRRRRRRRRRRB",
+    "RGBGGBBGBGBGBRRB",
+    "RRRRRRRRRRRRRBRG",
+    "GRRGGBGBGGRRRGRG",
+    "GRGRRRRRRRRGRBRB",
+    "BRGRBRRRRRRGRGRB",
+    "BRBRRRGGBGGRRGRG",
+    "BRBRRRRRRRRRRBRG",
+    "GRRRGGBGGBGBBRRB",
+    "GRRRRRRRRRRRRRRR",
+    "RRRBGBGGBGGBGGBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "71",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "977",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "22",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "103",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T02:33:53.983",
+  "Title": "Count Green Pairs"
+}

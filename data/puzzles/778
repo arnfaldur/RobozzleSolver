@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "220",
+  "DifficultyVoteSum": "352",
+  "Disliked": "37",
+  "Featured": "false",
+  "Id": "778",
+  "Items": [
+    "######.*.#######",
+    "######*.*#######",
+    "######...#######",
+    "######...#######",
+    "#.............##",
+    "#*...........*##",
+    "#.............##",
+    "######.*.#######",
+    "######...#######",
+    "######...#######",
+    "######...#######",
+    "######.*.#######"
+  ],
+  "Liked": "132",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "5",
+  "Solutions": "963",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-15T15:51:56.563",
+  "Title": "Red-blue cross"
+}

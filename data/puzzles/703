@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRBBBBRR",
+    "RRBBRRRRRRBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBRRRRRR",
+    "RRBBBBBBBBRRRRRR",
+    "RRBBBBRRRRRRRRRR",
+    "RRBBBBRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "27",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "703",
+  "Items": [
+    "##########****##",
+    "##**######****##",
+    "##************##",
+    "##************##",
+    "#*************##",
+    "#****.********##",
+    "##************##",
+    "##************##",
+    "##********######",
+    "##********######",
+    "##****##########",
+    "##****##########"
+  ],
+  "Liked": "3",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "34",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-06T18:44:39.28",
+  "Title": "Random Walk II"
+}

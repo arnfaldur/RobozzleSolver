@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRBRRRRRRBBBRRG",
+    "RRRBRRRRBRBBBRRB",
+    "RRRGRRRRBRBBBRRB",
+    "RRRBRRRRGRGBBRRB",
+    "RRRBRRRRBRBBBRRB",
+    "RRRBRRRRBRBBBRRB",
+    "RRRBRRBRGRBBBRRB",
+    "RRRGRRGRBRGBBRRB",
+    "BBBRBBRBRBRRRBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "102",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "258",
+  "Items": [
+    "*************###",
+    "###########**###",
+    "****##*******#**",
+    "*##*#****#.**#**",
+    "*##*#**#*#***#**",
+    "*##*#**#*#***#**",
+    "*##*#****#***#**",
+    "**#*####*#***#**",
+    "###****#*#***#**",
+    "###**#*#*#***#**",
+    "###*##*#*#***#**",
+    ".***************"
+  ],
+  "Liked": "29",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "97",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-02T07:52:43.673",
+  "Title": "Stack Magic"
+}

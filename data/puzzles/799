@@ -1,0 +1,53 @@
+{
+  "About": "semi-spoiler for \"X Marks the Spot\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRBBBRRR",
+    "RRRRRBBRRRBBBRRR",
+    "RRRRBBBBRRGGGRRR",
+    "RRRRBBBBRRRGRRRR",
+    "RRRRRBBRRBGRRRRR",
+    "RRRGGGGGBBGRRRRR",
+    "RRBGGGGGBRRRRRRR",
+    "RRBBGGGGGRRRRRRR",
+    "RBBRGGGGRRRRRRRR",
+    "RGGRGGGGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGGGGRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "41",
+  "DifficultyVoteSum": "105",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "799",
+  "Items": [
+    "##########...###",
+    "#####..###***###",
+    "####....##...###",
+    "####....###.####",
+    "#####..##.*.####",
+    "###........#####",
+    "##.......#######",
+    "##.......#######",
+    "#..#....########",
+    "#..#....########",
+    "#.##....########",
+    "####....########"
+  ],
+  "Liked": "23",
+  "RobotCol": "11",
+  "RobotDir": "3",
+  "RobotRow": "4",
+  "Solutions": "134",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-18T15:54:51.437",
+  "Title": "Paint Brush"
+}

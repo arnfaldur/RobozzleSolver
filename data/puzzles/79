@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBRBBBRBBBR",
+    "RBBRBRBRBRBRBRBR",
+    "RBRRRRBRBRBRBRBR",
+    "RBBBBRBRBRBBBRBR",
+    "RRRRRRBRBRRRRRBR",
+    "RBBBBBBRRRBBBBBR",
+    "RBRRBRBBBBBRBRRR",
+    "RBBRBRRRRRRRRRRR",
+    "RRBRBBBRBBBRBBBR",
+    "RBBRBRBBBRBBBRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "248",
+  "DifficultyVoteSum": "310",
+  "Disliked": "245",
+  "Featured": "false",
+  "Id": "79",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "....*...........",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "85",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "897",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "hr0nix",
+  "SubmittedDate": "2009-02-28T21:45:10.047",
+  "Title": "A Maze"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Pirouette",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRGBRRRR",
+    "GGBBBBBBBBRBRRRR",
+    "RBRBGRRRRRBRRRRR",
+    "RRRRRRRRRRBBRRRR",
+    "GBRBRRRRRRBRRRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRGRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "20",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "535",
+  "Items": [
+    "################",
+    "################",
+    "##########*.####",
+    "**........*.####",
+    "#.*.*#####.*####",
+    "###*######..####",
+    "..*.######.*####",
+    "###*######..####",
+    "###*######..####",
+    "###*############",
+    "################",
+    "################"
+  ],
+  "Liked": "2",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "30",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T11:09:10.593",
+  "Title": "RoBallerina"
+}

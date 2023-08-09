@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "BRRRRRRRRRRRRRRR",
+    "BRBBBBBBBBBBBBBB",
+    "BRBRRRRRRRRRRRRB",
+    "BRBRBBBBBBBBBBRB",
+    "BRBRBRRRRRRRRBRB",
+    "BRBRBRGBBBBBRBRB",
+    "BRBRBRRRRRRBRBRB",
+    "BRBRBBBBBBBBRBRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRBBBBBBBBBBBBRB",
+    "BRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "39",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "415",
+  "Items": [
+    "*###############",
+    ".#..............",
+    ".#.############.",
+    ".#.#..........#.",
+    ".#.#.########.#.",
+    ".#.#.#......#.#.",
+    ".#.#.######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "10",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "43",
+  "SubLengths": [
+    "10",
+    "10",
+    "8",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-02T11:01:34.127",
+  "Title": "Squished Spiral"
+}

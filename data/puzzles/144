@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBRRRRRRRRRR",
+    "RBRRRRBRRBBBBBBR",
+    "RBRRRRBRBRBBBBRB",
+    "RBRRBBBRBBBBBBBB",
+    "RBRBRRBRBGBRRBBB",
+    "RBRRBBRRBBBRRBBB",
+    "RBRRRRRRBBBBBBBB",
+    "RBBBBBBBGBBBBBRB",
+    "RGBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "49",
+  "DifficultyVoteSum": "190",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "144",
+  "Items": [
+    "#......#########",
+    "#.####.#........",
+    "#.####.#........",
+    "#.#....#..*.....",
+    "#.#.##.#...##...",
+    "#.#....#...##...",
+    "#.######........",
+    "#...............",
+    "#...............",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "40",
+  "RobotCol": "5",
+  "RobotDir": "2",
+  "RobotRow": "3",
+  "Solutions": "190",
+  "SubLengths": [
+    "3",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "frfunny",
+  "SubmittedDate": "2009-03-16T02:55:50.563",
+  "Title": "snail"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Race your car to the finish, then pit stop (easier track than Grand Prix I)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRRRRRRRRRR",
+    "RRRGGRBGRRRRRRRR",
+    "RGRRRRRRGGBRRRRR",
+    "RBRRRRRRRRGRRRRR",
+    "RBRRRRRRRRRGRRRR",
+    "RBRRRRRRRRRRGRRR",
+    "RGBGRRRRRRRRRBRR",
+    "RRRRGRRRRRRRRBRR",
+    "RRRRRGRRRRRRRGRR",
+    "RRRRRBGRRRGGRRRR",
+    "RRRRRRRGBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "32",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "642",
+  "Items": [
+    "################",
+    "#####*##########",
+    "##***.**########",
+    "#**####****#####",
+    "#*########**####",
+    "#*#########**###",
+    "#*##########**##",
+    "#***#########*##",
+    "###**########*##",
+    "####**######**##",
+    "#####***#****###",
+    "#######***######"
+  ],
+  "Liked": "4",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "26",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-03T12:25:33.877",
+  "Title": "Grand Prix II"
+}

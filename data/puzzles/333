@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBRRRR",
+    "BRRRRRRRRRRBRRRR",
+    "BRRBBBRRRRRBRRRR",
+    "BRBRRBRRRRRBRRRR",
+    "BRBRRBRRRRRGBBBB",
+    "BRBBBBBBGRRRRRRB",
+    "BRRRRBRRBRRRRRRB",
+    "BRRRRBRRBRRRRRRB",
+    "BRRRRBRRBRRRRRRB",
+    "BRRRRBRRBRRRRRRB",
+    "BRRRRBRRBRRRRRRB",
+    "BRRRRBRRBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "767",
+  "DifficultyVoteSum": "1808",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "333",
+  "Items": [
+    "************####",
+    "*##########*####",
+    "*#****#####*####",
+    "*#*##*#####*####",
+    "*#*##*#####*****",
+    "*#*******######*",
+    "*####*##*######*",
+    "*####*##*######*",
+    "*####*##*######*",
+    "*####*##*######*",
+    "*####*##*######*",
+    ".####*##********"
+  ],
+  "Liked": "635",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "4987",
+  "SubLengths": [
+    "3",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-10T08:12:27.937",
+  "Title": "Learning Stack 2"
+}

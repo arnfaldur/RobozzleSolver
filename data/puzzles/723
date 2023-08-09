@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "BRRRRRRRRRRRRRBR",
+    "RGGGGGGGGGGGGGRB",
+    "BBRRRRRRRRRRBRGR",
+    "BRGGGGGGGGGGRBGR",
+    "RGRBRBRBRRBRGRGR",
+    "RGBRGRBRGGRBGRGR",
+    "RGRGRRRGRRGRGRGR",
+    "RGRGRGRGRRGRGRGR",
+    "RGBRGGGGGGRBGRGR",
+    "RGRBRRRGRRBRGRGR",
+    "BRGGGGGRBRRBRGRB",
+    "RBRRRRRBRRRRBRBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "83",
+  "DifficultyVoteSum": "195",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "723",
+  "Items": [
+    ".#############.#",
+    "..............*.",
+    "..##########.#.#",
+    ".*..........*..#",
+    "#.#.#.#.##.#.#.#",
+    "#..*.*.*..*..#.#",
+    "#.#.#*#.##.#.#.#",
+    "#.#.#.#.##.#.#.#",
+    "#..*......*..#.#",
+    "#.#.#*#.##.#.#.#",
+    ".*.....*.##.*.*.",
+    "#.#####.####.#.#"
+  ],
+  "Liked": "73",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "871",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-08T21:54:19.877",
+  "Title": "Enter, don't enter"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "With a dizzy twist",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBRBGRGBRBGRRRRR",
+    "BRRRGRRRRRGRRRRR",
+    "GRRRRRGBBGRGGBGR",
+    "BRRRGRRRRRBRRRGR",
+    "RRRRGRBRBRGRRRRR",
+    "GRRRGRRRRRRRRRGR",
+    "GRRRRRRRRRRRRRBR",
+    "BRRRBRRRRRRRRRRR",
+    "GBRBGRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "BGRGBRBBGGRGBBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "55",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "823",
+  "Items": [
+    "################",
+    "..*..#..*..#####",
+    ".###.#*###.#####",
+    ".###*#....*....#",
+    ".###.#####.###.#",
+    "*###.*.*.*.###*#",
+    ".###.#########.#",
+    ".###*#########.#",
+    ".###.#########*#",
+    "..*..#########.#",
+    "##############*#",
+    "..*..*....*....#"
+  ],
+  "Liked": "19",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "59",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "hbandura",
+  "SubmittedDate": "2009-06-21T00:39:24.22",
+  "Title": "Messy Greens 2"
+}

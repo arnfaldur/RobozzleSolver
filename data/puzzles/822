@@ -1,0 +1,53 @@
+{
+  "About": "Some greens are not worthy of my attention",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGBBGRGBBGRRR",
+    "RRRRBRRRRRRRRRRR",
+    "GBGBRBGBGRRRBRRR",
+    "BRRRBRRRBRRRGRRR",
+    "RRRRBRRRRRGBRBGR",
+    "BRRRRRRRGRBRGRBR",
+    "RRRRGBRBGRRRBRBR",
+    "RRRRRRRRRRBRRRRR",
+    "GBRRRRRRRRGRGRGR",
+    "RRRRRRRRRRRRRRBR",
+    "BBGBRBGBBGBRBBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "104",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "822",
+  "Items": [
+    "################",
+    "####....*....###",
+    "####.#######*###",
+    "....*....###.###",
+    ".###.###.###.###",
+    "*###.###*#..*..#",
+    ".###*###.#.#.#.#",
+    "*###.....#*#.#.#",
+    "*#########.#*#*#",
+    "..*#######.*.#.#",
+    "##############.#",
+    "....*......*...#"
+  ],
+  "Liked": "32",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "118",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "hbandura",
+  "SubmittedDate": "2009-06-21T00:22:47.593",
+  "Title": "Messy greens"
+}

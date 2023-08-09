@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBGGGGBBBBBBBBBB",
+    "BBBGGGBBBBBBBBBB",
+    "BBBBGGBBGGGGBBBB",
+    "BBBRBGBRBGGGBBBB",
+    "BBRBBBRBBBGGBBBB",
+    "BBBBBBBBBBBGBBBB",
+    "BBBBBBBBBBBBRBBB",
+    "BBBBBBRBBBBRBBBB",
+    "BBBBBRBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "91",
+  "DifficultyVoteSum": "208",
+  "Disliked": "16",
+  "Featured": "false",
+  "Id": "604",
+  "Items": [
+    "................",
+    "................",
+    "..****..........",
+    "...***..........",
+    "....**..****....",
+    ".....*...***....",
+    "..........**....",
+    "...........*....",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "71",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "280",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "vparot",
+  "SubmittedDate": "2009-05-27T20:23:09.453",
+  "Title": "Stealth Bombers over the Sea"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Red is left, Green is right",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGBBGRRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RGBBBBGRGBBBBBBG",
+    "RBRRRRRRBRRRRRRB",
+    "RBRRRRRRGBBGRRRB",
+    "RBRRRRRRRRRGBGRB",
+    "RGBBBBBBBGRRRBRB",
+    "RRRRRRRRRGBBBGRB",
+    "RRRRRRRRRRRRRRRB",
+    "BGRRGGRGGGRGRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "119",
+  "DifficultyVoteSum": "418",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "311",
+  "Items": [
+    "################",
+    "################",
+    "###****#########",
+    "######*#########",
+    "#******#********",
+    "#*######*######*",
+    "#*######****###*",
+    "#*#########***#*",
+    "#*********###*#*",
+    "#########*****#*",
+    "###############*",
+    ".***************"
+  ],
+  "Liked": "115",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "869",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T12:05:43.203",
+  "Title": "Follow directions II"
+}

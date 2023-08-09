@@ -1,0 +1,53 @@
+{
+  "About": "Red = Blue^2",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBRRRRRRRRRRRRRR",
+    "GBBRRRRRRRRRRRRR",
+    "GBBBRRRRRRRRRRRR",
+    "GBBRRRRRRRRRRRRR",
+    "GBRRRRRRRRRRRRRR",
+    "GBBBRRRRRRRRRRRR",
+    "GBBBRRRRRRRRRRRR",
+    "GBRRRRRRRRRRRRRR",
+    "GBRRRRRRRRRRRRRR",
+    "GBBRRRRRRRRRRRRR",
+    "GBBRRRRRRRRRRRRR",
+    "GBBBRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "100",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "391",
+  "Items": [
+    ".**#############",
+    "*******#########",
+    "*************###",
+    "*******#########",
+    "***#############",
+    "*************###",
+    "*************###",
+    "***#############",
+    "***#############",
+    "*******#########",
+    "*******#########",
+    "*************###"
+  ],
+  "Liked": "30",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "170",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-28T23:21:36.423",
+  "Title": "Square"
+}

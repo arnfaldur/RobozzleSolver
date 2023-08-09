@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBBBBBBRBRR",
+    "RRBBBBBBBBBRBBRR",
+    "RRBBBBBBBBRBBBRR",
+    "RRBBBBBBBRBBBBRR",
+    "RRBBBBBBRBBBBBRR",
+    "RRGGGGGBBGGGGGRR",
+    "RRGGGGGRRGGGGGRR",
+    "RRBBBBBGGBBBBBRR",
+    "RRBBBBBGGBBBBBRR",
+    "RRBBBBBGGBBBBBRR",
+    "RRBBBBBGGBBBBBRR",
+    "RRBBBBBGGBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "45",
+  "DifficultyVoteSum": "128",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "540",
+  "Items": [
+    "##*.........*.##",
+    "##.*.......*..##",
+    "##..*.....*...##",
+    "##...*...*....##",
+    "##....*.*.....##",
+    "##.....*......##",
+    "##.....**.....##",
+    "##....*..*....##",
+    "##...*....*...##",
+    "##..*......*..##",
+    "##.*........*.##",
+    "##*..........*##"
+  ],
+  "Liked": "42",
+  "RobotCol": "13",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "156",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-16T23:41:55.453",
+  "Title": "Turn Right At The Stars"
+}

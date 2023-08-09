@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRGGGGRRRRRR",
+    "RRRRRGGBBGGRRRRR",
+    "RRBRRGBBBBGRRBRR",
+    "RRBRRRBRRBRRRBRR",
+    "RRGBBBRBBGBBBRRR",
+    "RRBRRRBRGBRRRBRR",
+    "RRBRRRBGRBRRRBRR",
+    "RRRBBBGBBRBBBGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "148",
+  "DifficultyVoteSum": "317",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "496",
+  "Items": [
+    "################",
+    "#######..#######",
+    "######....######",
+    "#####*.**.*#####",
+    "##.##......##.##",
+    "##.###*##*###.##",
+    "##....*.*.*.**##",
+    "##.###...*###.##",
+    "##.###....###.##",
+    "##.......*....##",
+    "##..########..##",
+    "##..########..##"
+  ],
+  "Liked": "121",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "554",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-11T19:33:04.703",
+  "Title": "Starship Trooper"
+}

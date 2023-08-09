@@ -1,0 +1,53 @@
+{
+  "About": "Calling other functions are important.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGRRRRRRGRRRRR",
+    "RRRBGGGGGGBRRRRR",
+    "RRRGRRRRRRGRRRRR",
+    "RRRGRGBBGRGRRRRR",
+    "RRRRGRRBBRGRRRRR",
+    "RRRRRRBRBRGRRRRR",
+    "RRRRRRRRGRGRRRRR",
+    "RRRRRRRGRRGRRRRR",
+    "RRRRRRRRGGBRRRRR",
+    "RRRRRRRRRRGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "248",
+  "DifficultyVoteSum": "550",
+  "Disliked": "30",
+  "Featured": "false",
+  "Id": "270",
+  "Items": [
+    "################",
+    "################",
+    "###.######.#####",
+    "##.*......*.####",
+    "###.######.#####",
+    "###.#*..*#.#####",
+    "###*..#..#.#####",
+    "######.#.#.#####",
+    "#######.*#.#####",
+    "#######.##.#####",
+    "#######*..*.####",
+    "##########.#####"
+  ],
+  "Liked": "187",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "1001",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-03T06:48:58.483",
+  "Title": "Last one"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Do you want to use recursion?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GGGGGGGGGBBBBBBG",
+    "RRRRRRRRGBBBBBBG",
+    "RRRRRRRRGBBBBBBG",
+    "RRRRRRRRGGGBBBBG",
+    "RRRRRRRRRRGBBBBG",
+    "RRRRRRRRRRGGBBBG",
+    "RRRRRRRRRRRGBBBG",
+    "RRRRRRRRRRRGBBBG",
+    "RRRRRRRRRRRGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "33",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "653",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "########........",
+    "*******#........",
+    "*#####*#........",
+    "*****#*###......",
+    "####*#***#......",
+    "*****#*####.....",
+    "*#####*##*#.....",
+    ".#####****#....."
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "85",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T00:38:14.78",
+  "Title": "Imperative programming"
+}

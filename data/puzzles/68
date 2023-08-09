@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRBBBRRBRRRR",
+    "RRRBRBRRRBRBRRRR",
+    "RRRBRBRBBRRBRRRR",
+    "RRRBRBRRRRRBRRBR",
+    "RRRBRRBBBBBRRBGB",
+    "RRRBRRRRRRRRRRRB",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "257",
+  "DifficultyVoteSum": "280",
+  "Disliked": "192",
+  "Featured": "false",
+  "Id": "68",
+  "Items": [
+    "################",
+    "################",
+    "###*.......*####",
+    "###.#######.####",
+    "###.#*...*#.####",
+    "###.#.###.#.####",
+    "###.#.#..*#.####",
+    "###.#.#####.#*.*",
+    "###.#*.....*#.*.",
+    "###.#########**.",
+    "###*...........*",
+    "################"
+  ],
+  "Liked": "138",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "1166",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "tisba",
+  "SubmittedDate": "2009-02-27T09:05:58.923",
+  "Title": "Spiral"
+}

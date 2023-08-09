@@ -1,0 +1,53 @@
+{
+  "About": "\"Walkin' the mile, walkin' the mile...\"",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBRRRR",
+    "BGBBBBBBBBBRRRRR",
+    "BBGBBBBBBBBRRRRR",
+    "BBBGBBBBBBBRRRRR",
+    "BBBBGBBBBBBRRRRR",
+    "BBBBBGBBBBBRRRRR",
+    "BBBBBGBBBBBRRRRR",
+    "BBBBBBGBBBBRRRRR",
+    "BBBBBBBGBBBRRRRR",
+    "BBBBBBBBGBBRRRRR",
+    "BBBBBBBBBGBRRRRR",
+    "BBBBBBBBBBGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "890",
+  "DifficultyVoteSum": "2607",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "555",
+  "Items": [
+    "***********.####",
+    "**.......**#####",
+    "*.*.....*.*#####",
+    "*..*...*..*#####",
+    "*...*.*...*#####",
+    "*....*....*#####",
+    "*....*....*#####",
+    "*...*.*...*#####",
+    "*..*...*..*#####",
+    "*.*.....*.*#####",
+    "**.......**#####",
+    "***********#####"
+  ],
+  "Liked": "735",
+  "RobotCol": "11",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "4697",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-19T19:42:48.75",
+  "Title": "The green mile"
+}

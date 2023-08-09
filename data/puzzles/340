@@ -1,0 +1,53 @@
+{
+  "About": "Which color do you prefer",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRBBBBRBBRRRR",
+    "RRRRRBBRBBBBRRRR",
+    "RRRRRRBBGBRRRRRR",
+    "RRRRBBBBRBBRRRGR",
+    "RRRRBBRBBBBRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "31",
+  "DifficultyVoteSum": "89",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "340",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######*.#######",
+    "#####*...#*.####",
+    "#####..#....####",
+    "######....######",
+    "####*...#.*###.#",
+    "####..#.*..#####",
+    "#######*.#######",
+    "################",
+    "################"
+  ],
+  "Liked": "16",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "99",
+  "SubLengths": [
+    "5",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timmy",
+  "SubmittedDate": "2009-04-14T06:22:07.22",
+  "Title": "Bow Tie"
+}

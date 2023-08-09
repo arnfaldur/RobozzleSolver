@@ -1,0 +1,53 @@
+{
+  "About": "left if you've seen red or no blue, otherwise right",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBRGRBRGBBBBRG",
+    "RRRRRRRBRRRRRRRB",
+    "GBBGRGBGRGBBBGRR",
+    "RRRRRRRRRRRRRBRB",
+    "GGRGBBGRGRGRGGRB",
+    "BRRRRRBRBRRRBRRB",
+    "BGBBBBGRBRBRBRRB",
+    "RRRRRRRRBRGBGGRG",
+    "BRGBBBGRBRRRRBRR",
+    "BRBRRRRRBRRRRGBG",
+    "BRGBGRGBBBBGRRRR",
+    "GBBRGRRRGRRGBRBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "108",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "926",
+  "Items": [
+    "*....*#.#*.....*",
+    ".####.#.#.#####.",
+    "*..*#*.*#*...*#.",
+    "###.#########.#.",
+    "**#*..*#*.*#**#.",
+    "..####.#.#.#.##.",
+    ".*....*#.#.#.##.",
+    ".#######.#*.**.*",
+    ".#*...*#.####.##",
+    ".#.###.#.####*.*",
+    ".#*.*#*....*###.",
+    "*...*###*##*...*"
+  ],
+  "Liked": "31",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "179",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-29T03:31:33.187",
+  "Title": "Early Warning 2"
+}

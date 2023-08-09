@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBRRRGGGRRR",
+    "RRRRBBBRRRGGGRRR",
+    "RRRRBBBRRRGGGRRR",
+    "RRRRBBBRRRGGGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "55",
+  "DifficultyVoteSum": "166",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "118",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "####.....*...###",
+    "####.........###",
+    "####.........###",
+    "####........*###",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "51",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "240",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mcris79",
+  "SubmittedDate": "2009-03-10T15:30:01.72",
+  "Title": "trois couleurs"
+}

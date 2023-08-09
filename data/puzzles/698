@@ -1,0 +1,53 @@
+{
+  "About": "The title is misleading",
+  "AllowedCommands": "7",
+  "Colors": [
+    "GRRRRRBBBBRRRRRR",
+    "RGRRRRBBBBRRRRRG",
+    "RRGRRRBBBBRRRRGR",
+    "RRRGRRBBBBRRRGRR",
+    "RRRRGRBBBBRRGRRR",
+    "RGRGRGBBBBRGRGRG",
+    "GRGRGRBBBBGRGRGR",
+    "RRRGRRBBBBRGRRRR",
+    "RRGRRRBBBBRRGRRR",
+    "RGRRRRBBBBRRRGRR",
+    "GRRRRRBBBBRRRRGR",
+    "RRRRRRBBBBRRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "40",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "698",
+  "Items": [
+    ".#####.*..#####.",
+    "..####..*.####..",
+    "#..###...*###..#",
+    "##..##..*.##..##",
+    "###..#.*..#..###",
+    "......*.........",
+    "................",
+    "###..#..*.#..###",
+    "##..##...*##..##",
+    "#..###..*.###..#",
+    "..####.*..####..",
+    ".#####*...#####."
+  ],
+  "Liked": "6",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "48",
+  "SubLengths": [
+    "3",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-06T14:07:22.267",
+  "Title": "Zigzag"
+}

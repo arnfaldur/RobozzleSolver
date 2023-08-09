@@ -1,0 +1,53 @@
+{
+  "About": "look a long ways back to find the first one.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGRGRRGRGRGRRRGR",
+    "BGBGBBGBGBGBBBGR",
+    "RBRBRRBRBRBRRRBR",
+    "RGRBRRBRBRBRBRBR",
+    "GBBBRRBRBRBRBRBR",
+    "RRRRRRBRBRBRBRBR",
+    "RRRRRRBRBRBRBBBR",
+    "RBBBBBBGBRBRRRRR",
+    "RRRRRRRRBRBRRRRR",
+    "RBBBBBBBBBBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "41",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "961",
+  "Items": [
+    "#*#*##*#*#*###.#",
+    ".*.*..*.*.*...*#",
+    "#.#.##.#.#.#*#.#",
+    "#*#.##.#.#.#.*.#",
+    "*...##.#.#.#.#.#",
+    "###.##.#.#.#.#.#",
+    "#*####.#.#.*...#",
+    "*......*.#.#*#*#",
+    "#*####*#.#.#####",
+    "*..........*####",
+    "########**.#####",
+    "##########*#####"
+  ],
+  "Liked": "11",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "37",
+  "SubLengths": [
+    "10",
+    "5",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-07-02T19:44:30.517",
+  "Title": "Straying from the path II"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "simple, yet complicated",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGGGRRRRR",
+    "RRRRRRRGRBRGRRRR",
+    "RRRRGGGRGGBGRRRR",
+    "RRRGRBRGRGRGRRRR",
+    "RRRGBGGRGRGRGRRR",
+    "RRRGRGRGRGRGRGRR",
+    "RRRRGRGRGRGGBGRR",
+    "RRRRRGRGRGRBRGRR",
+    "RRRRRGBGGRGGGRRR",
+    "RRRRRGRBRGRRRRRR",
+    "RRRRRRGGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "85",
+  "DifficultyVoteSum": "220",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "484",
+  "Items": [
+    "######.....#####",
+    "#####.......####",
+    "####..#.#*#..###",
+    "###.......*...##",
+    "##..#*#.#.#.#..#",
+    "##..*.*.*....*.#",
+    "##..#*#*#*#.#..#",
+    "##......*.*.*..#",
+    "###.#.#*#.#.#..#",
+    "###...*.*.....##",
+    "####..#*#.#..###",
+    "#####.......####"
+  ],
+  "Liked": "66",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "205",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-05-09T07:39:10.627",
+  "Title": "easy as apple pie!"
+}

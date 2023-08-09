@@ -1,0 +1,53 @@
+{
+  "About": "and turn everywhere else",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBRGBGRGBRGBRGBG",
+    "BRRRRBRBRRRRRRRB",
+    "GBGRRRRGBGRRGGRR",
+    "RRRRRGRRRRRRBGRG",
+    "RGBBRGBRGBBRRRGR",
+    "GRRRRRRRRRRRGRRR",
+    "RRBBGRRRRRBGRRGR",
+    "BRRRGRBRGRRRRRBG",
+    "GRGRRRGRBRBRBRGB",
+    "RGRRBRRRBRRRBRRR",
+    "RRRRGRBRRRRRRRRG",
+    "RGBRRRGBGRBGRBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "62",
+  "DifficultyVoteSum": "183",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "349",
+  "Items": [
+    "******#*********",
+    "*####*#*#######*",
+    "****#*#****#**#*",
+    "###*#*####*#**#*",
+    "****#******#****",
+    "*###########*###",
+    "*#***#*#*****#**",
+    "*#*#*#*#*#####**",
+    "*#*#*#*#*#***#**",
+    "***#*#*#***#****",
+    "####*#*########*",
+    ".****#**********"
+  ],
+  "Liked": "54",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "191",
+  "SubLengths": [
+    "6",
+    "6",
+    "6",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-16T08:30:48.86",
+  "Title": "Straight on RGB"
+}

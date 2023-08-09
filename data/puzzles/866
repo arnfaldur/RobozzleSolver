@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGRRRRRRRR",
+    "RRRGGRGGGGRRRRRR",
+    "RRRGGGGRGGRRRRRR",
+    "RRRRRGGGGRRRRRRR",
+    "RRRRGGRGGGGRRRRR",
+    "RRRRGGGGRGGRRRRR",
+    "RRRRRRGGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "60",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "866",
+  "Items": [
+    "################",
+    "################",
+    "######**########",
+    "###**#****######",
+    "###****#**######",
+    "#####**.*#######",
+    "####**#****#####",
+    "####****#**#####",
+    "######**########",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "10",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "71",
+  "SubLengths": [
+    "5",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-23T16:52:00.72",
+  "Title": "The Lost Woods"
+}

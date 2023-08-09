@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBGRRRRRR",
+    "RRRRRRRRRGRRRRRR",
+    "RRRRRRRGRBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "340",
+  "DifficultyVoteSum": "515",
+  "Disliked": "79",
+  "Featured": "false",
+  "Id": "619",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "#######.*..#####",
+    "########..######",
+    "#######.#.######",
+    "#######*..######",
+    "################",
+    "################"
+  ],
+  "Liked": "228",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "1572",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "xodusprime",
+  "SubmittedDate": "2009-05-31T01:28:15.64",
+  "Title": "Two Stroke"
+}

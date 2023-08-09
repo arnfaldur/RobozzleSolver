@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "38",
+  "DifficultyVoteSum": "101",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "877",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######****#####",
+    "#######****#####",
+    "#######****#####",
+    "#######*.**#####",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "23",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "147",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "nima_",
+  "SubmittedDate": "2009-06-25T09:39:02.14",
+  "Title": "Square"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "A Stack of the Clones (Actual Description: Stack Magic + Tree)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGBBBBBBGR",
+    "GBRBRRRBRRRRRRBR",
+    "BRRRRRRGRRRRRRRR",
+    "GBRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRBRRRR",
+    "RRRRRRGBBRBGRRRR",
+    "BRRRRRBRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRBGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRGBGRBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "69",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "271",
+  "Items": [
+    "#######********#",
+    "********######*#",
+    "*#*####***#****#",
+    "*****####*#*##*#",
+    "##********#*##*#",
+    "#****######*##*#",
+    "######******##*#",
+    "*#####*##*####*#",
+    "*#####*##*######",
+    "***#***##*****##",
+    "##*****######*##",
+    "##***#*######.##"
+  ],
+  "Liked": "12",
+  "RobotCol": "13",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "41",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-03T08:42:33.077",
+  "Title": "Stack Magic: Episode II"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRGRGRRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRRGRGRGRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "28",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "481",
+  "Items": [
+    "######...#######",
+    "#######.########",
+    "#######.########",
+    "###...*.*...####",
+    "###.#*#*#*#.####",
+    "###...*.*...####",
+    "###.#*#*#*#.####",
+    "###.........####",
+    "###.#*#*#*#.####",
+    "###*........####",
+    "################",
+    "################"
+  ],
+  "Liked": "3",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "28",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-08T23:50:09.797",
+  "Title": "Almost Symmetric"
+}

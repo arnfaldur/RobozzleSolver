@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRBRRR",
+    "RRBRRRRRBRRRBRRR",
+    "BRBRRRRRBRRRBRRR",
+    "BRBRRRRRBRRRBRBR",
+    "BRBRBRRRBRRRGRBR",
+    "BRGRBRRRGRBRGRBR",
+    "GRGRBRBRGRBRGRBR",
+    "GRGRBRBRGRBRGRGR",
+    "GRGRGRBRGRBRGRGR",
+    "GRGRGRBRGRGRGRGR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "83",
+  "DifficultyVoteSum": "160",
+  "Disliked": "26",
+  "Featured": "false",
+  "Id": "793",
+  "Items": [
+    "...............#",
+    "*#*#*#*#*#*#.#*#",
+    "*#.#*#*#.#*#.#*#",
+    ".#.#*#*#.#*#.#*#",
+    ".#.#*#*#.#*#.#.#",
+    ".#.#.#*#.#*#*#.#",
+    ".#*#.#*#*#.#*#.#",
+    "*#*#.#.#*#.#*#.#",
+    "*#*#.#.#*#.#*#*#",
+    "*#*#*#.#*#.#*#*#",
+    "*#*#*#.#*#*#*#*#",
+    "...............#"
+  ],
+  "Liked": "47",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "261",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-17T22:33:48.267",
+  "Title": "Abacus"
+}

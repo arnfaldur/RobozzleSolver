@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBBBG",
+    "RBRRRRRRRRRRRRRB",
+    "RBRRGBBBBBBBBGRB",
+    "RBRRBRRRRRRRRBRB",
+    "RBRRBRGBBBBGRBRB",
+    "RBRRBRBRRRRBRBRB",
+    "RBRRBRBRRRRBRBRB",
+    "RBRRBRBRGBBGRBRB",
+    "RBRRBRBRRRRRRBRB",
+    "RBRRBRGBBBBBBGRB",
+    "RBGRBRRRRRRRRRRB",
+    "RGGRGBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2415",
+  "DifficultyVoteSum": "4867",
+  "Disliked": "132",
+  "Featured": "false",
+  "Id": "131",
+  "Items": [
+    "#...............",
+    "#.#############.",
+    "#.##..........#.",
+    "#.##.########.#.",
+    "#.##.#......#.#.",
+    "#.##.#.####.#.#.",
+    "#.##.#.#*##.#.#.",
+    "#.##.#.#....#.#.",
+    "#.##.#.######.#.",
+    "#.##.#........#.",
+    "*..#.##########.",
+    "#..#............"
+  ],
+  "Liked": "2043",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "17537",
+  "SubLengths": [
+    "4",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "w4keme",
+  "SubmittedDate": "2009-03-11T22:30:55.377",
+  "Title": "driving in the uk"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGBBRRRRRRRRR",
+    "RRRGBRRRRRRRRRRR",
+    "RRRGGGBBBRRRRRRR",
+    "RRRGGBBRRRRRRRRR",
+    "RRRGGGGGBBBBBRRR",
+    "RRRGGBBRRRRRRRRR",
+    "RRRGGGBBBRRRRRRR",
+    "RRRGBRRRRRRRRRRR",
+    "RRRGGBBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "164",
+  "DifficultyVoteSum": "554",
+  "Disliked": "3",
+  "Featured": "true",
+  "Id": "33",
+  "Items": [
+    "################",
+    "##....*#########",
+    "##..*###########",
+    "##......*#######",
+    "##....*#########",
+    "##..........*###",
+    "##....*#########",
+    "##......*#######",
+    "##..*###########",
+    "##....*#########",
+    "################",
+    "################"
+  ],
+  "Liked": "171",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "1261",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-20T20:05:04.017",
+  "Title": "Can you count?"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRGBBBBBBGRRRRR",
+    "RRRBRRRRRRBRRRRR",
+    "RGBBBBGRRBBBGRRR",
+    "RBRRRRBRRRRRBRRR",
+    "RBBGRRBBGRRBBGRR",
+    "RRRBRRRRBRRRRBRR",
+    "RGBBBRRGBRRGBBBR",
+    "RBRRRRRBRRRBRRRR",
+    "RBRRRBBBRRRBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "134",
+  "DifficultyVoteSum": "485",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "346",
+  "Items": [
+    "#######.########",
+    "#######*########",
+    "###********#####",
+    "###*######*#####",
+    "#******#*****###",
+    "#*####*#####*###",
+    "****#****#****##",
+    "###*####*####*##",
+    "#*****#***#*****",
+    "#*#####*###*####",
+    "***#*****#******",
+    "################"
+  ],
+  "Liked": "136",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "1386",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-16T03:26:20.813",
+  "Title": "Tree II"
+}

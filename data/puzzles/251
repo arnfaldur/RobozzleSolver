@@ -1,0 +1,53 @@
+{
+  "About": "More Bars in More Places ...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRBRRRRB",
+    "RRRRRRBRRRBRRRRB",
+    "RRRBRRBRRRBRRRRB",
+    "RBRBRRBRRRBRRRRB",
+    "RRBRBBRBBBRBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "127",
+  "DifficultyVoteSum": "318",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "251",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "###############*",
+    "##########*####.",
+    "######*###.####.",
+    "###*##.###.####.",
+    "#*#.##.###.####.",
+    "................"
+  ],
+  "Liked": "105",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1214",
+  "SubLengths": [
+    "10",
+    "10",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "chezbriand",
+  "SubmittedDate": "2009-03-31T22:31:03.437",
+  "Title": "Raising the Bar"
+}

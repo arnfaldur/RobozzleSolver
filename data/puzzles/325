@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBRRRRRBBRRRRR",
+    "RBRBRRRRRBRBRRRR",
+    "RBBBBBRBBBBBRRRR",
+    "RRRBRBRBRBRRRRRR",
+    "RRRBBBBGBBRRRRRR",
+    "RRRRRBRBRRRRRRRR",
+    "RRRBBGBBBBRRRRRR",
+    "RRRBRBRBRBRRRRRR",
+    "RBBBBBRBBBBBRRRR",
+    "RBRBRRRRRBRBRRRR",
+    "RRBBRRRRRBBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "54",
+  "DifficultyVoteSum": "159",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "325",
+  "Items": [
+    "#***#####***####",
+    "#*#*#####*#*####",
+    "#*****#*****####",
+    "###*#*#*#*######",
+    "###*******######",
+    "#####*#*########",
+    "###**.****######",
+    "###*#*#*#*######",
+    "#*****#*****####",
+    "#*#*#####*#*####",
+    "#***#####***####",
+    "################"
+  ],
+  "Liked": "55",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "150",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-08T18:07:36.017",
+  "Title": "Return of Robo 2"
+}

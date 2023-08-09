@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBRBRBRBRBRBRBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBRBRBRBRBRBRBRB",
+    "BBBBBBBBBBBBBBBB",
+    "BBRBRBRBBBRBRBRB",
+    "BBBBBBBBBBBBBBBB",
+    "BBGBGBBBGGBBGGBB",
+    "BBGGGBBGGGBBGGGB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "17",
+  "DifficultyVoteSum": "53",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "956",
+  "Items": [
+    "................",
+    "................",
+    "..*.*.*.*.*.*...",
+    "................",
+    "..*.*.*.*.*.*.*.",
+    "................",
+    "..*.*.*...*.*.*.",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "14",
+  "RobotCol": "6",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "49",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-02T01:41:53.25",
+  "Title": "Space Invaders"
+}

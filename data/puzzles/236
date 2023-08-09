@@ -1,0 +1,53 @@
+{
+  "About": "...can be confusing.",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRRRRRRRBRRBR",
+    "RBRBRRRRRRBRBGRB",
+    "RRBRRRRRRRRGRRBR",
+    "RRBRRRRRRRRBRRBR",
+    "RRBRRBRRRRBRBRBR",
+    "RBRBGRBRBBRGBBRB",
+    "RRGRRGRRRRBBRRGR",
+    "RBRBBRBBBBGRBRBR",
+    "RRBRRBRRRRRBRRGR",
+    "RRRRRRRRRRRRRBRB",
+    "RRRRRRRRRRRRRRBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "128",
+  "DifficultyVoteSum": "435",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "236",
+  "Items": [
+    "################",
+    "##*########.##.#",
+    "#*.*######...*..",
+    "##*########*##.#",
+    "##.########.##.#",
+    "##.##.####...#.#",
+    "#...*..#...*....",
+    "##*##*####..##*#",
+    "#............#.#",
+    "##.##.#####.##*#",
+    "#############...",
+    "##############.#"
+  ],
+  "Liked": "123",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "978",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-29T19:34:54.297",
+  "Title": "Getting directions..."
+}

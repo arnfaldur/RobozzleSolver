@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGGGGRRRRRR",
+    "RRBBBBBBGGRRRRRR",
+    "RBBBBBBRGGRRRRRR",
+    "BBRRRBRBGGRRRRRR",
+    "BRBBBBBRGGRRRRRR",
+    "BRRRRGRRGGRRRRRR",
+    "BRRRRGRRGGRRRRRR",
+    "BRRGGGGGGGRRRRRR",
+    "BRRRRGGGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "42",
+  "DifficultyVoteSum": "112",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "979",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####*****######",
+    "#*********######",
+    "**********######",
+    "**###*#***######",
+    "**********######",
+    "*####*##**######",
+    "*####*##**######",
+    "*##*******######",
+    ".####****#######"
+  ],
+  "Liked": "32",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "160",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-04T05:35:26.157",
+  "Title": "symmetry-???"
+}

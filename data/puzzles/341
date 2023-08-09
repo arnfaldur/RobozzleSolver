@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBRRRRR",
+    "BRRRRRRRRRBRRRRR",
+    "BBBBBBBBBRBRRRRR",
+    "BRRRRRRRBRBRRRRR",
+    "BBBBBBBRBRBRRRRR",
+    "BRRRRRBRBRBRRRRR",
+    "BBBBBRBRBRBRRRRR",
+    "BRRRBRBRBRBRRRRR",
+    "BBBRBRBRBRBRRRRR",
+    "BRBRBRBRBRBRRRRR",
+    "RBBBBBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "59",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "341",
+  "Items": [
+    "################",
+    "***********#####",
+    "*#########*#####",
+    "*********#*#####",
+    "*#######*#*#####",
+    "*******#*#*#####",
+    "*#####*#*#*#####",
+    "*****#*#*#*#####",
+    "*###*#*#*#*#####",
+    "***#*#*#*#*#####",
+    "*#*#*#*#*#*#####",
+    ".**********#####"
+  ],
+  "Liked": "16",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "60",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-04-14T22:19:25.327",
+  "Title": "Perspective"
+}

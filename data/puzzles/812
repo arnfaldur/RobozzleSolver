@@ -1,0 +1,53 @@
+{
+  "About": "it changes colors 2!",
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRRRGGRRRRRRRR",
+    "RRRRRGGGGGGRRRRR",
+    "RRRRGGGGGGGGRRRR",
+    "RRRGGGGGGGGGGRRG",
+    "RRGGGGGGGGGGGGGG",
+    "RGGGGGGGGGGGGGGG",
+    "RGGGGGGGGGGGGGGG",
+    "RGGGGGGGGGGGGGGG",
+    "RRGGGGGGGGGGGRRG",
+    "RRRGGGGGGGGGRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRRGGGRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "54",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "812",
+  "Items": [
+    "######**########",
+    "#####******#####",
+    "####********####",
+    "###**********##.",
+    "##**************",
+    "#.*****.********",
+    "#***************",
+    "#***************",
+    "##***********##.",
+    "###*********####",
+    "####*******#####",
+    "#####***########"
+  ],
+  "Liked": "7",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "39",
+  "SubLengths": [
+    "3",
+    "3",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-19T19:18:42.703",
+  "Title": "JESUS FISH!"
+}

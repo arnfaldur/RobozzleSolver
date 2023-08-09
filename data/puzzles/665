@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBGBGBGBGBGGGGBB",
+    "BRRRRRRRRRRRRRRB",
+    "BBGBGGGGGBGGBBRG",
+    "BRRRRRRRRRRRRBRG",
+    "GRBBGGGGGGBBRGRG",
+    "GRBRRRRRRRRBRGRG",
+    "GRGRBRRRRRRBRGRG",
+    "GRGRBBGGGGBBRGRG",
+    "GRBRRRRRRRRRRBRG",
+    "GRBBBGGGGGBGBBRG",
+    "BRRRRRRRRRRRRRRB",
+    "BBGGBGBBGGBGGGBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "397",
+  "DifficultyVoteSum": "591",
+  "Disliked": "79",
+  "Featured": "false",
+  "Id": "665",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "......*.........",
+    "................",
+    "................",
+    ".....*..........",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "314",
+  "RobotCol": "1",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "1561",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-04T10:22:48.687",
+  "Title": "spiral"
+}

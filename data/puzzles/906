@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBGRRRRRR",
+    "RBRRRRRRRBRRRRRR",
+    "RBBBRBRBBBRRRRRR",
+    "RBRBRRRBRBRRRRRR",
+    "RBRBBBBBRBRRRRRR",
+    "RBRRRBRRRBRRRRRR",
+    "RBRBBBBBRBRRRRRR",
+    "RBRBRRRBRBRRRRRR",
+    "RGBBBBBBBGRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "27",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "906",
+  "Items": [
+    "################",
+    "################",
+    "#*********######",
+    "#*#######*######",
+    "#***#.#***######",
+    "#*#*###*#*######",
+    "#*#*****#*######",
+    "#*###*###*######",
+    "#*#*****#*######",
+    "#*#*###*#*######",
+    "#.********######",
+    "################"
+  ],
+  "Liked": "9",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "39",
+  "SubLengths": [
+    "4",
+    "4",
+    "3",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-26T19:35:20.78",
+  "Title": "Square Cross Paths"
+}

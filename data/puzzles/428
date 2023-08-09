@@ -1,0 +1,53 @@
+{
+  "About": "Jump on red",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "BBBBGBRRRRRRRRBB",
+    "BBRBRRRGRGRBBRGB",
+    "BBBRRGBBRRRBGBRR",
+    "BRBGRBBBRGBRRBRB",
+    "BBBBRRBRGRRRRRRR",
+    "BBRBRBRRRGRRRRRG",
+    "BBRBRRGRRRRRRGRR",
+    "GBBBRGGGRGRRRRRR",
+    "RBGBRBRBRGRRRRRR",
+    "RGRBRGRBRRGGRRRG",
+    "RRRGRRRGRRGRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "137",
+  "DifficultyVoteSum": "460",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "428",
+  "Items": [
+    ".***************",
+    "....*...........",
+    "....#.........*.",
+    "....#.......*.#.",
+    "....#.......#.#.",
+    "....#...*...#.#.",
+    "....#...#...#.#.",
+    "....#...#...#*#.",
+    "*...#.*.#...###.",
+    "#.*.#.#.#*..###.",
+    "#*#.#*#.##.*###.",
+    "###*###*##*####*"
+  ],
+  "Liked": "132",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "876",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-03T10:02:57.233",
+  "Title": "String Escaping"
+}

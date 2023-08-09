@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRGRRRR",
+    "RRRRRRRRRBGBRRRR",
+    "RRRRRRRRBGBRRRRR",
+    "RRRRRRRBGBRRRRRR",
+    "RRRRRRBGBRRRRRRR",
+    "RRRRRBGBRRRRRRRR",
+    "RRRRBGBRRRRRRRRR",
+    "RRRBGBRRRRRRRRRR",
+    "RRRGRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "653",
+  "DifficultyVoteSum": "1642",
+  "Disliked": "26",
+  "Featured": "false",
+  "Id": "365",
+  "Items": [
+    "################",
+    "##########*.####",
+    "#########*.*####",
+    "########*.*#####",
+    "#######*.*######",
+    "######*.*#######",
+    "#####*.*########",
+    "####*.*#########",
+    "###..*##########",
+    "###.*###########",
+    "################",
+    "################"
+  ],
+  "Liked": "494",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "4051",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-04-20T18:46:43.14",
+  "Title": "Upstairs, downstairs"
+}

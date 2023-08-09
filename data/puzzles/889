@@ -1,0 +1,53 @@
+{
+  "About": "Or not. Whatever.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBRBBBRBBBRBBBRR",
+    "RBRBRBRBRBRBRGRR",
+    "RBBBRBBBRBBBRBBB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRBBB",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRBBB",
+    "RRRRRRRRRRRRRRRB",
+    "RBBBRBBBRBBBRBGB",
+    "RBRBRBRBRBRBRBRR",
+    "BBRBBBRBBBRBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "82",
+  "DifficultyVoteSum": "171",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "889",
+  "Items": [
+    "..#...#...#...##",
+    "#.#.#.#.#.#.#.##",
+    "#...#...#...#...",
+    "###############.",
+    "#############...",
+    "#############.##",
+    "#############...",
+    "###############.",
+    "#...#...#...#...",
+    "#.#.#.#.#.#.#.##",
+    "*.#...#...#...##",
+    "################"
+  ],
+  "Liked": "73",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1050",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-25T22:07:16",
+  "Title": "Straightforward"
+}

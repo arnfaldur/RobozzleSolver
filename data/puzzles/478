@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGGGGGRRRR",
+    "BRRRRRRRRRRGRRRR",
+    "BRRRRRRRRRRGRRRR",
+    "BRRRRRRRGRRGRRRR",
+    "BRRRRRRRGRRGRRRR",
+    "BRRRRRRRGRRGRRRR",
+    "BRRRRRRRGRRGRRRR",
+    "BRRRRRRRGGGGRRRR",
+    "BRRBBBBRRRRRRRRR",
+    "BRRRRRRBRRRRRRRR",
+    "BRRRRRRBRRRRRRRR",
+    "RBBBBBBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "31",
+  "DifficultyVoteSum": "106",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "478",
+  "Items": [
+    "............####",
+    ".##########.####",
+    ".##########.####",
+    ".#######*##.####",
+    ".#######.##.####",
+    ".#######.##.####",
+    ".#######.##.####",
+    ".#######....####",
+    ".##.....########",
+    ".######.########",
+    ".######.########",
+    "........########"
+  ],
+  "Liked": "31",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "170",
+  "SubLengths": [
+    "6",
+    "6",
+    "6",
+    "6",
+    "0"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-05-08T17:22:32.983",
+  "Title": "Mirror image"
+}

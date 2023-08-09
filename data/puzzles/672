@@ -1,0 +1,53 @@
+{
+  "About": "Race your car to the finish, then pit stop (easier track than Grand Prix III)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRRBBRRRRR",
+    "RRRRBGGGGRRGBBRR",
+    "RRRBRRRRRRRRRGRR",
+    "RRBRRRRRRRRRRGRR",
+    "RBRRRRRRRRRRRRBR",
+    "RBRRRRRRRRRRRRBR",
+    "RGRRRRRBGRRRRGRR",
+    "RBRRRRBRRBRRRBRR",
+    "RRBRRBRRRRBRRBRR",
+    "RRRBBRRRRRRGBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "37",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "672",
+  "Items": [
+    "################",
+    "######*#***#####",
+    "####**.**#****##",
+    "###**########*##",
+    "##**#########**#",
+    "#**###########*#",
+    "#*###########**#",
+    "#*####****###*##",
+    "#**##**##**##*##",
+    "##****####*#**##",
+    "###**#####***###",
+    "################"
+  ],
+  "Liked": "8",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "27",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-04T16:33:46.017",
+  "Title": "Grand Prix IV"
+}

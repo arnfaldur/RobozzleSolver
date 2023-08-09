@@ -1,0 +1,53 @@
+{
+  "About": "Turn left.  Usually.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBG",
+    "BRRRRRRRRRRRRRRB",
+    "BRGBBBBBBBBBBGRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRBRGBBBBBBGRBRB",
+    "BRBRRRRRRRRBRBRB",
+    "BRGBBBBBBBBGRBRB",
+    "BRRRRRRRRRRRRBRB",
+    "GBBBBBBBBBBBBGRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "213",
+  "DifficultyVoteSum": "659",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "153",
+  "Items": [
+    "................",
+    ".##############.",
+    ".#............#.",
+    ".#.##########.#.",
+    ".#.#*########.#.",
+    ".#.#........#.#.",
+    ".#.########.#.#.",
+    ".#..........#.#.",
+    ".############.#.",
+    "..............#.",
+    "###############.",
+    "#####..........."
+  ],
+  "Liked": "195",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1451",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-18T23:35:44.61",
+  "Title": "Wrong Turn"
+}

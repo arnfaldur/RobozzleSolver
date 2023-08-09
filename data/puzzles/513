@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRGBBRBBBBRRR",
+    "RBBBBBBBRRRRRRRR",
+    "RRRGBBBBRBBRRRRR",
+    "RBBBBBBBRRRRRRRR",
+    "RRRRGBBBRBBBRRRR",
+    "RBBBBBBBRRRRRRRR",
+    "RRRRRRGBRBBBBBRR",
+    "RBBBBBBBRRRRRRRR",
+    "RRGBBBBBRBRRRRRR",
+    "RBBBBBBBRRRRRRRR",
+    "RRRRGBBBRBBBRRRR",
+    "RBBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "200",
+  "DifficultyVoteSum": "607",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "513",
+  "Items": [
+    ".####....****###",
+    "*........#######",
+    "*##......**#####",
+    "*........#######",
+    "*###.....***####",
+    "*........#######",
+    "*#####...*****##",
+    "*........#######",
+    "*#.......*######",
+    "*........#######",
+    "*###.....***####",
+    "*........#######"
+  ],
+  "Liked": "157",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1186",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "10"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-13T04:16:48.563",
+  "Title": "mind the gap"
+}

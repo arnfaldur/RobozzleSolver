@@ -1,0 +1,53 @@
+{
+  "About": "Go back half as far or twice as far",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBBBBBBBBR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRGGGGR",
+    "RRRRRRRRRRRGRRRR",
+    "RRRRRRRGGGGGGGGR",
+    "RRRRRRRGRRRRRRRR",
+    "RGGGGGGGGGGGGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "48",
+  "DifficultyVoteSum": "134",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "896",
+  "Items": [
+    "...............*",
+    "#######.########",
+    "####..#........*",
+    "####..#####.####",
+    "##.#..#####....*",
+    "#..#..#######*##",
+    "......#######*##",
+    "......#####....*",
+    "#..########.####",
+    "##.####........*",
+    "#######.########",
+    "*..............*"
+  ],
+  "Liked": "46",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "223",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sticky",
+  "SubmittedDate": "2009-06-26T09:49:42.453",
+  "Title": "Return"
+}

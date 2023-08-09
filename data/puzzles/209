@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRBBRRRRRRRRRR",
+    "RRRBBBRRRRRBBRRR",
+    "RRBBBBBBRRBBBBRR",
+    "RRBBBBBBBBBBBBBR",
+    "RRRBBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRBBBBRRBBRRRRR",
+    "RRRRBBRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "54",
+  "DifficultyVoteSum": "211",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "209",
+  "Items": [
+    "####**##########",
+    "###***#####**###",
+    "##******##****##",
+    "##*************#",
+    "###************#",
+    "####*********###",
+    "####***.*****###",
+    "####*********###",
+    "##************##",
+    "##************##",
+    "###****##**#####",
+    "####**##########"
+  ],
+  "Liked": "52",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "163",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "bofh",
+  "SubmittedDate": "2009-03-27T22:21:09.78",
+  "Title": "Ant"
+}

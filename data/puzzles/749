@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRRBBBRRRRRRRRR",
+    "RRRRBRGBRRRRRRRR",
+    "RRRRBBRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRRBBRRRGRRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRGRGRGRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "29",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "749",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "####**##########",
+    "####***#########",
+    "####*..*########",
+    "####**#.########",
+    "#......*########",
+    "####**##########",
+    "####**##...#####",
+    "##########.#####",
+    "####.......#####"
+  ],
+  "Liked": "5",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "41",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "kraker",
+  "SubmittedDate": "2009-06-12T12:02:15.593",
+  "Title": "Easy ant"
+}

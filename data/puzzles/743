@@ -1,0 +1,53 @@
+{
+  "About": "See: Dizziness",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGBBBBBBBBGBBBG",
+    "RRBRRRRRRRRRRRRB",
+    "RRBGBBBBBBGRRRRB",
+    "RRBBRRRRRRBRRRRB",
+    "RRBBRRRRRRBRRRRB",
+    "RRGGRRRRRGGRRRGG",
+    "RRRRRRRRRGBBGRBR",
+    "RRGGGGGGGRRRRRBR",
+    "RRGRRRRRRBBBBBGR",
+    "RRGGGGGGGRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "74",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "743",
+  "Items": [
+    "################",
+    "##..............",
+    "##.############.",
+    "##.........####.",
+    "##..######.####.",
+    "##..######.####.",
+    "##..#####..###..",
+    "#########...*#.#",
+    "##.......#####.#",
+    "##.............#",
+    "##.......#######",
+    "################"
+  ],
+  "Liked": "24",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "115",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-06-10T23:35:26.203",
+  "Title": "Battery"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "8bit!!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBGGBGRRRRRRRR",
+    "BGBGGGBGGGRRRRRR",
+    "BGBBGGGBGGGRRRRR",
+    "BBGGGGBBBBRRRRRR",
+    "RRGGGGGGGRRRRRRR",
+    "RBBRBBBRRRRRRRRR",
+    "BBBRBBRBBBRRRRRR",
+    "BBBRRRRBBBBRRRRR",
+    "GBRGRRGRBGGRRRRR",
+    "GGRRRRRRGGGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "77",
+  "DifficultyVoteSum": "168",
+  "Disliked": "13",
+  "Featured": "false",
+  "Id": "493",
+  "Items": [
+    "##.....#########",
+    "#.........######",
+    "#...**.*########",
+    ".*.***.*..######",
+    ".*..***....#####",
+    "..****....######",
+    "##.......#######",
+    "#......#########",
+    "..........######",
+    "...........#####",
+    "...........#####",
+    "...........#####"
+  ],
+  "Liked": "53",
+  "RobotCol": "9",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "258",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ivort",
+  "SubmittedDate": "2009-05-11T11:07:44.483",
+  "Title": "Mario"
+}

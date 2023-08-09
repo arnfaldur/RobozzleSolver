@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBBBBGBRRRR",
+    "RRRRRBGBBBBBRRRR",
+    "RRRRRRGBBBBBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRRBBBBBRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "11",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "819",
+  "Items": [
+    "################",
+    "################",
+    "########*#######",
+    "######******####",
+    "#####*******####",
+    "######..****####",
+    "#####*******####",
+    "#######*****####",
+    "#######.########",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "1",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "23",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-20T17:30:10.36",
+  "Title": "Green Lights"
+}

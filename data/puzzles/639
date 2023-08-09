@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGGGGGBRBGGGRRR",
+    "RRGRRRRGRRRRGRRR",
+    "GGGGGBRGRRBGGGGR",
+    "GRGRRGRGRRGRGRGR",
+    "GRBGGGRGRRGGBRGR",
+    "GRRRRRRRRRRRRRGR",
+    "GRGGBRRGRBGGGRGR",
+    "GRGRGRRGRGRRGRGR",
+    "BGGGGRRGRGGGGGBR",
+    "RRGRRRRGRRRRGRRR",
+    "RRBGGGRGGGGGBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "102",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "639",
+  "Items": [
+    "################",
+    "##******#****###",
+    "##*####*####*###",
+    "******#*##*****#",
+    "*#*##*#*##*#*#*#",
+    "*#****#*##***#*#",
+    "*######.######*#",
+    "*#***##*#****#*#",
+    "*#*#*##*#*##*#*#",
+    "*****##*#******#",
+    "##*####*####*###",
+    "##****#******###"
+  ],
+  "Liked": "28",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "74",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-03T02:41:37.687",
+  "Title": "Information Gathering"
+}

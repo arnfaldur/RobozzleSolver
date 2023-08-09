@@ -1,0 +1,53 @@
+{
+  "About": "Get both ends of the spiral",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBRRRB",
+    "BRRRRRRRRRRRBRRB",
+    "BRRGRRRRRRRRBRRB",
+    "BRRRBBBBBBBBRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "RBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "47",
+  "DifficultyVoteSum": "135",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "895",
+  "Items": [
+    "*...............",
+    "###############.",
+    "###############.",
+    ".............##.",
+    ".###########.##.",
+    ".##*########.##.",
+    ".##..........##.",
+    ".##############.",
+    ".##############.",
+    "................",
+    "################",
+    "################"
+  ],
+  "Liked": "41",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "185",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sticky",
+  "SubmittedDate": "2009-06-26T09:33:32.063",
+  "Title": "Ends"
+}

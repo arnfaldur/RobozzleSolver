@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGRRRRRRRR",
+    "RRRGGRGGGGRRRRRR",
+    "RRRGGGGRGGRRRRRR",
+    "RRRRRGGGGRRRRRRR",
+    "RRRRGGRGGGGRRRRR",
+    "RRRRGGGGRGGRRRRR",
+    "RRRRRRGGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "41",
+  "DifficultyVoteSum": "106",
+  "Disliked": "16",
+  "Featured": "false",
+  "Id": "390",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "######**########",
+    "###**#****######",
+    "###****#**######",
+    "#####**.*#######",
+    "####**#****#####",
+    "####****#**#####",
+    "######**########",
+    "################",
+    "################"
+  ],
+  "Liked": "24",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "118",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-28T23:00:49.53",
+  "Title": "Paint-a-path"
+}

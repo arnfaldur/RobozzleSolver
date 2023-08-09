@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGBGRRRRRRRRRRR",
+    "RRBRBRRRRRRRBRRR",
+    "RRGBBBBBBBBBGRRR",
+    "RRBRBRRRRRRRBRRR",
+    "RRGBGRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "111",
+  "DifficultyVoteSum": "270",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "510",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "##***#######*###",
+    "##*#*#######*###",
+    "##*****.*****###",
+    "##*#*#######*###",
+    "##***#######*###",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "88",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "1119",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-12T19:12:27.25",
+  "Title": "Lawn Mower"
+}

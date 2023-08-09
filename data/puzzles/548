@@ -1,0 +1,53 @@
+{
+  "About": "O_o",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBRRRRR",
+    "RRBRBRBRBRBRRRRR",
+    "RRBBRBBBRBBRRRRR",
+    "RRBRBRBRBRBRRRRR",
+    "RRBBBBGBBBBRRRRR",
+    "RRBRBRBRBRBRRRRR",
+    "RRBBRBBBRBBRRRRR",
+    "RRBRBRBRBRBRRRRR",
+    "RRBBBBBBBBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1169",
+  "DifficultyVoteSum": "2718",
+  "Disliked": "57",
+  "Featured": "false",
+  "Id": "548",
+  "Items": [
+    "################",
+    "##*********#####",
+    "##*#*#*#*#*#####",
+    "##*********#####",
+    "##*#*#*#*#*#####",
+    "##****.****#####",
+    "##*#*#*#*#*#####",
+    "##*********#####",
+    "##*#*#*#*#*#####",
+    "##*********#####",
+    "################",
+    "################"
+  ],
+  "Liked": "906",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "7825",
+  "SubLengths": [
+    "6",
+    "1",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-05-17T21:54:44.36",
+  "Title": "Cube Extreme"
+}

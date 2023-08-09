@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BBBRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "135",
+  "DifficultyVoteSum": "261",
+  "Disliked": "32",
+  "Featured": "false",
+  "Id": "728",
+  "Items": [
+    "*###############",
+    ".*##############",
+    "..##############",
+    "..##############",
+    "..##############",
+    "..##############",
+    "..##############",
+    "..##############",
+    "..##############",
+    "..##############",
+    "..*#############",
+    "################"
+  ],
+  "Liked": "99",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "809",
+  "SubLengths": [
+    "8",
+    "4",
+    "0",
+    "5",
+    "4"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-09T07:11:51.5",
+  "Title": "no F3"
+}

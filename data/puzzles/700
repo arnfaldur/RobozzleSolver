@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGBBBBBBBBGRR",
+    "RRRRBRBBBRRRRBBB",
+    "RBBBGBBBRGBBBBGB",
+    "RBRRBBRBRGBBBGBB",
+    "RBRRBRBBBBBBBBBB",
+    "RBBBGBBGBBGBBBBB",
+    "RBRRBRRBRRBRRBBB",
+    "RBRRBRRBRRBRRBBB",
+    "RGBBGBBGBBGBBGBB",
+    "RBRRBRRBRRBRRBBB",
+    "RBRRBRRBRRBRRBBB",
+    "RBBBGBBBBBGBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4",
+  "DifficultyVoteSum": "15",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "700",
+  "Items": [
+    "####************",
+    "####******###***",
+    "#*******#*******",
+    "#*##**#*#*******",
+    "#*##************",
+    "#*********.*****",
+    "#*##*##*##*##***",
+    "#*##*##*##*##***",
+    "#*********.*****",
+    "#*##*##*##*##***",
+    "#*##*##*##*##***",
+    "#***************"
+  ],
+  "Liked": "3",
+  "RobotCol": "10",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "6",
+  "SubLengths": [
+    "4",
+    "5",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-06T14:40:26.86",
+  "Title": "Long Journey 2"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRBBBGRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2614",
+  "DifficultyVoteSum": "4685",
+  "Disliked": "185",
+  "Featured": "false",
+  "Id": "419",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "##########*#####",
+    "##########.#####",
+    "##########.#####",
+    "#######...*#####",
+    "##########.#####",
+    "##########.#####",
+    "##########*#####",
+    "################",
+    "################"
+  ],
+  "Liked": "2032",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "23106",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pinkprince",
+  "SubmittedDate": "2009-05-02T16:43:49.28",
+  "Title": "Turn And Back Again"
+}

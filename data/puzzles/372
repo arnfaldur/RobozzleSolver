@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBRRRRRRRRRRRRRR",
+    "BBBBBBRRRRRRRRRR",
+    "BRBBRBRRRRRRRRRR",
+    "BBBBBBBBBRRRRRRR",
+    "BRBBBBBBGRRRRRRR",
+    "BBBRBBRBBRBRRRRR",
+    "RBBBRBBBBBRRRRRR",
+    "RRRRRRBRBBRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRBBBBGRRRRRRRR",
+    "RBGRRBBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "40",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "372",
+  "Items": [
+    "..##############",
+    "......##########",
+    "......##########",
+    ".........#######",
+    ".........#######",
+    "...#..#..#.#####",
+    "..........######",
+    "######.#..######",
+    "#######..#######",
+    "##......########",
+    "#*.##..#########",
+    "################"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "74",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mikle",
+  "SubmittedDate": "2009-04-23T02:01:57.907",
+  "Title": "Simple Puzzle"
+}

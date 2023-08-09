@@ -1,0 +1,53 @@
+{
+  "About": "Can you take both?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBGGGGGGGGGGGGBR",
+    "RGRRRRRRRRRRRRGR",
+    "RGRRRRRRRRRRRRGR",
+    "RGRRRRRRRRRRRRGR",
+    "RGRRRRRRRRRRRRGR",
+    "RGRRRRRRRRRRRRGR",
+    "RGRRRRRRRRRRRRGR",
+    "RGRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "599",
+  "DifficultyVoteSum": "1593",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "380",
+  "Items": [
+    "################",
+    "################",
+    "#..............#",
+    "#.############.#",
+    "#.############.#",
+    "#.############.#",
+    "#.############.#",
+    "#.############.#",
+    "#.############.#",
+    "#*############*#",
+    "################",
+    "################"
+  ],
+  "Liked": "477",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "3354",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-04-25T06:34:55.907",
+  "Title": "Two Paths"
+}

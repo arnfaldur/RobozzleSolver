@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBBBBBBRRR",
+    "RRRRRRBRRRRRRBRR",
+    "RRRRRRBRRRRRRBRR",
+    "RRRRRRRBBGBRRBRR",
+    "RRRRRRRRRRRBRBRR",
+    "RRRRBBGBBBBBBRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRBBBBBRRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRRBGBBGBBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "396",
+  "DifficultyVoteSum": "827",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "135",
+  "Items": [
+    "######*......*##",
+    "######.######.##",
+    "######.######.##",
+    "######*....*#.##",
+    "###########.#.##",
+    "###*.........*##",
+    "###.#######.####",
+    "###.##......####",
+    "###.#######.####",
+    "###*.......*####",
+    "################",
+    "################"
+  ],
+  "Liked": "380",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "2389",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "aaronla",
+  "SubmittedDate": "2009-03-14T01:25:32.593",
+  "Title": "Getting loopy"
+}

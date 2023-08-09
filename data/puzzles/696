@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRGRRBRRRR",
+    "RRRRRRBRGRBRRRRR",
+    "RRRRRRRBGBRRRRRR",
+    "RRRRRGGGGGGGRRRR",
+    "RRRRRRRBGBRRRRRR",
+    "RRRRRRBRGRBRRRRR",
+    "RRRRRBRRGRRBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "215",
+  "DifficultyVoteSum": "349",
+  "Disliked": "45",
+  "Featured": "false",
+  "Id": "696",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#####*.....*####",
+    "#####.......####",
+    "#####.......####",
+    "#####.......####",
+    "#####.......####",
+    "#####.......####",
+    "#####*.....*####",
+    "################",
+    "################"
+  ],
+  "Liked": "125",
+  "RobotCol": "8",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "1040",
+  "SubLengths": [
+    "10",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "samual",
+  "SubmittedDate": "2009-06-06T13:13:03.407",
+  "Title": "green cross"
+}

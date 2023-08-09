@@ -1,0 +1,53 @@
+{
+  "About": "The red sequence is the same length as the last green or blue sequence.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GGBBBBBBBRRRRRRR",
+    "RRRRRRRRRRRRRRRG",
+    "RGGBGBGGGGBGBRRB",
+    "RRRRRRRRRRRRRGRG",
+    "RRRGBBGBGGBRRGRG",
+    "BRRRRRRRRRRBRBRG",
+    "BRGRRRRGGGBRRBRG",
+    "BRGRRRRRRRRRRGRR",
+    "GRRRRRGGGGBGBRRR",
+    "GRRRRRRRRRRRRRRR",
+    "RRRGGGBBGBBBGGBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "61",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "989",
+  "Items": [
+    "################",
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*.......#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "125",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T18:38:22.627",
+  "Title": "Counting - Last Sequence"
+}

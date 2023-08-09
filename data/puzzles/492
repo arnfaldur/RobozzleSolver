@@ -1,0 +1,53 @@
+{
+  "About": "What the HECK are those red tiles for? Something about turning left... or not...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBRBBBBBBRR",
+    "RRRRRBRBRRRRRBRR",
+    "GBBBBRBBRRRBBRBB",
+    "RRRRRBRBRRRBRBRB",
+    "RRRRRBBBRRRBBBBR",
+    "BBBRRBBBRRRRRRRB",
+    "BRBRRBRBRRRRRRRB",
+    "BBRBBRBBRRRRRBBB",
+    "RRBRRBRRRRRRRBRB",
+    "RRBRRBBRBBBBBRBB",
+    "RRBRRRRRRRRRRBRB",
+    "RRGRRRRRRRRRRBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "343",
+  "DifficultyVoteSum": "966",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "492",
+  "Items": [
+    "#####*.*.....*##",
+    "#####.#.#####.##",
+    "*....*.*###*.*.*",
+    "#####.#.###.#.#.",
+    "#####*.*###*.*.*",
+    "*.*##*.*#######.",
+    ".#.##.#.#######.",
+    "*.*..*.*#####*.*",
+    "##.##.#######.#.",
+    "##.##*.*.....*.*",
+    "##.##########.#.",
+    "##.##########*.*"
+  ],
+  "Liked": "291",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1955",
+  "SubLengths": [
+    "2",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rainault",
+  "SubmittedDate": "2009-05-11T00:19:52.78",
+  "Title": "Recursive turning"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBBBBBBBBBBRRRRR",
+    "GRRRRRRRRRBRRRRR",
+    "GBBBBBBBBRBRRRRR",
+    "GRRRRRRRBRBRRRRR",
+    "GBBBBBBRBRBRRRRR",
+    "GRRRRRBRBRBRRRRR",
+    "GBBBBRBRBRBRRRRR",
+    "GRRRBRBRBRBRRRRR",
+    "GBBRBRBRBRBRRRRR",
+    "GRBRBRBRBRBRRRRR",
+    "RGGGGGGGGGGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "54",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "388",
+  "Items": [
+    "################",
+    "***********#####",
+    "*#########*#####",
+    "*********#*#####",
+    "*#######*#*#####",
+    "*******#*#*#####",
+    "*#####*#*#*#####",
+    "*****#*#*#*#####",
+    "*###*#*#*#*#####",
+    "***#*#*#*#*#####",
+    "*#*#*#*#*#*#####",
+    ".**********#####"
+  ],
+  "Liked": "16",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "56",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-28T22:47:09.437",
+  "Title": "Perspective II"
+}

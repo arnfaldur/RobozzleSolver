@@ -1,0 +1,53 @@
+{
+  "About": "that`s more fun",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRBBRRRRG",
+    "RRGGGRRRRBBRRRBG",
+    "RRGBGRGRGRBRRRBG",
+    "RRGBRBBBBRRRBBBG",
+    "RRGBBBBBBRRRBBBG",
+    "RRGBGBBBBRBBBBBG",
+    "RRRBRBBBBGBRRRBG",
+    "RBBBGRGRGRBRRRBG",
+    "RBBBBBBBBBBBBBBG",
+    "BBBBBBBBBGBGBGBG",
+    "BRRRRRRRRRBRRRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "86",
+  "DifficultyVoteSum": "187",
+  "Disliked": "23",
+  "Featured": "false",
+  "Id": "157",
+  "Items": [
+    "#########...*.#.",
+    "#.....###.......",
+    "#...............",
+    "#........###....",
+    "#........###....",
+    "#...............",
+    "#..........###..",
+    "#..........###..",
+    "#...............",
+    "................",
+    "................",
+    "################"
+  ],
+  "Liked": "57",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "284",
+  "SubLengths": [
+    "4",
+    "3",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rostik",
+  "SubmittedDate": "2009-03-19T06:46:16.077",
+  "Title": "Stairs to start 2"
+}

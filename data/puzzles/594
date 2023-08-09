@@ -1,0 +1,53 @@
+{
+  "About": "the title is the hint",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRBRBRBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBRBRBRBRBRBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "36",
+  "DifficultyVoteSum": "110",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "594",
+  "Items": [
+    "#######.########",
+    "######.*.#######",
+    "######.#.#######",
+    "#####.*.*.######",
+    "#####.#.#.######",
+    "####.*.*.*.#####",
+    "####.#.#.#.#####",
+    "###.*.*.*.*.####",
+    "###.#.#.#.#.####",
+    "##.*.*.*.*.*.###",
+    "##.#.#.#.#.#.###",
+    "##*#*#*#*#*#*###"
+  ],
+  "Liked": "40",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "258",
+  "SubLengths": [
+    "2",
+    "3",
+    "4",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-05-25T17:21:45.907",
+  "Title": "Binary Tree"
+}

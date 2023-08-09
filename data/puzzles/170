@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRRBBBRRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRBBBBBRRRRRRR",
+    "RRRRBBBBBBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "97",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "170",
+  "Items": [
+    "################",
+    "####*###########",
+    "####**##########",
+    "####***#########",
+    "####****########",
+    "####*****#######",
+    "####******######",
+    "####*******#####",
+    "####********####",
+    "####*********###",
+    "####.*********##",
+    "################"
+  ],
+  "Liked": "31",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "96",
+  "SubLengths": [
+    "5",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-20T19:05:53.483",
+  "Title": "Different kind of counting II"
+}

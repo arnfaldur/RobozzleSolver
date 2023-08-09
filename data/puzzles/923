@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRBRBRBRBRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "56",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "923",
+  "Items": [
+    "################",
+    "################",
+    "######***#######",
+    "######*#*#######",
+    "####*******#####",
+    "####*#.#*#*#####",
+    "####*******#####",
+    "######*#*#######",
+    "######***#######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "17",
+  "RobotCol": "6",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "113",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-28T18:31:47.953",
+  "Title": "Cross With Holes"
+}

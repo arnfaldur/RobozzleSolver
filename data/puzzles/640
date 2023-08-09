@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRBBBBR",
+    "RRRRRRRRRRBBBBBR",
+    "RRRRRRRRRBBBBBBR",
+    "RRRRRRRRBBBBBRRR",
+    "RRRRRRRBBBBBBRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRBBBBRBRRRRRR",
+    "RRRBBBBBBRRRRRRR",
+    "RRBBBBBBRRRRRRRR",
+    "RBBBRBBRRRRRRRRR",
+    "BRBBBBRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "83",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "640",
+  "Items": [
+    "###########..*.#",
+    "##########.....#",
+    "#########....*.#",
+    "########*...*.##",
+    "#######......###",
+    "######......####",
+    "#####...*..#####",
+    "####*..*..######",
+    "###......#######",
+    "##..*...########",
+    "#*.*...#########",
+    "......##########"
+  ],
+  "Liked": "29",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "100",
+  "SubLengths": [
+    "2",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "bahkoo",
+  "SubmittedDate": "2009-06-03T10:01:40.327",
+  "Title": "Star Striped"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGGRRRRRRRRRRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRBBBBBBBBRGGG",
+    "GGGRRRRRRRRRRGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "21",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "725",
+  "Items": [
+    "................",
+    "...##########...",
+    "...#********#...",
+    "...#********#...",
+    "...#********#...",
+    "...#**.*****#...",
+    "...#********#...",
+    "...#********#...",
+    "...#********#...",
+    "...#********#...",
+    "...##########...",
+    "................"
+  ],
+  "Liked": "3",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "40",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-08T22:19:56.97",
+  "Title": "Not so small square II"
+}

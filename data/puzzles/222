@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGRRGRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRGRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "46",
+  "DifficultyVoteSum": "60",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "222",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "######****#....#",
+    "######*##*#.##.#",
+    "######*##*#.##.#",
+    "#######.**##...#",
+    "################",
+    "######....######",
+    "######.##.######",
+    "######.##.######",
+    "#######...######"
+  ],
+  "Liked": "29",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "415",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mathew995",
+  "SubmittedDate": "2009-03-28T18:00:58.233",
+  "Title": "good luck 3"
+}

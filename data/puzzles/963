@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRBRBRBRRRR",
+    "RRRRBRBRBRBRBRRR",
+    "RRRRRBBBRBBBRRRR",
+    "RRRRBRBRBRBRBRRR",
+    "RRRRRBRBBBRBRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRGBBBBBBBGRRR",
+    "RRRRBRRRBRRRBRRR",
+    "RRRRGBBBGBBBGRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "104",
+  "DifficultyVoteSum": "216",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "963",
+  "Items": [
+    "################",
+    "####*.*.*.*.*###",
+    "####.#.#.#.#.###",
+    "####*...*...*###",
+    "####.#.#.#.#.###",
+    "####*.*...*.*###",
+    "########.#######",
+    "####*.......*###",
+    "####.###.###.###",
+    "####*...*...*###",
+    "########.#######",
+    "########*#######"
+  ],
+  "Liked": "94",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "7",
+  "Solutions": "1372",
+  "SubLengths": [
+    "3",
+    "3",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-07-02T21:20:21.843",
+  "Title": "Rose"
+}

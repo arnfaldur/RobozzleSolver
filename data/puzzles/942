@@ -1,0 +1,53 @@
+{
+  "About": "But don't count blue.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGGGRRRRRRRRRRRR",
+    "BGBGGGGRRRRRRRRR",
+    "GGGRRRRRRRRRRRRR",
+    "GBGBBGGBGRRRRRRR",
+    "BBBGBBBBBGBBBRRR",
+    "GRRRRRRRRRRRRRRR",
+    "GGBGGBBBGGRRRRRR",
+    "BGRRRRRRRRRRRRRR",
+    "BBBBBGBBRRRRRRRR",
+    "GBGBBBGBBBBRRRRR",
+    "BGGGGGGGRRRRRRRR",
+    "GGGGGBBBBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "33",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "942",
+  "Items": [
+    ".******#########",
+    ".*.*********####",
+    "******##########",
+    "*.*..**.******##",
+    "...*.....*...**#",
+    "**##############",
+    "**.**...********",
+    ".**#############",
+    ".....*..*#######",
+    "*.*...*....***##",
+    ".**************#",
+    "*****......*****"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "15",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-30T18:35:44.36",
+  "Title": "Count Green"
+}

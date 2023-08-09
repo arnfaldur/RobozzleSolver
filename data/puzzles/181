@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGRRGGRRGGRRR",
+    "RRRGRBBBBBBRGRRR",
+    "RRRRBRBBBBRBRRRR",
+    "RRRRBBRBBRBBRRRR",
+    "RRRGBBBRRBBBGRRR",
+    "RRRGBBBRRBBBGRRR",
+    "RRRRBBRBBRBBRRRR",
+    "RRRRBRBBBBRBRRRR",
+    "RRRGRBBBBBBRGRRR",
+    "RRRGGRRGGRRGGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "110",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "181",
+  "Items": [
+    "################",
+    "###**##**##**###",
+    "###*........*###",
+    "####........####",
+    "####........####",
+    "###*........*###",
+    "###*........*###",
+    "####........####",
+    "####........####",
+    "###*........*###",
+    "###**##**##**###",
+    "################"
+  ],
+  "Liked": "33",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "146",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-22T21:31:53.47",
+  "Title": "Watchtower patrol"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBGRRRRRRRR",
+    "RRRBRRRGGRRRRRRR",
+    "RRRBRRRRGGRRRRRR",
+    "RRRRBBRRRGGRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2483",
+  "DifficultyVoteSum": "4373",
+  "Disliked": "192",
+  "Featured": "false",
+  "Id": "376",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "###.....########",
+    "###.###..#######",
+    "###.####..######",
+    "###...###..#####",
+    "##########*#####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1882",
+  "RobotCol": "5",
+  "RobotDir": "2",
+  "RobotRow": "7",
+  "Solutions": "18049",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-04-24T05:50:31.343",
+  "Title": "Leftovers"
+}

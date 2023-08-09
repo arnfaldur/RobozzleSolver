@@ -1,0 +1,53 @@
+{
+  "About": "You can't beat Voldy.  You can only try!  >:)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGGGGGGGGRRRR",
+    "RRRGRRRRRRRRGRRR",
+    "RRGRGGGGGGGGRRRR",
+    "RRGRGRRRRRRRRRRR",
+    "RRGRGGGGGGGRRRRR",
+    "RRGGRRRRRRRGRRRR",
+    "RRRGGGGGGGGRGRRR",
+    "RRRRRRRRRRGRGRRR",
+    "RGGGGGGGGGGRGRRR",
+    "GRRRRRRRRRRGGRRR",
+    "RGGGGGGGGGGGRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "234",
+  "DifficultyVoteSum": "553",
+  "Disliked": "55",
+  "Featured": "false",
+  "Id": "205",
+  "Items": [
+    "####........###.",
+    "###**.......*..#",
+    "##..........####",
+    "##...###########",
+    "##.........#####",
+    "##.*......**####",
+    "###..........###",
+    "##########...###",
+    "#............###",
+    "....*......*.###",
+    "#...........####",
+    "################"
+  ],
+  "Liked": "173",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "901",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "traditore",
+  "SubmittedDate": "2009-03-27T17:37:58.377",
+  "Title": "Voldemort's Wrath"
+}

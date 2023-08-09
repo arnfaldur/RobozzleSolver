@@ -1,0 +1,53 @@
+{
+  "About": "Try to find minimal solution ;)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GBGGGGGGGBGGBGGG",
+    "GBBBGGGGGBBBBGGG",
+    "GGGBGGGGGBGGBGGG",
+    "GGGBBBBBBBGGBGGG",
+    "GGGBGGGGGGGGBGGG",
+    "GGGBBBBBBBBBBGGG",
+    "GGGBGBGGGBGGBGGG",
+    "GGGBGBGGGBGGBGGG",
+    "GGGBGBGGGBGGBGGG",
+    "BBBRBRBBBRBBRBBB",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "141",
+  "DifficultyVoteSum": "270",
+  "Disliked": "84",
+  "Featured": "false",
+  "Id": "89",
+  "Items": [
+    "................",
+    ".*.......*..*...",
+    ".***.....****...",
+    "...*.....*..*...",
+    "...*******..*...",
+    "...*........*...",
+    "...**********...",
+    "...*.*...*..*...",
+    "...*.*...*..*...",
+    "...*.*...*..*...",
+    "...*.*...*..*...",
+    "................"
+  ],
+  "Liked": "75",
+  "RobotCol": "15",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "429",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "drus",
+  "SubmittedDate": "2009-03-04T08:19:29.813",
+  "Title": "Cat"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBR",
+    "BRRRRRRRRRRRRRRB",
+    "BRRBBBBBBBBBBRRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRBRRBBBBBBRRBRB",
+    "BRBRBRRRRRRBRBRB",
+    "BRBRBRRBBRRGRBRB",
+    "BRBRBRBRRBRBRBRB",
+    "BRBRBRRRRBRBRBRB",
+    "BRBRRBBBBRRRBRRB",
+    "BRBRRRRRRRRRRRRB",
+    "BRRBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "109",
+  "DifficultyVoteSum": "150",
+  "Disliked": "33",
+  "Featured": "false",
+  "Id": "936",
+  "Items": [
+    "****************",
+    "*##############*",
+    "*#************#*",
+    "*#*##########*#*",
+    "*#*#********#*#*",
+    "*#*#*######*#*#*",
+    "*#*#*#****#*#*#*",
+    "*#*#*#*##*#*#*#*",
+    "*#*#*####*#*#*#*",
+    "*#*#******#***#*",
+    "*#*############*",
+    ".#**************"
+  ],
+  "Liked": "67",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "501",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pedrorz",
+  "SubmittedDate": "2009-06-29T18:57:01.547",
+  "Title": "big labirint"
+}

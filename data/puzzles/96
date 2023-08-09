@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBBBBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "124",
+  "DifficultyVoteSum": "429",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "96",
+  "Items": [
+    "################",
+    "####..........##",
+    "###.**********.#",
+    "##.***********.#",
+    "#.************.#",
+    "#.************.#",
+    "#.************.#",
+    "#.***.********.#",
+    "#.************.#",
+    "##.**********.##",
+    "###..........###",
+    "################"
+  ],
+  "Liked": "100",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "876",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-05T14:31:08.203",
+  "Title": "Convex shape"
+}

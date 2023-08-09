@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGGGRRRRRRR",
+    "RRRRRRGBGRRRRRRR",
+    "RRRRRRGBGRRRRRRR",
+    "RRRGGGGBGGGGRRRR",
+    "RRRGBBBBBBBGRRRR",
+    "RRRGGGGBGGGGRRRR",
+    "RRRRRRGBGRRRRRRR",
+    "RRRRRRGBGRRRRRRR",
+    "RRRRRRGGGRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "79",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "369",
+  "Items": [
+    "#####*...*######",
+    "#####.*.*.######",
+    "#####..*..######",
+    "##*.........*###",
+    "##.*.......*.###",
+    "##..*.....*..###",
+    "##.*.......*.###",
+    "##*.........*###",
+    "#####..*..######",
+    "#####.*.*.######",
+    "#####*...*######",
+    "################"
+  ],
+  "Liked": "15",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "76",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cheffan",
+  "SubmittedDate": "2009-04-22T03:41:06.657",
+  "Title": "The Cross"
+}

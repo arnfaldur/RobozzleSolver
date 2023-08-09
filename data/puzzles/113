@@ -1,0 +1,53 @@
+{
+  "About": "Can you collect second star? ;-)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGGGRGBRRRRRR",
+    "RRRRRRGRBRBRRRRR",
+    "GGBBRRBRBRGBBBRR",
+    "BRRRRRBRBRRRRRBR",
+    "BRRRRRBRBRRRRRBR",
+    "GRRRRRBRBRRRRRBR",
+    "GBBRRRBRBRGBBBRR",
+    "RRRRBRBRBRBRRRRR",
+    "RBBRBRBRBRBRBBGR",
+    "RRRRRRBRRRBRRRBR",
+    "RRBBRRRRRRGBBBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "33",
+  "DifficultyVoteSum": "125",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "113",
+  "Items": [
+    "################",
+    "####...#.*.#####",
+    "####.#.#.#*#####",
+    ".....#.#.#.***.#",
+    ".#####.#.#####*#",
+    ".#####.#.#####*#",
+    ".#####.#.#####*#",
+    ".....#.#.#.***.#",
+    "####.#.#.#*#####",
+    "...#.#.#.#*#**.#",
+    ".###.#.#.#*###*#",
+    ".....#...#.***.#"
+  ],
+  "Liked": "31",
+  "RobotCol": "2",
+  "RobotDir": "2",
+  "RobotRow": "9",
+  "Solutions": "91",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T18:43:26.767",
+  "Title": "Nested up to madness"
+}

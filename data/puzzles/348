@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRBRRBR",
+    "BBRRBBRRRRRBBBBR",
+    "RBBBBRRBBRRBGBRR",
+    "RBGBRRRRBBBBBBRR",
+    "BBBBRRRRBGBRRBBR",
+    "RRRBBRRBBBBRRRBR",
+    "RRRRBBBBRRBBRRRR",
+    "RRRBRBGBRRRBBRRR",
+    "RRRBBBBBBRRRBBBB",
+    "RRRBGBRRBRRRBGBR",
+    "RRBBBBRRRRRBBBBR",
+    "RRBRRBRRRRRBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "67",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "348",
+  "Items": [
+    ".####*####**##**",
+    "**##**#*###****#",
+    "#****##**##***##",
+    "#***####******##",
+    "****####***##**#",
+    "*##**##****###**",
+    "####****##**####",
+    "##**#***###**##*",
+    "###******###****",
+    "###***##**##***#",
+    "##****#####****#",
+    "#**##**###**##*#"
+  ],
+  "Liked": "21",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "84",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-16T06:45:19.767",
+  "Title": "Diagonal Branching"
+}

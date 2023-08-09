@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "GRRRRRGGRGRRGRRG",
+    "RGRRRGRBRRRRRRRR",
+    "RRGRRRRBRRRRRRGR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBGRRRRGRR",
+    "RRRRGRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRGRRRGRR",
+    "RRGRRGRBRRRRRRRR",
+    "RGRRRRGBGRRRRRGR",
+    "GRRRRRRBRRRRRRRG",
+    "RRRRGRRBRRRRGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "30",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "694",
+  "Items": [
+    ".......*........",
+    "................",
+    ".......*........",
+    ".......*........",
+    "*......*........",
+    ".......*........",
+    ".......*........",
+    ".......*........",
+    ".......*........",
+    ".......*........",
+    ".......*........",
+    ".......*........"
+  ],
+  "Liked": "4",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "47",
+  "SubLengths": [
+    "8",
+    "9",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-06T12:11:41.437",
+  "Title": "bar"
+}

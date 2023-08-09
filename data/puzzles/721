@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGRRRRGGGRRRGGG",
+    "GRGRRRRRRRRRRGRG",
+    "GGGGGGRGGGGGGGGG",
+    "RRRGRGRRRRGRGRRR",
+    "RRRGGGRRRRGGGRRR",
+    "RRRGGGRGGGRRRRRR",
+    "RRRGRGRGRGRRRRRR",
+    "GGGGGGRGGGGGGRRR",
+    "GRGRRRRRRRGRGRRR",
+    "GGGRRRRRRRGGGGGG",
+    "RRRRRRRRRRRRRGRG",
+    "RRRRRRRRRRRRRGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "68",
+  "DifficultyVoteSum": "157",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "721",
+  "Items": [
+    "***####***###***",
+    "*#*..........*#*",
+    "******#*********",
+    "#.#*#*....*#*#.#",
+    "#.#***##.#***#.#",
+    "#.#***#***#.##.#",
+    "#.#*#*.*#*#.##.#",
+    "******#******#.#",
+    "*#*.......*#*#.#",
+    "***#######******",
+    ".............*#*",
+    "#############***"
+  ],
+  "Liked": "55",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "265",
+  "SubLengths": [
+    "2",
+    "5",
+    "9",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-08T21:07:20.983",
+  "Title": "Just another spiral variation"
+}

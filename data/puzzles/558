@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBBBRBRBBBBRRR",
+    "RRRBGBBBBBRGBRRR",
+    "RRBRBBRBRRBBBBRR",
+    "BBBBBBBBRRBBBRBB",
+    "BGBBGRBBBBBGBBGB",
+    "BRBBBBBBBRBRBBBB",
+    "BBRBRBBRBBBBBBRB",
+    "RBRBGBBGBBRGBBGB",
+    "RBBBBBBBBBBBBBBB",
+    "BBRBRBBBRRBBRBRR",
+    "BGBRRBGRBBBGBRRR",
+    "BBBRRBBBRRBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "185",
+  "DifficultyVoteSum": "628",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "558",
+  "Items": [
+    "###...#*#....###",
+    "###.********.###",
+    "##.*..#*##..*.##",
+    "..*....*##...*..",
+    ".*..********..*.",
+    ".*..*..*.#.*..*.",
+    ".*#.*..*...*..*.",
+    "#*#.*..*****..*.",
+    "#*.*.........*..",
+    ".**.#...##..*.##",
+    ".*.##..*****.###",
+    "...##...##...###"
+  ],
+  "Liked": "190",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "1367",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-05-20T11:11:22.72",
+  "Title": "8 ways"
+}

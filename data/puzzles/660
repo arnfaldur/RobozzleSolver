@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBRBRBRBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBRBRBRBRRRR",
+    "RRRRRBBGBBBBRRRR",
+    "RRRRRBRBRBRBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "73",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "660",
+  "Items": [
+    "################",
+    "################",
+    "#####***.***####",
+    "#####*#*#*#*####",
+    "#####*******####",
+    "#####.#*#*#.####",
+    "#####.******####",
+    "#####*#*#*#*####",
+    "#####******.####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "20",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "93",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T02:59:21.047",
+  "Title": "Pivoting"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "bomb left city, bomb right city - avoid explosions",
+  "AllowedCommands": "1",
+  "Colors": [
+    "BBBBBRRRRBBBBRRB",
+    "BGBBBBRRBBBBRRRR",
+    "BBRRBBBBBBBBRRRR",
+    "BRRRRBBBBRBBBRRB",
+    "BRRRRBBBBBGBBBBG",
+    "BBRRBBBBBBBBRBBB",
+    "RBBBBBRRBBGRRRBB",
+    "RRBBBRRRRBBBRBBB",
+    "RBBBBRRRRBBBBBRB",
+    "BBBRBBRRBBRBBBBB",
+    "BRRBBBBRRBBBBRRB",
+    "BGGGGGGGGGGGGGGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "21",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "927",
+  "Items": [
+    "...*.####.*..##.",
+    ".....*##....####",
+    "..##....*...####",
+    ".####*...#...##.",
+    ".####..*........",
+    "..##*....*..#...",
+    "#.....##...###..",
+    "##..*####*..#...",
+    "#*...####...*.#.",
+    "...#..##..#.....",
+    ".*...........**.",
+    "................"
+  ],
+  "Liked": "2",
+  "RobotCol": "5",
+  "RobotDir": "1",
+  "RobotRow": "4",
+  "Solutions": "19",
+  "SubLengths": [
+    "8",
+    "5",
+    "6",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-29T04:29:24.203",
+  "Title": "Missile Command"
+}

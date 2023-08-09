@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRGRRRRRRRRR",
+    "RRGRRRBRRGRRRRRR",
+    "RRBRRRBRRBRRRGRR",
+    "RRBRRGBRRBRRRBRR",
+    "RRBRGBBGRBRRRBRR",
+    "RRBRBBBBGBGRRBRG",
+    "RRBGBBBBBBBRGBGB",
+    "RGBBBBBBBBBRBBBB",
+    "RBBBBBBBBBBGBBBB",
+    "GBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "150",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "461",
+  "Items": [
+    "######*#########",
+    "##*###.##*######",
+    "##.###.##.###*##",
+    "##.##*.##.###.##",
+    "##.#*..*#.###.##",
+    "##.#....*.*##.#*",
+    "##.*.......#*.*.",
+    "#*.........#....",
+    "#..........*....",
+    "*...............",
+    "###############.",
+    "................"
+  ],
+  "Liked": "40",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "176",
+  "SubLengths": [
+    "5",
+    "5",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-05-06T03:18:41.063",
+  "Title": "Bar graphs"
+}

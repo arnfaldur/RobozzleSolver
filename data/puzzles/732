@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRRRRBBBBGGRRRRR",
+    "GRBBBBBBBBBBGRRR",
+    "GRRRRRRRBBBGRRRR",
+    "GRRRRRRBBBBBBGGR",
+    "GRRRRBGRRRRRRRRR",
+    "GRRRRRRBBBBBGRRR",
+    "GRRRRRRRRRRRRRBG",
+    "GRBGGRRRRRRRRRRR",
+    "GRRRBBBGGRRRRRRR",
+    "GRRBBGGRRRRRRRRR",
+    "GRRRRRRBBBBBBBGR",
+    "GRRRRRBBBBBGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "49",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "732",
+  "Items": [
+    ".........**#####",
+    "*...........*###",
+    "*..........*####",
+    "*............**#",
+    "*.....*#########",
+    "*...........*###",
+    "*..............*",
+    "*..**###########",
+    "*......**#######",
+    "*....**#########",
+    "*.............*#",
+    "*..........**###"
+  ],
+  "Liked": "15",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "51",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-09T18:50:32.813",
+  "Title": "Equal?"
+}

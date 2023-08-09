@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRRBRGBRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRBBRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRBRRRBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "34",
+  "Disliked": "27",
+  "Featured": "false",
+  "Id": "808",
+  "Items": [
+    "################",
+    "################",
+    "#######...######",
+    "#######.#.######",
+    "#######...######",
+    "########.#**####",
+    "######....*#####",
+    "#####..#.#######",
+    "########.#######",
+    "#######...######",
+    "######..#..#####",
+    "######.###.#####"
+  ],
+  "Liked": "8",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "96",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sillymystery",
+  "SubmittedDate": "2009-06-19T11:18:02.563",
+  "Title": "person"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "A little paint, a little recursion",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBBBBR",
+    "RBBBRRRRRRRRRRBB",
+    "RBRRRRRRRRRRRRBB",
+    "RBRRRRRRRRRRRRRB",
+    "RBRRRRRRRRRRRRRB",
+    "RBRRRRRRRRRRRRRB",
+    "RBRRRRRRRRRRRRRB",
+    "RBRRRRRRRRRRRRRB",
+    "RBBRRRRRRRRRRRRB",
+    "RBBRRRRRRRRRRBBB",
+    "RRBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "33",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "538",
+  "Items": [
+    "################",
+    "#***..........**",
+    "#***##########**",
+    "#.############**",
+    "#.#############.",
+    "#.#############.",
+    "#.#############.",
+    "#.#############.",
+    "#.#############.",
+    "#**############.",
+    "#**##########***",
+    "#**..........***"
+  ],
+  "Liked": "8",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "38",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T14:29:47.72",
+  "Title": "Corners"
+}

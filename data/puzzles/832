@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBGRRRGGRRRRRRR",
+    "BRRGRRRBGBBBBBBG",
+    "BRRRRRBRRRRRRRBG",
+    "BRRRBRRRRRRRRGRR",
+    "BRRRBBBGRRRRRRRR",
+    "BRRRBRRBRRRBGRRR",
+    "BRRRRRRBRRRRRRGG",
+    "BRRRRRRBBRRRRRBB",
+    "BRRRRBRGRRRRRRRB",
+    "BRRRRRRBRGRRRRRB",
+    "BRRRRRRRRRBRRRRB",
+    "GRRRRRRRRRGBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "29",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "832",
+  "Items": [
+    "****###**#######",
+    "*##**##*********",
+    "*###*#**#####***",
+    "*###*#####****##",
+    "*#******##*#####",
+    "*#*#*##*##***###",
+    "*#***##*####*#**",
+    "*####*****##*#**",
+    "*####*#*#*##****",
+    "*####*#*#**####*",
+    "*####***##*####*",
+    ".#########******"
+  ],
+  "Liked": "9",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "31",
+  "SubLengths": [
+    "6",
+    "6",
+    "6",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-06-21T13:47:29.843",
+  "Title": "Messy path"
+}

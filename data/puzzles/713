@@ -1,0 +1,53 @@
+{
+  "About": "An interesting pattern I discovered while trying to solve an other puzzle",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRBBBRBBBRRRRR",
+    "RRRRRBBBBRBRRRRR",
+    "RRRRRBRBBBBRRRRR",
+    "RRRRRBBBRBBBRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "52",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "713",
+  "Items": [
+    "################",
+    "################",
+    "#########*######",
+    "######****######",
+    "####***#***#####",
+    "#####****#*#####",
+    "#####*#*.**#####",
+    "#####***#***####",
+    "######****######",
+    "######*#########",
+    "################",
+    "################"
+  ],
+  "Liked": "4",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "39",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "twburn",
+  "SubmittedDate": "2009-06-08T09:16:04.36",
+  "Title": "Return after two"
+}

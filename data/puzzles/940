@@ -1,0 +1,53 @@
+{
+  "About": "vidoe game from 1981 - many ways/lengths to get to the star",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBRBRBRBBBBBBBBB",
+    "GGGGRGRGGGGGGRGG",
+    "BBBBBBBBBBBBBRBB",
+    "BBBBBBBBBRBBGGGG",
+    "BBBRBBGGGGRGBBBB",
+    "BGRGGGBBBBRBBBBB",
+    "BBRBBBBBBBBBBBBB",
+    "GGGBBRBBBBRBBBBB",
+    "BBBGRGGRGBRBBRBB",
+    "BBBBRBBRBGGGRGGB",
+    "BBBBRBBBBBBBRBBB",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "60",
+  "DifficultyVoteSum": "119",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "940",
+  "Items": [
+    "..#.............",
+    "................",
+    "................",
+    ".........#......",
+    "...#............",
+    "................",
+    "................",
+    ".....#..........",
+    ".............#..",
+    "................",
+    ".*..............",
+    "................"
+  ],
+  "Liked": "34",
+  "RobotCol": "12",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "263",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-30T15:23:35.827",
+  "Title": "Donkey Kong"
+}

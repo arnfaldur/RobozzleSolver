@@ -1,0 +1,53 @@
+{
+  "About": "imagine how easy it would be if it weren't for that diagonal line there...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RGGGGGGGGGGGRRRR",
+    "RRBBBBBBBBBBRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRRBBBBBRRRR",
+    "RRRRRRRRBBBBRRRR",
+    "RRRRRRRRRBBBRRRR",
+    "RRRRRRRRRRBBRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "35",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "880",
+  "Items": [
+    ".***********####",
+    "*#**********####",
+    "**#*********####",
+    "***#********####",
+    "****#*******####",
+    "*****#******####",
+    "******#*****####",
+    "*******#****####",
+    "********#***####",
+    "*********#**####",
+    "**********#*####",
+    "***********#####"
+  ],
+  "Liked": "7",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "0",
+  "Solutions": "25",
+  "SubLengths": [
+    "6",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-06-25T15:33:29.39",
+  "Title": "split"
+}

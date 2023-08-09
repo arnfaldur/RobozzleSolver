@@ -1,0 +1,53 @@
+{
+  "About": "Remove the stars...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "167",
+  "DifficultyVoteSum": "347",
+  "Disliked": "32",
+  "Featured": "false",
+  "Id": "242",
+  "Items": [
+    "#.............##",
+    "#.....*.*.....##",
+    "#...*.....*...##",
+    "#.............##",
+    "#..*.......*..##",
+    "#.............##",
+    "#..*.......*..##",
+    "#.............##",
+    "#...*.....*...##",
+    "#.....*.*.....##",
+    "#.............##",
+    "################"
+  ],
+  "Liked": "106",
+  "RobotCol": "9",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "685",
+  "SubLengths": [
+    "5",
+    "5",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "borime4ka",
+  "SubmittedDate": "2009-03-30T11:29:15.28",
+  "Title": "The EU flag"
+}

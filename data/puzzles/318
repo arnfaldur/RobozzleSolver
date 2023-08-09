@@ -1,0 +1,53 @@
+{
+  "About": "Count red bricks",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBGBBBBRBBBBBBB",
+    "RRRRRRRRRRRRRRRB",
+    "RBRBBBGRBBBBRBRB",
+    "RBRRRRRRRRRRRGRB",
+    "RBRBRBBBGRRBRBRB",
+    "RRRGRBRRRRRGRBRG",
+    "RGRBRRRRRRRBRBRR",
+    "RBRBRBRBGBBBRBRR",
+    "RBRRRRRRRRRRRBRR",
+    "RBRRRRRGBBBBBBRR",
+    "RRRRRRRRRRRRRRRB",
+    "RBRBRBBRBBBGBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "230",
+  "DifficultyVoteSum": "699",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "318",
+  "Items": [
+    "#...............",
+    "#.#############.",
+    "#.#...........#.",
+    "#.#.#########.#.",
+    "#.#.#.......#.#.",
+    "#.#.#*#####.#.#.",
+    "#.#.#######.#.#.",
+    "#.#.........#.#.",
+    "#.###########.#.",
+    "#.............#.",
+    "###############.",
+    "#..............."
+  ],
+  "Liked": "231",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1609",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "esef",
+  "SubmittedDate": "2009-04-07T07:41:51.077",
+  "Title": "Arithmetic"
+}

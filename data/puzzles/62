@@ -1,0 +1,53 @@
+{
+  "About": "Same thing, less memory",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRB",
+    "BRBGGRBBGRRRBGRG",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "116",
+  "DifficultyVoteSum": "384",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "62",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "###############*",
+    "................",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "104",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "836",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "czvxbc",
+  "SubmittedDate": "2009-02-26T21:14:49.733",
+  "Title": "Red green is the code II"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBBBRBR",
+    "RRRRBRBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBBBBBBBBBBBR",
+    "RRRRBRBBBBBBBBBR",
+    "RRRRRBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "28",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "560",
+  "Items": [
+    "################",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####.....*.....#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#",
+    "####...........#"
+  ],
+  "Liked": "9",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "92",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "artvandeley",
+  "SubmittedDate": "2009-05-20T17:37:16.5",
+  "Title": "Spiral"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBGBRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRGGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRBRRRBGRBGGRRR",
+    "RRGRBBGRBBGRBRRR",
+    "RRBGBRBBGRRRGRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBGBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "87",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "134",
+  "Items": [
+    "################",
+    "######...#######",
+    "######.*.#######",
+    "######...#######",
+    "#######.########",
+    "##...#...#...###",
+    "##.#...*...*.###",
+    "##...#...#...###",
+    "#######.########",
+    "######...#######",
+    "######.*.#######",
+    "######...#######"
+  ],
+  "Liked": "10",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "9",
+  "Solutions": "81",
+  "SubLengths": [
+    "2",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "life96",
+  "SubmittedDate": "2009-03-13T16:07:07.827",
+  "Title": "Bizarre windmill"
+}

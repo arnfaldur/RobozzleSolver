@@ -1,0 +1,53 @@
+{
+  "About": "your polarity is red or green when you're on one; turn away from your opposite",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGRRBRBGRRBGRRRB",
+    "BRBBBGRBRRGBBBGR",
+    "RBBRRBRRRBBGRRBR",
+    "GBRBBBBGBRBRRBBR",
+    "GRBBGBBBRBGBGBGB",
+    "RRBRBRBBBRRRBRBG",
+    "BRBGBBRRRGRBRRBR",
+    "RGBGBGRGBBBRBBGR",
+    "BBBBBRBBBBGBBBRG",
+    "BRBBBBRBRRBBRRBR",
+    "GBBGBGRGBBBRBBGG",
+    "BBBRBBBBRGRBRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "39",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "803",
+  "Items": [
+    ".*#..#..##..##*.",
+    "..*..*..#.*.*..#",
+    "#..##.##.....#.#",
+    "..#..*...#.##...",
+    ".*..*.*.*.*...*.",
+    "##.#.*...#.#....",
+    "...*..#.#.#.##.#",
+    ".*....#*...*..**",
+    ".....*....*...**",
+    ".*.*..#.##..##.#",
+    "......**.*.*....",
+    "...*....#.#.##*."
+  ],
+  "Liked": "11",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "51",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-18T17:00:07.28",
+  "Title": "Magnetic Repulsion"
+}

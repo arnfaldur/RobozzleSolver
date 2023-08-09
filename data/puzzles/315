@@ -1,0 +1,53 @@
+{
+  "About": "Any similarity is a coincidence",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBBBBBR",
+    "RRRRRRRRRBBBBBBR",
+    "RRBBBRRRRBBBBBBR",
+    "RRBBBBRRRBBBBBBR",
+    "RRBBBBRRRBBBBBBR",
+    "RRRBBBBBBBRRRRRR",
+    "RRRBBBBBBBRRRRRR",
+    "RRBBBBRRBBRRRRRR",
+    "RRBBBRRRBBBRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "79",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "315",
+  "Items": [
+    "#########......#",
+    "########.******.",
+    "##...###.******.",
+    "#.***.##.******.",
+    "#.**.*.#.******.",
+    "#.****...******.",
+    "##.*******.....#",
+    "##.*******.#####",
+    "#.****..**.#####",
+    "#.***.#.***.####",
+    "##...##.***.####",
+    "########...#####"
+  ],
+  "Liked": "17",
+  "RobotCol": "4",
+  "RobotDir": "1",
+  "RobotRow": "4",
+  "Solutions": "49",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-04-06T22:05:07.577",
+  "Title": "Simply Connected Hack"
+}

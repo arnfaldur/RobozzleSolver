@@ -1,0 +1,53 @@
+{
+  "About": "As the title says, try coloring only stars! :)",
+  "AllowedCommands": "1",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "23",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "662",
+  "Items": [
+    "....*...........",
+    "........**......",
+    ".....**......*..",
+    ".....**...**....",
+    "...*......**....",
+    "...*...**.......",
+    ".......**...*...",
+    "....*.......*...",
+    "....**...**.....",
+    "..*......**.....",
+    "......**........",
+    "...........*...."
+  ],
+  "Liked": "5",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "21",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T04:17:38.733",
+  "Title": "Coloring stars!"
+}

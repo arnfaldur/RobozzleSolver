@@ -1,0 +1,53 @@
+{
+  "About": "It's how you \"handle\" it that matters.",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRBBBRR",
+    "RRRRRRRRRRBRRRBR",
+    "BBBBBBBGBRBRBBRR",
+    "RRRRRRRRRRBRRRBR",
+    "RRRRRRRRRRRBBBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "57",
+  "DifficultyVoteSum": "173",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "335",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "###########...##",
+    "##########.###.#",
+    ".........*.*..*#",
+    "*##*#*####.###.#",
+    ".##.#.#####...##",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "69",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "350",
+  "SubLengths": [
+    "4",
+    "7",
+    "6",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "andos",
+  "SubmittedDate": "2009-04-11T09:13:40.313",
+  "Title": "Key mechanism"
+}

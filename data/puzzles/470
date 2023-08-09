@@ -1,0 +1,53 @@
+{
+  "About": "One function should be enough for anybody",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RGRRRRRRGRRRRRRG",
+    "GGRGGRGRGGRRGRRG",
+    "GGGGGRGGGGRRGRGG",
+    "GGGGGGGGGGGRGGGG",
+    "GGGGGGGGGGGRGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "286",
+  "DifficultyVoteSum": "819",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "470",
+  "Items": [
+    "################",
+    "################",
+    "#*######*######*",
+    "..#**#*#.*##*##.",
+    "..*..#.*..##.#*.",
+    ".....*....*#.*..",
+    "...........#....",
+    "...........*....",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "234",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "3",
+  "Solutions": "1510",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "fatbuddha",
+  "SubmittedDate": "2009-05-07T18:25:47.86",
+  "Title": "Jagged Edge"
+}

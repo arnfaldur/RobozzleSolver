@@ -1,0 +1,53 @@
+{
+  "About": "Explore the whole maze, but watch out for potholes!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGRRRRRRGGGRRR",
+    "GBBBGGGGRGBBBGGR",
+    "GBGRGBBBGRRGBBBG",
+    "GBGRGRGBBGRGBGRR",
+    "GBGGBGGGBGGGBGGR",
+    "GBGGBBBGBGBBBBBG",
+    "GBGGBGRGBGRRRGBG",
+    "GBBBBBGGBGGGGBBG",
+    "RGBGRRRGBBBBGBGR",
+    "GBBGGRGGBGRRGBBG",
+    "GBGGBGBGBGGGGGBG",
+    "GBBBBBBBBBBBBBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "101",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "91",
+  "Items": [
+    "#***######***###",
+    "********#******#",
+    "***#*****##*****",
+    "***#*#****#***##",
+    "***************#",
+    "****************",
+    "******#***###***",
+    "****************",
+    "#***###********#",
+    "*****#****##****",
+    "****************",
+    "********.*******"
+  ],
+  "Liked": "27",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "137",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-04T11:06:59.843",
+  "Title": "Dangerous Maze"
+}

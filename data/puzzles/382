@@ -1,0 +1,53 @@
+{
+  "About": "Every color has its own rules.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRGBBBRRRRRRR",
+    "RRRRRGGRBRGRGGRR",
+    "RRRRRGRRBRGGGRRR",
+    "RRRRRGGRRGGGBRRR",
+    "RRRRRGRRBGBGGBBR",
+    "RRBGGGGGGGGGGGGB",
+    "RRGGGGRRRBGBBGBB",
+    "RBGGGGGGGGGGGGBR",
+    "RBBGGBRRRRRRRBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "27",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "382",
+  "Items": [
+    "########..#.#.##",
+    "######.**...#.##",
+    "#####..**.......",
+    "#####..**.*##.##",
+    "#####.........##",
+    "#####.#..*....##",
+    "#####........*##",
+    "#####.##.......#",
+    "##.........*....",
+    "##....###.......",
+    "#...............",
+    "#.....######...."
+  ],
+  "Liked": "1",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "4",
+  "Solutions": "24",
+  "SubLengths": [
+    "4",
+    "5",
+    "4",
+    "7",
+    "0"
+  ],
+  "SubmittedBy": "shinanaide",
+  "SubmittedDate": "2009-04-26T23:46:16.53",
+  "Title": "Please don't Die"
+}

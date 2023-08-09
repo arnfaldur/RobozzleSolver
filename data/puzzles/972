@@ -1,0 +1,53 @@
+{
+  "About": "Count the number of sequences of green or blue.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGBBBBBGGGGRRR",
+    "RRRRRRRRRRRRRRRG",
+    "RGBGGBGBRRRRRRRG",
+    "RRRRRRRRRRRRRBRB",
+    "BRRBBGBGRRRRRGRB",
+    "BRGRRRRRRRRBRGRG",
+    "BRGRGRRRRRRBRBRB",
+    "BRGRRRRBGBBRRRRB",
+    "GRGRRRRRRRRRRRRR",
+    "GRRRRBBBGBBBBRRR",
+    "GRRRRRRRRRRRRRRR",
+    "RRRRRRRBGBGBGGBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "79",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "972",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "26",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "107",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-03T18:32:32.343",
+  "Title": "Count Sequences"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRBGGGGGGGGGBRRR",
+    "RRBGGGGGGGGGBRRR",
+    "RRBGGGGGGGGGBRRR",
+    "RRGGGGGGGGGGRRRR",
+    "RRRGGGGGGGGGRRRR",
+    "RRBGGGGGGGGGBRRR",
+    "RRBGGGGGGGGGBRRR",
+    "RRBGGGGGGGGGBRRR",
+    "RRRBBBBBBBBBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "97",
+  "DifficultyVoteSum": "253",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "494",
+  "Items": [
+    "################",
+    "################",
+    "##***********###",
+    "##*.........*###",
+    "##*.........*###",
+    "##*.........*###",
+    "##*****.*****###",
+    "##***********###",
+    "##*.........*###",
+    "##*.........*###",
+    "##*.........*###",
+    "##***********###"
+  ],
+  "Liked": "84",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "830",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-11T13:10:26.11",
+  "Title": "Blue Bee"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Can you do it with just six (or even fewer) commands?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBBBRBBBRRR",
+    "RRRBBBRRRBRRRBRR",
+    "RRBRRRRBRRRBRBRR",
+    "RRBRBBBBBBBBRBRR",
+    "RRBRRRRRRRRBRBRR",
+    "RRRBBBBBBBRBRBRR",
+    "RRRRRRRRRBRBRBRR",
+    "RRRRBBBRRBRBRBRR",
+    "RRRBRRRBRBRBRBRR",
+    "RRBRRBRBBBBBRBRR",
+    "RRBRBBRRRRRRRBRR",
+    "RRBRBBBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "260",
+  "DifficultyVoteSum": "649",
+  "Disliked": "22",
+  "Featured": "true",
+  "Id": "15",
+  "Items": [
+    "######...#...###",
+    "###...***.***.##",
+    "##.****.***.*.##",
+    "##.*........*.##",
+    "##.********.*.##",
+    "###.......*.*.##",
+    "#########.*.*.##",
+    "####...##.*.*.##",
+    "###.***.#.*.*.##",
+    "##.**.*.....*.##",
+    "##.*..*******.##",
+    "##...........###"
+  ],
+  "Liked": "232",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1719",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:00.297",
+  "Title": "The star-studded path III"
+}

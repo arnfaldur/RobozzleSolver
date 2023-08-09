@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBBBBBRBBBBBRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "46",
+  "DifficultyVoteSum": "123",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "789",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "##***********###",
+    "##*****#*****###",
+    "##*****.*****###",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "42",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "265",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-17T19:25:07.97",
+  "Title": "3-Bar With Hole"
+}

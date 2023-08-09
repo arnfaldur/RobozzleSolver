@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBRRBBBBRRR",
+    "RBRRRRBRBRRRRBRR",
+    "RBRRRRBRBRRRRBRR",
+    "RBRRRRBRBRRRRBRR",
+    "RBRRRRBRBBBBBBRR",
+    "RRBBBBBBBRRRRRRR",
+    "RRRRRRRBBBBBBBRR",
+    "RRRBBBBBRBRRRRBR",
+    "RRRBRRRBRBRRRRBR",
+    "RRRBRRRBRBBBBBRR",
+    "RRRRBBBRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "60",
+  "DifficultyVoteSum": "179",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "203",
+  "Items": [
+    "################",
+    "#*....*#*....*##",
+    "#.####.#.####.##",
+    "#.####.#.####.##",
+    "#.####.#.####.##",
+    "#.####.#.....*##",
+    "#*.......#######",
+    "#######.......*#",
+    "###*....#.####.#",
+    "###.###.#.####.#",
+    "###.###.#*....*#",
+    "###*...*########"
+  ],
+  "Liked": "58",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "263",
+  "SubLengths": [
+    "10",
+    "10",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-26T17:32:58.767",
+  "Title": "Just rectangles"
+}

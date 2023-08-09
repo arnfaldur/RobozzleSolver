@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRBBRRRRRGGG",
+    "RRBBBBBBBBRRRRRR",
+    "RBBBRBBBBBBRRRRR",
+    "RBBBBBBBBBBRBBRR",
+    "BBBBBBBBBRBBBBRR",
+    "BBBBRRBBBBBRRRRR",
+    "RRRBBRBBBBBBRRRR",
+    "RRRBBBBBBBBBRRGG",
+    "GRRRRBBBBBRRRRGG",
+    "GRRRRRBBBBRRRRGG",
+    "GGGRRRRRBBRRGGGG",
+    "GGGGRRRRRRRRGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "0",
+  "DifficultyVoteSum": "0",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "649",
+  "Items": [
+    ".###*#**###.....",
+    "##********##....",
+    "#***#******####.",
+    "#**********#**#.",
+    "*********#****#.",
+    "****##*****####.",
+    "###**#*.****#...",
+    "..#*********#...",
+    "..###*****###...",
+    "....##****#.....",
+    ".....###**#.....",
+    ".......####....."
+  ],
+  "Liked": "0",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "1",
+  "SubLengths": [
+    "5",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-03T23:12:46.843",
+  "Title": "Big random area"
+}

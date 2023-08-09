@@ -1,0 +1,53 @@
+{
+  "About": "Make spirals up to obtain the figure.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "60",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "658",
+  "Items": [
+    "######***#######",
+    "#####*****######",
+    "####*******#####",
+    "###*********####",
+    "##***********###",
+    "##***********###",
+    "##*****.*****###",
+    "###*********####",
+    "####*******#####",
+    "#####*****######",
+    "######***#######",
+    "################"
+  ],
+  "Liked": "14",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "77",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T02:38:52.22",
+  "Title": "Spiral Technique II"
+}

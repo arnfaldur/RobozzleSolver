@@ -1,0 +1,53 @@
+{
+  "About": "binary counting without painting",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRRGGGRRRRRR",
+    "RRRRRRRGGGRRRGRR",
+    "RRRGRRRGGGRRRGGR",
+    "RRGGGRRGGGGRRGGR",
+    "RGGGGGRGGGGRGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "BBBBBBBRRRBBBRBB",
+    "BBRRRBBRRBRBBBRB",
+    "BRBRBRBRBRBBRBRR",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "87",
+  "DifficultyVoteSum": "354",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "213",
+  "Items": [
+    "#######*########",
+    "#######**#######",
+    "#######***######",
+    "#######***###*##",
+    "###*###***###**#",
+    "##***##****##**#",
+    "#*****#****#****",
+    "****************",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "96",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "741",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-28T04:12:56.627",
+  "Title": "Can you count in binary?"
+}

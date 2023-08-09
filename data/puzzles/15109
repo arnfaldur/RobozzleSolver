@@ -1,0 +1,53 @@
+{
+  "About": "idunn0",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BRRRRRRRRBRRRRRR",
+    "BBBBBBBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "13",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "15109",
+  "Items": [
+    "**********######",
+    "*########*######",
+    "*########*######",
+    "*########*######",
+    "*########*######",
+    "*########*######",
+    "*########*######",
+    "*########*######",
+    "*########*######",
+    ".*********######",
+    "################",
+    "################"
+  ],
+  "Liked": "14",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "123",
+  "SubLengths": [
+    "10",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "Idunn0",
+  "SubmittedDate": "2023-05-18T18:34:31.517",
+  "Title": "10x10 square"
+}

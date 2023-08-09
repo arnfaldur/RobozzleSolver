@@ -1,0 +1,53 @@
+{
+  "About": "...and trick on red",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBRBBBGBBBRBRRR",
+    "RRGRBRRRRRBRBRRR",
+    "RRBRBRBRBRGRGRRR",
+    "RRBRRRRRGRBRBRRR",
+    "RRBBGBBRBGBRBRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RRBBBBBGBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "100",
+  "DifficultyVoteSum": "290",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "150",
+  "Items": [
+    "################",
+    "################",
+    "##...........###",
+    "##.#########.###",
+    "##.#.......#.###",
+    "##.#.#####.#.###",
+    "##.#*#...#.#.###",
+    "##.###.#.#.#.###",
+    "##.....#...#.###",
+    "############.###",
+    "##...........###",
+    "################"
+  ],
+  "Liked": "94",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "872",
+  "SubLengths": [
+    "3",
+    "4",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-16T20:50:01.563",
+  "Title": "divide by 2..."
+}

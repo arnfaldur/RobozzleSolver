@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRGBBBBBBBBBBGRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRGBBBBBBBBBGRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RGBBBBBBBBBBGRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RGBRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "54",
+  "DifficultyVoteSum": "152",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "379",
+  "Items": [
+    "################",
+    "################",
+    "############*.##",
+    "#############.##",
+    "##............##",
+    "##.#############",
+    "##...........###",
+    "############.###",
+    "#............###",
+    "#.##############",
+    "#.*#############",
+    "################"
+  ],
+  "Liked": "41",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "163",
+  "SubLengths": [
+    "10",
+    "10",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-04-25T06:18:45.14",
+  "Title": "Winding Road"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBRBRRBRRBR",
+    "RBRRRRGRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRGRRRRRRRRRR",
+    "RRRRRRRRGRRGRBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBRRGRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RRBGGRRRRRRRRRRB",
+    "RRRBRRRRRRRRRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "29",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "886",
+  "Items": [
+    "######***##****#",
+    "#******#*##*##*#",
+    "#*######*##*##*#",
+    "#*****##*##*#**#",
+    "#####*##****#**#",
+    "#####*##########",
+    "##****#.********",
+    "##*############*",
+    "##*#************",
+    "##*#*###########",
+    "##**************",
+    "###*************"
+  ],
+  "Liked": "8",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "82",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pedrorz",
+  "SubmittedDate": "2009-06-25T18:49:29.063",
+  "Title": "mad labirint"
+}

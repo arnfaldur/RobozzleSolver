@@ -1,0 +1,53 @@
+{
+  "About": "Been tryin' to meet you...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRBRBBRRR",
+    "RRRRRRRBRBRBBRRR",
+    "RRRRRBBBBBBBBBRB",
+    "RRRRRBBBBBRBBRRR",
+    "RRRRRRRBRRRBBBBR",
+    "RRRRRRRBRRRRBRRR",
+    "RRRRRRBRBRBBBBBR",
+    "RRRRRRBBBBBBBBBR",
+    "RRRRRRBRBRBRBRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRRRRRRRBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "15",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "760",
+  "Items": [
+    "#######*########",
+    "#######.#*#**###",
+    "#######.#.#..###",
+    "#####*.........*",
+    "#####*...*#..###",
+    "#######.###*..*#",
+    "#######*####.###",
+    "######*#*#*...*#",
+    "######........*#",
+    "######.#.#.#.###",
+    "######*#*#*#.###",
+    "############*###"
+  ],
+  "Liked": "2",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "7",
+  "SubLengths": [
+    "7",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azechiel",
+  "SubmittedDate": "2009-06-14T05:08:23.017",
+  "Title": "Hey"
+}

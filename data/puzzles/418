@@ -1,0 +1,53 @@
+{
+  "About": "read what's between the red tiles.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBGGRBBBBBBBGR",
+    "RRRRRRRRRRRRRRBR",
+    "GRBBBRRRRRRGBBGR",
+    "BRRGBGBBBGRBRRRR",
+    "BRRBRBRRRRRBRRRR",
+    "BRRRRBRRRBRGBRRR",
+    "BRRGRBRRRBRRRBRR",
+    "BRRBRBRRRGRRRGRR",
+    "BRRBRBRRRGRRRGRR",
+    "BRRRBGBBBRRRRGRR",
+    "BRRRRBRRRRRRRRRR",
+    "GRRRRGBBBBBBBGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "32",
+  "DifficultyVoteSum": "100",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "418",
+  "Items": [
+    "......*........#",
+    "##############.#",
+    ".*...*#####....#",
+    ".##.......#.####",
+    ".##.#.###*#.####",
+    ".##*#.###.#..*##",
+    ".##.#.###.###.##",
+    ".##.#.###.###.##",
+    ".##.#.###.###.##",
+    ".##*.....*###.##",
+    ".####.#######*##",
+    ".*###.........##"
+  ],
+  "Liked": "31",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "138",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-02T15:27:16.797",
+  "Title": "scattered intructions"
+}

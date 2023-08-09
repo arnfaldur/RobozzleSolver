@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGBBBBBBBBBBBGR",
+    "RRBRRRRRRRRRRRBR",
+    "RRBRRRRRRRRRRRBR",
+    "RRBRRRRRRRRRRRBR",
+    "RRBRRRRRBBGRRRBR",
+    "RRBRRRRRRRBRRRBR",
+    "RRGBBBBBBBGRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "62",
+  "DifficultyVoteSum": "216",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "307",
+  "Items": [
+    "*###############",
+    "*#*************#",
+    "*#*###########*#",
+    "*#*#*********#*#",
+    "*#*#*#######*#*#",
+    "*#*#*******#*#*#",
+    "*#*#######*#*#*#",
+    "*#*********#*#*#",
+    "*###########*#*#",
+    "*************#*#",
+    "##############.#",
+    "################"
+  ],
+  "Liked": "62",
+  "RobotCol": "14",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "265",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T06:53:16.937",
+  "Title": "Double Spiral"
+}

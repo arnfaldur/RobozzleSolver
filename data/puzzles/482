@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGRGRRRRRRRRRGR",
+    "RRGRGRGRRRGRRRGR",
+    "GRGRGRGRRRGRGRGR",
+    "BBBBBBBBBBBBBBBB",
+    "GBGBGBGBRBGBGBGB",
+    "RBRBRBRBBBRBRBRB",
+    "RBGBGBGBRBGBRBGB",
+    "BBRBRBRBBBRBBBRB",
+    "BBGBGBRBBBGBBBGB",
+    "BBRBRBBBBBBBBBRB",
+    "BBRBGBBBBBBBBBRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "41",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "482",
+  "Items": [
+    "##*#*#########*#",
+    "##*#*#*###*###*#",
+    "*#*#*#*###*#*#*#",
+    "*#*#*#*#*#*#*#*#",
+    "................",
+    "*.*.*.*.*.*.*.*.",
+    "#.#.#.#...#.#.#.",
+    "*.*.*.*.#.*.*.*.",
+    "..#.#.#...#...#.",
+    "..*.*.*...*...*.",
+    "..#.#.........#.",
+    "..*.*.........*."
+  ],
+  "Liked": "11",
+  "RobotCol": "15",
+  "RobotDir": "2",
+  "RobotRow": "4",
+  "Solutions": "32",
+  "SubLengths": [
+    "10",
+    "5",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-09T04:10:48.437",
+  "Title": "waterfront"
+}

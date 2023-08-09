@@ -1,0 +1,53 @@
+{
+  "About": "4 identical path",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGRRRRRRRGRRGRRG",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RGRRRRRRRRRRRRGR",
+    "RRRRRGRRRRRRRRRG",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGRRRRGRRRRRRR",
+    "RRRRRRRRRGRRGRRR",
+    "GRRRRRRRRRRRRRGR",
+    "RRRRRGRRRRRRRRRG",
+    "RRRRRRRRRRRRRRRR",
+    "GRRGRRRRGRRRRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "71",
+  "DifficultyVoteSum": "215",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "90",
+  "Items": [
+    "..*...*.....***.",
+    "................",
+    ".*..........*..*",
+    ".......*......*.",
+    ".....*....*.....",
+    ".....*..........",
+    "....*...........",
+    ".........*.*..*.",
+    "..*..*......*...",
+    "*.....*...*....*",
+    "...*...........*",
+    "..**....*..*...."
+  ],
+  "Liked": "65",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "185",
+  "SubLengths": [
+    "2",
+    "5",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "glum",
+  "SubmittedDate": "2009-03-04T10:58:59.28",
+  "Title": "Without blue"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Give it a Whirl",
+  "AllowedCommands": "7",
+  "Colors": [
+    "BBBBBBBBGBBBBGBB",
+    "GBBBBBBBBBGRBBBR",
+    "BBBBGBRBBBBBBRBB",
+    "BBBGBBBBBBBBRBBB",
+    "BBBBGBBBBBBBBBBB",
+    "BRBBBGBBBBBBBBBB",
+    "BGBBBBRBBBBBBBBR",
+    "BBBRBBBBBBBBBRBB",
+    "BBBBBBBGBBRBBBBR",
+    "GRGBBBBBBBBRBBRB",
+    "BRBBBBBBBRBBGBBB",
+    "BGBRBGBBRBBGBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "88",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "373",
+  "Items": [
+    "***************.",
+    "*........*******",
+    "*..*************",
+    "*..*************",
+    "*..****..*******",
+    "*#.****..*******",
+    "*******.********",
+    "...*************",
+    "****************",
+    "*****...*******.",
+    "***********.*...",
+    "*********.***..."
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "109",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-04-23T04:08:11.517",
+  "Title": "Scared of Kermit"
+}

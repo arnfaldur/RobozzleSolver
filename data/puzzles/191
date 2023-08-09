@@ -1,0 +1,53 @@
+{
+  "About": "Read instructions in reversed order, and then carry them out.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBRBRRBBRBBRRBGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRGGGR",
+    "RRRRRRRRRRRRGRRR",
+    "RRRRRRRRRRRRGGGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRGGGRGGGR",
+    "RRRRRRRRGRGRGRRR",
+    "RRRRRRGGGRGGGRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "204",
+  "DifficultyVoteSum": "676",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "191",
+  "Items": [
+    "...............#",
+    "##############.#",
+    "############...#",
+    "############.###",
+    "############...#",
+    "##############.#",
+    "########...#...#",
+    "########.#.#.###",
+    "######...#...###",
+    "######.#########",
+    "######*#########",
+    "################"
+  ],
+  "Liked": "191",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1363",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-25T04:00:34.173",
+  "Title": "Reversed instructions"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "42",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBBBBBBBBBRRR",
+    "RRRRBRBBBBBRBRRR",
+    "RRRRBRRBBBRRBRRR",
+    "RRRRBRBRBRBRBRRR",
+    "RRRRBRBBRBBRBRRR",
+    "RRRRBRBBBBBRBRRR",
+    "RRRRBRBBBBBRBRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "132",
+  "DifficultyVoteSum": "337",
+  "Disliked": "21",
+  "Featured": "false",
+  "Id": "58",
+  "Items": [
+    "####.........###",
+    "####.........###",
+    "####.........###",
+    "####..*...*..###",
+    "####...*.*...###",
+    "####....*....###",
+    "####.........###",
+    "####.........###",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "99",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "7",
+  "Solutions": "574",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mandark",
+  "SubmittedDate": "2009-02-26T11:13:14.313",
+  "Title": "Diagonale"
+}

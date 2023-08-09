@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGRRRGGGGGRRRR",
+    "BBBBBBBBBBBBBBRR",
+    "RRRRGGGRRRRRGGBR",
+    "RRRRRRRRRRRRRGBR",
+    "GGGGRRRGGGRRRRBG",
+    "GRBBBBBBBBBRRRBG",
+    "GBRRGGGRRRRRRGBR",
+    "GBRRRRRRRRRRRGBR",
+    "RBGRRRRRRRRRRRBG",
+    "RBGGGRRGGGGGRRBG",
+    "RRBBBBBBBBBBBBRG",
+    "RRRRRGGRRRRRGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "72",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "486",
+  "Items": [
+    "*****##******###",
+    "...............#",
+    "####****####**.#",
+    "#############*.#",
+    "*****##****##*.*",
+    "*..........###.*",
+    "*.##****#####*.*",
+    "*.*##########*.#",
+    "#.*##########*.*",
+    "#.***#******##.*",
+    "#..............*",
+    "####***####*****"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "69",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-09T17:21:17.593",
+  "Title": "Follow The Snakes"
+}

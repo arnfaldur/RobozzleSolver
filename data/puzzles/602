@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBRRRRRRRR",
+    "BGGGGBGBRRRRRRRR",
+    "BBBBGBGBRRRRRRRR",
+    "BGBGGGGBRRRRRRRR",
+    "BGBBGBBBRRRRRRRR",
+    "BGGGGBGBRRRRRRRR",
+    "BBBGBBGBRRRRRRRR",
+    "BGGGBGGBRRRRRRRR",
+    "BGBBBGBBRRRRRRRR",
+    "BGGGBGGGRRRRRRRR",
+    "BGBGGGBBRRRRRRRR",
+    "BBBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "34",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "602",
+  "Items": [
+    "........########",
+    "..***...###****#",
+    "....*...###*####",
+    "....*...###*####",
+    "....*...###*####",
+    "...**...###**###",
+    "...*....####*###",
+    ".***....####***#",
+    ".*......######*#",
+    ".***.******#***#",
+    "...***..##***###",
+    "........########"
+  ],
+  "Liked": "9",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "100",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-27T17:15:51.423",
+  "Title": "Symmetry - Maze"
+}

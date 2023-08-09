@@ -1,0 +1,53 @@
+{
+  "About": "Deceptively easy",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR",
+    "RBGRBGRBGRBGRBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "17",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "275",
+  "Items": [
+    "..***.*.........",
+    "...*..*..*...*..",
+    "......*...*****.",
+    "..*..***......*.",
+    "..*.*..........*",
+    "....*.........**",
+    "...**...........",
+    "...**...........",
+    "..**....**....*.",
+    "........*.*****.",
+    "....*.*******...",
+    "....**.........."
+  ],
+  "Liked": "3",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "47",
+  "SubLengths": [
+    "8",
+    "8",
+    "4",
+    "4",
+    "4"
+  ],
+  "SubmittedBy": "themurphteam",
+  "SubmittedDate": "2009-04-03T12:51:06.61",
+  "Title": "Pixels"
+}

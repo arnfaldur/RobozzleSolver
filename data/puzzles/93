@@ -1,0 +1,53 @@
+{
+  "About": "simple recursion, hard path",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBGBBBBBBR",
+    "BBBBBBBBGRRBBBBR",
+    "BBBBBBBGRRRBBBBR",
+    "BBBBBBBRBBBGBBBR",
+    "BBBBBBRGBBBBBBBR",
+    "BBBBBRBGBBBBBBBR",
+    "BBBBBBRGBBBBBBBR",
+    "BBBBBBBRBBBGBBBR",
+    "BBBBBBBGRRRBBBBR",
+    "BBBBBBBBGRRBBBBR",
+    "BBBBBBBBGBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "43",
+  "DifficultyVoteSum": "162",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "93",
+  "Items": [
+    "...............#",
+    ".........##....#",
+    "........###....#",
+    ".......#.......#",
+    "......#.*..*...#",
+    ".....#..*..*...#",
+    "......#.*..*...#",
+    ".......#.......#",
+    "........###....#",
+    ".........##....#",
+    "...............#",
+    "################"
+  ],
+  "Liked": "42",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "133",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-04T16:00:26.627",
+  "Title": "Fly in the sky"
+}

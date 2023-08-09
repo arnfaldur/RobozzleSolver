@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRRRGBBBBBBBBG",
+    "RRRRRRBRRRRRRRRB",
+    "RBBBBBRBBBBBBBRB",
+    "RBRBRBRBRBRBRBRB",
+    "RBBBBBBBBBBBRRRB",
+    "RRRRRRRRRRRRRBRB",
+    "RGBRBRBRBRBRBBRB",
+    "RGBBBBBBBBBBBBRB",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBBBG",
+    "BRBRBRBRBRBRBRBR",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "68",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "528",
+  "Items": [
+    "######**********",
+    "######*########*",
+    "#*************#*",
+    "#*#*#*#*#*#*#*#*",
+    "#***********#*#*",
+    "#############*#*",
+    "#*************#*",
+    "#*************#*",
+    "###############*",
+    "*******.********",
+    "*#*#*#*#*#*#*#*#",
+    "***************#"
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "105",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-15T22:53:50.673",
+  "Title": "Long Journey"
+}

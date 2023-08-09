@@ -1,0 +1,53 @@
+{
+  "About": "one small piece of the \"Wiggle\" puzzle",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "35",
+  "DifficultyVoteSum": "108",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "973",
+  "Items": [
+    ".........#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.......*"
+  ],
+  "Liked": "29",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "119",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-03T22:34:37.877",
+  "Title": "Wiggle 2"
+}

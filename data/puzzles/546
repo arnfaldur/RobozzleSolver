@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGRGRGBGR",
+    "RRRRRRRRBRRRRRBR",
+    "GRGRRRRRRRRRRRGR",
+    "BRRRRRRRBRRRRRBR",
+    "RRRBGRGBRRRRRRGR",
+    "RRRRBRRRBRRRRRRR",
+    "BRRRRRRRRRRRRRGR",
+    "RRRRBRBRBRRRRRBR",
+    "GBGRGBGRGRRRRRGR",
+    "RRRRRRRRRRRRRRBR",
+    "BGBGBGBRGRGRGRGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "81",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "546",
+  "Items": [
+    "################",
+    "########...*..*#",
+    "########.#####.#",
+    "*..#####.#####.#",
+    ".#.#####.#####.#",
+    ".#*....*.#####.#",
+    ".###.#*#*#####.#",
+    ".###.#.#.#####*#",
+    ".###*#.#.#####.#",
+    "*......*.#####.#",
+    ".#############.#",
+    "...*...*.......#"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "95",
+  "SubLengths": [
+    "7",
+    "7",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-17T19:39:30.703",
+  "Title": "Color Racetrack"
+}

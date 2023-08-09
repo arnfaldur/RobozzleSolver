@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBGRRRRRRRRRRR",
+    "RBRRBRRRRRRRRRRR",
+    "RBRRBRRRRRRRRRRR",
+    "RBRRBRRRRRRRRRRR",
+    "RBRRRBBGRRRRRRRR",
+    "RBRRBRRBRRRRRRRR",
+    "RBRRBRRBRRRRRRRR",
+    "RBRRBRRBRRRRRRRR",
+    "RBRRBBBRBBGRRRRR",
+    "RBRBBRRBRRBRRRRR",
+    "RBRBBRRBRRBRRRRR",
+    "RGBBGBBGBBGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "34",
+  "Disliked": "16",
+  "Featured": "false",
+  "Id": "487",
+  "Items": [
+    "#*..*###########",
+    "#.##.###########",
+    "#.##.###########",
+    "#.##.###########",
+    "#.##*..*########",
+    "#.##.##.########",
+    "#.##.##.########",
+    "#.##.##.########",
+    "#.#*...*..*#####",
+    "#.#..##.##.#####",
+    "#.#*.##.##.#####",
+    "#......*..*#####"
+  ],
+  "Liked": "8",
+  "RobotCol": "1",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "71",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "manegy",
+  "SubmittedDate": "2009-05-10T00:35:47.14",
+  "Title": "step up"
+}

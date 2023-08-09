@@ -1,0 +1,53 @@
+{
+  "About": "Essey's first puzzle attempt",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRBBRRBRBRRR",
+    "RRRBBRBBRBBBBRRR",
+    "RRRBBBBBRBBBBBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRGRGRGRGRGRGRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRRBRBRBRBBRBRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "217",
+  "DifficultyVoteSum": "444",
+  "Disliked": "100",
+  "Featured": "true",
+  "Id": "31",
+  "Items": [
+    "################",
+    "###...........##",
+    "###.*.*...*.*.##",
+    "###...........##",
+    "###.*.*...*..*##",
+    "###.........*.##",
+    "###.....*....*##",
+    "###...........##",
+    "###.*.*..*.**.##",
+    "###..........*##",
+    "###...*.......##",
+    "###...........##"
+  ],
+  "Liked": "99",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "848",
+  "SubLengths": [
+    "10",
+    "3",
+    "3",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "essey",
+  "SubmittedDate": "2008-12-16T21:19:18.53",
+  "Title": "Holiday stripe"
+}

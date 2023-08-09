@@ -1,0 +1,53 @@
+{
+  "About": "Add the two numbers to know where the stars are",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRGGGGRGRRRRR",
+    "RRRRRBRRBBRRBRRR",
+    "RRGBBBBBRBBRRGRR",
+    "RRRRRRRRRRRRRRBR",
+    "GRBRRRRRRRRRRBBG",
+    "GBBRBBBBRRBRRGRR",
+    "RRRRBRRRBRRBBRRR",
+    "GRBRGRRRRRGGGRRR",
+    "GRBRRRRRRRRRRRRR",
+    "RRGBBRBRBRRBRRBB",
+    "RRRBRRRRRBRBRBBR",
+    "RRRGRGRGRRRGRGRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "30",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "794",
+  "Items": [
+    "#####****#*#####",
+    "###..........###",
+    "##............##",
+    "#..##########..#",
+    "*..##########..*",
+    "*..#..........##",
+    "#..#.........###",
+    "*..#*#####***###",
+    "*..#############",
+    "##..............",
+    "###.............",
+    "###*#*#*###*#*#*"
+  ],
+  "Liked": "6",
+  "RobotCol": "15",
+  "RobotDir": "1",
+  "RobotRow": "9",
+  "Solutions": "39",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-18T04:10:12.017",
+  "Title": "Binary Addition"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBBBBBBBBRR",
+    "RRRRBBRRBBBRRBBR",
+    "RRRRBRRRRBRRRRBR",
+    "RRRRBRRRRGRRRRBR",
+    "RRRRBBRRRRRRRBBR",
+    "RRRRBBBRRRRRBBBR",
+    "RRRRRRBBRRRBBRRR",
+    "RRRRRRRBBRBBRRRR",
+    "RRRRRRRBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1522",
+  "DifficultyVoteSum": "3570",
+  "Disliked": "57",
+  "Featured": "false",
+  "Id": "247",
+  "Items": [
+    "#####.........##",
+    "####..**...**..#",
+    "####.*##*.*##*.#",
+    "####.*###*###*.#",
+    "####..*#####*..#",
+    "####...*###*...#",
+    "######..*#*..###",
+    "#######..*..####",
+    "#######.....####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1347",
+  "RobotCol": "9",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "10077",
+  "SubLengths": [
+    "6",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "anthares",
+  "SubmittedDate": "2009-03-31T17:00:32.577",
+  "Title": "Make love, not war"
+}

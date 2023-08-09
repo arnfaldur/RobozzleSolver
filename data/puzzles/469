@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBRRBBBRRRBBBBBB",
+    "BBRRBGBBRRBGBBGB",
+    "BBRRBBRRRRBBRRBB",
+    "BBRRBBRRRRBBRRBB",
+    "BBRRBBRRRRBBRRBB",
+    "BBRRBBRRRRBBRRBB",
+    "BBRRBGBBBBGBRRBB",
+    "BBRRBBBBBBBBRRBB",
+    "BBRRRRRRRRRRRRBB",
+    "BBRRRRRRRRRRRRBB",
+    "BGBBBBBBBBBBBBGB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "40",
+  "DifficultyVoteSum": "122",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "469",
+  "Items": [
+    ".*##****##******",
+    "**##****##******",
+    "**##**####**##**",
+    "**##**####**##**",
+    "**##**####**##**",
+    "**##**####**##**",
+    "**##********##**",
+    "**##********##**",
+    "**############**",
+    "**############**",
+    "****************",
+    "****************"
+  ],
+  "Liked": "38",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "119",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-05-07T16:50:19.86",
+  "Title": "Fat Snake"
+}

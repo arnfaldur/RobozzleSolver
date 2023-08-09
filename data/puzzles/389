@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRRRRRRGBBGRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRBGRGBBGRR",
+    "RRRRRRRRBRRRRBRR",
+    "RRRRRRRRGBBGRBRR",
+    "RRRRRRRRRRRBRBRR",
+    "RRRRRRRRRRRGBGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "448",
+  "DifficultyVoteSum": "1392",
+  "Disliked": "8",
+  "Featured": "false",
+  "Id": "389",
+  "Items": [
+    "################",
+    "#######**#######",
+    "#######**..#####",
+    "##########.#####",
+    "##########.#####",
+    "##########.#####",
+    "#######..#....##",
+    "########.####.##",
+    "########....#.##",
+    "###########.#.##",
+    "###########...##",
+    "################"
+  ],
+  "Liked": "383",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2945",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "shahbawany",
+  "SubmittedDate": "2009-04-28T22:52:48.453",
+  "Title": "parity snake"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRGGGRRRRRRRRR",
+    "RRRRRRRRRGGGRRRR",
+    "RRRRRRRGBRRRRRRR",
+    "RRRRRRRGBRRRRRRR",
+    "RRRRRRRGBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "63",
+  "DifficultyVoteSum": "138",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "984",
+  "Items": [
+    "########*#######",
+    "########*#######",
+    "########*#######",
+    "####***..#######",
+    "#######..***####",
+    "#######*.#######",
+    "#######*.#######",
+    "#######*.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######",
+    "########.#######"
+  ],
+  "Liked": "51",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "422",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-07-04T15:15:13.047",
+  "Title": "Pinwheel"
+}

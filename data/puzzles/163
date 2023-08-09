@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRBBBRBRBBBRRR",
+    "RRRBRBRBBBRBRBRR",
+    "RRRBBBBBRBBBBBRR",
+    "RRRBRBRBBBRBRBRR",
+    "RRRRBBBRBRBBBRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRRBBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "123",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "163",
+  "Items": [
+    "################",
+    "#######***######",
+    "######*#*#*#####",
+    "######*****#####",
+    "####**.#*#***###",
+    "###*#*#***#*#*##",
+    "###*****#*****##",
+    "###*#*#***#*#*##",
+    "####***#*#***###",
+    "######*****#####",
+    "######*#*#*#####",
+    "#######***######"
+  ],
+  "Liked": "31",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "166",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-19T21:18:07.483",
+  "Title": "Burst of activity"
+}

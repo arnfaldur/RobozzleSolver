@@ -1,0 +1,53 @@
+{
+  "About": "1 STATE AT A TIME!",
+  "AllowedCommands": "2",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GBBBBBRRRRRRRRRG",
+    "GBBBBBRRRRRRRRRG",
+    "GBBBBBRRRRRRRRRG",
+    "GBBBBBRRRRRRRRRG",
+    "GBBBBBRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GRRRRRRRRRRRRRRG",
+    "GRGGGGGGGGGGGGGG",
+    "GRGGGGGGGGGGGGGG",
+    "GRGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "117",
+  "DifficultyVoteSum": "264",
+  "Disliked": "19",
+  "Featured": "false",
+  "Id": "505",
+  "Items": [
+    "................",
+    ".*****..........",
+    ".*****..........",
+    ".*****..........",
+    ".*****..........",
+    ".*****..........",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "92",
+  "RobotCol": "15",
+  "RobotDir": "2",
+  "RobotRow": "11",
+  "Solutions": "615",
+  "SubLengths": [
+    "4",
+    "6",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-05-12T05:39:52.047",
+  "Title": "Turn America Green"
+}

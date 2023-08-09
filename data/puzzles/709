@@ -1,0 +1,53 @@
+{
+  "About": "Does anything beyond the dead center matter?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBRRRRRRRR",
+    "RRRGBBBGBBBGRRRR",
+    "RRRBRRRBRRRBRRRR",
+    "RRRBRGBGBGRBRRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRBGBGBRBGBGBRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRRBRGBGBGRBRRRR",
+    "RRRBRRRBRRRBRRRR",
+    "RRRGBBBGBBBGRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "226",
+  "DifficultyVoteSum": "376",
+  "Disliked": "27",
+  "Featured": "false",
+  "Id": "709",
+  "Items": [
+    "#######*########",
+    "###.........####",
+    "###.###.###.####",
+    "###.#.....#.####",
+    "###.#.#.#.#.####",
+    "##*.........*###",
+    "###.#.#.#.#.####",
+    "###.#.....#.####",
+    "###.###.###.####",
+    "###.........####",
+    "#######*########",
+    "################"
+  ],
+  "Liked": "154",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "1077",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-08T02:03:58",
+  "Title": "Dead Center"
+}

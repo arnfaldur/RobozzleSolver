@@ -1,0 +1,53 @@
+{
+  "About": "count the number of red tiles to know which way to turn",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBGRGBBRBGBRBRG",
+    "BRRBRRRRRRRRRRRR",
+    "GRRGRRRRRRRRRRRR",
+    "RRRBRRRGBRBRBBRG",
+    "RRRRRBRBRRRRRGBG",
+    "RRRBRRRRRRRRRBRR",
+    "GBBGRRRBRRGRRBRR",
+    "RRRBRBRRRRBRRRRR",
+    "BRRGBGRRRRGRGBBG",
+    "RRRRRRRRRRRRRBRR",
+    "GRBRGRBBGRRRRRRR",
+    "RRRRRRRRGBRBRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "131",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "216",
+  "Items": [
+    "****#***********",
+    "*##.#*#########*",
+    "****#*#########*",
+    "###*#*#*********",
+    "###*#*#*#####***",
+    "###*#*#######*#*",
+    "****#*#.***##*#*",
+    "*##*#*####*##*#*",
+    "*##***####******",
+    "*############*##",
+    "*********####*##",
+    "########******##"
+  ],
+  "Liked": "38",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "152",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-28T09:02:18.593",
+  "Title": "Mod 3"
+}

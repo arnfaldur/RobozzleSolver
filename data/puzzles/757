@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGRGGGRRRRRRRRRR",
+    "RGRRRBRRGRRRBBBR",
+    "RGRRRBRRRRRRRRRR",
+    "RBRRGGRRRGGGRRGR",
+    "RBRRRGRGRRRBRRGR",
+    "BBBRRGRGRRRBRRGR",
+    "RRRGRRRBBBRRRBBB",
+    "RRRGRRRRRRRRRRBR",
+    "RRRBBBBBBRRRGGBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBGGGGGGBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "36",
+  "DifficultyVoteSum": "98",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "757",
+  "Items": [
+    "#*****##########",
+    "#*###*#********#",
+    "#*###*#*######*#",
+    "#*#*********##*#",
+    "#*#*#*#*###*##*#",
+    ".*****#*###*##*#",
+    "#*#*###*********",
+    "#*#*#######*##*#",
+    "#*#************#",
+    "#*#########*####",
+    "#*#########*####",
+    "#***********####"
+  ],
+  "Liked": "31",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "100",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-14T01:45:30.28",
+  "Title": "Three of a Kind"
+}

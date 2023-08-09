@@ -1,0 +1,53 @@
+{
+  "About": "where lessons come together",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RBBRRRRGBRRBBBRR",
+    "RBBRBBRBRRBRRRBR",
+    "RRBBBBRGRRBRRRBR",
+    "BBBBRRRRBRBRRRBR",
+    "BBRBGGGGGBBBBBBR",
+    "RRRBBRRRRRBRRRRB",
+    "RRRRRRBBBBBBBRRB",
+    "RGGGRRRRRRBRRBRB",
+    "RGRGGGRRRRRBBRRB",
+    "GGRRRRRRRGGRRRRG",
+    "GRRGGGRRGGGGGRRG",
+    "GGGGRGGGGRRRGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "37",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "921",
+  "Items": [
+    "#**####**#*****#",
+    "#**#**#*##*###*#",
+    "##****#**#*###*#",
+    "***.####*#*###*#",
+    "**#*************",
+    "###**#####*####*",
+    "#####*********#*",
+    "#***#*####*##*#*",
+    "#******##*****#*",
+    "******##*****#**",
+    "****************",
+    "****#****###****"
+  ],
+  "Liked": "11",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "3",
+  "Solutions": "32",
+  "SubLengths": [
+    "8",
+    "3",
+    "8",
+    "5",
+    "4"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-28T06:21:13.187",
+  "Title": "Obstacle Course"
+}

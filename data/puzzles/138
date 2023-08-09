@@ -1,0 +1,53 @@
+{
+  "About": "Don't expect to be amused.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGGGGRRRRRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRGGGGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "112",
+  "DifficultyVoteSum": "124",
+  "Disliked": "97",
+  "Featured": "false",
+  "Id": "138",
+  "Items": [
+    "################",
+    "################",
+    "####..**########",
+    "######*#########",
+    "####.**.########",
+    "#####*##########",
+    "####.*..########",
+    "################",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "43",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "373",
+  "SubLengths": [
+    "6",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "elroy",
+  "SubmittedDate": "2009-03-14T16:59:50.36",
+  "Title": "Pre-School ONLY #1"
+}

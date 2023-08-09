@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGBBBBBGRRRRR",
+    "RRRRGBBBBGBRRRRR",
+    "RRRRGBBBGBBRRRRR",
+    "RRRRGBBGBBBRRRRR",
+    "RRRRGBGBBBBRRRRR",
+    "RRRRGGBBBBBRRRRR",
+    "RRRRRGGBBBBRRRRR",
+    "RRRRRBBGGBBRRRRR",
+    "RRRRRBBBBGGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "51",
+  "DifficultyVoteSum": "151",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "177",
+  "Items": [
+    "################",
+    "####*******#####",
+    "####*******#####",
+    "####*******#####",
+    "####*******#####",
+    "####*******#####",
+    "####*******#####",
+    "####.******#####",
+    "####*******#####",
+    "####*******#####",
+    "################",
+    "################"
+  ],
+  "Liked": "55",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "183",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-21T17:54:14.517",
+  "Title": "K"
+}

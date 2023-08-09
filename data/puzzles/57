@@ -1,0 +1,53 @@
+{
+  "About": "????????? / Chess-inspired",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGBGBGBGBRRRRRR",
+    "RRBGBGBGBGRRRRRR",
+    "RRGBGBGBGBRRRRRR",
+    "RRBGBGBGBGRRRRRR",
+    "RRGBGBGBGBRRRRRR",
+    "RRBGBGBGBGRRRRRR",
+    "RRGBGBGBGBRRRRRR",
+    "RRBGBGBGBGRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "460",
+  "DifficultyVoteSum": "972",
+  "Disliked": "161",
+  "Featured": "false",
+  "Id": "57",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "##....*...######",
+    "##..*...*.######",
+    "##.*......######",
+    "##...*...*######",
+    "##*....*..######",
+    "##......*.######",
+    "##.*...*..######",
+    "##...*...*######",
+    "################"
+  ],
+  "Liked": "331",
+  "RobotCol": "2",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "1747",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "4",
+    "4"
+  ],
+  "SubmittedBy": "inquirer",
+  "SubmittedDate": "2009-02-26T07:03:31.767",
+  "Title": "8x8"
+}

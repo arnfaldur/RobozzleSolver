@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RRRGGGGGGGGGBRRR",
+    "RRRGBBBBBBBBBRRR",
+    "RRRGBGGGGGBGBRRR",
+    "RRRGBGBBBBBGBRRR",
+    "RRRGBGBGBGBGBRRR",
+    "RRRGBGBBBGBGBRRR",
+    "RRRGBGBGGGBGBRRR",
+    "RRRGBBBBBBBGBRRR",
+    "RRRGBGGGGGGGBRRR",
+    "RRBBBBBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4",
+  "DifficultyVoteSum": "16",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "411",
+  "Items": [
+    "################",
+    "############*###",
+    "###.........*###",
+    "###.*********###",
+    "###.*.....*.*###",
+    "###.*.*****.*###",
+    "###.*.*.*.*.*###",
+    "###.*.**..*.*###",
+    "###.*.*...*.*###",
+    "###.*******.*###",
+    "###.*.......*###",
+    "##***********###"
+  ],
+  "Liked": "3",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "7",
+  "Solutions": "9",
+  "SubLengths": [
+    "2",
+    "6",
+    "7",
+    "4",
+    "2"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-01T19:15:46.673",
+  "Title": "Perspective III"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBBBBBBBBBR",
+    "BBRRRRRRRRRRRRBR",
+    "BRRRBBBBBBBBBRRB",
+    "BRBBRRRRRRRRBRRB",
+    "BRBRRRRBBBBRRBRB",
+    "BRBRRBBRRRBRRBRB",
+    "BRRBRRRRRRBBRBRB",
+    "BRRBBBBBBBRRRBRB",
+    "RBRRRRRRRRRRBBRB",
+    "RBBBBBBBBBBBRRRB",
+    "RRRRRRRRRRRRRRBB",
+    "BBBBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "175",
+  "DifficultyVoteSum": "318",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "758",
+  "Items": [
+    "#..............#",
+    "..############..",
+    ".##..........##.",
+    ".#..########..#.",
+    ".#.###.....##.#.",
+    ".#.##*.###..#.#.",
+    ".#..######..#.#.",
+    ".##........##.#.",
+    "..##########..#.",
+    "#............##.",
+    "##############..",
+    "...............#"
+  ],
+  "Liked": "148",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "2337",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-14T01:55:50.22",
+  "Title": "Rounded Corner Spiral"
+}

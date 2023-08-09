@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBRRRRRRRRRRRRR",
+    "BRRBRRRRRBBBBRRR",
+    "BRRGBBRRBRRRRBRR",
+    "RBGRRRBRBRRRBGBR",
+    "RRBRRBGBGRRBRBRB",
+    "RRBRBRBRRGBGBRRB",
+    "RRRBGBRRRBRBRRRB",
+    "RRRRBRRRRBRBRRRB",
+    "RBBBGBRRRBRBRRRB",
+    "BRRRBRBRRBRRBBBR",
+    "RBBBGBRRRBRRRRRR",
+    "RRRRRBBBBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "141",
+  "DifficultyVoteSum": "485",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "567",
+  "Items": [
+    "...*############",
+    ".##.####*....*##",
+    ".#*...*#.####.##",
+    "*..*##.#.##*...*",
+    "##.#*....*#.#.#.",
+    "##.#.#.#*....*#.",
+    "##*...*##.#.###.",
+    "####.####.#.###.",
+    "*.....*##.#.###.",
+    ".###.#.##.#*...*",
+    "*.....*##.######",
+    "####*....*######"
+  ],
+  "Liked": "126",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "1021",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-21T12:24:44.173",
+  "Title": "Linked Rings"
+}

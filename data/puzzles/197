@@ -1,0 +1,53 @@
+{
+  "About": "Concatenation",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRBBBGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRBBGGRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRRRRRGRRRRBRRRR",
+    "RRRRRRRRRRRGRRRR",
+    "RRRRRRRRRRRGRRRR",
+    "RGGGGGGGGBRGRRRR",
+    "RRRRRRRRRRRGRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "40",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "197",
+  "Items": [
+    "...............*",
+    "###########.####",
+    "##*########.####",
+    "##.......*#.####",
+    "##.###.####.####",
+    "##.#*..####.####",
+    "##.###*####.####",
+    "##.########.####",
+    "*...........####",
+    "###########.####",
+    "###########.####",
+    "###########*####"
+  ],
+  "Liked": "9",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "46",
+  "SubLengths": [
+    "4",
+    "5",
+    "5",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-25T19:22:46",
+  "Title": "RoboZZle vs Turing machine (Part III)"
+}

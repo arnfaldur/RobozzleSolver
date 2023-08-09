@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGRRRRRRRGGGRR",
+    "RGRRGRRRRRGRRRGR",
+    "GRRRGRRRRRGRRRRG",
+    "RBGGRRRRRRRGGRRG",
+    "RBRRRRRGGRRGRRRG",
+    "RBRGRRGRRBBBRGGR",
+    "RBGRBBBRRGRRGRRR",
+    "GRRRGRRGGRRRRRRR",
+    "GRRRRGRRRRGGGRRR",
+    "GRRRRRBBBBRRRGRR",
+    "RGRRRGRRRRGRRGRR",
+    "RRGGGRRRRRRGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "94",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "308",
+  "Items": [
+    "##**#######***##",
+    "#****#####*****#",
+    "*****#####******",
+    "#***#######*****",
+    "#*#####**##*****",
+    "#*#*##*********#",
+    "#******.**##*###",
+    "*****##**#######",
+    "******####***###",
+    "**************##",
+    "#*****####****##",
+    "##***######**###"
+  ],
+  "Liked": "23",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "99",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-06T10:18:43.173",
+  "Title": "Blobs and Bridges"
+}

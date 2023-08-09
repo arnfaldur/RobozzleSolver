@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBBBRBRRRR",
+    "RRRRRRRRRRRBRRRR",
+    "RRRRBRBRBBRBRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRBRBRRRRBRRRR",
+    "RRRRBRBRRBRBRRRR",
+    "RRRRBRRRRRRBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "259",
+  "DifficultyVoteSum": "731",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "259",
+  "Items": [
+    "################",
+    "################",
+    "######......####",
+    "######.####.####",
+    "####.#.#*.#.####",
+    "####.#.##.#.####",
+    "####.#.##.#.####",
+    "####.#....#.####",
+    "####.######.####",
+    "####........####",
+    "################",
+    "################"
+  ],
+  "Liked": "232",
+  "RobotCol": "4",
+  "RobotDir": "1",
+  "RobotRow": "4",
+  "Solutions": "1394",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-04-02T19:07:38.28",
+  "Title": "Shortening"
+}

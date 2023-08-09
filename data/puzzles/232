@@ -1,0 +1,53 @@
+{
+  "About": "There is infact a pattern to it.",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBRRRBBBRRRR",
+    "RRRBRRBRBRRBRRRR",
+    "RRRBBBRBRBBBRRRR",
+    "RRRBRRBRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "15",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "232",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "###*.*###*.*####",
+    "###.#.....#.####",
+    "###*.*#.#*.*####",
+    "###.#...########",
+    "###*.*##########",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "2",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "17",
+  "SubLengths": [
+    "4",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-29T02:37:52.813",
+  "Title": "rings"
+}

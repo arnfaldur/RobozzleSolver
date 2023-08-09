@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBGGGGGGGGBRRR",
+    "RRRBGRRRRRRGBRRR",
+    "RRRBGRRRRRRGBRRR",
+    "RRRBGRRRRRRGBRRR",
+    "RRRBGRRRRRRGBRRR",
+    "RRRBGGGGGGGGBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "89",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "988",
+  "Items": [
+    "################",
+    "################",
+    "###**********###",
+    "###**********###",
+    "###**######**###",
+    "###**######**###",
+    "###**######**###",
+    "###**######**###",
+    "###**********###",
+    "###**********###",
+    "#######..#######",
+    "################"
+  ],
+  "Liked": "27",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "94",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-07-04T18:10:58.547",
+  "Title": "Follow The Wall"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRBRRRRRBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "499",
+  "DifficultyVoteSum": "712",
+  "Disliked": "54",
+  "Featured": "false",
+  "Id": "564",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "######.......###",
+    "######.....*.###",
+    "######.......###",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "414",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "2344",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-05-21T03:21:11.517",
+  "Title": "easy puzzle"
+}

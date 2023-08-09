@@ -1,0 +1,53 @@
+{
+  "About": "No need to be exponential...",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBRRRR",
+    "RBBBBBBBBBBBRRRR",
+    "RBRRRRRRRBRRRRRR",
+    "RBRRRRRRRBRRRRRR",
+    "RBRRRBBRRBRRBBRR",
+    "RBRRRBBRRBRRBBRR",
+    "RBRRRBBRRBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "84",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "185",
+  "Items": [
+    "################",
+    "#............###",
+    "#***********.###",
+    "#***********.###",
+    "#*.######*.#####",
+    "#*.##...#*.#...#",
+    "#*.##**.#*.#**.#",
+    "#*.##**.#*..**.#",
+    "#*...**..*****.#",
+    "#*************.#",
+    "#.************.#",
+    "################"
+  ],
+  "Liked": "25",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "94",
+  "SubLengths": [
+    "4",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-23T04:14:28.03",
+  "Title": "Explore the world 2"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "two solutions - one uses paint, the other uses F1 for each edge",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRGGGGGGGGGGGGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "76",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "934",
+  "Items": [
+    "##............##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########.##",
+    "##.##########*##",
+    "##.#############",
+    "##............##"
+  ],
+  "Liked": "21",
+  "RobotCol": "13",
+  "RobotDir": "2",
+  "RobotRow": "11",
+  "Solutions": "56",
+  "SubLengths": [
+    "5",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-29T16:26:27.733",
+  "Title": "Almost Square"
+}

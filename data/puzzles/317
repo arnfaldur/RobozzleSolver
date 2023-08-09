@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBGBBRBBBGBBBRR",
+    "RRRRRRRGRRRRRBRR",
+    "RRRRRBRBRRRRRGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RBBBRBBBRBBRBBRR",
+    "RBRRRRRBRBRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RBRRRRRBRRRRRRRR",
+    "RBBGBBRBBBGBBBRR",
+    "RRRRRBRRRBRRRRRR",
+    "RRRRRBRRRBBRBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "40",
+  "DifficultyVoteSum": "136",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "317",
+  "Items": [
+    "################",
+    "#.****#*******##",
+    "#####*#*#####*##",
+    "#####***#####*##",
+    "#############*##",
+    "#*******#*****##",
+    "#*#####*#*######",
+    "#*#####*#*######",
+    "#*#####*#*######",
+    "#*****#*******##",
+    "#####*###*###*##",
+    "#####*###*****##"
+  ],
+  "Liked": "42",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "143",
+  "SubLengths": [
+    "7",
+    "5",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-07T02:03:22.173",
+  "Title": "Divide by 2 - no tricks"
+}

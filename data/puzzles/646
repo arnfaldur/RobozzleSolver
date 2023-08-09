@@ -1,0 +1,53 @@
+{
+  "About": "Either its obvious or its not.",
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RRBRBRBRBRBRBRBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRBRBRBRBRBRBRBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRBRBRBRBRBRBRBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRBRBRBRBRBRBRBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRBRBRBRBRBRBRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "23",
+  "Disliked": "12",
+  "Featured": "false",
+  "Id": "646",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "............*...",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "7",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "70",
+  "SubLengths": [
+    "4",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-06-03T21:04:27.343",
+  "Title": "Christmas Lights?"
+}

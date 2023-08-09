@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGRGGRGGGGGGR",
+    "RRRRRRBGRGBGBGRR",
+    "RRRRGRGBGRRGGGGR",
+    "RRRRRRBGBRRGBGRR",
+    "GGGRGRGGRRRGGGGR",
+    "RGBBBBBBBRRRRRRR",
+    "GGGRGRGGRRRRRRRR",
+    "RRRRRRRGBBBBBRRR",
+    "RRRRRRGGGRGRGGGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "108",
+  "DifficultyVoteSum": "306",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "101",
+  "Items": [
+    "####*...*.....*#",
+    "####.#.........#",
+    "####....*......#",
+    "####.#...##....#",
+    "*...*....#*....#",
+    "...#.#..##.....#",
+    ".........#*...*#",
+    "...#.#..########",
+    "*.....*......###",
+    "######...#.#...#",
+    "######*.....*..#",
+    "################"
+  ],
+  "Liked": "97",
+  "RobotCol": "14",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "430",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "matush",
+  "SubmittedDate": "2009-03-06T09:57:44.627",
+  "Title": ":)"
+}

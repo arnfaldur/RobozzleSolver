@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGGGGGGGRRRRRR",
+    "RRBBBBBBBBRRRRRR",
+    "RRRBBBBBBBRRRRRR",
+    "RRRRBBBBBBRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "30",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "893",
+  "Items": [
+    "*********.######",
+    "*#********######",
+    "**#*******######",
+    "***#******######",
+    "****#*****######",
+    "*****#****######",
+    "******#***######",
+    "*******#**######",
+    "********#*######",
+    "*********#######",
+    "################",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "9",
+  "RobotDir": "2",
+  "RobotRow": "0",
+  "Solutions": "24",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-26T04:17:07.923",
+  "Title": "Split II (not as hard)"
+}

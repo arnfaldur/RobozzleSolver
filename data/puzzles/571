@@ -1,0 +1,53 @@
+{
+  "About": "Buzzed.",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGGRGGRGGRGGR",
+    "BBBBBGBBGBBGBBGB",
+    "RRRRGGRGGRGGRGGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2114",
+  "DifficultyVoteSum": "4912",
+  "Disliked": "35",
+  "Featured": "false",
+  "Id": "571",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "####**#**#**#**#",
+    ".....*..*..*..**",
+    "####**#**#**#**#",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "1908",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "15215",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-05-22T03:41:04.313",
+  "Title": "Bumbling Bee"
+}

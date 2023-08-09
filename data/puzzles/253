@@ -1,0 +1,53 @@
+{
+  "About": "",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRBBRRBRRRRBRR",
+    "RRRRBRRBBGBBBBRR",
+    "RRRRBBBBGGBRRBRR",
+    "RRRRBRBBGBBBRRRR",
+    "RRRBRRRBBBBBBBRR",
+    "RRRBBBBRRBBBBRRR",
+    "RRRBBBBRBBRBRRRR",
+    "RRRBRBBRBBRBBRRR",
+    "RRRRRRBBBBRRBBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "67",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "253",
+  "Items": [
+    "###.....*.....##",
+    "###...........##",
+    "###...........##",
+    "###*....*....*##",
+    "###*....*....*##",
+    "###*....*....*##",
+    "###...........##",
+    "###...........##",
+    "###.....*.....##",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "15",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "139",
+  "SubLengths": [
+    "5",
+    "7",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "presidenten",
+  "SubmittedDate": "2009-04-01T09:48:39",
+  "Title": "Haiku Tetris"
+}

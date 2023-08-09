@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRRBBBBBBBBBBRR",
+    "RRRRRBBBBBBBBRRR",
+    "RRRRRRBBBBBBRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRRRRBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "93",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "183",
+  "Items": [
+    "################",
+    "#######**#######",
+    "######****######",
+    "#####******#####",
+    "####********####",
+    "###**********###",
+    "###*****.*****##",
+    "####**********##",
+    "#####********###",
+    "######******####",
+    "#######****#####",
+    "########**######"
+  ],
+  "Liked": "18",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "78",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-22T22:27:02.063",
+  "Title": "Paint if you need"
+}

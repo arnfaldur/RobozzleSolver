@@ -1,0 +1,53 @@
+{
+  "About": "Nesting Fs",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRBBBR",
+    "RRRRRRRRBRBRBBBB",
+    "RRRRRRRRBBRRBBBB",
+    "RRRRRRRRBBRBBBRB",
+    "RRRRRRRRBRBRBBBB",
+    "RRRRRRRRRBRRBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "51",
+  "DifficultyVoteSum": "112",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "824",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#########..#...#",
+    "########...#....",
+    "########...#....",
+    "########.......*",
+    "########...#....",
+    "#########..#...#",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "28",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "186",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "feddas",
+  "SubmittedDate": "2009-06-21T03:30:15.657",
+  "Title": "Funny Fishes"
+}

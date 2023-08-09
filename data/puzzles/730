@@ -1,0 +1,53 @@
+{
+  "About": "or push and pop?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBRRRRGRRRRR",
+    "RRRGRBRRRRBRRRRR",
+    "RRRBRBRRRRBGRRRR",
+    "RRRBRBGRRRBBRRRR",
+    "RGRBRBBRRRBBRRRR",
+    "RBRBGBBRRRBBRRRR",
+    "RBRBBBBRRRBBRRRR",
+    "BGRGGGGRRRGGRRRB",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "35",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "730",
+  "Items": [
+    "################",
+    "#####*###*######",
+    "#####*###*######",
+    "#####*###**##*##",
+    "###*#*#*#**##*##",
+    "###*#*#*#***#**#",
+    "###*#***#******#",
+    "#***#***#******#",
+    "#**************#",
+    "#**************#",
+    ".**************.",
+    "################"
+  ],
+  "Liked": "7",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "32",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-09T08:51:56.877",
+  "Title": "Enqueue and Dequeue"
+}

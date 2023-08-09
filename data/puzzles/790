@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RBGBBBGBBBBBBBBR",
+    "RBBBBBBBBBBGBGBR",
+    "RBBGBBGBBBBBBBBR",
+    "RBBBBBBBGBBGBBBR",
+    "RBBBBRRBBBBBBBBR",
+    "RBBBBRRBGBGBBBBR",
+    "RBBBBBBBBBBBRRBR",
+    "RBBGBBBBBBGBRRBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "76",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "790",
+  "Items": [
+    "................",
+    "................",
+    "...****.........",
+    "......*....***..",
+    "...****....*....",
+    "...*....****....",
+    "...*.##.*.......",
+    "...*.##.***.....",
+    "...*......*.##..",
+    "...********.##..",
+    "................",
+    "................"
+  ],
+  "Liked": "18",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "148",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-17T20:41:05.187",
+  "Title": "Turning Green"
+}

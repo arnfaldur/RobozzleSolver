@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBRR",
+    "BRBRBRBRBRBRBRBR",
+    "BBBBBBBBBBBBBBBR",
+    "BRBRBRBRBRBRBRBR",
+    "BBBBBBBBBBBBBBBR",
+    "BRBRBRBRBRBRBRBR",
+    "BBBBBBBBBBBBBBBR",
+    "BRBRBRBRBRBRBRBR",
+    "BBBBBBBBBBBBBBBR",
+    "BRBRBRBRBRBRBRBR",
+    "RBBBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "82",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "342",
+  "Items": [
+    "################",
+    "***************#",
+    "*#*#*#*#*#*#*#*#",
+    "***************#",
+    "*#*#*#*#*#*#*#*#",
+    "***************#",
+    "*#*#*#*#*#*#*#*#",
+    "***************#",
+    "*#*#*#*#*#*#*#*#",
+    "***************#",
+    "*#*#*#*#*#*#*#*#",
+    ".**************#"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "95",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-04-15T10:40:19.86",
+  "Title": "Complete Grid"
+}

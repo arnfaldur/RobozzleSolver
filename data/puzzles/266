@@ -1,0 +1,53 @@
+{
+  "About": "Amrican Stars! Collect them.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGRBRBRBRBRBRBRG",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRBRBRBRBRG",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRR",
+    "RGRBRBRBRBRBRBRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "48",
+  "DifficultyVoteSum": "53",
+  "Disliked": "31",
+  "Featured": "false",
+  "Id": "266",
+  "Items": [
+    "################",
+    "#..*.*.*.*.*.*..",
+    "#.#############.",
+    "#*#############*",
+    "#.##############",
+    "#*#####..*.*.*..",
+    "#.#############.",
+    "#*#############*",
+    "#.#############.",
+    "#*#############*",
+    "#.#############.",
+    "#..*.*.*.*.*.*.."
+  ],
+  "Liked": "17",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "157",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-03T05:47:10.953",
+  "Title": "Big American G"
+}

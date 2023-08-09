@@ -1,0 +1,53 @@
+{
+  "About": "I used all F1-F5.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRRG",
+    "GGRGGBRBBBBBBGGR",
+    "RRRRRRRRRRRRRRRG",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRGRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "89",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "269",
+  "Items": [
+    "################",
+    "##*..........###",
+    "##.#########.###",
+    "##.#*......#.###",
+    "##.#.#####.#.#.#",
+    "##.#.#...#.#.##.",
+    "..........*.*..*",
+    "##.#.#...#.#.##.",
+    "##.#.#####.#.#.#",
+    "##.#.......#.###",
+    "##.#########.###",
+    "##...........###"
+  ],
+  "Liked": "24",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "81",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-03T06:36:57.03",
+  "Title": "Target"
+}

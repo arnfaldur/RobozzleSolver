@@ -1,0 +1,53 @@
+{
+  "About": "There is a short solution.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGGGGGGGGRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "4833",
+  "DifficultyVoteSum": "8255",
+  "Disliked": "255",
+  "Featured": "true",
+  "Id": "23",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "###..........###",
+    "###*.*.*.*...###",
+    "###.*.*.*.*..###",
+    "###..*.*.*.*.###",
+    "###...*.*.*.*###",
+    "###..........###",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "4527",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "56037",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:01.673",
+  "Title": "Two stripes"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRRBRBBBBBBBBBBB",
+    "RRRRRRRRRRRRRRRR",
+    "RRBGBGGGBBRBBRRG",
+    "GRRRRRRRRRRRRRRR",
+    "RRRBGGGGGGGGGGGG",
+    "GRRRRRRRRRRRRRRB",
+    "BBBGGBGGGGGBBBBR",
+    "RRRRRRRRRRRRRRRR",
+    "BGRGGRRRRRRRRRRR",
+    "BRRRRRRRRGRRRRRG",
+    "RRGGGGRGGRRRGGGB",
+    "GGBBGBBBGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "30",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "844",
+  "Items": [
+    "****************",
+    "*##############*",
+    "*#********#.****",
+    "*########*######",
+    "*#**************",
+    "*#*######*#####*",
+    "****************",
+    "##*######*######",
+    "****************",
+    "*#*######*#####*",
+    "*#**************",
+    "**********######"
+  ],
+  "Liked": "8",
+  "RobotCol": "11",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "24",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-22T09:38:50.437",
+  "Title": "Turn on the Third Color"
+}

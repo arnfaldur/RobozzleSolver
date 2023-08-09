@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "3",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRBBBRRR",
+    "RRRRRRRRRBBBBRRR",
+    "RRRRRRRRBBBBBRRR",
+    "RRRRRRRBBBBBBRRR",
+    "RRRRRRBBBBBBBRRR",
+    "RRRRRBBBBBBBBRRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "37",
+  "DifficultyVoteSum": "125",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "167",
+  "Items": [
+    "################",
+    "############*###",
+    "###########**###",
+    "##########***###",
+    "#########****###",
+    "########*****###",
+    "#######******###",
+    "######*******###",
+    "#####********###",
+    "####*********###",
+    "###.*********###",
+    "################"
+  ],
+  "Liked": "37",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "216",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-20T05:48:26.203",
+  "Title": "Different kind of counting"
+}

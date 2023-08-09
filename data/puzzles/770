@@ -1,0 +1,53 @@
+{
+  "About": "5 Function word! _ _ _ _ _",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRBRRRRRRRBR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRGGRRRRR",
+    "RRGBRRBRRBGRRRRR",
+    "RRGGRBRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGRRGRGRRGRRRRR",
+    "RRRRRRRRRRRRRGGB",
+    "RRRRRRRRRRRRRBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "183",
+  "DifficultyVoteSum": "331",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "770",
+  "Items": [
+    "######.........#",
+    "######.#######.#",
+    "#####...######.#",
+    "####.....#####.#",
+    "#####.*.######.#",
+    "######.##.*###.#",
+    "##.........###.#",
+    "##*.#*.*##.###.#",
+    "####..#..#.###.#",
+    "##*...#...*###.#",
+    "#############***",
+    ".............***"
+  ],
+  "Liked": "170",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "2322",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-14T22:53:44.077",
+  "Title": "HANG MAN"
+}

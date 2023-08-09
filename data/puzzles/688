@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BGGGGRRRBBBBRRRR",
+    "BGGGRRRRRBBBBBRR",
+    "BGGGGGGGRBBBBBBB",
+    "BGGRRBBRRRRRRRRR",
+    "BGGGGGRRRRBBBBBR",
+    "BGRRRRBBBBRRRRRR",
+    "BGGGRRRRRRBBBBBB",
+    "BGRBRRRRRRRRRRRR",
+    "BGGRRRRBBBBRRRRR",
+    "BGGGGGGRBBBBBBRR",
+    "BGGGRRBBBRRRRRRR",
+    "BGRRRRRRRBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "32",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "688",
+  "Items": [
+    "........****####",
+    "*........*****##",
+    "*........*******",
+    "*....**#########",
+    "*.........*****#",
+    "*.....****######",
+    "*.........******",
+    "*..*############",
+    "*......****#####",
+    "*.......******##",
+    "*.....***#######",
+    "*........*******"
+  ],
+  "Liked": "9",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "25",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-06T02:01:56.017",
+  "Title": "Maximum"
+}

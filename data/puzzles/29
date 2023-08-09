@@ -1,0 +1,53 @@
+{
+  "About": "Do the color's help?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRBRBBBBRBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRGBBBBBBBBGRRR",
+    "RRRGBBBBBBBBGRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRBRBBBBRBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "40",
+  "DifficultyVoteSum": "177",
+  "Disliked": "0",
+  "Featured": "true",
+  "Id": "29",
+  "Items": [
+    "################",
+    "##............##",
+    "##..###..###..##",
+    "##.#********#.##",
+    "##.#*#****#*#.##",
+    "##.#********#.##",
+    "##..***.****..##",
+    "##..********..##",
+    "##.#********#.##",
+    "##.#*#****#*#.##",
+    "##.#********#.##",
+    "##..###..###..##"
+  ],
+  "Liked": "37",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "133",
+  "SubLengths": [
+    "5",
+    "6",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": null,
+  "SubmittedDate": "2008-12-15T17:26:19.657",
+  "Title": "Space Invader"
+}

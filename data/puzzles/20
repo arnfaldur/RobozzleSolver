@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRGRRRRRRRRBRR",
+    "RRBRGRRRRRRGRBRR",
+    "RRBRGRBRRRRGRBRR",
+    "RRBRGRBRRBRGRBRR",
+    "RRBRGRBRRBRGRBRR",
+    "RRBRGRBRRRRGRBRR",
+    "RRBRGRRRRRRGRBRR",
+    "RRBRGRRRRRRRRBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "614",
+  "DifficultyVoteSum": "1475",
+  "Disliked": "21",
+  "Featured": "true",
+  "Id": "20",
+  "Items": [
+    "##............##",
+    "##.##########.##",
+    "##.#........#.##",
+    "##.#.######.#.##",
+    "##.#.#....#.#.##",
+    "##.#.#.##.#.#.##",
+    "##.#.#.#..#.#.##",
+    "##.#.#.####.#.##",
+    "##.#.#......#.##",
+    "##.#.########.##",
+    "##*#..........##",
+    "################"
+  ],
+  "Liked": "532",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "4035",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2008-12-15T03:32:01.157",
+  "Title": "Spiral to victory"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBRBGBRRRRRRRR",
+    "RRRBRBRGRRRRRRRR",
+    "RRRRRBRRRRRBGBRR",
+    "RRRGRBRGRRRRRRRR",
+    "RRRBRBRBGGGBRRRR",
+    "RRRBRBRRRRRRRRRR",
+    "BBBBBBBBGRRBRBRR",
+    "RRRBRGRRRRRBRBRR",
+    "RRRBRBRRGBRGRBRR",
+    "RRRBRRRRRRRBGBRR",
+    "RRRBRRRRRBRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "115",
+  "DifficultyVoteSum": "402",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "597",
+  "Items": [
+    "###*#*.*########",
+    "###.#.#.########",
+    "###.#.#.###*.*##",
+    "###.#.#.###.#.##",
+    "###.#.#*...*#.##",
+    "###.#.#######.##",
+    "...........*#.##",
+    "###.#.#####.#.##",
+    "###.#*...*#.#.##",
+    "###.#####.#*.*##",
+    "###*.....*######",
+    "################"
+  ],
+  "Liked": "120",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "834",
+  "SubLengths": [
+    "4",
+    "2",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "chief",
+  "SubmittedDate": "2009-05-26T17:32:38.813",
+  "Title": "Cumulative Effect"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Left on green, right on green... wait, what?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBBBBBBBBBBBG",
+    "BRRRRRGBBBBBRBBG",
+    "GBRBGRBRRRRRRRRR",
+    "RRRRBRBRGBBBBBBG",
+    "GBRBGRBRBRRRRRRB",
+    "BRRRRRBRBRBRRRRB",
+    "GBRBGRBRBRGBBBBG",
+    "RRRRBRBRBRRRRRRR",
+    "GBRBGRBRGBBBRBBG",
+    "BRRRRRBRRRRRRRRB",
+    "GBRBGRGBBBBBBBBG",
+    "BBBBGRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2075",
+  "DifficultyVoteSum": "3804",
+  "Disliked": "58",
+  "Featured": "false",
+  "Id": "425",
+  "Items": [
+    "*..............*",
+    ".#####*........*",
+    "*...*#.#########",
+    "####.#.#*......*",
+    "*...*#.#.######.",
+    ".#####.#.#.####.",
+    "*...*#.#.#*....*",
+    "####.#.#.#######",
+    "*...*#.#*......*",
+    ".#####.########.",
+    "*...*#*........*",
+    "*...*###########"
+  ],
+  "Liked": "1817",
+  "RobotCol": "10",
+  "RobotDir": "1",
+  "RobotRow": "5",
+  "Solutions": "14454",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azrael",
+  "SubmittedDate": "2009-05-03T07:01:48.797",
+  "Title": "Flip Flop"
+}

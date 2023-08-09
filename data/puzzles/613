@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBGRRRRRRRRRR",
+    "BRRRGGRRRRRRRRRR",
+    "BRRRBGBBRRRRRRRR",
+    "BRRRBBRRRRRRRRRR",
+    "BGBBGBBGRRRRRRRR",
+    "GBBBBGGGRRRRRRRR",
+    "RRRRBRBRRRRRRRRR",
+    "RRRRBRBRRRRRRRRR",
+    "RGBBBBGRRRRRRRRR",
+    "RBRRBRRRRRRRRRRR",
+    "RBRRBRRRRRRRRRRR",
+    "RGBBGRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "55",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "613",
+  "Items": [
+    "******####******",
+    "*###**####**###*",
+    "*###********###*",
+    "*###**####**###*",
+    "*.**************",
+    "****************",
+    "####*#*##*#*####",
+    "####*#*##*#*####",
+    "#******##******#",
+    "#*##*######*##*#",
+    "#*##*######*##*#",
+    "#****######****#"
+  ],
+  "Liked": "13",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "35",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-30T03:50:48.877",
+  "Title": "Symmetry - Dizziness"
+}

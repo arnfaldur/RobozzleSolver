@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGGGGGGGGR",
+    "GRGGGGGGGGGGGGRG",
+    "GGRGGGGGGGGGGRGG",
+    "GGGRGGGGGGGGRGGG",
+    "GGGGRGGGGGGRGGGG",
+    "GGGGGGRBGGRGGGGG",
+    "GGGGRGGGGGRGGGGG",
+    "GGGRGGGGGGGRGGGG",
+    "GGRGGGGGGGGGRGGG",
+    "GRGGGGGGGGGGGRGG",
+    "RGGGGGGGGGGGGGRG",
+    "GGGGGGGGGGGGGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "289",
+  "DifficultyVoteSum": "485",
+  "Disliked": "32",
+  "Featured": "false",
+  "Id": "655",
+  "Items": [
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "232",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1196",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T01:00:35.187",
+  "Title": "Basics: Easy Spiral"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRBBBBRBBBBR",
+    "RRRBRRRRRRRRRRRB",
+    "RRRBRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRBBBBRBBBRRB",
+    "RRRRBRRRRRRRRBRB",
+    "RRRRBRRRRRRRRRBR",
+    "RRRRBRRRRRRRRRRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRBBBBRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "159",
+  "DifficultyVoteSum": "519",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "76",
+  "Items": [
+    "################",
+    "###.............",
+    "###.###########.",
+    "###*###########.",
+    "###############.",
+    "####..........#.",
+    "####.########.#.",
+    "####.########...",
+    "####.###########",
+    "####.....#######",
+    "########.#######",
+    "#........#######"
+  ],
+  "Liked": "150",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1108",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-28T05:50:57.89",
+  "Title": "Count the tiles"
+}

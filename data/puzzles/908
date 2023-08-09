@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBGBBBBBGBBBR",
+    "RBRRRRRRBRRRRRRB",
+    "RBRGBRRRBRRRBGRB",
+    "RBRRRBRRRRRBRRRB",
+    "RRBBBRRRRRRRBBBR",
+    "RRRRRRRRGRRRRRRR",
+    "RRBBBRRRRRRRBBBR",
+    "RBRRRBRRRRRBRRRB",
+    "RBRGBRRRBRRRBGRB",
+    "RBRRRRRRBRRRRRRB",
+    "RRBBBGBBBBBGBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "15",
+  "DifficultyVoteSum": "46",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "908",
+  "Items": [
+    "#...............",
+    "#.######.######.",
+    "#.#*..##.##..*#.",
+    "#.###.##.##.###.",
+    "#.....##.##.....",
+    "########.#######",
+    "#.....##.##.....",
+    "#.###.##.##.###.",
+    "#.#*..##.##..*#.",
+    "#.######.######.",
+    "#...............",
+    "################"
+  ],
+  "Liked": "17",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "49",
+  "SubLengths": [
+    "8",
+    "9",
+    "2",
+    "9",
+    "8"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-26T20:27:05.11",
+  "Title": "Four Corners Of The World"
+}

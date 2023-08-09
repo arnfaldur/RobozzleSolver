@@ -1,0 +1,53 @@
+{
+  "About": "If you're spinning and get dizzy, counter it by spinning the other way.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRRRRRRRRRRRRRRG",
+    "RGRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGBBGBBGBBGRRR",
+    "RRRBRBBRRBBRBRRR",
+    "RRRBRRBRRBRRBRRR",
+    "RRRBBBBGGBBBBRRR",
+    "RRRBBBBRRBBBBRRR",
+    "RRRGBBBBBBBBGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RGRRRRRRRRRRRRRR",
+    "GRRRRRRRRRRRRRGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "57",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "491",
+  "Items": [
+    "*..............*",
+    ".*............*.",
+    "..############..",
+    "..#*..*..*..*#..",
+    "..#..........#..",
+    "..#..........#..",
+    "..#....*.....#..",
+    "..#..........#..",
+    "..#*........*#..",
+    "..####.##.####..",
+    ".*..............",
+    "*.............**"
+  ],
+  "Liked": "15",
+  "RobotCol": "8",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "77",
+  "SubLengths": [
+    "4",
+    "4",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "taintedfalcon",
+  "SubmittedDate": "2009-05-10T16:51:09.97",
+  "Title": "Winking Bull"
+}

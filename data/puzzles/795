@@ -1,0 +1,53 @@
+{
+  "About": "Subtract the two numbers to know where the stars are",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRGRRRRGGRRRR",
+    "RRRRRBRRBBRRBRRR",
+    "RRGBBBBBRBBRRGRR",
+    "GRRRRRRRRRRRRRBG",
+    "RRBRRRRRRRRRRBBR",
+    "GBBRRRBBRRBRRGRR",
+    "GRRRBBRRBRRBBRRR",
+    "RRBRGRRGRGGGGRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRGBBRBRBRRBRRBB",
+    "RRRBRRRRRBRBRBBR",
+    "RRRGRGRGGGRRRRGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "31",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "795",
+  "Items": [
+    "#####*####**####",
+    "###..........###",
+    "##............##",
+    "*..##########..*",
+    "#..##########..#",
+    "*..#..........##",
+    "*..#.........###",
+    "#..#*##*#****###",
+    "#..#############",
+    "##..............",
+    "###.............",
+    "###*#*#***####**"
+  ],
+  "Liked": "6",
+  "RobotCol": "15",
+  "RobotDir": "1",
+  "RobotRow": "9",
+  "Solutions": "14",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-18T04:33:58.5",
+  "Title": "Binary Subtraction"
+}

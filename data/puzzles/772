@@ -1,0 +1,53 @@
+{
+  "About": "BOOM! HEAD SHOT!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRBRRBBRBBRRBR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "142",
+  "DifficultyVoteSum": "260",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "772",
+  "Items": [
+    "################",
+    "#########*######",
+    "########...#####",
+    "#######..#..####",
+    "######..#.#..###",
+    "#####..##.##..##",
+    "####*.#..#..#.*#",
+    "#####..##.##..##",
+    "######..#.#..###",
+    "#######..#..####",
+    "########...#####",
+    "#########*######"
+  ],
+  "Liked": "106",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "630",
+  "SubLengths": [
+    "4",
+    "3",
+    "1",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-15T06:11:46.797",
+  "Title": "Shoot to kill!"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Just a different starting position.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBGRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRGBBBBBBBGRBRR",
+    "RRRBRRRRRRRBRBRR",
+    "RRRBRGBBBGRBRBRR",
+    "RRRBRBRRRBRBRBRR",
+    "RRRBRBRBRBRBRBRR",
+    "RRRBRBRBBGRBRBRR",
+    "RRRBRBRRRRRBRBRR",
+    "RRRBRGBBBBBGRBRR",
+    "RRRBRRRRRRRRRBRR",
+    "RRRBBBBBBBBBBGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "52",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "932",
+  "Items": [
+    "#.............##",
+    "#############.##",
+    "###.........#.##",
+    "###.#######.#.##",
+    "###.#.....#.#.##",
+    "###.#.###.#.#.##",
+    "###.#.#*#.#.#.##",
+    "###.#.#...#.#.##",
+    "###.#.#####.#.##",
+    "###.#.......#.##",
+    "###.#########.##",
+    "###...........##"
+  ],
+  "Liked": "13",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "43",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-29T15:01:47.22",
+  "Title": "Unmarked Turn Spiral 2"
+}

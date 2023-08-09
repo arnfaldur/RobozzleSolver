@@ -1,0 +1,53 @@
+{
+  "About": "... if there were no spectators?",
+  "AllowedCommands": "1",
+  "Colors": [
+    "BRRRRRRRRRRRRRRB",
+    "RBRRRGRRRRGRGRRB",
+    "RBRGRGRRRRGRRRBR",
+    "RBRRRGRRRRGRGRBR",
+    "RBRGRGRRRRGRRRBR",
+    "RBRRRGRRRRGRGRBR",
+    "RBRGRGRRRRGRRRBR",
+    "RBRRRGRRRRGRGRBR",
+    "RBRGRGRRRRGRRRBR",
+    "RBRRRGRRRRGRGRBR",
+    "RBRGRGRRRRGRRRRB",
+    "BRRRRRRRRRRRRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "22",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "598",
+  "Items": [
+    "................",
+    ".....*....*.*...",
+    "...*.*....*.....",
+    ".....*....*.*...",
+    "...*.*....*.....",
+    ".....*....*.*...",
+    "...*.*....*.....",
+    ".....*....*.*...",
+    "...*.*....*.....",
+    ".....*....*.*...",
+    "...*.*....*.....",
+    "................"
+  ],
+  "Liked": "6",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "28",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "thenick22",
+  "SubmittedDate": "2009-05-26T18:08:14.72",
+  "Title": "Would they still play sports..."
+}

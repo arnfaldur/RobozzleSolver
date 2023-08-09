@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBGRRRRBRRR",
+    "RRRRRRRGRRRRBRRR",
+    "RRRRBBBGRRBRBRRR",
+    "RRRRRRRGRRBRBRRR",
+    "RRRRRRBGBRBRBRRR",
+    "RRGGGGGRGGGGGRRR",
+    "RRBRBRBGBRRRRRRR",
+    "RRBRBRRGRRRRRRRR",
+    "RRBRBRRGBBBRRRRR",
+    "RRBRRRRGRRRRRRRR",
+    "RRBRRRRGBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "149",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "400",
+  "Items": [
+    "################",
+    "##******####*###",
+    "#######*####*###",
+    "####****##*#*###",
+    "#######*##*#*###",
+    "######***#*#*###",
+    "##*****.*****###",
+    "##*#*#***#######",
+    "##*#*##*########",
+    "##*#*##****#####",
+    "##*####*########",
+    "##*####******###"
+  ],
+  "Liked": "38",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "141",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-29T06:44:24.343",
+  "Title": "Spinning Propeller"
+}

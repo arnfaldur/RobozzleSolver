@@ -1,0 +1,53 @@
+{
+  "About": "right, right, right, right, aam...",
+  "AllowedCommands": "6",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBRRGBBBGRRRR",
+    "RBRRRBRBRRRBRRRR",
+    "RBRRRRRBRRRBRRRR",
+    "RBRRRRRBRRRBRRRR",
+    "RBRRRRRRBBBGRRRR",
+    "RBRRRRRBRRRRRRRR",
+    "RBRRRRRBRRRRRRRR",
+    "RBRRRGRBRRRRRRRR",
+    "RRBBBRBRBBBBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "135",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "551",
+  "Items": [
+    "################",
+    "#.***.#.***.####",
+    "#*###.#*###*####",
+    "#*#####*###*####",
+    "#*#####*###*####",
+    "#*#####.***.####",
+    "#*#####*########",
+    "#*#####*########",
+    "#*###*#*########",
+    "#.***.*....*####",
+    "################",
+    "################"
+  ],
+  "Liked": "31",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "2",
+  "Solutions": "165",
+  "SubLengths": [
+    "1",
+    "4",
+    "3",
+    "7",
+    "5"
+  ],
+  "SubmittedBy": "ddakev",
+  "SubmittedDate": "2009-05-19T10:22:02.61",
+  "Title": "CP"
+}

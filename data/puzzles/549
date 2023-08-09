@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBRRRRRRRR",
+    "GGGGGGGGRRRRRRRR",
+    "GGGGRGGGRRRRRRRR",
+    "GRGGGGRGRRRRRRRR",
+    "GGGGRGGGRRRRRRRR",
+    "GGRGGGGRRRRRRRRR",
+    "GGGGGRGGRRRRRRRR",
+    "GGGGGGGGRRRRRRRR",
+    "GGRGGGGRRRRRRRRR",
+    "GGGGRGGGRRRRRRRR",
+    "GGGGGGGGRRRRRRRR",
+    "BBBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "30",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "549",
+  "Items": [
+    "........########",
+    "****************",
+    "****.******#****",
+    "*.****.**#****#*",
+    "****.******#****",
+    "**.****.#****#**",
+    "*****.****#*****",
+    "****************",
+    "**.****.#****#**",
+    "****.******#****",
+    ".***************",
+    "........########"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "87",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-18T15:13:54.377",
+  "Title": "Minefield"
+}

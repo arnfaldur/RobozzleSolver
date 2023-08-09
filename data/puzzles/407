@@ -1,0 +1,53 @@
+{
+  "About": "the only thing that matters is the first corner.",
+  "AllowedCommands": "4",
+  "Colors": [
+    "BBGBGBBRRRBBGBBR",
+    "BRBRBRBRRRBRBRBR",
+    "BBBBBBGRRRGBBBGR",
+    "RRRRBRBRRRBRBRBR",
+    "RRBBBBGRBBRBRBGR",
+    "RRBRBRBRBRBRGRGR",
+    "BBRBGBBRGBBRRRGR",
+    "BRBRRRRRBRBRRRRR",
+    "BBRBGBGBRBBRGGGR",
+    "RRBRBRBRBRRRGRGR",
+    "RRBBBBBBBRRRGGGR",
+    "RRRRRRRRRRRRRRGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "98",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "407",
+  "Items": [
+    "..*.*.*###*.*.*#",
+    ".#.#.#.###.#.#.#",
+    "*.*.*.*###*.*.*#",
+    "####.#.###.#.#.#",
+    "##*.*.*#*.*.*.*#",
+    "##.#.#.#.#.#.#.#",
+    "*.*.*.*#*.*#*.*#",
+    ".#.#####.#.#.#.#",
+    "*.*.*.*.*.*#*.*#",
+    "##.#.#.#.###.#.#",
+    "##*.*.*.*###*.*#",
+    "##############*#"
+  ],
+  "Liked": "27",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "0",
+  "Solutions": "168",
+  "SubLengths": [
+    "10",
+    "10",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-04-30T23:31:57.627",
+  "Title": "cubicles"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBG",
+    "GRRRGRRRRGRRRGGB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRRRRRRRRRRRRRRB",
+    "RRGRRRGGRRRGRRRB",
+    "BBBBBBBBBBBBBBBG",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "89",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "471",
+  "Items": [
+    "################",
+    "################",
+    "................",
+    ".*#***##***#***.",
+    "#*#*#*##*#*#*##.",
+    "###############.",
+    "#*#*#*##*#*#*##.",
+    "#***#****#***##.",
+    "................",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "18",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "172",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-07T19:35:42.5",
+  "Title": "Burnt Bridges 2 - Snake Bridge"
+}

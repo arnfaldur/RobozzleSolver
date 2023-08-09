@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGBBBBBBBGRRR",
+    "RRRGGBBBBBBBGGRR",
+    "RRRBBRBBBBBRBBRR",
+    "RRRBBBRGGGRBBBRR",
+    "RRRBBBGRGRGBBBRR",
+    "RRRBBBGGRGGBBBRR",
+    "RRRBBBGRGRGBBBRR",
+    "RRRBBBRGGGRBBBRR",
+    "RRRBBRBBBBBRBBRR",
+    "RRRGGBBBBBBBGGRR",
+    "RRRRGBBBBBBBGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "25",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "753",
+  "Items": [
+    "####.........###",
+    "###...........##",
+    "###..#.....#..##",
+    "###...#***#...##",
+    "###...*#*#*...##",
+    "###...**.**...##",
+    "###...*#*#*...##",
+    "###...#***#...##",
+    "###..#.....#..##",
+    "###...........##",
+    "####.........###",
+    "################"
+  ],
+  "Liked": "6",
+  "RobotCol": "12",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "33",
+  "SubLengths": [
+    "7",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-13T06:16:25.453",
+  "Title": "X Marks the Spot"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBRRR",
+    "BRRRRRRRRRRRGRRR",
+    "BRRGGGGGGGRRGRRR",
+    "BRGRRRRRRRGRGRRR",
+    "BRGRRGGGRRGRGRRR",
+    "BRGRGRRRGRGRGRRR",
+    "BRGRGRGRGRGRGRRR",
+    "BRGRGRRGRRGRGRRR",
+    "BRGRGRRRRRGRGRRR",
+    "BRGRRGGGGGRRGRRR",
+    "BRGRRRRRRRRRGRRR",
+    "BRRGGGGGGGGGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "107",
+  "DifficultyVoteSum": "222",
+  "Disliked": "18",
+  "Featured": "false",
+  "Id": "680",
+  "Items": [
+    ".............###",
+    ".###########.###",
+    ".#.........#.###",
+    ".#.#######.#.###",
+    ".#.#.....#.#.###",
+    ".#.#.###.#.#.###",
+    ".#.#.#*#.#.#.###",
+    ".#.#.#...#.#.###",
+    ".#.#.#####.#.###",
+    ".#.#.......#.###",
+    ".#.#########.###",
+    ".#...........###"
+  ],
+  "Liked": "77",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "502",
+  "SubLengths": [
+    "4",
+    "4",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-05T09:58:55.89",
+  "Title": "the hard spiral"
+}

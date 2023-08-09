@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRGGGGGGGGGG",
+    "GRGRGRGRRRRRRRRG",
+    "GRGRGRGRGGGGGGRG",
+    "GRGRGRGRGRRRRGRG",
+    "GRGRGRGRGRBBRGRG",
+    "GRGRGRGRGRGGRGRG",
+    "GRGRGRRRRRRGRGRG",
+    "GRGRBGGGGGGBRGRG",
+    "GRGRRRRRRRRRRGRG",
+    "GRGGGGGGGGGGGGRG",
+    "GRRRRRRRRRRRRRRG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "77",
+  "DifficultyVoteSum": "288",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "329",
+  "Items": [
+    "*****#**********",
+    "*#*#*#*########*",
+    "*#*#*#*#******#*",
+    "*#*#*#*#*####*#*",
+    "*#*#*#*#*#**#*#*",
+    "*#*#*#*#*#.*#*#*",
+    "*#*#*######*#*#*",
+    "*#*#********#*#*",
+    "*#*##########*#*",
+    "*#************#*",
+    "*##############*",
+    "****************"
+  ],
+  "Liked": "78",
+  "RobotCol": "10",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "613",
+  "SubLengths": [
+    "4",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-09T05:54:17.577",
+  "Title": "Layered Sheets"
+}

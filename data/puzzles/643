@@ -1,0 +1,53 @@
+{
+  "About": "the wall is good  :))",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBBBBBBBBR",
+    "RBBBBBBBRRRRRRRR",
+    "RBBBBBBRBBBBBBBR",
+    "RBBBBBBRBBBBBBBR",
+    "RBBBBBBRBBBBBBBR",
+    "RBBBBBBRBBBBBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "529",
+  "DifficultyVoteSum": "751",
+  "Disliked": "100",
+  "Featured": "false",
+  "Id": "643",
+  "Items": [
+    "................",
+    ".*............*.",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    ".*............*.",
+    "................"
+  ],
+  "Liked": "396",
+  "RobotCol": "7",
+  "RobotDir": "1",
+  "RobotRow": "6",
+  "Solutions": "2149",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "paninmischa",
+  "SubmittedDate": "2009-06-03T13:43:16.11",
+  "Title": "easy"
+}

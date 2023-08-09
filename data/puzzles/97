@@ -1,0 +1,53 @@
+{
+  "About": "clear math, no hacker's features :)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBRRRRRRRRBRRR",
+    "RRRBGGGGGGGRBRRR",
+    "RRRBGRRRRRGRBRRR",
+    "RRRBGRRRRRGRBRRR",
+    "RRRBGRRRRRGRBRRR",
+    "RRRBGRRRRRGRBRRR",
+    "RRRBRRRRRRGRBRRR",
+    "RRRGGGGGGGGRBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "93",
+  "DifficultyVoteSum": "342",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "97",
+  "Items": [
+    "################",
+    "###*........*###",
+    "###.########.###",
+    "###.*.....*#.###",
+    "###..#####.#.###",
+    "###..*..*#.#.###",
+    "###...##.#.#.###",
+    "###...##.#.#.###",
+    "###..*..*#.#.###",
+    "###.......*#.###",
+    "###.........*###",
+    "################"
+  ],
+  "Liked": "89",
+  "RobotCol": "3",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "539",
+  "SubLengths": [
+    "3",
+    "4",
+    "4",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-05T15:13:05.767",
+  "Title": "Smart lemma"
+}

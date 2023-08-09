@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBRBBBRBBBR",
+    "RBBRBRBRBRBRBRBR",
+    "RBRRRRBRBRBRBRBR",
+    "RBBBBRBRBRBBBRBR",
+    "RRRRRRBRBRRRRRBR",
+    "RBBBBBBRRRBBBBBR",
+    "RBRRBRBBBBBRBRRR",
+    "RBBRBRRRRRRRRRRR",
+    "RRBRBBBRBBBRBBBR",
+    "RBBRBRBBBRBBBRBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "286",
+  "DifficultyVoteSum": "476",
+  "Disliked": "72",
+  "Featured": "false",
+  "Id": "588",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "....*...........",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "208",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "1230",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-05-25T06:26:49.03",
+  "Title": "a Maze 2"
+}

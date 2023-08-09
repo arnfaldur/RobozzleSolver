@@ -1,0 +1,53 @@
+{
+  "About": "check all corners...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGRGGRGGRRR",
+    "RRRRRGGGGGGGGBRR",
+    "RRRRRRRRRRRRRGGR",
+    "RRRRRRBRRRBRRGGR",
+    "RRRRRRRBBBRRRGRR",
+    "RRRRRRRRRRRRRGGR",
+    "RRRRRRRRRRRRRGGR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRRRRRBRBRRRGGR",
+    "RRRRRRRRBRRRRGGR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1387",
+  "DifficultyVoteSum": "3360",
+  "Disliked": "101",
+  "Featured": "false",
+  "Id": "514",
+  "Items": [
+    "################",
+    "#####**#**#**###",
+    "#####.********##",
+    "#############**#",
+    "####.#.###.#.**#",
+    "#####.......#*##",
+    "#######.#.###**#",
+    "#####.#####.#**#",
+    "#####.#####.#*##",
+    "######..#..##**#",
+    "#######...###**#",
+    "########.####*##"
+  ],
+  "Liked": "1028",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "9575",
+  "SubLengths": [
+    "6",
+    "5",
+    "2",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "evilknievel",
+  "SubmittedDate": "2009-05-13T10:21:51.827",
+  "Title": "Evil Knievel's Evil Cave"
+}

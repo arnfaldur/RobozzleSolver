@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBGBBRRR",
+    "RBGBBRRRRBRRBBBR",
+    "RBRRBBBRRGRRRRBR",
+    "RGRRRRGRRBBRRRRR",
+    "RBBRRRBRRRBRRRRR",
+    "RRBRRRBBRBBRRRRR",
+    "RRBRRRRBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "323",
+  "DifficultyVoteSum": "757",
+  "Disliked": "11",
+  "Featured": "false",
+  "Id": "74",
+  "Items": [
+    "################",
+    "################",
+    "#########....###",
+    "#....####.##...#",
+    "#.##...##.####*#",
+    "#.####.##...####",
+    "#...##.###.#####",
+    "##.##...#..#####",
+    "##.####...######",
+    "#########.######",
+    "################",
+    "################"
+  ],
+  "Liked": "358",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "1755",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-02-27T19:55:29.327",
+  "Title": "Knight"
+}

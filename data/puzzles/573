@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBRRRRRRRRBRRRR",
+    "RRBRBRRRRRRBRBBB",
+    "RRGBGRBRRRRGBGRR",
+    "RRBRBBGRBRRBBGRR",
+    "BBBRRRGBGBBBRRRR",
+    "RRRRRRBRBBGGBRRR",
+    "RRRRBGBRRRBRRRRR",
+    "RRRRRGBBRBGBRRRR",
+    "RRRGBBRBRBRRRRRR",
+    "RRRBRRRBBGBRRRRR",
+    "RBBBRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "12",
+  "DifficultyVoteSum": "38",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "573",
+  "Items": [
+    "##*########*####",
+    "##.#*######.#..*",
+    "##...#*####...##",
+    "##.#...#*##...##",
+    "*..###...*..####",
+    "######.#....*###",
+    "####*..###.#####",
+    "#####...#..*####",
+    "###...#.#.######",
+    "###.###*..*#####",
+    "#*..####.#######",
+    "########.#######"
+  ],
+  "Liked": "12",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "55",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-22T05:46:03.03",
+  "Title": "Twisted Tree"
+}

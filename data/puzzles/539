@@ -1,0 +1,53 @@
+{
+  "About": "dizzy yet?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBR",
+    "BRRRRRRRRRRRRRRB",
+    "BRRBBBBBBBBBBRRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRBRRBBBBBBRRBRB",
+    "BRBRBRRRRRRBRBRB",
+    "BRBRBRRRRGRBRBRB",
+    "BRBRRBBBBRRBRBRB",
+    "BRBRRRRRRRRBRBRB",
+    "BRRBBBBBBBBRRBRB",
+    "BRRRRRRRRRRRRBRB",
+    "RBBBBBBBBBBBBRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2998",
+  "DifficultyVoteSum": "6536",
+  "Disliked": "159",
+  "Featured": "false",
+  "Id": "539",
+  "Items": [
+    "................",
+    ".##############.",
+    ".#............#.",
+    ".#.##########.#.",
+    ".#.#........#.#.",
+    ".#.#.######.#.#.",
+    ".#.#.####*#.#.#.",
+    ".#.#......#.#.#.",
+    ".#.########.#.#.",
+    ".#..........#.#.",
+    ".############.#.",
+    "..............#*"
+  ],
+  "Liked": "2685",
+  "RobotCol": "15",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "26050",
+  "SubLengths": [
+    "4",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-05-16T20:45:51.64",
+  "Title": "Hypnotize"
+}

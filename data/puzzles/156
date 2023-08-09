@@ -1,0 +1,53 @@
+{
+  "About": "easier than it seems",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBBBBB",
+    "RRBBBBBBGBBBBBBB",
+    "RRBBBBBGBGBBBBBB",
+    "RRBBBBBBGBBBBBBB",
+    "RRBBBBBBBBRRBBBR",
+    "RRBBBRBBBBRBBRBB",
+    "RRBBBBBRRRRBRRRB",
+    "RRBBBBBRRRRBBBBB",
+    "RRBBBBBGGGGBRRRB",
+    "RRRRRRRRRRRBRRRB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "386",
+  "DifficultyVoteSum": "818",
+  "Disliked": "68",
+  "Featured": "false",
+  "Id": "156",
+  "Items": [
+    "################",
+    "################",
+    "##..........*...",
+    "##..............",
+    "##..............",
+    "##..............",
+    "##........##...#",
+    "##........#..#..",
+    "##.....#..#.###.",
+    "##.....#..#.....",
+    "##..........###.",
+    "###########.###."
+  ],
+  "Liked": "298",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "1601",
+  "SubLengths": [
+    "4",
+    "3",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rostik",
+  "SubmittedDate": "2009-03-19T04:38:07.093",
+  "Title": "Stairs to star"
+}

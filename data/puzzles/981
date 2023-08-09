@@ -1,0 +1,53 @@
+{
+  "About": "1 Function Method",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RGBGBBGGGBGBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "98",
+  "DifficultyVoteSum": "290",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "981",
+  "Items": [
+    "################",
+    "#######.....####",
+    "#######.###.####",
+    "#######*###.####",
+    "###########.####",
+    "#########.....##",
+    "#########.#.#.##",
+    "#########...#.##",
+    "#############.##",
+    "#############.##",
+    "#############.##",
+    "..............##"
+  ],
+  "Liked": "85",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1406",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T14:28:43.327",
+  "Title": "Stack Memory Tutorial 1"
+}

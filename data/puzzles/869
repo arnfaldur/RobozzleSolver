@@ -1,0 +1,53 @@
+{
+  "About": "hint: release recursive energy in the pits before resuming your trip",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGGGGGRRRRRR",
+    "RRGRRRRRRRGRRGRR",
+    "RRGRRRRBRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRGRRRRRRGRR",
+    "RRGRRRGRRGRRRGRR",
+    "RRGRRRRRRRGGGRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRGRRGRRRRRRRRRR",
+    "RRRRRRGGGGGGGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "53",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "869",
+  "Items": [
+    "################",
+    "##............##",
+    "##.#######*##.##",
+    "##.###.*#####.##",
+    "##.###.######.##",
+    "##.###.######.##",
+    "##.###.##*###.##",
+    "##.###........##",
+    "##.#############",
+    "##.#############",
+    "##.##*##########",
+    "##...........###"
+  ],
+  "Liked": "14",
+  "RobotCol": "12",
+  "RobotDir": "2",
+  "RobotRow": "11",
+  "Solutions": "52",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-23T18:33:01.953",
+  "Title": "Energy Overload - Pit Stops"
+}

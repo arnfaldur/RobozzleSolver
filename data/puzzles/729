@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRRBGRRRR",
+    "RRRRRRRGRRBBRRRR",
+    "RRGRRRRBRRBBRRRR",
+    "RRBRRRRBGRBBRRRR",
+    "RRBRRRGBBRBBRRRR",
+    "GRBRRRBBBRBBRRRR",
+    "BRBGRRBBBRBBRRRR",
+    "BRBBRRBBBRBBRRRR",
+    "GRGGRRGGGRGGRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "65",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "729",
+  "Items": [
+    "################",
+    "##########*##*##",
+    "##########****##",
+    "#######*##*****#",
+    "##*##*#*##*****#",
+    "##*##*#********#",
+    "##*##***********",
+    "***##***********",
+    "****************",
+    "****************",
+    ".***************",
+    "################"
+  ],
+  "Liked": "21",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "76",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-09T07:14:11.437",
+  "Title": "Push and Pop"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "Such a bizzare walk for a simple pattern... (Alt title: Looks Like New York).",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRBBBRRRR",
+    "RRRRRRRRBBBBRRRR",
+    "RRRRRRRRBBBBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RBBBBBBBBBBBBRRR",
+    "BBBBBBBBBBBRRRRR",
+    "BBBBBBBBBBBBRRRR",
+    "RBBBBBBBBBBBBBBR",
+    "RRRBBBBBBBBBBBBB",
+    "RRRRRRRRBBBBRBBB",
+    "RRRRRRRRRRRRRBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "89",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "512",
+  "Items": [
+    "#########***####",
+    "########****####",
+    "########****####",
+    "####********####",
+    "###**********###",
+    "#************###",
+    "***********#####",
+    "************####",
+    "#********.*****#",
+    "###*************",
+    "########****#***",
+    "#############**#"
+  ],
+  "Liked": "15",
+  "RobotCol": "9",
+  "RobotDir": "2",
+  "RobotRow": "8",
+  "Solutions": "70",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "azure",
+  "SubmittedDate": "2009-05-13T03:53:36.047",
+  "Title": "From the Ministry of Silly Walks"
+}

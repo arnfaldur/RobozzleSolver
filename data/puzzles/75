@@ -1,0 +1,53 @@
+{
+  "About": "The solution should just fall into place...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBBRRRRRRRRRRR",
+    "RRBBRRRRRRRRRRRR",
+    "RRRRRRGRBRRRBBRR",
+    "RRRRGGGBBGRRRBBR",
+    "RGGGRRRBRGRRRGRR",
+    "RGRBRRBRRGGBBGRR",
+    "RGBBRRBBRRBBGGRB",
+    "RGBRRGRBRRRBBRBB",
+    "GGRRRGRRGGGRBBBG",
+    "RBBRGGRBBRGRRBBG",
+    "BBRRRRBBRRRRBBGG",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "726",
+  "DifficultyVoteSum": "1408",
+  "Disliked": "120",
+  "Featured": "false",
+  "Id": "75",
+  "Items": [
+    "###..#######.###",
+    "##..#######.*.##",
+    ".#####.#.###..##",
+    "..##......###..#",
+    "..........###..#",
+    "#.#.#...........",
+    "#...##..........",
+    "#...#........#..",
+    "................",
+    "#...............",
+    ".....#..........",
+    "################"
+  ],
+  "Liked": "708",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "2551",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-02-27T20:28:05.953",
+  "Title": "Tetris"
+}

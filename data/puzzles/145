@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGGGGGGGGGGRRR",
+    "RRRGRRRRRRRRGRRR",
+    "RRRGRRGGGGRRRRRR",
+    "RRRGRGRGGRGRGRRR",
+    "RRRGRGGRRGGRGRRR",
+    "RRRGRGGRGRGRGRRR",
+    "RRRRRGRGGGRRGRRR",
+    "RRRGRGRRRRRRGRRR",
+    "RRRGRGGGGGGRGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "63",
+  "DifficultyVoteSum": "242",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "145",
+  "Items": [
+    "################",
+    "###..........###",
+    "###.########.###",
+    "###.#*....*#*###",
+    "###.#.*..*.#.###",
+    "###.#..**..#.###",
+    "###.#..*.*.#.###",
+    "###*#.*...*#.###",
+    "###.#.######.###",
+    "###.#......*.###",
+    "################",
+    "################"
+  ],
+  "Liked": "64",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "267",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-16T17:09:33",
+  "Title": "Speed control"
+}

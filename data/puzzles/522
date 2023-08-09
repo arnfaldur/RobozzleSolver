@@ -1,0 +1,53 @@
+{
+  "About": "Try to chessmate!!!",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBRBRBRBRBRBRBRB",
+    "BGBRBRBRBRBRBRBG",
+    "RBGBRBRBRBRBRBGB",
+    "BRBRBGBRBRBRGRBR",
+    "RBRBRBRBGBGBRBRB",
+    "BRBRBRBRBRBRBRBR",
+    "RBRBRBRBGBRBRBRB",
+    "BRBRBGBRBRGRBRBR",
+    "RBGBRBRBRBRBGBRB",
+    "BGBRBRBRBRBRBRGR",
+    "GBRBRBRBRBRBRBRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "42",
+  "Disliked": "22",
+  "Featured": "false",
+  "Id": "522",
+  "Items": [
+    "################",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    ".........*......",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "17",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "1",
+  "Solutions": "114",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ddakev",
+  "SubmittedDate": "2009-05-14T13:20:28.877",
+  "Title": "Chessmate"
+}

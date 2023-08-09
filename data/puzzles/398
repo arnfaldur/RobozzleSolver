@@ -1,0 +1,53 @@
+{
+  "About": "There's a method to the madness",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGGGGRRRRBBRRR",
+    "RGRRRRRGRRBRRBRR",
+    "RGRRRRRGRRBRRBRR",
+    "RGRGGGGRRRBRRBRR",
+    "RGRRRRRRRRGRRBRR",
+    "RGRRRRRRRRGRRBRR",
+    "RRGGGGGGGGRRRBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RBBBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "523",
+  "DifficultyVoteSum": "1429",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "398",
+  "Items": [
+    "#.......##....##",
+    "#.#####.##.##.##",
+    "#.#####.##.##.##",
+    "#.#*....##.##.##",
+    "#.########.##.##",
+    "#.########.##.##",
+    "#..........##.##",
+    "#############.##",
+    "#############.##",
+    "#.............##",
+    "################",
+    "################"
+  ],
+  "Liked": "438",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "3317",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-04-29T03:33:31.47",
+  "Title": "Jekyll and Hyde"
+}

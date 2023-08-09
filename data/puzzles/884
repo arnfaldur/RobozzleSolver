@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "BBBGBBBRRRRRRRRR",
+    "BBBBBBGRRRRRRRRR",
+    "RRBBRBBRRRRRRRRR",
+    "RRBBRBBRRRRRRRRR",
+    "RRBBRBBRRRRRRRRR",
+    "RRRRBBGBRRRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "59",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "884",
+  "Items": [
+    "################",
+    "#####**##**#####",
+    "#####**##**#####",
+    "#####**##**#####",
+    "*******##*******",
+    "*******##*******",
+    "##.*#**##**#**##",
+    "##**#**##**#**##",
+    "##**#**##**#**##",
+    "####********####",
+    "####********####",
+    "################"
+  ],
+  "Liked": "19",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "84",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-25T17:36:22.577",
+  "Title": "Symmetry - Double Width"
+}

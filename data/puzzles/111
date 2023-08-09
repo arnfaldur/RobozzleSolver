@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RBBBBBBBBBRRBRRR",
+    "RBBBBBBBBRRBBRRR",
+    "RBBBBBBBRRBBBRRR",
+    "RBBBBBBRRBBBBRRR",
+    "RBBBBBRGBBBBBRRR",
+    "RBBBBRRBBBBBBRRR",
+    "RBBBRRBBBBBBBRRR",
+    "RBBRRBBBBBBBBRRR",
+    "RBRRBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3597",
+  "DifficultyVoteSum": "5825",
+  "Disliked": "558",
+  "Featured": "false",
+  "Id": "111",
+  "Items": [
+    "################",
+    "**************##",
+    "**********.***##",
+    "**************##",
+    "**************##",
+    "**************##",
+    "*******.******##",
+    "**************##",
+    "**************##",
+    "**************##",
+    "**************##",
+    "**************##"
+  ],
+  "Liked": "3004",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "28308",
+  "SubLengths": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T10:10:02.127",
+  "Title": "Flooder"
+}

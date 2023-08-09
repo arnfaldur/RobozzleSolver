@@ -1,0 +1,53 @@
+{
+  "About": "Worm Hole! in Timespace!",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RGGGGGGGGGGGGGGR",
+    "BRRRRRRRRRRRRRRG",
+    "GRRGGGGGGGGGGRRG",
+    "BRGRRRRRRRRRRGRG",
+    "GRGRRGGGGGGRRGRG",
+    "BRGRGRRRRRRGRGRG",
+    "RGBGBGBGBGBGBGBG",
+    "BRGRGRRRRRRRRGRG",
+    "GRGRGRRRRRRRRGRG",
+    "BRGRRGGGGGGGGRRG",
+    "GRGRRRRRRRRRRRRG",
+    "BRRGGGGGGGGGGGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "52",
+  "DifficultyVoteSum": "128",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "755",
+  "Items": [
+    "*..............*",
+    ".##############.",
+    ".#*..........*#.",
+    ".#.##########.#.",
+    ".#.#*......*#.#.",
+    ".#.#.######.#.#.",
+    "*...............",
+    ".#.#.######*#.#.",
+    ".#.#.########.#.",
+    ".#.#*........*#.",
+    ".#.############.",
+    "*#*............*"
+  ],
+  "Liked": "47",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "254",
+  "SubLengths": [
+    "4",
+    "4",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-13T21:39:14.343",
+  "Title": "Blue Star Bizzar"
+}

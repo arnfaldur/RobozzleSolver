@@ -1,0 +1,53 @@
+{
+  "About": "first do blue; done? do stairs",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRGRR",
+    "RRRRRRRRRRRRBGRR",
+    "RRRRRRRRRRRRBRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRBGRRRRR",
+    "RRRRRRRRRBRRRRRR",
+    "RRBBBBBGRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "224",
+  "DifficultyVoteSum": "421",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "562",
+  "Items": [
+    "################",
+    "################",
+    "#############.##",
+    "############*.##",
+    "###########*.###",
+    "##########*.####",
+    "#########*.#####",
+    "########*.######",
+    "##.......#######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "180",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "2467",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cobaltblue",
+  "SubmittedDate": "2009-05-20T19:06:19.843",
+  "Title": "Recursion Review"
+}

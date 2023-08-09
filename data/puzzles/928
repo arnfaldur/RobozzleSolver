@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRBBGGBBBGGBBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRGRRBRRRBBRGRRR",
+    "RRGRRBRRRRBRGRRR",
+    "RRGBBBRRRRBRGRRR",
+    "RRRRBRRGRBBBBRRR",
+    "RRRRBRRRRBRRRRRR",
+    "RRRRBBGGGBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "40",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "928",
+  "Items": [
+    "################",
+    "################",
+    "##..**...**..###",
+    "##.####.####.###",
+    "##*##......#*###",
+    "##*##.#.##.#*###",
+    "##*...#.##.#*###",
+    "####.##*#....###",
+    "####.####.######",
+    "####..***.######",
+    "################",
+    "################"
+  ],
+  "Liked": "8",
+  "RobotCol": "10",
+  "RobotDir": "3",
+  "RobotRow": "7",
+  "Solutions": "31",
+  "SubLengths": [
+    "9",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-29T04:52:52.907",
+  "Title": "The Scarlet Cross"
+}

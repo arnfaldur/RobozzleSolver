@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBBBBBBBBBR",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "RBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "222",
+  "DifficultyVoteSum": "526",
+  "Disliked": "59",
+  "Featured": "false",
+  "Id": "98",
+  "Items": [
+    "################",
+    "*....*....*....*",
+    "................",
+    "................",
+    "................",
+    "................",
+    "*.........*....*",
+    "................",
+    "................",
+    "................",
+    "................",
+    "*....*....*....*"
+  ],
+  "Liked": "155",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "827",
+  "SubLengths": [
+    "8",
+    "4",
+    "4",
+    "3",
+    "2"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-05T18:10:25.86",
+  "Title": "Fly in the sky II"
+}

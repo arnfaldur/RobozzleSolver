@@ -1,0 +1,53 @@
+{
+  "About": "sort the vertical sequences on the left based on position (row, column)",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RBGBBBBRGGGGGRRR",
+    "RBGBGBGRGGRRRRRR",
+    "RBGBGBBRGRRRRRRR",
+    "RGGGBGGRGGGGRRRR",
+    "RGGGBGGRGGGGGGGG",
+    "RGBGGBGRGGRRRRRR",
+    "RGGGBBGRGGGGGGRR",
+    "RBGGGGGRGRRRRRRR",
+    "RGGGGGGRGGGGGRRR",
+    "RGGGBGBRGGRRRRRR",
+    "RGGGBGBRGGGGRRRR",
+    "BRRRRRRBGGGRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "15",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "785",
+  "Items": [
+    "..*.....*****###",
+    "..*.*.*.**######",
+    "..*.*...*#######",
+    ".***.**.****####",
+    ".***.**.********",
+    ".*.**.*.**######",
+    ".***..*.******##",
+    "..*****.*#######",
+    ".******.*****###",
+    ".***.*..**######",
+    ".***.*..****####",
+    "*......****#####"
+  ],
+  "Liked": "3",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "11",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "10",
+    "5"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-06-16T20:53:43.327",
+  "Title": "sorting IV - tab order"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRBR",
+    "BRRRRRRRRBRRRRGR",
+    "GRRBRRBRRGRRRRGR",
+    "GRRGRBGRRGRRRRGR",
+    "GRRGRGGBRGRRRBGR",
+    "GRRGRGGGRGRRRGGR",
+    "RRRRRRRRRRRBRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRB",
+    "RBRRBRRRRRRRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRRRBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "91",
+  "DifficultyVoteSum": "209",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "714",
+  "Items": [
+    "##############*#",
+    "*########*####*#",
+    "*##*##*##*####*#",
+    "*##*#**##*####*#",
+    "*##*#***#*###**#",
+    ".***************",
+    "#**#*###*#***##*",
+    "#**#*###*#*#*##*",
+    "#*##*###*#*#*##*",
+    "#*##*#####*#*###",
+    "##########*#*###",
+    "############*###"
+  ],
+  "Liked": "93",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "1202",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-08T09:29:00.187",
+  "Title": "Ups and Downs"
+}

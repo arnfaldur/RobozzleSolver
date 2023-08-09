@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGGRGRRRRRR",
+    "RRRRRGGGGGRRRRRR",
+    "BBBBBGGGGGRRRRRR",
+    "BBBRBRRRRRRRRRRR",
+    "BBBBBRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "99",
+  "DifficultyVoteSum": "287",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "115",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "################",
+    "##########....*#",
+    "##########.....#",
+    "#####...#*.#...#",
+    "#####.....######",
+    "....*.....######",
+    "...#.###########",
+    ".....###########"
+  ],
+  "Liked": "85",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "815",
+  "SubLengths": [
+    "8",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T21:18:25.453",
+  "Title": "Boxes with little corruptions"
+}

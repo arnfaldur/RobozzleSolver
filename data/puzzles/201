@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRBBBBBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "53",
+  "DifficultyVoteSum": "169",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "201",
+  "Items": [
+    "################",
+    "###**********###",
+    "###**********###",
+    "###**********###",
+    "###**********###",
+    "###**********###",
+    "###****.*****###",
+    "###**********###",
+    "###**********###",
+    "###**********###",
+    "###**********###",
+    "################"
+  ],
+  "Liked": "52",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "191",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-26T16:20:03.983",
+  "Title": "Square Growth"
+}

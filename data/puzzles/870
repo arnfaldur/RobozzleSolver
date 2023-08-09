@@ -1,0 +1,53 @@
+{
+  "About": "Paint, then follow",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRGGGGGGRR",
+    "RRRBBBBGBBBBRRGR",
+    "RRRBBBBGBBBBRRGR",
+    "RRRBBBBBBBBBRRGR",
+    "RRRBBBBBBBBBRRGR",
+    "RRRBBBBBBBBBRRGR",
+    "RRRBBBBBBBBBRRGR",
+    "RRRBBBBRBBBBRRGR",
+    "RRRRRRRRGGGGGGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "23",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "870",
+  "Items": [
+    "################",
+    "#######*......*#",
+    "###.........##.#",
+    "###...*.*...##.#",
+    "###****.****##.#",
+    "###*.......*##.#",
+    "###****.****##.#",
+    "###...*.*...##.#",
+    "###.........##.#",
+    "#######*......*#",
+    "################",
+    "################"
+  ],
+  "Liked": "4",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "24",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cybermg",
+  "SubmittedDate": "2009-06-23T20:51:51.267",
+  "Title": "Two-Pass"
+}

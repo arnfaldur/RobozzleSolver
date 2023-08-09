@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBRRBBGBBBRR",
+    "BBBBBBRRBBBBBBRR",
+    "BBBGBGRRBBGGBGBB",
+    "RRRBBBRRBBBBBBBB",
+    "RRRBBBRRBBBBBGBG",
+    "BBBGBBRRBBBRRBBB",
+    "BBBBBBRRBBBRRBBB",
+    "GBGGBBBBGBGRRBBB",
+    "BBBBBBBBBBBRRBBB",
+    "BBGBBBBBBBBBBGBB",
+    "RRRBBBBBBBBBBBBB",
+    "RRRGBGBBBBBBBGBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "27",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "431",
+  "Items": [
+    "......##......##",
+    "..***.##.****.##",
+    "....*.##.*..*...",
+    "###.*.##.*..***.",
+    "###.*.##.*....*.",
+    "....*.##.*.##.*.",
+    ".****.##.*.##.*.",
+    ".*.......*.##.*.",
+    ".*********.##.*.",
+    "..............*.",
+    "###.***********.",
+    "###.*..........."
+  ],
+  "Liked": "7",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "32",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-03T13:52:21.547",
+  "Title": "Green Gates"
+}

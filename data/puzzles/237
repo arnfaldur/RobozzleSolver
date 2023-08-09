@@ -1,0 +1,53 @@
+{
+  "About": "Drawing circles in the sand",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "71",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "237",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######**#######",
+    "######****######",
+    "#####******#####",
+    "#####**.***#####",
+    "######****######",
+    "#######**#######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "15",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "74",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "eddy",
+  "SubmittedDate": "2009-03-30T06:10:41.627",
+  "Title": "Dot"
+}

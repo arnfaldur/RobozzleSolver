@@ -1,0 +1,53 @@
+{
+  "About": "Spin like crazy! And if you can figure this one out, you are genius.",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRBRGGRRRRRR",
+    "RRRRRRBRBGBRRRRR",
+    "RRRRRBGRRGRRRRRR",
+    "RRRRRBGBRBBRRRRR",
+    "RRRRRRGGRBRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "27",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "297",
+  "Items": [
+    "################",
+    "########*#######",
+    "########*#######",
+    "######*...######",
+    "######*.*.*#####",
+    "#####*....######",
+    "#####*.*.**#####",
+    "######...*######",
+    "######**########",
+    "#######*########",
+    "################",
+    "################"
+  ],
+  "Liked": "2",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "5",
+  "Solutions": "13",
+  "SubLengths": [
+    "10",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "sungjin",
+  "SubmittedDate": "2009-04-05T05:05:38",
+  "Title": "Spinning Madness Part3"
+}

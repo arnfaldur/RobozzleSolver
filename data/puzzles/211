@@ -1,0 +1,53 @@
+{
+  "About": "can you xor?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "BBBBBRRBRRBBBBRB",
+    "RBRBRRBRRRBBRBRR",
+    "BBBBBRRBRRBBRRBB",
+    "BBBBBRBRRRBBBRRB",
+    "BBRBRRRBBRBRBRBR",
+    "BBBRBRBRBBRRBBRB",
+    "BBBRRRRBBBRRRBRB",
+    "BBBRBRBRBBRRRRRR",
+    "BBBBBRRBBBRRBRRR",
+    "GGGGGGGGGGGGGGGG",
+    "GRRGGGGRRGRGRGGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "33",
+  "DifficultyVoteSum": "121",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "211",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "................",
+    "****************",
+    "*##****##*#*#**#"
+  ],
+  "Liked": "35",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "105",
+  "SubLengths": [
+    "5",
+    "5",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-28T00:48:32.297",
+  "Title": "Parity checker"
+}

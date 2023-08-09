@@ -1,0 +1,53 @@
+{
+  "About": "Does not quite fit.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBBBRRRRR",
+    "RRRRRRRRBRBRRRRR",
+    "RRRRRRBBBRBBBRRR",
+    "RRRRRRBRRRRRBRRR",
+    "RRRRBBBRRRRRBBBR",
+    "RRRRBRRRRRRRRRBR",
+    "RRBBBBBRRRRRBBBB",
+    "RRBRBRBRRRRRBRBR",
+    "BBBRBBBRRRRRBBBR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "118",
+  "DifficultyVoteSum": "351",
+  "Disliked": "7",
+  "Featured": "true",
+  "Id": "35",
+  "Items": [
+    "################",
+    "################",
+    "########***#####",
+    "########*#*#####",
+    "######***#***###",
+    "######*#####*###",
+    "####***#####***#",
+    "####*#########*#",
+    "##*****#####****",
+    "##*#*#*#####*#*#",
+    ".**#***#####***#",
+    "################"
+  ],
+  "Liked": "120",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "791",
+  "SubLengths": [
+    "10",
+    "10",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-21T05:26:23.343",
+  "Title": "Kind of math..."
+}

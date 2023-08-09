@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRGGGBRBRGGBRRRB",
+    "GRRRRRRGRRRRRRRG",
+    "GRRRRRRGRRRGRRRR",
+    "GRRRRGRGRRRGRRRR",
+    "RRRRRGRGRRRGRRRR",
+    "BGGGRGRGRRRBRRGB",
+    "RRRRRGRRRRRRRRRR",
+    "BGGGRBRBGGRRRRRB",
+    "RRRRRRRRRRRRRRRG",
+    "RRRRRRRRRRRRRRRR",
+    "GRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRGGGGB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "200",
+  "DifficultyVoteSum": "657",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "85",
+  "Items": [
+    "......#.....###.",
+    ".####.#.###.###.",
+    ".####.#.###.###.",
+    ".####.#.###.###.",
+    ".####.#.###.###.",
+    "...*#.#.###.....",
+    "#####.#.########",
+    "......#.........",
+    ".##############.",
+    ".##############.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "205",
+  "RobotCol": "15",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "1589",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-02T16:29:32.86",
+  "Title": "Less or more?"
+}

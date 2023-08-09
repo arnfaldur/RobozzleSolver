@@ -1,0 +1,53 @@
+{
+  "About": "All around the mulberry bush...Dance, Monkey, Dance!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGBBBBBGBBBBBBGG",
+    "GBBBBBGGBBBBBBGB",
+    "BBRRRRRBRRRRRRBB",
+    "BBRRRRRBRRRRRRBB",
+    "BBRRRRRBRRRRRRBB",
+    "BGRRRRRRRRRRRRBG",
+    "GGBBBBRRRBBBBBGG",
+    "BBRRRRRRRRRRRRBB",
+    "BBRRRRRBRRRRRRBB",
+    "BBRRRRRBRRRRRRBB",
+    "GBBBBBBGBBBBBBGB",
+    "GGBBBBBGGBBBBBGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "31",
+  "DifficultyVoteSum": "105",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "149",
+  "Items": [
+    "................",
+    ".......*.*....*.",
+    "..#####.######..",
+    "..#####.######*.",
+    "..#####*######..",
+    "..#####.######*.",
+    "..........*.*..*",
+    "..#####.######*.",
+    "..#####*######..",
+    "..#####.######..",
+    ".......*...*..*.",
+    "................"
+  ],
+  "Liked": "18",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "93",
+  "SubLengths": [
+    "7",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "eisenhans",
+  "SubmittedDate": "2009-03-16T19:58:55.657",
+  "Title": "Pop goes the weasel!"
+}

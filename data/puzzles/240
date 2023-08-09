@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBGRRRBRRRGBRRR",
+    "RRGBGRRBRRGBGRRR",
+    "RRRGBGRBRGBGRRRR",
+    "RRRRGBGBGBGRRRRR",
+    "RRRRRGBBBGRRRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRRRRGBBBGRRRRRR",
+    "RRRRGBGBGBGRRRRR",
+    "RRRGBGRBRGBGRRRR",
+    "RRGBGRRBRRGBGRRR",
+    "RRBGRRRBRRRGBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "23",
+  "DifficultyVoteSum": "82",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "240",
+  "Items": [
+    "################",
+    "##**###*###**###",
+    "##***##*##***###",
+    "###***#*#***####",
+    "####*******#####",
+    "#####*****######",
+    "##*****.*****###",
+    "#####*****######",
+    "####*******#####",
+    "###***#*#***####",
+    "##***##*##***###",
+    "##**###*###**###"
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "60",
+  "SubLengths": [
+    "3",
+    "7",
+    "7",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-30T09:01:43.767",
+  "Title": "All Directions"
+}

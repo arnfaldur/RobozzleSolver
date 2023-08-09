@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGGGGGGRRRRRR",
+    "RRRBGBBBBGBRRRRR",
+    "RRRBGBGGBGBRRRRR",
+    "RRRBGBRBRGBRRRRR",
+    "RRRBGBGGBGBRRRRR",
+    "RRRBGBGGBGBRRRRR",
+    "RRRRGGGGGGRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "89",
+  "DifficultyVoteSum": "224",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "361",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "###........#####",
+    "###..****..#####",
+    "###..*..*..#####",
+    "###..*#*...#####",
+    "###..*..*..#####",
+    "###..*..*..#####",
+    "###........#####",
+    "################",
+    "################"
+  ],
+  "Liked": "60",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "9",
+  "Solutions": "339",
+  "SubLengths": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-04-19T22:19:43.877",
+  "Title": "R"
+}

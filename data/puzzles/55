@@ -1,0 +1,53 @@
+{
+  "About": "Red means left... no, right... er, left.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRBBGRRRRRRRR",
+    "RBBBRRRGBGRRBBGR",
+    "BRRRRRRRRBRBRRBR",
+    "BRRBBBGRRRRBRRRR",
+    "BRBRRRBRBRRBRBRR",
+    "GBRRRBRRGBBRRGGR",
+    "RRRRBRRRRRRRRRBR",
+    "RRBBRRRBBBBBGRBR",
+    "RBRRRRBRRRRRBRBR",
+    "RGGRRBRRRBGRBRBR",
+    "RRBRBRRRBRBRGBRR",
+    "BBRRGBBBRRBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "347",
+  "DifficultyVoteSum": "972",
+  "Disliked": "6",
+  "Featured": "false",
+  "Id": "55",
+  "Items": [
+    "####....########",
+    ".....##...#....#",
+    ".########.#.##.#",
+    ".#.....#..#.#..#",
+    ".#.###.#.##.#.##",
+    "...#...#....#..#",
+    "####.#########.#",
+    "#....#.......#.#",
+    "#.####.#####.#.#",
+    "#..#...#...#.#.#",
+    "##.#.###.#.#...#",
+    "...#.....#*#####"
+  ],
+  "Liked": "309",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "1709",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "stingray",
+  "SubmittedDate": "2009-02-26T04:16:55.157",
+  "Title": "Zig zig"
+}

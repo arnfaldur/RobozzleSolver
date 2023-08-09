@@ -1,0 +1,53 @@
+{
+  "About": "flip vertical, then rotate 90°",
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "GGGGGGGGBGGGGGGR",
+    "GGGBGGGGBGGRRRRR",
+    "GBGBGBGGBGGGGGGG",
+    "GBGBGBGGBGRRRRRR",
+    "GBGBGBBGBGGGGGGR",
+    "GBGBGBBBBGGRRRRR",
+    "BBGBBBBBBGGGGRRR",
+    "BBBBBBBBBGGGGGRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "31",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "891",
+  "Items": [
+    "################",
+    "################",
+    ".*******.******#",
+    "***.****.**#####",
+    "*.*.*.**.*******",
+    "*.*.*.**.*######",
+    "*.*.*..*.******#",
+    "*.*.*....**#####",
+    "..*......****###",
+    ".........*****##",
+    "################",
+    "################"
+  ],
+  "Liked": "8",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "31",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-06-26T03:04:26.703",
+  "Title": "flip and rotate"
+}

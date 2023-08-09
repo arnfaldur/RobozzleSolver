@@ -1,0 +1,53 @@
+{
+  "About": "A hint for the original puzzle.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGGGGGGGRRRRRRRR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRBBBRRRRRRRRGR",
+    "RRRRRRRRRRRBRRGR",
+    "RRRRRRBRRRRBRRGR",
+    "RRRRRRRRGRRRRRGR",
+    "RRGRRGRRRRRRRRRR",
+    "RRGRRGRRRRRRRRRR",
+    "RRGRRRRRGGGRRRRR",
+    "RRGRRRRRRRRRRRRR",
+    "RRRRRRRRRRBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "58",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "970",
+  "Items": [
+    "################",
+    "#..............#",
+    "##############.#",
+    "##..........##.#",
+    "##.########.##.#",
+    "##.##....##.##.#",
+    "##.##.##.##.##.#",
+    "##.##.#*.##.##.#",
+    "##.##.#####.##.#",
+    "##.##.......##.#",
+    "##.###########.#",
+    "##.............#"
+  ],
+  "Liked": "14",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "1",
+  "Solutions": "66",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-03T15:49:13.173",
+  "Title": "Counting and Doubling 2"
+}

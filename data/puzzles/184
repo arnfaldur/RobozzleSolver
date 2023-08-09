@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBRBRBRBRBRRRR",
+    "RRBGBBBGBBBGBRRR",
+    "RBGRBGBRBGBRGBRR",
+    "RRBBRRRRRRRBBRRR",
+    "RBBGRRRRRRRGBBRR",
+    "RRBBRRRRRRRBBRRR",
+    "RBGRBGBRBGBRGBRR",
+    "RRBGBBBGBBBGBRRR",
+    "RRRBRBRBRBRBRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "24",
+  "DifficultyVoteSum": "85",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "184",
+  "Items": [
+    "###*#*#*#*#*####",
+    "##*.***.***.*###",
+    "#*..*.*.*.*..*##",
+    "##**#######**###",
+    "#**.#######.**##",
+    "##**#######**###",
+    "#*..*.*.*.*..*##",
+    "##*.***.***.*###",
+    "###*#*#*#*#*####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "19",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "95",
+  "SubLengths": [
+    "5",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-22T23:27:35.673",
+  "Title": "One or two steps from green?"
+}

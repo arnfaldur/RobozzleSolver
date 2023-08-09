@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRGRGRGRRRR",
+    "RRRRGRGRGRGRRRRR",
+    "RRRRRGRGRGRGRRRR",
+    "RRRRGRGRGRGRRRRR",
+    "RRRRRGRGRGRGRRRR",
+    "RRRRGRGRGRGRRRRR",
+    "RRRRRGRGRGRGRRRR",
+    "RRRRGRGRGRGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "36",
+  "DifficultyVoteSum": "99",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "657",
+  "Items": [
+    "################",
+    "################",
+    "####........####",
+    "####........####",
+    "####.*...*..####",
+    "####...*....####",
+    "####..*.*...####",
+    "####...*....####",
+    "####.....*..####",
+    "####........####",
+    "################",
+    "################"
+  ],
+  "Liked": "33",
+  "RobotCol": "5",
+  "RobotDir": "3",
+  "RobotRow": "8",
+  "Solutions": "148",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-04T02:20:14.983",
+  "Title": "Chess Horse"
+}

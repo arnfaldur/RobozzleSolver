@@ -1,0 +1,53 @@
+{
+  "About": "Don't get distracted.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBRRRRRBRRRRRBRR",
+    "RGGGGBBGGGGGGGRR",
+    "RBRRGRRGRRBRRGRR",
+    "BGGGGBBGBBGGGGBR",
+    "RRRRRRRRRRRRRRRR",
+    "RGRRBRRGRRGRRBRR",
+    "RGRRBRRGRRGRRBRR",
+    "RGGGGGGGBBGGGGRR",
+    "RBRRRRRBRRRRRBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "42",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "868",
+  "Items": [
+    "################",
+    "#.##.##.##.##.##",
+    "..***..***..**.#",
+    "#.##*##*##.##*##",
+    ".*..*..*..*..*.#",
+    "#.##.##.##.##.##",
+    "#.##.##*##*##.##",
+    "#*##.##*##.##.##",
+    ".**..***..**.*.#",
+    "#.##.##.##.##.##",
+    "################",
+    "################"
+  ],
+  "Liked": "12",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "48",
+  "SubLengths": [
+    "7",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "mheiberg",
+  "SubmittedDate": "2009-06-23T17:35:00.877",
+  "Title": "Distractions"
+}

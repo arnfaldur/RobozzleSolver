@@ -1,0 +1,53 @@
+{
+  "About": "red/blue columns recall the first element on the stack without removing it",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGBRRBRRRRRBBR",
+    "RRRBBRRBRRRRRBBR",
+    "RRRBBGRBRRRRRBBR",
+    "RRRBBBRBRRRRRBBR",
+    "RRRBBBRBRGRRRBBR",
+    "GBRBBBRBRBRRRBBR",
+    "BBRBBBRBRBRRRBBR",
+    "BBRBBBRBGBRBRBBR",
+    "BBRBBBRBBBRBRBBR",
+    "GRRGRGRRGGRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "48",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "838",
+  "Items": [
+    "################",
+    "###**##*#####***",
+    "###**##*#####***",
+    "###*****#####***",
+    "###*****#####***",
+    "###*****#**##***",
+    "********#**##***",
+    "********#**##***",
+    "****************",
+    "****************",
+    ".***************",
+    "################"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "47",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-22T03:36:31.017",
+  "Title": "Push, Pop, and Peek"
+}

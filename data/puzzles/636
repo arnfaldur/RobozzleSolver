@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRGGGRRRRRR",
+    "RRRRRRRGGGRRRRRR",
+    "RRRRRRRGGGRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1153",
+  "DifficultyVoteSum": "1504",
+  "Disliked": "275",
+  "Featured": "false",
+  "Id": "636",
+  "Items": [
+    "#######...######",
+    "######.....#####",
+    "#####.......####",
+    "#####.......####",
+    "#####.......####",
+    "#####.......####",
+    "######.....#####",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "#######...######",
+    "########*#######"
+  ],
+  "Liked": "811",
+  "RobotCol": "5",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "6618",
+  "SubLengths": [
+    "6",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "catbert",
+  "SubmittedDate": "2009-06-02T16:20:44.343",
+  "Title": "Litebulb"
+}

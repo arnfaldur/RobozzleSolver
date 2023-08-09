@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRGRGRGRGRGRRRR",
+    "GBBRBBBBBBBBBBGR",
+    "RRRBRBRBRBRBRRRR",
+    "GBBBBRBBBBBRBBGR",
+    "GBBBBBBRBRBBBBGR",
+    "RRRBRBRBRBRBRRRR",
+    "GBBBBBBRBBRBRRRR",
+    "RRRBRBRRRBRBRRRR",
+    "GBBBBRBBBRBBBBGR",
+    "RRRBRBRRRBRBRRRR",
+    "GBBRBBBBBBBRBBGR",
+    "RRRGRGRRRGRGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3915",
+  "DifficultyVoteSum": "7507",
+  "Disliked": "200",
+  "Featured": "false",
+  "Id": "483",
+  "Items": [
+    "###*#*#*#*#*####",
+    "***************#",
+    "###*#*#*#*#*####",
+    "***************#",
+    "***************#",
+    "###*#*#*#*#*####",
+    "******.***#*####",
+    "###*#*###*#*####",
+    "***************#",
+    "###*#*###*#*####",
+    "***************#",
+    "###*#*###*#*####"
+  ],
+  "Liked": "4129",
+  "RobotCol": "6",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "42964",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-05-09T05:36:56.983",
+  "Title": "spiral web"
+}

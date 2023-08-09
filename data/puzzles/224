@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGRBBBGRBRR",
+    "RRRRRBRRRRRGRBRR",
+    "RRRRRBRGGBBRRBRR",
+    "RRRRRBRBGBBBRBRR",
+    "RRRRRBRRBBBBRBRR",
+    "RRRRRBRGBBBBRBRR",
+    "RRRRRRGGBBBGRBRR",
+    "RRRRRGRRRRRRRBRR",
+    "RRRRRGBBBBBRGGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1372",
+  "DifficultyVoteSum": "3002",
+  "Disliked": "77",
+  "Featured": "false",
+  "Id": "224",
+  "Items": [
+    "################",
+    "################",
+    "#####.......#*##",
+    "#####.#####.#.##",
+    "#####.#*....#.##",
+    "#####.#.....#.##",
+    "#####.#.....#.##",
+    "#####.#.....#.##",
+    "#####......*#.##",
+    "#####.#######.##",
+    "#####.........##",
+    "################"
+  ],
+  "Liked": "1043",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "8877",
+  "SubLengths": [
+    "6",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "surgency",
+  "SubmittedDate": "2009-03-28T18:50:39.343",
+  "Title": "Evil Green"
+}

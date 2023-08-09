@@ -1,0 +1,53 @@
+{
+  "About": "How to slice the circle?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBBBRRRRRRR",
+    "RRRRBBBRBBBRRRRR",
+    "RRRBBRRRRRBBRRRR",
+    "RRBBRRRRRRRBBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RBBRRRRRRRRRBBRR",
+    "RBRRRRRRRRRRRBRR",
+    "RBBRRRRRRRRRBBRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBBRRRRRRRBBRRR",
+    "RRRBBRRRRRBBRRRR",
+    "RRRRBBBRBBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "27",
+  "DifficultyVoteSum": "75",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "915",
+  "Items": [
+    "######.*.#######",
+    "####.*.#.*.#####",
+    "###*.#####.*####",
+    "##..#######..###",
+    "##*#########*###",
+    "#..#########..##",
+    "#*###########*##",
+    "#..#########..##",
+    "##*#########*###",
+    "##..#######..###",
+    "###*.#####.*####",
+    "####.*.#...#####"
+  ],
+  "Liked": "26",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "89",
+  "SubLengths": [
+    "2",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "karby",
+  "SubmittedDate": "2009-06-27T17:23:24.077",
+  "Title": "Stargate"
+}

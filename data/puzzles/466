@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "GGGBBBBBBBBBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "82",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "466",
+  "Items": [
+    "*#**############",
+    "*#***###########",
+    "*#****##########",
+    "*#*#***#########",
+    "*#**#***########",
+    "*#***#***#######",
+    "*#*#**#***######",
+    "*#*##**#***#####",
+    "*#**##**#***####",
+    "*#***##**#***###",
+    "*#*#**##**#***##",
+    ".*************##"
+  ],
+  "Liked": "25",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "115",
+  "SubLengths": [
+    "10",
+    "5",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-05-06T18:18:55",
+  "Title": "Traversing The Hypotenuse"
+}

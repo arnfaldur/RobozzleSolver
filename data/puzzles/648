@@ -1,0 +1,53 @@
+{
+  "About": "Easy",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRGRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2641",
+  "DifficultyVoteSum": "6481",
+  "Disliked": "168",
+  "Featured": "false",
+  "Id": "648",
+  "Items": [
+    "#######*########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######*########",
+    "################"
+  ],
+  "Liked": "2232",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "22384",
+  "SubLengths": [
+    "2",
+    "2",
+    "2",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-03T22:41:10.11",
+  "Title": "Tight Area"
+}

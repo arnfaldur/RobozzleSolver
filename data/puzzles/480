@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGRBRRBRBRRRRRRR",
+    "RGRRRRBRRRRRRRRR",
+    "RRRRRRRRRGRBRRRR",
+    "RRRBBBGGGGRRRRGR",
+    "RBGBBBBGRRGGBBBB",
+    "RBGBBBRGGRGGBGBR",
+    "RBBGBRGGRBRBBBRR",
+    "RBBGBGRRBBBRRGRB",
+    "RRBGGGRBBRRGRGRR",
+    "RRRGGRRRGRGGGGRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRGRRRRRRRRGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "24",
+  "Disliked": "14",
+  "Featured": "false",
+  "Id": "480",
+  "Items": [
+    "..#....#.###...#",
+    "#.###..#....#.##",
+    "##..#......*#.##",
+    "#.#..........#.#",
+    "#...............",
+    "#..............#",
+    "#.............##",
+    "............#.#.",
+    ".#*...#..##.#.##",
+    "#....###.#....##",
+    "##.#.....#...###",
+    "##.########.###."
+  ],
+  "Liked": "4",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "60",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "jesusgeek94",
+  "SubmittedDate": "2009-05-08T23:17:41.64",
+  "Title": "teletubby barf"
+}

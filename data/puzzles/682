@@ -1,0 +1,53 @@
+{
+  "About": "You reap what you sow.",
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRGRBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRGRBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRGRBRRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRGRBRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "153",
+  "DifficultyVoteSum": "277",
+  "Disliked": "55",
+  "Featured": "false",
+  "Id": "682",
+  "Items": [
+    "######...#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######",
+    "######*#*#######"
+  ],
+  "Liked": "69",
+  "RobotCol": "6",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "634",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-05T12:10:23.377",
+  "Title": "Stack"
+}

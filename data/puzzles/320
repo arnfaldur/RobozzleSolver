@@ -1,0 +1,53 @@
+{
+  "About": "may look deceptively hard.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBRRRRRRRRRRR",
+    "RBGBRBRBRRRRRRRR",
+    "RGBRRGBRBRBRRRRR",
+    "RRRRRRRRGBRBRRRB",
+    "RRRRRRRRRRRRBGBG",
+    "RRRRRRRRRRRRGBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "775",
+  "DifficultyVoteSum": "1876",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "320",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "###*.###########",
+    "..*.*.*.########",
+    "#*.##*.*.*.#####",
+    "########*.*.##*.",
+    "###########*.*.*",
+    "############*.##",
+    "################",
+    "################"
+  ],
+  "Liked": "633",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "4405",
+  "SubLengths": [
+    "3",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-04-07T19:45:48.733",
+  "Title": "up or down?"
+}

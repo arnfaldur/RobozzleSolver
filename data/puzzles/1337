@@ -1,0 +1,53 @@
+{
+  "About": "Don't forget to water!",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRBBBBBBBBBBBBRR",
+    "RRBRRRRRRRRRRBRR",
+    "RRBRGGGGGGGGRBRR",
+    "RRRRGBBBRBBGRRRR",
+    "RRGRGBBGRBBGRGRR",
+    "RRGRGRBRGBRGRGRR",
+    "RRRRGRGBGGRGRRRR",
+    "RRRRGRRRRRRGRRRR",
+    "RRRRGRRRRRRGRRRR",
+    "RRRRGGGGGGGGRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "25",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "1337",
+  "Items": [
+    "##............##",
+    "##...........*##",
+    "##............##",
+    "###...*..*...###",
+    "##............##",
+    "##...#.**.#...##",
+    "###..#....#..###",
+    "###..######..###",
+    "###..######..###",
+    "###..........###",
+    "###..........###",
+    "###****..****###"
+  ],
+  "Liked": "1",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "15",
+  "SubLengths": [
+    "6",
+    "2",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "james_creek",
+  "SubmittedDate": "2009-09-17T15:55:26.267",
+  "Title": "Chia Face"
+}

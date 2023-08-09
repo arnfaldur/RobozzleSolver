@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGGGGGGGBBBBBBGR",
+    "RRRRRRRRRRRRRRGR",
+    "RGGGGBGBBBGGGRGR",
+    "RBRRRRRRRRRRGRGR",
+    "RBRGGGGGBBGRGRGR",
+    "RBRBRRRRRRGRGRGR",
+    "RGRGRRRRRRGRGRGR",
+    "RGRGRRRRRBGRBRBR",
+    "RGRGRRRRRRRRBRBR",
+    "RGRGBGGGBBBBGRBR",
+    "RGRRRRRRRRRRRRBR",
+    "RGGGBBBGGGBBBBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "46",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "831",
+  "Items": [
+    "#*.............#",
+    "##############.#",
+    "#............#.#",
+    "#.##########.#.#",
+    "#.#........#.#.#",
+    "#.#.######.#.#.#",
+    "#.#.######.#.#.#",
+    "#.#.#####..#.#.#",
+    "#.#.########.#.#",
+    "#.#..........#.#",
+    "#.############.#",
+    "#..............#"
+  ],
+  "Liked": "6",
+  "RobotCol": "9",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "28",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "3"
+  ],
+  "SubmittedBy": "willbir",
+  "SubmittedDate": "2009-06-21T12:49:44.61",
+  "Title": "Intermediate spiral"
+}

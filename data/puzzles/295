@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGGGGGGGGGGGRR",
+    "RGBBBBBBBBBBBBGR",
+    "RGBGGGGGGGGGGGRR",
+    "RGBGRRRRRRRRRRRR",
+    "RGBGRRRRRRRRRRRR",
+    "RGBGRRRRRRRRRRRR",
+    "RGBGRRRRRRRRRRRR",
+    "RGBGRRRRRRRRRRRR",
+    "RGBGGGGGGGGGGGRR",
+    "RGBBBBBBBBBBBBGR",
+    "RRGGGGGGGGGGGGRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "211",
+  "DifficultyVoteSum": "383",
+  "Disliked": "36",
+  "Featured": "false",
+  "Id": "295",
+  "Items": [
+    "##************##",
+    "#**************#",
+    "#*************##",
+    "#***############",
+    "#***############",
+    "#*.*############",
+    "#***############",
+    "#***############",
+    "#*************##",
+    "#**************#",
+    "##************##",
+    "################"
+  ],
+  "Liked": "147",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "877",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-05T04:41:01.563",
+  "Title": "Sea of stars"
+}

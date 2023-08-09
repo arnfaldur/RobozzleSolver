@@ -1,0 +1,53 @@
+{
+  "About": "Dang is this possible?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGBRRRRRRRRR",
+    "RRRBBBRRRRRRRRRR",
+    "RRRBRBBGRRRRRRRR",
+    "RBRRGGGBRRRRRRRR",
+    "RRGBGBGGRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBBBGRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRBRRBRRRRRR",
+    "RRRRRRRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1",
+  "DifficultyVoteSum": "5",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "440",
+  "Items": [
+    "################",
+    "################",
+    "#####.*#########",
+    "###***.#########",
+    "###*.**.########",
+    "#*.....*########",
+    "#..*.*...#######",
+    "#####.***#######",
+    "#####***.#######",
+    "######**..######",
+    "######*..*######",
+    "#######*########"
+  ],
+  "Liked": "0",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2",
+  "SubLengths": [
+    "10",
+    "8",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "o0okaaskopo0o",
+  "SubmittedDate": "2009-05-04T07:10:22.39",
+  "Title": "I hate blue!"
+}

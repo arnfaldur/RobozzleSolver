@@ -1,0 +1,53 @@
+{
+  "About": "This two function counting technique is useful to know for the Symmetry puzzles.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "140",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "909",
+  "Items": [
+    "################",
+    "#######.*#######",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "#######.########",
+    "################"
+  ],
+  "Liked": "49",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "360",
+  "SubLengths": [
+    "3",
+    "2",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-27T01:43:58.22",
+  "Title": "Stack and Turn 2"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGRRRRRRRRRRRR",
+    "RRRRGGGGGGGGGGRG",
+    "RRRGBBBBBGRRRRGR",
+    "RRRGBBBBBGRRRRGR",
+    "RRRGBBRBBBBBBBRR",
+    "RRRGBBBBBGRRRRGR",
+    "RRRGBBBBBGRRRRGR",
+    "RRGRGGGGGGGGGRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "25",
+  "DifficultyVoteSum": "86",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "228",
+  "Items": [
+    "################",
+    "###.############",
+    "###*.....*....*.",
+    "###...*.*.####.#",
+    "###..*.*..####.#",
+    "###.*.*.*.*.*.*#",
+    "###..*.*..####.#",
+    "###.*.*.*.####.#",
+    "##.*.....*.....#",
+    "#############.##",
+    "#############*##",
+    "################"
+  ],
+  "Liked": "19",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "85",
+  "SubLengths": [
+    "9",
+    "4",
+    "8",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-28T21:08:53.407",
+  "Title": "spiral in then around"
+}

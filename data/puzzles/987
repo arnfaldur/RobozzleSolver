@@ -1,0 +1,53 @@
+{
+  "About": "Count greens not touching another green.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBGBBGBGGBBGBRRR",
+    "RRRRRRRRRRRRRRRB",
+    "RGGBGBGBGGGGRRRG",
+    "RRRRRRRRRRRRRBRB",
+    "GRRBGGBGBBBRRBRG",
+    "BRRRRRRRRRRBRGRB",
+    "GRGRGRRRRRRGRBRB",
+    "GRBRRRBGBGBRRBRB",
+    "GRGRRRRRRRRRRBRG",
+    "BRRRRRGBGBGBGRRR",
+    "GRRRRRRRRRRRRRRR",
+    "RRRRGGBGBGBBGBGR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "11",
+  "DifficultyVoteSum": "42",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "987",
+  "Items": [
+    "..*..*.....*....",
+    "###############.",
+    "....*.*.......#*",
+    ".############.#.",
+    "*#.....*....#.#*",
+    ".#.########.#*#.",
+    ".#*#*######*#.#.",
+    ".#.#...*.*..#.#.",
+    ".#*##########.#*",
+    ".#....*.*.*.*.#.",
+    "*##############.",
+    ".......*.*..*.*."
+  ],
+  "Liked": "11",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "38",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-07-04T16:54:22.53",
+  "Title": "Counting - Single Greens"
+}

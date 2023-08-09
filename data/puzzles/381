@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRBRRRRRRRBRRRR",
+    "RRBRBRRRRRBRBRRR",
+    "RRBRBRRRRRBRBRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRRRBRRRRRBRRRRR",
+    "RBGBRRGRGRRBGBRR",
+    "BRRRRRGRGRRRRRBR",
+    "RGRGBBRRRBBGRGRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RGRGRRRRRRRGRGRR",
+    "RBBBRRRRRRRBBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "67",
+  "DifficultyVoteSum": "198",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "381",
+  "Items": [
+    "##*.*#####*.*###",
+    "##.#.#####.#.###",
+    "##.#.#####.#.###",
+    "##*.........*###",
+    "####.#####.#####",
+    "*...*#*#*#*...*#",
+    ".#####.#.#####.#",
+    "*.*...*#*...*.*#",
+    "##.#########.###",
+    "##.#########.###",
+    "*.*.*#####*.*.*#",
+    "*...*#####*...*#"
+  ],
+  "Liked": "64",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "266",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-04-25T17:11:04.157",
+  "Title": "back on double-green"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGRRRRRRR",
+    "GGGGGRRRRRRRRRRR",
+    "GRRRRRGGRRRRRRRR",
+    "GRGGGGGGGGGRRRRR",
+    "GRGGGRGBBBGRRBBB",
+    "GRRGRRRBRBGRRBRB",
+    "GGRGGRGBBBGRRBBB",
+    "GGRGGGGGGGGRRRRR",
+    "GGRGGRRRRRRRRRRR",
+    "GGRRRRGGGRRRRRRR",
+    "GGGGGGGGGRRRRRRR",
+    "GGGGGGGGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "74",
+  "DifficultyVoteSum": "149",
+  "Disliked": "19",
+  "Featured": "false",
+  "Id": "718",
+  "Items": [
+    "................",
+    ".....####.......",
+    ".#####**#.......",
+    ".#******........",
+    ".#***#*.........",
+    ".##*###.#.....#.",
+    "..#**#*.........",
+    "..#***.**.......",
+    "..#**#####......",
+    "..####..........",
+    "................",
+    "................"
+  ],
+  "Liked": "45",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "293",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-08T12:32:01.687",
+  "Title": "eyes"
+}

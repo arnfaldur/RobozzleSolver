@@ -1,0 +1,53 @@
+{
+  "About": "Only 2 stars to collect; it can't be that hard.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBBBBBBBBBRR",
+    "RRRRBRRRRRRRRRBR",
+    "RRRRBRRRBBRRBRBR",
+    "RBRRBRRGRRBRRBRR",
+    "BRBRRBBRRRBRRRRR",
+    "BRRRRRRRRRBRRRRR",
+    "RBBBBBBBBBRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "107",
+  "DifficultyVoteSum": "410",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "352",
+  "Items": [
+    "################",
+    "################",
+    "####...........#",
+    "####.#########.#",
+    "####.##....#*#.#",
+    "...#.##.##.#...#",
+    ".#*#....##.#####",
+    ".#########.#####",
+    "...........#####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "107",
+  "RobotCol": "7",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "714",
+  "SubLengths": [
+    "5",
+    "6",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-17T06:32:37.377",
+  "Title": "Both Directions"
+}

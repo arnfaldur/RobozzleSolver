@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBRRBBRRRBRRBRBB",
+    "BBRRBBRRRBRRBRBB",
+    "BBRRBBRRRBRRBRBB",
+    "BBBRBBRRRBRRBRBB",
+    "BBBRBBRRRBRRBRBB",
+    "BBBBBBRBRBRRBRBB",
+    "BBBBBBRBRBBBBBBB",
+    "BBBBBBRBRBBBBBBB",
+    "BBBBBBBBRBBBBBBB",
+    "BBBBBBBBRBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "49",
+  "DifficultyVoteSum": "138",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "716",
+  "Items": [
+    ".*##**###*##*#**",
+    "**##**###*##*#**",
+    "***#**###*##*#**",
+    "***#**###*##*#**",
+    "******#*#*##*#**",
+    "******#*#*******",
+    "******#*#*******",
+    "********#*******",
+    "********#*******",
+    "****************",
+    "****************",
+    "****************"
+  ],
+  "Liked": "45",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "0",
+  "Solutions": "306",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-08T11:09:36.28",
+  "Title": "Obstructions"
+}

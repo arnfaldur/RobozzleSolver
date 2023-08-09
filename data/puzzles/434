@@ -1,0 +1,53 @@
+{
+  "About": "Show your love for the Flying Spaghetti Monster",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGGGRRGGGRRRR",
+    "RRRRGRGRRGRGRRRR",
+    "RRRRGGGRRGGGRRRR",
+    "RRRRRGRRRRGRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RGRRRRRRRRRRRRGR",
+    "GRGBRRRRRRRRBGRG",
+    "RRRRRRRRRRRRRRRR",
+    "RGRGRRRRRRRRGRGR",
+    "GRGRRRBBBBRRRGRG",
+    "RRRRGGRRRRGGRRRR",
+    "RRRGRRRRRRRRGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "411",
+  "DifficultyVoteSum": "732",
+  "Disliked": "29",
+  "Featured": "false",
+  "Id": "434",
+  "Items": [
+    "####...##...####",
+    "####.#.##.#.####",
+    "####...##...####",
+    "#####.####.#####",
+    "####.*.**.*.####",
+    "#.#*.######.*#.#",
+    ".#..########..#.",
+    "###.*######*.###",
+    "#.#...####...#.#",
+    ".#.##*.**.*##.#.",
+    "####..####..####",
+    "###.########.###"
+  ],
+  "Liked": "351",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "3219",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "frewsxcv",
+  "SubmittedDate": "2009-05-03T17:07:36.64",
+  "Title": "FSM Love"
+}

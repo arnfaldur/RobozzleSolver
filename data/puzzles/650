@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRBBGBBRRRRR",
+    "RRRRRRRBBBRRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "105",
+  "DifficultyVoteSum": "214",
+  "Disliked": "20",
+  "Featured": "false",
+  "Id": "650",
+  "Items": [
+    "################",
+    "################",
+    "########.#######",
+    "#######.*.######",
+    "######.***.#####",
+    "#####.**.**.####",
+    "######.*.**#####",
+    "#######.*.######",
+    "########.#######",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "72",
+  "RobotCol": "8",
+  "RobotDir": "3",
+  "RobotRow": "6",
+  "Solutions": "510",
+  "SubLengths": [
+    "3",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "axelbrz",
+  "SubmittedDate": "2009-06-03T23:50:54.64",
+  "Title": "Spiral Technique I"
+}

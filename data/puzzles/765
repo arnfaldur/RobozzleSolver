@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGGBBRRGGGGGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRGBBBBBRGBBGRR",
+    "GRRRRRRRRRRRRGRG",
+    "RRBBRGGBRGGRRGRG",
+    "RRRRRRRRRRRGRBRG",
+    "RRRRBRRRRRRBRBRB",
+    "RRRRBRRBBGGGRBRB",
+    "BRRRRRRRRRRRRRRB",
+    "GRRGRBBBBBGGRBRR",
+    "GRRRRRRRRRRRRRRR",
+    "GBBBBBGGRRRRBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "55",
+  "DifficultyVoteSum": "129",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "765",
+  "Items": [
+    "................",
+    "###############.",
+    "..............#.",
+    ".############.#.",
+    ".#..........#.#.",
+    ".#.########.#.#.",
+    ".#.#*######.#.#.",
+    ".#.#........#.#.",
+    ".#.##########.#.",
+    ".#............#.",
+    ".##############.",
+    "................"
+  ],
+  "Liked": "52",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "328",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-14T13:01:47.923",
+  "Title": "Rainbow Spiral"
+}

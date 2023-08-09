@@ -1,0 +1,53 @@
+{
+  "About": "Drink me!",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGGGGGGGRRRR",
+    "RRRRRRGGGGGRRRRR",
+    "RRRRGRBRBRBRGRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRBRBRBRBRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRBRBRBRBRRRR",
+    "RRRRRRBRBRBRRRRR",
+    "RRRRRRRBRBRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "58",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "690",
+  "Items": [
+    "################",
+    "#####.......####",
+    "######.....#####",
+    "####*..#.#...###",
+    "####.*#.#.#*.###",
+    "####.#.#.#.#.###",
+    "####..#.#.#..###",
+    "####.#.#.#.#.###",
+    "####..#.#.#..###",
+    "####.#.#.#.#.###",
+    "####..#.#.#..###",
+    "####.........###"
+  ],
+  "Liked": "17",
+  "RobotCol": "12",
+  "RobotDir": "1",
+  "RobotRow": "3",
+  "Solutions": "103",
+  "SubLengths": [
+    "4",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "0cache",
+  "SubmittedDate": "2009-06-06T05:09:48.953",
+  "Title": "Bad Medicine"
+}

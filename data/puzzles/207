@@ -1,0 +1,53 @@
+{
+  "About": "My space on Earth. Portmore, Jamaica",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBBBBRGRRRRR",
+    "RRRBBBBBBRRBBBRR",
+    "BGRBBBBBBBRRBRRR",
+    "RRBBRRBBBBRGRRGB",
+    "RRRRGRBBBBBRRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRRBRRRRRRR",
+    "RRRRRRRBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "35",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "207",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "###.......*#####",
+    "#.............##",
+    "...............#",
+    "##.........*#...",
+    "####.......#.###",
+    "######.....#####",
+    "########.#######",
+    "#######.########"
+  ],
+  "Liked": "7",
+  "RobotCol": "3",
+  "RobotDir": "3",
+  "RobotRow": "4",
+  "Solutions": "54",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "realhowie",
+  "SubmittedDate": "2009-03-27T18:38:58.047",
+  "Title": "RealHowie Home, \"Jamaica\""
+}

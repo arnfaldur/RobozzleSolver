@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RBBBBBBBBBBBBBBR",
+    "BRRRRRRRRRRRRRRB",
+    "BRRBBBBBBBBBBRRB",
+    "BRBRRRRRRRRRRBRB",
+    "BRRBBBGBBBBRRBRB",
+    "BRRRRRRRRRRBRBRB",
+    "BRBRRRRRRRRBRBRB",
+    "BRRBBBBBBBBRRBRB",
+    "BRRRRRRRRRRRRBRB",
+    "RBBBBBBBBBBBBRRB",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "585",
+  "DifficultyVoteSum": "826",
+  "Disliked": "80",
+  "Featured": "false",
+  "Id": "935",
+  "Items": [
+    "****************",
+    "*##############*",
+    "*#************#*",
+    "*#*##########*#*",
+    "*#**********#*#*",
+    "*##########*#*#*",
+    "*#*########*#*#*",
+    "*#**********#*#*",
+    "*############*#*",
+    "**************#*",
+    "###############*",
+    ".***************"
+  ],
+  "Liked": "416",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "2402",
+  "SubLengths": [
+    "4",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pedrorz",
+  "SubmittedDate": "2009-06-29T17:51:18.75",
+  "Title": "mad"
+}

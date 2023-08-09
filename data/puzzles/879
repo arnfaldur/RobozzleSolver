@@ -1,0 +1,53 @@
+{
+  "About": "green?",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "GBGRGBBBBBBBBBBB",
+    "BRBRBRRRRRRRRRRR",
+    "BRBRBRRRRRRRRRRR",
+    "BRBRBRBBBBBBBBBR",
+    "BRBRBBRRRRRRRRRB",
+    "BRBRBBRBBBBBBBBR",
+    "BRBRBBRRRRRRRRRR",
+    "BRRBRRBBBBBBBBBG",
+    "BRRRRRRRRRRRRRRB",
+    "GBBBBBBBBBBBBBBG",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "40",
+  "DifficultyVoteSum": "45",
+  "Disliked": "18",
+  "Featured": "false",
+  "Id": "879",
+  "Items": [
+    "################",
+    ".*.#.***********",
+    "*#*#*###########",
+    "*#*#*###########",
+    "*#*#*.*********.",
+    "*#*#**#########*",
+    "*#*#**#.*******.",
+    "*#*#**##########",
+    "*#.*..*********.",
+    "*##############*",
+    ".**************.",
+    "################"
+  ],
+  "Liked": "13",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "124",
+  "SubLengths": [
+    "4",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "pedrorz",
+  "SubmittedDate": "2009-06-25T10:24:50.407",
+  "Title": "labirint"
+}

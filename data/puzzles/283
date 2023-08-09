@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBRRRRRRRR",
+    "BGBBGBGBRRRRRRRR",
+    "BGGBGGGBRRRRRRRR",
+    "BGBBBBGBRRRRRRRR",
+    "BGGGGGGBRRRRRRRR",
+    "BGBBBBBBRRRRRRRR",
+    "BGBGGBGGRRRRRRRR",
+    "BGBGBBGBRRRRRRRR",
+    "BGBGBGGBRRRRRRRR",
+    "BGBGBBGBRRRRRRRR",
+    "BGGGGGGBRRRRRRRR",
+    "BBBBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "70",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "283",
+  "Items": [
+    "........########",
+    ".*..*.*.#*#*##*#",
+    ".**.***.#***#**#",
+    ".*....*.#*####*#",
+    ".******.#******#",
+    ".*......######*#",
+    ".*.**.*.**#**#*#",
+    ".*.*..*.#*##*#*#",
+    ".*.*.**.#**#*#*#",
+    ".*.*..*.#*##*#*#",
+    ".******.#******#",
+    "........########"
+  ],
+  "Liked": "16",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "6",
+  "Solutions": "258",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-04T04:50:24.157",
+  "Title": "Use the map"
+}

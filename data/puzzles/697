@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRRBBBBBBBBBRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRRBBBBBRRRRR",
+    "RRRRRRRBBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "16",
+  "DifficultyVoteSum": "55",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "697",
+  "Items": [
+    "#######**#######",
+    "######***#######",
+    "#####*****######",
+    "####*******#####",
+    "###*********####",
+    "##***********###",
+    "##******.*****##",
+    "###***********##",
+    "####*********###",
+    "#####*******####",
+    "######*****#####",
+    "#######***######"
+  ],
+  "Liked": "10",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "53",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-06-06T13:21:44.703",
+  "Title": "Incremental"
+}

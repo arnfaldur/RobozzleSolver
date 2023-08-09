@@ -1,0 +1,53 @@
+{
+  "About": "Solvation is nigh...",
+  "AllowedCommands": "5",
+  "Colors": [
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRGGGBBBBBBGGGRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBBBBBRRRRR",
+    "RRRRRBBGGBBRRRRR",
+    "RRRRRBBRRBBRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "3",
+  "DifficultyVoteSum": "12",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "599",
+  "Items": [
+    "#####..**..#####",
+    "#####.****.#####",
+    "#####.****.#####",
+    "#####..**..#####",
+    "##...******...##",
+    "##...******...##",
+    "#####.*.***#####",
+    "#####..**..#####",
+    "#####..**..#####",
+    "#####..**..#####",
+    "#####......#####",
+    "#####......#####"
+  ],
+  "Liked": "0",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "25",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-27T13:16:07.36",
+  "Title": "I.N.R.I."
+}

@@ -1,0 +1,53 @@
+{
+  "About": "It's small... and you have the \"Fast\" button",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBBBRBBRRR",
+    "RRRRRRRBBBBBBRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRBRRRBBRRR",
+    "RRRRRRRBBRRBBRRR",
+    "RRRRRRRBBBBBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "79",
+  "DifficultyVoteSum": "331",
+  "Disliked": "0",
+  "Featured": "true",
+  "Id": "36",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "#######***#**###",
+    "#######*******##",
+    "#######*******##",
+    "#######**##**###",
+    "#######**##***##",
+    "#######*******##",
+    "#######.******##",
+    "################",
+    "################"
+  ],
+  "Liked": "86",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "619",
+  "SubLengths": [
+    "10",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-02-21T07:23:28.517",
+  "Title": "Explore the world"
+}

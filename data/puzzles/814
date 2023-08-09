@@ -1,0 +1,53 @@
+{
+  "About": "The lake is too dangerous and must be filled in",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRGBBBBBBBBGRRRR",
+    "RGBBBBBBBBBBGRGG",
+    "GBBBGBBBBBGBBGBG",
+    "GBBGRGBGBGRGBBBG",
+    "GBBBGBBGBGRGBBBG",
+    "RGBBBBGRGRGBBBBG",
+    "RRGBBBGRGGBBBBBG",
+    "RGBBBBGGBBBBBBGR",
+    "RGBBBBBBBBGGGBGR",
+    "RRGGGGGGGGRRRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "6",
+  "DifficultyVoteSum": "27",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "814",
+  "Items": [
+    "################",
+    "################",
+    "##.********.####",
+    "#.**********.#..",
+    ".***.*****.**.*.",
+    ".**.#.*.*.#.***.",
+    ".***.**.*.#.***.",
+    "#.****.#.#.****.",
+    "##.***.#..*****.",
+    "#.****..******.#",
+    "#.********...*.#",
+    "##........###.##"
+  ],
+  "Liked": "8",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "18",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-19T20:40:37.937",
+  "Title": "Go For a Swim II"
+}

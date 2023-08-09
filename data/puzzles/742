@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRGGGGRRR",
+    "RRRRRRRRGRRRRRRR",
+    "RRRRGRRRGRRGRRRR",
+    "RRRRGRRGRGRGRRRR",
+    "RRRRGRRRBRRGRRRR",
+    "RRRRGBBRRRBGRRRR",
+    "RRRRGBBBBBBGRRRR",
+    "RRRRGBBBBBBGRRRR",
+    "RRRRGGGGGGGGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "55",
+  "DifficultyVoteSum": "138",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "742",
+  "Items": [
+    "######....######",
+    "#####..##..##.##",
+    "####..####..#.##",
+    "####.###......##",
+    "####.###.##.####",
+    "####.###.##.####",
+    "####.##.#.#.####",
+    "####.##.*.#.####",
+    "####........####",
+    "####........####",
+    "####........####",
+    "####........####"
+  ],
+  "Liked": "36",
+  "RobotCol": "8",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "209",
+  "SubLengths": [
+    "9",
+    "7",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "beaza",
+  "SubmittedDate": "2009-06-10T23:20:30.75",
+  "Title": "Water Bucket in a Welll"
+}

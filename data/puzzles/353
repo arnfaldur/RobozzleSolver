@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RGBBBBBBBBBBBRRR",
+    "RBRRRRRRRRRRRRRR",
+    "RBRRRRBBBBBBBBBR",
+    "RBRRRRRRRRRRRRRB",
+    "RBRGBBBBBBBRRRRB",
+    "RBRBRRRRRRRRRRRB",
+    "RBRBRRRRBBBBBRRB",
+    "RBRBRRRRRRRRRBRB",
+    "RBRBRRRRRRRRRBRB",
+    "RBRBRBBRRGBBRBRB",
+    "RBRBRRRBRBRRRBRB",
+    "BGBGBBBGBGBBBGBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "81",
+  "DifficultyVoteSum": "233",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "353",
+  "Items": [
+    "#...........*###",
+    "#.##############",
+    "#.####*.........",
+    "#.#############.",
+    "#.#.......*####.",
+    "#.#.###########.",
+    "#.#.####*.....#.",
+    "#.#.#########.#.",
+    "#.#.#########.#.",
+    "#.#.#*..#..*#.#.",
+    "#.#.###.#.###.#.",
+    "................"
+  ],
+  "Liked": "74",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "577",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-04-17T17:25:14",
+  "Title": "Left or Right"
+}

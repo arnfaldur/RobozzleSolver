@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRBRBBBBBBBRBRR",
+    "RRRBBRBBBBBRBBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRBBBBBRBBBBBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRBBRBBBBBRBBRR",
+    "RRRBRBBBBBBBRBRR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "35",
+  "DifficultyVoteSum": "112",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "336",
+  "Items": [
+    "################",
+    "###***.....***##",
+    "###***.....***##",
+    "###**#.....#**##",
+    "###...........##",
+    "###.....#.....##",
+    "###...........##",
+    "###**#.....#**##",
+    "###***.....***##",
+    "###***.....***##",
+    "################",
+    "################"
+  ],
+  "Liked": "34",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "102",
+  "SubLengths": [
+    "3",
+    "4",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "abhishikt",
+  "SubmittedDate": "2009-04-11T11:15:24.563",
+  "Title": "Missing tiles"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBRBRBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRBBBRBRBBBRRRR",
+    "RRBRBRRBRRBRBRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RRBRBRRBRRBRBRRR",
+    "RRRBBBRBRBBBRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRRRBRBRBRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "56",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "593",
+  "Items": [
+    "######***#######",
+    "#####*#*#*######",
+    "####*******#####",
+    "###***#*#***####",
+    "##*#*##*##*#*###",
+    "##*****.*****###",
+    "##*#*##*##*#*###",
+    "###***#*#***####",
+    "####*******#####",
+    "#####*#*#*######",
+    "######***#######",
+    "################"
+  ],
+  "Liked": "17",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "61",
+  "SubLengths": [
+    "10",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-25T17:06:45.39",
+  "Title": "Snowflake"
+}

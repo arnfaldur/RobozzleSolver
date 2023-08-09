@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRGRGRRRRRR",
+    "RRRRGRGGRRGRRRRR",
+    "RRRRRGGRRGRRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRGGRRGRGRRRRR",
+    "RRRRGGGGGGRRRRRR",
+    "RRRRGRRRRRGRRRRR",
+    "RRRRRGGGGGRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "68",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "606",
+  "Items": [
+    "################",
+    "################",
+    "####*.*.*.*#####",
+    "####.#..*#.#####",
+    "####*..**.*#####",
+    "####.......#####",
+    "####..**.*.#####",
+    "####......*#####",
+    "####.#####.#####",
+    "####*.....*#####",
+    "################",
+    "################"
+  ],
+  "Liked": "15",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "7",
+  "Solutions": "80",
+  "SubLengths": [
+    "3",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "kraker",
+  "SubmittedDate": "2009-05-28T12:36:31.453",
+  "Title": "Halloween"
+}

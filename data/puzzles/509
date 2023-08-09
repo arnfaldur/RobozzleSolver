@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBBBBRRRRBRRRRBG",
+    "BRRRBRRRRBRRRRRB",
+    "RRRRBRRRRBRBBBBB",
+    "BBBRBRRRRBRBRRRR",
+    "RRBRBRRRRBRBRRRR",
+    "BBBRBBBBBBRBRRRR",
+    "RRRRRRRRRRRBBBBB",
+    "BBBRRRRRRRRRRRRR",
+    "RRBRRRRRRRBBBBRR",
+    "BBBRBBBRRRBRRBRR",
+    "BRRRBRBRRRBRRBRB",
+    "BRBRBRBBRRBRRBBG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "19",
+  "DifficultyVoteSum": "70",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "509",
+  "Items": [
+    ".....####.......",
+    ".###.####.#####.",
+    ".###.####.#.....",
+    "...#.####.#.####",
+    "##.#.####.#.####",
+    "...#......#.####",
+    ".##########.....",
+    "...############.",
+    "##.#######....#.",
+    "...#...###.##.#.",
+    ".###.#.###.##.#.",
+    "*#...#.....##..."
+  ],
+  "Liked": "21",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "71",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-05-12T18:22:17.89",
+  "Title": "The Bends"
+}

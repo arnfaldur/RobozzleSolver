@@ -1,0 +1,53 @@
+{
+  "About": "2 steps backwards",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRGRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRBBBBBRRGRRRRR",
+    "RRRRBRGBRRRRRRRR",
+    "RRRRBRRRRRBRRRRR",
+    "RRGRBBBBRBBBRRRR",
+    "RRRRBRBRRRBRRRRR",
+    "RRGRRRBBBBBBRRRR",
+    "RRRRRRBRRRRRRRRR",
+    "RRRRRRRRRRGRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "121",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "319",
+  "Items": [
+    "####*###########",
+    "####.###########",
+    "####.##.########",
+    "###.......*#####",
+    "####.#*.########",
+    "####.#.###*#####",
+    "##*.....#*.*####",
+    "####.#.###.#####",
+    "##*.........####",
+    "######.###.#####",
+    "##########*#####",
+    "################"
+  ],
+  "Liked": "39",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "169",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-04-07T14:58:29.437",
+  "Title": "1 step forwards..."
+}

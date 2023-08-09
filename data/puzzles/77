@@ -1,0 +1,53 @@
+{
+  "About": "Combine two methods from previous puzzles",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRBBRRBBBBBBRR",
+    "RRRBBRBBGBRBRBBR",
+    "RRBBBBRRRBBGBRBR",
+    "RBBRBBBBBBBGBRBR",
+    "RBGGGGBBBBBBRBBR",
+    "RBBRRRBBBBBBBBBR",
+    "RBRBBBGGBBBBBBBR",
+    "RBBBBRBBBBBBBBRR",
+    "RBBBRRBBBBBBBRRR",
+    "RRBBBBBBBBGBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "5",
+  "DifficultyVoteSum": "20",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "77",
+  "Items": [
+    "################",
+    "####........*.##",
+    "###...*........#",
+    "##.............#",
+    "#..............#",
+    "#..............#",
+    "#...*........*.#",
+    "#..............#",
+    "#.....*.......##",
+    "#............###",
+    "##........*.####",
+    "################"
+  ],
+  "Liked": "2",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "28",
+  "SubLengths": [
+    "4",
+    "6",
+    "4",
+    "4",
+    "0"
+  ],
+  "SubmittedBy": "drus",
+  "SubmittedDate": "2009-02-28T12:26:47.517",
+  "Title": "Two techniques"
+}

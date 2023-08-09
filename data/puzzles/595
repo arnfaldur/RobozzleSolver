@@ -1,0 +1,53 @@
+{
+  "About": "Just don't pass the 1000 move limit...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRBRRRBRR",
+    "RRRRRRRBBBRBBBRR",
+    "RRRRRBBBRBBBRBRR",
+    "RRRBBBRBBBRBBBRR",
+    "RBBBRBBBRBBBRBRR",
+    "BBRBBBRBBBRBBBRR",
+    "RBBBRBBBRBBBRBRR",
+    "RRRBBBRBBBRBBBRR",
+    "RRRRRBBBRBBBRBRR",
+    "RRRRRRRBBBRBBBRR",
+    "RRRRRRRRRBBBRRRR",
+    "RRRRRRRRRRRBRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "35",
+  "DifficultyVoteSum": "103",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "595",
+  "Items": [
+    "#########*.##**#",
+    "#######***#***##",
+    "#####***#***#**#",
+    "###***#***#***##",
+    "#***#***#***#**#",
+    ".*#***#***#***##",
+    "#***#***#***#**#",
+    "###***#***#***##",
+    "#####***#***#**#",
+    "#######***#***##",
+    "#########***####",
+    "###########**###"
+  ],
+  "Liked": "35",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "215",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "ssancho",
+  "SubmittedDate": "2009-05-25T20:41:49.39",
+  "Title": "Just Another Trees"
+}

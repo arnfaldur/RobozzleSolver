@@ -1,0 +1,53 @@
+{
+  "About": "Found solving plus :)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRGRRBRRGRRRRR",
+    "RRRRGGBBBGGRRRRR",
+    "RRRRGRRBRRGRRRRR",
+    "RRRRGGGGGGGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "75",
+  "DifficultyVoteSum": "189",
+  "Disliked": "12",
+  "Featured": "false",
+  "Id": "569",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "################",
+    "####.*...*.#####",
+    "####.*****.#####",
+    "####***.***#####",
+    "####.*****.#####",
+    "####.*...*.#####",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "49",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "216",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ssancho",
+  "SubmittedDate": "2009-05-21T14:25:39.22",
+  "Title": "Plus++"
+}

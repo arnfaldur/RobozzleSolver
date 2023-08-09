@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBGGGBBBBBBG",
+    "GBBBGGRRRGGGBBBG",
+    "GBBGRRRRRRRRGGBG",
+    "GBBGRRRRRRRRRGBG",
+    "GBBGRRRRRRRRRGBG",
+    "GBBGGRRRRRRGGGBG",
+    "GBBBBGGGGGGBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GBBBBBBBBBBBBBBG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "100",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "719",
+  "Items": [
+    "****************",
+    "****************",
+    "****************",
+    "******###*******",
+    "****########****",
+    "****#########***",
+    "****#########***",
+    "*****######*****",
+    "****************",
+    "****************",
+    "****************",
+    ".***************"
+  ],
+  "Liked": "31",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "141",
+  "SubLengths": [
+    "10",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-06-08T12:47:49.377",
+  "Title": "Convex Hole"
+}

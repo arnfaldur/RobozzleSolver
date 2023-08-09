@@ -1,0 +1,53 @@
+{
+  "About": "Make a left!",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRRRRRRRRRRRRRGR",
+    "RRBRBGGRRRBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "28",
+  "DifficultyVoteSum": "41",
+  "Disliked": "15",
+  "Featured": "false",
+  "Id": "515",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "##############*#",
+    "##############.#",
+    "##############.#",
+    "##############.#",
+    "##############.#",
+    "##############.#",
+    "##############.#",
+    "##############.#",
+    "##.#..........*#"
+  ],
+  "Liked": "9",
+  "RobotCol": "4",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "93",
+  "SubLengths": [
+    "5",
+    "5",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "gtmurff",
+  "SubmittedDate": "2009-05-13T13:33:03.47",
+  "Title": "Fib"
+}

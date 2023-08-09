@@ -1,0 +1,53 @@
+{
+  "About": "Oh, you'll be slightly less fine.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRBBBBBBBBBBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBBBBBBBBBBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBBBBBBBBBBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBBBBBBBBBBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "41",
+  "DifficultyVoteSum": "103",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "883",
+  "Items": [
+    "################",
+    "##*..*..*...####",
+    "##.##.##.##.####",
+    "##.##.##.##.####",
+    "##*..*..*..*####",
+    "##.##.##.##.####",
+    "##.##.##.##.####",
+    "##*..*..*..*####",
+    "##.##.##.##.####",
+    "##.##.##.##.####",
+    "##*..*..*..*####",
+    "################"
+  ],
+  "Liked": "34",
+  "RobotCol": "11",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "210",
+  "SubLengths": [
+    "6",
+    "3",
+    "2",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-25T16:40:50.407",
+  "Title": "Gridlock :: Version Bland"
+}

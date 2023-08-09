@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBBRRRRRRRRR",
+    "BRRRRRBRRRRRRRRR",
+    "BRBBBRBRRRRRRRRR",
+    "BRBRBRBRRRRRRRRR",
+    "BRBRRRBRRRRRRRRR",
+    "BRBBBBBRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BBBBBBBBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "9",
+  "DifficultyVoteSum": "36",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "874",
+  "Items": [
+    "################",
+    "################",
+    ".......##.......",
+    ".#####.##.#####.",
+    ".#...#.##.#...#.",
+    ".#.#.#.##.#*#.#.",
+    ".#.###.##.###.#.",
+    ".#.....##.....#.",
+    ".##############.",
+    "................",
+    "################",
+    "################"
+  ],
+  "Liked": "10",
+  "RobotCol": "4",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "34",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-24T18:43:16.47",
+  "Title": "Symmetry - Spiral Painting"
+}

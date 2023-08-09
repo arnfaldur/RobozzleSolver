@@ -1,0 +1,53 @@
+{
+  "About": "Turn left. Probably.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRGBBBBBBBGRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRBRRRRRRRBRRRR",
+    "RRRGBBBGBBBGRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "118",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "529",
+  "Items": [
+    "################",
+    "###*.*.*.*.*####",
+    "###.#######.####",
+    "###*#######*####",
+    "###.#######.####",
+    "###*#######*####",
+    "###.#######.####",
+    "###*#######*####",
+    "###.#######.####",
+    "###*.*...*.*####",
+    "#######*########",
+    "################"
+  ],
+  "Liked": "32",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "138",
+  "SubLengths": [
+    "2",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rainault",
+  "SubmittedDate": "2009-05-16T00:12:48.47",
+  "Title": "One lap"
+}

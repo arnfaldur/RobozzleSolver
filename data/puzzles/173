@@ -1,0 +1,53 @@
+{
+  "About": "Follow the yellow brick road",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRGGGGGGGGGGGGRR",
+    "RRGRRRRRRRRRRGRR",
+    "RRGRGGGGGGGGRGRR",
+    "RRGRGRRRRGRGRGRR",
+    "RRGRGRGGRGRGRGRR",
+    "RRGRGRGGRGRGRGRR",
+    "RRGRGRGRRGRGRGRR",
+    "RRGRGRGGGGRGRGRR",
+    "RRGRGRRRRRRGRGRR",
+    "RRGRGGGRGGGGRGRR",
+    "RRGRRRRRGRRRRGRR",
+    "RRGGGGGGGRGGGGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "64",
+  "DifficultyVoteSum": "105",
+  "Disliked": "30",
+  "Featured": "false",
+  "Id": "173",
+  "Items": [
+    "##............##",
+    "##..*.*.*.*.*.##",
+    "##.*..........##",
+    "##....*.*...*.##",
+    "##.*.*........##",
+    "##......*...*.##",
+    "##.*.*.*......##",
+    "##..........*.##",
+    "##.*.*.*......##",
+    "##..........*.##",
+    "##.*.*.*.*.*..##",
+    "##............##"
+  ],
+  "Liked": "28",
+  "RobotCol": "9",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "267",
+  "SubLengths": [
+    "3",
+    "3",
+    "3",
+    "6",
+    "2"
+  ],
+  "SubmittedBy": "propercalvin",
+  "SubmittedDate": "2009-03-20T21:11:24.673",
+  "Title": "yellow brick road"
+}

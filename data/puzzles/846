@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRBBBB",
+    "RRRRRRRRRRRGGRRR",
+    "RRRRRRRRRRGGRRRR",
+    "RRRRRRBBBGGRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "145",
+  "DifficultyVoteSum": "275",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "846",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "############...*",
+    "###########..###",
+    "##########..####",
+    "######.....#####",
+    "#####..#########",
+    "####..##########",
+    ".....###########",
+    "################",
+    "################"
+  ],
+  "Liked": "131",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "2152",
+  "SubLengths": [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "dvorjakque",
+  "SubmittedDate": "2009-06-22T14:48:49.377",
+  "Title": "The Mysterious Stair"
+}

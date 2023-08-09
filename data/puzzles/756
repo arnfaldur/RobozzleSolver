@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBGBBGGRRBBRRRR",
+    "RRBRRRRRRRRRRGRR",
+    "RRRRBGGGBBGGRBRR",
+    "RRRRBRRGRRRRRBRR",
+    "RRGRRRRRRRRRRRRR",
+    "BBGGRRBRRRRRRRRR",
+    "RRRRGRRRRRRBRGRR",
+    "RRRRGRRRRRRBRGRR",
+    "RRGRRRRRRRRRRBRR",
+    "RRGRBBGGRRRRRBRR",
+    "RRBRRRRRRRRGRRRR",
+    "RRRRBBBBGGBGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "52",
+  "DifficultyVoteSum": "131",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "756",
+  "Items": [
+    "##******##****##",
+    "##*####*#####*##",
+    "##*#********#*##",
+    "##*#*##*###*#*##",
+    "##*#*##*###*#*##",
+    ".*******###*#*##",
+    "##*#*######*#*##",
+    "##*#*######*#*##",
+    "##*#*######*#*##",
+    "##*#**********##",
+    "##*########*####",
+    "##**********####"
+  ],
+  "Liked": "44",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "228",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-14T01:17:02.453",
+  "Title": "Pairs"
+}

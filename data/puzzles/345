@@ -1,0 +1,53 @@
+{
+  "About": "Visit each planet (then visit Pluto)",
+  "AllowedCommands": "2",
+  "Colors": [
+    "RBBBBBRRBGBBBBRB",
+    "RBBBBBRRBBBRRBBB",
+    "BBBGBBRRRRRRRBGB",
+    "RRBBBBBBBBRRRBBB",
+    "RBRRRRRBBBRRRRBR",
+    "RBRRRRBBGBRRRRBR",
+    "BBBRRRBBBBRRBBBR",
+    "BGBRRRBRBRRRBGRR",
+    "BBBRRRBRRRRRBBBR",
+    "BBBRBBBGBRRRRBRR",
+    "RRRRRRGRRRRRRRRR",
+    "RRRRRRBRBBBBGBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "42",
+  "DifficultyVoteSum": "138",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "345",
+  "Items": [
+    "#*****##********",
+    "#*****##***##***",
+    ".*****#######***",
+    "#*********###***",
+    "#*####****####*#",
+    "#*####****####*#",
+    "***###****##***#",
+    "***###*#*###***#",
+    "***###*#*###***#",
+    "*********####*##",
+    "######*######*##",
+    "######********##"
+  ],
+  "Liked": "44",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "139",
+  "SubLengths": [
+    "4",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-16T02:47:49.407",
+  "Title": "Orbits"
+}

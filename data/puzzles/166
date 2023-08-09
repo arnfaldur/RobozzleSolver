@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBBBRRRRRRRRR",
+    "RRBRRRRBRRRRBRRR",
+    "RRBRRRRBRRRBRBRR",
+    "RRRBBBBGRRRBRBRR",
+    "RRRRRRRBRRRBRBRR",
+    "RRBBGBBRBBBGBRRR",
+    "RBRRBRRBRRRRRRRR",
+    "RBRRBRRGBBBBRRRR",
+    "RBRRBRRBRRRRBRRR",
+    "RRBBRRRRBBBBRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "2239",
+  "DifficultyVoteSum": "4046",
+  "Disliked": "92",
+  "Featured": "false",
+  "Id": "166",
+  "Items": [
+    "################",
+    "##*....*########",
+    "##.####.###*.*##",
+    "##.####.###.#.##",
+    "##*.....###.#.##",
+    "#######.###.#.##",
+    "#*...........*##",
+    "#.##.##.########",
+    "#.##.##.....*###",
+    "#.##.##.####.###",
+    "#*..*##*....*###",
+    "################"
+  ],
+  "Liked": "1974",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "15351",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-20T02:14:06.077",
+  "Title": "Left on green... the first time"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRBBBBBBBBBBBRRR",
+    "RBBBBBBBRRBBBBRR",
+    "RBBBBBGBRRBBBBRR",
+    "BBBBBRBBRGBBRRRR",
+    "BBBRBBBRBBBBRRRR",
+    "BRBBBBRRBBBRRRRR",
+    "BBBBBRRRRRRRRRRR",
+    "RBBBRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "39",
+  "DifficultyVoteSum": "104",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "553",
+  "Items": [
+    "##...........###",
+    "#.......##....##",
+    "#.......##....##",
+    "........#...####",
+    ".......#.*..####",
+    "......##...#####",
+    ".....###########",
+    "#...############",
+    "################",
+    "################",
+    "################",
+    "################"
+  ],
+  "Liked": "23",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "181",
+  "SubLengths": [
+    "10",
+    "3",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "cobaltblue",
+  "SubmittedDate": "2009-05-19T18:02:23.077",
+  "Title": "horseplay"
+}

@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRBBBBBBBBBBBRR",
+    "RRRBRRRRRRRRRBRR",
+    "RRRBRBBBBBBBRBRR",
+    "RRRBRBRRRRRBRBRR",
+    "RRRBRBRBBBRBRBRR",
+    "RRRBRBRBRBRBRBRR",
+    "RRRBRBRRRBRBRBRR",
+    "RRRBRBBBBBRBRBRR",
+    "RRRBRRRRRRRBRBRR",
+    "RRRBBBBBBBBBRBRR",
+    "RRRRRRRRRRRRRBRR",
+    "RRGRRRRRRRRRRGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "31",
+  "DifficultyVoteSum": "117",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "414",
+  "Items": [
+    "###***********##",
+    "###*#########*##",
+    "###*#*******#*##",
+    "###*#*#####*#*##",
+    "###*#*#***#*#*##",
+    "###*#*#*#*#*#*##",
+    "###*#*###*#*#*##",
+    "###*#*****#*#*##",
+    "###*#######*#*##",
+    "###*********#*##",
+    "#############*##",
+    "##............##"
+  ],
+  "Liked": "28",
+  "RobotCol": "2",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "135",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-02T10:41:22.22",
+  "Title": "Archimedean Spiral"
+}

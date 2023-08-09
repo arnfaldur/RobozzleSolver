@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RBBBBGRBGBBRBBRR",
+    "BRRBRRBBBRRBRRBR",
+    "BRRGBBBBBBBGRRBR",
+    "BRRBRRRBRRRBRRBR",
+    "BRRBRRRBRRRBRRBR",
+    "BRRBRRRBRRRBRRBR",
+    "BRRBRRRBRRRBRRBR",
+    "RBBRBBBBBBBRBBRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "110",
+  "DifficultyVoteSum": "204",
+  "Disliked": "29",
+  "Featured": "false",
+  "Id": "767",
+  "Items": [
+    "#####*##########",
+    "#####.##########",
+    "#####.##########",
+    "#####.##########",
+    "*....*#.*..*..*#",
+    ".##.##...##.##.#",
+    ".##*....*..*##.#",
+    ".##.###.###.##.#",
+    ".##.###.###.##.#",
+    ".##.###.###.##.#",
+    ".##.###.###.##.#",
+    "*..*.......*..*#"
+  ],
+  "Liked": "66",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "564",
+  "SubLengths": [
+    "10",
+    "6",
+    "2",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "avatar",
+  "SubmittedDate": "2009-06-14T13:05:18.327",
+  "Title": "abiss"
+}

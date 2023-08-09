@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BRRRBRRRBBBBRRRB",
+    "BRRRBRRRBBBBRRRB",
+    "BRRRBRRRBBBBRRRB",
+    "BBBBBBBBBBBBBBBB",
+    "BRRRBBBRRRBBRRRB",
+    "BRRRBBBRRRBBRRRB",
+    "BRRRBBBRRRBBRRRB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "29",
+  "DifficultyVoteSum": "32",
+  "Disliked": "23",
+  "Featured": "false",
+  "Id": "360",
+  "Items": [
+    "...........*....",
+    ".###.###....###.",
+    ".###.###....###.",
+    ".###.###....###.",
+    "................",
+    ".###....##..###.",
+    ".###...###..###.",
+    ".###...###..###.",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "11",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "431",
+  "SubLengths": [
+    "5",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "apavliv",
+  "SubmittedDate": "2009-04-19T19:36:21.47",
+  "Title": "Gues how to"
+}

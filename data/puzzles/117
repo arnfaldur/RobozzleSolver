@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "BGGGGGGGGGGGGGGB",
+    "BGGGGGGGGGGGGGGB",
+    "BGGGGGGGGGGGGGGB",
+    "BGGGGGGGGGGGGGGB",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG",
+    "GGGGGGGGGGGGGGGG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "189",
+  "DifficultyVoteSum": "470",
+  "Disliked": "26",
+  "Featured": "false",
+  "Id": "117",
+  "Items": [
+    "................",
+    "................",
+    "................",
+    "................",
+    "...........**..*",
+    ".........*.....*",
+    "...*...........*",
+    "......*.*....*.*",
+    "................",
+    "................",
+    "................",
+    "................"
+  ],
+  "Liked": "147",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "4",
+  "Solutions": "866",
+  "SubLengths": [
+    "5",
+    "4",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "evko",
+  "SubmittedDate": "2009-03-09T22:42:09.797",
+  "Title": "Score a goal"
+}

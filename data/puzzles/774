@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "GRBGBRRGBRGBRGBG",
+    "BRRRRRRRRRRRRRRR",
+    "RRGRBGBRBRGBBGRB",
+    "BRGRRRRRRRRRRRRR",
+    "GRBRGRBGBRBGRBRG",
+    "GRBRBRRRRRRRRRRG",
+    "RRRRRRRRRRRBRBRB",
+    "BRGBGBBBGBRGRRRR",
+    "RRRRRRRRRRRRRBRG",
+    "GBGGRBGRBGRBRGRB",
+    "RRRRRRRRRRRRRRRB",
+    "BGRRBGRBGGBGRRRG"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "96",
+  "DifficultyVoteSum": "202",
+  "Disliked": "10",
+  "Featured": "false",
+  "Id": "774",
+  "Items": [
+    "................",
+    ".##############.",
+    ".#............#.",
+    ".#.##########.#.",
+    ".#.#........#.#.",
+    ".#.#*######.#.#.",
+    ".#.########.#.#.",
+    ".#..........#.#.",
+    ".############.#.",
+    "..............#.",
+    "###############.",
+    "................"
+  ],
+  "Liked": "82",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "469",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-15T12:20:59.563",
+  "Title": "rainbow spiral"
+}

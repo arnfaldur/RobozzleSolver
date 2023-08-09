@@ -1,0 +1,53 @@
+{
+  "About": "Oh, you'll be fine.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBBRBBRBBRRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRRBBGBBGBBRRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRRBBGBBGBBRRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRBRRBRRBRRBRRRR",
+    "RRRBBRBBRBBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "788",
+  "DifficultyVoteSum": "1067",
+  "Disliked": "115",
+  "Featured": "false",
+  "Id": "882",
+  "Items": [
+    "################",
+    "##*..*..*...####",
+    "##.##.##.##.####",
+    "##.##.##.##.####",
+    "##*..*..*..*####",
+    "##.##.##.##.####",
+    "##.##.##.##.####",
+    "##*..*..*..*####",
+    "##.##.##.##.####",
+    "##.##.##.##.####",
+    "##*..*..*..*####",
+    "################"
+  ],
+  "Liked": "597",
+  "RobotCol": "11",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "3797",
+  "SubLengths": [
+    "6",
+    "3",
+    "2",
+    "2",
+    "0"
+  ],
+  "SubmittedBy": "matchu",
+  "SubmittedDate": "2009-06-25T16:31:38.28",
+  "Title": "Gridlock"
+}

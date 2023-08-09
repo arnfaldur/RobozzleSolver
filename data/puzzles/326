@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRBBBBRBBRRRRRR",
+    "RBBBBRBBBBRRRRRR",
+    "RBBRBBBBRBBRRRRR",
+    "RRBBBBRBBBBRRRRR",
+    "RRBBRBBBBRBBRRRR",
+    "RRRBBBBRBBBBRRRR",
+    "RRRBBRBBBBRRRRRR",
+    "RRRRBBBBRRRRRRRR",
+    "RRRRBBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "18",
+  "DifficultyVoteSum": "66",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "326",
+  "Items": [
+    "#######**#######",
+    "#####****#######",
+    "###****#**######",
+    "#****#****######",
+    "#**#****#**#####",
+    "##****#****#####",
+    "##**#**.*#**####",
+    "###****#****####",
+    "###**#****######",
+    "####****########",
+    "####**##########",
+    "################"
+  ],
+  "Liked": "16",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "68",
+  "SubLengths": [
+    "5",
+    "10",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-08T22:55:18.983",
+  "Title": "Regular Holes"
+}

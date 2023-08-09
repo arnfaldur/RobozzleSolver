@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBRRRRRBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "BBBBBBGRBBBBGRBR",
+    "RRBRRRRRRBRRRRRR",
+    "RBGRBBBBBGBRBRRR",
+    "RRBRRRRRRRRRBRRR",
+    "RRBRRRRRRBRRBRRR",
+    "RRRRRRRRRRRRBRRR",
+    "RBGBBRGBBBBRGRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "61",
+  "DifficultyVoteSum": "187",
+  "Disliked": "2",
+  "Featured": "false",
+  "Id": "230",
+  "Items": [
+    "######*#####*###",
+    "######.#####.###",
+    "######*#####*###",
+    ".......*.....*.*",
+    "##.######.##*###",
+    "#..*.......#.###",
+    "##.######*##.###",
+    "##.######.##.###",
+    "##*######*##.###",
+    "#....*.....*.**#",
+    "##.###*#####*###",
+    "######*#####*###"
+  ],
+  "Liked": "64",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "3",
+  "Solutions": "250",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "alvarom",
+  "SubmittedDate": "2009-03-28T22:19:41.877",
+  "Title": "red star"
+}

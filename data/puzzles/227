@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRBRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRBBRRRRRR",
+    "RRRRRRRBBRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRBBRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRBRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "642",
+  "DifficultyVoteSum": "1688",
+  "Disliked": "31",
+  "Featured": "false",
+  "Id": "227",
+  "Items": [
+    "################",
+    "################",
+    "##########*#####",
+    "##########.#####",
+    "#########..#####",
+    "########..######",
+    "#######.*#######",
+    "######..########",
+    "#####..#########",
+    "#####.##########",
+    "#####*##########",
+    "################"
+  ],
+  "Liked": "466",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "3929",
+  "SubLengths": [
+    "10",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "wallacoloo",
+  "SubmittedDate": "2009-03-28T20:50:30.923",
+  "Title": "propeller"
+}

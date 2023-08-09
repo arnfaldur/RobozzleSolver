@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRBBRRRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRRBBBBRRRRR",
+    "RRRRRBBBBRBBRRRR",
+    "RRRRRBBRBBBBRRRR",
+    "RRRRRRBBBBRRRRRR",
+    "RRRRRRBBRBBRRRRR",
+    "RRRRRRRRRBBRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "106",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "324",
+  "Items": [
+    "################",
+    "################",
+    "################",
+    "######**########",
+    "######**#**#####",
+    "#######****#####",
+    "#####**.*#**####",
+    "#####**#****####",
+    "######****######",
+    "######**#**#####",
+    "#########**#####",
+    "################"
+  ],
+  "Liked": "21",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "97",
+  "SubLengths": [
+    "5",
+    "3",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "troc",
+  "SubmittedDate": "2009-04-08T16:22:20.983",
+  "Title": "Offset Tiles"
+}

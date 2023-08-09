@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRGBBRBBBGRRR",
+    "RRRGBBRBBBGGBRRR",
+    "RRRBRGBBRBGBGRRR",
+    "RRRBGBBGBRRBGRRR",
+    "RRRBBGGBRBRBGRRR",
+    "RRRBRRGRBBBBBRRR",
+    "RRRGBRBGBRBGRRRR",
+    "RRRGBBBBBBBGBRRR",
+    "RRRBGBRBBBRGBRRR",
+    "RRRRRGRRGRBRBRRR",
+    "RRRGBBBBRBRBGRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "21",
+  "DifficultyVoteSum": "23",
+  "Disliked": "16",
+  "Featured": "false",
+  "Id": "550",
+  "Items": [
+    "###.#********###",
+    "###***.******###",
+    "###*.***.****###",
+    "###*****..#*.###",
+    "###**.*******###",
+    "###*.#*******###",
+    "###**.*.*****###",
+    "###**********###",
+    "###**********###",
+    "###*#..#.#.#*###",
+    "###**********###",
+    "################"
+  ],
+  "Liked": "10",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "47",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "quan",
+  "SubmittedDate": "2009-05-19T05:33:18.843",
+  "Title": "chaos"
+}

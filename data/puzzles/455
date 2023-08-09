@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRGBBBBGRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRRBRRRRBRRRR",
+    "RRRRRRBRRRBBRRRR",
+    "RRRRRRGBBBBGBRRR",
+    "RRRRRRRRRRRBBRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "400",
+  "DifficultyVoteSum": "587",
+  "Disliked": "57",
+  "Featured": "false",
+  "Id": "455",
+  "Items": [
+    "################",
+    "######......####",
+    "######.####.####",
+    "######.####.####",
+    "######.####.####",
+    "######.####.####",
+    "######.####.####",
+    "######.###**####",
+    "######....*.*###",
+    "###########**###",
+    "################",
+    "################"
+  ],
+  "Liked": "294",
+  "RobotCol": "11",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "1791",
+  "SubLengths": [
+    "5",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "quan",
+  "SubmittedDate": "2009-05-05T16:38:57.03",
+  "Title": "Q"
+}

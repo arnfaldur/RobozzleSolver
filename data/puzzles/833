@@ -1,0 +1,53 @@
+{
+  "About": "marks teh spot",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRGBRRRRRRRBGRRR",
+    "RRBBBRRRRRBBBRRR",
+    "RRRBBBRRRBBBRRRR",
+    "RRRRBBBRBBBRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRRRBRBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRBBBRBBBRRRRR",
+    "RRRBBBRRRBBBRRRR",
+    "RRBBBRRRRRBBBRRR",
+    "RRGBRRRRRRRBGRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "165",
+  "DifficultyVoteSum": "317",
+  "Disliked": "7",
+  "Featured": "false",
+  "Id": "833",
+  "Items": [
+    "..##.......##...",
+    ".#**#.....#**#..",
+    ".#*.*#...#*.*#..",
+    "..#*.*#.#*.*#...",
+    "...#*.*#*.*#....",
+    "....#*.*.*#.....",
+    ".....#*.*#......",
+    "....#*.*.*#.....",
+    "...#*.*#*.*#....",
+    "..#*.*#.#*.*#...",
+    ".#*.*#...#*.*#..",
+    ".#**#.....#**#.."
+  ],
+  "Liked": "146",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "6",
+  "Solutions": "2227",
+  "SubLengths": [
+    "8",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "ammonzing",
+  "SubmittedDate": "2009-06-21T13:57:49.61",
+  "Title": "x"
+}

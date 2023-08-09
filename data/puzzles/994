@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRBBBBB",
+    "RRRRRRRRRRRBBGBB",
+    "RRRRRRRRRBGBBBGB",
+    "RRRRRRRRRBGBBBBB",
+    "RRRRRRRBBBBGBBRR",
+    "RRRRRRRBBBBBGGRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRRRBBBBBBBRRRR",
+    "RRRBBBBBBBRRRRRR",
+    "RRRBBBBBBBRRRRRR",
+    "RRRBBBBBRRRRRRRR",
+    "RRRBBBBBRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "20",
+  "DifficultyVoteSum": "59",
+  "Disliked": "4",
+  "Featured": "false",
+  "Id": "994",
+  "Items": [
+    "#####.#####*****",
+    "####...####*****",
+    "###.....#****.**",
+    "####.....*******",
+    "#####..*******##",
+    "######.*******##",
+    "#####*******.###",
+    "#####*******..##",
+    "###*******.....#",
+    "###*******#.....",
+    "###*****####...#",
+    "###*****#####.##"
+  ],
+  "Liked": "15",
+  "RobotCol": "13",
+  "RobotDir": "0",
+  "RobotRow": "2",
+  "Solutions": "44",
+  "SubLengths": [
+    "9",
+    "2",
+    "2",
+    "2",
+    "2"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-07-05T07:49:42.797",
+  "Title": "single bird"
+}

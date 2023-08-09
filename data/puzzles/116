@@ -1,0 +1,53 @@
+{
+  "About": "A themed descent into madness.",
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBBR",
+    "BBBBBBBRBBBBBBBR",
+    "BBBRRBBBBBRRBBBR",
+    "BBRRBBRBRBBRRBBR",
+    "RRRRBBRRRBBRRRBR",
+    "BRRRRRRRRRRRRRBR",
+    "BRRRRRRRRRRRRRBR",
+    "BRRRRRRRRRRRRRBR",
+    "BRRBBRBRBRBBRRRR",
+    "BBRRBBBRBBBRRBBR",
+    "BBBRRBBBBBRRBBBR",
+    "BBBRBBBRBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "364",
+  "DifficultyVoteSum": "993",
+  "Disliked": "20",
+  "Featured": "false",
+  "Id": "116",
+  "Items": [
+    "..........*....#",
+    "...............#",
+    "..*##.....##*..#",
+    ".*##..#.#..##*.#",
+    ".###..###..###.#",
+    ".#############.#",
+    ".#############.#",
+    ".#############.#",
+    ".##..#.#.#..##.#",
+    ".*##...#...##*.#",
+    "..*##.....##*..#",
+    ".......*.......#"
+  ],
+  "Liked": "284",
+  "RobotCol": "7",
+  "RobotDir": "2",
+  "RobotRow": "1",
+  "Solutions": "2180",
+  "SubLengths": [
+    "5",
+    "5",
+    "4",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "raijuzero",
+  "SubmittedDate": "2009-03-09T21:45:16.423",
+  "Title": "I'm Batman"
+}

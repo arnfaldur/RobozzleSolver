@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "RRRRRRBBBBGBBBBR",
+    "BGBRRRGRRRRRRRBR",
+    "BRBRRRBRBGBBRRBR",
+    "BRBRRRRRRRRBRRBR",
+    "BRBRRBBGBBRBRRBR",
+    "BRBRRBRRRGRGRRGR",
+    "GRBRRGRBBBRBRRBR",
+    "BRBRRBRRRRRBRRBR",
+    "BRBRRBBBGBBBRRBR",
+    "BRBRRRRRRRRRRRBR",
+    "BRRBBBBBGBBBBBBR",
+    "BRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "34",
+  "DifficultyVoteSum": "97",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "820",
+  "Items": [
+    "######.........#",
+    "...###.#######.#",
+    ".#.###......##.#",
+    ".#.########.##.#",
+    ".#.##.....#.##.#",
+    ".#.##.###.#.##.#",
+    ".#.##.#*..#.##.#",
+    ".#.##.#####.##.#",
+    ".#.##.......##.#",
+    ".#.###########.#",
+    ".#.............#",
+    ".###############"
+  ],
+  "Liked": "30",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "181",
+  "SubLengths": [
+    "4",
+    "5",
+    "3",
+    "3",
+    "5"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-06-20T17:52:09.517",
+  "Title": "A tortuous path for one star 2"
+}

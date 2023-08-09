@@ -1,0 +1,53 @@
+{
+  "About": "Avoid the pits! ... such a great pun ...",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GGGGGGGGGGGGGGGG",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBRBBBBBBB",
+    "BBBRBRBBRBBBBRBB",
+    "BBBRBRBBBBRBBRBB",
+    "BRBBBBRBBBRBRBBB",
+    "BRBBRBRBBRBBRBBB",
+    "BBBBRBBBBRBBBBRB",
+    "BBRBBBBBBBBRBBRB",
+    "BBRBBBRBBBBRBBBB",
+    "BBBBBBRBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "121",
+  "DifficultyVoteSum": "440",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "189",
+  "Items": [
+    "****************",
+    "........*.......",
+    "...*.*..#....*..",
+    "...#.#..*.*..#..",
+    ".*.*.**...#.**..",
+    ".#..*.#..**.#...",
+    ".*..#.*..#..*.*.",
+    "..*.*....*.*..#.",
+    "..#...*....#..*.",
+    "..*...#....*....",
+    "......*.........",
+    ".***************"
+  ],
+  "Liked": "128",
+  "RobotCol": "0",
+  "RobotDir": "3",
+  "RobotRow": "11",
+  "Solutions": "1105",
+  "SubLengths": [
+    "5",
+    "6",
+    "8",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "recursive",
+  "SubmittedDate": "2009-03-24T11:44:04.453",
+  "Title": "Cherry Picking"
+}

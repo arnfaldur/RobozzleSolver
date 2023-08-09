@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRGRGRRRGRGRR",
+    "RRRBBBBBBBBBBBRR",
+    "RGBRRRRRRRRRRRBR",
+    "RRBRRRRRRRRRRRBR",
+    "RGBRRRRRRRRRRRBG",
+    "RRBRRRRRRRRRRRBR",
+    "RGBRRRRRRRRRRRRR",
+    "RGBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRBRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "67",
+  "Disliked": "1",
+  "Featured": "false",
+  "Id": "734",
+  "Items": [
+    "################",
+    "#####*#*###*#*##",
+    "##.............#",
+    "#*.###########.#",
+    "##.###########.#",
+    "#*.###########.*",
+    "##.###########.#",
+    "#*.###########*#",
+    "#*.#############",
+    "##.#############",
+    "##.#############",
+    "################"
+  ],
+  "Liked": "20",
+  "RobotCol": "2",
+  "RobotDir": "3",
+  "RobotRow": "10",
+  "Solutions": "124",
+  "SubLengths": [
+    "5",
+    "10",
+    "10",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-06-09T22:40:03.97",
+  "Title": "Primes"
+}

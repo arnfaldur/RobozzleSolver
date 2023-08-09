@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "1",
+  "Colors": [
+    "RRRRRRRRBBBRBBBR",
+    "RRRRRRRRBRBBBRBR",
+    "RRRRRRBBBBBBBBBR",
+    "RRRBBBBBBBBBBBRR",
+    "RRRBRBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RRBBBBBBBBBBBBRR",
+    "RBBBBBBBBBBBBBBR",
+    "RBRBRBBBBBBBBRBR",
+    "RBBBBBBBBBBBBBBR",
+    "RRRBBBBRBRBRBRRR",
+    "RRRRRRBBBBBBBRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "8",
+  "DifficultyVoteSum": "31",
+  "Disliked": "5",
+  "Featured": "false",
+  "Id": "701",
+  "Items": [
+    "########***#***#",
+    "########*#***#*#",
+    "######*********#",
+    "###***********##",
+    "###*#*********##",
+    "##************##",
+    "##************##",
+    "#**************#",
+    "#*#*#**.*****#*#",
+    "#**************#",
+    "###****#*#*#*###",
+    "######*******###"
+  ],
+  "Liked": "3",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "8",
+  "Solutions": "32",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-06T16:37:18.97",
+  "Title": "Random Walk"
+}

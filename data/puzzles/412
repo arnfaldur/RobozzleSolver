@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRBRRRRRRRR",
+    "RRRRRRBBBRRRRRRR",
+    "RRRRRBBBBBRRRRRR",
+    "RRRRBBBBBBBRRRRR",
+    "RRRBBBBBBBBBRRRR",
+    "RRBBBBBBBBBBBRRR",
+    "RBBBBBBBBBBBBBRR",
+    "RGGGGGGGGGGGGGGR",
+    "RRRRRRRRRRRRRRRR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "26",
+  "DifficultyVoteSum": "89",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "412",
+  "Items": [
+    "################",
+    "################",
+    "#######*########",
+    "######***#######",
+    "#####*****######",
+    "####*******#####",
+    "###*********####",
+    "##***********###",
+    "#*************##",
+    ".**************#",
+    "################",
+    "################"
+  ],
+  "Liked": "24",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "9",
+  "Solutions": "109",
+  "SubLengths": [
+    "10",
+    "10",
+    "5",
+    "5",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-05-01T19:44:50.923",
+  "Title": "Triangle"
+}

@@ -1,0 +1,53 @@
+{
+  "About": "An easy puzzle for once ;-)",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RGBBBBBBBBBBBBGR",
+    "RBGBBBBBBBBBBGBR",
+    "RBBGBBBBBBBBGBBR",
+    "RBBBGBBBBBBGBBBR",
+    "RBBBBGBBBBGBBBBR",
+    "RBBBBRBBBBGBBBBR",
+    "RBBBRBBBBBBGBBBR",
+    "RBBRBBBBBBBBGBBR",
+    "RBRBBBBBBBBBBGBR",
+    "RRBBBBBBBBBBBBGR",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1416",
+  "DifficultyVoteSum": "3014",
+  "Disliked": "42",
+  "Featured": "false",
+  "Id": "204",
+  "Items": [
+    "################",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#**************#",
+    "#.*************#",
+    "################"
+  ],
+  "Liked": "1171",
+  "RobotCol": "1",
+  "RobotDir": "0",
+  "RobotRow": "10",
+  "Solutions": "8822",
+  "SubLengths": [
+    "5",
+    "5",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "igoro",
+  "SubmittedDate": "2009-03-27T06:26:52.827",
+  "Title": "Let the lines guide you"
+}

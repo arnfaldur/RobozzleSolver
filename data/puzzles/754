@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RBBBGBBGBBGBRBBR",
+    "RBBRGBRBBRBBRBBR",
+    "RRRRBRRRRRRBRRBR",
+    "RBBBGBRBBRBGRBGR",
+    "RGBRBBRBGBBBRBBR",
+    "RBRRRRRRRRRRRRBR",
+    "RBBRBBRBBRBBRBGR",
+    "RBGBGGBGBRBGBGBR",
+    "RRRRBRRBRRRBRBRR",
+    "RBBBGBRBBRBGRBBR",
+    "RBBRBBRBGBBBRBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "10",
+  "DifficultyVoteSum": "33",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "754",
+  "Items": [
+    "################",
+    "#*..........#.*#",
+    "#..#..#..#..#..#",
+    "####.######.##.#",
+    "#.....#..#..#..#",
+    "#..#..#.....#..#",
+    "#.############.#",
+    "#..#..#..#..#..#",
+    "#........#.....#",
+    "####.##.###.#.##",
+    "#.....#..#..#..#",
+    "#*.#..#.....#.*#"
+  ],
+  "Liked": "13",
+  "RobotCol": "7",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "67",
+  "SubLengths": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "SubmittedBy": "markbyers",
+  "SubmittedDate": "2009-06-13T17:08:53.437",
+  "Title": "Chambers"
+}

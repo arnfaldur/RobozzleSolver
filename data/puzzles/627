@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRGGBBBBBBRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRGGBBBBBRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRGGGGBBBBBBRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRGGBBBBBBBRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRGBBBRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRGGGGBBBBBBBB",
+    "RRRRRRRRRRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "73",
+  "DifficultyVoteSum": "176",
+  "Disliked": "9",
+  "Featured": "false",
+  "Id": "627",
+  "Items": [
+    "......******####",
+    ".###############",
+    ".....*****######",
+    ".###############",
+    "......******####",
+    ".###############",
+    ".......*******##",
+    ".###############",
+    "...***##########",
+    ".###############",
+    "........********",
+    "################"
+  ],
+  "Liked": "51",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "252",
+  "SubLengths": [
+    "10",
+    "4",
+    "4",
+    "4",
+    "4"
+  ],
+  "SubmittedBy": "rafaelromao",
+  "SubmittedDate": "2009-05-31T22:44:30.483",
+  "Title": "Guess the formula"
+}

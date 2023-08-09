@@ -1,0 +1,53 @@
+{
+  "About": "...Jump on Red",
+  "AllowedCommands": "0",
+  "Colors": [
+    "RRRRRRRRRRRRRRRR",
+    "RRRBRRRRRRRRRRRR",
+    "RRBBBRBRRRRRRRRR",
+    "RBBBBBBBRRRBRRRB",
+    "BBBBBBBBBRBBBRBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBBB",
+    "BRRRBBRBBBRRBBRR",
+    "BRRRBBRBBBRRBBRR",
+    "GRRRGGRGGGRRGGRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "14",
+  "DifficultyVoteSum": "64",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "351",
+  "Items": [
+    "################",
+    "###*############",
+    "##***#*#########",
+    "#*******###*###*",
+    ".********#***#**",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "****************",
+    "*###**#***##**##",
+    "****************"
+  ],
+  "Liked": "12",
+  "RobotCol": "0",
+  "RobotDir": "1",
+  "RobotRow": "4",
+  "Solutions": "66",
+  "SubLengths": [
+    "10",
+    "10",
+    "10",
+    "10",
+    "10"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-04-17T00:09:14.813",
+  "Title": "Plus or Minus One and..."
+}

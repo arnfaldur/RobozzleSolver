@@ -1,0 +1,53 @@
+{
+  "About": "ant has started already!",
+  "AllowedCommands": "7",
+  "Colors": [
+    "RRRRRBBRRRRRRRRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRRBBBRRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRRBBBBRRRRRRR",
+    "RRRRBBRRRRBBRRRR",
+    "RRRRBBRBRGBBRRRR",
+    "RRBBBBRBBRBBRRRR",
+    "RBBBBBRRRRBBRRRR",
+    "RBBBBBBBBBBBRRRR",
+    "RRRRBBBBBBBBRRRR",
+    "RRRRRRRBBBRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "7",
+  "DifficultyVoteSum": "29",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "489",
+  "Items": [
+    "#####**#########",
+    "#####***########",
+    "#####***########",
+    "#####****#######",
+    "#####****#######",
+    "####*****.**####",
+    "####********####",
+    "##**********####",
+    "#***********####",
+    "#***********####",
+    "####********####",
+    "#######***######"
+  ],
+  "Liked": "2",
+  "RobotCol": "9",
+  "RobotDir": "3",
+  "RobotRow": "5",
+  "Solutions": "11",
+  "SubLengths": [
+    "4",
+    "3",
+    "3",
+    "3",
+    "0"
+  ],
+  "SubmittedBy": "dennyrolling",
+  "SubmittedDate": "2009-05-10T03:46:39.343",
+  "Title": "Not quite Langton's"
+}

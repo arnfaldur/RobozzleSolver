@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BBBBBBBBBBBBBBGR",
+    "RRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBGRRB",
+    "RRRRRRRRRRRRRBRB",
+    "BRRBBBBBBBRGRBRB",
+    "BRGRRRRRRRRBRBRB",
+    "BRBRBRRRRRRGRBRB",
+    "BRBRBGBBBBBRRBRB",
+    "BRBRRRRRRRRRRGRB",
+    "BRGRBBBBBBBBBRRB",
+    "BRRRRRRRRRRRRRRG",
+    "RGBBBBBBBBBBBBBR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "1151",
+  "DifficultyVoteSum": "3165",
+  "Disliked": "17",
+  "Featured": "false",
+  "Id": "532",
+  "Items": [
+    "......*.........",
+    "###############.",
+    ".....*........#.",
+    ".############.#.",
+    ".#....*.....#*#.",
+    ".#.########*#.#*",
+    "*#*#*######.#.#.",
+    ".#.#....*...#.#.",
+    ".#.##########.#.",
+    ".#.......*....#.",
+    ".##############.",
+    "........*......."
+  ],
+  "Liked": "968",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "0",
+  "Solutions": "6952",
+  "SubLengths": [
+    "6",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "rilo",
+  "SubmittedDate": "2009-05-16T08:44:39.89",
+  "Title": "Spirelli"
+}

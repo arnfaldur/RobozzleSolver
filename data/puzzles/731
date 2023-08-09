@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "0",
+  "Colors": [
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRRRRRRRRRRRRRRR",
+    "BRBRBRRGGRRRRRRR",
+    "BRRRRBRGGRRRRRRR",
+    "BRRBBGRGGRRRRRRR",
+    "BRRRGBRGGRRRRRRR",
+    "RBGBBRBBBRRRRRRR",
+    "RRRRRRRGGRRRRRRR",
+    "RRBRRRRGGRRRRRRR",
+    "RRGRRRRGGRRRRRRR",
+    "BGBRRRRGGRRRRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "13",
+  "DifficultyVoteSum": "39",
+  "Disliked": "3",
+  "Featured": "false",
+  "Id": "731",
+  "Items": [
+    "*###############",
+    "*###############",
+    "*###############",
+    "******#..#######",
+    "**###*#..#######",
+    "******#.....##.#",
+    "*###**#...#...##",
+    "******......####",
+    "*######...#...##",
+    "***####.....##.#",
+    "##*####..#######",
+    ".**####..#######"
+  ],
+  "Liked": "11",
+  "RobotCol": "0",
+  "RobotDir": "0",
+  "RobotRow": "11",
+  "Solutions": "46",
+  "SubLengths": [
+    "3",
+    "4",
+    "3",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "timotheeee",
+  "SubmittedDate": "2009-06-09T11:47:13.563",
+  "Title": "snake"
+}

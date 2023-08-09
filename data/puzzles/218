@@ -1,0 +1,53 @@
+{
+  "About": "The red tile are 1. The blue tiles are 0. They form binary numbers (MSB first).",
+  "AllowedCommands": "0",
+  "Colors": [
+    "GBGRGRBBRBBRRRBG",
+    "RRBRBRRRRRRRRRRB",
+    "RRRRRRRRRRRGGRRR",
+    "RRRRGBRGRBGRBRRB",
+    "RRRRRRRRRRBBRRRR",
+    "GBRBRRBBBBGRRRRR",
+    "RRGRRRRRRRRBGRRB",
+    "GBRRGBRBRBBRRGRR",
+    "BRRRRGBRRRBBRGRR",
+    "RRRRRBRRRRRRRRRB",
+    "RRBRRRRRRRRBGBRG",
+    "GBGRRGBRRRBGRRRR"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "22",
+  "DifficultyVoteSum": "83",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "218",
+  "Items": [
+    "***#************",
+    "*#*#*##########*",
+    "*#*#*######**##*",
+    "*#*#********.##*",
+    "*#*#######***##*",
+    "****##.******##*",
+    "##*########**##*",
+    "**************#*",
+    "*#*##*********#*",
+    "*#*##*#####**##*",
+    "*#*##*#####*****",
+    "***##*******####"
+  ],
+  "Liked": "22",
+  "RobotCol": "6",
+  "RobotDir": "0",
+  "RobotRow": "5",
+  "Solutions": "83",
+  "SubLengths": [
+    "4",
+    "3",
+    "5",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "snydej",
+  "SubmittedDate": "2009-03-28T09:30:17.75",
+  "Title": "Mod 3 II"
+}

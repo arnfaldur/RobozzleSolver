@@ -1,0 +1,53 @@
+{
+  "About": {},
+  "AllowedCommands": "4",
+  "Colors": [
+    "BBBBBBBBBBBBBBBB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BRRRRRRRRRRRRRRB",
+    "BBBBBBBBBBBBBBBB"
+  ],
+  "CommentCount": "0",
+  "DifficultyVoteCount": "50",
+  "DifficultyVoteSum": "141",
+  "Disliked": "0",
+  "Featured": "false",
+  "Id": "635",
+  "Items": [
+    "................",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    ".**************.",
+    "................"
+  ],
+  "Liked": "46",
+  "RobotCol": "15",
+  "RobotDir": "2",
+  "RobotRow": "10",
+  "Solutions": "266",
+  "SubLengths": [
+    "4",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "SubmittedBy": "bahkoo",
+  "SubmittedDate": "2009-06-02T12:28:10.72",
+  "Title": "Clean Your Room"
+}
