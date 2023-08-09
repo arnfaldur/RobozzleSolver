@@ -1,5 +1,5 @@
 use std::collections::hash_map::DefaultHasher;
-use std::fmt::Debug;
+use std::fmt::{Debug, Display};
 use std::hash::{Hash, Hasher};
 use std::mem;
 use std::ops::{Index, IndexMut};
@@ -10,10 +10,18 @@ use smallvec::SmallVec;
 
 use crate::constants::*;
 use instructions::*;
-use std::collections::{HashSet, VecDeque};
 
+use self::board::Board;
+use self::puzzle::{make_puzzle, Puzzle};
+
+pub mod board;
 pub mod display;
 pub mod instructions;
+pub mod puzzle;
+pub mod state;
+
+#[cfg(test)]
+mod tests;
 
 pub type TileType = u32;
 
@@ -65,6 +73,15 @@ impl Tile {
 #[derive(PartialEq, Eq, Copy, Clone, Hash, Serialize, Deserialize)]
 pub struct Map(pub [[Tile; 18]; 14]);
 
+impl Map {
+    pub fn count_stars(&self) -> usize {
+        self.0
+            .iter()
+            .map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>())
+            .sum()
+    }
+}
+
 pub type Method = [Ins; 10];
 
 #[derive(Eq, Ord, PartialEq, PartialOrd, Copy, Clone, Serialize, Deserialize)]
@@ -112,6 +129,7 @@ impl Source {
             let mut nops = 0;
             for i in 0..10 {
                 nops += self[m][i].is_nop() as usize;
+
                 if nops > diff {
                     self[m][i] = HALT;
                 }
@@ -207,10 +225,13 @@ impl StackVec {
         self.0.push(element);
     }
     fn pop(&mut self) -> InsPtr {
-        self.0.pop().unwrap()
+        self.0
+            .pop()
+            .expect("pop() shouldn't be called on an empty stack")
     }
     pub fn last(&self) -> &InsPtr {
-        self.0.last().unwrap()
+        self.0.last().unwrap_or(&INSPTR_NULL)
+        //.expect("last() shouldn't be called on an empty stack")
     }
     pub(crate) fn len(&self) -> usize {
         self.0.len()
@@ -332,405 +353,58 @@ impl Direction {
     }
 }
 
-#[derive(Copy, Clone, Serialize, Deserialize)]
-pub struct Puzzle {
-    pub map: Map,
-    pub direction: Direction,
-    pub x: usize,
-    pub y: usize,
-    pub stars: usize,
-    pub methods: [usize; 5],
-    pub actual_methods: [usize; 5],
-    pub marks: [bool; 3],
-    pub red: bool,
-    pub green: bool,
-    pub blue: bool,
-}
-
-impl Puzzle {
-    pub(crate) fn get_ins_set(&self, colors: Ins, gray: bool) -> Vec<Ins> {
-        coz::begin!("get instruction set");
-        let functions = self
-            .methods
-            .iter()
-            .fold(0, |count, &val| count + (val > 0) as usize);
-        let marks: usize = self.marks.iter().map(|b| *b as usize).sum();
-        let (red, green, blue) = (
-            self.red && colors.has_cond(RED_COND),
-            self.green && colors.has_cond(GREEN_COND),
-            self.blue && colors.has_cond(BLUE_COND),
-        );
-        let colors = gray as usize + red as usize + green as usize + blue as usize;
-        let mut result: Vec<Ins> = Vec::with_capacity((3 + functions + marks) * colors);
-        let mut conditionals = if gray { vec![GRAY_COND] } else { vec![] };
-        for (present, ins) in [(red, RED_COND), (green, GREEN_COND), (blue, BLUE_COND)].iter() {
-            if *present {
-                conditionals.push(*ins);
-            }
-        }
-        for condition in conditionals {
-            for ins in &MOVES {
-                result.push(*ins | condition);
-            }
-            for i in 0..FUNCTIONS.len() {
-                if self.methods[i] > 0 {
-                    result.push(FUNCTIONS[i] | condition);
-                }
-            }
-            for i in 0..MARKS.len() {
-                if self.marks[i] && MARKS[i].get_mark_color() != condition.condition_to_color() {
-                    result.push(MARKS[i] | condition);
-                }
-            }
-        }
-        coz::end!("get instruction set");
-        return result;
-    }
-    pub(crate) fn empty_source(&self) -> Source {
-        let mut result = NOGRAM.clone();
-        for instructions in 0..self.methods.len() {
-            for i in 0..self.methods[instructions] {
-                result.0[instructions][i] = NOP;
-            }
-        }
-        return result;
-    }
-    pub(crate) fn initial_state(&self, source: &Source) -> State {
-        let mut result = State {
-            stars: self.stars,
-            map: self.map,
-            direction: self.direction,
-            x: self.x,
-            y: self.y,
-            ..State::default()
-        };
-        result.initialize(source, self);
-        return result;
-    }
-    /// execute a source for the puzzle, returning a score
-    pub fn execute<F, R>(&self, source: &Source, show: bool, mut scoring: F) -> R
-    where
-        F: FnMut(&State, &Puzzle) -> R,
-    {
-        coz::begin!("execute");
-        let mut state = self.initial_state(source);
-        if show {
-            println!("{}", state);
-        }
-        while state.step(&source, self) {
-            if show {
-                println!("{}", state);
-            }
-        }
-        if show {
-            println!("{}", state);
-        }
-        let result = scoring(&state, self);
-        coz::end!("execute");
-        return result;
-    }
-    pub(crate) fn get_cond_mask(&self) -> Ins {
-        if (self.red as u8) + (self.green as u8) + (self.blue as u8) > 1 {
-            with_conds(self.red, self.green, self.blue)
-        } else {
-            GRAY_COND
-        }
-    }
-    pub fn count_tiles(&self) -> usize {
-        let mut tiles = 0;
-        // test which colors are reachable
-        let mut frontier = VecDeque::new();
-        frontier.push_front((self.x, self.y));
-        let mut visited = HashSet::new();
-        while let Some((x, y)) = frontier.pop_back() {
-            for (dx, dy) in &[(1, 0), (0, 1), (-1, 0), (0, -1)] {
-                let (nx, ny) = ((x as isize + dx) as usize, (y as isize + dy) as usize);
-                if self.map.0[ny][nx] != _N && !visited.contains(&(nx, ny)) {
-                    visited.insert((nx, ny));
-                    frontier.push_front((nx, ny));
-                    tiles += 1;
-                }
-            }
-        }
-        return tiles;
-    }
-}
-
-#[derive(Eq, PartialEq, Clone)]
-pub struct State {
-    pub(crate) steps: usize, // number of instructions executed
-    pub(crate) stars: usize, // number of stars remaining
-    pub stack: Stack,
-    pub(crate) map: Map,
-    direction: Direction,
-    x: usize,
-    y: usize,
-}
-
-impl Default for State {
-    fn default() -> Self {
-        State {
-            steps: 0,
-            stars: 1,
-            stack: Default::default(),
-            map: Map([[_N; 18]; 14]),
-            direction: Direction::Up,
-            x: 1,
-            y: 1,
-        }
-    }
-}
-
-impl Hash for State {
-    fn hash<H: Hasher>(&self, state: &mut H) {
-        self.stars.hash(state);
-        self.stack.hash(state);
-        self.map.hash(state);
-        self.direction.hash(state);
-        self.x.hash(state);
-        self.y.hash(state);
-    }
-}
-
-impl State {
-    pub fn initialize(&mut self, source: &Source, puzzle: &Puzzle) {
-        self.invoke(source, puzzle, F1.source_index());
-    }
-    fn clear_star(&mut self) {
-        self.map.0[self.y][self.x].clear_star();
-    }
-    fn touch(&mut self) {
-        self.map.0[self.y][self.x].touch();
-    }
-    fn untouch(&mut self) {
-        self.map.0[self.y][self.x].untouch();
-    }
-    fn touches(&self) -> usize {
-        self.map.0[self.y][self.x].touches()
-    }
-    pub fn max_touches(&self) -> usize {
-        self.map
-            .0
-            .iter()
-            .map(|r| r.iter().map(|e| e.touches()).max())
-            .max()
-            .flatten()
-            .expect("the map should have elements")
-    }
-    fn mark(&mut self, ins: Ins) {
-        self.map.0[self.y][self.x].mark(ins)
-    }
-    pub fn ins_pointer(&self) -> &InsPtr {
-        let ins = self.stack.last();
-        //        let ins = source[ins.get_method_index()][ins.get_ins_index()];
-        return ins;
-    }
-    pub fn current_ins(&self, source: &Source) -> Ins {
-        let ins = self.ins_pointer();
-        let ins = source[ins.get_method_index()][ins.get_ins_index()];
-        return ins;
-    }
-    pub(crate) fn current_tile(&self) -> &Tile {
-        &self.map.0[self.y][self.x]
-    }
-    fn running(&self) -> bool {
-        !self.stack.is_empty()
-            && self.stars > 0
-            && self.map.0[self.y][self.x].touches() < Tile::MAX_TOUCHES as usize
-        //&& self.stack.len() < StackArr::STACK_SIZE - 10
-        //&& self.steps < MAX_STEPS
-    }
-    pub(crate) fn step(&mut self, source: &Source, puzzle: &Puzzle) -> bool {
-        coz::begin!("step");
-        let ins = self.current_ins(source).as_vanilla();
-        self.stack.pop();
-        self.steps += 1;
-        if self.current_tile().executes(ins) {
-            match ins.get_ins() {
-                FORWARD => {
-                    self.y = (self.y as i32 + [-1, 0, 1, 0][self.direction as usize]) as usize;
-                    self.x = (self.x as i32 + [0, -1, 0, 1][self.direction as usize]) as usize;
-                    if *self.current_tile() == _N {
-                        coz::end!("step");
-                        return false;
-                    } else {
-                        self.stars -= self.current_tile().has_star() as usize;
-                        self.clear_star();
-                    }
-                }
-                LEFT => self.direction = self.direction.left(),
-                RIGHT => self.direction = self.direction.right(),
-                F1 | F2 | F3 | F4 | F5 => {
-                    self.invoke(source, puzzle, ins.source_index());
-                    //                    self.max_stack = max(self.max_stack, self.stack.pointer);
-                }
-                MARK_GRAY | MARK_RED | MARK_GREEN | MARK_BLUE => self.mark(ins),
-                HALT => {
-                    coz::end!("step");
-                    return self.running();
-                }
-                _ => (),
-            }
-        }
-        self.touch();
-        coz::end!("step");
-        return self.running();
-    }
-    fn intersection_cost(&self, intersections: i64) -> i64 {
-        return if intersections == 1 {
-            -(1 << 2)
-        } else {
-            -(1 << 2) + intersections * intersections
-        };
-    }
-    fn invoke(&mut self, source: &Source, puzzle: &Puzzle, method: usize) {
-        for i in (0..puzzle.methods[method]).rev() {
-            let ins = source.0[method][i];
-            self.stack.push(InsPtr::new(method, i));
-        }
-    }
-    pub(crate) fn get_hash(&self) -> u64 {
-        let mut state = DefaultHasher::new();
-        self.hash(&mut state);
-        return state.finish();
-    }
-}
-
-pub fn won(state: &State, _: &Puzzle) -> bool {
-    return state.stars == 0;
-}
-
 pub fn genboi(ta: Tile, tb: Tile, tc: Tile) -> Puzzle {
     return make_puzzle(
-        Map([
-            [
-                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, ta, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
-            ],
-            [
-                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-            ],
-        ]),
-        Direction::Right,
-        5,
-        6,
+        Board {
+            map: Map([
+                [
+                    _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, ta, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tb, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, tc, _N,
+                ],
+                [
+                    _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+                ],
+            ]),
+            direction: Direction::Right,
+            x: 5,
+            y: 6,
+        },
         [3, 10, 0, 0, 0],
         [true, true, true],
     );
-}
-
-pub fn make_puzzle(
-    map: Map,
-    direction: Direction,
-    x: usize,
-    y: usize,
-    mut methods: [usize; 5],
-    marks: [bool; 3],
-) -> Puzzle {
-    // must be able to use markable colors
-    let [mut red, mut green, mut blue] = marks;
-    // test which colors are reachable
-    let mut frontier = VecDeque::new();
-    frontier.push_front((x, y));
-    let mut visited = HashSet::new();
-    while let Some((x, y)) = frontier.pop_back() {
-        for (dx, dy) in &[(1, 0), (0, 1), (-1, 0), (0, -1)] {
-            let (nx, ny) = ((x as isize + dx) as usize, (y as isize + dy) as usize);
-            if map.0[ny][nx] != _N && !visited.contains(&(nx, ny)) {
-                visited.insert((nx, ny));
-                frontier.push_front((nx, ny));
-                red |= map.0[ny][nx].is_red();
-                green |= map.0[ny][nx].is_green();
-                blue |= map.0[ny][nx].is_blue();
-            }
-        }
-    }
-    let actual_methods = methods;
-    methods[1..5].sort_unstable_by(|a, b| b.cmp(a));
-    let mut map_out = map.clone();
-    map_out.0[y][x].clear_star();
-    map_out.0[y][x].touch();
-    let stars: usize = map_out
-        .0
-        .iter()
-        .map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>())
-        .sum();
-    return Puzzle {
-        map: map_out,
-        direction,
-        x,
-        y,
-        stars,
-        methods,
-        actual_methods,
-        marks,
-        red,
-        green,
-        blue,
-    };
-}
-
-fn verify_puzzle(puzzle: &Puzzle) -> bool {
-    let (mut red, mut green, mut blue) = (false, false, false);
-    for y in 1..13 {
-        for x in 1..17 {
-            red |= puzzle.map.0[y][x].is_red();
-            green |= puzzle.map.0[y][x].is_green();
-            blue |= puzzle.map.0[y][x].is_blue();
-        }
-    }
-    let stars: usize = puzzle
-        .map
-        .0
-        .iter()
-        .map(|row| row.iter().map(|el| el.has_star() as usize).sum::<usize>())
-        .sum();
-    if red != puzzle.red {
-        panic!("red bad! {} {}", red, puzzle.red);
-    }
-    if green != puzzle.green {
-        panic!("green bad! {} {}", green, puzzle.green);
-    }
-    if blue != puzzle.blue {
-        panic!("blue bad! {} {}", blue, puzzle.blue);
-    }
-    if stars != puzzle.stars {
-        panic!("stars bad! {} {}", stars, puzzle.stars);
-    }
-    return true;
 }

@@ -1,8 +1,9 @@
-use crate::game::{Puzzle, Source};
+use crate::game::{puzzle::Puzzle, Source};
 
 use backtrack::backtrack;
 
 pub mod pruning;
+pub mod solutions;
 
 pub mod backtrack;
 pub mod carlo;

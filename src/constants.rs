@@ -1,5 +1,7 @@
-use super::game::*;
+use super::game::{puzzle::Puzzle, *};
+use crate::game::board::Board;
 use crate::game::instructions::*;
+
 pub(crate) const RE: Tile = Tile(0b00001);
 pub(crate) const GE: Tile = Tile(0b00010);
 pub(crate) const BE: Tile = Tile(0b00100);
@@ -16,7 +18,7 @@ pub(crate) const TILE_TOUCH_MASK: Tile = Tile(0b1111111111110000);
 
 pub(crate) const NOGRAM: Source = Source([[HALT; 10]; 5]);
 
-const TEST_SOURCE: Source = Source([
+pub const TEST_SOURCE: Source = Source([
     [
         FORWARD,
         RED_FORWARD,
@@ -80,10 +82,12 @@ const TEST_SOURCE: Source = Source([
 ]);
 
 pub(crate) const PUZZLE_NULL: Puzzle = Puzzle {
-    map: Map([[_N; 18]; 14]),
-    direction: Direction::Down,
-    x: 1,
-    y: 1,
+    board: Board {
+        map: Map([[_N; 18]; 14]),
+        direction: Direction::Down,
+        x: 1,
+        y: 1,
+    },
     stars: 1,
     methods: [0, 0, 0, 0, 0],
     actual_methods: [0, 0, 0, 0, 0],
@@ -135,53 +139,55 @@ const RAND_FUNCS: [Method; 9] = [
 ];
 
 pub(crate) const PUZZLE_42: Puzzle = Puzzle {
-    map: Map([
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, BS, BS, BS, BS, BS, BS, BS, BS, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, BE, BS, BS, BS, BS, BS, BS, BS, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-    ]),
-    direction: Direction::Right,
-    x: 5,
-    y: 9,
+    board: Board {
+        map: Map([
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, BS, BS, BS, BS, BS, BS, BS, BS, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, BE, BS, BS, BS, BS, BS, BS, BS, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+        ]),
+        direction: Direction::Right,
+        x: 5,
+        y: 9,
+    },
     stars: 23,
     methods: [5, 2, 2, 2, 0],
     actual_methods: [5, 2, 2, 2, 0],
@@ -200,53 +206,55 @@ pub(crate) const PUZZLE_42_SOLUTION: Source = Source([
     [HALT; 10],
 ]);
 pub(crate) const PUZZLE_536: Puzzle = Puzzle {
-    map: Map([
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, BE, BE, BE, BE, BE, BE, BE, GE, BE, BE, BE, BE, BE, BE, BE, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, BE, BE, BE, BE, BE, RE, BE, BE, BE, BE, BE, BE, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, _N, BE, BE, BE, BE, GE, BE, BE, BE, BE, _N, BE, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, _N, BE, _N, _N, _N, _N, _N, _N, _N, RE, _N, GE, _N, RE, _N, _N,
-        ],
-        [
-            _N, RE, _N, GE, _N, BS, BE, BE, BE, BE, BE, BE, _N, BE, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, _N, BE, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, _N, BE, BE, BE, BE, BE, RE, BE, BE, BE, BE, BE, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, _N,
-        ],
-        [
-            _N, BE, BE, BE, BE, BE, BE, BE, GE, BE, BE, BE, BE, BE, BE, BE, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-    ]),
-    direction: Direction::Right,
-    x: 1,
-    y: 1,
+    board: Board {
+        map: Map([
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, BE, BE, BE, BE, BE, BE, BE, GE, BE, BE, BE, BE, BE, BE, BE, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, BE, BE, BE, BE, BE, RE, BE, BE, BE, BE, BE, BE, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, _N, BE, BE, BE, BE, GE, BE, BE, BE, BE, _N, BE, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, _N, BE, _N, _N, _N, _N, _N, _N, _N, RE, _N, GE, _N, RE, _N, _N,
+            ],
+            [
+                _N, RE, _N, GE, _N, BS, BE, BE, BE, BE, BE, BE, _N, BE, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, _N, BE, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, _N, BE, BE, BE, BE, BE, RE, BE, BE, BE, BE, BE, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, BE, _N, _N,
+            ],
+            [
+                _N, BE, BE, BE, BE, BE, BE, BE, GE, BE, BE, BE, BE, BE, BE, BE, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+        ]),
+        direction: Direction::Right,
+        x: 1,
+        y: 1,
+    },
     stars: 1,
     methods: [3, 3, 0, 0, 0],
     actual_methods: [3, 3, 0, 0, 0],
@@ -265,53 +273,55 @@ pub(crate) const PUZZLE_536_SOLUTION: Source = Source([
     [HALT; 10],
 ]);
 pub(crate) const PUZZLE_656: Puzzle = Puzzle {
-    map: Map([
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, RS, _N, _N, _N, RS, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, RS, _N, _N, _N, _N,
-        ],
-        [
-            _N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, RS, _N, _N,
-        ],
-        [
-            _N, BS, _N, RS, _N, BS, _N, _N, _N, RS, _N, _N, _N, BS, _N, BS, _N, _N,
-        ],
-        [
-            _N, BS, _N, BS, _N, BS, _N, _N, _N, BS, _N, RS, _N, BS, _N, BS, _N, _N,
-        ],
-        [
-            _N, BS, RS, BS, _N, BS, _N, _N, _N, BS, _N, BS, _N, BS, _N, BS, _N, _N,
-        ],
-        [
-            _N, BS, BS, BS, _N, BS, RS, _N, _N, BS, _N, BS, _N, BS, RS, BS, _N, _N,
-        ],
-        [
-            _N, BS, BS, BS, _N, BS, BS, _N, _N, BS, RS, BS, _N, BS, BS, BS, _N, _N,
-        ],
-        [
-            _N, BS, BS, BS, _N, BS, BS, _N, _N, BS, BS, BS, RS, BS, BS, BS, RS, _N,
-        ],
-        [
-            _N, BS, BS, BS, RS, BS, BS, RS, RS, BS, BS, BS, BS, BS, BS, BS, BS, _N,
-        ],
-        [
-            _N, BE, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-    ]),
-    direction: Direction::Right,
-    x: 1,
-    y: 12,
+    board: Board {
+        map: Map([
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, RS, _N, _N, _N, RS, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, RS, _N, _N, _N, _N,
+            ],
+            [
+                _N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, BS, _N, _N, _N, BS, _N, _N, _N, _N, _N, _N, _N, BS, _N, RS, _N, _N,
+            ],
+            [
+                _N, BS, _N, RS, _N, BS, _N, _N, _N, RS, _N, _N, _N, BS, _N, BS, _N, _N,
+            ],
+            [
+                _N, BS, _N, BS, _N, BS, _N, _N, _N, BS, _N, RS, _N, BS, _N, BS, _N, _N,
+            ],
+            [
+                _N, BS, RS, BS, _N, BS, _N, _N, _N, BS, _N, BS, _N, BS, _N, BS, _N, _N,
+            ],
+            [
+                _N, BS, BS, BS, _N, BS, RS, _N, _N, BS, _N, BS, _N, BS, RS, BS, _N, _N,
+            ],
+            [
+                _N, BS, BS, BS, _N, BS, BS, _N, _N, BS, RS, BS, _N, BS, BS, BS, _N, _N,
+            ],
+            [
+                _N, BS, BS, BS, _N, BS, BS, _N, _N, BS, BS, BS, RS, BS, BS, BS, RS, _N,
+            ],
+            [
+                _N, BS, BS, BS, RS, BS, BS, RS, RS, BS, BS, BS, BS, BS, BS, BS, BS, _N,
+            ],
+            [
+                _N, BE, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, BS, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+        ]),
+        direction: Direction::Right,
+        x: 1,
+        y: 12,
+    },
     stars: 98,
     methods: [5, 5, 0, 0, 0],
     actual_methods: [5, 5, 0, 0, 0],
@@ -331,53 +341,55 @@ pub(crate) const PUZZLE_656_SOLUTION: Source = Source([
 ]);
 
 pub(crate) const PUZZLE_1337: Puzzle = Puzzle {
-    map: Map([
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, BE, RE, RE, RE, RE, RE, RE, RE, RE, RE, RE, BS, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, BE, RE, GE, GE, GE, GE, GE, GE, GE, GE, RE, BE, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, RE, GE, BE, BS, BE, RE, BS, BE, GE, RE, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, GE, RE, GE, BE, BE, GE, RE, BE, BE, GE, RE, GE, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, GE, RE, GE, _N, BE, RS, GS, BE, _N, GE, RE, GE, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, RE, GE, _N, GE, BE, GE, GE, _N, GE, RE, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, RE, GE, _N, _N, _N, _N, _N, _N, GE, RE, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, RE, GE, _N, _N, _N, _N, _N, _N, GE, RE, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, RE, GE, GE, GE, GE, GE, GE, GE, GE, RE, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, RE, RE, RE, RE, RE, RE, RE, RE, RE, RE, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, BS, BS, BS, BS, BE, BE, BS, BS, BS, BS, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-    ]),
-    direction: Direction::Right,
-    x: 8,
-    y: 7,
+    board: Board {
+        map: Map([
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, BE, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, BE, RE, RE, RE, RE, RE, RE, RE, RE, RE, RE, BS, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, BE, RE, GE, GE, GE, GE, GE, GE, GE, GE, RE, BE, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, RE, GE, BE, BS, BE, RE, BS, BE, GE, RE, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, GE, RE, GE, BE, BE, GE, RE, BE, BE, GE, RE, GE, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, GE, RE, GE, _N, BE, RS, GS, BE, _N, GE, RE, GE, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, RE, GE, _N, GE, BE, GE, GE, _N, GE, RE, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, RE, GE, _N, _N, _N, _N, _N, _N, GE, RE, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, RE, GE, _N, _N, _N, _N, _N, _N, GE, RE, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, RE, GE, GE, GE, GE, GE, GE, GE, GE, RE, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, RE, RE, RE, RE, RE, RE, RE, RE, RE, RE, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, BS, BS, BS, BS, BE, BE, BS, BS, BS, BS, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+        ]),
+        direction: Direction::Right,
+        x: 8,
+        y: 7,
+    },
     stars: 13,
     methods: [6, 2, 0, 0, 0],
     actual_methods: [6, 2, 0, 0, 0],
@@ -417,53 +429,55 @@ pub(crate) const PUZZLE_1337_SOLUTION: Source = Source([
 ]);
 
 pub(crate) const PUZZLE_TEST_1: Puzzle = Puzzle {
-    map: Map([
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, BS, RE, RS, RS, GS, GS, GS, BS, BS, BS, RS, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-        [
-            _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
-        ],
-    ]),
-    direction: Direction::Right,
-    x: 2,
-    y: 1,
+    board: Board {
+        map: Map([
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, BS, RE, RS, RS, GS, GS, GS, BS, BS, BS, RS, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+            [
+                _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N, _N,
+            ],
+        ]),
+        direction: Direction::Right,
+        x: 2,
+        y: 1,
+    },
     stars: 10,
     methods: [10; 5],
     actual_methods: [10; 5],

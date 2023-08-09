@@ -16,6 +16,9 @@ use solver::constants::*;
 use solver::game::{instructions::*, *};
 use solver::solver::backtrack::{self, backtrack};
 use solver::solver::carlo::{score, score_cmp};
+use solver::solver::solutions::{
+    read_solution_from_file, remove_solution_file, store_solutions_locally,
+};
 use solver::solver::{
     pruning::{banned_pair, banned_trio},
     solve,
@@ -98,6 +101,13 @@ fn cli() -> Command {
                         .global(true)
                         .action(ArgAction::Set)
                         .value_parser(value_parser!(u128)),
+                )
+                .arg(
+                    Arg::new("cache")
+                        .long("cache")
+                        .short('c')
+                        .global(true)
+                        .action(ArgAction::SetTrue),
                 )
                 .subcommand(
                     Command::new("range").arg(
@@ -204,6 +214,7 @@ fn main() {
                 .collect();
             let timed = matches.get_flag("timed");
             let quiet = matches.get_flag("quiet");
+            let cache = matches.get_flag("cache");
             let timeout = matches.get_one::<u128>("timeout").map(|e| *e);
             if puzzle_ids.len() > 0 {
                 let boi: Vec<_> = if ranged {
@@ -217,7 +228,32 @@ fn main() {
                     Ok(level) => {
                         let now = Instant::now();
                         print_level(&level, !quiet);
-                        let solutions = backtrack(level.puzzle, timeout);
+                        let solutions = if cache {
+                            if let Ok(solutions) = read_solution_from_file(level.id) {
+                                let solutions: Vec<_> = solutions
+                                    .into_iter()
+                                    .map(|s| (level.puzzle.execute(&s, false, state::steps), s))
+                                    .collect();
+                                if solutions.is_empty() {
+                                    println!("removing {}", level.id);
+                                    remove_solution_file(level.id);
+                                } else {
+                                    println!("found {} {}", level.id, solutions.len());
+                                }
+                                solutions
+                            } else {
+                                let solutions = backtrack(level.puzzle, timeout);
+                                if !solutions.is_empty() {
+                                    store_solutions_locally(
+                                        &solutions.iter().map(|(_, s)| *s).collect(),
+                                        level.id,
+                                    );
+                                }
+                                solutions
+                            }
+                        } else {
+                            backtrack(level.puzzle, timeout)
+                        };
                         let el = now.elapsed();
                         if !solutions.is_empty() {
                             results.push((el, level.id));
@@ -288,6 +324,14 @@ fn main() {
                     puzzle_ids
                 );
             }
+        }
+        Some((("misc"), matches)) => {
+            println!("{:x}", 10 as usize);
+            println!("{}", 10 as usize);
+            println!("{}", 10 as usize);
+            println!("{}", 10 as usize);
+            println!("{}", 10 as usize);
+            println!("{}", !(10 as usize));
         }
         _ => {
             println!("no CLI match")

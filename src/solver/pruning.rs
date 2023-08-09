@@ -3,6 +3,7 @@ use std::cmp::{max, min};
 use once_cell::sync::OnceCell;
 
 use crate::constants::{init_rejects_2, init_rejects_3, init_rejects_4};
+use crate::game::puzzle::Puzzle;
 use crate::game::{instructions::*, *};
 use std::collections::HashSet;
 
@@ -88,21 +89,21 @@ fn deny_inner(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
     if denied {
         return true;
     }
-    for m in 2..5 {
-        let a = program[m - 1];
-        let b = program[m];
-        let mut acount = 0;
-        let mut bcount = 0;
-        for i in 0..10 {
-            acount += !a[i].is_halt() as i32;
-            bcount += !b[i].is_halt() as i32;
-        }
-        denied |= acount < bcount;
-        if show && denied {
-            println!("function lengths {} < {}", acount, bcount);
-            return true;
-        }
-    }
+    // for m in 2..5 {
+    //     let a = program[m - 1];
+    //     let b = program[m];
+    //     let mut acount = 0;
+    //     let mut bcount = 0;
+    //     for i in 0..10 {
+    //         acount += !a[i].is_halt() as i32;
+    //         bcount += !b[i].is_halt() as i32;
+    //     }
+    //     denied |= acount < bcount;
+    //     if show && denied {
+    //         println!("function lengths {} < {}", acount, bcount);
+    //         return true;
+    //     }
+    // }
     for m in 0..5 {
         let meth = program[m];
         denied |= !program[m][0].is_halt() && program[m][1].is_halt();
@@ -133,29 +134,29 @@ fn deny_inner(puzzle: &Puzzle, program: &Source, show: bool) -> bool {
                 return true;
             }
             // deny banned pairs across function calls
-            if a.is_function()
-                && invoked[a.source_index()] == 1
-                && only_cond[a.source_index()].is_gray()
-            {
-                denied |= banned_pair(
-                    puzzle,
-                    program[a.source_index()][puzzle.methods[a.source_index()] - 1],
-                    b,
-                    show,
-                );
-                if show && denied {
-                    println!("de3");
-                }
-            }
-            if b.is_function()
-                && invoked[b.source_index()] == 1
-                && only_cond[b.source_index()].is_gray()
-            {
-                denied |= banned_pair(puzzle, a, program[b.source_index()][0], show);
-                if show && denied {
-                    println!("de5");
-                }
-            }
+            // if a.is_function()
+            //     && invoked[a.source_index()] == 1
+            //     && only_cond[a.source_index()].is_gray()
+            // {
+            //     denied |= banned_pair(
+            //         puzzle,
+            //         program[a.source_index()][puzzle.methods[a.source_index()] - 1],
+            //         b,
+            //         show,
+            //     );
+            //     if show && denied {
+            //         println!("de3");
+            //     }
+            // }
+            // if b.is_function()
+            //     && invoked[b.source_index()] == 1
+            //     && only_cond[b.source_index()].is_gray()
+            // {
+            //     denied |= banned_pair(puzzle, a, program[b.source_index()][0], show);
+            //     if show && denied {
+            //         println!("de5");
+            //     }
+            // }
         }
         denied |= !has_nops && has_probe[m] && invoked[m] == 0;
         if !only_cond[m].is_nop() && !only_cond[m].is_halt() {
@@ -246,6 +247,7 @@ fn banned_pair_inner(b: Ins, a: Ins, show: bool, puzzle: &Puzzle) -> bool {
         }
     }
     if a.is_mark() && b.is_mark() {
+        // No two unconditional marks in a row
         banned |= a.is_gray() || b.is_gray();
         if banned {
             if show {
@@ -253,6 +255,7 @@ fn banned_pair_inner(b: Ins, a: Ins, show: bool, puzzle: &Puzzle) -> bool {
             }
             return true;
         }
+        // two conditional marks of same color must have a specific condition order
         banned |= a.get_ins() == b.get_ins() && a > b;
         if banned {
             if show {
@@ -320,8 +323,7 @@ fn banned_pair_inner(b: Ins, a: Ins, show: bool, puzzle: &Puzzle) -> bool {
         println!("Some other pair issue a: {:?} b: {:?}", a, b);
         return true;
     }
-    banned
-    //|| query_rejects_2(&[a, b])
+    banned || query_rejects_2(&[a, b])
 }
 
 pub fn banned_trio(puzzle: &Puzzle, a: Ins, b: Ins, c: Ins, show: bool) -> bool {

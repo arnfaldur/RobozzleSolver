@@ -1,5 +1,5 @@
 use crate::constants::NOGRAM;
-use crate::game::{instructions::*, Puzzle, Source};
+use crate::game::{instructions::*, puzzle::Puzzle, Source};
 use crate::solver::carlo::score;
 use crate::solver::pruning::{deny, snip_around};
 use std::f64::consts::SQRT_2;

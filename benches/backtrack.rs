@@ -146,8 +146,8 @@ fn backtrack_batches(c: &mut Criterion) {
     group.finish();
 }
 
-criterion_group!(boi, backtrack_batches);
-criterion_main!(boi);
+criterion_group!(benches, backtrack_batches);
+criterion_main!(benches);
 
 // 123 27 46 45 220 24 52 264 147 222 68 202 138
 // 140 287 266 139 63 136 105 278 59 126 61 108 76 73 79 75 67 295 265 262 285 124 107 23 372 306 62 276 101 28 397 47 128 168 112 279 103 368 376 166 114

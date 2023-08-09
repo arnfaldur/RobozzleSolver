@@ -13,12 +13,17 @@ use thirtyfour::prelude::*;
 use tokio::runtime::Runtime;
 
 use crate::constants::*;
-use crate::game::{instructions::*, make_puzzle, Direction, Puzzle, Source, Tile};
+use crate::game::board::Board;
+use crate::game::{
+    instructions::*,
+    puzzle::{make_puzzle, Puzzle},
+    Direction, Source, Tile,
+};
 use crate::solver::backtrack::backtrack;
 
 use self::errors::SolverError;
 
-mod errors;
+pub mod errors;
 #[cfg(test)]
 mod tests;
 
@@ -312,7 +317,7 @@ pub fn puzzle_from_string(string: &str) -> Puzzle {
 }
 
 fn level_json_to_puzzle(level_json: &LevelJson) -> Puzzle {
-    let mut map = PUZZLE_NULL.map.clone();
+    let mut map = PUZZLE_NULL.board.map.clone();
     for y in 0..12 {
         let mut cols = level_json.Colors[y].chars();
         let mut tems = level_json.Items[y].chars();
@@ -343,10 +348,12 @@ fn level_json_to_puzzle(level_json: &LevelJson) -> Puzzle {
     }
     let mflags: u8 = level_json.AllowedCommands.parse().unwrap();
     return make_puzzle(
-        map,
-        direction,
-        level_json.RobotCol.parse::<usize>().unwrap() + 1,
-        level_json.RobotRow.parse::<usize>().unwrap() + 1,
+        Board {
+            map,
+            direction,
+            x: level_json.RobotCol.parse::<usize>().unwrap() + 1,
+            y: level_json.RobotRow.parse::<usize>().unwrap() + 1,
+        },
         methods,
         [
             (mflags & 0b1) > 0,
@@ -356,7 +363,7 @@ fn level_json_to_puzzle(level_json: &LevelJson) -> Puzzle {
     );
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Level {
     pub about: Value,
     pub comment_count: u64,
